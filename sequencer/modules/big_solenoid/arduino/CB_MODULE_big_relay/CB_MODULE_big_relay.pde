@@ -1,8 +1,8 @@
 /*----------------------------------------------------------------------
  
- this is the first prototype for a crudblocks Node module... but with the relay in place of the optocoupler
- 
- this code is for the prototypes posted to facebook late November 2011
+Crudlabs + Crudblocks Big Solenoid Module
+
+This code is available strictly for non-commercial use
  
  ----------------------------------------------------------------------*/
 

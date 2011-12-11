@@ -1,4 +1,13 @@
 /*----------------------------------------------------------------------
+
+Crudlabs + Crudblocks Seven Segment + Rotary Encoder Module
+
+This code is available strictly for non-commercial use
+
+----------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------
+
    Sparkfun COM-09482 type 4 digit 7 segment display pinout diagram
 
                             16 15 14 13 12 11 10 9

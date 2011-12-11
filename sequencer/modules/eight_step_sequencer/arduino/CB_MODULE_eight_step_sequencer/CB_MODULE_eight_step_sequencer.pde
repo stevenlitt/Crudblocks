@@ -1,11 +1,19 @@
-/*--------------------------------------------------
+/*----------------------------------------------------------------------
+ 
+ Crudlabs + Crudblocks Eight Step Sequencer Module
+
+This code is available strictly for non-commercial use
+ 
+---------------------------------------------------------------------*/
+ 
+/*----------------------------------------------------------------------
  
  This code is for the controller sequencer.  It has 2 input shift registers for 16 steps,
  and 4 output shift registers, 2 for for 16 LEDs for the steps and 2 for a 4 digit 7 segment
  display.  The 6 seg display is controlled by a rotary encoder.  It sends MIDI messages out
  through serial.
  
- --------------------------------------------------*/
+---------------------------------------------------------------------*/
 
 
 #include <NewSoftSerial.h>
