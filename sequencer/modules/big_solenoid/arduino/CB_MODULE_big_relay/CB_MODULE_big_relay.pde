@@ -20,6 +20,7 @@ int rxPin = 3;
 NewSoftSerial softSerial(rxPin, txPin);
 
 byte channel = 7;
+byte channelSet = false;
 
 int encoderSubCount = 0;
 int newEncoderPosition = 0;
@@ -97,97 +98,109 @@ void checkPwm()
 
 void listenForSerial()
 {
-//  while(Serial.available() > 0 && Serial.available() % 3 == 0)
-  while(Serial.available() >= 3)
+  if(channelSet == false)
   {
-    delay(serialDelay);
-    latestSerialInValue = Serial.read();
-    
-    //CONFIG
-    if(latestSerialInValue == channelSetterByte)
+//  while(Serial.available() > 0 && Serial.available() % 3 == 0)
+    while(Serial.available())
     {
-       threeBytesArray[0] = latestSerialInValue;
       delay(serialDelay);
-      threeBytesArray[1] = Serial.read();
-      channel = threeBytesArray[1];
-      delay(serialDelay);      
-      threeBytesArray[2] = Serial.read(); //just clear the last byte, which is meaningless
-      //no idea why i have to do it this way and cant just declare channel as the second read()
-//      channel = latestSerialInValue;      
-//      latestSerialInValue++;
-//      delay(serialDelay);      
-//      Serial.print(latestSerialInValue, BYTE);
-//      Serial.print(1, BYTE);
-
-      for(byte i=0; i<channel; i++)
-      {
-        digitalWrite(ledPin, HIGH);
-        delay(400);
-        digitalWrite(ledPin, LOW);
-        delay(400);
-      }
+      latestSerialInValue = Serial.read();
       
-      byte nextChannel = channel + 1;
-      Serial.print(threeBytesArray[0], BYTE);
-      Serial.print(nextChannel, BYTE);      
-      Serial.print(0, BYTE);      
-      return;
-    }
-    
-    
-    //AFTER CONFIG
-    if(isNoteOn(latestSerialInValue) == true && latestSerialInValue - noteOnByte == channel)
-    {
-        setSolenoidOn();
+      //CONFIG
+      if(latestSerialInValue == channelSetterByte)
+      {
+        channelSet = true;
         
-        delay(serialDelay);        
-        Serial.read();
+        threeBytesArray[0] = latestSerialInValue;
+        delay(serialDelay);
+        threeBytesArray[1] = Serial.read();
+        channel = threeBytesArray[1];
+        delay(serialDelay);      
+        threeBytesArray[2] = Serial.read(); //just clear the last byte, which is meaningless
+        //no idea why i have to do it this way and cant just declare channel as the second read()
+  //      channel = latestSerialInValue;      
+  //      latestSerialInValue++;
+  //      delay(serialDelay);      
+  //      Serial.print(latestSerialInValue, BYTE);
+  //      Serial.print(1, BYTE);
+  
+        for(byte i=0; i<channel; i++)
+        {
+          digitalWrite(ledPin, HIGH);
+          delay(400);
+          digitalWrite(ledPin, LOW);
+          delay(400);
+        }
+        
+        byte nextChannel = channel + 1;
+        Serial.print(threeBytesArray[0], BYTE);
+        Serial.print(nextChannel, BYTE);      
+        Serial.print(0, BYTE);      
+        return;
+      }
+    }
+  }
+  else if(channelSet == true)
+  {
+    while(Serial.available() >= 3)
+    {
+      delay(serialDelay);
+      latestSerialInValue = Serial.read();
+      
+      //AFTER CONFIG
+      if(isNoteOn(latestSerialInValue) == true && latestSerialInValue - noteOnByte == channel)
+      {
+          setSolenoidOn();
+          
+          delay(serialDelay);        
+          Serial.read();
+          delay(serialDelay);
+          Serial.read();
+      }
+      //    else if(latestSerialInValue == noteOffByte) digitalWrite(ledPin, LOW);
+      else if(isNoteOff(latestSerialInValue) == true && latestSerialInValue - noteOffByte == channel) 
+      {
+        setSolenoidOff();
+        
         delay(serialDelay);
         Serial.read();
-    }
-    //    else if(latestSerialInValue == noteOffByte) digitalWrite(ledPin, LOW);
-    else if(isNoteOff(latestSerialInValue) == true && latestSerialInValue - noteOffByte == channel) 
-    {
-      setSolenoidOff();
-      
-      delay(serialDelay);
-      Serial.read();
-      delay(serialDelay);       
-      Serial.read();
-    }
-    else if(latestSerialInValue == pwmByte)
-    {
-      threeBytesArray[0] = latestSerialInValue;
-      delay(serialDelay);
-      threeBytesArray[1] = Serial.read();
-      delay(serialDelay);
-      threeBytesArray[2] = Serial.read();      
-      if(listeningForSpecialCommands == true) {
-//        digitalWrite(ledPin, HIGH);
-        pwmVal = threeBytesArray[1];
+        delay(serialDelay);       
+        Serial.read();
       }
-      delay(serialDelay);
-      Serial.print(threeBytesArray[0], BYTE);
-      delay(serialDelay);
-      Serial.print(threeBytesArray[1], BYTE);
-      delay(serialDelay);
-      Serial.print(threeBytesArray[2], BYTE);      
-    }
-
-    else  //if its any other message for a different channel
-    {
-      threeBytesArray[0] = latestSerialInValue;
-      delay(serialDelay);
-      threeBytesArray[1] = Serial.read();
-      delay(serialDelay);
-      threeBytesArray[2] = Serial.read();
-      
-      delay(serialDelay);
-      Serial.print(threeBytesArray[0], BYTE);
-      delay(serialDelay);
-      Serial.print(threeBytesArray[1], BYTE);
-      delay(serialDelay);
-      Serial.print(threeBytesArray[2], BYTE);
+      else if(latestSerialInValue == pwmByte)
+      {
+        threeBytesArray[0] = latestSerialInValue;
+        delay(serialDelay);
+        threeBytesArray[1] = Serial.read();
+        delay(serialDelay);
+        threeBytesArray[2] = Serial.read();      
+        if(listeningForSpecialCommands == true) {
+  //        digitalWrite(ledPin, HIGH);
+          pwmVal = threeBytesArray[1];
+        }
+        delay(serialDelay);
+        Serial.print(threeBytesArray[0], BYTE);
+        delay(serialDelay);
+        Serial.print(threeBytesArray[1], BYTE);
+        delay(serialDelay);
+        Serial.print(threeBytesArray[2], BYTE);      
+      }
+  
+      else  //if its any other message for a different channel
+      {
+        threeBytesArray[0] = latestSerialInValue;
+        delay(serialDelay);
+        threeBytesArray[1] = Serial.read();
+        delay(serialDelay);
+        threeBytesArray[2] = Serial.read();
+        
+        delay(serialDelay);
+        Serial.print(threeBytesArray[0], BYTE);
+        delay(serialDelay);
+        Serial.print(threeBytesArray[1], BYTE);
+        delay(serialDelay);
+        Serial.print(threeBytesArray[2], BYTE);
+      }
     }
   }
 }

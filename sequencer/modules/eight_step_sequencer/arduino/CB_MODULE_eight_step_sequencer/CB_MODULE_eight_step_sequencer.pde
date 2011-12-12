@@ -180,6 +180,10 @@ void checkSetAddressPin()
   {
     master = true;
     
+    digitalWrite(ledPin, HIGH);
+    delay(1000);
+    digitalWrite(ledPin, LOW);    
+    
     byte firstChannel = 1;
     delay(serialDelay);            
     Serial.print(channelSetterByte);
@@ -199,6 +203,10 @@ void checkForSerialReceiveNumChannels()
   if(Serial.available() == 3)
   {
     initialNumChannelsSerialReceived = true;
+    
+    digitalWrite(ledPin, HIGH);
+    delay(1000);
+    digitalWrite(ledPin, LOW);
     
     if(master == true)
     {
