@@ -203,11 +203,7 @@ void checkForSerialReceiveNumChannels()
   if(Serial.available() == 3)
   {
     initialNumChannelsSerialReceived = true;
-    
-    digitalWrite(ledPin, HIGH);
-    delay(1000);
-    digitalWrite(ledPin, LOW);
-    
+        
     if(master == true)
     {
       delay(serialDelay);        

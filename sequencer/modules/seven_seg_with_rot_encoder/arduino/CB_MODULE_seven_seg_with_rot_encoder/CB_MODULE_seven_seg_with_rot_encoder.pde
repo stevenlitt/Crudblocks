@@ -533,3 +533,4 @@ byte getDigitAsByte(int digit)
   
   return digitAsByte;
 }
+
