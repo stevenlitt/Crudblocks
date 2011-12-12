@@ -235,7 +235,11 @@ void checkForSerialReceiveNumChannels()
       }
     }
     else if(master == false)
-    {      
+    {
+      digitalWrite(ledPin, HIGH);
+      delay(1000);
+      digitalWrite(ledPin, LOW);        
+
       delay(serialDelay);
       threeBytes[0] = Serial.read();
       delay(serialDelay);
