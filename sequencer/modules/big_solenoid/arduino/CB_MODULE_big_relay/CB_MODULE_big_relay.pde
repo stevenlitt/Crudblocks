@@ -46,7 +46,7 @@ byte pwmVal = 1;
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   pinMode(ledPin, OUTPUT);
   pinMode(solenoidPin, OUTPUT);

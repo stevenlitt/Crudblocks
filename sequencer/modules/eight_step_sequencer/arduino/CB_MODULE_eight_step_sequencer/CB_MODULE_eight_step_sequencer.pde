@@ -121,7 +121,7 @@ boolean justJumped = false;
 boolean channelSwitchOn = false;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   pinMode(rxPin, INPUT);
   pinMode(txPin, OUTPUT);

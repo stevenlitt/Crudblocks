@@ -1,0 +1,19534 @@
+(<alteration>)
+(**** beginning of start.txt ****)
+(This file is for a MakerBot Cupcake CNC with)
+(a heated build platform)
+(This file has been sliced using Skeinforge 35)
+(**** begin initilization commands ****)
+M104 S220 T0 (Temperature to 220 celsius)
+M109 S110 T0 (set heated-build-platform temperature)
+G21 (Metric FTW)
+G90 (Absolute Positioning)
+G92 X0 Y0 Z0 (You are now at 0,0,0)
+(**** end initilization commands ****)
+G0 Z15 (Move up for test extrusion)
+M108 S255 (Extruder speed = max)
+M6 T0 (Wait for tool to heat up)
+G04 P5000 (Wait 5 seconds)
+M101 (Extruder on, forward)
+G04 P5000 (Wait 5 seconds)
+M103 (Extruder off)
+M01 (The heater is warming up and will do a test extrusion.  Click yes after you have cleared the nozzle of the extrusion.)
+G0 Z0(Go back to zero.)
+(**** end of start.txt ****)
+(</alteration>)
+(<creation> skeinforge </creation>)
+(<version> 10.11.05 </version>)
+(<extruderInitialization>)
+(<craftTypeName> extrusion </craftTypeName>)
+M105
+(<bridgeWidthMultiplier> 1.0 </bridgeWidthMultiplier>)
+(<decimalPlacesCarried> 3 </decimalPlacesCarried>)
+(<layerThickness> 0.4 </layerThickness>)
+(<threadSequenceString> loops perimeter infill </threadSequenceString>)
+(<operatingFeedRatePerSecond> 32.0 </operatingFeedRatePerSecond>)
+(<operatingFlowRate> 255.0 </operatingFlowRate>)
+(<orbitalFeedRatePerSecond> 16.0 </orbitalFeedRatePerSecond>)
+(<travelFeedRatePerSecond> 32.0 </travelFeedRatePerSecond>)
+(<coolingRate> 3.0 </coolingRate>)
+(<heatingRate> 10.0 </heatingRate>)
+(<baseTemperature> 225.0 </baseTemperature>)
+(<interfaceTemperature> 225.0 </interfaceTemperature>)
+(<objectFirstLayerInfillTemperature> 225.0 </objectFirstLayerInfillTemperature>)
+(<objectFirstLayerPerimeterTemperature> 225.0 </objectFirstLayerPerimeterTemperature>)
+(<objectNextLayersTemperature> 225.0 </objectNextLayersTemperature>)
+(<supportLayersTemperature> 225.0 </supportLayersTemperature>)
+(<supportedLayersTemperature> 225.0 </supportedLayersTemperature>)
+(<perimeterWidth> 0.58 </perimeterWidth>)
+(<profileName> ABS </profileName>)
+(<procedureDone> carve,bottom </procedureDone>)
+(<procedureDone> preface </procedureDone>)
+(<procedureDone> inset </procedureDone>)
+(<procedureDone> fill </procedureDone>)
+(<procedureDone> speed </procedureDone>)
+(<procedureDone> temperature </procedureDone>)
+(<procedureDone> raft </procedureDone>)
+(<procedureDone> comb </procedureDone>)
+(<procedureDone> export </procedureDone>)
+(</extruderInitialization>)
+(<extrusion>)
+;M113 S1.0
+M108 S255.0
+M104 S225.0
+(<layer> 0.5 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-38.1 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y38.1 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y38.1 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y-38.1 Z0.5 </boundaryPoint>)
+(<loop> inner )
+M108 S255.0
+G1 X0.0 Y-14.59 Z0.5 F1248.0
+M101
+G1 X0.64 Y-14.68 Z0.5 F1248.0
+G1 X1.24 Y-14.92 Z0.5 F1248.0
+G1 X1.75 Y-15.32 Z0.5 F1248.0
+G1 X2.14 Y-15.83 Z0.5 F1248.0
+G1 X2.39 Y-16.43 Z0.5 F1248.0
+G1 X2.48 Y-17.07 Z0.5 F1248.0
+G1 X2.39 Y-17.71 Z0.5 F1248.0
+G1 X2.14 Y-18.3 Z0.5 F1248.0
+G1 X1.75 Y-18.82 Z0.5 F1248.0
+G1 X1.24 Y-19.21 Z0.5 F1248.0
+G1 X0.64 Y-19.46 Z0.5 F1248.0
+G1 X0.0 Y-19.54 Z0.5 F1248.0
+G1 X-0.64 Y-19.46 Z0.5 F1248.0
+G1 X-1.24 Y-19.21 Z0.5 F1248.0
+G1 X-1.75 Y-18.82 Z0.5 F1248.0
+G1 X-2.14 Y-18.3 Z0.5 F1248.0
+G1 X-2.39 Y-17.71 Z0.5 F1248.0
+G1 X-2.48 Y-17.07 Z0.5 F1248.0
+G1 X-2.39 Y-16.43 Z0.5 F1248.0
+G1 X-2.14 Y-15.83 Z0.5 F1248.0
+G1 X-1.75 Y-15.32 Z0.5 F1248.0
+G1 X-1.24 Y-14.92 Z0.5 F1248.0
+G1 X-0.64 Y-14.68 Z0.5 F1248.0
+G1 X0.0 Y-14.59 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.0 Y-13.99 Z0.5 F1248.0
+M101
+G1 X0.8 Y-14.09 Z0.5 F1248.0
+G1 X1.54 Y-14.4 Z0.5 F1248.0
+G1 X2.18 Y-14.89 Z0.5 F1248.0
+G1 X2.67 Y-15.53 Z0.5 F1248.0
+G1 X2.97 Y-16.27 Z0.5 F1248.0
+G1 X3.08 Y-17.07 Z0.5 F1248.0
+G1 X2.97 Y-17.86 Z0.5 F1248.0
+G1 X2.67 Y-18.6 Z0.5 F1248.0
+G1 X2.18 Y-19.24 Z0.5 F1248.0
+G1 X1.54 Y-19.73 Z0.5 F1248.0
+G1 X0.8 Y-20.04 Z0.5 F1248.0
+G1 X0.0 Y-20.15 Z0.5 F1248.0
+G1 X-0.8 Y-20.04 Z0.5 F1248.0
+G1 X-1.54 Y-19.73 Z0.5 F1248.0
+G1 X-2.18 Y-19.24 Z0.5 F1248.0
+G1 X-2.67 Y-18.6 Z0.5 F1248.0
+G1 X-2.98 Y-17.86 Z0.5 F1248.0
+G1 X-3.08 Y-17.07 Z0.5 F1248.0
+G1 X-2.98 Y-16.27 Z0.5 F1248.0
+G1 X-2.67 Y-15.53 Z0.5 F1248.0
+G1 X-2.18 Y-14.89 Z0.5 F1248.0
+G1 X-1.54 Y-14.4 Z0.5 F1248.0
+G1 X-0.8 Y-14.09 Z0.5 F1248.0
+G1 X0.0 Y-13.99 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-1.92 Y-16.55 Z0.5 F1920.0
+G1 X0.0 Y-30.43 Z0.5 F1248.0
+M101
+G1 X0.63 Y-30.48 Z0.5 F1248.0
+G1 X1.27 Y-30.74 Z0.5 F1248.0
+G1 X1.79 Y-31.15 Z0.5 F1248.0
+G1 X2.2 Y-31.67 Z0.5 F1248.0
+G1 X2.45 Y-32.28 Z0.5 F1248.0
+G1 X2.54 Y-32.94 Z0.5 F1248.0
+G1 X2.45 Y-33.6 Z0.5 F1248.0
+G1 X2.2 Y-34.21 Z0.5 F1248.0
+G1 X1.79 Y-34.74 Z0.5 F1248.0
+G1 X1.27 Y-35.14 Z0.5 F1248.0
+G1 X0.66 Y-35.39 Z0.5 F1248.0
+G1 X0.0 Y-35.48 Z0.5 F1248.0
+G1 X-0.66 Y-35.39 Z0.5 F1248.0
+G1 X-1.27 Y-35.14 Z0.5 F1248.0
+G1 X-1.79 Y-34.74 Z0.5 F1248.0
+G1 X-2.2 Y-34.21 Z0.5 F1248.0
+G1 X-2.45 Y-33.6 Z0.5 F1248.0
+G1 X-2.54 Y-32.94 Z0.5 F1248.0
+G1 X-2.45 Y-32.28 Z0.5 F1248.0
+G1 X-2.2 Y-31.67 Z0.5 F1248.0
+G1 X-1.79 Y-31.15 Z0.5 F1248.0
+G1 X-1.27 Y-30.74 Z0.5 F1248.0
+G1 X-0.63 Y-30.48 Z0.5 F1248.0
+G1 X0.0 Y-30.43 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.0 Y-29.83 Z0.5 F1248.0
+M101
+G1 X0.77 Y-29.89 Z0.5 F1248.0
+G1 X1.57 Y-30.22 Z0.5 F1248.0
+G1 X2.22 Y-30.72 Z0.5 F1248.0
+G1 X2.72 Y-31.37 Z0.5 F1248.0
+G1 X3.04 Y-32.13 Z0.5 F1248.0
+G1 X3.14 Y-32.94 Z0.5 F1248.0
+G1 X3.04 Y-33.75 Z0.5 F1248.0
+G1 X2.72 Y-34.51 Z0.5 F1248.0
+G1 X2.22 Y-35.16 Z0.5 F1248.0
+G1 X1.57 Y-35.66 Z0.5 F1248.0
+G1 X0.81 Y-35.98 Z0.5 F1248.0
+G1 X0.0 Y-36.09 Z0.5 F1248.0
+G1 X-0.82 Y-35.98 Z0.5 F1248.0
+G1 X-1.57 Y-35.66 Z0.5 F1248.0
+G1 X-2.22 Y-35.17 Z0.5 F1248.0
+G1 X-2.72 Y-34.51 Z0.5 F1248.0
+G1 X-3.04 Y-33.75 Z0.5 F1248.0
+G1 X-3.14 Y-32.94 Z0.5 F1248.0
+G1 X-3.04 Y-32.13 Z0.5 F1248.0
+G1 X-2.72 Y-31.37 Z0.5 F1248.0
+G1 X-2.22 Y-30.72 Z0.5 F1248.0
+G1 X-1.57 Y-30.22 Z0.5 F1248.0
+G1 X-0.77 Y-29.89 Z0.5 F1248.0
+G1 X0.0 Y-29.83 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.0 Y30.55 Z0.5 F1248.0
+M101
+G1 X-20.64 Y30.47 Z0.5 F1248.0
+G1 X-21.28 Y30.55 Z0.5 F1248.0
+G1 X-21.88 Y30.8 Z0.5 F1248.0
+G1 X-22.39 Y31.19 Z0.5 F1248.0
+G1 X-22.78 Y31.7 Z0.5 F1248.0
+G1 X-23.03 Y32.3 Z0.5 F1248.0
+G1 X-23.11 Y32.94 Z0.5 F1248.0
+G1 X-23.03 Y33.58 Z0.5 F1248.0
+G1 X-22.78 Y34.18 Z0.5 F1248.0
+G1 X-22.39 Y34.69 Z0.5 F1248.0
+G1 X-21.88 Y35.08 Z0.5 F1248.0
+G1 X-21.28 Y35.33 Z0.5 F1248.0
+G1 X-20.64 Y35.42 Z0.5 F1248.0
+G1 X-20.0 Y35.33 Z0.5 F1248.0
+G1 X-19.4 Y35.08 Z0.5 F1248.0
+G1 X-18.89 Y34.69 Z0.5 F1248.0
+G1 X-18.5 Y34.18 Z0.5 F1248.0
+G1 X-18.25 Y33.58 Z0.5 F1248.0
+G1 X-18.16 Y32.94 Z0.5 F1248.0
+G1 X-18.25 Y32.3 Z0.5 F1248.0
+G1 X-18.49 Y31.7 Z0.5 F1248.0
+G1 X-18.89 Y31.19 Z0.5 F1248.0
+G1 X-19.4 Y30.8 Z0.5 F1248.0
+G1 X-20.0 Y30.55 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-19.84 Y29.97 Z0.5 F1248.0
+M101
+G1 X-20.64 Y29.86 Z0.5 F1248.0
+G1 X-21.44 Y29.97 Z0.5 F1248.0
+G1 X-22.18 Y30.27 Z0.5 F1248.0
+G1 X-22.82 Y30.76 Z0.5 F1248.0
+G1 X-23.31 Y31.4 Z0.5 F1248.0
+G1 X-23.61 Y32.14 Z0.5 F1248.0
+G1 X-23.72 Y32.94 Z0.5 F1248.0
+G1 X-23.61 Y33.74 Z0.5 F1248.0
+G1 X-23.3 Y34.48 Z0.5 F1248.0
+G1 X-22.82 Y35.12 Z0.5 F1248.0
+G1 X-22.18 Y35.61 Z0.5 F1248.0
+G1 X-21.44 Y35.92 Z0.5 F1248.0
+G1 X-20.64 Y36.02 Z0.5 F1248.0
+G1 X-19.84 Y35.92 Z0.5 F1248.0
+G1 X-19.1 Y35.61 Z0.5 F1248.0
+G1 X-18.46 Y35.12 Z0.5 F1248.0
+G1 X-17.97 Y34.48 Z0.5 F1248.0
+G1 X-17.66 Y33.74 Z0.5 F1248.0
+G1 X-17.56 Y32.94 Z0.5 F1248.0
+G1 X-17.66 Y32.14 Z0.5 F1248.0
+G1 X-17.97 Y31.4 Z0.5 F1248.0
+G1 X-18.46 Y30.76 Z0.5 F1248.0
+G1 X-19.1 Y30.27 Z0.5 F1248.0
+G1 X-19.84 Y29.97 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.64 Y-30.47 Z0.5 F1248.0
+M101
+G1 X-20.0 Y-30.55 Z0.5 F1248.0
+G1 X-19.4 Y-30.8 Z0.5 F1248.0
+G1 X-18.89 Y-31.19 Z0.5 F1248.0
+G1 X-18.49 Y-31.7 Z0.5 F1248.0
+G1 X-18.25 Y-32.3 Z0.5 F1248.0
+G1 X-18.16 Y-32.94 Z0.5 F1248.0
+G1 X-18.25 Y-33.58 Z0.5 F1248.0
+G1 X-18.5 Y-34.18 Z0.5 F1248.0
+G1 X-18.89 Y-34.69 Z0.5 F1248.0
+G1 X-19.4 Y-35.08 Z0.5 F1248.0
+G1 X-20.0 Y-35.33 Z0.5 F1248.0
+G1 X-20.64 Y-35.42 Z0.5 F1248.0
+G1 X-21.28 Y-35.33 Z0.5 F1248.0
+G1 X-21.88 Y-35.08 Z0.5 F1248.0
+G1 X-22.39 Y-34.69 Z0.5 F1248.0
+G1 X-22.78 Y-34.18 Z0.5 F1248.0
+G1 X-23.03 Y-33.58 Z0.5 F1248.0
+G1 X-23.11 Y-32.94 Z0.5 F1248.0
+G1 X-23.03 Y-32.3 Z0.5 F1248.0
+G1 X-22.78 Y-31.7 Z0.5 F1248.0
+G1 X-22.39 Y-31.19 Z0.5 F1248.0
+G1 X-21.88 Y-30.8 Z0.5 F1248.0
+G1 X-21.28 Y-30.55 Z0.5 F1248.0
+G1 X-20.64 Y-30.47 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.64 Y-29.86 Z0.5 F1248.0
+M101
+G1 X-19.84 Y-29.97 Z0.5 F1248.0
+G1 X-19.1 Y-30.27 Z0.5 F1248.0
+G1 X-18.46 Y-30.76 Z0.5 F1248.0
+G1 X-17.97 Y-31.4 Z0.5 F1248.0
+G1 X-17.66 Y-32.14 Z0.5 F1248.0
+G1 X-17.56 Y-32.94 Z0.5 F1248.0
+G1 X-17.66 Y-33.74 Z0.5 F1248.0
+G1 X-17.97 Y-34.48 Z0.5 F1248.0
+G1 X-18.46 Y-35.12 Z0.5 F1248.0
+G1 X-19.1 Y-35.61 Z0.5 F1248.0
+G1 X-19.84 Y-35.92 Z0.5 F1248.0
+G1 X-20.64 Y-36.02 Z0.5 F1248.0
+G1 X-21.44 Y-35.92 Z0.5 F1248.0
+G1 X-22.18 Y-35.61 Z0.5 F1248.0
+G1 X-22.82 Y-35.12 Z0.5 F1248.0
+G1 X-23.3 Y-34.48 Z0.5 F1248.0
+G1 X-23.61 Y-33.74 Z0.5 F1248.0
+G1 X-23.72 Y-32.94 Z0.5 F1248.0
+G1 X-23.61 Y-32.14 Z0.5 F1248.0
+G1 X-23.31 Y-31.4 Z0.5 F1248.0
+G1 X-22.82 Y-30.76 Z0.5 F1248.0
+G1 X-22.18 Y-30.27 Z0.5 F1248.0
+G1 X-21.44 Y-29.97 Z0.5 F1248.0
+G1 X-20.64 Y-29.86 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.4 Y30.8 Z0.5 F1248.0
+M101
+G1 X18.89 Y31.19 Z0.5 F1248.0
+G1 X18.49 Y31.7 Z0.5 F1248.0
+G1 X18.25 Y32.3 Z0.5 F1248.0
+G1 X18.16 Y32.94 Z0.5 F1248.0
+G1 X18.25 Y33.58 Z0.5 F1248.0
+G1 X18.5 Y34.18 Z0.5 F1248.0
+G1 X18.89 Y34.69 Z0.5 F1248.0
+G1 X19.4 Y35.08 Z0.5 F1248.0
+G1 X20.0 Y35.33 Z0.5 F1248.0
+G1 X20.64 Y35.42 Z0.5 F1248.0
+G1 X21.28 Y35.33 Z0.5 F1248.0
+G1 X21.88 Y35.08 Z0.5 F1248.0
+G1 X22.39 Y34.69 Z0.5 F1248.0
+G1 X22.78 Y34.18 Z0.5 F1248.0
+G1 X23.03 Y33.58 Z0.5 F1248.0
+G1 X23.11 Y32.94 Z0.5 F1248.0
+G1 X23.03 Y32.3 Z0.5 F1248.0
+G1 X22.78 Y31.7 Z0.5 F1248.0
+G1 X22.39 Y31.19 Z0.5 F1248.0
+G1 X21.88 Y30.8 Z0.5 F1248.0
+G1 X21.28 Y30.55 Z0.5 F1248.0
+G1 X20.64 Y30.47 Z0.5 F1248.0
+G1 X20.0 Y30.55 Z0.5 F1248.0
+G1 X19.4 Y30.8 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.1 Y30.27 Z0.5 F1248.0
+M101
+G1 X18.46 Y30.76 Z0.5 F1248.0
+G1 X17.97 Y31.4 Z0.5 F1248.0
+G1 X17.66 Y32.14 Z0.5 F1248.0
+G1 X17.56 Y32.94 Z0.5 F1248.0
+G1 X17.66 Y33.74 Z0.5 F1248.0
+G1 X17.97 Y34.48 Z0.5 F1248.0
+G1 X18.46 Y35.12 Z0.5 F1248.0
+G1 X19.1 Y35.61 Z0.5 F1248.0
+G1 X19.84 Y35.92 Z0.5 F1248.0
+G1 X20.64 Y36.02 Z0.5 F1248.0
+G1 X21.44 Y35.92 Z0.5 F1248.0
+G1 X22.18 Y35.61 Z0.5 F1248.0
+G1 X22.82 Y35.12 Z0.5 F1248.0
+G1 X23.3 Y34.48 Z0.5 F1248.0
+G1 X23.61 Y33.74 Z0.5 F1248.0
+G1 X23.72 Y32.94 Z0.5 F1248.0
+G1 X23.61 Y32.14 Z0.5 F1248.0
+G1 X23.31 Y31.4 Z0.5 F1248.0
+G1 X22.82 Y30.76 Z0.5 F1248.0
+G1 X22.18 Y30.27 Z0.5 F1248.0
+G1 X21.44 Y29.97 Z0.5 F1248.0
+G1 X20.64 Y29.86 Z0.5 F1248.0
+G1 X19.84 Y29.97 Z0.5 F1248.0
+G1 X19.1 Y30.27 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X18.72 Y-17.58 Z0.5 F1920.0
+G1 X20.64 Y-30.47 Z0.5 F1248.0
+M101
+G1 X21.28 Y-30.55 Z0.5 F1248.0
+G1 X21.88 Y-30.8 Z0.5 F1248.0
+G1 X22.39 Y-31.19 Z0.5 F1248.0
+G1 X22.78 Y-31.7 Z0.5 F1248.0
+G1 X23.03 Y-32.3 Z0.5 F1248.0
+G1 X23.11 Y-32.94 Z0.5 F1248.0
+G1 X23.03 Y-33.58 Z0.5 F1248.0
+G1 X22.78 Y-34.18 Z0.5 F1248.0
+G1 X22.39 Y-34.69 Z0.5 F1248.0
+G1 X21.88 Y-35.08 Z0.5 F1248.0
+G1 X21.28 Y-35.33 Z0.5 F1248.0
+G1 X20.64 Y-35.42 Z0.5 F1248.0
+G1 X20.0 Y-35.33 Z0.5 F1248.0
+G1 X19.4 Y-35.08 Z0.5 F1248.0
+G1 X18.89 Y-34.69 Z0.5 F1248.0
+G1 X18.5 Y-34.18 Z0.5 F1248.0
+G1 X18.25 Y-33.58 Z0.5 F1248.0
+G1 X18.16 Y-32.94 Z0.5 F1248.0
+G1 X18.25 Y-32.3 Z0.5 F1248.0
+G1 X18.49 Y-31.7 Z0.5 F1248.0
+G1 X18.89 Y-31.19 Z0.5 F1248.0
+G1 X19.4 Y-30.8 Z0.5 F1248.0
+G1 X20.0 Y-30.55 Z0.5 F1248.0
+G1 X20.64 Y-30.47 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-29.86 Z0.5 F1248.0
+M101
+G1 X21.44 Y-29.97 Z0.5 F1248.0
+G1 X22.18 Y-30.27 Z0.5 F1248.0
+G1 X22.82 Y-30.76 Z0.5 F1248.0
+G1 X23.31 Y-31.4 Z0.5 F1248.0
+G1 X23.61 Y-32.14 Z0.5 F1248.0
+G1 X23.72 Y-32.94 Z0.5 F1248.0
+G1 X23.61 Y-33.74 Z0.5 F1248.0
+G1 X23.3 Y-34.48 Z0.5 F1248.0
+G1 X22.82 Y-35.12 Z0.5 F1248.0
+G1 X22.18 Y-35.61 Z0.5 F1248.0
+G1 X21.44 Y-35.92 Z0.5 F1248.0
+G1 X20.64 Y-36.02 Z0.5 F1248.0
+G1 X19.84 Y-35.92 Z0.5 F1248.0
+G1 X19.1 Y-35.61 Z0.5 F1248.0
+G1 X18.46 Y-35.12 Z0.5 F1248.0
+G1 X17.97 Y-34.48 Z0.5 F1248.0
+G1 X17.66 Y-33.74 Z0.5 F1248.0
+G1 X17.56 Y-32.94 Z0.5 F1248.0
+G1 X17.66 Y-32.14 Z0.5 F1248.0
+G1 X17.97 Y-31.4 Z0.5 F1248.0
+G1 X18.46 Y-30.76 Z0.5 F1248.0
+G1 X19.1 Y-30.27 Z0.5 F1248.0
+G1 X19.84 Y-29.97 Z0.5 F1248.0
+G1 X20.64 Y-29.86 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-19.54 Z0.5 F1248.0
+M101
+G1 X20.0 Y-19.46 Z0.5 F1248.0
+G1 X19.4 Y-19.21 Z0.5 F1248.0
+G1 X18.89 Y-18.82 Z0.5 F1248.0
+G1 X18.5 Y-18.3 Z0.5 F1248.0
+G1 X18.25 Y-17.71 Z0.5 F1248.0
+G1 X18.16 Y-17.07 Z0.5 F1248.0
+G1 X18.25 Y-16.43 Z0.5 F1248.0
+G1 X18.49 Y-15.83 Z0.5 F1248.0
+G1 X18.89 Y-15.32 Z0.5 F1248.0
+G1 X19.4 Y-14.92 Z0.5 F1248.0
+G1 X20.0 Y-14.68 Z0.5 F1248.0
+G1 X20.64 Y-14.59 Z0.5 F1248.0
+G1 X21.28 Y-14.68 Z0.5 F1248.0
+G1 X21.88 Y-14.92 Z0.5 F1248.0
+G1 X22.39 Y-15.32 Z0.5 F1248.0
+G1 X22.78 Y-15.83 Z0.5 F1248.0
+G1 X23.03 Y-16.43 Z0.5 F1248.0
+G1 X23.11 Y-17.07 Z0.5 F1248.0
+G1 X23.03 Y-17.71 Z0.5 F1248.0
+G1 X22.78 Y-18.3 Z0.5 F1248.0
+G1 X22.39 Y-18.82 Z0.5 F1248.0
+G1 X21.88 Y-19.21 Z0.5 F1248.0
+G1 X21.28 Y-19.46 Z0.5 F1248.0
+G1 X20.64 Y-19.54 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-20.15 Z0.5 F1248.0
+M101
+G1 X19.84 Y-20.04 Z0.5 F1248.0
+G1 X19.1 Y-19.73 Z0.5 F1248.0
+G1 X18.46 Y-19.24 Z0.5 F1248.0
+G1 X17.97 Y-18.61 Z0.5 F1248.0
+G1 X17.66 Y-17.86 Z0.5 F1248.0
+G1 X17.56 Y-17.07 Z0.5 F1248.0
+G1 X17.66 Y-16.27 Z0.5 F1248.0
+G1 X17.97 Y-15.53 Z0.5 F1248.0
+G1 X18.46 Y-14.89 Z0.5 F1248.0
+G1 X19.1 Y-14.4 Z0.5 F1248.0
+G1 X19.84 Y-14.09 Z0.5 F1248.0
+G1 X20.64 Y-13.99 Z0.5 F1248.0
+G1 X21.44 Y-14.09 Z0.5 F1248.0
+G1 X22.18 Y-14.4 Z0.5 F1248.0
+G1 X22.82 Y-14.89 Z0.5 F1248.0
+G1 X23.31 Y-15.53 Z0.5 F1248.0
+G1 X23.61 Y-16.27 Z0.5 F1248.0
+G1 X23.72 Y-17.07 Z0.5 F1248.0
+G1 X23.61 Y-17.86 Z0.5 F1248.0
+G1 X23.3 Y-18.61 Z0.5 F1248.0
+G1 X22.82 Y-19.24 Z0.5 F1248.0
+G1 X22.18 Y-19.73 Z0.5 F1248.0
+G1 X21.44 Y-20.04 Z0.5 F1248.0
+G1 X20.64 Y-20.15 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X33.45 Y-20.15 Z0.5 F1248.0
+M101
+G1 X33.45 Y31.25 Z0.5 F1248.0
+G1 X33.61 Y32.16 Z0.5 F1248.0
+G1 X33.0 Y31.8 Z0.5 F1248.0
+G1 X32.83 Y31.4 Z0.5 F1248.0
+G1 X32.34 Y30.76 Z0.5 F1248.0
+G1 X31.7 Y30.27 Z0.5 F1248.0
+G1 X30.96 Y29.97 Z0.5 F1248.0
+G1 X30.16 Y29.86 Z0.5 F1248.0
+G1 X29.37 Y29.97 Z0.5 F1248.0
+G1 X28.62 Y30.27 Z0.5 F1248.0
+G1 X27.98 Y30.76 Z0.5 F1248.0
+G1 X27.5 Y31.4 Z0.5 F1248.0
+G1 X27.19 Y32.14 Z0.5 F1248.0
+G1 X27.08 Y32.94 Z0.5 F1248.0
+G1 X27.19 Y33.74 Z0.5 F1248.0
+G1 X27.5 Y34.48 Z0.5 F1248.0
+G1 X27.98 Y35.12 Z0.5 F1248.0
+G1 X28.62 Y35.61 Z0.5 F1248.0
+G1 X29.37 Y35.92 Z0.5 F1248.0
+G1 X30.16 Y36.02 Z0.5 F1248.0
+G1 X30.96 Y35.92 Z0.5 F1248.0
+G1 X31.7 Y35.61 Z0.5 F1248.0
+G1 X32.34 Y35.12 Z0.5 F1248.0
+G1 X32.83 Y34.48 Z0.5 F1248.0
+G1 X32.87 Y34.37 Z0.5 F1248.0
+G1 X33.45 Y34.62 Z0.5 F1248.0
+G1 X33.45 Y36.62 Z0.5 F1248.0
+G1 X-33.45 Y36.62 Z0.5 F1248.0
+G1 X-33.45 Y34.62 Z0.5 F1248.0
+G1 X-32.87 Y34.37 Z0.5 F1248.0
+G1 X-32.83 Y34.48 Z0.5 F1248.0
+G1 X-32.34 Y35.12 Z0.5 F1248.0
+G1 X-31.7 Y35.61 Z0.5 F1248.0
+G1 X-30.96 Y35.92 Z0.5 F1248.0
+G1 X-30.16 Y36.02 Z0.5 F1248.0
+G1 X-29.37 Y35.92 Z0.5 F1248.0
+G1 X-28.62 Y35.61 Z0.5 F1248.0
+G1 X-27.98 Y35.12 Z0.5 F1248.0
+G1 X-27.5 Y34.48 Z0.5 F1248.0
+G1 X-27.19 Y33.74 Z0.5 F1248.0
+G1 X-27.08 Y32.94 Z0.5 F1248.0
+G1 X-27.19 Y32.14 Z0.5 F1248.0
+G1 X-27.5 Y31.4 Z0.5 F1248.0
+G1 X-27.98 Y30.76 Z0.5 F1248.0
+G1 X-28.62 Y30.27 Z0.5 F1248.0
+G1 X-29.37 Y29.97 Z0.5 F1248.0
+G1 X-30.16 Y29.86 Z0.5 F1248.0
+G1 X-30.96 Y29.97 Z0.5 F1248.0
+G1 X-31.7 Y30.27 Z0.5 F1248.0
+G1 X-32.34 Y30.76 Z0.5 F1248.0
+G1 X-32.83 Y31.4 Z0.5 F1248.0
+G1 X-33.0 Y31.8 Z0.5 F1248.0
+G1 X-33.61 Y32.16 Z0.5 F1248.0
+G1 X-33.45 Y31.25 Z0.5 F1248.0
+G1 X-33.45 Y-31.25 Z0.5 F1248.0
+G1 X-33.61 Y-32.16 Z0.5 F1248.0
+G1 X-32.99 Y-31.8 Z0.5 F1248.0
+G1 X-32.83 Y-31.4 Z0.5 F1248.0
+G1 X-32.34 Y-30.77 Z0.5 F1248.0
+G1 X-31.7 Y-30.28 Z0.5 F1248.0
+G1 X-30.96 Y-29.97 Z0.5 F1248.0
+G1 X-30.16 Y-29.86 Z0.5 F1248.0
+G1 X-29.37 Y-29.97 Z0.5 F1248.0
+G1 X-28.62 Y-30.28 Z0.5 F1248.0
+G1 X-27.99 Y-30.77 Z0.5 F1248.0
+G1 X-27.5 Y-31.4 Z0.5 F1248.0
+G1 X-27.19 Y-32.14 Z0.5 F1248.0
+G1 X-27.09 Y-32.94 Z0.5 F1248.0
+G1 X-27.19 Y-33.74 Z0.5 F1248.0
+G1 X-27.5 Y-34.48 Z0.5 F1248.0
+G1 X-27.99 Y-35.12 Z0.5 F1248.0
+G1 X-28.62 Y-35.6 Z0.5 F1248.0
+G1 X-29.37 Y-35.91 Z0.5 F1248.0
+G1 X-30.16 Y-36.02 Z0.5 F1248.0
+G1 X-30.96 Y-35.91 Z0.5 F1248.0
+G1 X-31.7 Y-35.6 Z0.5 F1248.0
+G1 X-32.34 Y-35.12 Z0.5 F1248.0
+G1 X-32.83 Y-34.48 Z0.5 F1248.0
+G1 X-32.87 Y-34.36 Z0.5 F1248.0
+G1 X-33.45 Y-34.62 Z0.5 F1248.0
+G1 X-33.45 Y-36.62 Z0.5 F1248.0
+G1 X33.45 Y-36.62 Z0.5 F1248.0
+G1 X33.45 Y-34.62 Z0.5 F1248.0
+G1 X32.87 Y-34.37 Z0.5 F1248.0
+G1 X32.83 Y-34.48 Z0.5 F1248.0
+G1 X32.34 Y-35.12 Z0.5 F1248.0
+G1 X31.7 Y-35.61 Z0.5 F1248.0
+G1 X30.96 Y-35.92 Z0.5 F1248.0
+G1 X30.16 Y-36.02 Z0.5 F1248.0
+G1 X29.37 Y-35.92 Z0.5 F1248.0
+G1 X28.62 Y-35.61 Z0.5 F1248.0
+G1 X27.98 Y-35.12 Z0.5 F1248.0
+G1 X27.5 Y-34.48 Z0.5 F1248.0
+G1 X27.19 Y-33.74 Z0.5 F1248.0
+G1 X27.08 Y-32.94 Z0.5 F1248.0
+G1 X27.19 Y-32.14 Z0.5 F1248.0
+G1 X27.5 Y-31.4 Z0.5 F1248.0
+G1 X27.98 Y-30.76 Z0.5 F1248.0
+G1 X28.62 Y-30.27 Z0.5 F1248.0
+G1 X29.37 Y-29.97 Z0.5 F1248.0
+G1 X30.16 Y-29.86 Z0.5 F1248.0
+G1 X30.96 Y-29.97 Z0.5 F1248.0
+G1 X31.7 Y-30.27 Z0.5 F1248.0
+G1 X32.34 Y-30.76 Z0.5 F1248.0
+G1 X32.83 Y-31.4 Z0.5 F1248.0
+G1 X33.0 Y-31.8 Z0.5 F1248.0
+G1 X33.61 Y-32.16 Z0.5 F1248.0
+G1 X33.45 Y-31.25 Z0.5 F1248.0
+G1 X33.45 Y-20.15 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-28.41 Y31.19 Z0.5 F1248.0
+M101
+G1 X-28.93 Y30.8 Z0.5 F1248.0
+G1 X-29.52 Y30.55 Z0.5 F1248.0
+G1 X-30.16 Y30.47 Z0.5 F1248.0
+G1 X-30.8 Y30.55 Z0.5 F1248.0
+G1 X-31.4 Y30.8 Z0.5 F1248.0
+G1 X-31.91 Y31.19 Z0.5 F1248.0
+G1 X-32.31 Y31.7 Z0.5 F1248.0
+G1 X-32.55 Y32.3 Z0.5 F1248.0
+G1 X-32.64 Y32.94 Z0.5 F1248.0
+G1 X-32.55 Y33.58 Z0.5 F1248.0
+G1 X-32.31 Y34.18 Z0.5 F1248.0
+G1 X-31.91 Y34.69 Z0.5 F1248.0
+G1 X-31.4 Y35.08 Z0.5 F1248.0
+G1 X-30.8 Y35.33 Z0.5 F1248.0
+G1 X-30.16 Y35.42 Z0.5 F1248.0
+G1 X-29.52 Y35.33 Z0.5 F1248.0
+G1 X-28.93 Y35.08 Z0.5 F1248.0
+G1 X-28.41 Y34.69 Z0.5 F1248.0
+G1 X-28.02 Y34.18 Z0.5 F1248.0
+G1 X-27.77 Y33.58 Z0.5 F1248.0
+G1 X-27.69 Y32.94 Z0.5 F1248.0
+G1 X-27.77 Y32.3 Z0.5 F1248.0
+G1 X-28.02 Y31.7 Z0.5 F1248.0
+G1 X-28.41 Y31.19 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-19.97 Y31.07 Z0.5 F1920.0
+G1 X18.68 Y32.62 Z0.5 F1920.0
+G1 X18.72 Y32.43 Z0.5 F1920.0
+G1 X18.91 Y31.95 Z0.5 F1920.0
+G1 X19.23 Y31.53 Z0.5 F1920.0
+G1 X19.64 Y31.22 Z0.5 F1920.0
+G1 X20.12 Y31.02 Z0.5 F1920.0
+G1 X20.64 Y30.95 Z0.5 F1920.0
+G1 X27.69 Y32.94 Z0.5 F1248.0
+M101
+G1 X27.77 Y33.58 Z0.5 F1248.0
+G1 X28.02 Y34.18 Z0.5 F1248.0
+G1 X28.41 Y34.69 Z0.5 F1248.0
+G1 X28.93 Y35.08 Z0.5 F1248.0
+G1 X29.52 Y35.33 Z0.5 F1248.0
+G1 X30.16 Y35.42 Z0.5 F1248.0
+G1 X30.8 Y35.33 Z0.5 F1248.0
+G1 X31.4 Y35.08 Z0.5 F1248.0
+G1 X31.91 Y34.69 Z0.5 F1248.0
+G1 X32.31 Y34.18 Z0.5 F1248.0
+G1 X32.55 Y33.58 Z0.5 F1248.0
+G1 X32.64 Y32.94 Z0.5 F1248.0
+G1 X32.55 Y32.3 Z0.5 F1248.0
+G1 X32.31 Y31.7 Z0.5 F1248.0
+G1 X31.91 Y31.19 Z0.5 F1248.0
+G1 X31.4 Y30.8 Z0.5 F1248.0
+G1 X30.8 Y30.55 Z0.5 F1248.0
+G1 X30.16 Y30.47 Z0.5 F1248.0
+G1 X29.52 Y30.55 Z0.5 F1248.0
+G1 X28.93 Y30.8 Z0.5 F1248.0
+G1 X28.41 Y31.19 Z0.5 F1248.0
+G1 X28.02 Y31.7 Z0.5 F1248.0
+G1 X27.77 Y32.3 Z0.5 F1248.0
+G1 X27.69 Y32.94 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X30.16 Y-30.47 Z0.5 F1248.0
+M101
+G1 X30.8 Y-30.55 Z0.5 F1248.0
+G1 X31.4 Y-30.8 Z0.5 F1248.0
+G1 X31.91 Y-31.19 Z0.5 F1248.0
+G1 X32.31 Y-31.7 Z0.5 F1248.0
+G1 X32.55 Y-32.3 Z0.5 F1248.0
+G1 X32.64 Y-32.94 Z0.5 F1248.0
+G1 X32.55 Y-33.58 Z0.5 F1248.0
+G1 X32.31 Y-34.18 Z0.5 F1248.0
+G1 X31.91 Y-34.69 Z0.5 F1248.0
+G1 X31.4 Y-35.08 Z0.5 F1248.0
+G1 X30.8 Y-35.33 Z0.5 F1248.0
+G1 X30.16 Y-35.42 Z0.5 F1248.0
+G1 X29.52 Y-35.33 Z0.5 F1248.0
+G1 X28.93 Y-35.08 Z0.5 F1248.0
+G1 X28.41 Y-34.69 Z0.5 F1248.0
+G1 X28.02 Y-34.18 Z0.5 F1248.0
+G1 X27.77 Y-33.58 Z0.5 F1248.0
+G1 X27.69 Y-32.94 Z0.5 F1248.0
+G1 X27.77 Y-32.3 Z0.5 F1248.0
+G1 X28.02 Y-31.7 Z0.5 F1248.0
+G1 X28.41 Y-31.19 Z0.5 F1248.0
+G1 X28.93 Y-30.8 Z0.5 F1248.0
+G1 X29.52 Y-30.55 Z0.5 F1248.0
+G1 X30.16 Y-30.47 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-0.52 Y-30.96 Z0.5 F1920.0
+G1 X-1.03 Y-31.16 Z0.5 F1920.0
+G1 X-1.45 Y-31.49 Z0.5 F1920.0
+G1 X-1.52 Y-31.56 Z0.5 F1920.0
+G1 X-18.7 Y-32.52 Z0.5 F1920.0
+G1 X-18.72 Y-32.43 Z0.5 F1920.0
+G1 X-18.91 Y-31.95 Z0.5 F1920.0
+G1 X-19.23 Y-31.53 Z0.5 F1920.0
+G1 X-19.64 Y-31.22 Z0.5 F1920.0
+G1 X-20.12 Y-31.02 Z0.5 F1920.0
+G1 X-20.64 Y-30.95 Z0.5 F1920.0
+G1 X-27.69 Y-32.94 Z0.5 F1248.0
+M101
+G1 X-27.78 Y-33.58 Z0.5 F1248.0
+G1 X-28.02 Y-34.18 Z0.5 F1248.0
+G1 X-28.41 Y-34.69 Z0.5 F1248.0
+G1 X-28.93 Y-35.08 Z0.5 F1248.0
+G1 X-29.52 Y-35.33 Z0.5 F1248.0
+G1 X-30.16 Y-35.41 Z0.5 F1248.0
+G1 X-30.8 Y-35.33 Z0.5 F1248.0
+G1 X-31.4 Y-35.08 Z0.5 F1248.0
+G1 X-31.91 Y-34.69 Z0.5 F1248.0
+G1 X-32.3 Y-34.18 Z0.5 F1248.0
+G1 X-32.55 Y-33.58 Z0.5 F1248.0
+G1 X-32.64 Y-32.94 Z0.5 F1248.0
+G1 X-32.55 Y-32.3 Z0.5 F1248.0
+G1 X-32.3 Y-31.7 Z0.5 F1248.0
+G1 X-31.91 Y-31.19 Z0.5 F1248.0
+G1 X-31.4 Y-30.8 Z0.5 F1248.0
+G1 X-30.8 Y-30.55 Z0.5 F1248.0
+G1 X-30.16 Y-30.47 Z0.5 F1248.0
+G1 X-29.52 Y-30.55 Z0.5 F1248.0
+G1 X-28.93 Y-30.8 Z0.5 F1248.0
+G1 X-28.41 Y-31.19 Z0.5 F1248.0
+G1 X-28.02 Y-31.7 Z0.5 F1248.0
+G1 X-27.78 Y-32.3 Z0.5 F1248.0
+G1 X-27.69 Y-32.94 Z0.5 F1248.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-27.69 Y-37.22 Z0.5 F1248.0
+M101
+G1 X34.05 Y-37.22 Z0.5 F1248.0
+G1 X34.05 Y37.22 Z0.5 F1248.0
+G1 X-34.05 Y37.22 Z0.5 F1248.0
+G1 X-34.05 Y-37.22 Z0.5 F1248.0
+G1 X-27.69 Y-37.22 Z0.5 F1248.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-27.69 Y-37.81 Z0.5 F1440.0
+M101
+G1 X34.64 Y-37.81 Z0.5 F1440.0
+G1 X34.64 Y37.81 Z0.5 F1440.0
+G1 X-34.64 Y37.81 Z0.5 F1440.0
+G1 X-34.64 Y-37.81 Z0.5 F1440.0
+G1 X-27.69 Y-37.81 Z0.5 F1440.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-29.042 Y-34.061 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-34.313 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-34.472 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-34.526 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-34.472 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-34.313 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-34.061 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-33.733 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-33.351 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.747 Y-32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-32.148 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-31.82 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-31.568 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-31.41 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-31.356 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-31.41 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-31.568 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-29.042 Y-31.82 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-32.148 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-28.578 Y-32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-33.351 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-33.733 Z0.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-29.22 Y-34.57 Z0.5 F1440.0
+M101
+G1 X-29.68 Y-34.76 Z0.5 F1440.0
+G1 X-30.16 Y-34.82 Z0.5 F1440.0
+G1 X-30.65 Y-34.75 Z0.5 F1440.0
+G1 X-31.1 Y-34.57 Z0.5 F1440.0
+G1 X-31.49 Y-34.27 Z0.5 F1440.0
+G1 X-31.79 Y-33.88 Z0.5 F1440.0
+G1 X-31.98 Y-33.43 Z0.5 F1440.0
+G1 X-32.04 Y-32.94 Z0.5 F1440.0
+G1 X-31.98 Y-32.45 Z0.5 F1440.0
+G1 X-31.79 Y-32.0 Z0.5 F1440.0
+G1 X-31.49 Y-31.61 Z0.5 F1440.0
+G1 X-31.1 Y-31.32 Z0.5 F1440.0
+G1 X-30.65 Y-31.13 Z0.5 F1440.0
+G1 X-30.16 Y-31.06 Z0.5 F1440.0
+G1 X-29.68 Y-31.13 Z0.5 F1440.0
+G1 X-29.22 Y-31.32 Z0.5 F1440.0
+G1 X-28.84 Y-31.61 Z0.5 F1440.0
+G1 X-28.54 Y-32.0 Z0.5 F1440.0
+G1 X-28.35 Y-32.45 Z0.5 F1440.0
+G1 X-28.29 Y-32.94 Z0.5 F1440.0
+G1 X-28.35 Y-33.43 Z0.5 F1440.0
+G1 X-28.54 Y-33.88 Z0.5 F1440.0
+G1 X-28.84 Y-34.27 Z0.5 F1440.0
+G1 X-29.22 Y-34.57 Z0.5 F1440.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-19.05 Y-32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-34.528 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y-32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-32.147 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-31.353 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-32.147 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-32.53 Z0.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.45 Y-33.43 Z0.5 F1440.0
+M101
+G1 X-22.52 Y-32.94 Z0.5 F1440.0
+G1 X-22.45 Y-32.45 Z0.5 F1440.0
+G1 X-22.27 Y-32.0 Z0.5 F1440.0
+G1 X-21.97 Y-31.61 Z0.5 F1440.0
+G1 X-21.58 Y-31.31 Z0.5 F1440.0
+G1 X-21.12 Y-31.12 Z0.5 F1440.0
+G1 X-20.64 Y-31.06 Z0.5 F1440.0
+G1 X-20.15 Y-31.12 Z0.5 F1440.0
+G1 X-19.7 Y-31.31 Z0.5 F1440.0
+G1 X-19.31 Y-31.61 Z0.5 F1440.0
+G1 X-19.01 Y-32.0 Z0.5 F1440.0
+G1 X-18.82 Y-32.45 Z0.5 F1440.0
+G1 X-18.76 Y-32.94 Z0.5 F1440.0
+G1 X-18.82 Y-33.43 Z0.5 F1440.0
+G1 X-19.01 Y-33.88 Z0.5 F1440.0
+G1 X-19.31 Y-34.27 Z0.5 F1440.0
+G1 X-19.7 Y-34.57 Z0.5 F1440.0
+G1 X-20.15 Y-34.76 Z0.5 F1440.0
+G1 X-20.64 Y-34.82 Z0.5 F1440.0
+G1 X-21.12 Y-34.76 Z0.5 F1440.0
+G1 X-21.58 Y-34.57 Z0.5 F1440.0
+G1 X-21.97 Y-34.27 Z0.5 F1440.0
+G1 X-22.27 Y-33.88 Z0.5 F1440.0
+G1 X-22.45 Y-33.43 Z0.5 F1440.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X1.167 Y-31.773 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-32.115 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-32.513 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.651 Y-32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-33.368 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-33.766 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.167 Y-34.108 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X0.826 Y-34.37 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-34.535 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-34.592 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-34.535 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-34.37 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-34.108 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-33.766 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-33.368 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.651 Y-32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-32.513 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-32.115 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-31.773 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-31.511 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-31.346 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-31.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-31.346 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X0.826 Y-31.511 Z0.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.05 Y-34.35 Z0.5 F1920.0
+G1 X-21.63 Y-34.66 Z0.5 F1920.0
+G1 X-21.15 Y-34.86 Z0.5 F1920.0
+G1 X-1.94 Y-32.94 Z0.5 F1440.0
+M101
+G1 X-1.88 Y-32.44 Z0.5 F1440.0
+G1 X-1.68 Y-31.97 Z0.5 F1440.0
+G1 X-1.37 Y-31.57 Z0.5 F1440.0
+G1 X-0.97 Y-31.26 Z0.5 F1440.0
+G1 X-0.5 Y-31.06 Z0.5 F1440.0
+G1 X0.0 Y-31.02 Z0.5 F1440.0
+G1 X0.5 Y-31.06 Z0.5 F1440.0
+G1 X0.97 Y-31.26 Z0.5 F1440.0
+G1 X1.37 Y-31.57 Z0.5 F1440.0
+G1 X1.68 Y-31.97 Z0.5 F1440.0
+G1 X1.88 Y-32.44 Z0.5 F1440.0
+G1 X1.94 Y-32.94 Z0.5 F1440.0
+G1 X1.88 Y-33.44 Z0.5 F1440.0
+G1 X1.68 Y-33.91 Z0.5 F1440.0
+G1 X1.37 Y-34.32 Z0.5 F1440.0
+G1 X0.97 Y-34.62 Z0.5 F1440.0
+G1 X0.5 Y-34.82 Z0.5 F1440.0
+G1 X0.0 Y-34.89 Z0.5 F1440.0
+G1 X-0.5 Y-34.82 Z0.5 F1440.0
+G1 X-0.97 Y-34.62 Z0.5 F1440.0
+G1 X-1.37 Y-34.32 Z0.5 F1440.0
+G1 X-1.68 Y-33.91 Z0.5 F1440.0
+G1 X-1.88 Y-33.44 Z0.5 F1440.0
+G1 X-1.94 Y-32.94 Z0.5 F1440.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-0.794 Y-18.44 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-18.188 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-17.859 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-17.477 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.587 Y-17.066 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-16.655 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-16.272 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-15.943 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-0.794 Y-15.691 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-15.532 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-15.478 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-15.532 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-15.691 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-15.943 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-16.272 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-16.655 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.588 Y-17.066 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-17.477 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-17.859 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-18.188 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-18.44 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-18.599 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-18.653 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-18.599 Z0.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X0.0 Y-18.95 Z0.5 F1440.0
+M101
+G1 X-0.49 Y-18.88 Z0.5 F1440.0
+G1 X-0.94 Y-18.69 Z0.5 F1440.0
+G1 X-1.33 Y-18.4 Z0.5 F1440.0
+G1 X-1.63 Y-18.01 Z0.5 F1440.0
+G1 X-1.82 Y-17.55 Z0.5 F1440.0
+G1 X-1.88 Y-17.07 Z0.5 F1440.0
+G1 X-1.82 Y-16.58 Z0.5 F1440.0
+G1 X-1.63 Y-16.13 Z0.5 F1440.0
+G1 X-1.33 Y-15.74 Z0.5 F1440.0
+G1 X-0.94 Y-15.44 Z0.5 F1440.0
+G1 X-0.49 Y-15.25 Z0.5 F1440.0
+G1 X0.0 Y-15.19 Z0.5 F1440.0
+G1 X0.49 Y-15.25 Z0.5 F1440.0
+G1 X0.94 Y-15.44 Z0.5 F1440.0
+G1 X1.33 Y-15.74 Z0.5 F1440.0
+G1 X1.63 Y-16.13 Z0.5 F1440.0
+G1 X1.82 Y-16.58 Z0.5 F1440.0
+G1 X1.88 Y-17.07 Z0.5 F1440.0
+G1 X1.82 Y-17.55 Z0.5 F1440.0
+G1 X1.63 Y-18.01 Z0.5 F1440.0
+G1 X1.33 Y-18.4 Z0.5 F1440.0
+G1 X0.94 Y-18.69 Z0.5 F1440.0
+G1 X0.49 Y-18.88 Z0.5 F1440.0
+G1 X0.0 Y-18.95 Z0.5 F1440.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y-18.44 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-18.188 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-17.859 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-17.477 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-17.066 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-16.655 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-16.272 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-15.943 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-15.691 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-15.532 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-15.478 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-15.532 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-15.691 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-15.943 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-16.272 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-16.655 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-17.066 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-17.477 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-17.859 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-18.188 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-18.44 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-18.599 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-18.653 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-18.599 Z0.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X18.76 Y-17.07 Z0.5 F1440.0
+M101
+G1 X18.82 Y-16.58 Z0.5 F1440.0
+G1 X19.01 Y-16.13 Z0.5 F1440.0
+G1 X19.31 Y-15.74 Z0.5 F1440.0
+G1 X19.7 Y-15.44 Z0.5 F1440.0
+G1 X20.15 Y-15.25 Z0.5 F1440.0
+G1 X20.64 Y-15.19 Z0.5 F1440.0
+G1 X21.12 Y-15.25 Z0.5 F1440.0
+G1 X21.58 Y-15.44 Z0.5 F1440.0
+G1 X21.97 Y-15.74 Z0.5 F1440.0
+G1 X22.27 Y-16.13 Z0.5 F1440.0
+G1 X22.45 Y-16.58 Z0.5 F1440.0
+G1 X22.52 Y-17.07 Z0.5 F1440.0
+G1 X22.45 Y-17.55 Z0.5 F1440.0
+G1 X22.27 Y-18.01 Z0.5 F1440.0
+G1 X21.97 Y-18.4 Z0.5 F1440.0
+G1 X21.58 Y-18.69 Z0.5 F1440.0
+G1 X21.12 Y-18.88 Z0.5 F1440.0
+G1 X20.64 Y-18.95 Z0.5 F1440.0
+G1 X20.15 Y-18.88 Z0.5 F1440.0
+G1 X19.7 Y-18.69 Z0.5 F1440.0
+G1 X19.31 Y-18.4 Z0.5 F1440.0
+G1 X19.01 Y-18.01 Z0.5 F1440.0
+G1 X18.82 Y-17.55 Z0.5 F1440.0
+G1 X18.76 Y-17.07 Z0.5 F1440.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X21.048 Y-31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-32.147 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-34.528 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-32.147 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-31.353 Z0.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X20.64 Y-31.06 Z0.5 F1440.0
+M101
+G1 X21.12 Y-31.12 Z0.5 F1440.0
+G1 X21.58 Y-31.31 Z0.5 F1440.0
+G1 X21.97 Y-31.61 Z0.5 F1440.0
+G1 X22.27 Y-32.0 Z0.5 F1440.0
+G1 X22.45 Y-32.45 Z0.5 F1440.0
+G1 X22.52 Y-32.94 Z0.5 F1440.0
+G1 X22.45 Y-33.43 Z0.5 F1440.0
+G1 X22.27 Y-33.88 Z0.5 F1440.0
+G1 X21.97 Y-34.27 Z0.5 F1440.0
+G1 X21.58 Y-34.57 Z0.5 F1440.0
+G1 X21.12 Y-34.76 Z0.5 F1440.0
+G1 X20.64 Y-34.82 Z0.5 F1440.0
+G1 X20.15 Y-34.76 Z0.5 F1440.0
+G1 X19.7 Y-34.57 Z0.5 F1440.0
+G1 X19.31 Y-34.27 Z0.5 F1440.0
+G1 X19.01 Y-33.88 Z0.5 F1440.0
+G1 X18.82 Y-33.43 Z0.5 F1440.0
+G1 X18.76 Y-32.94 Z0.5 F1440.0
+G1 X18.82 Y-32.45 Z0.5 F1440.0
+G1 X19.01 Y-32.0 Z0.5 F1440.0
+G1 X19.31 Y-31.61 Z0.5 F1440.0
+G1 X19.7 Y-31.31 Z0.5 F1440.0
+G1 X20.15 Y-31.12 Z0.5 F1440.0
+G1 X20.64 Y-31.06 Z0.5 F1440.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X29.04 Y-31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-31.353 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-32.147 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y-32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-34.528 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y-34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-32.147 Z0.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X28.35 Y-32.45 Z0.5 F1440.0
+M101
+G1 X28.54 Y-32.0 Z0.5 F1440.0
+G1 X28.83 Y-31.61 Z0.5 F1440.0
+G1 X29.22 Y-31.31 Z0.5 F1440.0
+G1 X29.68 Y-31.12 Z0.5 F1440.0
+G1 X30.16 Y-31.06 Z0.5 F1440.0
+G1 X30.65 Y-31.12 Z0.5 F1440.0
+G1 X31.1 Y-31.31 Z0.5 F1440.0
+G1 X31.49 Y-31.61 Z0.5 F1440.0
+G1 X31.79 Y-32.0 Z0.5 F1440.0
+G1 X31.98 Y-32.45 Z0.5 F1440.0
+G1 X32.04 Y-32.94 Z0.5 F1440.0
+G1 X31.98 Y-33.43 Z0.5 F1440.0
+G1 X31.79 Y-33.88 Z0.5 F1440.0
+G1 X31.49 Y-34.27 Z0.5 F1440.0
+G1 X31.1 Y-34.57 Z0.5 F1440.0
+G1 X30.65 Y-34.76 Z0.5 F1440.0
+G1 X30.16 Y-34.82 Z0.5 F1440.0
+G1 X29.68 Y-34.76 Z0.5 F1440.0
+G1 X29.22 Y-34.57 Z0.5 F1440.0
+G1 X28.83 Y-34.27 Z0.5 F1440.0
+G1 X28.54 Y-33.88 Z0.5 F1440.0
+G1 X28.35 Y-33.43 Z0.5 F1440.0
+G1 X28.28 Y-32.94 Z0.5 F1440.0
+G1 X28.35 Y-32.45 Z0.5 F1440.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X31.285 Y31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y31.353 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y32.147 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y34.528 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y32.147 Z0.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X30.16 Y31.06 Z0.5 F1440.0
+M101
+G1 X29.68 Y31.12 Z0.5 F1440.0
+G1 X29.22 Y31.31 Z0.5 F1440.0
+G1 X28.83 Y31.61 Z0.5 F1440.0
+G1 X28.54 Y32.0 Z0.5 F1440.0
+G1 X28.35 Y32.45 Z0.5 F1440.0
+G1 X28.28 Y32.94 Z0.5 F1440.0
+G1 X28.35 Y33.43 Z0.5 F1440.0
+G1 X28.54 Y33.88 Z0.5 F1440.0
+G1 X28.83 Y34.27 Z0.5 F1440.0
+G1 X29.22 Y34.57 Z0.5 F1440.0
+G1 X29.68 Y34.76 Z0.5 F1440.0
+G1 X30.16 Y34.82 Z0.5 F1440.0
+G1 X30.65 Y34.76 Z0.5 F1440.0
+G1 X31.1 Y34.57 Z0.5 F1440.0
+G1 X31.49 Y34.27 Z0.5 F1440.0
+G1 X31.79 Y33.88 Z0.5 F1440.0
+G1 X31.98 Y33.43 Z0.5 F1440.0
+G1 X32.04 Y32.94 Z0.5 F1440.0
+G1 X31.98 Y32.45 Z0.5 F1440.0
+G1 X31.79 Y32.0 Z0.5 F1440.0
+G1 X31.49 Y31.61 Z0.5 F1440.0
+G1 X31.1 Y31.31 Z0.5 F1440.0
+G1 X30.65 Y31.12 Z0.5 F1440.0
+G1 X30.16 Y31.06 Z0.5 F1440.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y34.528 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y32.147 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y31.353 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y32.147 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y34.063 Z0.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.45 Y32.45 Z0.5 F1440.0
+M101
+G1 X22.27 Y32.0 Z0.5 F1440.0
+G1 X21.97 Y31.61 Z0.5 F1440.0
+G1 X21.58 Y31.31 Z0.5 F1440.0
+G1 X21.12 Y31.12 Z0.5 F1440.0
+G1 X20.64 Y31.06 Z0.5 F1440.0
+G1 X20.15 Y31.12 Z0.5 F1440.0
+G1 X19.7 Y31.31 Z0.5 F1440.0
+G1 X19.31 Y31.61 Z0.5 F1440.0
+G1 X19.01 Y32.0 Z0.5 F1440.0
+G1 X18.82 Y32.45 Z0.5 F1440.0
+G1 X18.76 Y32.94 Z0.5 F1440.0
+G1 X18.82 Y33.43 Z0.5 F1440.0
+G1 X19.01 Y33.88 Z0.5 F1440.0
+G1 X19.31 Y34.27 Z0.5 F1440.0
+G1 X19.7 Y34.57 Z0.5 F1440.0
+G1 X20.15 Y34.76 Z0.5 F1440.0
+G1 X20.64 Y34.82 Z0.5 F1440.0
+G1 X21.12 Y34.76 Z0.5 F1440.0
+G1 X21.58 Y34.57 Z0.5 F1440.0
+G1 X21.97 Y34.27 Z0.5 F1440.0
+G1 X22.27 Y33.88 Z0.5 F1440.0
+G1 X22.45 Y33.43 Z0.5 F1440.0
+G1 X22.52 Y32.94 Z0.5 F1440.0
+G1 X22.45 Y32.45 Z0.5 F1440.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-22.171 Y32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y34.528 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.05 Y32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y32.147 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y31.353 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y32.147 Z0.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.05 Y31.53 Z0.5 F1920.0
+G1 X21.63 Y31.22 Z0.5 F1920.0
+G1 X21.15 Y31.02 Z0.5 F1920.0
+G1 X-18.76 Y32.94 Z0.5 F1440.0
+M101
+G1 X-18.82 Y32.45 Z0.5 F1440.0
+G1 X-19.01 Y32.0 Z0.5 F1440.0
+G1 X-19.31 Y31.61 Z0.5 F1440.0
+G1 X-19.7 Y31.31 Z0.5 F1440.0
+G1 X-20.15 Y31.12 Z0.5 F1440.0
+G1 X-20.64 Y31.06 Z0.5 F1440.0
+G1 X-21.12 Y31.12 Z0.5 F1440.0
+G1 X-21.58 Y31.31 Z0.5 F1440.0
+G1 X-21.97 Y31.61 Z0.5 F1440.0
+G1 X-22.27 Y32.0 Z0.5 F1440.0
+G1 X-22.45 Y32.45 Z0.5 F1440.0
+G1 X-22.52 Y32.94 Z0.5 F1440.0
+G1 X-22.45 Y33.43 Z0.5 F1440.0
+G1 X-22.27 Y33.88 Z0.5 F1440.0
+G1 X-21.97 Y34.27 Z0.5 F1440.0
+G1 X-21.58 Y34.57 Z0.5 F1440.0
+G1 X-21.12 Y34.76 Z0.5 F1440.0
+G1 X-20.64 Y34.82 Z0.5 F1440.0
+G1 X-20.15 Y34.76 Z0.5 F1440.0
+G1 X-19.7 Y34.57 Z0.5 F1440.0
+G1 X-19.31 Y34.27 Z0.5 F1440.0
+G1 X-19.01 Y33.88 Z0.5 F1440.0
+G1 X-18.82 Y33.43 Z0.5 F1440.0
+G1 X-18.76 Y32.94 Z0.5 F1440.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-28.788 Y32.147 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y31.353 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y31.407 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y31.566 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y31.818 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y32.147 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y32.53 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.75 Y32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y34.528 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y34.474 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y34.315 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y34.063 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-28.788 Y33.734 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y33.352 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y32.941 Z0.5 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y32.53 Z0.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-18.91 Y33.94 Z0.5 F1920.0
+G1 X-19.23 Y34.35 Z0.5 F1920.0
+G1 X-19.64 Y34.66 Z0.5 F1920.0
+G1 X-20.12 Y34.86 Z0.5 F1920.0
+G1 X-20.64 Y34.93 Z0.5 F1920.0
+G1 X-28.28 Y32.94 Z0.5 F1440.0
+M101
+G1 X-28.35 Y32.45 Z0.5 F1440.0
+G1 X-28.54 Y32.0 Z0.5 F1440.0
+G1 X-28.83 Y31.61 Z0.5 F1440.0
+G1 X-29.22 Y31.31 Z0.5 F1440.0
+G1 X-29.68 Y31.12 Z0.5 F1440.0
+G1 X-30.16 Y31.06 Z0.5 F1440.0
+G1 X-30.65 Y31.12 Z0.5 F1440.0
+G1 X-31.1 Y31.31 Z0.5 F1440.0
+G1 X-31.49 Y31.61 Z0.5 F1440.0
+G1 X-31.79 Y32.0 Z0.5 F1440.0
+G1 X-31.98 Y32.45 Z0.5 F1440.0
+G1 X-32.04 Y32.94 Z0.5 F1440.0
+G1 X-31.98 Y33.43 Z0.5 F1440.0
+G1 X-31.79 Y33.88 Z0.5 F1440.0
+G1 X-31.49 Y34.27 Z0.5 F1440.0
+G1 X-31.1 Y34.57 Z0.5 F1440.0
+G1 X-30.65 Y34.76 Z0.5 F1440.0
+G1 X-30.16 Y34.82 Z0.5 F1440.0
+G1 X-29.68 Y34.76 Z0.5 F1440.0
+G1 X-29.22 Y34.57 Z0.5 F1440.0
+G1 X-28.83 Y34.27 Z0.5 F1440.0
+G1 X-28.54 Y33.88 Z0.5 F1440.0
+G1 X-28.35 Y33.43 Z0.5 F1440.0
+G1 X-28.28 Y32.94 Z0.5 F1440.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+G1 X-25.2 Y-36.23 Z0.5 F1248.0
+M101
+G1 X-25.2 Y36.23 Z0.5 F1248.0
+G1 X-25.8 Y36.23 Z0.5 F1248.0
+G1 X-25.8 Y-36.23 Z0.5 F1248.0
+G1 X-26.4 Y-36.23 Z0.5 F1248.0
+G1 X-26.4 Y36.23 Z0.5 F1248.0
+G1 X-27.0 Y36.23 Z0.5 F1248.0
+G1 X-27.0 Y34.31 Z0.5 F1248.0
+M103
+G1 X-27.6 Y35.26 Z0.5 F1248.0
+M101
+G1 X-27.6 Y36.23 Z0.5 F1248.0
+G1 X-28.2 Y36.23 Z0.5 F1248.0
+G1 X-28.2 Y35.78 Z0.5 F1248.0
+G1 X-28.8 Y36.1 Z0.5 F1248.0
+G1 X-28.8 Y36.23 Z0.5 F1248.0
+M103
+G1 X-31.2 Y36.25 Z0.5 F1248.0
+M101
+G1 X-31.2 Y36.29 Z0.5 F1248.0
+G1 X-31.8 Y36.23 Z0.5 F1248.0
+G1 X-31.8 Y35.99 Z0.5 F1248.0
+G1 X-32.4 Y36.23 Z0.5 F1248.0
+G1 X-32.4 Y35.56 Z0.5 F1248.0
+G1 X-33.0 Y34.92 Z0.5 F1248.0
+G1 X-33.0 Y36.23 Z0.5 F1248.0
+M103
+G1 X-33.0 Y30.96 Z0.5 F1248.0
+M101
+G1 X-33.0 Y-30.96 Z0.5 F1248.0
+G1 X-32.4 Y-30.32 Z0.5 F1248.0
+G1 X-32.4 Y30.32 Z0.5 F1248.0
+G1 X-31.8 Y29.89 Z0.5 F1248.0
+G1 X-31.8 Y-29.89 Z0.5 F1248.0
+M103
+G1 X-31.2 Y-29.65 Z0.5 F1248.0
+M101
+G1 X-31.2 Y29.64 Z0.5 F1248.0
+M103
+G1 X-30.6 Y29.52 Z0.5 F1248.0
+M101
+G1 X-30.6 Y-29.53 Z0.5 F1248.0
+G1 X-30.0 Y-29.49 Z0.5 F1248.0
+G1 X-30.0 Y29.49 Z0.5 F1248.0
+G1 X-29.4 Y29.57 Z0.5 F1248.0
+G1 X-29.4 Y-29.57 Z0.5 F1248.0
+M103
+G1 X-28.8 Y-29.78 Z0.5 F1248.0
+M101
+G1 X-28.8 Y29.78 Z0.5 F1248.0
+M103
+G1 X-28.2 Y30.11 Z0.5 F1248.0
+M101
+G1 X-28.2 Y-30.11 Z0.5 F1248.0
+G1 X-27.6 Y-30.63 Z0.5 F1248.0
+G1 X-27.6 Y30.62 Z0.5 F1248.0
+M103
+G1 X-27.0 Y31.58 Z0.5 F1248.0
+M101
+G1 X-27.0 Y-31.58 Z0.5 F1248.0
+M103
+G1 X-27.0 Y-34.3 Z0.5 F1248.0
+M101
+G1 X-27.0 Y-36.23 Z0.5 F1248.0
+G1 X-27.6 Y-36.23 Z0.5 F1248.0
+G1 X-27.6 Y-35.25 Z0.5 F1248.0
+G1 X-28.2 Y-35.77 Z0.5 F1248.0
+G1 X-28.2 Y-36.23 Z0.5 F1248.0
+G1 X-28.8 Y-36.23 Z0.5 F1248.0
+G1 X-28.8 Y-36.1 Z0.5 F1248.0
+M103
+G1 X-31.2 Y-36.25 Z0.5 F1248.0
+M101
+G1 X-31.2 Y-36.29 Z0.5 F1248.0
+G1 X-31.8 Y-36.23 Z0.5 F1248.0
+G1 X-31.8 Y-35.99 Z0.5 F1248.0
+G1 X-32.4 Y-36.23 Z0.5 F1248.0
+G1 X-32.4 Y-35.56 Z0.5 F1248.0
+G1 X-33.0 Y-34.92 Z0.5 F1248.0
+G1 X-33.0 Y-36.23 Z0.5 F1248.0
+M103
+G1 X-24.6 Y36.23 Z0.5 F1248.0
+M101
+G1 X-24.6 Y-36.23 Z0.5 F1248.0
+G1 X-24.0 Y-36.23 Z0.5 F1248.0
+G1 X-24.0 Y-33.79 Z0.5 F1248.0
+M103
+G1 X-23.4 Y-35.0 Z0.5 F1248.0
+M101
+G1 X-23.4 Y-36.23 Z0.5 F1248.0
+G1 X-22.8 Y-36.23 Z0.5 F1248.0
+G1 X-22.8 Y-35.62 Z0.5 F1248.0
+G1 X-22.2 Y-36.02 Z0.5 F1248.0
+G1 X-22.2 Y-36.23 Z0.5 F1248.0
+M103
+G1 X-19.2 Y-36.23 Z0.5 F1248.0
+M101
+G1 X-19.2 Y-36.07 Z0.5 F1248.0
+G1 X-18.6 Y-36.23 Z0.5 F1248.0
+G1 X-18.6 Y-35.72 Z0.5 F1248.0
+G1 X-18.0 Y-36.23 Z0.5 F1248.0
+G1 X-18.0 Y-35.16 Z0.5 F1248.0
+G1 X-17.4 Y-36.23 Z0.5 F1248.0
+G1 X-17.4 Y-34.12 Z0.5 F1248.0
+M103
+G1 X-17.4 Y-31.76 Z0.5 F1248.0
+M101
+G1 X-17.4 Y31.76 Z0.5 F1248.0
+M103
+G1 X-18.0 Y30.72 Z0.5 F1248.0
+M101
+G1 X-18.0 Y-30.72 Z0.5 F1248.0
+M103
+G1 X-19.8 Y-29.58 Z0.5 F1248.0
+M101
+G1 X-19.8 Y29.58 Z0.5 F1248.0
+G1 X-19.2 Y29.81 Z0.5 F1248.0
+G1 X-19.2 Y-29.81 Z0.5 F1248.0
+G1 X-18.6 Y-30.16 Z0.5 F1248.0
+G1 X-18.6 Y30.16 Z0.5 F1248.0
+M103
+G1 X-21.6 Y29.61 Z0.5 F1248.0
+M101
+G1 X-21.6 Y-29.61 Z0.5 F1248.0
+M103
+G1 X-21.0 Y-29.52 Z0.5 F1248.0
+M101
+G1 X-21.0 Y29.52 Z0.5 F1248.0
+G1 X-20.4 Y29.5 Z0.5 F1248.0
+G1 X-20.4 Y-29.5 Z0.5 F1248.0
+M103
+G1 X-22.2 Y-29.86 Z0.5 F1248.0
+M101
+G1 X-22.2 Y29.86 Z0.5 F1248.0
+M103
+G1 X-24.0 Y32.1 Z0.5 F1248.0
+M101
+G1 X-24.0 Y-32.1 Z0.5 F1248.0
+M103
+G1 X-23.4 Y-30.88 Z0.5 F1248.0
+M101
+G1 X-23.4 Y30.88 Z0.5 F1248.0
+G1 X-22.8 Y30.26 Z0.5 F1248.0
+G1 X-22.8 Y-30.26 Z0.5 F1248.0
+M103
+G1 X-3.0 Y-18.81 Z0.5 F1248.0
+M101
+G1 X-3.0 Y-31.09 Z0.5 F1248.0
+M103
+G1 X-2.4 Y-30.36 Z0.5 F1248.0
+M101
+G1 X-2.4 Y-19.57 Z0.5 F1248.0
+G1 X-1.8 Y-20.02 Z0.5 F1248.0
+G1 X-1.8 Y-29.9 Z0.5 F1248.0
+M103
+G1 X-1.2 Y-29.64 Z0.5 F1248.0
+M101
+G1 X-1.2 Y-20.3 Z0.5 F1248.0
+M103
+G1 X-0.6 Y-20.46 Z0.5 F1248.0
+M101
+G1 X-0.6 Y-29.48 Z0.5 F1248.0
+M103
+G1 X0.0 Y-29.44 Z0.5 F1248.0
+M101
+G1 X0.0 Y-20.54 Z0.5 F1248.0
+M103
+G1 X0.6 Y-20.46 Z0.5 F1248.0
+M101
+G1 X0.6 Y-29.48 Z0.5 F1248.0
+M103
+G1 X1.2 Y-29.64 Z0.5 F1248.0
+M101
+G1 X1.2 Y-20.3 Z0.5 F1248.0
+M103
+G1 X1.8 Y-20.02 Z0.5 F1248.0
+M101
+G1 X1.8 Y-29.9 Z0.5 F1248.0
+G1 X2.4 Y-30.36 Z0.5 F1248.0
+G1 X2.4 Y-19.57 Z0.5 F1248.0
+M103
+G1 X3.0 Y-18.81 Z0.5 F1248.0
+M101
+G1 X3.0 Y-31.09 Z0.5 F1248.0
+M103
+G1 X3.0 Y-34.79 Z0.5 F1248.0
+M101
+G1 X3.0 Y-36.23 Z0.5 F1248.0
+G1 X2.4 Y-36.23 Z0.5 F1248.0
+G1 X2.4 Y-35.52 Z0.5 F1248.0
+G1 X1.8 Y-35.98 Z0.5 F1248.0
+G1 X1.8 Y-36.23 Z0.5 F1248.0
+M103
+G1 X-1.8 Y-36.23 Z0.5 F1248.0
+M101
+G1 X-1.8 Y-35.98 Z0.5 F1248.0
+G1 X-2.4 Y-36.23 Z0.5 F1248.0
+G1 X-2.4 Y-35.52 Z0.5 F1248.0
+G1 X-3.0 Y-36.23 Z0.5 F1248.0
+G1 X-3.0 Y-34.79 Z0.5 F1248.0
+M103
+G1 X-3.6 Y-36.23 Z0.5 F1248.0
+M101
+G1 X-3.6 Y36.23 Z0.5 F1248.0
+G1 X-4.2 Y36.23 Z0.5 F1248.0
+G1 X-4.2 Y-36.23 Z0.5 F1248.0
+G1 X-4.8 Y-36.23 Z0.5 F1248.0
+G1 X-4.8 Y36.23 Z0.5 F1248.0
+G1 X-5.4 Y36.23 Z0.5 F1248.0
+G1 X-5.4 Y-36.23 Z0.5 F1248.0
+G1 X-6.0 Y-36.23 Z0.5 F1248.0
+G1 X-6.0 Y36.23 Z0.5 F1248.0
+G1 X-6.6 Y36.23 Z0.5 F1248.0
+G1 X-6.6 Y-36.23 Z0.5 F1248.0
+G1 X-7.2 Y-36.23 Z0.5 F1248.0
+G1 X-7.2 Y36.23 Z0.5 F1248.0
+G1 X-7.8 Y36.23 Z0.5 F1248.0
+G1 X-7.8 Y-36.23 Z0.5 F1248.0
+G1 X-8.4 Y-36.23 Z0.5 F1248.0
+G1 X-8.4 Y36.23 Z0.5 F1248.0
+G1 X-9.0 Y36.23 Z0.5 F1248.0
+G1 X-9.0 Y-36.23 Z0.5 F1248.0
+G1 X-9.6 Y-36.23 Z0.5 F1248.0
+G1 X-9.6 Y36.23 Z0.5 F1248.0
+G1 X-10.2 Y36.23 Z0.5 F1248.0
+G1 X-10.2 Y-36.23 Z0.5 F1248.0
+G1 X-10.8 Y-36.23 Z0.5 F1248.0
+G1 X-10.8 Y36.23 Z0.5 F1248.0
+G1 X-11.4 Y36.23 Z0.5 F1248.0
+G1 X-11.4 Y-36.23 Z0.5 F1248.0
+G1 X-12.0 Y-36.23 Z0.5 F1248.0
+G1 X-12.0 Y36.23 Z0.5 F1248.0
+G1 X-12.6 Y36.23 Z0.5 F1248.0
+G1 X-12.6 Y-36.23 Z0.5 F1248.0
+G1 X-13.2 Y-36.23 Z0.5 F1248.0
+G1 X-13.2 Y36.23 Z0.5 F1248.0
+G1 X-13.8 Y36.23 Z0.5 F1248.0
+G1 X-13.8 Y-36.23 Z0.5 F1248.0
+G1 X-14.4 Y-36.23 Z0.5 F1248.0
+G1 X-14.4 Y36.23 Z0.5 F1248.0
+G1 X-15.0 Y36.23 Z0.5 F1248.0
+G1 X-15.0 Y-36.23 Z0.5 F1248.0
+G1 X-15.6 Y-36.23 Z0.5 F1248.0
+G1 X-15.6 Y36.23 Z0.5 F1248.0
+G1 X-16.2 Y36.23 Z0.5 F1248.0
+G1 X-16.2 Y-36.23 Z0.5 F1248.0
+G1 X-16.8 Y-36.23 Z0.5 F1248.0
+G1 X-16.8 Y36.23 Z0.5 F1248.0
+G1 X-17.4 Y36.23 Z0.5 F1248.0
+G1 X-17.4 Y34.12 Z0.5 F1248.0
+M103
+G1 X-18.0 Y35.16 Z0.5 F1248.0
+M101
+G1 X-18.0 Y36.23 Z0.5 F1248.0
+G1 X-18.6 Y36.23 Z0.5 F1248.0
+G1 X-18.6 Y35.72 Z0.5 F1248.0
+G1 X-19.2 Y36.07 Z0.5 F1248.0
+G1 X-19.2 Y36.23 Z0.5 F1248.0
+M103
+G1 X-22.2 Y36.23 Z0.5 F1248.0
+M101
+G1 X-22.2 Y36.02 Z0.5 F1248.0
+G1 X-22.8 Y36.23 Z0.5 F1248.0
+G1 X-22.8 Y35.62 Z0.5 F1248.0
+G1 X-23.4 Y36.23 Z0.5 F1248.0
+G1 X-23.4 Y35.0 Z0.5 F1248.0
+G1 X-24.0 Y36.23 Z0.5 F1248.0
+G1 X-24.0 Y33.79 Z0.5 F1248.0
+M103
+G1 X-20.64 Y34.93 Z0.5 F1920.0
+G1 X16.2 Y36.23 Z0.5 F1248.0
+M101
+G1 X16.2 Y-36.23 Z0.5 F1248.0
+G1 X15.6 Y-36.23 Z0.5 F1248.0
+G1 X15.6 Y36.23 Z0.5 F1248.0
+G1 X15.0 Y36.23 Z0.5 F1248.0
+G1 X15.0 Y-36.23 Z0.5 F1248.0
+G1 X14.4 Y-36.23 Z0.5 F1248.0
+G1 X14.4 Y36.23 Z0.5 F1248.0
+G1 X13.8 Y36.23 Z0.5 F1248.0
+G1 X13.8 Y-36.23 Z0.5 F1248.0
+G1 X13.2 Y-36.23 Z0.5 F1248.0
+G1 X13.2 Y36.23 Z0.5 F1248.0
+G1 X12.6 Y36.23 Z0.5 F1248.0
+G1 X12.6 Y-36.23 Z0.5 F1248.0
+G1 X12.0 Y-36.23 Z0.5 F1248.0
+G1 X12.0 Y36.23 Z0.5 F1248.0
+G1 X11.4 Y36.23 Z0.5 F1248.0
+G1 X11.4 Y-36.23 Z0.5 F1248.0
+G1 X10.8 Y-36.23 Z0.5 F1248.0
+G1 X10.8 Y36.23 Z0.5 F1248.0
+G1 X10.2 Y36.23 Z0.5 F1248.0
+G1 X10.2 Y-36.23 Z0.5 F1248.0
+G1 X9.6 Y-36.23 Z0.5 F1248.0
+G1 X9.6 Y36.23 Z0.5 F1248.0
+G1 X9.0 Y36.23 Z0.5 F1248.0
+G1 X9.0 Y-36.23 Z0.5 F1248.0
+G1 X8.4 Y-36.23 Z0.5 F1248.0
+G1 X8.4 Y36.23 Z0.5 F1248.0
+G1 X7.8 Y36.23 Z0.5 F1248.0
+G1 X7.8 Y-36.23 Z0.5 F1248.0
+G1 X7.2 Y-36.23 Z0.5 F1248.0
+G1 X7.2 Y36.23 Z0.5 F1248.0
+G1 X6.6 Y36.23 Z0.5 F1248.0
+G1 X6.6 Y-36.23 Z0.5 F1248.0
+G1 X6.0 Y-36.23 Z0.5 F1248.0
+G1 X6.0 Y36.23 Z0.5 F1248.0
+G1 X5.4 Y36.23 Z0.5 F1248.0
+G1 X5.4 Y-36.23 Z0.5 F1248.0
+G1 X4.8 Y-36.23 Z0.5 F1248.0
+G1 X4.8 Y36.23 Z0.5 F1248.0
+G1 X4.2 Y36.23 Z0.5 F1248.0
+G1 X4.2 Y-36.23 Z0.5 F1248.0
+G1 X3.6 Y-36.23 Z0.5 F1248.0
+G1 X3.6 Y36.23 Z0.5 F1248.0
+G1 X3.0 Y36.23 Z0.5 F1248.0
+G1 X3.0 Y-15.32 Z0.5 F1248.0
+G1 X2.4 Y-14.57 Z0.5 F1248.0
+G1 X2.4 Y36.23 Z0.5 F1248.0
+G1 X1.8 Y36.23 Z0.5 F1248.0
+G1 X1.8 Y-14.11 Z0.5 F1248.0
+M103
+G1 X1.2 Y-13.84 Z0.5 F1248.0
+M101
+G1 X1.2 Y36.23 Z0.5 F1248.0
+G1 X0.6 Y36.23 Z0.5 F1248.0
+G1 X0.6 Y-13.67 Z0.5 F1248.0
+M103
+G1 X0.0 Y-13.59 Z0.5 F1248.0
+M101
+G1 X0.0 Y36.23 Z0.5 F1248.0
+G1 X-0.6 Y36.23 Z0.5 F1248.0
+G1 X-0.6 Y-13.67 Z0.5 F1248.0
+M103
+G1 X-1.2 Y-13.84 Z0.5 F1248.0
+M101
+G1 X-1.2 Y36.23 Z0.5 F1248.0
+G1 X-1.8 Y36.23 Z0.5 F1248.0
+G1 X-1.8 Y-14.11 Z0.5 F1248.0
+G1 X-2.4 Y-14.57 Z0.5 F1248.0
+G1 X-2.4 Y36.23 Z0.5 F1248.0
+G1 X-3.0 Y36.23 Z0.5 F1248.0
+G1 X-3.0 Y-15.32 Z0.5 F1248.0
+M103
+G1 X17.4 Y-15.88 Z0.5 F1248.0
+M101
+G1 X17.4 Y31.76 Z0.5 F1248.0
+M103
+G1 X18.0 Y30.72 Z0.5 F1248.0
+M101
+G1 X18.0 Y-14.85 Z0.5 F1248.0
+G1 X18.6 Y-14.29 Z0.5 F1248.0
+G1 X18.6 Y30.16 Z0.5 F1248.0
+G1 X19.2 Y29.81 Z0.5 F1248.0
+G1 X19.2 Y-13.93 Z0.5 F1248.0
+M103
+G1 X19.8 Y-13.7 Z0.5 F1248.0
+M101
+G1 X19.8 Y29.58 Z0.5 F1248.0
+M103
+G1 X20.4 Y29.5 Z0.5 F1248.0
+M101
+G1 X20.4 Y-13.62 Z0.5 F1248.0
+G1 X21.0 Y-13.64 Z0.5 F1248.0
+G1 X21.0 Y29.52 Z0.5 F1248.0
+M103
+G1 X21.6 Y29.61 Z0.5 F1248.0
+M101
+G1 X21.6 Y-13.74 Z0.5 F1248.0
+G1 X22.2 Y-13.99 Z0.5 F1248.0
+G1 X22.2 Y29.86 Z0.5 F1248.0
+M103
+G1 X22.8 Y30.26 Z0.5 F1248.0
+M101
+G1 X22.8 Y-14.38 Z0.5 F1248.0
+G1 X23.4 Y-15.01 Z0.5 F1248.0
+G1 X23.4 Y30.88 Z0.5 F1248.0
+M103
+G1 X24.0 Y32.1 Z0.5 F1248.0
+M101
+G1 X24.0 Y-16.22 Z0.5 F1248.0
+M103
+G1 X24.0 Y-32.1 Z0.5 F1248.0
+M101
+G1 X24.0 Y-17.91 Z0.5 F1248.0
+M103
+G1 X23.4 Y-19.12 Z0.5 F1248.0
+M101
+G1 X23.4 Y-30.88 Z0.5 F1248.0
+G1 X22.8 Y-30.26 Z0.5 F1248.0
+G1 X22.8 Y-19.75 Z0.5 F1248.0
+M103
+G1 X22.2 Y-20.15 Z0.5 F1248.0
+M101
+G1 X22.2 Y-29.86 Z0.5 F1248.0
+M103
+G1 X21.6 Y-29.61 Z0.5 F1248.0
+M101
+G1 X21.6 Y-20.4 Z0.5 F1248.0
+G1 X21.0 Y-20.49 Z0.5 F1248.0
+G1 X21.0 Y-29.52 Z0.5 F1248.0
+G1 X20.4 Y-29.5 Z0.5 F1248.0
+G1 X20.4 Y-20.51 Z0.5 F1248.0
+G1 X19.8 Y-20.43 Z0.5 F1248.0
+G1 X19.8 Y-29.58 Z0.5 F1248.0
+G1 X19.2 Y-29.81 Z0.5 F1248.0
+G1 X19.2 Y-20.2 Z0.5 F1248.0
+M103
+G1 X17.4 Y-18.25 Z0.5 F1248.0
+M101
+G1 X17.4 Y-31.76 Z0.5 F1248.0
+M103
+G1 X18.6 Y-30.16 Z0.5 F1248.0
+M101
+G1 X18.6 Y-19.84 Z0.5 F1248.0
+G1 X18.0 Y-19.29 Z0.5 F1248.0
+G1 X18.0 Y-30.72 Z0.5 F1248.0
+M103
+G1 X17.4 Y-34.12 Z0.5 F1248.0
+M101
+G1 X17.4 Y-36.23 Z0.5 F1248.0
+G1 X18.0 Y-36.23 Z0.5 F1248.0
+G1 X18.0 Y-35.16 Z0.5 F1248.0
+G1 X18.6 Y-35.72 Z0.5 F1248.0
+G1 X18.6 Y-36.23 Z0.5 F1248.0
+G1 X19.2 Y-36.23 Z0.5 F1248.0
+G1 X19.2 Y-36.07 Z0.5 F1248.0
+M103
+G1 X16.8 Y-36.23 Z0.5 F1248.0
+M101
+G1 X16.8 Y36.23 Z0.5 F1248.0
+G1 X17.4 Y36.23 Z0.5 F1248.0
+G1 X17.4 Y34.12 Z0.5 F1248.0
+M103
+G1 X18.0 Y35.16 Z0.5 F1248.0
+M101
+G1 X18.0 Y36.23 Z0.5 F1248.0
+G1 X18.6 Y36.23 Z0.5 F1248.0
+G1 X18.6 Y35.72 Z0.5 F1248.0
+G1 X19.2 Y36.07 Z0.5 F1248.0
+G1 X19.2 Y36.23 Z0.5 F1248.0
+M103
+G1 X23.4 Y35.0 Z0.5 F1248.0
+M101
+G1 X23.4 Y36.23 Z0.5 F1248.0
+G1 X22.8 Y36.23 Z0.5 F1248.0
+G1 X22.8 Y35.62 Z0.5 F1248.0
+G1 X22.2 Y36.02 Z0.5 F1248.0
+G1 X22.2 Y36.23 Z0.5 F1248.0
+M103
+G1 X25.2 Y36.23 Z0.5 F1248.0
+M101
+G1 X25.2 Y-36.23 Z0.5 F1248.0
+G1 X25.8 Y-36.23 Z0.5 F1248.0
+G1 X25.8 Y36.23 Z0.5 F1248.0
+M103
+G1 X27.6 Y35.26 Z0.5 F1248.0
+M101
+G1 X27.6 Y36.23 Z0.5 F1248.0
+G1 X28.2 Y36.23 Z0.5 F1248.0
+G1 X28.2 Y35.78 Z0.5 F1248.0
+G1 X28.8 Y36.1 Z0.5 F1248.0
+G1 X28.8 Y36.23 Z0.5 F1248.0
+M103
+G1 X31.2 Y36.25 Z0.5 F1248.0
+M101
+G1 X31.2 Y36.29 Z0.5 F1248.0
+G1 X31.8 Y36.23 Z0.5 F1248.0
+G1 X31.8 Y35.99 Z0.5 F1248.0
+G1 X32.4 Y36.23 Z0.5 F1248.0
+G1 X32.4 Y35.56 Z0.5 F1248.0
+G1 X33.0 Y34.92 Z0.5 F1248.0
+G1 X33.0 Y36.23 Z0.5 F1248.0
+M103
+G1 X33.0 Y30.96 Z0.5 F1248.0
+M101
+G1 X33.0 Y-30.96 Z0.5 F1248.0
+G1 X32.4 Y-30.32 Z0.5 F1248.0
+G1 X32.4 Y30.32 Z0.5 F1248.0
+G1 X31.8 Y29.89 Z0.5 F1248.0
+G1 X31.8 Y-29.89 Z0.5 F1248.0
+M103
+G1 X31.2 Y-29.64 Z0.5 F1248.0
+M101
+G1 X31.2 Y29.64 Z0.5 F1248.0
+M103
+G1 X30.6 Y29.52 Z0.5 F1248.0
+M101
+G1 X30.6 Y-29.52 Z0.5 F1248.0
+G1 X30.0 Y-29.49 Z0.5 F1248.0
+G1 X30.0 Y29.49 Z0.5 F1248.0
+G1 X29.4 Y29.57 Z0.5 F1248.0
+G1 X29.4 Y-29.57 Z0.5 F1248.0
+M103
+G1 X28.8 Y-29.78 Z0.5 F1248.0
+M101
+G1 X28.8 Y29.78 Z0.5 F1248.0
+M103
+G1 X28.2 Y30.11 Z0.5 F1248.0
+M101
+G1 X28.2 Y-30.11 Z0.5 F1248.0
+G1 X27.6 Y-30.62 Z0.5 F1248.0
+G1 X27.6 Y30.62 Z0.5 F1248.0
+M103
+G1 X27.0 Y31.58 Z0.5 F1248.0
+M101
+G1 X27.0 Y-31.58 Z0.5 F1248.0
+M103
+G1 X28.8 Y-36.23 Z0.5 F1248.0
+M101
+G1 X28.8 Y-36.1 Z0.5 F1248.0
+G1 X28.2 Y-36.23 Z0.5 F1248.0
+G1 X28.2 Y-35.78 Z0.5 F1248.0
+G1 X27.6 Y-36.23 Z0.5 F1248.0
+G1 X27.6 Y-35.26 Z0.5 F1248.0
+G1 X27.0 Y-36.23 Z0.5 F1248.0
+G1 X27.0 Y-34.31 Z0.5 F1248.0
+M103
+G1 X26.4 Y-36.23 Z0.5 F1248.0
+M101
+G1 X26.4 Y36.23 Z0.5 F1248.0
+G1 X27.0 Y36.23 Z0.5 F1248.0
+G1 X27.0 Y34.31 Z0.5 F1248.0
+M103
+G1 X24.0 Y-33.79 Z0.5 F1248.0
+M101
+G1 X24.0 Y-36.23 Z0.5 F1248.0
+G1 X24.6 Y-36.23 Z0.5 F1248.0
+G1 X24.6 Y36.23 Z0.5 F1248.0
+G1 X24.0 Y36.23 Z0.5 F1248.0
+G1 X24.0 Y33.79 Z0.5 F1248.0
+M103
+G1 X23.4 Y-35.0 Z0.5 F1248.0
+M101
+G1 X23.4 Y-36.23 Z0.5 F1248.0
+G1 X22.8 Y-36.23 Z0.5 F1248.0
+G1 X22.8 Y-35.62 Z0.5 F1248.0
+G1 X22.2 Y-36.02 Z0.5 F1248.0
+G1 X22.2 Y-36.23 Z0.5 F1248.0
+M103
+G1 X31.2 Y-36.25 Z0.5 F1248.0
+M101
+G1 X31.2 Y-36.29 Z0.5 F1248.0
+M103
+G1 X33.0 Y-36.23 Z0.5 F1248.0
+M101
+G1 X33.0 Y-34.92 Z0.5 F1248.0
+G1 X32.4 Y-35.56 Z0.5 F1248.0
+G1 X32.4 Y-36.23 Z0.5 F1248.0
+G1 X31.8 Y-36.23 Z0.5 F1248.0
+G1 X31.8 Y-35.99 Z0.5 F1248.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 0.9 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-38.1 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y38.1 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y38.1 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y-38.1 Z0.9 </boundaryPoint>)
+(<loop> inner )
+G1 X2.54 Y-32.94 Z0.9 F1920.0
+M101
+G1 X2.45 Y-33.6 Z0.9 F1920.0
+G1 X2.2 Y-34.21 Z0.9 F1920.0
+G1 X1.79 Y-34.74 Z0.9 F1920.0
+G1 X1.27 Y-35.14 Z0.9 F1920.0
+G1 X0.66 Y-35.39 Z0.9 F1920.0
+G1 X0.0 Y-35.48 Z0.9 F1920.0
+G1 X-0.66 Y-35.39 Z0.9 F1920.0
+G1 X-1.27 Y-35.14 Z0.9 F1920.0
+G1 X-1.79 Y-34.74 Z0.9 F1920.0
+G1 X-2.2 Y-34.21 Z0.9 F1920.0
+G1 X-2.45 Y-33.6 Z0.9 F1920.0
+G1 X-2.54 Y-32.94 Z0.9 F1920.0
+G1 X-2.45 Y-32.28 Z0.9 F1920.0
+G1 X-2.2 Y-31.67 Z0.9 F1920.0
+G1 X-1.79 Y-31.15 Z0.9 F1920.0
+G1 X-1.27 Y-30.74 Z0.9 F1920.0
+G1 X-0.63 Y-30.48 Z0.9 F1920.0
+G1 X0.0 Y-30.43 Z0.9 F1920.0
+G1 X0.63 Y-30.48 Z0.9 F1920.0
+G1 X1.27 Y-30.74 Z0.9 F1920.0
+G1 X1.79 Y-31.15 Z0.9 F1920.0
+G1 X2.2 Y-31.67 Z0.9 F1920.0
+G1 X2.45 Y-32.28 Z0.9 F1920.0
+G1 X2.54 Y-32.94 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X3.14 Y-32.94 Z0.9 F1920.0
+M101
+G1 X3.04 Y-33.75 Z0.9 F1920.0
+G1 X2.72 Y-34.51 Z0.9 F1920.0
+G1 X2.22 Y-35.16 Z0.9 F1920.0
+G1 X1.57 Y-35.66 Z0.9 F1920.0
+G1 X0.81 Y-35.98 Z0.9 F1920.0
+G1 X0.0 Y-36.09 Z0.9 F1920.0
+G1 X-0.82 Y-35.98 Z0.9 F1920.0
+G1 X-1.57 Y-35.66 Z0.9 F1920.0
+G1 X-2.22 Y-35.17 Z0.9 F1920.0
+G1 X-2.72 Y-34.51 Z0.9 F1920.0
+G1 X-3.04 Y-33.75 Z0.9 F1920.0
+G1 X-3.14 Y-32.94 Z0.9 F1920.0
+G1 X-3.04 Y-32.13 Z0.9 F1920.0
+G1 X-2.72 Y-31.37 Z0.9 F1920.0
+G1 X-2.22 Y-30.72 Z0.9 F1920.0
+G1 X-1.57 Y-30.22 Z0.9 F1920.0
+G1 X-0.77 Y-29.89 Z0.9 F1920.0
+G1 X0.0 Y-29.83 Z0.9 F1920.0
+G1 X0.77 Y-29.89 Z0.9 F1920.0
+G1 X1.57 Y-30.22 Z0.9 F1920.0
+G1 X2.22 Y-30.72 Z0.9 F1920.0
+G1 X2.72 Y-31.37 Z0.9 F1920.0
+G1 X3.04 Y-32.13 Z0.9 F1920.0
+G1 X3.14 Y-32.94 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.64 Y-19.46 Z0.9 F1920.0
+M101
+G1 X0.0 Y-19.54 Z0.9 F1920.0
+G1 X-0.64 Y-19.46 Z0.9 F1920.0
+G1 X-1.24 Y-19.21 Z0.9 F1920.0
+G1 X-1.75 Y-18.82 Z0.9 F1920.0
+G1 X-2.14 Y-18.3 Z0.9 F1920.0
+G1 X-2.39 Y-17.71 Z0.9 F1920.0
+G1 X-2.48 Y-17.07 Z0.9 F1920.0
+G1 X-2.39 Y-16.43 Z0.9 F1920.0
+G1 X-2.14 Y-15.83 Z0.9 F1920.0
+G1 X-1.75 Y-15.32 Z0.9 F1920.0
+G1 X-1.24 Y-14.92 Z0.9 F1920.0
+G1 X-0.64 Y-14.68 Z0.9 F1920.0
+G1 X0.0 Y-14.59 Z0.9 F1920.0
+G1 X0.64 Y-14.68 Z0.9 F1920.0
+G1 X1.24 Y-14.92 Z0.9 F1920.0
+G1 X1.75 Y-15.32 Z0.9 F1920.0
+G1 X2.14 Y-15.83 Z0.9 F1920.0
+G1 X2.39 Y-16.43 Z0.9 F1920.0
+G1 X2.48 Y-17.07 Z0.9 F1920.0
+G1 X2.39 Y-17.71 Z0.9 F1920.0
+G1 X2.14 Y-18.3 Z0.9 F1920.0
+G1 X1.75 Y-18.82 Z0.9 F1920.0
+G1 X1.24 Y-19.21 Z0.9 F1920.0
+G1 X0.64 Y-19.46 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.8 Y-20.04 Z0.9 F1920.0
+M101
+G1 X0.0 Y-20.15 Z0.9 F1920.0
+G1 X-0.8 Y-20.04 Z0.9 F1920.0
+G1 X-1.54 Y-19.73 Z0.9 F1920.0
+G1 X-2.18 Y-19.24 Z0.9 F1920.0
+G1 X-2.67 Y-18.6 Z0.9 F1920.0
+G1 X-2.98 Y-17.86 Z0.9 F1920.0
+G1 X-3.08 Y-17.07 Z0.9 F1920.0
+G1 X-2.98 Y-16.27 Z0.9 F1920.0
+G1 X-2.67 Y-15.53 Z0.9 F1920.0
+G1 X-2.18 Y-14.89 Z0.9 F1920.0
+G1 X-1.54 Y-14.4 Z0.9 F1920.0
+G1 X-0.8 Y-14.09 Z0.9 F1920.0
+G1 X0.0 Y-13.99 Z0.9 F1920.0
+G1 X0.8 Y-14.09 Z0.9 F1920.0
+G1 X1.54 Y-14.4 Z0.9 F1920.0
+G1 X2.18 Y-14.89 Z0.9 F1920.0
+G1 X2.67 Y-15.53 Z0.9 F1920.0
+G1 X2.97 Y-16.27 Z0.9 F1920.0
+G1 X3.08 Y-17.07 Z0.9 F1920.0
+G1 X2.97 Y-17.86 Z0.9 F1920.0
+G1 X2.67 Y-18.6 Z0.9 F1920.0
+G1 X2.18 Y-19.24 Z0.9 F1920.0
+G1 X1.54 Y-19.73 Z0.9 F1920.0
+G1 X0.8 Y-20.04 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-1.72 Y-18.06 Z0.9 F1920.0
+G1 X-20.0 Y30.55 Z0.9 F1920.0
+M101
+G1 X-20.64 Y30.47 Z0.9 F1920.0
+G1 X-21.28 Y30.55 Z0.9 F1920.0
+G1 X-21.88 Y30.8 Z0.9 F1920.0
+G1 X-22.39 Y31.19 Z0.9 F1920.0
+G1 X-22.78 Y31.7 Z0.9 F1920.0
+G1 X-23.03 Y32.3 Z0.9 F1920.0
+G1 X-23.11 Y32.94 Z0.9 F1920.0
+G1 X-23.03 Y33.58 Z0.9 F1920.0
+G1 X-22.78 Y34.18 Z0.9 F1920.0
+G1 X-22.39 Y34.69 Z0.9 F1920.0
+G1 X-21.88 Y35.08 Z0.9 F1920.0
+G1 X-21.28 Y35.33 Z0.9 F1920.0
+G1 X-20.64 Y35.42 Z0.9 F1920.0
+G1 X-20.0 Y35.33 Z0.9 F1920.0
+G1 X-19.4 Y35.08 Z0.9 F1920.0
+G1 X-18.89 Y34.69 Z0.9 F1920.0
+G1 X-18.5 Y34.18 Z0.9 F1920.0
+G1 X-18.25 Y33.58 Z0.9 F1920.0
+G1 X-18.16 Y32.94 Z0.9 F1920.0
+G1 X-18.25 Y32.3 Z0.9 F1920.0
+G1 X-18.49 Y31.7 Z0.9 F1920.0
+G1 X-18.89 Y31.19 Z0.9 F1920.0
+G1 X-19.4 Y30.8 Z0.9 F1920.0
+G1 X-20.0 Y30.55 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-19.84 Y29.97 Z0.9 F1920.0
+M101
+G1 X-20.64 Y29.86 Z0.9 F1920.0
+G1 X-21.44 Y29.97 Z0.9 F1920.0
+G1 X-22.18 Y30.27 Z0.9 F1920.0
+G1 X-22.82 Y30.76 Z0.9 F1920.0
+G1 X-23.31 Y31.4 Z0.9 F1920.0
+G1 X-23.61 Y32.14 Z0.9 F1920.0
+G1 X-23.72 Y32.94 Z0.9 F1920.0
+G1 X-23.61 Y33.74 Z0.9 F1920.0
+G1 X-23.3 Y34.48 Z0.9 F1920.0
+G1 X-22.82 Y35.12 Z0.9 F1920.0
+G1 X-22.18 Y35.61 Z0.9 F1920.0
+G1 X-21.44 Y35.92 Z0.9 F1920.0
+G1 X-20.64 Y36.02 Z0.9 F1920.0
+G1 X-19.84 Y35.92 Z0.9 F1920.0
+G1 X-19.1 Y35.61 Z0.9 F1920.0
+G1 X-18.46 Y35.12 Z0.9 F1920.0
+G1 X-17.97 Y34.48 Z0.9 F1920.0
+G1 X-17.66 Y33.74 Z0.9 F1920.0
+G1 X-17.56 Y32.94 Z0.9 F1920.0
+G1 X-17.66 Y32.14 Z0.9 F1920.0
+G1 X-17.97 Y31.4 Z0.9 F1920.0
+G1 X-18.46 Y30.76 Z0.9 F1920.0
+G1 X-19.1 Y30.27 Z0.9 F1920.0
+G1 X-19.84 Y29.97 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.64 Y-30.47 Z0.9 F1920.0
+M101
+G1 X-20.0 Y-30.55 Z0.9 F1920.0
+G1 X-19.4 Y-30.8 Z0.9 F1920.0
+G1 X-18.89 Y-31.19 Z0.9 F1920.0
+G1 X-18.49 Y-31.7 Z0.9 F1920.0
+G1 X-18.25 Y-32.3 Z0.9 F1920.0
+G1 X-18.16 Y-32.94 Z0.9 F1920.0
+G1 X-18.25 Y-33.58 Z0.9 F1920.0
+G1 X-18.5 Y-34.18 Z0.9 F1920.0
+G1 X-18.89 Y-34.69 Z0.9 F1920.0
+G1 X-19.4 Y-35.08 Z0.9 F1920.0
+G1 X-20.0 Y-35.33 Z0.9 F1920.0
+G1 X-20.64 Y-35.42 Z0.9 F1920.0
+G1 X-21.28 Y-35.33 Z0.9 F1920.0
+G1 X-21.88 Y-35.08 Z0.9 F1920.0
+G1 X-22.39 Y-34.69 Z0.9 F1920.0
+G1 X-22.78 Y-34.18 Z0.9 F1920.0
+G1 X-23.03 Y-33.58 Z0.9 F1920.0
+G1 X-23.11 Y-32.94 Z0.9 F1920.0
+G1 X-23.03 Y-32.3 Z0.9 F1920.0
+G1 X-22.78 Y-31.7 Z0.9 F1920.0
+G1 X-22.39 Y-31.19 Z0.9 F1920.0
+G1 X-21.88 Y-30.8 Z0.9 F1920.0
+G1 X-21.28 Y-30.55 Z0.9 F1920.0
+G1 X-20.64 Y-30.47 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.64 Y-29.86 Z0.9 F1920.0
+M101
+G1 X-19.84 Y-29.97 Z0.9 F1920.0
+G1 X-19.1 Y-30.27 Z0.9 F1920.0
+G1 X-18.46 Y-30.76 Z0.9 F1920.0
+G1 X-17.97 Y-31.4 Z0.9 F1920.0
+G1 X-17.66 Y-32.14 Z0.9 F1920.0
+G1 X-17.56 Y-32.94 Z0.9 F1920.0
+G1 X-17.66 Y-33.74 Z0.9 F1920.0
+G1 X-17.97 Y-34.48 Z0.9 F1920.0
+G1 X-18.46 Y-35.12 Z0.9 F1920.0
+G1 X-19.1 Y-35.61 Z0.9 F1920.0
+G1 X-19.84 Y-35.92 Z0.9 F1920.0
+G1 X-20.64 Y-36.02 Z0.9 F1920.0
+G1 X-21.44 Y-35.92 Z0.9 F1920.0
+G1 X-22.18 Y-35.61 Z0.9 F1920.0
+G1 X-22.82 Y-35.12 Z0.9 F1920.0
+G1 X-23.3 Y-34.48 Z0.9 F1920.0
+G1 X-23.61 Y-33.74 Z0.9 F1920.0
+G1 X-23.72 Y-32.94 Z0.9 F1920.0
+G1 X-23.61 Y-32.14 Z0.9 F1920.0
+G1 X-23.31 Y-31.4 Z0.9 F1920.0
+G1 X-22.82 Y-30.76 Z0.9 F1920.0
+G1 X-22.18 Y-30.27 Z0.9 F1920.0
+G1 X-21.44 Y-29.97 Z0.9 F1920.0
+G1 X-20.64 Y-29.86 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.4 Y30.8 Z0.9 F1920.0
+M101
+G1 X18.89 Y31.19 Z0.9 F1920.0
+G1 X18.49 Y31.7 Z0.9 F1920.0
+G1 X18.25 Y32.3 Z0.9 F1920.0
+G1 X18.16 Y32.94 Z0.9 F1920.0
+G1 X18.25 Y33.58 Z0.9 F1920.0
+G1 X18.5 Y34.18 Z0.9 F1920.0
+G1 X18.89 Y34.69 Z0.9 F1920.0
+G1 X19.4 Y35.08 Z0.9 F1920.0
+G1 X20.0 Y35.33 Z0.9 F1920.0
+G1 X20.64 Y35.42 Z0.9 F1920.0
+G1 X21.28 Y35.33 Z0.9 F1920.0
+G1 X21.88 Y35.08 Z0.9 F1920.0
+G1 X22.39 Y34.69 Z0.9 F1920.0
+G1 X22.78 Y34.18 Z0.9 F1920.0
+G1 X23.03 Y33.58 Z0.9 F1920.0
+G1 X23.11 Y32.94 Z0.9 F1920.0
+G1 X23.03 Y32.3 Z0.9 F1920.0
+G1 X22.78 Y31.7 Z0.9 F1920.0
+G1 X22.39 Y31.19 Z0.9 F1920.0
+G1 X21.88 Y30.8 Z0.9 F1920.0
+G1 X21.28 Y30.55 Z0.9 F1920.0
+G1 X20.64 Y30.47 Z0.9 F1920.0
+G1 X20.0 Y30.55 Z0.9 F1920.0
+G1 X19.4 Y30.8 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.1 Y30.27 Z0.9 F1920.0
+M101
+G1 X18.46 Y30.76 Z0.9 F1920.0
+G1 X17.97 Y31.4 Z0.9 F1920.0
+G1 X17.66 Y32.14 Z0.9 F1920.0
+G1 X17.56 Y32.94 Z0.9 F1920.0
+G1 X17.66 Y33.74 Z0.9 F1920.0
+G1 X17.97 Y34.48 Z0.9 F1920.0
+G1 X18.46 Y35.12 Z0.9 F1920.0
+G1 X19.1 Y35.61 Z0.9 F1920.0
+G1 X19.84 Y35.92 Z0.9 F1920.0
+G1 X20.64 Y36.02 Z0.9 F1920.0
+G1 X21.44 Y35.92 Z0.9 F1920.0
+G1 X22.18 Y35.61 Z0.9 F1920.0
+G1 X22.82 Y35.12 Z0.9 F1920.0
+G1 X23.3 Y34.48 Z0.9 F1920.0
+G1 X23.61 Y33.74 Z0.9 F1920.0
+G1 X23.72 Y32.94 Z0.9 F1920.0
+G1 X23.61 Y32.14 Z0.9 F1920.0
+G1 X23.31 Y31.4 Z0.9 F1920.0
+G1 X22.82 Y30.76 Z0.9 F1920.0
+G1 X22.18 Y30.27 Z0.9 F1920.0
+G1 X21.44 Y29.97 Z0.9 F1920.0
+G1 X20.64 Y29.86 Z0.9 F1920.0
+G1 X19.84 Y29.97 Z0.9 F1920.0
+G1 X19.1 Y30.27 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X18.72 Y-17.58 Z0.9 F1920.0
+G1 X20.64 Y-30.47 Z0.9 F1920.0
+M101
+G1 X21.28 Y-30.55 Z0.9 F1920.0
+G1 X21.88 Y-30.8 Z0.9 F1920.0
+G1 X22.39 Y-31.19 Z0.9 F1920.0
+G1 X22.78 Y-31.7 Z0.9 F1920.0
+G1 X23.03 Y-32.3 Z0.9 F1920.0
+G1 X23.11 Y-32.94 Z0.9 F1920.0
+G1 X23.03 Y-33.58 Z0.9 F1920.0
+G1 X22.78 Y-34.18 Z0.9 F1920.0
+G1 X22.39 Y-34.69 Z0.9 F1920.0
+G1 X21.88 Y-35.08 Z0.9 F1920.0
+G1 X21.28 Y-35.33 Z0.9 F1920.0
+G1 X20.64 Y-35.42 Z0.9 F1920.0
+G1 X20.0 Y-35.33 Z0.9 F1920.0
+G1 X19.4 Y-35.08 Z0.9 F1920.0
+G1 X18.89 Y-34.69 Z0.9 F1920.0
+G1 X18.5 Y-34.18 Z0.9 F1920.0
+G1 X18.25 Y-33.58 Z0.9 F1920.0
+G1 X18.16 Y-32.94 Z0.9 F1920.0
+G1 X18.25 Y-32.3 Z0.9 F1920.0
+G1 X18.49 Y-31.7 Z0.9 F1920.0
+G1 X18.89 Y-31.19 Z0.9 F1920.0
+G1 X19.4 Y-30.8 Z0.9 F1920.0
+G1 X20.0 Y-30.55 Z0.9 F1920.0
+G1 X20.64 Y-30.47 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-29.86 Z0.9 F1920.0
+M101
+G1 X21.44 Y-29.97 Z0.9 F1920.0
+G1 X22.18 Y-30.27 Z0.9 F1920.0
+G1 X22.82 Y-30.76 Z0.9 F1920.0
+G1 X23.31 Y-31.4 Z0.9 F1920.0
+G1 X23.61 Y-32.14 Z0.9 F1920.0
+G1 X23.72 Y-32.94 Z0.9 F1920.0
+G1 X23.61 Y-33.74 Z0.9 F1920.0
+G1 X23.3 Y-34.48 Z0.9 F1920.0
+G1 X22.82 Y-35.12 Z0.9 F1920.0
+G1 X22.18 Y-35.61 Z0.9 F1920.0
+G1 X21.44 Y-35.92 Z0.9 F1920.0
+G1 X20.64 Y-36.02 Z0.9 F1920.0
+G1 X19.84 Y-35.92 Z0.9 F1920.0
+G1 X19.1 Y-35.61 Z0.9 F1920.0
+G1 X18.46 Y-35.12 Z0.9 F1920.0
+G1 X17.97 Y-34.48 Z0.9 F1920.0
+G1 X17.66 Y-33.74 Z0.9 F1920.0
+G1 X17.56 Y-32.94 Z0.9 F1920.0
+G1 X17.66 Y-32.14 Z0.9 F1920.0
+G1 X17.97 Y-31.4 Z0.9 F1920.0
+G1 X18.46 Y-30.76 Z0.9 F1920.0
+G1 X19.1 Y-30.27 Z0.9 F1920.0
+G1 X19.84 Y-29.97 Z0.9 F1920.0
+G1 X20.64 Y-29.86 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-19.54 Z0.9 F1920.0
+M101
+G1 X20.0 Y-19.46 Z0.9 F1920.0
+G1 X19.4 Y-19.21 Z0.9 F1920.0
+G1 X18.89 Y-18.82 Z0.9 F1920.0
+G1 X18.5 Y-18.3 Z0.9 F1920.0
+G1 X18.25 Y-17.71 Z0.9 F1920.0
+G1 X18.16 Y-17.07 Z0.9 F1920.0
+G1 X18.25 Y-16.43 Z0.9 F1920.0
+G1 X18.49 Y-15.83 Z0.9 F1920.0
+G1 X18.89 Y-15.32 Z0.9 F1920.0
+G1 X19.4 Y-14.92 Z0.9 F1920.0
+G1 X20.0 Y-14.68 Z0.9 F1920.0
+G1 X20.64 Y-14.59 Z0.9 F1920.0
+G1 X21.28 Y-14.68 Z0.9 F1920.0
+G1 X21.88 Y-14.92 Z0.9 F1920.0
+G1 X22.39 Y-15.32 Z0.9 F1920.0
+G1 X22.78 Y-15.83 Z0.9 F1920.0
+G1 X23.03 Y-16.43 Z0.9 F1920.0
+G1 X23.11 Y-17.07 Z0.9 F1920.0
+G1 X23.03 Y-17.71 Z0.9 F1920.0
+G1 X22.78 Y-18.3 Z0.9 F1920.0
+G1 X22.39 Y-18.82 Z0.9 F1920.0
+G1 X21.88 Y-19.21 Z0.9 F1920.0
+G1 X21.28 Y-19.46 Z0.9 F1920.0
+G1 X20.64 Y-19.54 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-20.15 Z0.9 F1920.0
+M101
+G1 X19.84 Y-20.04 Z0.9 F1920.0
+G1 X19.1 Y-19.73 Z0.9 F1920.0
+G1 X18.46 Y-19.24 Z0.9 F1920.0
+G1 X17.97 Y-18.61 Z0.9 F1920.0
+G1 X17.66 Y-17.86 Z0.9 F1920.0
+G1 X17.56 Y-17.07 Z0.9 F1920.0
+G1 X17.66 Y-16.27 Z0.9 F1920.0
+G1 X17.97 Y-15.53 Z0.9 F1920.0
+G1 X18.46 Y-14.89 Z0.9 F1920.0
+G1 X19.1 Y-14.4 Z0.9 F1920.0
+G1 X19.84 Y-14.09 Z0.9 F1920.0
+G1 X20.64 Y-13.99 Z0.9 F1920.0
+G1 X21.44 Y-14.09 Z0.9 F1920.0
+G1 X22.18 Y-14.4 Z0.9 F1920.0
+G1 X22.82 Y-14.89 Z0.9 F1920.0
+G1 X23.31 Y-15.53 Z0.9 F1920.0
+G1 X23.61 Y-16.27 Z0.9 F1920.0
+G1 X23.72 Y-17.07 Z0.9 F1920.0
+G1 X23.61 Y-17.86 Z0.9 F1920.0
+G1 X23.3 Y-18.61 Z0.9 F1920.0
+G1 X22.82 Y-19.24 Z0.9 F1920.0
+G1 X22.18 Y-19.73 Z0.9 F1920.0
+G1 X21.44 Y-20.04 Z0.9 F1920.0
+G1 X20.64 Y-20.15 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X33.45 Y-20.15 Z0.9 F1920.0
+M101
+G1 X33.45 Y31.25 Z0.9 F1920.0
+G1 X33.61 Y32.16 Z0.9 F1920.0
+G1 X33.0 Y31.8 Z0.9 F1920.0
+G1 X32.83 Y31.4 Z0.9 F1920.0
+G1 X32.34 Y30.76 Z0.9 F1920.0
+G1 X31.7 Y30.27 Z0.9 F1920.0
+G1 X30.96 Y29.97 Z0.9 F1920.0
+G1 X30.16 Y29.86 Z0.9 F1920.0
+G1 X29.37 Y29.97 Z0.9 F1920.0
+G1 X28.62 Y30.27 Z0.9 F1920.0
+G1 X27.98 Y30.76 Z0.9 F1920.0
+G1 X27.5 Y31.4 Z0.9 F1920.0
+G1 X27.19 Y32.14 Z0.9 F1920.0
+G1 X27.08 Y32.94 Z0.9 F1920.0
+G1 X27.19 Y33.74 Z0.9 F1920.0
+G1 X27.5 Y34.48 Z0.9 F1920.0
+G1 X27.98 Y35.12 Z0.9 F1920.0
+G1 X28.62 Y35.61 Z0.9 F1920.0
+G1 X29.37 Y35.92 Z0.9 F1920.0
+G1 X30.16 Y36.02 Z0.9 F1920.0
+G1 X30.96 Y35.92 Z0.9 F1920.0
+G1 X31.7 Y35.61 Z0.9 F1920.0
+G1 X32.34 Y35.12 Z0.9 F1920.0
+G1 X32.83 Y34.48 Z0.9 F1920.0
+G1 X32.87 Y34.37 Z0.9 F1920.0
+G1 X33.45 Y34.62 Z0.9 F1920.0
+G1 X33.45 Y36.62 Z0.9 F1920.0
+G1 X-33.45 Y36.62 Z0.9 F1920.0
+G1 X-33.45 Y34.62 Z0.9 F1920.0
+G1 X-32.87 Y34.37 Z0.9 F1920.0
+G1 X-32.83 Y34.48 Z0.9 F1920.0
+G1 X-32.34 Y35.12 Z0.9 F1920.0
+G1 X-31.7 Y35.61 Z0.9 F1920.0
+G1 X-30.96 Y35.92 Z0.9 F1920.0
+G1 X-30.16 Y36.02 Z0.9 F1920.0
+G1 X-29.37 Y35.92 Z0.9 F1920.0
+G1 X-28.62 Y35.61 Z0.9 F1920.0
+G1 X-27.98 Y35.12 Z0.9 F1920.0
+G1 X-27.5 Y34.48 Z0.9 F1920.0
+G1 X-27.19 Y33.74 Z0.9 F1920.0
+G1 X-27.08 Y32.94 Z0.9 F1920.0
+G1 X-27.19 Y32.14 Z0.9 F1920.0
+G1 X-27.5 Y31.4 Z0.9 F1920.0
+G1 X-27.98 Y30.76 Z0.9 F1920.0
+G1 X-28.62 Y30.27 Z0.9 F1920.0
+G1 X-29.37 Y29.97 Z0.9 F1920.0
+G1 X-30.16 Y29.86 Z0.9 F1920.0
+G1 X-30.96 Y29.97 Z0.9 F1920.0
+G1 X-31.7 Y30.27 Z0.9 F1920.0
+G1 X-32.34 Y30.76 Z0.9 F1920.0
+G1 X-32.83 Y31.4 Z0.9 F1920.0
+G1 X-33.0 Y31.8 Z0.9 F1920.0
+G1 X-33.61 Y32.16 Z0.9 F1920.0
+G1 X-33.45 Y31.25 Z0.9 F1920.0
+G1 X-33.45 Y-31.25 Z0.9 F1920.0
+G1 X-33.61 Y-32.16 Z0.9 F1920.0
+G1 X-32.99 Y-31.8 Z0.9 F1920.0
+G1 X-32.83 Y-31.4 Z0.9 F1920.0
+G1 X-32.34 Y-30.77 Z0.9 F1920.0
+G1 X-31.7 Y-30.28 Z0.9 F1920.0
+G1 X-30.96 Y-29.97 Z0.9 F1920.0
+G1 X-30.16 Y-29.86 Z0.9 F1920.0
+G1 X-29.37 Y-29.97 Z0.9 F1920.0
+G1 X-28.62 Y-30.28 Z0.9 F1920.0
+G1 X-27.99 Y-30.77 Z0.9 F1920.0
+G1 X-27.5 Y-31.4 Z0.9 F1920.0
+G1 X-27.19 Y-32.14 Z0.9 F1920.0
+G1 X-27.09 Y-32.94 Z0.9 F1920.0
+G1 X-27.19 Y-33.74 Z0.9 F1920.0
+G1 X-27.5 Y-34.48 Z0.9 F1920.0
+G1 X-27.99 Y-35.12 Z0.9 F1920.0
+G1 X-28.62 Y-35.6 Z0.9 F1920.0
+G1 X-29.37 Y-35.91 Z0.9 F1920.0
+G1 X-30.16 Y-36.02 Z0.9 F1920.0
+G1 X-30.96 Y-35.91 Z0.9 F1920.0
+G1 X-31.7 Y-35.6 Z0.9 F1920.0
+G1 X-32.34 Y-35.12 Z0.9 F1920.0
+G1 X-32.83 Y-34.48 Z0.9 F1920.0
+G1 X-32.87 Y-34.36 Z0.9 F1920.0
+G1 X-33.45 Y-34.62 Z0.9 F1920.0
+G1 X-33.45 Y-36.62 Z0.9 F1920.0
+G1 X33.45 Y-36.62 Z0.9 F1920.0
+G1 X33.45 Y-34.62 Z0.9 F1920.0
+G1 X32.87 Y-34.37 Z0.9 F1920.0
+G1 X32.83 Y-34.48 Z0.9 F1920.0
+G1 X32.34 Y-35.12 Z0.9 F1920.0
+G1 X31.7 Y-35.61 Z0.9 F1920.0
+G1 X30.96 Y-35.92 Z0.9 F1920.0
+G1 X30.16 Y-36.02 Z0.9 F1920.0
+G1 X29.37 Y-35.92 Z0.9 F1920.0
+G1 X28.62 Y-35.61 Z0.9 F1920.0
+G1 X27.98 Y-35.12 Z0.9 F1920.0
+G1 X27.5 Y-34.48 Z0.9 F1920.0
+G1 X27.19 Y-33.74 Z0.9 F1920.0
+G1 X27.08 Y-32.94 Z0.9 F1920.0
+G1 X27.19 Y-32.14 Z0.9 F1920.0
+G1 X27.5 Y-31.4 Z0.9 F1920.0
+G1 X27.98 Y-30.76 Z0.9 F1920.0
+G1 X28.62 Y-30.27 Z0.9 F1920.0
+G1 X29.37 Y-29.97 Z0.9 F1920.0
+G1 X30.16 Y-29.86 Z0.9 F1920.0
+G1 X30.96 Y-29.97 Z0.9 F1920.0
+G1 X31.7 Y-30.27 Z0.9 F1920.0
+G1 X32.34 Y-30.76 Z0.9 F1920.0
+G1 X32.83 Y-31.4 Z0.9 F1920.0
+G1 X33.0 Y-31.8 Z0.9 F1920.0
+G1 X33.61 Y-32.16 Z0.9 F1920.0
+G1 X33.45 Y-31.25 Z0.9 F1920.0
+G1 X33.45 Y-20.15 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X30.16 Y30.47 Z0.9 F1920.0
+M101
+G1 X29.52 Y30.55 Z0.9 F1920.0
+G1 X28.93 Y30.8 Z0.9 F1920.0
+G1 X28.41 Y31.19 Z0.9 F1920.0
+G1 X28.02 Y31.7 Z0.9 F1920.0
+G1 X27.77 Y32.3 Z0.9 F1920.0
+G1 X27.69 Y32.94 Z0.9 F1920.0
+G1 X27.77 Y33.58 Z0.9 F1920.0
+G1 X28.02 Y34.18 Z0.9 F1920.0
+G1 X28.41 Y34.69 Z0.9 F1920.0
+G1 X28.93 Y35.08 Z0.9 F1920.0
+G1 X29.52 Y35.33 Z0.9 F1920.0
+G1 X30.16 Y35.42 Z0.9 F1920.0
+G1 X30.8 Y35.33 Z0.9 F1920.0
+G1 X31.4 Y35.08 Z0.9 F1920.0
+G1 X31.91 Y34.69 Z0.9 F1920.0
+G1 X32.31 Y34.18 Z0.9 F1920.0
+G1 X32.55 Y33.58 Z0.9 F1920.0
+G1 X32.64 Y32.94 Z0.9 F1920.0
+G1 X32.55 Y32.3 Z0.9 F1920.0
+G1 X32.31 Y31.7 Z0.9 F1920.0
+G1 X31.91 Y31.19 Z0.9 F1920.0
+G1 X31.4 Y30.8 Z0.9 F1920.0
+G1 X30.8 Y30.55 Z0.9 F1920.0
+G1 X30.16 Y30.47 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-21.15 Y31.02 Z0.9 F1920.0
+G1 X-27.69 Y32.94 Z0.9 F1920.0
+M101
+G1 X-27.77 Y32.3 Z0.9 F1920.0
+G1 X-28.02 Y31.7 Z0.9 F1920.0
+G1 X-28.41 Y31.19 Z0.9 F1920.0
+G1 X-28.93 Y30.8 Z0.9 F1920.0
+G1 X-29.52 Y30.55 Z0.9 F1920.0
+G1 X-30.16 Y30.47 Z0.9 F1920.0
+G1 X-30.8 Y30.55 Z0.9 F1920.0
+G1 X-31.4 Y30.8 Z0.9 F1920.0
+G1 X-31.91 Y31.19 Z0.9 F1920.0
+G1 X-32.31 Y31.7 Z0.9 F1920.0
+G1 X-32.55 Y32.3 Z0.9 F1920.0
+G1 X-32.64 Y32.94 Z0.9 F1920.0
+G1 X-32.55 Y33.58 Z0.9 F1920.0
+G1 X-32.31 Y34.18 Z0.9 F1920.0
+G1 X-31.91 Y34.69 Z0.9 F1920.0
+G1 X-31.4 Y35.08 Z0.9 F1920.0
+G1 X-30.8 Y35.33 Z0.9 F1920.0
+G1 X-30.16 Y35.42 Z0.9 F1920.0
+G1 X-29.52 Y35.33 Z0.9 F1920.0
+G1 X-28.93 Y35.08 Z0.9 F1920.0
+G1 X-28.41 Y34.69 Z0.9 F1920.0
+G1 X-28.02 Y34.18 Z0.9 F1920.0
+G1 X-27.77 Y33.58 Z0.9 F1920.0
+G1 X-27.69 Y32.94 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X28.41 Y-31.19 Z0.9 F1920.0
+M101
+G1 X28.93 Y-30.8 Z0.9 F1920.0
+G1 X29.52 Y-30.55 Z0.9 F1920.0
+G1 X30.16 Y-30.47 Z0.9 F1920.0
+G1 X30.8 Y-30.55 Z0.9 F1920.0
+G1 X31.4 Y-30.8 Z0.9 F1920.0
+G1 X31.91 Y-31.19 Z0.9 F1920.0
+G1 X32.31 Y-31.7 Z0.9 F1920.0
+G1 X32.55 Y-32.3 Z0.9 F1920.0
+G1 X32.64 Y-32.94 Z0.9 F1920.0
+G1 X32.55 Y-33.58 Z0.9 F1920.0
+G1 X32.31 Y-34.18 Z0.9 F1920.0
+G1 X31.91 Y-34.69 Z0.9 F1920.0
+G1 X31.4 Y-35.08 Z0.9 F1920.0
+G1 X30.8 Y-35.33 Z0.9 F1920.0
+G1 X30.16 Y-35.42 Z0.9 F1920.0
+G1 X29.52 Y-35.33 Z0.9 F1920.0
+G1 X28.93 Y-35.08 Z0.9 F1920.0
+G1 X28.41 Y-34.69 Z0.9 F1920.0
+G1 X28.02 Y-34.18 Z0.9 F1920.0
+G1 X27.77 Y-33.58 Z0.9 F1920.0
+G1 X27.69 Y-32.94 Z0.9 F1920.0
+G1 X27.77 Y-32.3 Z0.9 F1920.0
+G1 X28.02 Y-31.7 Z0.9 F1920.0
+G1 X28.41 Y-31.19 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.97 Y-31.07 Z0.9 F1920.0
+G1 X1.69 Y-31.79 Z0.9 F1920.0
+G1 X1.45 Y-31.49 Z0.9 F1920.0
+G1 X1.03 Y-31.16 Z0.9 F1920.0
+G1 X0.52 Y-30.96 Z0.9 F1920.0
+G1 X0.0 Y-30.91 Z0.9 F1920.0
+G1 X-0.52 Y-30.96 Z0.9 F1920.0
+G1 X-1.03 Y-31.16 Z0.9 F1920.0
+G1 X-1.45 Y-31.49 Z0.9 F1920.0
+G1 X-1.78 Y-31.91 Z0.9 F1920.0
+G1 X-1.81 Y-31.97 Z0.9 F1920.0
+G1 X-18.68 Y-32.62 Z0.9 F1920.0
+G1 X-18.72 Y-32.43 Z0.9 F1920.0
+G1 X-18.91 Y-31.95 Z0.9 F1920.0
+G1 X-19.23 Y-31.53 Z0.9 F1920.0
+G1 X-19.64 Y-31.22 Z0.9 F1920.0
+G1 X-20.12 Y-31.02 Z0.9 F1920.0
+G1 X-20.64 Y-30.95 Z0.9 F1920.0
+G1 X-27.69 Y-32.94 Z0.9 F1920.0
+M101
+G1 X-27.78 Y-33.58 Z0.9 F1920.0
+G1 X-28.02 Y-34.18 Z0.9 F1920.0
+G1 X-28.41 Y-34.69 Z0.9 F1920.0
+G1 X-28.93 Y-35.08 Z0.9 F1920.0
+G1 X-29.52 Y-35.33 Z0.9 F1920.0
+G1 X-30.16 Y-35.41 Z0.9 F1920.0
+G1 X-30.8 Y-35.33 Z0.9 F1920.0
+G1 X-31.4 Y-35.08 Z0.9 F1920.0
+G1 X-31.91 Y-34.69 Z0.9 F1920.0
+G1 X-32.3 Y-34.18 Z0.9 F1920.0
+G1 X-32.55 Y-33.58 Z0.9 F1920.0
+G1 X-32.64 Y-32.94 Z0.9 F1920.0
+G1 X-32.55 Y-32.3 Z0.9 F1920.0
+G1 X-32.3 Y-31.7 Z0.9 F1920.0
+G1 X-31.91 Y-31.19 Z0.9 F1920.0
+G1 X-31.4 Y-30.8 Z0.9 F1920.0
+G1 X-30.8 Y-30.55 Z0.9 F1920.0
+G1 X-30.16 Y-30.47 Z0.9 F1920.0
+G1 X-29.52 Y-30.55 Z0.9 F1920.0
+G1 X-28.93 Y-30.8 Z0.9 F1920.0
+G1 X-28.41 Y-31.19 Z0.9 F1920.0
+G1 X-28.02 Y-31.7 Z0.9 F1920.0
+G1 X-27.78 Y-32.3 Z0.9 F1920.0
+G1 X-27.69 Y-32.94 Z0.9 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-27.69 Y-37.22 Z0.9 F1920.0
+M101
+G1 X34.05 Y-37.22 Z0.9 F1920.0
+G1 X34.05 Y37.22 Z0.9 F1920.0
+G1 X-34.05 Y37.22 Z0.9 F1920.0
+G1 X-34.05 Y-37.22 Z0.9 F1920.0
+G1 X-27.69 Y-37.22 Z0.9 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-27.69 Y-37.81 Z0.9 F1920.0
+M101
+G1 X34.64 Y-37.81 Z0.9 F1920.0
+G1 X34.64 Y37.81 Z0.9 F1920.0
+G1 X-34.64 Y37.81 Z0.9 F1920.0
+G1 X-34.64 Y-37.81 Z0.9 F1920.0
+G1 X-27.69 Y-37.81 Z0.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-29.042 Y-34.061 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-34.313 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-34.472 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-34.526 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-34.472 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-34.313 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-34.061 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-33.733 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-33.351 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.747 Y-32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-32.148 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-31.82 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-31.568 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-31.41 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-31.356 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-31.41 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-31.568 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-29.042 Y-31.82 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-32.148 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-28.578 Y-32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-33.351 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-33.733 Z0.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-29.22 Y-34.57 Z0.9 F1920.0
+M101
+G1 X-29.68 Y-34.76 Z0.9 F1920.0
+G1 X-30.16 Y-34.82 Z0.9 F1920.0
+G1 X-30.65 Y-34.75 Z0.9 F1920.0
+G1 X-31.1 Y-34.57 Z0.9 F1920.0
+G1 X-31.49 Y-34.27 Z0.9 F1920.0
+G1 X-31.79 Y-33.88 Z0.9 F1920.0
+G1 X-31.98 Y-33.43 Z0.9 F1920.0
+G1 X-32.04 Y-32.94 Z0.9 F1920.0
+G1 X-31.98 Y-32.45 Z0.9 F1920.0
+G1 X-31.79 Y-32.0 Z0.9 F1920.0
+G1 X-31.49 Y-31.61 Z0.9 F1920.0
+G1 X-31.1 Y-31.32 Z0.9 F1920.0
+G1 X-30.65 Y-31.13 Z0.9 F1920.0
+G1 X-30.16 Y-31.06 Z0.9 F1920.0
+G1 X-29.68 Y-31.13 Z0.9 F1920.0
+G1 X-29.22 Y-31.32 Z0.9 F1920.0
+G1 X-28.84 Y-31.61 Z0.9 F1920.0
+G1 X-28.54 Y-32.0 Z0.9 F1920.0
+G1 X-28.35 Y-32.45 Z0.9 F1920.0
+G1 X-28.29 Y-32.94 Z0.9 F1920.0
+G1 X-28.35 Y-33.43 Z0.9 F1920.0
+G1 X-28.54 Y-33.88 Z0.9 F1920.0
+G1 X-28.84 Y-34.27 Z0.9 F1920.0
+G1 X-29.22 Y-34.57 Z0.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-19.05 Y-32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-34.528 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y-32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-32.147 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-31.353 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-32.147 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-32.53 Z0.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.45 Y-33.43 Z0.9 F1920.0
+M101
+G1 X-22.52 Y-32.94 Z0.9 F1920.0
+G1 X-22.45 Y-32.45 Z0.9 F1920.0
+G1 X-22.27 Y-32.0 Z0.9 F1920.0
+G1 X-21.97 Y-31.61 Z0.9 F1920.0
+G1 X-21.58 Y-31.31 Z0.9 F1920.0
+G1 X-21.12 Y-31.12 Z0.9 F1920.0
+G1 X-20.64 Y-31.06 Z0.9 F1920.0
+G1 X-20.15 Y-31.12 Z0.9 F1920.0
+G1 X-19.7 Y-31.31 Z0.9 F1920.0
+G1 X-19.31 Y-31.61 Z0.9 F1920.0
+G1 X-19.01 Y-32.0 Z0.9 F1920.0
+G1 X-18.82 Y-32.45 Z0.9 F1920.0
+G1 X-18.76 Y-32.94 Z0.9 F1920.0
+G1 X-18.82 Y-33.43 Z0.9 F1920.0
+G1 X-19.01 Y-33.88 Z0.9 F1920.0
+G1 X-19.31 Y-34.27 Z0.9 F1920.0
+G1 X-19.7 Y-34.57 Z0.9 F1920.0
+G1 X-20.15 Y-34.76 Z0.9 F1920.0
+G1 X-20.64 Y-34.82 Z0.9 F1920.0
+G1 X-21.12 Y-34.76 Z0.9 F1920.0
+G1 X-21.58 Y-34.57 Z0.9 F1920.0
+G1 X-21.97 Y-34.27 Z0.9 F1920.0
+G1 X-22.27 Y-33.88 Z0.9 F1920.0
+G1 X-22.45 Y-33.43 Z0.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X1.167 Y-31.773 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-32.115 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-32.513 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.651 Y-32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-33.368 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-33.766 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.167 Y-34.108 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X0.826 Y-34.37 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-34.535 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-34.592 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-34.535 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-34.37 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-34.108 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-33.766 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-33.368 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.651 Y-32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-32.513 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-32.115 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-31.773 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-31.511 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-31.346 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-31.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-31.346 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X0.826 Y-31.511 Z0.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.05 Y-34.35 Z0.9 F1920.0
+G1 X-21.63 Y-34.66 Z0.9 F1920.0
+G1 X-21.15 Y-34.86 Z0.9 F1920.0
+G1 X-1.94 Y-32.94 Z0.9 F1920.0
+M101
+G1 X-1.88 Y-32.44 Z0.9 F1920.0
+G1 X-1.68 Y-31.97 Z0.9 F1920.0
+G1 X-1.37 Y-31.57 Z0.9 F1920.0
+G1 X-0.97 Y-31.26 Z0.9 F1920.0
+G1 X-0.5 Y-31.06 Z0.9 F1920.0
+G1 X0.0 Y-31.02 Z0.9 F1920.0
+G1 X0.5 Y-31.06 Z0.9 F1920.0
+G1 X0.97 Y-31.26 Z0.9 F1920.0
+G1 X1.37 Y-31.57 Z0.9 F1920.0
+G1 X1.68 Y-31.97 Z0.9 F1920.0
+G1 X1.88 Y-32.44 Z0.9 F1920.0
+G1 X1.94 Y-32.94 Z0.9 F1920.0
+G1 X1.88 Y-33.44 Z0.9 F1920.0
+G1 X1.68 Y-33.91 Z0.9 F1920.0
+G1 X1.37 Y-34.32 Z0.9 F1920.0
+G1 X0.97 Y-34.62 Z0.9 F1920.0
+G1 X0.5 Y-34.82 Z0.9 F1920.0
+G1 X0.0 Y-34.89 Z0.9 F1920.0
+G1 X-0.5 Y-34.82 Z0.9 F1920.0
+G1 X-0.97 Y-34.62 Z0.9 F1920.0
+G1 X-1.37 Y-34.32 Z0.9 F1920.0
+G1 X-1.68 Y-33.91 Z0.9 F1920.0
+G1 X-1.88 Y-33.44 Z0.9 F1920.0
+G1 X-1.94 Y-32.94 Z0.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-0.794 Y-18.44 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-18.188 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-17.859 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-17.477 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.587 Y-17.066 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-16.655 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-16.272 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-15.943 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-0.794 Y-15.691 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-15.532 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-15.478 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-15.532 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-15.691 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-15.943 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-16.272 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-16.655 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.588 Y-17.066 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-17.477 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-17.859 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-18.188 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-18.44 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-18.599 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-18.653 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-18.599 Z0.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X0.0 Y-18.95 Z0.9 F1920.0
+M101
+G1 X-0.49 Y-18.88 Z0.9 F1920.0
+G1 X-0.94 Y-18.69 Z0.9 F1920.0
+G1 X-1.33 Y-18.4 Z0.9 F1920.0
+G1 X-1.63 Y-18.01 Z0.9 F1920.0
+G1 X-1.82 Y-17.55 Z0.9 F1920.0
+G1 X-1.88 Y-17.07 Z0.9 F1920.0
+G1 X-1.82 Y-16.58 Z0.9 F1920.0
+G1 X-1.63 Y-16.13 Z0.9 F1920.0
+G1 X-1.33 Y-15.74 Z0.9 F1920.0
+G1 X-0.94 Y-15.44 Z0.9 F1920.0
+G1 X-0.49 Y-15.25 Z0.9 F1920.0
+G1 X0.0 Y-15.19 Z0.9 F1920.0
+G1 X0.49 Y-15.25 Z0.9 F1920.0
+G1 X0.94 Y-15.44 Z0.9 F1920.0
+G1 X1.33 Y-15.74 Z0.9 F1920.0
+G1 X1.63 Y-16.13 Z0.9 F1920.0
+G1 X1.82 Y-16.58 Z0.9 F1920.0
+G1 X1.88 Y-17.07 Z0.9 F1920.0
+G1 X1.82 Y-17.55 Z0.9 F1920.0
+G1 X1.63 Y-18.01 Z0.9 F1920.0
+G1 X1.33 Y-18.4 Z0.9 F1920.0
+G1 X0.94 Y-18.69 Z0.9 F1920.0
+G1 X0.49 Y-18.88 Z0.9 F1920.0
+G1 X0.0 Y-18.95 Z0.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y-18.44 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-18.188 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-17.859 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-17.477 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-17.066 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-16.655 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-16.272 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-15.943 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-15.691 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-15.532 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-15.478 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-15.532 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-15.691 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-15.943 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-16.272 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-16.655 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-17.066 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-17.477 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-17.859 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-18.188 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-18.44 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-18.599 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-18.653 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-18.599 Z0.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X18.76 Y-17.07 Z0.9 F1920.0
+M101
+G1 X18.82 Y-16.58 Z0.9 F1920.0
+G1 X19.01 Y-16.13 Z0.9 F1920.0
+G1 X19.31 Y-15.74 Z0.9 F1920.0
+G1 X19.7 Y-15.44 Z0.9 F1920.0
+G1 X20.15 Y-15.25 Z0.9 F1920.0
+G1 X20.64 Y-15.19 Z0.9 F1920.0
+G1 X21.12 Y-15.25 Z0.9 F1920.0
+G1 X21.58 Y-15.44 Z0.9 F1920.0
+G1 X21.97 Y-15.74 Z0.9 F1920.0
+G1 X22.27 Y-16.13 Z0.9 F1920.0
+G1 X22.45 Y-16.58 Z0.9 F1920.0
+G1 X22.52 Y-17.07 Z0.9 F1920.0
+G1 X22.45 Y-17.55 Z0.9 F1920.0
+G1 X22.27 Y-18.01 Z0.9 F1920.0
+G1 X21.97 Y-18.4 Z0.9 F1920.0
+G1 X21.58 Y-18.69 Z0.9 F1920.0
+G1 X21.12 Y-18.88 Z0.9 F1920.0
+G1 X20.64 Y-18.95 Z0.9 F1920.0
+G1 X20.15 Y-18.88 Z0.9 F1920.0
+G1 X19.7 Y-18.69 Z0.9 F1920.0
+G1 X19.31 Y-18.4 Z0.9 F1920.0
+G1 X19.01 Y-18.01 Z0.9 F1920.0
+G1 X18.82 Y-17.55 Z0.9 F1920.0
+G1 X18.76 Y-17.07 Z0.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X21.048 Y-31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-32.147 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-34.528 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-32.147 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-31.353 Z0.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X20.64 Y-31.06 Z0.9 F1920.0
+M101
+G1 X21.12 Y-31.12 Z0.9 F1920.0
+G1 X21.58 Y-31.31 Z0.9 F1920.0
+G1 X21.97 Y-31.61 Z0.9 F1920.0
+G1 X22.27 Y-32.0 Z0.9 F1920.0
+G1 X22.45 Y-32.45 Z0.9 F1920.0
+G1 X22.52 Y-32.94 Z0.9 F1920.0
+G1 X22.45 Y-33.43 Z0.9 F1920.0
+G1 X22.27 Y-33.88 Z0.9 F1920.0
+G1 X21.97 Y-34.27 Z0.9 F1920.0
+G1 X21.58 Y-34.57 Z0.9 F1920.0
+G1 X21.12 Y-34.76 Z0.9 F1920.0
+G1 X20.64 Y-34.82 Z0.9 F1920.0
+G1 X20.15 Y-34.76 Z0.9 F1920.0
+G1 X19.7 Y-34.57 Z0.9 F1920.0
+G1 X19.31 Y-34.27 Z0.9 F1920.0
+G1 X19.01 Y-33.88 Z0.9 F1920.0
+G1 X18.82 Y-33.43 Z0.9 F1920.0
+G1 X18.76 Y-32.94 Z0.9 F1920.0
+G1 X18.82 Y-32.45 Z0.9 F1920.0
+G1 X19.01 Y-32.0 Z0.9 F1920.0
+G1 X19.31 Y-31.61 Z0.9 F1920.0
+G1 X19.7 Y-31.31 Z0.9 F1920.0
+G1 X20.15 Y-31.12 Z0.9 F1920.0
+G1 X20.64 Y-31.06 Z0.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X29.04 Y-31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-31.353 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-32.147 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y-32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-34.528 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y-34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-32.147 Z0.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X28.35 Y-32.45 Z0.9 F1920.0
+M101
+G1 X28.54 Y-32.0 Z0.9 F1920.0
+G1 X28.83 Y-31.61 Z0.9 F1920.0
+G1 X29.22 Y-31.31 Z0.9 F1920.0
+G1 X29.68 Y-31.12 Z0.9 F1920.0
+G1 X30.16 Y-31.06 Z0.9 F1920.0
+G1 X30.65 Y-31.12 Z0.9 F1920.0
+G1 X31.1 Y-31.31 Z0.9 F1920.0
+G1 X31.49 Y-31.61 Z0.9 F1920.0
+G1 X31.79 Y-32.0 Z0.9 F1920.0
+G1 X31.98 Y-32.45 Z0.9 F1920.0
+G1 X32.04 Y-32.94 Z0.9 F1920.0
+G1 X31.98 Y-33.43 Z0.9 F1920.0
+G1 X31.79 Y-33.88 Z0.9 F1920.0
+G1 X31.49 Y-34.27 Z0.9 F1920.0
+G1 X31.1 Y-34.57 Z0.9 F1920.0
+G1 X30.65 Y-34.76 Z0.9 F1920.0
+G1 X30.16 Y-34.82 Z0.9 F1920.0
+G1 X29.68 Y-34.76 Z0.9 F1920.0
+G1 X29.22 Y-34.57 Z0.9 F1920.0
+G1 X28.83 Y-34.27 Z0.9 F1920.0
+G1 X28.54 Y-33.88 Z0.9 F1920.0
+G1 X28.35 Y-33.43 Z0.9 F1920.0
+G1 X28.28 Y-32.94 Z0.9 F1920.0
+G1 X28.35 Y-32.45 Z0.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X31.285 Y31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y31.353 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y32.147 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y34.528 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y32.147 Z0.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X30.16 Y31.06 Z0.9 F1920.0
+M101
+G1 X29.68 Y31.12 Z0.9 F1920.0
+G1 X29.22 Y31.31 Z0.9 F1920.0
+G1 X28.83 Y31.61 Z0.9 F1920.0
+G1 X28.54 Y32.0 Z0.9 F1920.0
+G1 X28.35 Y32.45 Z0.9 F1920.0
+G1 X28.28 Y32.94 Z0.9 F1920.0
+G1 X28.35 Y33.43 Z0.9 F1920.0
+G1 X28.54 Y33.88 Z0.9 F1920.0
+G1 X28.83 Y34.27 Z0.9 F1920.0
+G1 X29.22 Y34.57 Z0.9 F1920.0
+G1 X29.68 Y34.76 Z0.9 F1920.0
+G1 X30.16 Y34.82 Z0.9 F1920.0
+G1 X30.65 Y34.76 Z0.9 F1920.0
+G1 X31.1 Y34.57 Z0.9 F1920.0
+G1 X31.49 Y34.27 Z0.9 F1920.0
+G1 X31.79 Y33.88 Z0.9 F1920.0
+G1 X31.98 Y33.43 Z0.9 F1920.0
+G1 X32.04 Y32.94 Z0.9 F1920.0
+G1 X31.98 Y32.45 Z0.9 F1920.0
+G1 X31.79 Y32.0 Z0.9 F1920.0
+G1 X31.49 Y31.61 Z0.9 F1920.0
+G1 X31.1 Y31.31 Z0.9 F1920.0
+G1 X30.65 Y31.12 Z0.9 F1920.0
+G1 X30.16 Y31.06 Z0.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y34.528 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y32.147 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y31.353 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y32.147 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y34.063 Z0.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.45 Y32.45 Z0.9 F1920.0
+M101
+G1 X22.27 Y32.0 Z0.9 F1920.0
+G1 X21.97 Y31.61 Z0.9 F1920.0
+G1 X21.58 Y31.31 Z0.9 F1920.0
+G1 X21.12 Y31.12 Z0.9 F1920.0
+G1 X20.64 Y31.06 Z0.9 F1920.0
+G1 X20.15 Y31.12 Z0.9 F1920.0
+G1 X19.7 Y31.31 Z0.9 F1920.0
+G1 X19.31 Y31.61 Z0.9 F1920.0
+G1 X19.01 Y32.0 Z0.9 F1920.0
+G1 X18.82 Y32.45 Z0.9 F1920.0
+G1 X18.76 Y32.94 Z0.9 F1920.0
+G1 X18.82 Y33.43 Z0.9 F1920.0
+G1 X19.01 Y33.88 Z0.9 F1920.0
+G1 X19.31 Y34.27 Z0.9 F1920.0
+G1 X19.7 Y34.57 Z0.9 F1920.0
+G1 X20.15 Y34.76 Z0.9 F1920.0
+G1 X20.64 Y34.82 Z0.9 F1920.0
+G1 X21.12 Y34.76 Z0.9 F1920.0
+G1 X21.58 Y34.57 Z0.9 F1920.0
+G1 X21.97 Y34.27 Z0.9 F1920.0
+G1 X22.27 Y33.88 Z0.9 F1920.0
+G1 X22.45 Y33.43 Z0.9 F1920.0
+G1 X22.52 Y32.94 Z0.9 F1920.0
+G1 X22.45 Y32.45 Z0.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-22.171 Y32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y34.528 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.05 Y32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y32.147 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y31.353 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y32.147 Z0.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.05 Y31.53 Z0.9 F1920.0
+G1 X21.63 Y31.22 Z0.9 F1920.0
+G1 X21.15 Y31.02 Z0.9 F1920.0
+G1 X-18.76 Y32.94 Z0.9 F1920.0
+M101
+G1 X-18.82 Y32.45 Z0.9 F1920.0
+G1 X-19.01 Y32.0 Z0.9 F1920.0
+G1 X-19.31 Y31.61 Z0.9 F1920.0
+G1 X-19.7 Y31.31 Z0.9 F1920.0
+G1 X-20.15 Y31.12 Z0.9 F1920.0
+G1 X-20.64 Y31.06 Z0.9 F1920.0
+G1 X-21.12 Y31.12 Z0.9 F1920.0
+G1 X-21.58 Y31.31 Z0.9 F1920.0
+G1 X-21.97 Y31.61 Z0.9 F1920.0
+G1 X-22.27 Y32.0 Z0.9 F1920.0
+G1 X-22.45 Y32.45 Z0.9 F1920.0
+G1 X-22.52 Y32.94 Z0.9 F1920.0
+G1 X-22.45 Y33.43 Z0.9 F1920.0
+G1 X-22.27 Y33.88 Z0.9 F1920.0
+G1 X-21.97 Y34.27 Z0.9 F1920.0
+G1 X-21.58 Y34.57 Z0.9 F1920.0
+G1 X-21.12 Y34.76 Z0.9 F1920.0
+G1 X-20.64 Y34.82 Z0.9 F1920.0
+G1 X-20.15 Y34.76 Z0.9 F1920.0
+G1 X-19.7 Y34.57 Z0.9 F1920.0
+G1 X-19.31 Y34.27 Z0.9 F1920.0
+G1 X-19.01 Y33.88 Z0.9 F1920.0
+G1 X-18.82 Y33.43 Z0.9 F1920.0
+G1 X-18.76 Y32.94 Z0.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-28.788 Y32.147 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y31.353 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y31.407 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y31.566 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y31.818 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y32.147 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y32.53 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.75 Y32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y34.528 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y34.474 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y34.315 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y34.063 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-28.788 Y33.734 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y33.352 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y32.941 Z0.9 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y32.53 Z0.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-18.91 Y33.94 Z0.9 F1920.0
+G1 X-19.23 Y34.35 Z0.9 F1920.0
+G1 X-19.64 Y34.66 Z0.9 F1920.0
+G1 X-20.12 Y34.86 Z0.9 F1920.0
+G1 X-20.64 Y34.93 Z0.9 F1920.0
+G1 X-28.28 Y32.94 Z0.9 F1920.0
+M101
+G1 X-28.35 Y32.45 Z0.9 F1920.0
+G1 X-28.54 Y32.0 Z0.9 F1920.0
+G1 X-28.83 Y31.61 Z0.9 F1920.0
+G1 X-29.22 Y31.31 Z0.9 F1920.0
+G1 X-29.68 Y31.12 Z0.9 F1920.0
+G1 X-30.16 Y31.06 Z0.9 F1920.0
+G1 X-30.65 Y31.12 Z0.9 F1920.0
+G1 X-31.1 Y31.31 Z0.9 F1920.0
+G1 X-31.49 Y31.61 Z0.9 F1920.0
+G1 X-31.79 Y32.0 Z0.9 F1920.0
+G1 X-31.98 Y32.45 Z0.9 F1920.0
+G1 X-32.04 Y32.94 Z0.9 F1920.0
+G1 X-31.98 Y33.43 Z0.9 F1920.0
+G1 X-31.79 Y33.88 Z0.9 F1920.0
+G1 X-31.49 Y34.27 Z0.9 F1920.0
+G1 X-31.1 Y34.57 Z0.9 F1920.0
+G1 X-30.65 Y34.76 Z0.9 F1920.0
+G1 X-30.16 Y34.82 Z0.9 F1920.0
+G1 X-29.68 Y34.76 Z0.9 F1920.0
+G1 X-29.22 Y34.57 Z0.9 F1920.0
+G1 X-28.83 Y34.27 Z0.9 F1920.0
+G1 X-28.54 Y33.88 Z0.9 F1920.0
+G1 X-28.35 Y33.43 Z0.9 F1920.0
+G1 X-28.28 Y32.94 Z0.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+G1 X-26.78 Y33.6 Z0.9 F1920.0
+M101
+G1 X-24.02 Y33.6 Z0.9 F1920.0
+G1 X-24.1 Y33.0 Z0.9 F1920.0
+G1 X-26.7 Y33.0 Z0.9 F1920.0
+M103
+G1 X-26.76 Y32.4 Z0.9 F1920.0
+M101
+G1 X-24.04 Y32.4 Z0.9 F1920.0
+G1 X-23.89 Y31.8 Z0.9 F1920.0
+G1 X-26.91 Y31.8 Z0.9 F1920.0
+M103
+G1 X-22.46 Y30.0 Z0.9 F1920.0
+M101
+G1 X-28.34 Y30.0 Z0.9 F1920.0
+M103
+G1 X-26.96 Y34.2 Z0.9 F1920.0
+M101
+G1 X-23.84 Y34.2 Z0.9 F1920.0
+M103
+G1 X-22.25 Y36.0 Z0.9 F1920.0
+M101
+G1 X-28.55 Y36.0 Z0.9 F1920.0
+G1 X-27.71 Y35.4 Z0.9 F1920.0
+G1 X-23.09 Y35.4 Z0.9 F1920.0
+G1 X-23.55 Y34.8 Z0.9 F1920.0
+G1 X-27.25 Y34.8 Z0.9 F1920.0
+M103
+G1 X-31.77 Y36.0 Z0.9 F1920.0
+M101
+G1 X-33.06 Y36.0 Z0.9 F1920.0
+G1 X-32.62 Y35.4 Z0.9 F1920.0
+G1 X-33.06 Y35.4 Z0.9 F1920.0
+M103
+G1 X-33.06 Y30.6 Z0.9 F1920.0
+M101
+G1 X-32.71 Y30.6 Z0.9 F1920.0
+G1 X-33.06 Y30.0 Z0.9 F1920.0
+G1 X-31.99 Y30.0 Z0.9 F1920.0
+G1 X-33.06 Y29.4 Z0.9 F1920.0
+G1 X33.06 Y29.4 Z0.9 F1920.0
+G1 X31.99 Y30.0 Z0.9 F1920.0
+G1 X33.06 Y30.0 Z0.9 F1920.0
+G1 X32.71 Y30.6 Z0.9 F1920.0
+G1 X33.06 Y30.6 Z0.9 F1920.0
+M103
+G1 X33.06 Y28.8 Z0.9 F1920.0
+M101
+G1 X-33.06 Y28.8 Z0.9 F1920.0
+M103
+G1 X-33.06 Y28.2 Z0.9 F1920.0
+M101
+G1 X33.06 Y28.2 Z0.9 F1920.0
+M103
+G1 X33.06 Y27.6 Z0.9 F1920.0
+M101
+G1 X-33.06 Y27.6 Z0.9 F1920.0
+M103
+G1 X-33.06 Y27.0 Z0.9 F1920.0
+M101
+G1 X33.06 Y27.0 Z0.9 F1920.0
+M103
+G1 X33.06 Y26.4 Z0.9 F1920.0
+M101
+G1 X-33.06 Y26.4 Z0.9 F1920.0
+M103
+G1 X-33.06 Y25.8 Z0.9 F1920.0
+M101
+G1 X33.06 Y25.8 Z0.9 F1920.0
+M103
+G1 X33.06 Y25.2 Z0.9 F1920.0
+M101
+G1 X-33.06 Y25.2 Z0.9 F1920.0
+M103
+G1 X-33.06 Y24.6 Z0.9 F1920.0
+M101
+G1 X33.06 Y24.6 Z0.9 F1920.0
+M103
+G1 X33.06 Y24.0 Z0.9 F1920.0
+M101
+G1 X-33.06 Y24.0 Z0.9 F1920.0
+M103
+G1 X-33.06 Y23.4 Z0.9 F1920.0
+M101
+G1 X33.06 Y23.4 Z0.9 F1920.0
+M103
+G1 X33.06 Y22.8 Z0.9 F1920.0
+M101
+G1 X-33.06 Y22.8 Z0.9 F1920.0
+M103
+G1 X-33.06 Y22.2 Z0.9 F1920.0
+M101
+G1 X33.06 Y22.2 Z0.9 F1920.0
+M103
+G1 X33.06 Y21.6 Z0.9 F1920.0
+M101
+G1 X-33.06 Y21.6 Z0.9 F1920.0
+M103
+G1 X-33.06 Y21.0 Z0.9 F1920.0
+M101
+G1 X33.06 Y21.0 Z0.9 F1920.0
+M103
+G1 X33.06 Y20.4 Z0.9 F1920.0
+M101
+G1 X-33.06 Y20.4 Z0.9 F1920.0
+M103
+G1 X-33.06 Y19.8 Z0.9 F1920.0
+M101
+G1 X33.06 Y19.8 Z0.9 F1920.0
+M103
+G1 X33.06 Y19.2 Z0.9 F1920.0
+M101
+G1 X-33.06 Y19.2 Z0.9 F1920.0
+M103
+G1 X-33.06 Y18.6 Z0.9 F1920.0
+M101
+G1 X33.06 Y18.6 Z0.9 F1920.0
+M103
+G1 X33.06 Y18.0 Z0.9 F1920.0
+M101
+G1 X-33.06 Y18.0 Z0.9 F1920.0
+M103
+G1 X-33.06 Y17.4 Z0.9 F1920.0
+M101
+G1 X33.06 Y17.4 Z0.9 F1920.0
+M103
+G1 X33.06 Y16.8 Z0.9 F1920.0
+M101
+G1 X-33.06 Y16.8 Z0.9 F1920.0
+M103
+G1 X-33.06 Y16.2 Z0.9 F1920.0
+M101
+G1 X33.06 Y16.2 Z0.9 F1920.0
+M103
+G1 X33.06 Y15.6 Z0.9 F1920.0
+M101
+G1 X-33.06 Y15.6 Z0.9 F1920.0
+M103
+G1 X-33.06 Y15.0 Z0.9 F1920.0
+M101
+G1 X33.06 Y15.0 Z0.9 F1920.0
+M103
+G1 X33.06 Y14.4 Z0.9 F1920.0
+M101
+G1 X-33.06 Y14.4 Z0.9 F1920.0
+M103
+G1 X-33.06 Y13.8 Z0.9 F1920.0
+M101
+G1 X33.06 Y13.8 Z0.9 F1920.0
+M103
+G1 X33.06 Y13.2 Z0.9 F1920.0
+M101
+G1 X-33.06 Y13.2 Z0.9 F1920.0
+M103
+G1 X-33.06 Y12.6 Z0.9 F1920.0
+M101
+G1 X33.06 Y12.6 Z0.9 F1920.0
+M103
+G1 X33.06 Y12.0 Z0.9 F1920.0
+M101
+G1 X-33.06 Y12.0 Z0.9 F1920.0
+M103
+G1 X-33.06 Y11.4 Z0.9 F1920.0
+M101
+G1 X33.06 Y11.4 Z0.9 F1920.0
+M103
+G1 X33.06 Y10.8 Z0.9 F1920.0
+M101
+G1 X-33.06 Y10.8 Z0.9 F1920.0
+M103
+G1 X-33.06 Y10.2 Z0.9 F1920.0
+M101
+G1 X33.06 Y10.2 Z0.9 F1920.0
+M103
+G1 X33.06 Y9.6 Z0.9 F1920.0
+M101
+G1 X-33.06 Y9.6 Z0.9 F1920.0
+M103
+G1 X-33.06 Y9.0 Z0.9 F1920.0
+M101
+G1 X33.06 Y9.0 Z0.9 F1920.0
+M103
+G1 X33.06 Y8.4 Z0.9 F1920.0
+M101
+G1 X-33.06 Y8.4 Z0.9 F1920.0
+M103
+G1 X-33.06 Y7.8 Z0.9 F1920.0
+M101
+G1 X33.06 Y7.8 Z0.9 F1920.0
+M103
+G1 X33.06 Y7.2 Z0.9 F1920.0
+M101
+G1 X-33.06 Y7.2 Z0.9 F1920.0
+M103
+G1 X-33.06 Y6.6 Z0.9 F1920.0
+M101
+G1 X33.06 Y6.6 Z0.9 F1920.0
+M103
+G1 X33.06 Y6.0 Z0.9 F1920.0
+M101
+G1 X-33.06 Y6.0 Z0.9 F1920.0
+M103
+G1 X-33.06 Y5.4 Z0.9 F1920.0
+M101
+G1 X33.06 Y5.4 Z0.9 F1920.0
+M103
+G1 X33.06 Y4.8 Z0.9 F1920.0
+M101
+G1 X-33.06 Y4.8 Z0.9 F1920.0
+M103
+G1 X-33.06 Y4.2 Z0.9 F1920.0
+M101
+G1 X33.06 Y4.2 Z0.9 F1920.0
+M103
+G1 X33.06 Y3.6 Z0.9 F1920.0
+M101
+G1 X-33.06 Y3.6 Z0.9 F1920.0
+M103
+G1 X-33.06 Y3.0 Z0.9 F1920.0
+M101
+G1 X33.06 Y3.0 Z0.9 F1920.0
+M103
+G1 X33.06 Y2.4 Z0.9 F1920.0
+M101
+G1 X-33.06 Y2.4 Z0.9 F1920.0
+M103
+G1 X-33.06 Y1.8 Z0.9 F1920.0
+M101
+G1 X33.06 Y1.8 Z0.9 F1920.0
+M103
+G1 X33.06 Y1.2 Z0.9 F1920.0
+M101
+G1 X-33.06 Y1.2 Z0.9 F1920.0
+M103
+G1 X-33.06 Y0.6 Z0.9 F1920.0
+M101
+G1 X33.06 Y0.6 Z0.9 F1920.0
+M103
+G1 X33.06 Y0.0 Z0.9 F1920.0
+M101
+G1 X-33.06 Y0.0 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-0.6 Z0.9 F1920.0
+M101
+G1 X33.06 Y-0.6 Z0.9 F1920.0
+M103
+G1 X33.06 Y-1.2 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-1.2 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-1.8 Z0.9 F1920.0
+M101
+G1 X33.06 Y-1.8 Z0.9 F1920.0
+M103
+G1 X33.06 Y-2.4 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-2.4 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-3.0 Z0.9 F1920.0
+M101
+G1 X33.06 Y-3.0 Z0.9 F1920.0
+M103
+G1 X33.06 Y-3.6 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-3.6 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-4.2 Z0.9 F1920.0
+M101
+G1 X33.06 Y-4.2 Z0.9 F1920.0
+M103
+G1 X33.06 Y-4.8 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-4.8 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-5.4 Z0.9 F1920.0
+M101
+G1 X33.06 Y-5.4 Z0.9 F1920.0
+M103
+G1 X33.06 Y-6.0 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-6.0 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-6.6 Z0.9 F1920.0
+M101
+G1 X33.06 Y-6.6 Z0.9 F1920.0
+M103
+G1 X33.06 Y-7.2 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-7.2 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-7.8 Z0.9 F1920.0
+M101
+G1 X33.06 Y-7.8 Z0.9 F1920.0
+M103
+G1 X33.06 Y-8.4 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-8.4 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-9.0 Z0.9 F1920.0
+M101
+G1 X33.06 Y-9.0 Z0.9 F1920.0
+M103
+G1 X33.06 Y-9.6 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-9.6 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-10.2 Z0.9 F1920.0
+M101
+G1 X33.06 Y-10.2 Z0.9 F1920.0
+M103
+G1 X33.06 Y-10.8 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-10.8 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-11.4 Z0.9 F1920.0
+M101
+G1 X33.06 Y-11.4 Z0.9 F1920.0
+M103
+G1 X33.06 Y-12.0 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-12.0 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-12.6 Z0.9 F1920.0
+M101
+G1 X33.06 Y-12.6 Z0.9 F1920.0
+M103
+G1 X33.06 Y-13.2 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-13.2 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-13.8 Z0.9 F1920.0
+M101
+G1 X-1.12 Y-13.8 Z0.9 F1920.0
+M103
+G1 X19.52 Y-13.8 Z0.9 F1920.0
+M101
+G1 X1.12 Y-13.8 Z0.9 F1920.0
+M103
+G1 X3.12 Y-15.6 Z0.9 F1920.0
+M101
+G1 X17.52 Y-15.6 Z0.9 F1920.0
+G1 X17.88 Y-15.0 Z0.9 F1920.0
+G1 X2.76 Y-15.0 Z0.9 F1920.0
+G1 X2.18 Y-14.4 Z0.9 F1920.0
+G1 X18.45 Y-14.4 Z0.9 F1920.0
+M103
+G1 X17.28 Y-16.2 Z0.9 F1920.0
+M101
+G1 X3.36 Y-16.2 Z0.9 F1920.0
+M103
+G1 X3.43 Y-17.4 Z0.9 F1920.0
+M101
+G1 X17.21 Y-17.4 Z0.9 F1920.0
+G1 X17.2 Y-16.8 Z0.9 F1920.0
+G1 X3.44 Y-16.8 Z0.9 F1920.0
+M103
+G1 X3.34 Y-18.0 Z0.9 F1920.0
+M101
+G1 X17.3 Y-18.0 Z0.9 F1920.0
+M103
+G1 X18.54 Y-19.8 Z0.9 F1920.0
+M101
+G1 X2.09 Y-19.8 Z0.9 F1920.0
+G1 X2.7 Y-19.2 Z0.9 F1920.0
+G1 X17.93 Y-19.2 Z0.9 F1920.0
+G1 X17.55 Y-18.6 Z0.9 F1920.0
+G1 X3.09 Y-18.6 Z0.9 F1920.0
+M103
+G1 X0.95 Y-20.4 Z0.9 F1920.0
+M101
+G1 X19.69 Y-20.4 Z0.9 F1920.0
+M103
+G1 X33.06 Y-20.4 Z0.9 F1920.0
+M101
+G1 X21.59 Y-20.4 Z0.9 F1920.0
+M103
+G1 X23.73 Y-18.6 Z0.9 F1920.0
+M101
+G1 X33.06 Y-18.6 Z0.9 F1920.0
+M103
+G1 X33.06 Y-18.0 Z0.9 F1920.0
+M101
+G1 X23.98 Y-18.0 Z0.9 F1920.0
+G1 X24.07 Y-17.4 Z0.9 F1920.0
+G1 X33.06 Y-17.4 Z0.9 F1920.0
+M103
+G1 X33.06 Y-16.8 Z0.9 F1920.0
+M101
+G1 X24.08 Y-16.8 Z0.9 F1920.0
+G1 X24.0 Y-16.2 Z0.9 F1920.0
+G1 X33.06 Y-16.2 Z0.9 F1920.0
+M103
+G1 X33.06 Y-15.6 Z0.9 F1920.0
+M101
+G1 X23.76 Y-15.6 Z0.9 F1920.0
+G1 X23.39 Y-15.0 Z0.9 F1920.0
+G1 X33.06 Y-15.0 Z0.9 F1920.0
+M103
+G1 X33.06 Y-14.4 Z0.9 F1920.0
+M101
+G1 X22.82 Y-14.4 Z0.9 F1920.0
+M103
+G1 X21.75 Y-13.8 Z0.9 F1920.0
+M101
+G1 X33.06 Y-13.8 Z0.9 F1920.0
+M103
+G1 X33.06 Y-19.8 Z0.9 F1920.0
+M101
+G1 X22.73 Y-19.8 Z0.9 F1920.0
+G1 X23.34 Y-19.2 Z0.9 F1920.0
+G1 X33.06 Y-19.2 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-21.0 Z0.9 F1920.0
+M101
+G1 X33.06 Y-21.0 Z0.9 F1920.0
+M103
+G1 X33.06 Y-21.6 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-21.6 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-22.2 Z0.9 F1920.0
+M101
+G1 X33.06 Y-22.2 Z0.9 F1920.0
+M103
+G1 X33.06 Y-22.8 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-22.8 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-23.4 Z0.9 F1920.0
+M101
+G1 X33.06 Y-23.4 Z0.9 F1920.0
+M103
+G1 X33.06 Y-24.0 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-24.0 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-24.6 Z0.9 F1920.0
+M101
+G1 X33.06 Y-24.6 Z0.9 F1920.0
+M103
+G1 X33.06 Y-25.2 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-25.2 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-25.8 Z0.9 F1920.0
+M101
+G1 X33.06 Y-25.8 Z0.9 F1920.0
+M103
+G1 X33.06 Y-26.4 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-26.4 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-27.0 Z0.9 F1920.0
+M101
+G1 X33.06 Y-27.0 Z0.9 F1920.0
+M103
+G1 X33.06 Y-27.6 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-27.6 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-28.2 Z0.9 F1920.0
+M101
+G1 X33.06 Y-28.2 Z0.9 F1920.0
+M103
+G1 X33.06 Y-28.8 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-28.8 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-29.4 Z0.9 F1920.0
+M101
+G1 X33.06 Y-29.4 Z0.9 F1920.0
+G1 X31.99 Y-30.0 Z0.9 F1920.0
+G1 X33.06 Y-30.0 Z0.9 F1920.0
+G1 X32.71 Y-30.6 Z0.9 F1920.0
+G1 X33.06 Y-30.6 Z0.9 F1920.0
+M103
+G1 X28.34 Y-30.0 Z0.9 F1920.0
+M101
+G1 X22.46 Y-30.0 Z0.9 F1920.0
+M103
+G1 X23.18 Y-30.6 Z0.9 F1920.0
+M101
+G1 X27.62 Y-30.6 Z0.9 F1920.0
+G1 X27.16 Y-31.2 Z0.9 F1920.0
+G1 X23.64 Y-31.2 Z0.9 F1920.0
+M103
+G1 X23.84 Y-34.2 Z0.9 F1920.0
+M101
+G1 X26.96 Y-34.2 Z0.9 F1920.0
+M103
+G1 X26.7 Y-33.0 Z0.9 F1920.0
+M101
+G1 X24.1 Y-33.0 Z0.9 F1920.0
+G1 X24.02 Y-33.6 Z0.9 F1920.0
+G1 X26.78 Y-33.6 Z0.9 F1920.0
+M103
+G1 X26.91 Y-31.8 Z0.9 F1920.0
+M101
+G1 X23.89 Y-31.8 Z0.9 F1920.0
+G1 X24.04 Y-32.4 Z0.9 F1920.0
+G1 X26.76 Y-32.4 Z0.9 F1920.0
+M103
+G1 X27.25 Y-34.8 Z0.9 F1920.0
+M101
+G1 X23.55 Y-34.8 Z0.9 F1920.0
+G1 X23.09 Y-35.4 Z0.9 F1920.0
+G1 X27.71 Y-35.4 Z0.9 F1920.0
+G1 X28.55 Y-36.0 Z0.9 F1920.0
+G1 X22.25 Y-36.0 Z0.9 F1920.0
+M103
+G1 X19.03 Y-36.0 Z0.9 F1920.0
+M101
+G1 X1.77 Y-36.0 Z0.9 F1920.0
+G1 X2.53 Y-35.4 Z0.9 F1920.0
+G1 X18.18 Y-35.4 Z0.9 F1920.0
+G1 X17.72 Y-34.8 Z0.9 F1920.0
+G1 X2.99 Y-34.8 Z0.9 F1920.0
+M103
+G1 X3.27 Y-34.2 Z0.9 F1920.0
+M101
+G1 X17.43 Y-34.2 Z0.9 F1920.0
+G1 X17.25 Y-33.6 Z0.9 F1920.0
+G1 X3.45 Y-33.6 Z0.9 F1920.0
+G1 X3.53 Y-33.0 Z0.9 F1920.0
+G1 X17.17 Y-33.0 Z0.9 F1920.0
+G1 X17.24 Y-32.4 Z0.9 F1920.0
+G1 X3.47 Y-32.4 Z0.9 F1920.0
+M103
+G1 X3.32 Y-31.8 Z0.9 F1920.0
+M101
+G1 X17.38 Y-31.8 Z0.9 F1920.0
+G1 X17.63 Y-31.2 Z0.9 F1920.0
+G1 X3.08 Y-31.2 Z0.9 F1920.0
+M103
+G1 X-3.08 Y-31.2 Z0.9 F1920.0
+M101
+G1 X-17.63 Y-31.2 Z0.9 F1920.0
+G1 X-17.38 Y-31.8 Z0.9 F1920.0
+G1 X-3.32 Y-31.8 Z0.9 F1920.0
+M103
+G1 X-3.47 Y-32.4 Z0.9 F1920.0
+M101
+G1 X-17.24 Y-32.4 Z0.9 F1920.0
+G1 X-17.17 Y-33.0 Z0.9 F1920.0
+G1 X-3.53 Y-33.0 Z0.9 F1920.0
+G1 X-3.45 Y-33.6 Z0.9 F1920.0
+G1 X-17.25 Y-33.6 Z0.9 F1920.0
+G1 X-17.43 Y-34.2 Z0.9 F1920.0
+G1 X-3.27 Y-34.2 Z0.9 F1920.0
+M103
+G1 X-2.99 Y-34.8 Z0.9 F1920.0
+M101
+G1 X-17.72 Y-34.8 Z0.9 F1920.0
+G1 X-18.18 Y-35.4 Z0.9 F1920.0
+G1 X-2.53 Y-35.4 Z0.9 F1920.0
+G1 X-1.77 Y-36.0 Z0.9 F1920.0
+G1 X-19.03 Y-36.0 Z0.9 F1920.0
+M103
+G1 X-22.25 Y-36.0 Z0.9 F1920.0
+M101
+G1 X-28.56 Y-36.0 Z0.9 F1920.0
+G1 X-27.72 Y-35.4 Z0.9 F1920.0
+G1 X-23.09 Y-35.4 Z0.9 F1920.0
+G1 X-23.55 Y-34.8 Z0.9 F1920.0
+G1 X-27.25 Y-34.8 Z0.9 F1920.0
+M103
+G1 X-26.96 Y-34.2 Z0.9 F1920.0
+M101
+G1 X-23.84 Y-34.2 Z0.9 F1920.0
+M103
+G1 X-26.78 Y-33.6 Z0.9 F1920.0
+M101
+G1 X-24.02 Y-33.6 Z0.9 F1920.0
+G1 X-24.1 Y-33.0 Z0.9 F1920.0
+G1 X-26.7 Y-33.0 Z0.9 F1920.0
+M103
+G1 X-26.76 Y-32.4 Z0.9 F1920.0
+M101
+G1 X-24.04 Y-32.4 Z0.9 F1920.0
+G1 X-23.89 Y-31.8 Z0.9 F1920.0
+G1 X-26.91 Y-31.8 Z0.9 F1920.0
+M103
+G1 X-22.46 Y-30.0 Z0.9 F1920.0
+M101
+G1 X-28.34 Y-30.0 Z0.9 F1920.0
+M103
+G1 X-31.98 Y-30.0 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-30.0 Z0.9 F1920.0
+G1 X-32.7 Y-30.6 Z0.9 F1920.0
+G1 X-33.06 Y-30.6 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-35.4 Z0.9 F1920.0
+M101
+G1 X-32.61 Y-35.4 Z0.9 F1920.0
+G1 X-33.06 Y-36.0 Z0.9 F1920.0
+G1 X-31.77 Y-36.0 Z0.9 F1920.0
+M103
+G1 X-23.64 Y-31.2 Z0.9 F1920.0
+M101
+G1 X-27.16 Y-31.2 Z0.9 F1920.0
+G1 X-27.62 Y-30.6 Z0.9 F1920.0
+G1 X-23.18 Y-30.6 Z0.9 F1920.0
+M103
+G1 X-18.81 Y-30.0 Z0.9 F1920.0
+M101
+G1 X-1.93 Y-30.0 Z0.9 F1920.0
+G1 X-2.62 Y-30.6 Z0.9 F1920.0
+G1 X-18.09 Y-30.6 Z0.9 F1920.0
+M103
+G1 X-0.95 Y-20.4 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-20.4 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-19.2 Z0.9 F1920.0
+M101
+G1 X-2.7 Y-19.2 Z0.9 F1920.0
+G1 X-2.09 Y-19.8 Z0.9 F1920.0
+G1 X-33.06 Y-19.8 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-18.6 Z0.9 F1920.0
+M101
+G1 X-3.09 Y-18.6 Z0.9 F1920.0
+M103
+G1 X-3.34 Y-18.0 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-18.0 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-17.4 Z0.9 F1920.0
+M101
+G1 X-3.43 Y-17.4 Z0.9 F1920.0
+M103
+G1 X-3.44 Y-16.8 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-16.8 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-16.2 Z0.9 F1920.0
+M101
+G1 X-3.36 Y-16.2 Z0.9 F1920.0
+M103
+G1 X-3.12 Y-15.6 Z0.9 F1920.0
+M101
+G1 X-33.06 Y-15.6 Z0.9 F1920.0
+M103
+G1 X-33.06 Y-14.4 Z0.9 F1920.0
+M101
+G1 X-2.18 Y-14.4 Z0.9 F1920.0
+G1 X-2.76 Y-15.0 Z0.9 F1920.0
+G1 X-33.06 Y-15.0 Z0.9 F1920.0
+M103
+G1 X-23.64 Y31.2 Z0.9 F1920.0
+M101
+G1 X-27.16 Y31.2 Z0.9 F1920.0
+G1 X-27.62 Y30.6 Z0.9 F1920.0
+G1 X-23.18 Y30.6 Z0.9 F1920.0
+M103
+G1 X18.81 Y30.0 Z0.9 F1920.0
+M101
+G1 X-18.81 Y30.0 Z0.9 F1920.0
+M103
+G1 X-18.09 Y30.6 Z0.9 F1920.0
+M101
+G1 X18.09 Y30.6 Z0.9 F1920.0
+G1 X17.63 Y31.2 Z0.9 F1920.0
+G1 X-17.63 Y31.2 Z0.9 F1920.0
+G1 X-17.38 Y31.8 Z0.9 F1920.0
+G1 X17.38 Y31.8 Z0.9 F1920.0
+M103
+G1 X17.24 Y32.4 Z0.9 F1920.0
+M101
+G1 X-17.24 Y32.4 Z0.9 F1920.0
+G1 X-17.17 Y33.0 Z0.9 F1920.0
+G1 X17.17 Y33.0 Z0.9 F1920.0
+G1 X17.25 Y33.6 Z0.9 F1920.0
+G1 X-17.25 Y33.6 Z0.9 F1920.0
+G1 X-17.43 Y34.2 Z0.9 F1920.0
+G1 X17.43 Y34.2 Z0.9 F1920.0
+G1 X17.72 Y34.8 Z0.9 F1920.0
+G1 X-17.72 Y34.8 Z0.9 F1920.0
+G1 X-18.18 Y35.4 Z0.9 F1920.0
+G1 X18.18 Y35.4 Z0.9 F1920.0
+M103
+G1 X19.03 Y36.0 Z0.9 F1920.0
+M101
+G1 X-19.03 Y36.0 Z0.9 F1920.0
+M103
+G1 X21.15 Y31.02 Z0.9 F1920.0
+G1 X27.16 Y31.2 Z0.9 F1920.0
+M101
+G1 X23.64 Y31.2 Z0.9 F1920.0
+G1 X23.18 Y30.6 Z0.9 F1920.0
+G1 X27.62 Y30.6 Z0.9 F1920.0
+G1 X28.34 Y30.0 Z0.9 F1920.0
+G1 X22.46 Y30.0 Z0.9 F1920.0
+M103
+G1 X26.76 Y32.4 Z0.9 F1920.0
+M101
+G1 X24.04 Y32.4 Z0.9 F1920.0
+G1 X23.89 Y31.8 Z0.9 F1920.0
+G1 X26.91 Y31.8 Z0.9 F1920.0
+M103
+G1 X26.78 Y33.6 Z0.9 F1920.0
+M101
+G1 X24.02 Y33.6 Z0.9 F1920.0
+G1 X24.1 Y33.0 Z0.9 F1920.0
+G1 X26.7 Y33.0 Z0.9 F1920.0
+M103
+G1 X28.55 Y36.0 Z0.9 F1920.0
+M101
+G1 X22.25 Y36.0 Z0.9 F1920.0
+G1 X23.09 Y35.4 Z0.9 F1920.0
+G1 X27.71 Y35.4 Z0.9 F1920.0
+G1 X27.25 Y34.8 Z0.9 F1920.0
+G1 X23.55 Y34.8 Z0.9 F1920.0
+G1 X23.84 Y34.2 Z0.9 F1920.0
+G1 X26.96 Y34.2 Z0.9 F1920.0
+M103
+G1 X33.06 Y36.0 Z0.9 F1920.0
+M101
+G1 X31.77 Y36.0 Z0.9 F1920.0
+G1 X32.62 Y35.4 Z0.9 F1920.0
+G1 X33.06 Y35.4 Z0.9 F1920.0
+M103
+G1 X22.36 Y-18.06 Z0.9 F1920.0
+G1 X18.09 Y-30.6 Z0.9 F1920.0
+M101
+G1 X2.62 Y-30.6 Z0.9 F1920.0
+G1 X1.93 Y-30.0 Z0.9 F1920.0
+G1 X18.81 Y-30.0 Z0.9 F1920.0
+M103
+G1 X31.77 Y-36.0 Z0.9 F1920.0
+M101
+G1 X33.06 Y-36.0 Z0.9 F1920.0
+G1 X32.62 Y-35.4 Z0.9 F1920.0
+G1 X33.06 Y-35.4 Z0.9 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<operatingLayerEnd> </operatingLayerEnd>)
+(<layer> 1.3 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-38.1 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y38.1 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y38.1 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y-38.1 Z1.3 </boundaryPoint>)
+(<loop> inner )
+G1 X20.12 Y-34.86 Z1.3 F1920.0
+G1 X2.54 Y-32.94 Z1.3 F1920.0
+M101
+G1 X2.45 Y-33.6 Z1.3 F1920.0
+G1 X2.2 Y-34.21 Z1.3 F1920.0
+G1 X1.79 Y-34.74 Z1.3 F1920.0
+G1 X1.27 Y-35.14 Z1.3 F1920.0
+G1 X0.66 Y-35.39 Z1.3 F1920.0
+G1 X0.0 Y-35.48 Z1.3 F1920.0
+G1 X-0.66 Y-35.39 Z1.3 F1920.0
+G1 X-1.27 Y-35.14 Z1.3 F1920.0
+G1 X-1.79 Y-34.74 Z1.3 F1920.0
+G1 X-2.2 Y-34.21 Z1.3 F1920.0
+G1 X-2.45 Y-33.6 Z1.3 F1920.0
+G1 X-2.54 Y-32.94 Z1.3 F1920.0
+G1 X-2.45 Y-32.28 Z1.3 F1920.0
+G1 X-2.2 Y-31.67 Z1.3 F1920.0
+G1 X-1.79 Y-31.15 Z1.3 F1920.0
+G1 X-1.27 Y-30.74 Z1.3 F1920.0
+G1 X-0.63 Y-30.48 Z1.3 F1920.0
+G1 X0.0 Y-30.43 Z1.3 F1920.0
+G1 X0.63 Y-30.48 Z1.3 F1920.0
+G1 X1.27 Y-30.74 Z1.3 F1920.0
+G1 X1.79 Y-31.15 Z1.3 F1920.0
+G1 X2.2 Y-31.67 Z1.3 F1920.0
+G1 X2.45 Y-32.28 Z1.3 F1920.0
+G1 X2.54 Y-32.94 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X3.14 Y-32.94 Z1.3 F1920.0
+M101
+G1 X3.04 Y-33.75 Z1.3 F1920.0
+G1 X2.72 Y-34.51 Z1.3 F1920.0
+G1 X2.22 Y-35.16 Z1.3 F1920.0
+G1 X1.57 Y-35.66 Z1.3 F1920.0
+G1 X0.81 Y-35.98 Z1.3 F1920.0
+G1 X0.0 Y-36.09 Z1.3 F1920.0
+G1 X-0.82 Y-35.98 Z1.3 F1920.0
+G1 X-1.57 Y-35.66 Z1.3 F1920.0
+G1 X-2.22 Y-35.17 Z1.3 F1920.0
+G1 X-2.72 Y-34.51 Z1.3 F1920.0
+G1 X-3.04 Y-33.75 Z1.3 F1920.0
+G1 X-3.14 Y-32.94 Z1.3 F1920.0
+G1 X-3.04 Y-32.13 Z1.3 F1920.0
+G1 X-2.72 Y-31.37 Z1.3 F1920.0
+G1 X-2.22 Y-30.72 Z1.3 F1920.0
+G1 X-1.57 Y-30.22 Z1.3 F1920.0
+G1 X-0.77 Y-29.89 Z1.3 F1920.0
+G1 X0.0 Y-29.83 Z1.3 F1920.0
+G1 X0.77 Y-29.89 Z1.3 F1920.0
+G1 X1.57 Y-30.22 Z1.3 F1920.0
+G1 X2.22 Y-30.72 Z1.3 F1920.0
+G1 X2.72 Y-31.37 Z1.3 F1920.0
+G1 X3.04 Y-32.13 Z1.3 F1920.0
+G1 X3.14 Y-32.94 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.64 Y-19.46 Z1.3 F1920.0
+M101
+G1 X0.0 Y-19.54 Z1.3 F1920.0
+G1 X-0.64 Y-19.46 Z1.3 F1920.0
+G1 X-1.24 Y-19.21 Z1.3 F1920.0
+G1 X-1.75 Y-18.82 Z1.3 F1920.0
+G1 X-2.14 Y-18.3 Z1.3 F1920.0
+G1 X-2.39 Y-17.71 Z1.3 F1920.0
+G1 X-2.48 Y-17.07 Z1.3 F1920.0
+G1 X-2.39 Y-16.43 Z1.3 F1920.0
+G1 X-2.14 Y-15.83 Z1.3 F1920.0
+G1 X-1.75 Y-15.32 Z1.3 F1920.0
+G1 X-1.24 Y-14.92 Z1.3 F1920.0
+G1 X-0.64 Y-14.68 Z1.3 F1920.0
+G1 X0.0 Y-14.59 Z1.3 F1920.0
+G1 X0.64 Y-14.68 Z1.3 F1920.0
+G1 X1.24 Y-14.92 Z1.3 F1920.0
+G1 X1.75 Y-15.32 Z1.3 F1920.0
+G1 X2.14 Y-15.83 Z1.3 F1920.0
+G1 X2.39 Y-16.43 Z1.3 F1920.0
+G1 X2.48 Y-17.07 Z1.3 F1920.0
+G1 X2.39 Y-17.71 Z1.3 F1920.0
+G1 X2.14 Y-18.3 Z1.3 F1920.0
+G1 X1.75 Y-18.82 Z1.3 F1920.0
+G1 X1.24 Y-19.21 Z1.3 F1920.0
+G1 X0.64 Y-19.46 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.8 Y-20.04 Z1.3 F1920.0
+M101
+G1 X0.0 Y-20.15 Z1.3 F1920.0
+G1 X-0.8 Y-20.04 Z1.3 F1920.0
+G1 X-1.54 Y-19.73 Z1.3 F1920.0
+G1 X-2.18 Y-19.24 Z1.3 F1920.0
+G1 X-2.67 Y-18.6 Z1.3 F1920.0
+G1 X-2.98 Y-17.86 Z1.3 F1920.0
+G1 X-3.08 Y-17.07 Z1.3 F1920.0
+G1 X-2.98 Y-16.27 Z1.3 F1920.0
+G1 X-2.67 Y-15.53 Z1.3 F1920.0
+G1 X-2.18 Y-14.89 Z1.3 F1920.0
+G1 X-1.54 Y-14.4 Z1.3 F1920.0
+G1 X-0.8 Y-14.09 Z1.3 F1920.0
+G1 X0.0 Y-13.99 Z1.3 F1920.0
+G1 X0.8 Y-14.09 Z1.3 F1920.0
+G1 X1.54 Y-14.4 Z1.3 F1920.0
+G1 X2.18 Y-14.89 Z1.3 F1920.0
+G1 X2.67 Y-15.53 Z1.3 F1920.0
+G1 X2.97 Y-16.27 Z1.3 F1920.0
+G1 X3.08 Y-17.07 Z1.3 F1920.0
+G1 X2.97 Y-17.86 Z1.3 F1920.0
+G1 X2.67 Y-18.6 Z1.3 F1920.0
+G1 X2.18 Y-19.24 Z1.3 F1920.0
+G1 X1.54 Y-19.73 Z1.3 F1920.0
+G1 X0.8 Y-20.04 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-1.72 Y-18.06 Z1.3 F1920.0
+G1 X-20.0 Y30.55 Z1.3 F1920.0
+M101
+G1 X-20.64 Y30.47 Z1.3 F1920.0
+G1 X-21.28 Y30.55 Z1.3 F1920.0
+G1 X-21.88 Y30.8 Z1.3 F1920.0
+G1 X-22.39 Y31.19 Z1.3 F1920.0
+G1 X-22.78 Y31.7 Z1.3 F1920.0
+G1 X-23.03 Y32.3 Z1.3 F1920.0
+G1 X-23.11 Y32.94 Z1.3 F1920.0
+G1 X-23.03 Y33.58 Z1.3 F1920.0
+G1 X-22.78 Y34.18 Z1.3 F1920.0
+G1 X-22.39 Y34.69 Z1.3 F1920.0
+G1 X-21.88 Y35.08 Z1.3 F1920.0
+G1 X-21.28 Y35.33 Z1.3 F1920.0
+G1 X-20.64 Y35.42 Z1.3 F1920.0
+G1 X-20.0 Y35.33 Z1.3 F1920.0
+G1 X-19.4 Y35.08 Z1.3 F1920.0
+G1 X-18.89 Y34.69 Z1.3 F1920.0
+G1 X-18.5 Y34.18 Z1.3 F1920.0
+G1 X-18.25 Y33.58 Z1.3 F1920.0
+G1 X-18.16 Y32.94 Z1.3 F1920.0
+G1 X-18.25 Y32.3 Z1.3 F1920.0
+G1 X-18.49 Y31.7 Z1.3 F1920.0
+G1 X-18.89 Y31.19 Z1.3 F1920.0
+G1 X-19.4 Y30.8 Z1.3 F1920.0
+G1 X-20.0 Y30.55 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-19.84 Y29.97 Z1.3 F1920.0
+M101
+G1 X-20.64 Y29.86 Z1.3 F1920.0
+G1 X-21.44 Y29.97 Z1.3 F1920.0
+G1 X-22.18 Y30.27 Z1.3 F1920.0
+G1 X-22.82 Y30.76 Z1.3 F1920.0
+G1 X-23.31 Y31.4 Z1.3 F1920.0
+G1 X-23.61 Y32.14 Z1.3 F1920.0
+G1 X-23.72 Y32.94 Z1.3 F1920.0
+G1 X-23.61 Y33.74 Z1.3 F1920.0
+G1 X-23.3 Y34.48 Z1.3 F1920.0
+G1 X-22.82 Y35.12 Z1.3 F1920.0
+G1 X-22.18 Y35.61 Z1.3 F1920.0
+G1 X-21.44 Y35.92 Z1.3 F1920.0
+G1 X-20.64 Y36.02 Z1.3 F1920.0
+G1 X-19.84 Y35.92 Z1.3 F1920.0
+G1 X-19.1 Y35.61 Z1.3 F1920.0
+G1 X-18.46 Y35.12 Z1.3 F1920.0
+G1 X-17.97 Y34.48 Z1.3 F1920.0
+G1 X-17.66 Y33.74 Z1.3 F1920.0
+G1 X-17.56 Y32.94 Z1.3 F1920.0
+G1 X-17.66 Y32.14 Z1.3 F1920.0
+G1 X-17.97 Y31.4 Z1.3 F1920.0
+G1 X-18.46 Y30.76 Z1.3 F1920.0
+G1 X-19.1 Y30.27 Z1.3 F1920.0
+G1 X-19.84 Y29.97 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.64 Y-30.47 Z1.3 F1920.0
+M101
+G1 X-20.0 Y-30.55 Z1.3 F1920.0
+G1 X-19.4 Y-30.8 Z1.3 F1920.0
+G1 X-18.89 Y-31.19 Z1.3 F1920.0
+G1 X-18.49 Y-31.7 Z1.3 F1920.0
+G1 X-18.25 Y-32.3 Z1.3 F1920.0
+G1 X-18.16 Y-32.94 Z1.3 F1920.0
+G1 X-18.25 Y-33.58 Z1.3 F1920.0
+G1 X-18.5 Y-34.18 Z1.3 F1920.0
+G1 X-18.89 Y-34.69 Z1.3 F1920.0
+G1 X-19.4 Y-35.08 Z1.3 F1920.0
+G1 X-20.0 Y-35.33 Z1.3 F1920.0
+G1 X-20.64 Y-35.42 Z1.3 F1920.0
+G1 X-21.28 Y-35.33 Z1.3 F1920.0
+G1 X-21.88 Y-35.08 Z1.3 F1920.0
+G1 X-22.39 Y-34.69 Z1.3 F1920.0
+G1 X-22.78 Y-34.18 Z1.3 F1920.0
+G1 X-23.03 Y-33.58 Z1.3 F1920.0
+G1 X-23.11 Y-32.94 Z1.3 F1920.0
+G1 X-23.03 Y-32.3 Z1.3 F1920.0
+G1 X-22.78 Y-31.7 Z1.3 F1920.0
+G1 X-22.39 Y-31.19 Z1.3 F1920.0
+G1 X-21.88 Y-30.8 Z1.3 F1920.0
+G1 X-21.28 Y-30.55 Z1.3 F1920.0
+G1 X-20.64 Y-30.47 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.64 Y-29.86 Z1.3 F1920.0
+M101
+G1 X-19.84 Y-29.97 Z1.3 F1920.0
+G1 X-19.1 Y-30.27 Z1.3 F1920.0
+G1 X-18.46 Y-30.76 Z1.3 F1920.0
+G1 X-17.97 Y-31.4 Z1.3 F1920.0
+G1 X-17.66 Y-32.14 Z1.3 F1920.0
+G1 X-17.56 Y-32.94 Z1.3 F1920.0
+G1 X-17.66 Y-33.74 Z1.3 F1920.0
+G1 X-17.97 Y-34.48 Z1.3 F1920.0
+G1 X-18.46 Y-35.12 Z1.3 F1920.0
+G1 X-19.1 Y-35.61 Z1.3 F1920.0
+G1 X-19.84 Y-35.92 Z1.3 F1920.0
+G1 X-20.64 Y-36.02 Z1.3 F1920.0
+G1 X-21.44 Y-35.92 Z1.3 F1920.0
+G1 X-22.18 Y-35.61 Z1.3 F1920.0
+G1 X-22.82 Y-35.12 Z1.3 F1920.0
+G1 X-23.3 Y-34.48 Z1.3 F1920.0
+G1 X-23.61 Y-33.74 Z1.3 F1920.0
+G1 X-23.72 Y-32.94 Z1.3 F1920.0
+G1 X-23.61 Y-32.14 Z1.3 F1920.0
+G1 X-23.31 Y-31.4 Z1.3 F1920.0
+G1 X-22.82 Y-30.76 Z1.3 F1920.0
+G1 X-22.18 Y-30.27 Z1.3 F1920.0
+G1 X-21.44 Y-29.97 Z1.3 F1920.0
+G1 X-20.64 Y-29.86 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.4 Y30.8 Z1.3 F1920.0
+M101
+G1 X18.89 Y31.19 Z1.3 F1920.0
+G1 X18.49 Y31.7 Z1.3 F1920.0
+G1 X18.25 Y32.3 Z1.3 F1920.0
+G1 X18.16 Y32.94 Z1.3 F1920.0
+G1 X18.25 Y33.58 Z1.3 F1920.0
+G1 X18.5 Y34.18 Z1.3 F1920.0
+G1 X18.89 Y34.69 Z1.3 F1920.0
+G1 X19.4 Y35.08 Z1.3 F1920.0
+G1 X20.0 Y35.33 Z1.3 F1920.0
+G1 X20.64 Y35.42 Z1.3 F1920.0
+G1 X21.28 Y35.33 Z1.3 F1920.0
+G1 X21.88 Y35.08 Z1.3 F1920.0
+G1 X22.39 Y34.69 Z1.3 F1920.0
+G1 X22.78 Y34.18 Z1.3 F1920.0
+G1 X23.03 Y33.58 Z1.3 F1920.0
+G1 X23.11 Y32.94 Z1.3 F1920.0
+G1 X23.03 Y32.3 Z1.3 F1920.0
+G1 X22.78 Y31.7 Z1.3 F1920.0
+G1 X22.39 Y31.19 Z1.3 F1920.0
+G1 X21.88 Y30.8 Z1.3 F1920.0
+G1 X21.28 Y30.55 Z1.3 F1920.0
+G1 X20.64 Y30.47 Z1.3 F1920.0
+G1 X20.0 Y30.55 Z1.3 F1920.0
+G1 X19.4 Y30.8 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.1 Y30.27 Z1.3 F1920.0
+M101
+G1 X18.46 Y30.76 Z1.3 F1920.0
+G1 X17.97 Y31.4 Z1.3 F1920.0
+G1 X17.66 Y32.14 Z1.3 F1920.0
+G1 X17.56 Y32.94 Z1.3 F1920.0
+G1 X17.66 Y33.74 Z1.3 F1920.0
+G1 X17.97 Y34.48 Z1.3 F1920.0
+G1 X18.46 Y35.12 Z1.3 F1920.0
+G1 X19.1 Y35.61 Z1.3 F1920.0
+G1 X19.84 Y35.92 Z1.3 F1920.0
+G1 X20.64 Y36.02 Z1.3 F1920.0
+G1 X21.44 Y35.92 Z1.3 F1920.0
+G1 X22.18 Y35.61 Z1.3 F1920.0
+G1 X22.82 Y35.12 Z1.3 F1920.0
+G1 X23.3 Y34.48 Z1.3 F1920.0
+G1 X23.61 Y33.74 Z1.3 F1920.0
+G1 X23.72 Y32.94 Z1.3 F1920.0
+G1 X23.61 Y32.14 Z1.3 F1920.0
+G1 X23.31 Y31.4 Z1.3 F1920.0
+G1 X22.82 Y30.76 Z1.3 F1920.0
+G1 X22.18 Y30.27 Z1.3 F1920.0
+G1 X21.44 Y29.97 Z1.3 F1920.0
+G1 X20.64 Y29.86 Z1.3 F1920.0
+G1 X19.84 Y29.97 Z1.3 F1920.0
+G1 X19.1 Y30.27 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X18.72 Y-17.58 Z1.3 F1920.0
+G1 X20.64 Y-30.47 Z1.3 F1920.0
+M101
+G1 X21.28 Y-30.55 Z1.3 F1920.0
+G1 X21.88 Y-30.8 Z1.3 F1920.0
+G1 X22.39 Y-31.19 Z1.3 F1920.0
+G1 X22.78 Y-31.7 Z1.3 F1920.0
+G1 X23.03 Y-32.3 Z1.3 F1920.0
+G1 X23.11 Y-32.94 Z1.3 F1920.0
+G1 X23.03 Y-33.58 Z1.3 F1920.0
+G1 X22.78 Y-34.18 Z1.3 F1920.0
+G1 X22.39 Y-34.69 Z1.3 F1920.0
+G1 X21.88 Y-35.08 Z1.3 F1920.0
+G1 X21.28 Y-35.33 Z1.3 F1920.0
+G1 X20.64 Y-35.42 Z1.3 F1920.0
+G1 X20.0 Y-35.33 Z1.3 F1920.0
+G1 X19.4 Y-35.08 Z1.3 F1920.0
+G1 X18.89 Y-34.69 Z1.3 F1920.0
+G1 X18.5 Y-34.18 Z1.3 F1920.0
+G1 X18.25 Y-33.58 Z1.3 F1920.0
+G1 X18.16 Y-32.94 Z1.3 F1920.0
+G1 X18.25 Y-32.3 Z1.3 F1920.0
+G1 X18.49 Y-31.7 Z1.3 F1920.0
+G1 X18.89 Y-31.19 Z1.3 F1920.0
+G1 X19.4 Y-30.8 Z1.3 F1920.0
+G1 X20.0 Y-30.55 Z1.3 F1920.0
+G1 X20.64 Y-30.47 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-29.86 Z1.3 F1920.0
+M101
+G1 X21.44 Y-29.97 Z1.3 F1920.0
+G1 X22.18 Y-30.27 Z1.3 F1920.0
+G1 X22.82 Y-30.76 Z1.3 F1920.0
+G1 X23.31 Y-31.4 Z1.3 F1920.0
+G1 X23.61 Y-32.14 Z1.3 F1920.0
+G1 X23.72 Y-32.94 Z1.3 F1920.0
+G1 X23.61 Y-33.74 Z1.3 F1920.0
+G1 X23.3 Y-34.48 Z1.3 F1920.0
+G1 X22.82 Y-35.12 Z1.3 F1920.0
+G1 X22.18 Y-35.61 Z1.3 F1920.0
+G1 X21.44 Y-35.92 Z1.3 F1920.0
+G1 X20.64 Y-36.02 Z1.3 F1920.0
+G1 X19.84 Y-35.92 Z1.3 F1920.0
+G1 X19.1 Y-35.61 Z1.3 F1920.0
+G1 X18.46 Y-35.12 Z1.3 F1920.0
+G1 X17.97 Y-34.48 Z1.3 F1920.0
+G1 X17.66 Y-33.74 Z1.3 F1920.0
+G1 X17.56 Y-32.94 Z1.3 F1920.0
+G1 X17.66 Y-32.14 Z1.3 F1920.0
+G1 X17.97 Y-31.4 Z1.3 F1920.0
+G1 X18.46 Y-30.76 Z1.3 F1920.0
+G1 X19.1 Y-30.27 Z1.3 F1920.0
+G1 X19.84 Y-29.97 Z1.3 F1920.0
+G1 X20.64 Y-29.86 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-19.54 Z1.3 F1920.0
+M101
+G1 X20.0 Y-19.46 Z1.3 F1920.0
+G1 X19.4 Y-19.21 Z1.3 F1920.0
+G1 X18.89 Y-18.82 Z1.3 F1920.0
+G1 X18.5 Y-18.3 Z1.3 F1920.0
+G1 X18.25 Y-17.71 Z1.3 F1920.0
+G1 X18.16 Y-17.07 Z1.3 F1920.0
+G1 X18.25 Y-16.43 Z1.3 F1920.0
+G1 X18.49 Y-15.83 Z1.3 F1920.0
+G1 X18.89 Y-15.32 Z1.3 F1920.0
+G1 X19.4 Y-14.92 Z1.3 F1920.0
+G1 X20.0 Y-14.68 Z1.3 F1920.0
+G1 X20.64 Y-14.59 Z1.3 F1920.0
+G1 X21.28 Y-14.68 Z1.3 F1920.0
+G1 X21.88 Y-14.92 Z1.3 F1920.0
+G1 X22.39 Y-15.32 Z1.3 F1920.0
+G1 X22.78 Y-15.83 Z1.3 F1920.0
+G1 X23.03 Y-16.43 Z1.3 F1920.0
+G1 X23.11 Y-17.07 Z1.3 F1920.0
+G1 X23.03 Y-17.71 Z1.3 F1920.0
+G1 X22.78 Y-18.3 Z1.3 F1920.0
+G1 X22.39 Y-18.82 Z1.3 F1920.0
+G1 X21.88 Y-19.21 Z1.3 F1920.0
+G1 X21.28 Y-19.46 Z1.3 F1920.0
+G1 X20.64 Y-19.54 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-20.15 Z1.3 F1920.0
+M101
+G1 X19.84 Y-20.04 Z1.3 F1920.0
+G1 X19.1 Y-19.73 Z1.3 F1920.0
+G1 X18.46 Y-19.24 Z1.3 F1920.0
+G1 X17.97 Y-18.61 Z1.3 F1920.0
+G1 X17.66 Y-17.86 Z1.3 F1920.0
+G1 X17.56 Y-17.07 Z1.3 F1920.0
+G1 X17.66 Y-16.27 Z1.3 F1920.0
+G1 X17.97 Y-15.53 Z1.3 F1920.0
+G1 X18.46 Y-14.89 Z1.3 F1920.0
+G1 X19.1 Y-14.4 Z1.3 F1920.0
+G1 X19.84 Y-14.09 Z1.3 F1920.0
+G1 X20.64 Y-13.99 Z1.3 F1920.0
+G1 X21.44 Y-14.09 Z1.3 F1920.0
+G1 X22.18 Y-14.4 Z1.3 F1920.0
+G1 X22.82 Y-14.89 Z1.3 F1920.0
+G1 X23.31 Y-15.53 Z1.3 F1920.0
+G1 X23.61 Y-16.27 Z1.3 F1920.0
+G1 X23.72 Y-17.07 Z1.3 F1920.0
+G1 X23.61 Y-17.86 Z1.3 F1920.0
+G1 X23.3 Y-18.61 Z1.3 F1920.0
+G1 X22.82 Y-19.24 Z1.3 F1920.0
+G1 X22.18 Y-19.73 Z1.3 F1920.0
+G1 X21.44 Y-20.04 Z1.3 F1920.0
+G1 X20.64 Y-20.15 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X33.45 Y-20.15 Z1.3 F1920.0
+M101
+G1 X33.45 Y31.25 Z1.3 F1920.0
+G1 X33.61 Y32.16 Z1.3 F1920.0
+G1 X33.0 Y31.8 Z1.3 F1920.0
+G1 X32.83 Y31.4 Z1.3 F1920.0
+G1 X32.34 Y30.76 Z1.3 F1920.0
+G1 X31.7 Y30.27 Z1.3 F1920.0
+G1 X30.96 Y29.97 Z1.3 F1920.0
+G1 X30.16 Y29.86 Z1.3 F1920.0
+G1 X29.37 Y29.97 Z1.3 F1920.0
+G1 X28.62 Y30.27 Z1.3 F1920.0
+G1 X27.98 Y30.76 Z1.3 F1920.0
+G1 X27.5 Y31.4 Z1.3 F1920.0
+G1 X27.19 Y32.14 Z1.3 F1920.0
+G1 X27.08 Y32.94 Z1.3 F1920.0
+G1 X27.19 Y33.74 Z1.3 F1920.0
+G1 X27.5 Y34.48 Z1.3 F1920.0
+G1 X27.98 Y35.12 Z1.3 F1920.0
+G1 X28.62 Y35.61 Z1.3 F1920.0
+G1 X29.37 Y35.92 Z1.3 F1920.0
+G1 X30.16 Y36.02 Z1.3 F1920.0
+G1 X30.96 Y35.92 Z1.3 F1920.0
+G1 X31.7 Y35.61 Z1.3 F1920.0
+G1 X32.34 Y35.12 Z1.3 F1920.0
+G1 X32.83 Y34.48 Z1.3 F1920.0
+G1 X32.87 Y34.37 Z1.3 F1920.0
+G1 X33.45 Y34.62 Z1.3 F1920.0
+G1 X33.45 Y36.62 Z1.3 F1920.0
+G1 X-33.45 Y36.62 Z1.3 F1920.0
+G1 X-33.45 Y34.62 Z1.3 F1920.0
+G1 X-32.87 Y34.37 Z1.3 F1920.0
+G1 X-32.83 Y34.48 Z1.3 F1920.0
+G1 X-32.34 Y35.12 Z1.3 F1920.0
+G1 X-31.7 Y35.61 Z1.3 F1920.0
+G1 X-30.96 Y35.92 Z1.3 F1920.0
+G1 X-30.16 Y36.02 Z1.3 F1920.0
+G1 X-29.37 Y35.92 Z1.3 F1920.0
+G1 X-28.62 Y35.61 Z1.3 F1920.0
+G1 X-27.98 Y35.12 Z1.3 F1920.0
+G1 X-27.5 Y34.48 Z1.3 F1920.0
+G1 X-27.19 Y33.74 Z1.3 F1920.0
+G1 X-27.08 Y32.94 Z1.3 F1920.0
+G1 X-27.19 Y32.14 Z1.3 F1920.0
+G1 X-27.5 Y31.4 Z1.3 F1920.0
+G1 X-27.98 Y30.76 Z1.3 F1920.0
+G1 X-28.62 Y30.27 Z1.3 F1920.0
+G1 X-29.37 Y29.97 Z1.3 F1920.0
+G1 X-30.16 Y29.86 Z1.3 F1920.0
+G1 X-30.96 Y29.97 Z1.3 F1920.0
+G1 X-31.7 Y30.27 Z1.3 F1920.0
+G1 X-32.34 Y30.76 Z1.3 F1920.0
+G1 X-32.83 Y31.4 Z1.3 F1920.0
+G1 X-33.0 Y31.8 Z1.3 F1920.0
+G1 X-33.61 Y32.16 Z1.3 F1920.0
+G1 X-33.45 Y31.25 Z1.3 F1920.0
+G1 X-33.45 Y-31.25 Z1.3 F1920.0
+G1 X-33.61 Y-32.16 Z1.3 F1920.0
+G1 X-32.99 Y-31.8 Z1.3 F1920.0
+G1 X-32.83 Y-31.4 Z1.3 F1920.0
+G1 X-32.34 Y-30.77 Z1.3 F1920.0
+G1 X-31.7 Y-30.28 Z1.3 F1920.0
+G1 X-30.96 Y-29.97 Z1.3 F1920.0
+G1 X-30.16 Y-29.86 Z1.3 F1920.0
+G1 X-29.37 Y-29.97 Z1.3 F1920.0
+G1 X-28.62 Y-30.28 Z1.3 F1920.0
+G1 X-27.99 Y-30.77 Z1.3 F1920.0
+G1 X-27.5 Y-31.4 Z1.3 F1920.0
+G1 X-27.19 Y-32.14 Z1.3 F1920.0
+G1 X-27.09 Y-32.94 Z1.3 F1920.0
+G1 X-27.19 Y-33.74 Z1.3 F1920.0
+G1 X-27.5 Y-34.48 Z1.3 F1920.0
+G1 X-27.99 Y-35.12 Z1.3 F1920.0
+G1 X-28.62 Y-35.6 Z1.3 F1920.0
+G1 X-29.37 Y-35.91 Z1.3 F1920.0
+G1 X-30.16 Y-36.02 Z1.3 F1920.0
+G1 X-30.96 Y-35.91 Z1.3 F1920.0
+G1 X-31.7 Y-35.6 Z1.3 F1920.0
+G1 X-32.34 Y-35.12 Z1.3 F1920.0
+G1 X-32.83 Y-34.48 Z1.3 F1920.0
+G1 X-32.87 Y-34.36 Z1.3 F1920.0
+G1 X-33.45 Y-34.62 Z1.3 F1920.0
+G1 X-33.45 Y-36.62 Z1.3 F1920.0
+G1 X33.45 Y-36.62 Z1.3 F1920.0
+G1 X33.45 Y-34.62 Z1.3 F1920.0
+G1 X32.87 Y-34.37 Z1.3 F1920.0
+G1 X32.83 Y-34.48 Z1.3 F1920.0
+G1 X32.34 Y-35.12 Z1.3 F1920.0
+G1 X31.7 Y-35.61 Z1.3 F1920.0
+G1 X30.96 Y-35.92 Z1.3 F1920.0
+G1 X30.16 Y-36.02 Z1.3 F1920.0
+G1 X29.37 Y-35.92 Z1.3 F1920.0
+G1 X28.62 Y-35.61 Z1.3 F1920.0
+G1 X27.98 Y-35.12 Z1.3 F1920.0
+G1 X27.5 Y-34.48 Z1.3 F1920.0
+G1 X27.19 Y-33.74 Z1.3 F1920.0
+G1 X27.08 Y-32.94 Z1.3 F1920.0
+G1 X27.19 Y-32.14 Z1.3 F1920.0
+G1 X27.5 Y-31.4 Z1.3 F1920.0
+G1 X27.98 Y-30.76 Z1.3 F1920.0
+G1 X28.62 Y-30.27 Z1.3 F1920.0
+G1 X29.37 Y-29.97 Z1.3 F1920.0
+G1 X30.16 Y-29.86 Z1.3 F1920.0
+G1 X30.96 Y-29.97 Z1.3 F1920.0
+G1 X31.7 Y-30.27 Z1.3 F1920.0
+G1 X32.34 Y-30.76 Z1.3 F1920.0
+G1 X32.83 Y-31.4 Z1.3 F1920.0
+G1 X33.0 Y-31.8 Z1.3 F1920.0
+G1 X33.61 Y-32.16 Z1.3 F1920.0
+G1 X33.45 Y-31.25 Z1.3 F1920.0
+G1 X33.45 Y-20.15 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X30.16 Y30.47 Z1.3 F1920.0
+M101
+G1 X29.52 Y30.55 Z1.3 F1920.0
+G1 X28.93 Y30.8 Z1.3 F1920.0
+G1 X28.41 Y31.19 Z1.3 F1920.0
+G1 X28.02 Y31.7 Z1.3 F1920.0
+G1 X27.77 Y32.3 Z1.3 F1920.0
+G1 X27.69 Y32.94 Z1.3 F1920.0
+G1 X27.77 Y33.58 Z1.3 F1920.0
+G1 X28.02 Y34.18 Z1.3 F1920.0
+G1 X28.41 Y34.69 Z1.3 F1920.0
+G1 X28.93 Y35.08 Z1.3 F1920.0
+G1 X29.52 Y35.33 Z1.3 F1920.0
+G1 X30.16 Y35.42 Z1.3 F1920.0
+G1 X30.8 Y35.33 Z1.3 F1920.0
+G1 X31.4 Y35.08 Z1.3 F1920.0
+G1 X31.91 Y34.69 Z1.3 F1920.0
+G1 X32.31 Y34.18 Z1.3 F1920.0
+G1 X32.55 Y33.58 Z1.3 F1920.0
+G1 X32.64 Y32.94 Z1.3 F1920.0
+G1 X32.55 Y32.3 Z1.3 F1920.0
+G1 X32.31 Y31.7 Z1.3 F1920.0
+G1 X31.91 Y31.19 Z1.3 F1920.0
+G1 X31.4 Y30.8 Z1.3 F1920.0
+G1 X30.8 Y30.55 Z1.3 F1920.0
+G1 X30.16 Y30.47 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-21.15 Y31.02 Z1.3 F1920.0
+G1 X-27.69 Y32.94 Z1.3 F1920.0
+M101
+G1 X-27.77 Y32.3 Z1.3 F1920.0
+G1 X-28.02 Y31.7 Z1.3 F1920.0
+G1 X-28.41 Y31.19 Z1.3 F1920.0
+G1 X-28.93 Y30.8 Z1.3 F1920.0
+G1 X-29.52 Y30.55 Z1.3 F1920.0
+G1 X-30.16 Y30.47 Z1.3 F1920.0
+G1 X-30.8 Y30.55 Z1.3 F1920.0
+G1 X-31.4 Y30.8 Z1.3 F1920.0
+G1 X-31.91 Y31.19 Z1.3 F1920.0
+G1 X-32.31 Y31.7 Z1.3 F1920.0
+G1 X-32.55 Y32.3 Z1.3 F1920.0
+G1 X-32.64 Y32.94 Z1.3 F1920.0
+G1 X-32.55 Y33.58 Z1.3 F1920.0
+G1 X-32.31 Y34.18 Z1.3 F1920.0
+G1 X-31.91 Y34.69 Z1.3 F1920.0
+G1 X-31.4 Y35.08 Z1.3 F1920.0
+G1 X-30.8 Y35.33 Z1.3 F1920.0
+G1 X-30.16 Y35.42 Z1.3 F1920.0
+G1 X-29.52 Y35.33 Z1.3 F1920.0
+G1 X-28.93 Y35.08 Z1.3 F1920.0
+G1 X-28.41 Y34.69 Z1.3 F1920.0
+G1 X-28.02 Y34.18 Z1.3 F1920.0
+G1 X-27.77 Y33.58 Z1.3 F1920.0
+G1 X-27.69 Y32.94 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X28.41 Y-31.19 Z1.3 F1920.0
+M101
+G1 X28.93 Y-30.8 Z1.3 F1920.0
+G1 X29.52 Y-30.55 Z1.3 F1920.0
+G1 X30.16 Y-30.47 Z1.3 F1920.0
+G1 X30.8 Y-30.55 Z1.3 F1920.0
+G1 X31.4 Y-30.8 Z1.3 F1920.0
+G1 X31.91 Y-31.19 Z1.3 F1920.0
+G1 X32.31 Y-31.7 Z1.3 F1920.0
+G1 X32.55 Y-32.3 Z1.3 F1920.0
+G1 X32.64 Y-32.94 Z1.3 F1920.0
+G1 X32.55 Y-33.58 Z1.3 F1920.0
+G1 X32.31 Y-34.18 Z1.3 F1920.0
+G1 X31.91 Y-34.69 Z1.3 F1920.0
+G1 X31.4 Y-35.08 Z1.3 F1920.0
+G1 X30.8 Y-35.33 Z1.3 F1920.0
+G1 X30.16 Y-35.42 Z1.3 F1920.0
+G1 X29.52 Y-35.33 Z1.3 F1920.0
+G1 X28.93 Y-35.08 Z1.3 F1920.0
+G1 X28.41 Y-34.69 Z1.3 F1920.0
+G1 X28.02 Y-34.18 Z1.3 F1920.0
+G1 X27.77 Y-33.58 Z1.3 F1920.0
+G1 X27.69 Y-32.94 Z1.3 F1920.0
+G1 X27.77 Y-32.3 Z1.3 F1920.0
+G1 X28.02 Y-31.7 Z1.3 F1920.0
+G1 X28.41 Y-31.19 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.97 Y-31.07 Z1.3 F1920.0
+G1 X1.69 Y-31.79 Z1.3 F1920.0
+G1 X1.45 Y-31.49 Z1.3 F1920.0
+G1 X1.03 Y-31.16 Z1.3 F1920.0
+G1 X0.52 Y-30.96 Z1.3 F1920.0
+G1 X0.0 Y-30.91 Z1.3 F1920.0
+G1 X-0.52 Y-30.96 Z1.3 F1920.0
+G1 X-1.03 Y-31.16 Z1.3 F1920.0
+G1 X-1.45 Y-31.49 Z1.3 F1920.0
+G1 X-1.78 Y-31.91 Z1.3 F1920.0
+G1 X-1.81 Y-31.97 Z1.3 F1920.0
+G1 X-18.68 Y-32.62 Z1.3 F1920.0
+G1 X-18.72 Y-32.43 Z1.3 F1920.0
+G1 X-18.91 Y-31.95 Z1.3 F1920.0
+G1 X-19.23 Y-31.53 Z1.3 F1920.0
+G1 X-19.64 Y-31.22 Z1.3 F1920.0
+G1 X-20.12 Y-31.02 Z1.3 F1920.0
+G1 X-20.64 Y-30.95 Z1.3 F1920.0
+G1 X-27.69 Y-32.94 Z1.3 F1920.0
+M101
+G1 X-27.78 Y-33.58 Z1.3 F1920.0
+G1 X-28.02 Y-34.18 Z1.3 F1920.0
+G1 X-28.41 Y-34.69 Z1.3 F1920.0
+G1 X-28.93 Y-35.08 Z1.3 F1920.0
+G1 X-29.52 Y-35.33 Z1.3 F1920.0
+G1 X-30.16 Y-35.41 Z1.3 F1920.0
+G1 X-30.8 Y-35.33 Z1.3 F1920.0
+G1 X-31.4 Y-35.08 Z1.3 F1920.0
+G1 X-31.91 Y-34.69 Z1.3 F1920.0
+G1 X-32.3 Y-34.18 Z1.3 F1920.0
+G1 X-32.55 Y-33.58 Z1.3 F1920.0
+G1 X-32.64 Y-32.94 Z1.3 F1920.0
+G1 X-32.55 Y-32.3 Z1.3 F1920.0
+G1 X-32.3 Y-31.7 Z1.3 F1920.0
+G1 X-31.91 Y-31.19 Z1.3 F1920.0
+G1 X-31.4 Y-30.8 Z1.3 F1920.0
+G1 X-30.8 Y-30.55 Z1.3 F1920.0
+G1 X-30.16 Y-30.47 Z1.3 F1920.0
+G1 X-29.52 Y-30.55 Z1.3 F1920.0
+G1 X-28.93 Y-30.8 Z1.3 F1920.0
+G1 X-28.41 Y-31.19 Z1.3 F1920.0
+G1 X-28.02 Y-31.7 Z1.3 F1920.0
+G1 X-27.78 Y-32.3 Z1.3 F1920.0
+G1 X-27.69 Y-32.94 Z1.3 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-27.69 Y-37.22 Z1.3 F1920.0
+M101
+G1 X34.05 Y-37.22 Z1.3 F1920.0
+G1 X34.05 Y37.22 Z1.3 F1920.0
+G1 X-34.05 Y37.22 Z1.3 F1920.0
+G1 X-34.05 Y-37.22 Z1.3 F1920.0
+G1 X-27.69 Y-37.22 Z1.3 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-27.69 Y-37.81 Z1.3 F1920.0
+M101
+G1 X34.64 Y-37.81 Z1.3 F1920.0
+G1 X34.64 Y37.81 Z1.3 F1920.0
+G1 X-34.64 Y37.81 Z1.3 F1920.0
+G1 X-34.64 Y-37.81 Z1.3 F1920.0
+G1 X-27.69 Y-37.81 Z1.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-29.042 Y-34.061 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-34.313 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-34.472 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-34.526 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-34.472 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-34.313 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-34.061 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-33.733 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-33.351 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.747 Y-32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-32.148 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-31.82 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-31.568 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-31.41 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-31.356 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-31.41 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-31.568 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-29.042 Y-31.82 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-32.148 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-28.578 Y-32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-33.351 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-33.733 Z1.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-29.22 Y-34.57 Z1.3 F1920.0
+M101
+G1 X-29.68 Y-34.76 Z1.3 F1920.0
+G1 X-30.16 Y-34.82 Z1.3 F1920.0
+G1 X-30.65 Y-34.75 Z1.3 F1920.0
+G1 X-31.1 Y-34.57 Z1.3 F1920.0
+G1 X-31.49 Y-34.27 Z1.3 F1920.0
+G1 X-31.79 Y-33.88 Z1.3 F1920.0
+G1 X-31.98 Y-33.43 Z1.3 F1920.0
+G1 X-32.04 Y-32.94 Z1.3 F1920.0
+G1 X-31.98 Y-32.45 Z1.3 F1920.0
+G1 X-31.79 Y-32.0 Z1.3 F1920.0
+G1 X-31.49 Y-31.61 Z1.3 F1920.0
+G1 X-31.1 Y-31.32 Z1.3 F1920.0
+G1 X-30.65 Y-31.13 Z1.3 F1920.0
+G1 X-30.16 Y-31.06 Z1.3 F1920.0
+G1 X-29.68 Y-31.13 Z1.3 F1920.0
+G1 X-29.22 Y-31.32 Z1.3 F1920.0
+G1 X-28.84 Y-31.61 Z1.3 F1920.0
+G1 X-28.54 Y-32.0 Z1.3 F1920.0
+G1 X-28.35 Y-32.45 Z1.3 F1920.0
+G1 X-28.29 Y-32.94 Z1.3 F1920.0
+G1 X-28.35 Y-33.43 Z1.3 F1920.0
+G1 X-28.54 Y-33.88 Z1.3 F1920.0
+G1 X-28.84 Y-34.27 Z1.3 F1920.0
+G1 X-29.22 Y-34.57 Z1.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-19.05 Y-32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-34.528 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y-32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-32.147 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-31.353 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-32.147 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-32.53 Z1.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.45 Y-33.43 Z1.3 F1920.0
+M101
+G1 X-22.52 Y-32.94 Z1.3 F1920.0
+G1 X-22.45 Y-32.45 Z1.3 F1920.0
+G1 X-22.27 Y-32.0 Z1.3 F1920.0
+G1 X-21.97 Y-31.61 Z1.3 F1920.0
+G1 X-21.58 Y-31.31 Z1.3 F1920.0
+G1 X-21.12 Y-31.12 Z1.3 F1920.0
+G1 X-20.64 Y-31.06 Z1.3 F1920.0
+G1 X-20.15 Y-31.12 Z1.3 F1920.0
+G1 X-19.7 Y-31.31 Z1.3 F1920.0
+G1 X-19.31 Y-31.61 Z1.3 F1920.0
+G1 X-19.01 Y-32.0 Z1.3 F1920.0
+G1 X-18.82 Y-32.45 Z1.3 F1920.0
+G1 X-18.76 Y-32.94 Z1.3 F1920.0
+G1 X-18.82 Y-33.43 Z1.3 F1920.0
+G1 X-19.01 Y-33.88 Z1.3 F1920.0
+G1 X-19.31 Y-34.27 Z1.3 F1920.0
+G1 X-19.7 Y-34.57 Z1.3 F1920.0
+G1 X-20.15 Y-34.76 Z1.3 F1920.0
+G1 X-20.64 Y-34.82 Z1.3 F1920.0
+G1 X-21.12 Y-34.76 Z1.3 F1920.0
+G1 X-21.58 Y-34.57 Z1.3 F1920.0
+G1 X-21.97 Y-34.27 Z1.3 F1920.0
+G1 X-22.27 Y-33.88 Z1.3 F1920.0
+G1 X-22.45 Y-33.43 Z1.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X1.167 Y-31.773 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-32.115 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-32.513 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.651 Y-32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-33.368 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-33.766 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.167 Y-34.108 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X0.826 Y-34.37 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-34.535 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-34.592 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-34.535 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-34.37 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-34.108 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-33.766 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-33.368 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.651 Y-32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-32.513 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-32.115 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-31.773 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-31.511 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-31.346 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-31.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-31.346 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X0.826 Y-31.511 Z1.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.05 Y-34.35 Z1.3 F1920.0
+G1 X-21.63 Y-34.66 Z1.3 F1920.0
+G1 X-21.15 Y-34.86 Z1.3 F1920.0
+G1 X-1.94 Y-32.94 Z1.3 F1920.0
+M101
+G1 X-1.88 Y-32.44 Z1.3 F1920.0
+G1 X-1.68 Y-31.97 Z1.3 F1920.0
+G1 X-1.37 Y-31.57 Z1.3 F1920.0
+G1 X-0.97 Y-31.26 Z1.3 F1920.0
+G1 X-0.5 Y-31.06 Z1.3 F1920.0
+G1 X0.0 Y-31.02 Z1.3 F1920.0
+G1 X0.5 Y-31.06 Z1.3 F1920.0
+G1 X0.97 Y-31.26 Z1.3 F1920.0
+G1 X1.37 Y-31.57 Z1.3 F1920.0
+G1 X1.68 Y-31.97 Z1.3 F1920.0
+G1 X1.88 Y-32.44 Z1.3 F1920.0
+G1 X1.94 Y-32.94 Z1.3 F1920.0
+G1 X1.88 Y-33.44 Z1.3 F1920.0
+G1 X1.68 Y-33.91 Z1.3 F1920.0
+G1 X1.37 Y-34.32 Z1.3 F1920.0
+G1 X0.97 Y-34.62 Z1.3 F1920.0
+G1 X0.5 Y-34.82 Z1.3 F1920.0
+G1 X0.0 Y-34.89 Z1.3 F1920.0
+G1 X-0.5 Y-34.82 Z1.3 F1920.0
+G1 X-0.97 Y-34.62 Z1.3 F1920.0
+G1 X-1.37 Y-34.32 Z1.3 F1920.0
+G1 X-1.68 Y-33.91 Z1.3 F1920.0
+G1 X-1.88 Y-33.44 Z1.3 F1920.0
+G1 X-1.94 Y-32.94 Z1.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-0.794 Y-18.44 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-18.188 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-17.859 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-17.477 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.587 Y-17.066 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-16.655 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-16.272 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-15.943 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-0.794 Y-15.691 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-15.532 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-15.478 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-15.532 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-15.691 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-15.943 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-16.272 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-16.655 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.588 Y-17.066 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-17.477 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-17.859 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-18.188 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-18.44 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-18.599 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-18.653 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-18.599 Z1.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X0.0 Y-18.95 Z1.3 F1920.0
+M101
+G1 X-0.49 Y-18.88 Z1.3 F1920.0
+G1 X-0.94 Y-18.69 Z1.3 F1920.0
+G1 X-1.33 Y-18.4 Z1.3 F1920.0
+G1 X-1.63 Y-18.01 Z1.3 F1920.0
+G1 X-1.82 Y-17.55 Z1.3 F1920.0
+G1 X-1.88 Y-17.07 Z1.3 F1920.0
+G1 X-1.82 Y-16.58 Z1.3 F1920.0
+G1 X-1.63 Y-16.13 Z1.3 F1920.0
+G1 X-1.33 Y-15.74 Z1.3 F1920.0
+G1 X-0.94 Y-15.44 Z1.3 F1920.0
+G1 X-0.49 Y-15.25 Z1.3 F1920.0
+G1 X0.0 Y-15.19 Z1.3 F1920.0
+G1 X0.49 Y-15.25 Z1.3 F1920.0
+G1 X0.94 Y-15.44 Z1.3 F1920.0
+G1 X1.33 Y-15.74 Z1.3 F1920.0
+G1 X1.63 Y-16.13 Z1.3 F1920.0
+G1 X1.82 Y-16.58 Z1.3 F1920.0
+G1 X1.88 Y-17.07 Z1.3 F1920.0
+G1 X1.82 Y-17.55 Z1.3 F1920.0
+G1 X1.63 Y-18.01 Z1.3 F1920.0
+G1 X1.33 Y-18.4 Z1.3 F1920.0
+G1 X0.94 Y-18.69 Z1.3 F1920.0
+G1 X0.49 Y-18.88 Z1.3 F1920.0
+G1 X0.0 Y-18.95 Z1.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y-18.44 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-18.188 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-17.859 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-17.477 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-17.066 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-16.655 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-16.272 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-15.943 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-15.691 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-15.532 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-15.478 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-15.532 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-15.691 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-15.943 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-16.272 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-16.655 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-17.066 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-17.477 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-17.859 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-18.188 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-18.44 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-18.599 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-18.653 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-18.599 Z1.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X18.76 Y-17.07 Z1.3 F1920.0
+M101
+G1 X18.82 Y-16.58 Z1.3 F1920.0
+G1 X19.01 Y-16.13 Z1.3 F1920.0
+G1 X19.31 Y-15.74 Z1.3 F1920.0
+G1 X19.7 Y-15.44 Z1.3 F1920.0
+G1 X20.15 Y-15.25 Z1.3 F1920.0
+G1 X20.64 Y-15.19 Z1.3 F1920.0
+G1 X21.12 Y-15.25 Z1.3 F1920.0
+G1 X21.58 Y-15.44 Z1.3 F1920.0
+G1 X21.97 Y-15.74 Z1.3 F1920.0
+G1 X22.27 Y-16.13 Z1.3 F1920.0
+G1 X22.45 Y-16.58 Z1.3 F1920.0
+G1 X22.52 Y-17.07 Z1.3 F1920.0
+G1 X22.45 Y-17.55 Z1.3 F1920.0
+G1 X22.27 Y-18.01 Z1.3 F1920.0
+G1 X21.97 Y-18.4 Z1.3 F1920.0
+G1 X21.58 Y-18.69 Z1.3 F1920.0
+G1 X21.12 Y-18.88 Z1.3 F1920.0
+G1 X20.64 Y-18.95 Z1.3 F1920.0
+G1 X20.15 Y-18.88 Z1.3 F1920.0
+G1 X19.7 Y-18.69 Z1.3 F1920.0
+G1 X19.31 Y-18.4 Z1.3 F1920.0
+G1 X19.01 Y-18.01 Z1.3 F1920.0
+G1 X18.82 Y-17.55 Z1.3 F1920.0
+G1 X18.76 Y-17.07 Z1.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X21.048 Y-31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-32.147 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-34.528 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-32.147 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-31.353 Z1.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X20.64 Y-31.06 Z1.3 F1920.0
+M101
+G1 X21.12 Y-31.12 Z1.3 F1920.0
+G1 X21.58 Y-31.31 Z1.3 F1920.0
+G1 X21.97 Y-31.61 Z1.3 F1920.0
+G1 X22.27 Y-32.0 Z1.3 F1920.0
+G1 X22.45 Y-32.45 Z1.3 F1920.0
+G1 X22.52 Y-32.94 Z1.3 F1920.0
+G1 X22.45 Y-33.43 Z1.3 F1920.0
+G1 X22.27 Y-33.88 Z1.3 F1920.0
+G1 X21.97 Y-34.27 Z1.3 F1920.0
+G1 X21.58 Y-34.57 Z1.3 F1920.0
+G1 X21.12 Y-34.76 Z1.3 F1920.0
+G1 X20.64 Y-34.82 Z1.3 F1920.0
+G1 X20.15 Y-34.76 Z1.3 F1920.0
+G1 X19.7 Y-34.57 Z1.3 F1920.0
+G1 X19.31 Y-34.27 Z1.3 F1920.0
+G1 X19.01 Y-33.88 Z1.3 F1920.0
+G1 X18.82 Y-33.43 Z1.3 F1920.0
+G1 X18.76 Y-32.94 Z1.3 F1920.0
+G1 X18.82 Y-32.45 Z1.3 F1920.0
+G1 X19.01 Y-32.0 Z1.3 F1920.0
+G1 X19.31 Y-31.61 Z1.3 F1920.0
+G1 X19.7 Y-31.31 Z1.3 F1920.0
+G1 X20.15 Y-31.12 Z1.3 F1920.0
+G1 X20.64 Y-31.06 Z1.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X29.04 Y-31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-31.353 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-32.147 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y-32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-34.528 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y-34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-32.147 Z1.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X28.35 Y-32.45 Z1.3 F1920.0
+M101
+G1 X28.54 Y-32.0 Z1.3 F1920.0
+G1 X28.83 Y-31.61 Z1.3 F1920.0
+G1 X29.22 Y-31.31 Z1.3 F1920.0
+G1 X29.68 Y-31.12 Z1.3 F1920.0
+G1 X30.16 Y-31.06 Z1.3 F1920.0
+G1 X30.65 Y-31.12 Z1.3 F1920.0
+G1 X31.1 Y-31.31 Z1.3 F1920.0
+G1 X31.49 Y-31.61 Z1.3 F1920.0
+G1 X31.79 Y-32.0 Z1.3 F1920.0
+G1 X31.98 Y-32.45 Z1.3 F1920.0
+G1 X32.04 Y-32.94 Z1.3 F1920.0
+G1 X31.98 Y-33.43 Z1.3 F1920.0
+G1 X31.79 Y-33.88 Z1.3 F1920.0
+G1 X31.49 Y-34.27 Z1.3 F1920.0
+G1 X31.1 Y-34.57 Z1.3 F1920.0
+G1 X30.65 Y-34.76 Z1.3 F1920.0
+G1 X30.16 Y-34.82 Z1.3 F1920.0
+G1 X29.68 Y-34.76 Z1.3 F1920.0
+G1 X29.22 Y-34.57 Z1.3 F1920.0
+G1 X28.83 Y-34.27 Z1.3 F1920.0
+G1 X28.54 Y-33.88 Z1.3 F1920.0
+G1 X28.35 Y-33.43 Z1.3 F1920.0
+G1 X28.28 Y-32.94 Z1.3 F1920.0
+G1 X28.35 Y-32.45 Z1.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X31.285 Y31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y31.353 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y32.147 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y34.528 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y32.147 Z1.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X30.16 Y31.06 Z1.3 F1920.0
+M101
+G1 X29.68 Y31.12 Z1.3 F1920.0
+G1 X29.22 Y31.31 Z1.3 F1920.0
+G1 X28.83 Y31.61 Z1.3 F1920.0
+G1 X28.54 Y32.0 Z1.3 F1920.0
+G1 X28.35 Y32.45 Z1.3 F1920.0
+G1 X28.28 Y32.94 Z1.3 F1920.0
+G1 X28.35 Y33.43 Z1.3 F1920.0
+G1 X28.54 Y33.88 Z1.3 F1920.0
+G1 X28.83 Y34.27 Z1.3 F1920.0
+G1 X29.22 Y34.57 Z1.3 F1920.0
+G1 X29.68 Y34.76 Z1.3 F1920.0
+G1 X30.16 Y34.82 Z1.3 F1920.0
+G1 X30.65 Y34.76 Z1.3 F1920.0
+G1 X31.1 Y34.57 Z1.3 F1920.0
+G1 X31.49 Y34.27 Z1.3 F1920.0
+G1 X31.79 Y33.88 Z1.3 F1920.0
+G1 X31.98 Y33.43 Z1.3 F1920.0
+G1 X32.04 Y32.94 Z1.3 F1920.0
+G1 X31.98 Y32.45 Z1.3 F1920.0
+G1 X31.79 Y32.0 Z1.3 F1920.0
+G1 X31.49 Y31.61 Z1.3 F1920.0
+G1 X31.1 Y31.31 Z1.3 F1920.0
+G1 X30.65 Y31.12 Z1.3 F1920.0
+G1 X30.16 Y31.06 Z1.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y34.528 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y32.147 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y31.353 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y32.147 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y34.063 Z1.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.45 Y32.45 Z1.3 F1920.0
+M101
+G1 X22.27 Y32.0 Z1.3 F1920.0
+G1 X21.97 Y31.61 Z1.3 F1920.0
+G1 X21.58 Y31.31 Z1.3 F1920.0
+G1 X21.12 Y31.12 Z1.3 F1920.0
+G1 X20.64 Y31.06 Z1.3 F1920.0
+G1 X20.15 Y31.12 Z1.3 F1920.0
+G1 X19.7 Y31.31 Z1.3 F1920.0
+G1 X19.31 Y31.61 Z1.3 F1920.0
+G1 X19.01 Y32.0 Z1.3 F1920.0
+G1 X18.82 Y32.45 Z1.3 F1920.0
+G1 X18.76 Y32.94 Z1.3 F1920.0
+G1 X18.82 Y33.43 Z1.3 F1920.0
+G1 X19.01 Y33.88 Z1.3 F1920.0
+G1 X19.31 Y34.27 Z1.3 F1920.0
+G1 X19.7 Y34.57 Z1.3 F1920.0
+G1 X20.15 Y34.76 Z1.3 F1920.0
+G1 X20.64 Y34.82 Z1.3 F1920.0
+G1 X21.12 Y34.76 Z1.3 F1920.0
+G1 X21.58 Y34.57 Z1.3 F1920.0
+G1 X21.97 Y34.27 Z1.3 F1920.0
+G1 X22.27 Y33.88 Z1.3 F1920.0
+G1 X22.45 Y33.43 Z1.3 F1920.0
+G1 X22.52 Y32.94 Z1.3 F1920.0
+G1 X22.45 Y32.45 Z1.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-22.171 Y32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y34.528 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.05 Y32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y32.147 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y31.353 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y32.147 Z1.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.05 Y31.53 Z1.3 F1920.0
+G1 X21.63 Y31.22 Z1.3 F1920.0
+G1 X21.15 Y31.02 Z1.3 F1920.0
+G1 X-18.76 Y32.94 Z1.3 F1920.0
+M101
+G1 X-18.82 Y32.45 Z1.3 F1920.0
+G1 X-19.01 Y32.0 Z1.3 F1920.0
+G1 X-19.31 Y31.61 Z1.3 F1920.0
+G1 X-19.7 Y31.31 Z1.3 F1920.0
+G1 X-20.15 Y31.12 Z1.3 F1920.0
+G1 X-20.64 Y31.06 Z1.3 F1920.0
+G1 X-21.12 Y31.12 Z1.3 F1920.0
+G1 X-21.58 Y31.31 Z1.3 F1920.0
+G1 X-21.97 Y31.61 Z1.3 F1920.0
+G1 X-22.27 Y32.0 Z1.3 F1920.0
+G1 X-22.45 Y32.45 Z1.3 F1920.0
+G1 X-22.52 Y32.94 Z1.3 F1920.0
+G1 X-22.45 Y33.43 Z1.3 F1920.0
+G1 X-22.27 Y33.88 Z1.3 F1920.0
+G1 X-21.97 Y34.27 Z1.3 F1920.0
+G1 X-21.58 Y34.57 Z1.3 F1920.0
+G1 X-21.12 Y34.76 Z1.3 F1920.0
+G1 X-20.64 Y34.82 Z1.3 F1920.0
+G1 X-20.15 Y34.76 Z1.3 F1920.0
+G1 X-19.7 Y34.57 Z1.3 F1920.0
+G1 X-19.31 Y34.27 Z1.3 F1920.0
+G1 X-19.01 Y33.88 Z1.3 F1920.0
+G1 X-18.82 Y33.43 Z1.3 F1920.0
+G1 X-18.76 Y32.94 Z1.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-28.788 Y32.147 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y31.353 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y31.407 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y31.566 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y31.818 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y32.147 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y32.53 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.75 Y32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y34.528 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y34.474 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y34.315 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y34.063 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-28.788 Y33.734 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y33.352 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y32.941 Z1.3 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y32.53 Z1.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-18.91 Y33.94 Z1.3 F1920.0
+G1 X-19.23 Y34.35 Z1.3 F1920.0
+G1 X-19.64 Y34.66 Z1.3 F1920.0
+G1 X-20.12 Y34.86 Z1.3 F1920.0
+G1 X-20.64 Y34.93 Z1.3 F1920.0
+G1 X-28.28 Y32.94 Z1.3 F1920.0
+M101
+G1 X-28.35 Y32.45 Z1.3 F1920.0
+G1 X-28.54 Y32.0 Z1.3 F1920.0
+G1 X-28.83 Y31.61 Z1.3 F1920.0
+G1 X-29.22 Y31.31 Z1.3 F1920.0
+G1 X-29.68 Y31.12 Z1.3 F1920.0
+G1 X-30.16 Y31.06 Z1.3 F1920.0
+G1 X-30.65 Y31.12 Z1.3 F1920.0
+G1 X-31.1 Y31.31 Z1.3 F1920.0
+G1 X-31.49 Y31.61 Z1.3 F1920.0
+G1 X-31.79 Y32.0 Z1.3 F1920.0
+G1 X-31.98 Y32.45 Z1.3 F1920.0
+G1 X-32.04 Y32.94 Z1.3 F1920.0
+G1 X-31.98 Y33.43 Z1.3 F1920.0
+G1 X-31.79 Y33.88 Z1.3 F1920.0
+G1 X-31.49 Y34.27 Z1.3 F1920.0
+G1 X-31.1 Y34.57 Z1.3 F1920.0
+G1 X-30.65 Y34.76 Z1.3 F1920.0
+G1 X-30.16 Y34.82 Z1.3 F1920.0
+G1 X-29.68 Y34.76 Z1.3 F1920.0
+G1 X-29.22 Y34.57 Z1.3 F1920.0
+G1 X-28.83 Y34.27 Z1.3 F1920.0
+G1 X-28.54 Y33.88 Z1.3 F1920.0
+G1 X-28.35 Y33.43 Z1.3 F1920.0
+G1 X-28.28 Y32.94 Z1.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+G1 X-27.33 Y34.91 Z1.3 F1920.0
+M101
+G1 X-26.67 Y36.23 Z1.3 F1920.0
+G1 X-27.33 Y36.23 Z1.3 F1920.0
+G1 X-28.0 Y35.62 Z1.3 F1920.0
+G1 X-28.0 Y36.23 Z1.3 F1920.0
+G1 X-28.67 Y36.23 Z1.3 F1920.0
+G1 X-28.67 Y36.05 Z1.3 F1920.0
+M103
+G1 X-31.33 Y36.18 Z1.3 F1920.0
+M101
+G1 X-31.33 Y36.23 Z1.3 F1920.0
+G1 X-32.0 Y36.23 Z1.3 F1920.0
+G1 X-32.0 Y35.87 Z1.3 F1920.0
+G1 X-32.67 Y36.23 Z1.3 F1920.0
+G1 X-32.67 Y35.33 Z1.3 F1920.0
+M103
+G1 X-27.33 Y-30.98 Z1.3 F1920.0
+M101
+G1 X-28.0 Y-30.26 Z1.3 F1920.0
+G1 X-28.67 Y-29.84 Z1.3 F1920.0
+G1 X-29.33 Y-29.58 Z1.3 F1920.0
+G1 X-30.0 Y-29.49 Z1.3 F1920.0
+G1 X-28.18 Y-27.56 Z1.3 F1920.0
+G1 X-28.18 Y-24.0 Z1.3 F1920.0
+G1 X-30.49 Y-22.22 Z1.3 F1920.0
+G1 X-30.49 Y-18.67 Z1.3 F1920.0
+G1 X-28.18 Y-16.89 Z1.3 F1920.0
+G1 X-28.18 Y-13.33 Z1.3 F1920.0
+G1 X-30.49 Y-11.56 Z1.3 F1920.0
+G1 X-30.49 Y-8.0 Z1.3 F1920.0
+G1 X-28.18 Y-6.22 Z1.3 F1920.0
+G1 X-28.18 Y-2.67 Z1.3 F1920.0
+G1 X-30.49 Y-0.89 Z1.3 F1920.0
+G1 X-30.49 Y2.67 Z1.3 F1920.0
+G1 X-28.18 Y4.44 Z1.3 F1920.0
+G1 X-28.18 Y8.0 Z1.3 F1920.0
+G1 X-30.49 Y9.78 Z1.3 F1920.0
+G1 X-30.49 Y13.33 Z1.3 F1920.0
+G1 X-28.18 Y15.11 Z1.3 F1920.0
+G1 X-28.18 Y18.67 Z1.3 F1920.0
+G1 X-30.49 Y20.44 Z1.3 F1920.0
+G1 X-30.49 Y24.0 Z1.3 F1920.0
+G1 X-28.18 Y25.78 Z1.3 F1920.0
+G1 X-28.0 Y29.33 Z1.3 F1920.0
+G1 X-26.85 Y30.52 Z1.3 F1920.0
+G1 X-28.0 Y30.26 Z1.3 F1920.0
+G1 X-28.67 Y29.83 Z1.3 F1920.0
+G1 X-29.33 Y29.58 Z1.3 F1920.0
+G1 X-30.0 Y29.49 Z1.3 F1920.0
+M103
+G1 X-23.33 Y30.8 Z1.3 F1920.0
+M101
+G1 X-22.67 Y30.16 Z1.3 F1920.0
+G1 X-22.0 Y29.78 Z1.3 F1920.0
+G1 X-22.84 Y25.78 Z1.3 F1920.0
+G1 X-25.16 Y24.0 Z1.3 F1920.0
+G1 X-25.16 Y20.44 Z1.3 F1920.0
+G1 X-22.84 Y18.67 Z1.3 F1920.0
+G1 X-22.84 Y15.11 Z1.3 F1920.0
+G1 X-25.16 Y13.33 Z1.3 F1920.0
+G1 X-25.16 Y9.78 Z1.3 F1920.0
+G1 X-22.84 Y8.0 Z1.3 F1920.0
+G1 X-22.84 Y4.44 Z1.3 F1920.0
+G1 X-25.16 Y2.67 Z1.3 F1920.0
+G1 X-25.16 Y-0.89 Z1.3 F1920.0
+G1 X-22.84 Y-2.67 Z1.3 F1920.0
+G1 X-22.84 Y-6.22 Z1.3 F1920.0
+G1 X-25.16 Y-8.0 Z1.3 F1920.0
+G1 X-25.16 Y-11.56 Z1.3 F1920.0
+G1 X-22.84 Y-13.33 Z1.3 F1920.0
+G1 X-22.84 Y-16.89 Z1.3 F1920.0
+G1 X-25.16 Y-18.67 Z1.3 F1920.0
+G1 X-25.16 Y-22.22 Z1.3 F1920.0
+G1 X-22.84 Y-24.0 Z1.3 F1920.0
+G1 X-22.84 Y-27.56 Z1.3 F1920.0
+G1 X-25.16 Y-29.33 Z1.3 F1920.0
+G1 X-24.59 Y-31.79 Z1.3 F1920.0
+G1 X-22.67 Y-30.16 Z1.3 F1920.0
+G1 X-22.0 Y-29.78 Z1.3 F1920.0
+M103
+G1 X-20.67 Y-29.47 Z1.3 F1920.0
+M101
+G1 X-20.0 Y-29.33 Z1.3 F1920.0
+G1 X-21.44 Y-28.9 Z1.3 F1920.0
+G1 X-22.49 Y-27.56 Z1.3 F1920.0
+G1 X-22.49 Y-24.0 Z1.3 F1920.0
+G1 X-20.18 Y-22.22 Z1.3 F1920.0
+G1 X-20.18 Y-18.67 Z1.3 F1920.0
+G1 X-22.49 Y-16.89 Z1.3 F1920.0
+G1 X-22.49 Y-13.33 Z1.3 F1920.0
+G1 X-20.18 Y-11.56 Z1.3 F1920.0
+G1 X-20.18 Y-8.0 Z1.3 F1920.0
+G1 X-22.49 Y-6.22 Z1.3 F1920.0
+G1 X-22.49 Y-2.67 Z1.3 F1920.0
+G1 X-20.18 Y-0.89 Z1.3 F1920.0
+G1 X-20.18 Y2.67 Z1.3 F1920.0
+G1 X-22.49 Y4.44 Z1.3 F1920.0
+G1 X-22.49 Y8.0 Z1.3 F1920.0
+G1 X-20.18 Y9.78 Z1.3 F1920.0
+G1 X-20.18 Y13.33 Z1.3 F1920.0
+G1 X-22.49 Y15.11 Z1.3 F1920.0
+G1 X-22.49 Y18.67 Z1.3 F1920.0
+G1 X-20.18 Y20.44 Z1.3 F1920.0
+G1 X-20.18 Y24.0 Z1.3 F1920.0
+G1 X-22.49 Y25.78 Z1.3 F1920.0
+G1 X-21.33 Y29.56 Z1.3 F1920.0
+G1 X-20.67 Y29.47 Z1.3 F1920.0
+G1 X-20.0 Y29.55 Z1.3 F1920.0
+M103
+G1 X-18.0 Y30.72 Z1.3 F1920.0
+M101
+G1 X-18.22 Y29.62 Z1.3 F1920.0
+G1 X-17.51 Y29.33 Z1.3 F1920.0
+G1 X-17.51 Y25.78 Z1.3 F1920.0
+G1 X-19.83 Y24.0 Z1.3 F1920.0
+G1 X-19.83 Y20.44 Z1.3 F1920.0
+G1 X-17.51 Y18.67 Z1.3 F1920.0
+G1 X-17.51 Y15.11 Z1.3 F1920.0
+G1 X-19.83 Y13.33 Z1.3 F1920.0
+G1 X-19.83 Y9.78 Z1.3 F1920.0
+G1 X-17.51 Y8.0 Z1.3 F1920.0
+G1 X-17.51 Y4.44 Z1.3 F1920.0
+G1 X-19.83 Y2.67 Z1.3 F1920.0
+G1 X-19.83 Y-0.89 Z1.3 F1920.0
+G1 X-17.51 Y-2.67 Z1.3 F1920.0
+G1 X-17.51 Y-6.22 Z1.3 F1920.0
+G1 X-19.83 Y-8.0 Z1.3 F1920.0
+G1 X-19.83 Y-11.56 Z1.3 F1920.0
+G1 X-17.51 Y-13.33 Z1.3 F1920.0
+G1 X-17.51 Y-16.89 Z1.3 F1920.0
+G1 X-19.83 Y-18.67 Z1.3 F1920.0
+G1 X-19.83 Y-22.22 Z1.3 F1920.0
+G1 X-17.51 Y-24.0 Z1.3 F1920.0
+G1 X-17.51 Y-27.56 Z1.3 F1920.0
+G1 X-18.22 Y-29.62 Z1.3 F1920.0
+G1 X-18.0 Y-30.72 Z1.3 F1920.0
+M103
+G1 X-18.0 Y-35.16 Z1.3 F1920.0
+M101
+G1 X-16.67 Y-36.23 Z1.3 F1920.0
+G1 X-18.67 Y-36.23 Z1.3 F1920.0
+G1 X-18.67 Y-35.77 Z1.3 F1920.0
+G1 X-19.33 Y-36.13 Z1.3 F1920.0
+G1 X-19.33 Y-36.23 Z1.3 F1920.0
+M103
+G1 X-22.0 Y-36.23 Z1.3 F1920.0
+M101
+G1 X-22.0 Y-36.1 Z1.3 F1920.0
+G1 X-22.67 Y-36.23 Z1.3 F1920.0
+G1 X-22.67 Y-35.72 Z1.3 F1920.0
+G1 X-23.33 Y-36.23 Z1.3 F1920.0
+G1 X-24.0 Y-36.23 Z1.3 F1920.0
+G1 X-23.33 Y-35.08 Z1.3 F1920.0
+M103
+G1 X-22.56 Y33.46 Z1.3 F1920.0
+G1 X-22.0 Y36.1 Z1.3 F1920.0
+M101
+G1 X-22.0 Y36.23 Z1.3 F1920.0
+G1 X-22.67 Y36.23 Z1.3 F1920.0
+G1 X-22.67 Y35.72 Z1.3 F1920.0
+G1 X-23.33 Y36.23 Z1.3 F1920.0
+G1 X-23.33 Y35.08 Z1.3 F1920.0
+G1 X-24.0 Y36.23 Z1.3 F1920.0
+G1 X-26.0 Y36.23 Z1.3 F1920.0
+G1 X-24.0 Y33.79 Z1.3 F1920.0
+G1 X-27.83 Y25.78 Z1.3 F1920.0
+G1 X-25.51 Y24.0 Z1.3 F1920.0
+G1 X-25.51 Y20.44 Z1.3 F1920.0
+G1 X-27.83 Y18.67 Z1.3 F1920.0
+G1 X-27.83 Y15.11 Z1.3 F1920.0
+G1 X-25.51 Y13.33 Z1.3 F1920.0
+G1 X-25.51 Y9.78 Z1.3 F1920.0
+G1 X-27.83 Y8.0 Z1.3 F1920.0
+G1 X-27.83 Y4.44 Z1.3 F1920.0
+G1 X-25.51 Y2.67 Z1.3 F1920.0
+G1 X-25.51 Y-0.89 Z1.3 F1920.0
+G1 X-27.83 Y-2.67 Z1.3 F1920.0
+G1 X-27.83 Y-6.22 Z1.3 F1920.0
+G1 X-25.51 Y-8.0 Z1.3 F1920.0
+G1 X-25.51 Y-11.56 Z1.3 F1920.0
+G1 X-27.83 Y-13.33 Z1.3 F1920.0
+G1 X-27.83 Y-16.89 Z1.3 F1920.0
+G1 X-25.51 Y-18.67 Z1.3 F1920.0
+G1 X-25.51 Y-22.22 Z1.3 F1920.0
+G1 X-27.83 Y-24.0 Z1.3 F1920.0
+G1 X-27.83 Y-27.56 Z1.3 F1920.0
+G1 X-25.51 Y-29.33 Z1.3 F1920.0
+G1 X-26.86 Y-34.43 Z1.3 F1920.0
+G1 X-24.67 Y-36.23 Z1.3 F1920.0
+G1 X-28.0 Y-36.23 Z1.3 F1920.0
+G1 X-28.0 Y-35.62 Z1.3 F1920.0
+G1 X-28.67 Y-36.23 Z1.3 F1920.0
+G1 X-28.67 Y-36.05 Z1.3 F1920.0
+M103
+G1 X-31.33 Y-36.18 Z1.3 F1920.0
+M101
+G1 X-31.33 Y-36.23 Z1.3 F1920.0
+G1 X-32.0 Y-36.23 Z1.3 F1920.0
+G1 X-32.0 Y-35.87 Z1.3 F1920.0
+G1 X-32.67 Y-36.23 Z1.3 F1920.0
+G1 X-32.67 Y-35.33 Z1.3 F1920.0
+M103
+G1 X-32.67 Y-30.55 Z1.3 F1920.0
+M101
+G1 X-32.67 Y30.55 Z1.3 F1920.0
+G1 X-32.0 Y30.01 Z1.3 F1920.0
+G1 X-31.33 Y29.7 Z1.3 F1920.0
+G1 X-30.83 Y28.89 Z1.3 F1920.0
+G1 X-30.83 Y-28.89 Z1.3 F1920.0
+G1 X-31.33 Y-29.7 Z1.3 F1920.0
+G1 X-32.0 Y-30.01 Z1.3 F1920.0
+M103
+G1 X-1.33 Y-29.7 Z1.3 F1920.0
+M101
+G1 X-2.0 Y-30.06 Z1.3 F1920.0
+G1 X-2.67 Y-30.66 Z1.3 F1920.0
+G1 X-3.91 Y-31.49 Z1.3 F1920.0
+G1 X-3.83 Y-29.33 Z1.3 F1920.0
+G1 X-1.51 Y-27.56 Z1.3 F1920.0
+G1 X-1.51 Y-24.0 Z1.3 F1920.0
+G1 X-3.83 Y-22.22 Z1.3 F1920.0
+G1 X-0.87 Y-21.09 Z1.3 F1920.0
+G1 X-1.33 Y-20.24 Z1.3 F1920.0
+G1 X-2.0 Y-19.87 Z1.3 F1920.0
+G1 X-2.67 Y-19.25 Z1.3 F1920.0
+M103
+G1 X-1.92 Y-33.64 Z1.3 F1920.0
+G1 X-1.33 Y-36.18 Z1.3 F1920.0
+M101
+G1 X-1.33 Y-36.23 Z1.3 F1920.0
+G1 X-2.0 Y-36.23 Z1.3 F1920.0
+G1 X-2.0 Y-35.83 Z1.3 F1920.0
+G1 X-2.67 Y-36.23 Z1.3 F1920.0
+G1 X-2.67 Y-35.23 Z1.3 F1920.0
+G1 X-3.91 Y-34.39 Z1.3 F1920.0
+G1 X-3.33 Y-36.23 Z1.3 F1920.0
+G1 X-4.67 Y-36.23 Z1.3 F1920.0
+G1 X-6.49 Y-34.67 Z1.3 F1920.0
+G1 X-4.18 Y-29.33 Z1.3 F1920.0
+G1 X-6.49 Y-27.56 Z1.3 F1920.0
+G1 X-6.49 Y-24.0 Z1.3 F1920.0
+G1 X-4.18 Y-22.22 Z1.3 F1920.0
+G1 X-6.49 Y-16.89 Z1.3 F1920.0
+G1 X-6.49 Y-13.33 Z1.3 F1920.0
+G1 X-4.18 Y-11.56 Z1.3 F1920.0
+G1 X-4.18 Y-8.0 Z1.3 F1920.0
+G1 X-6.49 Y-6.22 Z1.3 F1920.0
+G1 X-6.49 Y-2.67 Z1.3 F1920.0
+G1 X-4.18 Y-0.89 Z1.3 F1920.0
+G1 X-4.18 Y2.67 Z1.3 F1920.0
+G1 X-6.49 Y4.44 Z1.3 F1920.0
+G1 X-6.49 Y8.0 Z1.3 F1920.0
+G1 X-4.18 Y9.78 Z1.3 F1920.0
+G1 X-4.18 Y13.33 Z1.3 F1920.0
+G1 X-6.49 Y15.11 Z1.3 F1920.0
+G1 X-6.49 Y18.67 Z1.3 F1920.0
+G1 X-4.18 Y20.44 Z1.3 F1920.0
+G1 X-4.18 Y24.0 Z1.3 F1920.0
+G1 X-6.49 Y25.78 Z1.3 F1920.0
+G1 X-6.49 Y29.33 Z1.3 F1920.0
+G1 X-4.18 Y31.11 Z1.3 F1920.0
+G1 X-4.18 Y34.67 Z1.3 F1920.0
+G1 X-4.67 Y36.23 Z1.3 F1920.0
+G1 X0.0 Y36.23 Z1.3 F1920.0
+G1 X0.0 Y35.56 Z1.3 F1920.0
+G1 X-3.82 Y34.67 Z1.3 F1920.0
+G1 X-3.82 Y31.11 Z1.3 F1920.0
+G1 X-1.51 Y29.33 Z1.3 F1920.0
+G1 X-1.51 Y25.78 Z1.3 F1920.0
+G1 X-3.82 Y24.0 Z1.3 F1920.0
+G1 X-3.82 Y20.44 Z1.3 F1920.0
+G1 X-1.51 Y18.67 Z1.3 F1920.0
+G1 X-1.51 Y15.11 Z1.3 F1920.0
+G1 X-3.82 Y13.33 Z1.3 F1920.0
+G1 X-3.82 Y9.78 Z1.3 F1920.0
+G1 X-1.51 Y8.0 Z1.3 F1920.0
+G1 X-1.51 Y4.44 Z1.3 F1920.0
+G1 X-3.83 Y2.67 Z1.3 F1920.0
+G1 X-3.83 Y-0.89 Z1.3 F1920.0
+G1 X-1.51 Y-2.67 Z1.3 F1920.0
+G1 X-1.51 Y-6.22 Z1.3 F1920.0
+G1 X-3.83 Y-8.0 Z1.3 F1920.0
+G1 X-3.83 Y-11.56 Z1.3 F1920.0
+G1 X-1.66 Y-13.31 Z1.3 F1920.0
+G1 X-2.0 Y-14.26 Z1.3 F1920.0
+G1 X-2.67 Y-14.88 Z1.3 F1920.0
+M103
+G1 X0.0 Y-13.59 Z1.3 F1920.0
+M101
+G1 X0.67 Y-13.68 Z1.3 F1920.0
+G1 X1.53 Y-13.25 Z1.3 F1920.0
+G1 X1.16 Y-11.56 Z1.3 F1920.0
+G1 X1.16 Y-8.0 Z1.3 F1920.0
+G1 X-1.16 Y-6.22 Z1.3 F1920.0
+G1 X-1.16 Y-2.67 Z1.3 F1920.0
+G1 X1.16 Y-0.89 Z1.3 F1920.0
+G1 X1.16 Y2.67 Z1.3 F1920.0
+G1 X-1.16 Y4.44 Z1.3 F1920.0
+G1 X-1.16 Y8.0 Z1.3 F1920.0
+G1 X1.16 Y9.78 Z1.3 F1920.0
+G1 X1.16 Y13.33 Z1.3 F1920.0
+G1 X-1.16 Y15.11 Z1.3 F1920.0
+G1 X-1.16 Y18.67 Z1.3 F1920.0
+G1 X1.16 Y20.44 Z1.3 F1920.0
+G1 X1.16 Y24.0 Z1.3 F1920.0
+G1 X-1.16 Y25.78 Z1.3 F1920.0
+G1 X-1.16 Y29.33 Z1.3 F1920.0
+G1 X1.16 Y31.11 Z1.3 F1920.0
+G1 X1.16 Y34.67 Z1.3 F1920.0
+G1 X2.0 Y36.23 Z1.3 F1920.0
+G1 X0.67 Y36.23 Z1.3 F1920.0
+M103
+G1 X-5.33 Y36.23 Z1.3 F1920.0
+M101
+G1 X-8.67 Y36.23 Z1.3 F1920.0
+G1 X-9.16 Y34.67 Z1.3 F1920.0
+G1 X-9.16 Y31.11 Z1.3 F1920.0
+G1 X-6.84 Y29.33 Z1.3 F1920.0
+G1 X-6.84 Y25.78 Z1.3 F1920.0
+G1 X-9.16 Y24.0 Z1.3 F1920.0
+G1 X-9.16 Y20.44 Z1.3 F1920.0
+G1 X-6.84 Y18.67 Z1.3 F1920.0
+G1 X-6.84 Y15.11 Z1.3 F1920.0
+G1 X-9.16 Y13.33 Z1.3 F1920.0
+G1 X-9.16 Y9.78 Z1.3 F1920.0
+G1 X-6.84 Y8.0 Z1.3 F1920.0
+G1 X-6.84 Y4.44 Z1.3 F1920.0
+G1 X-9.16 Y2.67 Z1.3 F1920.0
+G1 X-9.16 Y-0.89 Z1.3 F1920.0
+G1 X-6.84 Y-2.67 Z1.3 F1920.0
+G1 X-6.84 Y-6.22 Z1.3 F1920.0
+G1 X-9.16 Y-8.0 Z1.3 F1920.0
+G1 X-9.16 Y-11.56 Z1.3 F1920.0
+G1 X-6.84 Y-13.33 Z1.3 F1920.0
+G1 X-6.84 Y-16.89 Z1.3 F1920.0
+G1 X-9.16 Y-18.67 Z1.3 F1920.0
+G1 X-9.16 Y-22.22 Z1.3 F1920.0
+G1 X-6.84 Y-24.0 Z1.3 F1920.0
+G1 X-6.84 Y-27.56 Z1.3 F1920.0
+G1 X-9.16 Y-29.33 Z1.3 F1920.0
+G1 X-9.16 Y-32.89 Z1.3 F1920.0
+G1 X-6.84 Y-34.67 Z1.3 F1920.0
+G1 X-5.33 Y-36.23 Z1.3 F1920.0
+G1 X-11.33 Y-36.23 Z1.3 F1920.0
+G1 X-11.83 Y-34.67 Z1.3 F1920.0
+G1 X-9.51 Y-32.89 Z1.3 F1920.0
+G1 X-9.51 Y-29.33 Z1.3 F1920.0
+G1 X-11.83 Y-27.56 Z1.3 F1920.0
+G1 X-11.83 Y-24.0 Z1.3 F1920.0
+G1 X-9.51 Y-22.22 Z1.3 F1920.0
+G1 X-9.51 Y-18.67 Z1.3 F1920.0
+G1 X-11.83 Y-16.89 Z1.3 F1920.0
+G1 X-11.83 Y-13.33 Z1.3 F1920.0
+G1 X-9.51 Y-11.56 Z1.3 F1920.0
+G1 X-9.51 Y-8.0 Z1.3 F1920.0
+G1 X-11.83 Y-6.22 Z1.3 F1920.0
+G1 X-11.83 Y-2.67 Z1.3 F1920.0
+G1 X-9.51 Y-0.89 Z1.3 F1920.0
+G1 X-9.51 Y2.67 Z1.3 F1920.0
+G1 X-11.83 Y4.44 Z1.3 F1920.0
+G1 X-11.83 Y8.0 Z1.3 F1920.0
+G1 X-9.51 Y9.78 Z1.3 F1920.0
+G1 X-9.51 Y13.33 Z1.3 F1920.0
+G1 X-11.83 Y15.11 Z1.3 F1920.0
+G1 X-11.83 Y18.67 Z1.3 F1920.0
+G1 X-9.51 Y20.44 Z1.3 F1920.0
+G1 X-9.51 Y24.0 Z1.3 F1920.0
+G1 X-11.83 Y25.78 Z1.3 F1920.0
+G1 X-11.83 Y29.33 Z1.3 F1920.0
+G1 X-9.51 Y31.11 Z1.3 F1920.0
+G1 X-9.51 Y34.67 Z1.3 F1920.0
+G1 X-9.33 Y36.23 Z1.3 F1920.0
+G1 X-14.0 Y36.23 Z1.3 F1920.0
+G1 X-14.49 Y34.67 Z1.3 F1920.0
+G1 X-14.49 Y31.11 Z1.3 F1920.0
+G1 X-12.18 Y29.33 Z1.3 F1920.0
+G1 X-12.18 Y25.78 Z1.3 F1920.0
+G1 X-14.49 Y24.0 Z1.3 F1920.0
+G1 X-14.49 Y20.44 Z1.3 F1920.0
+G1 X-12.18 Y18.67 Z1.3 F1920.0
+G1 X-12.18 Y15.11 Z1.3 F1920.0
+G1 X-14.49 Y13.33 Z1.3 F1920.0
+G1 X-14.49 Y9.78 Z1.3 F1920.0
+G1 X-12.18 Y8.0 Z1.3 F1920.0
+G1 X-12.18 Y4.44 Z1.3 F1920.0
+G1 X-14.49 Y2.67 Z1.3 F1920.0
+G1 X-14.49 Y-0.89 Z1.3 F1920.0
+G1 X-12.18 Y-2.67 Z1.3 F1920.0
+G1 X-12.18 Y-6.22 Z1.3 F1920.0
+G1 X-14.49 Y-8.0 Z1.3 F1920.0
+G1 X-14.49 Y-11.56 Z1.3 F1920.0
+G1 X-12.18 Y-13.33 Z1.3 F1920.0
+G1 X-12.18 Y-16.89 Z1.3 F1920.0
+G1 X-14.49 Y-18.67 Z1.3 F1920.0
+G1 X-14.49 Y-22.22 Z1.3 F1920.0
+G1 X-12.18 Y-24.0 Z1.3 F1920.0
+G1 X-12.18 Y-27.56 Z1.3 F1920.0
+G1 X-14.49 Y-29.33 Z1.3 F1920.0
+G1 X-14.49 Y-32.89 Z1.3 F1920.0
+G1 X-12.18 Y-34.67 Z1.3 F1920.0
+G1 X-12.0 Y-36.23 Z1.3 F1920.0
+G1 X-16.0 Y-36.23 Z1.3 F1920.0
+G1 X-17.33 Y-34.67 Z1.3 F1920.0
+G1 X-17.33 Y-33.96 Z1.3 F1920.0
+G1 X-14.84 Y-32.89 Z1.3 F1920.0
+G1 X-14.84 Y-29.33 Z1.3 F1920.0
+G1 X-17.16 Y-27.56 Z1.3 F1920.0
+G1 X-17.16 Y-24.0 Z1.3 F1920.0
+G1 X-14.84 Y-22.22 Z1.3 F1920.0
+G1 X-14.84 Y-18.67 Z1.3 F1920.0
+G1 X-17.16 Y-16.89 Z1.3 F1920.0
+G1 X-17.16 Y-13.33 Z1.3 F1920.0
+G1 X-14.84 Y-11.56 Z1.3 F1920.0
+G1 X-14.84 Y-8.0 Z1.3 F1920.0
+G1 X-17.16 Y-6.22 Z1.3 F1920.0
+G1 X-17.16 Y-2.67 Z1.3 F1920.0
+G1 X-14.84 Y-0.89 Z1.3 F1920.0
+G1 X-14.84 Y2.67 Z1.3 F1920.0
+G1 X-17.16 Y4.44 Z1.3 F1920.0
+G1 X-17.16 Y8.0 Z1.3 F1920.0
+G1 X-14.84 Y9.78 Z1.3 F1920.0
+G1 X-14.84 Y13.33 Z1.3 F1920.0
+G1 X-17.16 Y15.11 Z1.3 F1920.0
+G1 X-17.16 Y18.67 Z1.3 F1920.0
+G1 X-14.84 Y20.44 Z1.3 F1920.0
+G1 X-14.84 Y24.0 Z1.3 F1920.0
+G1 X-17.16 Y25.78 Z1.3 F1920.0
+G1 X-17.16 Y29.33 Z1.3 F1920.0
+G1 X-14.84 Y31.11 Z1.3 F1920.0
+G1 X-14.84 Y34.67 Z1.3 F1920.0
+G1 X-14.67 Y36.23 Z1.3 F1920.0
+G1 X-18.0 Y36.23 Z1.3 F1920.0
+G1 X-18.0 Y35.16 Z1.3 F1920.0
+G1 X-18.67 Y35.77 Z1.3 F1920.0
+G1 X-18.67 Y36.23 Z1.3 F1920.0
+G1 X-19.33 Y36.23 Z1.3 F1920.0
+G1 X-19.33 Y36.13 Z1.3 F1920.0
+M103
+G1 X15.33 Y36.23 Z1.3 F1920.0
+M101
+G1 X12.67 Y36.23 Z1.3 F1920.0
+G1 X12.18 Y34.67 Z1.3 F1920.0
+G1 X12.18 Y31.11 Z1.3 F1920.0
+G1 X14.49 Y29.33 Z1.3 F1920.0
+G1 X14.49 Y25.78 Z1.3 F1920.0
+G1 X12.18 Y24.0 Z1.3 F1920.0
+G1 X12.18 Y20.44 Z1.3 F1920.0
+G1 X14.49 Y18.67 Z1.3 F1920.0
+G1 X14.49 Y15.11 Z1.3 F1920.0
+G1 X12.18 Y13.33 Z1.3 F1920.0
+G1 X12.18 Y9.78 Z1.3 F1920.0
+G1 X14.49 Y8.0 Z1.3 F1920.0
+G1 X14.49 Y4.44 Z1.3 F1920.0
+G1 X12.18 Y2.67 Z1.3 F1920.0
+G1 X12.18 Y-0.89 Z1.3 F1920.0
+G1 X14.49 Y-2.67 Z1.3 F1920.0
+G1 X14.49 Y-6.22 Z1.3 F1920.0
+G1 X12.18 Y-8.0 Z1.3 F1920.0
+G1 X12.18 Y-11.56 Z1.3 F1920.0
+G1 X14.49 Y-13.33 Z1.3 F1920.0
+G1 X14.49 Y-16.89 Z1.3 F1920.0
+G1 X12.18 Y-18.67 Z1.3 F1920.0
+G1 X12.18 Y-22.22 Z1.3 F1920.0
+G1 X14.49 Y-24.0 Z1.3 F1920.0
+G1 X14.49 Y-27.56 Z1.3 F1920.0
+G1 X12.18 Y-29.33 Z1.3 F1920.0
+G1 X12.18 Y-32.89 Z1.3 F1920.0
+G1 X14.49 Y-34.67 Z1.3 F1920.0
+G1 X15.33 Y-36.23 Z1.3 F1920.0
+G1 X10.0 Y-36.23 Z1.3 F1920.0
+G1 X9.51 Y-34.67 Z1.3 F1920.0
+G1 X11.83 Y-32.89 Z1.3 F1920.0
+G1 X11.83 Y-29.33 Z1.3 F1920.0
+G1 X9.51 Y-27.56 Z1.3 F1920.0
+G1 X9.51 Y-24.0 Z1.3 F1920.0
+G1 X11.83 Y-22.22 Z1.3 F1920.0
+G1 X11.83 Y-18.67 Z1.3 F1920.0
+G1 X9.51 Y-16.89 Z1.3 F1920.0
+G1 X9.51 Y-13.33 Z1.3 F1920.0
+G1 X11.83 Y-11.56 Z1.3 F1920.0
+G1 X11.83 Y-8.0 Z1.3 F1920.0
+G1 X9.51 Y-6.22 Z1.3 F1920.0
+G1 X9.51 Y-2.67 Z1.3 F1920.0
+G1 X11.83 Y-0.89 Z1.3 F1920.0
+G1 X11.83 Y2.67 Z1.3 F1920.0
+G1 X9.51 Y4.44 Z1.3 F1920.0
+G1 X9.51 Y8.0 Z1.3 F1920.0
+G1 X11.83 Y9.78 Z1.3 F1920.0
+G1 X11.83 Y13.33 Z1.3 F1920.0
+G1 X9.51 Y15.11 Z1.3 F1920.0
+G1 X9.51 Y18.67 Z1.3 F1920.0
+G1 X11.83 Y20.44 Z1.3 F1920.0
+G1 X11.83 Y24.0 Z1.3 F1920.0
+G1 X9.51 Y25.78 Z1.3 F1920.0
+G1 X9.51 Y29.33 Z1.3 F1920.0
+G1 X11.83 Y31.11 Z1.3 F1920.0
+G1 X11.83 Y34.67 Z1.3 F1920.0
+G1 X12.0 Y36.23 Z1.3 F1920.0
+G1 X7.33 Y36.23 Z1.3 F1920.0
+G1 X6.84 Y34.67 Z1.3 F1920.0
+G1 X9.16 Y29.33 Z1.3 F1920.0
+G1 X9.16 Y-27.56 Z1.3 F1920.0
+G1 X6.84 Y-29.33 Z1.3 F1920.0
+G1 X6.84 Y-32.89 Z1.3 F1920.0
+G1 X9.16 Y-34.67 Z1.3 F1920.0
+G1 X9.33 Y-36.23 Z1.3 F1920.0
+G1 X5.33 Y-36.23 Z1.3 F1920.0
+G1 X4.18 Y-34.67 Z1.3 F1920.0
+G1 X6.49 Y-32.89 Z1.3 F1920.0
+G1 X6.49 Y-29.33 Z1.3 F1920.0
+G1 X4.18 Y-27.56 Z1.3 F1920.0
+G1 X4.18 Y-24.0 Z1.3 F1920.0
+G1 X6.67 Y-22.22 Z1.3 F1920.0
+G1 X6.67 Y-18.67 Z1.3 F1920.0
+G1 X4.0 Y-16.89 Z1.3 F1920.0
+G1 X4.18 Y-13.33 Z1.3 F1920.0
+G1 X6.67 Y-11.56 Z1.3 F1920.0
+G1 X6.67 Y-8.0 Z1.3 F1920.0
+G1 X4.18 Y-6.22 Z1.3 F1920.0
+G1 X4.18 Y-2.67 Z1.3 F1920.0
+G1 X6.67 Y-0.89 Z1.3 F1920.0
+G1 X6.67 Y2.67 Z1.3 F1920.0
+G1 X4.18 Y4.44 Z1.3 F1920.0
+G1 X4.18 Y8.0 Z1.3 F1920.0
+G1 X6.67 Y9.78 Z1.3 F1920.0
+G1 X6.67 Y13.33 Z1.3 F1920.0
+G1 X4.18 Y15.11 Z1.3 F1920.0
+G1 X4.18 Y18.67 Z1.3 F1920.0
+G1 X6.67 Y20.44 Z1.3 F1920.0
+G1 X6.67 Y24.0 Z1.3 F1920.0
+G1 X4.18 Y25.78 Z1.3 F1920.0
+G1 X4.18 Y29.33 Z1.3 F1920.0
+G1 X6.67 Y31.11 Z1.3 F1920.0
+G1 X6.49 Y34.67 Z1.3 F1920.0
+G1 X6.67 Y36.23 Z1.3 F1920.0
+G1 X2.67 Y36.23 Z1.3 F1920.0
+G1 X1.51 Y34.67 Z1.3 F1920.0
+G1 X1.51 Y31.11 Z1.3 F1920.0
+G1 X3.83 Y29.33 Z1.3 F1920.0
+G1 X3.83 Y25.78 Z1.3 F1920.0
+G1 X1.51 Y24.0 Z1.3 F1920.0
+G1 X1.51 Y20.44 Z1.3 F1920.0
+G1 X3.83 Y18.67 Z1.3 F1920.0
+G1 X3.83 Y15.11 Z1.3 F1920.0
+G1 X1.51 Y13.33 Z1.3 F1920.0
+G1 X1.51 Y9.78 Z1.3 F1920.0
+G1 X3.83 Y8.0 Z1.3 F1920.0
+G1 X3.83 Y4.44 Z1.3 F1920.0
+G1 X1.51 Y2.67 Z1.3 F1920.0
+G1 X1.51 Y-0.89 Z1.3 F1920.0
+G1 X3.83 Y-2.67 Z1.3 F1920.0
+G1 X3.82 Y-6.22 Z1.3 F1920.0
+G1 X1.51 Y-8.0 Z1.3 F1920.0
+G1 X1.51 Y-11.56 Z1.3 F1920.0
+G1 X3.82 Y-13.33 Z1.3 F1920.0
+G1 X3.25 Y-14.57 Z1.3 F1920.0
+G1 X3.33 Y-16.12 Z1.3 F1920.0
+M103
+G1 X3.33 Y-18.02 Z1.3 F1920.0
+M101
+G1 X3.82 Y-24.0 Z1.3 F1920.0
+G1 X3.82 Y-27.56 Z1.3 F1920.0
+G1 X3.25 Y-30.33 Z1.3 F1920.0
+G1 X3.33 Y-31.82 Z1.3 F1920.0
+M103
+G1 X3.33 Y-34.06 Z1.3 F1920.0
+M101
+G1 X3.82 Y-34.67 Z1.3 F1920.0
+G1 X4.67 Y-36.23 Z1.3 F1920.0
+G1 X2.67 Y-36.23 Z1.3 F1920.0
+G1 X2.67 Y-35.23 Z1.3 F1920.0
+G1 X2.0 Y-35.83 Z1.3 F1920.0
+G1 X2.0 Y-36.23 Z1.3 F1920.0
+G1 X1.33 Y-36.23 Z1.3 F1920.0
+G1 X1.33 Y-36.18 Z1.3 F1920.0
+M103
+G1 X2.02 Y-32.59 Z1.3 F1920.0
+G1 X2.67 Y-19.25 Z1.3 F1920.0
+M101
+G1 X2.0 Y-19.87 Z1.3 F1920.0
+G1 X1.33 Y-20.24 Z1.3 F1920.0
+G1 X0.67 Y-20.45 Z1.3 F1920.0
+G1 X1.33 Y-22.22 Z1.3 F1920.0
+G1 X-1.16 Y-24.0 Z1.3 F1920.0
+G1 X-1.16 Y-27.56 Z1.3 F1920.0
+G1 X-0.05 Y-28.78 Z1.3 F1920.0
+G1 X1.33 Y-29.33 Z1.3 F1920.0
+G1 X0.67 Y-29.49 Z1.3 F1920.0
+M103
+G1 X19.33 Y36.13 Z1.3 F1920.0
+M101
+G1 X19.33 Y36.23 Z1.3 F1920.0
+G1 X18.67 Y36.23 Z1.3 F1920.0
+G1 X18.67 Y35.77 Z1.3 F1920.0
+G1 X18.0 Y36.23 Z1.3 F1920.0
+G1 X18.0 Y35.16 Z1.3 F1920.0
+G1 X17.33 Y35.56 Z1.3 F1920.0
+G1 X16.67 Y36.23 Z1.3 F1920.0
+G1 X16.0 Y36.23 Z1.3 F1920.0
+G1 X17.33 Y33.96 Z1.3 F1920.0
+G1 X16.67 Y31.92 Z1.3 F1920.0
+G1 X14.84 Y29.33 Z1.3 F1920.0
+G1 X14.84 Y25.78 Z1.3 F1920.0
+G1 X17.16 Y24.0 Z1.3 F1920.0
+G1 X17.16 Y20.44 Z1.3 F1920.0
+G1 X14.84 Y18.67 Z1.3 F1920.0
+G1 X14.84 Y15.11 Z1.3 F1920.0
+G1 X17.16 Y13.33 Z1.3 F1920.0
+G1 X17.16 Y9.78 Z1.3 F1920.0
+G1 X14.84 Y8.0 Z1.3 F1920.0
+G1 X14.84 Y4.44 Z1.3 F1920.0
+G1 X17.16 Y2.67 Z1.3 F1920.0
+G1 X17.16 Y-0.89 Z1.3 F1920.0
+G1 X14.84 Y-2.67 Z1.3 F1920.0
+G1 X14.84 Y-6.22 Z1.3 F1920.0
+G1 X17.16 Y-8.0 Z1.3 F1920.0
+G1 X17.16 Y-11.56 Z1.3 F1920.0
+G1 X14.84 Y-13.33 Z1.3 F1920.0
+G1 X17.33 Y-16.04 Z1.3 F1920.0
+G1 X14.84 Y-16.89 Z1.3 F1920.0
+G1 X17.33 Y-18.09 Z1.3 F1920.0
+G1 X17.42 Y-19.61 Z1.3 F1920.0
+G1 X17.16 Y-22.22 Z1.3 F1920.0
+G1 X14.84 Y-24.0 Z1.3 F1920.0
+G1 X14.84 Y-27.56 Z1.3 F1920.0
+G1 X17.16 Y-29.33 Z1.3 F1920.0
+G1 X17.42 Y-30.4 Z1.3 F1920.0
+G1 X17.33 Y-31.92 Z1.3 F1920.0
+G1 X16.67 Y-33.96 Z1.3 F1920.0
+G1 X14.84 Y-34.67 Z1.3 F1920.0
+G1 X16.0 Y-36.23 Z1.3 F1920.0
+G1 X18.0 Y-36.23 Z1.3 F1920.0
+G1 X18.0 Y-35.16 Z1.3 F1920.0
+G1 X18.67 Y-35.77 Z1.3 F1920.0
+G1 X18.67 Y-36.23 Z1.3 F1920.0
+G1 X19.33 Y-36.23 Z1.3 F1920.0
+G1 X19.33 Y-36.13 Z1.3 F1920.0
+M103
+G1 X22.0 Y-36.1 Z1.3 F1920.0
+M101
+G1 X22.0 Y-36.23 Z1.3 F1920.0
+G1 X22.67 Y-36.23 Z1.3 F1920.0
+G1 X22.67 Y-35.72 Z1.3 F1920.0
+G1 X23.33 Y-36.23 Z1.3 F1920.0
+G1 X23.33 Y-35.08 Z1.3 F1920.0
+M103
+G1 X22.67 Y-30.16 Z1.3 F1920.0
+M101
+G1 X22.0 Y-29.78 Z1.3 F1920.0
+G1 X22.49 Y-29.33 Z1.3 F1920.0
+G1 X20.18 Y-27.56 Z1.3 F1920.0
+G1 X20.18 Y-24.0 Z1.3 F1920.0
+G1 X22.49 Y-22.22 Z1.3 F1920.0
+G1 X22.0 Y-20.23 Z1.3 F1920.0
+M103
+G1 X19.33 Y-20.25 Z1.3 F1920.0
+M101
+G1 X18.35 Y-20.48 Z1.3 F1920.0
+G1 X17.51 Y-22.22 Z1.3 F1920.0
+G1 X19.83 Y-24.0 Z1.3 F1920.0
+G1 X19.83 Y-27.56 Z1.3 F1920.0
+G1 X17.51 Y-29.33 Z1.3 F1920.0
+G1 X18.67 Y-30.11 Z1.3 F1920.0
+G1 X19.33 Y-29.75 Z1.3 F1920.0
+G1 X20.0 Y-29.55 Z1.3 F1920.0
+G1 X20.67 Y-29.47 Z1.3 F1920.0
+G1 X21.33 Y-29.56 Z1.3 F1920.0
+M103
+G1 X27.33 Y-30.97 Z1.3 F1920.0
+M101
+G1 X28.0 Y-30.26 Z1.3 F1920.0
+G1 X28.31 Y-29.27 Z1.3 F1920.0
+G1 X25.51 Y-27.56 Z1.3 F1920.0
+G1 X25.51 Y-24.0 Z1.3 F1920.0
+G1 X27.83 Y-22.22 Z1.3 F1920.0
+G1 X27.83 Y-18.67 Z1.3 F1920.0
+G1 X25.51 Y-16.89 Z1.3 F1920.0
+G1 X25.51 Y-13.33 Z1.3 F1920.0
+G1 X27.83 Y-11.56 Z1.3 F1920.0
+G1 X27.83 Y-8.0 Z1.3 F1920.0
+G1 X25.51 Y-6.22 Z1.3 F1920.0
+G1 X25.51 Y-2.67 Z1.3 F1920.0
+G1 X27.83 Y-0.89 Z1.3 F1920.0
+G1 X27.83 Y2.67 Z1.3 F1920.0
+G1 X25.51 Y4.44 Z1.3 F1920.0
+G1 X25.51 Y8.0 Z1.3 F1920.0
+G1 X27.83 Y9.78 Z1.3 F1920.0
+G1 X27.83 Y13.33 Z1.3 F1920.0
+G1 X25.51 Y15.11 Z1.3 F1920.0
+G1 X25.51 Y18.67 Z1.3 F1920.0
+G1 X27.83 Y20.44 Z1.3 F1920.0
+G1 X27.83 Y24.0 Z1.3 F1920.0
+G1 X25.51 Y25.78 Z1.3 F1920.0
+G1 X25.51 Y29.33 Z1.3 F1920.0
+G1 X27.33 Y30.97 Z1.3 F1920.0
+G1 X28.0 Y30.26 Z1.3 F1920.0
+M103
+G1 X29.33 Y29.58 Z1.3 F1920.0
+M101
+G1 X30.67 Y29.33 Z1.3 F1920.0
+G1 X32.0 Y30.01 Z1.3 F1920.0
+G1 X30.49 Y25.78 Z1.3 F1920.0
+G1 X28.18 Y24.0 Z1.3 F1920.0
+G1 X28.18 Y20.44 Z1.3 F1920.0
+G1 X30.49 Y18.67 Z1.3 F1920.0
+G1 X30.49 Y15.11 Z1.3 F1920.0
+G1 X28.18 Y13.33 Z1.3 F1920.0
+G1 X28.18 Y9.78 Z1.3 F1920.0
+G1 X30.49 Y8.0 Z1.3 F1920.0
+G1 X30.49 Y4.44 Z1.3 F1920.0
+G1 X28.18 Y2.67 Z1.3 F1920.0
+G1 X28.18 Y-0.89 Z1.3 F1920.0
+G1 X30.49 Y-2.67 Z1.3 F1920.0
+G1 X30.49 Y-6.22 Z1.3 F1920.0
+G1 X28.18 Y-8.0 Z1.3 F1920.0
+G1 X28.18 Y-11.56 Z1.3 F1920.0
+G1 X30.49 Y-13.33 Z1.3 F1920.0
+G1 X30.49 Y-16.89 Z1.3 F1920.0
+G1 X28.18 Y-18.67 Z1.3 F1920.0
+G1 X28.18 Y-22.22 Z1.3 F1920.0
+G1 X30.49 Y-24.0 Z1.3 F1920.0
+G1 X30.49 Y-27.56 Z1.3 F1920.0
+G1 X32.0 Y-30.01 Z1.3 F1920.0
+G1 X31.33 Y-29.7 Z1.3 F1920.0
+G1 X30.67 Y-29.53 Z1.3 F1920.0
+G1 X30.0 Y-29.49 Z1.3 F1920.0
+G1 X29.33 Y-29.58 Z1.3 F1920.0
+M103
+G1 X32.67 Y-30.55 Z1.3 F1920.0
+M101
+G1 X30.84 Y-27.56 Z1.3 F1920.0
+G1 X30.84 Y25.78 Z1.3 F1920.0
+G1 X32.67 Y30.55 Z1.3 F1920.0
+M103
+G1 X32.67 Y35.33 Z1.3 F1920.0
+M101
+G1 X32.67 Y36.23 Z1.3 F1920.0
+G1 X32.0 Y36.23 Z1.3 F1920.0
+G1 X32.0 Y35.87 Z1.3 F1920.0
+M103
+G1 X31.33 Y36.18 Z1.3 F1920.0
+M101
+G1 X31.33 Y36.23 Z1.3 F1920.0
+M103
+G1 X28.67 Y36.23 Z1.3 F1920.0
+M101
+G1 X28.67 Y36.05 Z1.3 F1920.0
+G1 X28.0 Y36.23 Z1.3 F1920.0
+G1 X28.0 Y35.62 Z1.3 F1920.0
+G1 X27.33 Y36.23 Z1.3 F1920.0
+G1 X26.67 Y36.23 Z1.3 F1920.0
+G1 X27.33 Y34.91 Z1.3 F1920.0
+M103
+G1 X28.21 Y-33.26 Z1.3 F1920.0
+G1 X28.67 Y-36.23 Z1.3 F1920.0
+M101
+G1 X28.67 Y-36.05 Z1.3 F1920.0
+G1 X28.0 Y-36.23 Z1.3 F1920.0
+G1 X28.0 Y-35.62 Z1.3 F1920.0
+G1 X27.33 Y-36.23 Z1.3 F1920.0
+G1 X27.33 Y-34.91 Z1.3 F1920.0
+G1 X26.67 Y-36.23 Z1.3 F1920.0
+G1 X24.0 Y-36.23 Z1.3 F1920.0
+G1 X25.33 Y-34.67 Z1.3 F1920.0
+G1 X22.84 Y-29.33 Z1.3 F1920.0
+G1 X25.16 Y-27.56 Z1.3 F1920.0
+G1 X25.16 Y-24.0 Z1.3 F1920.0
+G1 X22.84 Y-22.22 Z1.3 F1920.0
+G1 X23.33 Y-19.21 Z1.3 F1920.0
+G1 X24.44 Y-18.41 Z1.3 F1920.0
+G1 X25.16 Y-16.89 Z1.3 F1920.0
+G1 X24.0 Y-16.22 Z1.3 F1920.0
+G1 X23.93 Y-14.62 Z1.3 F1920.0
+G1 X25.16 Y-13.33 Z1.3 F1920.0
+G1 X22.84 Y-11.56 Z1.3 F1920.0
+G1 X22.84 Y-8.0 Z1.3 F1920.0
+G1 X25.16 Y-6.22 Z1.3 F1920.0
+G1 X25.16 Y-2.67 Z1.3 F1920.0
+G1 X22.84 Y-0.89 Z1.3 F1920.0
+G1 X22.84 Y2.67 Z1.3 F1920.0
+G1 X25.16 Y4.44 Z1.3 F1920.0
+G1 X25.16 Y8.0 Z1.3 F1920.0
+G1 X22.84 Y9.78 Z1.3 F1920.0
+G1 X22.84 Y13.33 Z1.3 F1920.0
+G1 X25.16 Y15.11 Z1.3 F1920.0
+G1 X25.16 Y18.67 Z1.3 F1920.0
+G1 X22.84 Y20.44 Z1.3 F1920.0
+G1 X22.84 Y24.0 Z1.3 F1920.0
+G1 X25.16 Y25.78 Z1.3 F1920.0
+G1 X25.16 Y29.33 Z1.3 F1920.0
+G1 X24.0 Y33.79 Z1.3 F1920.0
+G1 X26.0 Y36.23 Z1.3 F1920.0
+G1 X23.33 Y36.23 Z1.3 F1920.0
+G1 X23.33 Y35.08 Z1.3 F1920.0
+G1 X22.67 Y35.72 Z1.3 F1920.0
+G1 X22.67 Y36.23 Z1.3 F1920.0
+G1 X22.0 Y36.23 Z1.3 F1920.0
+G1 X22.0 Y36.1 Z1.3 F1920.0
+M103
+G1 X23.33 Y30.8 Z1.3 F1920.0
+M101
+G1 X22.67 Y30.16 Z1.3 F1920.0
+G1 X22.0 Y29.78 Z1.3 F1920.0
+G1 X20.18 Y25.78 Z1.3 F1920.0
+G1 X22.49 Y24.0 Z1.3 F1920.0
+G1 X22.49 Y20.44 Z1.3 F1920.0
+G1 X20.18 Y18.67 Z1.3 F1920.0
+G1 X20.18 Y15.11 Z1.3 F1920.0
+G1 X22.49 Y13.33 Z1.3 F1920.0
+G1 X22.49 Y9.78 Z1.3 F1920.0
+G1 X20.18 Y8.0 Z1.3 F1920.0
+G1 X20.18 Y4.44 Z1.3 F1920.0
+G1 X22.49 Y2.67 Z1.3 F1920.0
+G1 X22.49 Y-0.89 Z1.3 F1920.0
+G1 X20.18 Y-2.67 Z1.3 F1920.0
+G1 X20.18 Y-6.22 Z1.3 F1920.0
+G1 X22.49 Y-8.0 Z1.3 F1920.0
+G1 X22.49 Y-11.56 Z1.3 F1920.0
+G1 X22.0 Y-13.9 Z1.3 F1920.0
+M103
+G1 X20.67 Y-13.6 Z1.3 F1920.0
+M101
+G1 X20.0 Y-13.68 Z1.3 F1920.0
+G1 X19.33 Y-13.88 Z1.3 F1920.0
+G1 X18.35 Y-13.65 Z1.3 F1920.0
+G1 X17.51 Y-11.56 Z1.3 F1920.0
+G1 X17.51 Y-8.0 Z1.3 F1920.0
+G1 X19.83 Y-6.22 Z1.3 F1920.0
+G1 X19.83 Y-2.67 Z1.3 F1920.0
+G1 X17.51 Y-0.89 Z1.3 F1920.0
+G1 X17.51 Y2.67 Z1.3 F1920.0
+G1 X19.83 Y4.44 Z1.3 F1920.0
+G1 X19.83 Y8.0 Z1.3 F1920.0
+G1 X17.51 Y9.78 Z1.3 F1920.0
+G1 X17.51 Y13.33 Z1.3 F1920.0
+G1 X19.83 Y15.11 Z1.3 F1920.0
+G1 X19.83 Y18.67 Z1.3 F1920.0
+G1 X17.51 Y20.44 Z1.3 F1920.0
+G1 X17.51 Y24.0 Z1.3 F1920.0
+G1 X19.83 Y25.78 Z1.3 F1920.0
+G1 X21.33 Y29.56 Z1.3 F1920.0
+G1 X20.67 Y29.47 Z1.3 F1920.0
+G1 X20.0 Y29.55 Z1.3 F1920.0
+G1 X19.33 Y29.75 Z1.3 F1920.0
+G1 X18.67 Y30.11 Z1.3 F1920.0
+G1 X18.0 Y30.72 Z1.3 F1920.0
+M103
+G1 X32.67 Y-36.23 Z1.3 F1920.0
+M101
+G1 X32.67 Y-35.33 Z1.3 F1920.0
+G1 X32.0 Y-35.87 Z1.3 F1920.0
+G1 X32.0 Y-36.23 Z1.3 F1920.0
+G1 X31.33 Y-36.23 Z1.3 F1920.0
+G1 X31.33 Y-36.18 Z1.3 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 1.7 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-38.1 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y38.1 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y38.1 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y-38.1 Z1.7 </boundaryPoint>)
+(<loop> inner )
+G1 X2.54 Y-32.94 Z1.7 F1920.0
+M101
+G1 X2.45 Y-33.6 Z1.7 F1920.0
+G1 X2.2 Y-34.21 Z1.7 F1920.0
+G1 X1.79 Y-34.74 Z1.7 F1920.0
+G1 X1.27 Y-35.14 Z1.7 F1920.0
+G1 X0.66 Y-35.39 Z1.7 F1920.0
+G1 X0.0 Y-35.48 Z1.7 F1920.0
+G1 X-0.66 Y-35.39 Z1.7 F1920.0
+G1 X-1.27 Y-35.14 Z1.7 F1920.0
+G1 X-1.79 Y-34.74 Z1.7 F1920.0
+G1 X-2.2 Y-34.21 Z1.7 F1920.0
+G1 X-2.45 Y-33.6 Z1.7 F1920.0
+G1 X-2.54 Y-32.94 Z1.7 F1920.0
+G1 X-2.45 Y-32.28 Z1.7 F1920.0
+G1 X-2.2 Y-31.67 Z1.7 F1920.0
+G1 X-1.79 Y-31.15 Z1.7 F1920.0
+G1 X-1.27 Y-30.74 Z1.7 F1920.0
+G1 X-0.63 Y-30.48 Z1.7 F1920.0
+G1 X0.0 Y-30.43 Z1.7 F1920.0
+G1 X0.63 Y-30.48 Z1.7 F1920.0
+G1 X1.27 Y-30.74 Z1.7 F1920.0
+G1 X1.79 Y-31.15 Z1.7 F1920.0
+G1 X2.2 Y-31.67 Z1.7 F1920.0
+G1 X2.45 Y-32.28 Z1.7 F1920.0
+G1 X2.54 Y-32.94 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X3.14 Y-32.94 Z1.7 F1920.0
+M101
+G1 X3.04 Y-33.75 Z1.7 F1920.0
+G1 X2.72 Y-34.51 Z1.7 F1920.0
+G1 X2.22 Y-35.16 Z1.7 F1920.0
+G1 X1.57 Y-35.66 Z1.7 F1920.0
+G1 X0.81 Y-35.98 Z1.7 F1920.0
+G1 X0.0 Y-36.09 Z1.7 F1920.0
+G1 X-0.82 Y-35.98 Z1.7 F1920.0
+G1 X-1.57 Y-35.66 Z1.7 F1920.0
+G1 X-2.22 Y-35.17 Z1.7 F1920.0
+G1 X-2.72 Y-34.51 Z1.7 F1920.0
+G1 X-3.04 Y-33.75 Z1.7 F1920.0
+G1 X-3.14 Y-32.94 Z1.7 F1920.0
+G1 X-3.04 Y-32.13 Z1.7 F1920.0
+G1 X-2.72 Y-31.37 Z1.7 F1920.0
+G1 X-2.22 Y-30.72 Z1.7 F1920.0
+G1 X-1.57 Y-30.22 Z1.7 F1920.0
+G1 X-0.77 Y-29.89 Z1.7 F1920.0
+G1 X0.0 Y-29.83 Z1.7 F1920.0
+G1 X0.77 Y-29.89 Z1.7 F1920.0
+G1 X1.57 Y-30.22 Z1.7 F1920.0
+G1 X2.22 Y-30.72 Z1.7 F1920.0
+G1 X2.72 Y-31.37 Z1.7 F1920.0
+G1 X3.04 Y-32.13 Z1.7 F1920.0
+G1 X3.14 Y-32.94 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.64 Y-19.46 Z1.7 F1920.0
+M101
+G1 X0.0 Y-19.54 Z1.7 F1920.0
+G1 X-0.64 Y-19.46 Z1.7 F1920.0
+G1 X-1.24 Y-19.21 Z1.7 F1920.0
+G1 X-1.75 Y-18.82 Z1.7 F1920.0
+G1 X-2.14 Y-18.3 Z1.7 F1920.0
+G1 X-2.39 Y-17.71 Z1.7 F1920.0
+G1 X-2.48 Y-17.07 Z1.7 F1920.0
+G1 X-2.39 Y-16.43 Z1.7 F1920.0
+G1 X-2.14 Y-15.83 Z1.7 F1920.0
+G1 X-1.75 Y-15.32 Z1.7 F1920.0
+G1 X-1.24 Y-14.92 Z1.7 F1920.0
+G1 X-0.64 Y-14.68 Z1.7 F1920.0
+G1 X0.0 Y-14.59 Z1.7 F1920.0
+G1 X0.64 Y-14.68 Z1.7 F1920.0
+G1 X1.24 Y-14.92 Z1.7 F1920.0
+G1 X1.75 Y-15.32 Z1.7 F1920.0
+G1 X2.14 Y-15.83 Z1.7 F1920.0
+G1 X2.39 Y-16.43 Z1.7 F1920.0
+G1 X2.48 Y-17.07 Z1.7 F1920.0
+G1 X2.39 Y-17.71 Z1.7 F1920.0
+G1 X2.14 Y-18.3 Z1.7 F1920.0
+G1 X1.75 Y-18.82 Z1.7 F1920.0
+G1 X1.24 Y-19.21 Z1.7 F1920.0
+G1 X0.64 Y-19.46 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.8 Y-20.04 Z1.7 F1920.0
+M101
+G1 X0.0 Y-20.15 Z1.7 F1920.0
+G1 X-0.8 Y-20.04 Z1.7 F1920.0
+G1 X-1.54 Y-19.73 Z1.7 F1920.0
+G1 X-2.18 Y-19.24 Z1.7 F1920.0
+G1 X-2.67 Y-18.6 Z1.7 F1920.0
+G1 X-2.98 Y-17.86 Z1.7 F1920.0
+G1 X-3.08 Y-17.07 Z1.7 F1920.0
+G1 X-2.98 Y-16.27 Z1.7 F1920.0
+G1 X-2.67 Y-15.53 Z1.7 F1920.0
+G1 X-2.18 Y-14.89 Z1.7 F1920.0
+G1 X-1.54 Y-14.4 Z1.7 F1920.0
+G1 X-0.8 Y-14.09 Z1.7 F1920.0
+G1 X0.0 Y-13.99 Z1.7 F1920.0
+G1 X0.8 Y-14.09 Z1.7 F1920.0
+G1 X1.54 Y-14.4 Z1.7 F1920.0
+G1 X2.18 Y-14.89 Z1.7 F1920.0
+G1 X2.67 Y-15.53 Z1.7 F1920.0
+G1 X2.97 Y-16.27 Z1.7 F1920.0
+G1 X3.08 Y-17.07 Z1.7 F1920.0
+G1 X2.97 Y-17.86 Z1.7 F1920.0
+G1 X2.67 Y-18.6 Z1.7 F1920.0
+G1 X2.18 Y-19.24 Z1.7 F1920.0
+G1 X1.54 Y-19.73 Z1.7 F1920.0
+G1 X0.8 Y-20.04 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.0 Y30.55 Z1.7 F1920.0
+M101
+G1 X19.4 Y30.8 Z1.7 F1920.0
+G1 X18.89 Y31.19 Z1.7 F1920.0
+G1 X18.49 Y31.7 Z1.7 F1920.0
+G1 X18.25 Y32.3 Z1.7 F1920.0
+G1 X18.16 Y32.94 Z1.7 F1920.0
+G1 X18.25 Y33.58 Z1.7 F1920.0
+G1 X18.5 Y34.18 Z1.7 F1920.0
+G1 X18.89 Y34.69 Z1.7 F1920.0
+G1 X19.4 Y35.08 Z1.7 F1920.0
+G1 X20.0 Y35.33 Z1.7 F1920.0
+G1 X20.64 Y35.42 Z1.7 F1920.0
+G1 X21.28 Y35.33 Z1.7 F1920.0
+G1 X21.88 Y35.08 Z1.7 F1920.0
+G1 X22.39 Y34.69 Z1.7 F1920.0
+G1 X22.78 Y34.18 Z1.7 F1920.0
+G1 X23.03 Y33.58 Z1.7 F1920.0
+G1 X23.11 Y32.94 Z1.7 F1920.0
+G1 X23.03 Y32.3 Z1.7 F1920.0
+G1 X22.78 Y31.7 Z1.7 F1920.0
+G1 X22.39 Y31.19 Z1.7 F1920.0
+G1 X21.88 Y30.8 Z1.7 F1920.0
+G1 X21.28 Y30.55 Z1.7 F1920.0
+G1 X20.64 Y30.47 Z1.7 F1920.0
+G1 X20.0 Y30.55 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.84 Y29.97 Z1.7 F1920.0
+M101
+G1 X19.1 Y30.27 Z1.7 F1920.0
+G1 X18.46 Y30.76 Z1.7 F1920.0
+G1 X17.97 Y31.4 Z1.7 F1920.0
+G1 X17.66 Y32.14 Z1.7 F1920.0
+G1 X17.56 Y32.94 Z1.7 F1920.0
+G1 X17.66 Y33.74 Z1.7 F1920.0
+G1 X17.97 Y34.48 Z1.7 F1920.0
+G1 X18.46 Y35.12 Z1.7 F1920.0
+G1 X19.1 Y35.61 Z1.7 F1920.0
+G1 X19.84 Y35.92 Z1.7 F1920.0
+G1 X20.64 Y36.02 Z1.7 F1920.0
+G1 X21.44 Y35.92 Z1.7 F1920.0
+G1 X22.18 Y35.61 Z1.7 F1920.0
+G1 X22.82 Y35.12 Z1.7 F1920.0
+G1 X23.3 Y34.48 Z1.7 F1920.0
+G1 X23.61 Y33.74 Z1.7 F1920.0
+G1 X23.72 Y32.94 Z1.7 F1920.0
+G1 X23.61 Y32.14 Z1.7 F1920.0
+G1 X23.31 Y31.4 Z1.7 F1920.0
+G1 X22.82 Y30.76 Z1.7 F1920.0
+G1 X22.18 Y30.27 Z1.7 F1920.0
+G1 X21.44 Y29.97 Z1.7 F1920.0
+G1 X20.64 Y29.86 Z1.7 F1920.0
+G1 X19.84 Y29.97 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-18.16 Y32.94 Z1.7 F1920.0
+M101
+G1 X-18.25 Y32.3 Z1.7 F1920.0
+G1 X-18.49 Y31.7 Z1.7 F1920.0
+G1 X-18.89 Y31.19 Z1.7 F1920.0
+G1 X-19.4 Y30.8 Z1.7 F1920.0
+G1 X-20.0 Y30.55 Z1.7 F1920.0
+G1 X-20.64 Y30.47 Z1.7 F1920.0
+G1 X-21.28 Y30.55 Z1.7 F1920.0
+G1 X-21.88 Y30.8 Z1.7 F1920.0
+G1 X-22.39 Y31.19 Z1.7 F1920.0
+G1 X-22.78 Y31.7 Z1.7 F1920.0
+G1 X-23.03 Y32.3 Z1.7 F1920.0
+G1 X-23.11 Y32.94 Z1.7 F1920.0
+G1 X-23.03 Y33.58 Z1.7 F1920.0
+G1 X-22.78 Y34.18 Z1.7 F1920.0
+G1 X-22.39 Y34.69 Z1.7 F1920.0
+G1 X-21.88 Y35.08 Z1.7 F1920.0
+G1 X-21.28 Y35.33 Z1.7 F1920.0
+G1 X-20.64 Y35.42 Z1.7 F1920.0
+G1 X-20.0 Y35.33 Z1.7 F1920.0
+G1 X-19.4 Y35.08 Z1.7 F1920.0
+G1 X-18.89 Y34.69 Z1.7 F1920.0
+G1 X-18.5 Y34.18 Z1.7 F1920.0
+G1 X-18.25 Y33.58 Z1.7 F1920.0
+G1 X-18.16 Y32.94 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-17.56 Y32.94 Z1.7 F1920.0
+M101
+G1 X-17.66 Y32.14 Z1.7 F1920.0
+G1 X-17.97 Y31.4 Z1.7 F1920.0
+G1 X-18.46 Y30.76 Z1.7 F1920.0
+G1 X-19.1 Y30.27 Z1.7 F1920.0
+G1 X-19.84 Y29.97 Z1.7 F1920.0
+G1 X-20.64 Y29.86 Z1.7 F1920.0
+G1 X-21.44 Y29.97 Z1.7 F1920.0
+G1 X-22.18 Y30.27 Z1.7 F1920.0
+G1 X-22.82 Y30.76 Z1.7 F1920.0
+G1 X-23.31 Y31.4 Z1.7 F1920.0
+G1 X-23.61 Y32.14 Z1.7 F1920.0
+G1 X-23.72 Y32.94 Z1.7 F1920.0
+G1 X-23.61 Y33.74 Z1.7 F1920.0
+G1 X-23.3 Y34.48 Z1.7 F1920.0
+G1 X-22.82 Y35.12 Z1.7 F1920.0
+G1 X-22.18 Y35.61 Z1.7 F1920.0
+G1 X-21.44 Y35.92 Z1.7 F1920.0
+G1 X-20.64 Y36.02 Z1.7 F1920.0
+G1 X-19.84 Y35.92 Z1.7 F1920.0
+G1 X-19.1 Y35.61 Z1.7 F1920.0
+G1 X-18.46 Y35.12 Z1.7 F1920.0
+G1 X-17.97 Y34.48 Z1.7 F1920.0
+G1 X-17.66 Y33.74 Z1.7 F1920.0
+G1 X-17.56 Y32.94 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.64 Y-30.47 Z1.7 F1920.0
+M101
+G1 X-20.0 Y-30.55 Z1.7 F1920.0
+G1 X-19.4 Y-30.8 Z1.7 F1920.0
+G1 X-18.89 Y-31.19 Z1.7 F1920.0
+G1 X-18.49 Y-31.7 Z1.7 F1920.0
+G1 X-18.25 Y-32.3 Z1.7 F1920.0
+G1 X-18.16 Y-32.94 Z1.7 F1920.0
+G1 X-18.25 Y-33.58 Z1.7 F1920.0
+G1 X-18.5 Y-34.18 Z1.7 F1920.0
+G1 X-18.89 Y-34.69 Z1.7 F1920.0
+G1 X-19.4 Y-35.08 Z1.7 F1920.0
+G1 X-20.0 Y-35.33 Z1.7 F1920.0
+G1 X-20.64 Y-35.42 Z1.7 F1920.0
+G1 X-21.28 Y-35.33 Z1.7 F1920.0
+G1 X-21.88 Y-35.08 Z1.7 F1920.0
+G1 X-22.39 Y-34.69 Z1.7 F1920.0
+G1 X-22.78 Y-34.18 Z1.7 F1920.0
+G1 X-23.03 Y-33.58 Z1.7 F1920.0
+G1 X-23.11 Y-32.94 Z1.7 F1920.0
+G1 X-23.03 Y-32.3 Z1.7 F1920.0
+G1 X-22.78 Y-31.7 Z1.7 F1920.0
+G1 X-22.39 Y-31.19 Z1.7 F1920.0
+G1 X-21.88 Y-30.8 Z1.7 F1920.0
+G1 X-21.28 Y-30.55 Z1.7 F1920.0
+G1 X-20.64 Y-30.47 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.64 Y-29.86 Z1.7 F1920.0
+M101
+G1 X-19.84 Y-29.97 Z1.7 F1920.0
+G1 X-19.1 Y-30.27 Z1.7 F1920.0
+G1 X-18.46 Y-30.76 Z1.7 F1920.0
+G1 X-17.97 Y-31.4 Z1.7 F1920.0
+G1 X-17.66 Y-32.14 Z1.7 F1920.0
+G1 X-17.56 Y-32.94 Z1.7 F1920.0
+G1 X-17.66 Y-33.74 Z1.7 F1920.0
+G1 X-17.97 Y-34.48 Z1.7 F1920.0
+G1 X-18.46 Y-35.12 Z1.7 F1920.0
+G1 X-19.1 Y-35.61 Z1.7 F1920.0
+G1 X-19.84 Y-35.92 Z1.7 F1920.0
+G1 X-20.64 Y-36.02 Z1.7 F1920.0
+G1 X-21.44 Y-35.92 Z1.7 F1920.0
+G1 X-22.18 Y-35.61 Z1.7 F1920.0
+G1 X-22.82 Y-35.12 Z1.7 F1920.0
+G1 X-23.3 Y-34.48 Z1.7 F1920.0
+G1 X-23.61 Y-33.74 Z1.7 F1920.0
+G1 X-23.72 Y-32.94 Z1.7 F1920.0
+G1 X-23.61 Y-32.14 Z1.7 F1920.0
+G1 X-23.31 Y-31.4 Z1.7 F1920.0
+G1 X-22.82 Y-30.76 Z1.7 F1920.0
+G1 X-22.18 Y-30.27 Z1.7 F1920.0
+G1 X-21.44 Y-29.97 Z1.7 F1920.0
+G1 X-20.64 Y-29.86 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.52 Y-30.96 Z1.7 F1920.0
+G1 X18.16 Y-32.94 Z1.7 F1920.0
+M101
+G1 X18.25 Y-32.3 Z1.7 F1920.0
+G1 X18.49 Y-31.7 Z1.7 F1920.0
+G1 X18.89 Y-31.19 Z1.7 F1920.0
+G1 X19.4 Y-30.8 Z1.7 F1920.0
+G1 X20.0 Y-30.55 Z1.7 F1920.0
+G1 X20.64 Y-30.47 Z1.7 F1920.0
+G1 X21.28 Y-30.55 Z1.7 F1920.0
+G1 X21.88 Y-30.8 Z1.7 F1920.0
+G1 X22.39 Y-31.19 Z1.7 F1920.0
+G1 X22.78 Y-31.7 Z1.7 F1920.0
+G1 X23.03 Y-32.3 Z1.7 F1920.0
+G1 X23.11 Y-32.94 Z1.7 F1920.0
+G1 X23.03 Y-33.58 Z1.7 F1920.0
+G1 X22.78 Y-34.18 Z1.7 F1920.0
+G1 X22.39 Y-34.69 Z1.7 F1920.0
+G1 X21.88 Y-35.08 Z1.7 F1920.0
+G1 X21.28 Y-35.33 Z1.7 F1920.0
+G1 X20.64 Y-35.42 Z1.7 F1920.0
+G1 X20.0 Y-35.33 Z1.7 F1920.0
+G1 X19.4 Y-35.08 Z1.7 F1920.0
+G1 X18.89 Y-34.69 Z1.7 F1920.0
+G1 X18.5 Y-34.18 Z1.7 F1920.0
+G1 X18.25 Y-33.58 Z1.7 F1920.0
+G1 X18.16 Y-32.94 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X17.56 Y-32.94 Z1.7 F1920.0
+M101
+G1 X17.66 Y-32.14 Z1.7 F1920.0
+G1 X17.97 Y-31.4 Z1.7 F1920.0
+G1 X18.46 Y-30.76 Z1.7 F1920.0
+G1 X19.1 Y-30.27 Z1.7 F1920.0
+G1 X19.84 Y-29.97 Z1.7 F1920.0
+G1 X20.64 Y-29.86 Z1.7 F1920.0
+G1 X21.44 Y-29.97 Z1.7 F1920.0
+G1 X22.18 Y-30.27 Z1.7 F1920.0
+G1 X22.82 Y-30.76 Z1.7 F1920.0
+G1 X23.31 Y-31.4 Z1.7 F1920.0
+G1 X23.61 Y-32.14 Z1.7 F1920.0
+G1 X23.72 Y-32.94 Z1.7 F1920.0
+G1 X23.61 Y-33.74 Z1.7 F1920.0
+G1 X23.3 Y-34.48 Z1.7 F1920.0
+G1 X22.82 Y-35.12 Z1.7 F1920.0
+G1 X22.18 Y-35.61 Z1.7 F1920.0
+G1 X21.44 Y-35.92 Z1.7 F1920.0
+G1 X20.64 Y-36.02 Z1.7 F1920.0
+G1 X19.84 Y-35.92 Z1.7 F1920.0
+G1 X19.1 Y-35.61 Z1.7 F1920.0
+G1 X18.46 Y-35.12 Z1.7 F1920.0
+G1 X17.97 Y-34.48 Z1.7 F1920.0
+G1 X17.66 Y-33.74 Z1.7 F1920.0
+G1 X17.56 Y-32.94 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.0 Y-19.46 Z1.7 F1920.0
+M101
+G1 X19.4 Y-19.21 Z1.7 F1920.0
+G1 X18.89 Y-18.82 Z1.7 F1920.0
+G1 X18.5 Y-18.3 Z1.7 F1920.0
+G1 X18.25 Y-17.71 Z1.7 F1920.0
+G1 X18.16 Y-17.07 Z1.7 F1920.0
+G1 X18.25 Y-16.43 Z1.7 F1920.0
+G1 X18.49 Y-15.83 Z1.7 F1920.0
+G1 X18.89 Y-15.32 Z1.7 F1920.0
+G1 X19.4 Y-14.92 Z1.7 F1920.0
+G1 X20.0 Y-14.68 Z1.7 F1920.0
+G1 X20.64 Y-14.59 Z1.7 F1920.0
+G1 X21.28 Y-14.68 Z1.7 F1920.0
+G1 X21.88 Y-14.92 Z1.7 F1920.0
+G1 X22.39 Y-15.32 Z1.7 F1920.0
+G1 X22.78 Y-15.83 Z1.7 F1920.0
+G1 X23.03 Y-16.43 Z1.7 F1920.0
+G1 X23.11 Y-17.07 Z1.7 F1920.0
+G1 X23.03 Y-17.71 Z1.7 F1920.0
+G1 X22.78 Y-18.3 Z1.7 F1920.0
+G1 X22.39 Y-18.82 Z1.7 F1920.0
+G1 X21.88 Y-19.21 Z1.7 F1920.0
+G1 X21.28 Y-19.46 Z1.7 F1920.0
+G1 X20.64 Y-19.54 Z1.7 F1920.0
+G1 X20.0 Y-19.46 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.84 Y-20.04 Z1.7 F1920.0
+M101
+G1 X19.1 Y-19.73 Z1.7 F1920.0
+G1 X18.46 Y-19.24 Z1.7 F1920.0
+G1 X17.97 Y-18.61 Z1.7 F1920.0
+G1 X17.66 Y-17.86 Z1.7 F1920.0
+G1 X17.56 Y-17.07 Z1.7 F1920.0
+G1 X17.66 Y-16.27 Z1.7 F1920.0
+G1 X17.97 Y-15.53 Z1.7 F1920.0
+G1 X18.46 Y-14.89 Z1.7 F1920.0
+G1 X19.1 Y-14.4 Z1.7 F1920.0
+G1 X19.84 Y-14.09 Z1.7 F1920.0
+G1 X20.64 Y-13.99 Z1.7 F1920.0
+G1 X21.44 Y-14.09 Z1.7 F1920.0
+G1 X22.18 Y-14.4 Z1.7 F1920.0
+G1 X22.82 Y-14.89 Z1.7 F1920.0
+G1 X23.31 Y-15.53 Z1.7 F1920.0
+G1 X23.61 Y-16.27 Z1.7 F1920.0
+G1 X23.72 Y-17.07 Z1.7 F1920.0
+G1 X23.61 Y-17.86 Z1.7 F1920.0
+G1 X23.3 Y-18.61 Z1.7 F1920.0
+G1 X22.82 Y-19.24 Z1.7 F1920.0
+G1 X22.18 Y-19.73 Z1.7 F1920.0
+G1 X21.44 Y-20.04 Z1.7 F1920.0
+G1 X20.64 Y-20.15 Z1.7 F1920.0
+G1 X19.84 Y-20.04 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X27.98 Y-30.76 Z1.7 F1920.0
+M101
+G1 X28.62 Y-30.27 Z1.7 F1920.0
+G1 X29.37 Y-29.97 Z1.7 F1920.0
+G1 X30.16 Y-29.86 Z1.7 F1920.0
+G1 X30.96 Y-29.97 Z1.7 F1920.0
+G1 X31.7 Y-30.27 Z1.7 F1920.0
+G1 X32.34 Y-30.76 Z1.7 F1920.0
+G1 X32.83 Y-31.4 Z1.7 F1920.0
+G1 X33.0 Y-31.8 Z1.7 F1920.0
+G1 X33.61 Y-32.16 Z1.7 F1920.0
+G1 X33.45 Y-31.25 Z1.7 F1920.0
+G1 X33.45 Y31.25 Z1.7 F1920.0
+G1 X33.61 Y32.16 Z1.7 F1920.0
+G1 X33.0 Y31.8 Z1.7 F1920.0
+G1 X32.83 Y31.4 Z1.7 F1920.0
+G1 X32.34 Y30.76 Z1.7 F1920.0
+G1 X31.7 Y30.27 Z1.7 F1920.0
+G1 X30.96 Y29.97 Z1.7 F1920.0
+G1 X30.16 Y29.86 Z1.7 F1920.0
+G1 X29.37 Y29.97 Z1.7 F1920.0
+G1 X28.62 Y30.27 Z1.7 F1920.0
+G1 X27.98 Y30.76 Z1.7 F1920.0
+G1 X27.5 Y31.4 Z1.7 F1920.0
+G1 X27.19 Y32.14 Z1.7 F1920.0
+G1 X27.08 Y32.94 Z1.7 F1920.0
+G1 X27.19 Y33.74 Z1.7 F1920.0
+G1 X27.5 Y34.48 Z1.7 F1920.0
+G1 X27.98 Y35.12 Z1.7 F1920.0
+G1 X28.62 Y35.61 Z1.7 F1920.0
+G1 X29.37 Y35.92 Z1.7 F1920.0
+G1 X30.16 Y36.02 Z1.7 F1920.0
+G1 X30.96 Y35.92 Z1.7 F1920.0
+G1 X31.7 Y35.61 Z1.7 F1920.0
+G1 X32.34 Y35.12 Z1.7 F1920.0
+G1 X32.83 Y34.48 Z1.7 F1920.0
+G1 X32.87 Y34.37 Z1.7 F1920.0
+G1 X33.45 Y34.62 Z1.7 F1920.0
+G1 X33.45 Y36.62 Z1.7 F1920.0
+G1 X-33.45 Y36.62 Z1.7 F1920.0
+G1 X-33.45 Y34.62 Z1.7 F1920.0
+G1 X-32.87 Y34.37 Z1.7 F1920.0
+G1 X-32.83 Y34.48 Z1.7 F1920.0
+G1 X-32.34 Y35.12 Z1.7 F1920.0
+G1 X-31.7 Y35.61 Z1.7 F1920.0
+G1 X-30.96 Y35.92 Z1.7 F1920.0
+G1 X-30.16 Y36.02 Z1.7 F1920.0
+G1 X-29.37 Y35.92 Z1.7 F1920.0
+G1 X-28.62 Y35.61 Z1.7 F1920.0
+G1 X-27.98 Y35.12 Z1.7 F1920.0
+G1 X-27.5 Y34.48 Z1.7 F1920.0
+G1 X-27.19 Y33.74 Z1.7 F1920.0
+G1 X-27.08 Y32.94 Z1.7 F1920.0
+G1 X-27.19 Y32.14 Z1.7 F1920.0
+G1 X-27.5 Y31.4 Z1.7 F1920.0
+G1 X-27.98 Y30.76 Z1.7 F1920.0
+G1 X-28.62 Y30.27 Z1.7 F1920.0
+G1 X-29.37 Y29.97 Z1.7 F1920.0
+G1 X-30.16 Y29.86 Z1.7 F1920.0
+G1 X-30.96 Y29.97 Z1.7 F1920.0
+G1 X-31.7 Y30.27 Z1.7 F1920.0
+G1 X-32.34 Y30.76 Z1.7 F1920.0
+G1 X-32.83 Y31.4 Z1.7 F1920.0
+G1 X-33.0 Y31.8 Z1.7 F1920.0
+G1 X-33.61 Y32.16 Z1.7 F1920.0
+G1 X-33.45 Y31.25 Z1.7 F1920.0
+G1 X-33.45 Y-31.25 Z1.7 F1920.0
+G1 X-33.61 Y-32.16 Z1.7 F1920.0
+G1 X-32.99 Y-31.8 Z1.7 F1920.0
+G1 X-32.83 Y-31.4 Z1.7 F1920.0
+G1 X-32.34 Y-30.77 Z1.7 F1920.0
+G1 X-31.7 Y-30.28 Z1.7 F1920.0
+G1 X-30.96 Y-29.97 Z1.7 F1920.0
+G1 X-30.16 Y-29.86 Z1.7 F1920.0
+G1 X-29.37 Y-29.97 Z1.7 F1920.0
+G1 X-28.62 Y-30.28 Z1.7 F1920.0
+G1 X-27.99 Y-30.77 Z1.7 F1920.0
+G1 X-27.5 Y-31.4 Z1.7 F1920.0
+G1 X-27.19 Y-32.14 Z1.7 F1920.0
+G1 X-27.09 Y-32.94 Z1.7 F1920.0
+G1 X-27.19 Y-33.74 Z1.7 F1920.0
+G1 X-27.5 Y-34.48 Z1.7 F1920.0
+G1 X-27.99 Y-35.12 Z1.7 F1920.0
+G1 X-28.62 Y-35.6 Z1.7 F1920.0
+G1 X-29.37 Y-35.91 Z1.7 F1920.0
+G1 X-30.16 Y-36.02 Z1.7 F1920.0
+G1 X-30.96 Y-35.91 Z1.7 F1920.0
+G1 X-31.7 Y-35.6 Z1.7 F1920.0
+G1 X-32.34 Y-35.12 Z1.7 F1920.0
+G1 X-32.83 Y-34.48 Z1.7 F1920.0
+G1 X-32.87 Y-34.36 Z1.7 F1920.0
+G1 X-33.45 Y-34.62 Z1.7 F1920.0
+G1 X-33.45 Y-36.62 Z1.7 F1920.0
+G1 X33.45 Y-36.62 Z1.7 F1920.0
+G1 X33.45 Y-34.62 Z1.7 F1920.0
+G1 X32.87 Y-34.37 Z1.7 F1920.0
+G1 X32.83 Y-34.48 Z1.7 F1920.0
+G1 X32.34 Y-35.12 Z1.7 F1920.0
+G1 X31.7 Y-35.61 Z1.7 F1920.0
+G1 X30.96 Y-35.92 Z1.7 F1920.0
+G1 X30.16 Y-36.02 Z1.7 F1920.0
+G1 X29.37 Y-35.92 Z1.7 F1920.0
+G1 X28.62 Y-35.61 Z1.7 F1920.0
+G1 X27.98 Y-35.12 Z1.7 F1920.0
+G1 X27.5 Y-34.48 Z1.7 F1920.0
+G1 X27.19 Y-33.74 Z1.7 F1920.0
+G1 X27.08 Y-32.94 Z1.7 F1920.0
+G1 X27.19 Y-32.14 Z1.7 F1920.0
+G1 X27.5 Y-31.4 Z1.7 F1920.0
+G1 X27.98 Y-30.76 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X28.41 Y-31.19 Z1.7 F1920.0
+M101
+G1 X28.93 Y-30.8 Z1.7 F1920.0
+G1 X29.52 Y-30.55 Z1.7 F1920.0
+G1 X30.16 Y-30.47 Z1.7 F1920.0
+G1 X30.8 Y-30.55 Z1.7 F1920.0
+G1 X31.4 Y-30.8 Z1.7 F1920.0
+G1 X31.91 Y-31.19 Z1.7 F1920.0
+G1 X32.31 Y-31.7 Z1.7 F1920.0
+G1 X32.55 Y-32.3 Z1.7 F1920.0
+G1 X32.64 Y-32.94 Z1.7 F1920.0
+G1 X32.55 Y-33.58 Z1.7 F1920.0
+G1 X32.31 Y-34.18 Z1.7 F1920.0
+G1 X31.91 Y-34.69 Z1.7 F1920.0
+G1 X31.4 Y-35.08 Z1.7 F1920.0
+G1 X30.8 Y-35.33 Z1.7 F1920.0
+G1 X30.16 Y-35.42 Z1.7 F1920.0
+G1 X29.52 Y-35.33 Z1.7 F1920.0
+G1 X28.93 Y-35.08 Z1.7 F1920.0
+G1 X28.41 Y-34.69 Z1.7 F1920.0
+G1 X28.02 Y-34.18 Z1.7 F1920.0
+G1 X27.77 Y-33.58 Z1.7 F1920.0
+G1 X27.69 Y-32.94 Z1.7 F1920.0
+G1 X27.77 Y-32.3 Z1.7 F1920.0
+G1 X28.02 Y-31.7 Z1.7 F1920.0
+G1 X28.41 Y-31.19 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X30.16 Y30.47 Z1.7 F1920.0
+M101
+G1 X29.52 Y30.55 Z1.7 F1920.0
+G1 X28.93 Y30.8 Z1.7 F1920.0
+G1 X28.41 Y31.19 Z1.7 F1920.0
+G1 X28.02 Y31.7 Z1.7 F1920.0
+G1 X27.77 Y32.3 Z1.7 F1920.0
+G1 X27.69 Y32.94 Z1.7 F1920.0
+G1 X27.77 Y33.58 Z1.7 F1920.0
+G1 X28.02 Y34.18 Z1.7 F1920.0
+G1 X28.41 Y34.69 Z1.7 F1920.0
+G1 X28.93 Y35.08 Z1.7 F1920.0
+G1 X29.52 Y35.33 Z1.7 F1920.0
+G1 X30.16 Y35.42 Z1.7 F1920.0
+G1 X30.8 Y35.33 Z1.7 F1920.0
+G1 X31.4 Y35.08 Z1.7 F1920.0
+G1 X31.91 Y34.69 Z1.7 F1920.0
+G1 X32.31 Y34.18 Z1.7 F1920.0
+G1 X32.55 Y33.58 Z1.7 F1920.0
+G1 X32.64 Y32.94 Z1.7 F1920.0
+G1 X32.55 Y32.3 Z1.7 F1920.0
+G1 X32.31 Y31.7 Z1.7 F1920.0
+G1 X31.91 Y31.19 Z1.7 F1920.0
+G1 X31.4 Y30.8 Z1.7 F1920.0
+G1 X30.8 Y30.55 Z1.7 F1920.0
+G1 X30.16 Y30.47 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-21.15 Y31.02 Z1.7 F1920.0
+G1 X-27.69 Y32.94 Z1.7 F1920.0
+M101
+G1 X-27.77 Y32.3 Z1.7 F1920.0
+G1 X-28.02 Y31.7 Z1.7 F1920.0
+G1 X-28.41 Y31.19 Z1.7 F1920.0
+G1 X-28.93 Y30.8 Z1.7 F1920.0
+G1 X-29.52 Y30.55 Z1.7 F1920.0
+G1 X-30.16 Y30.47 Z1.7 F1920.0
+G1 X-30.8 Y30.55 Z1.7 F1920.0
+G1 X-31.4 Y30.8 Z1.7 F1920.0
+G1 X-31.91 Y31.19 Z1.7 F1920.0
+G1 X-32.31 Y31.7 Z1.7 F1920.0
+G1 X-32.55 Y32.3 Z1.7 F1920.0
+G1 X-32.64 Y32.94 Z1.7 F1920.0
+G1 X-32.55 Y33.58 Z1.7 F1920.0
+G1 X-32.31 Y34.18 Z1.7 F1920.0
+G1 X-31.91 Y34.69 Z1.7 F1920.0
+G1 X-31.4 Y35.08 Z1.7 F1920.0
+G1 X-30.8 Y35.33 Z1.7 F1920.0
+G1 X-30.16 Y35.42 Z1.7 F1920.0
+G1 X-29.52 Y35.33 Z1.7 F1920.0
+G1 X-28.93 Y35.08 Z1.7 F1920.0
+G1 X-28.41 Y34.69 Z1.7 F1920.0
+G1 X-28.02 Y34.18 Z1.7 F1920.0
+G1 X-27.77 Y33.58 Z1.7 F1920.0
+G1 X-27.69 Y32.94 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-30.16 Y-30.47 Z1.7 F1920.0
+M101
+G1 X-29.52 Y-30.55 Z1.7 F1920.0
+G1 X-28.93 Y-30.8 Z1.7 F1920.0
+G1 X-28.41 Y-31.19 Z1.7 F1920.0
+G1 X-28.02 Y-31.7 Z1.7 F1920.0
+G1 X-27.78 Y-32.3 Z1.7 F1920.0
+G1 X-27.69 Y-32.94 Z1.7 F1920.0
+G1 X-27.78 Y-33.58 Z1.7 F1920.0
+G1 X-28.02 Y-34.18 Z1.7 F1920.0
+G1 X-28.41 Y-34.69 Z1.7 F1920.0
+G1 X-28.93 Y-35.08 Z1.7 F1920.0
+G1 X-29.52 Y-35.33 Z1.7 F1920.0
+G1 X-30.16 Y-35.41 Z1.7 F1920.0
+G1 X-30.8 Y-35.33 Z1.7 F1920.0
+G1 X-31.4 Y-35.08 Z1.7 F1920.0
+G1 X-31.91 Y-34.69 Z1.7 F1920.0
+G1 X-32.3 Y-34.18 Z1.7 F1920.0
+G1 X-32.55 Y-33.58 Z1.7 F1920.0
+G1 X-32.64 Y-32.94 Z1.7 F1920.0
+G1 X-32.55 Y-32.3 Z1.7 F1920.0
+G1 X-32.3 Y-31.7 Z1.7 F1920.0
+G1 X-31.91 Y-31.19 Z1.7 F1920.0
+G1 X-31.4 Y-30.8 Z1.7 F1920.0
+G1 X-30.8 Y-30.55 Z1.7 F1920.0
+G1 X-30.16 Y-30.47 Z1.7 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-34.05 Y-30.47 Z1.7 F1920.0
+M101
+G1 X-34.05 Y-37.22 Z1.7 F1920.0
+G1 X34.05 Y-37.22 Z1.7 F1920.0
+G1 X34.05 Y37.22 Z1.7 F1920.0
+G1 X-34.05 Y37.22 Z1.7 F1920.0
+G1 X-34.05 Y-30.47 Z1.7 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-34.64 Y-30.47 Z1.7 F1920.0
+M101
+G1 X-34.64 Y-37.81 Z1.7 F1920.0
+G1 X34.64 Y-37.81 Z1.7 F1920.0
+G1 X34.64 Y37.81 Z1.7 F1920.0
+G1 X-34.64 Y37.81 Z1.7 F1920.0
+G1 X-34.64 Y-30.47 Z1.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-29.042 Y-34.061 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-34.313 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-34.472 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-34.526 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-34.472 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-34.313 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-34.061 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-33.733 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-33.351 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.747 Y-32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-32.148 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-31.82 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-31.568 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-31.41 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-31.356 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-31.41 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-31.568 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-29.042 Y-31.82 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-32.148 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-28.578 Y-32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-33.351 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-33.733 Z1.7 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-31.79 Y-32.0 Z1.7 F1920.0
+M101
+G1 X-31.49 Y-31.61 Z1.7 F1920.0
+G1 X-31.1 Y-31.32 Z1.7 F1920.0
+G1 X-30.65 Y-31.13 Z1.7 F1920.0
+G1 X-30.16 Y-31.06 Z1.7 F1920.0
+G1 X-29.68 Y-31.13 Z1.7 F1920.0
+G1 X-29.22 Y-31.32 Z1.7 F1920.0
+G1 X-28.84 Y-31.61 Z1.7 F1920.0
+G1 X-28.54 Y-32.0 Z1.7 F1920.0
+G1 X-28.35 Y-32.45 Z1.7 F1920.0
+G1 X-28.29 Y-32.94 Z1.7 F1920.0
+G1 X-28.35 Y-33.43 Z1.7 F1920.0
+G1 X-28.54 Y-33.88 Z1.7 F1920.0
+G1 X-28.84 Y-34.27 Z1.7 F1920.0
+G1 X-29.22 Y-34.57 Z1.7 F1920.0
+G1 X-29.68 Y-34.76 Z1.7 F1920.0
+G1 X-30.16 Y-34.82 Z1.7 F1920.0
+G1 X-30.65 Y-34.75 Z1.7 F1920.0
+G1 X-31.1 Y-34.57 Z1.7 F1920.0
+G1 X-31.49 Y-34.27 Z1.7 F1920.0
+G1 X-31.79 Y-33.88 Z1.7 F1920.0
+G1 X-31.98 Y-33.43 Z1.7 F1920.0
+G1 X-32.04 Y-32.94 Z1.7 F1920.0
+G1 X-31.98 Y-32.45 Z1.7 F1920.0
+G1 X-31.79 Y-32.0 Z1.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-19.05 Y-32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-34.528 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y-32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-32.147 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-31.353 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-32.147 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-32.53 Z1.7 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-31.16 Y-31.22 Z1.7 F1920.0
+G1 X-30.68 Y-31.02 Z1.7 F1920.0
+G1 X-30.16 Y-30.95 Z1.7 F1920.0
+G1 X-22.52 Y-32.94 Z1.7 F1920.0
+M101
+G1 X-22.45 Y-32.45 Z1.7 F1920.0
+G1 X-22.27 Y-32.0 Z1.7 F1920.0
+G1 X-21.97 Y-31.61 Z1.7 F1920.0
+G1 X-21.58 Y-31.31 Z1.7 F1920.0
+G1 X-21.12 Y-31.12 Z1.7 F1920.0
+G1 X-20.64 Y-31.06 Z1.7 F1920.0
+G1 X-20.15 Y-31.12 Z1.7 F1920.0
+G1 X-19.7 Y-31.31 Z1.7 F1920.0
+G1 X-19.31 Y-31.61 Z1.7 F1920.0
+G1 X-19.01 Y-32.0 Z1.7 F1920.0
+G1 X-18.82 Y-32.45 Z1.7 F1920.0
+G1 X-18.76 Y-32.94 Z1.7 F1920.0
+G1 X-18.82 Y-33.43 Z1.7 F1920.0
+G1 X-19.01 Y-33.88 Z1.7 F1920.0
+G1 X-19.31 Y-34.27 Z1.7 F1920.0
+G1 X-19.7 Y-34.57 Z1.7 F1920.0
+G1 X-20.15 Y-34.76 Z1.7 F1920.0
+G1 X-20.64 Y-34.82 Z1.7 F1920.0
+G1 X-21.12 Y-34.76 Z1.7 F1920.0
+G1 X-21.58 Y-34.57 Z1.7 F1920.0
+G1 X-21.97 Y-34.27 Z1.7 F1920.0
+G1 X-22.27 Y-33.88 Z1.7 F1920.0
+G1 X-22.45 Y-33.43 Z1.7 F1920.0
+G1 X-22.52 Y-32.94 Z1.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X1.167 Y-31.773 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-32.115 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-32.513 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.651 Y-32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-33.368 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-33.766 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.167 Y-34.108 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X0.826 Y-34.37 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-34.535 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-34.592 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-34.535 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-34.37 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-34.108 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-33.766 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-33.368 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.651 Y-32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-32.513 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-32.115 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-31.773 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-31.511 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-31.346 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-31.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-31.346 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X0.826 Y-31.511 Z1.7 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.36 Y-33.94 Z1.7 F1920.0
+G1 X-22.05 Y-34.35 Z1.7 F1920.0
+G1 X-21.63 Y-34.66 Z1.7 F1920.0
+G1 X-21.15 Y-34.86 Z1.7 F1920.0
+G1 X-1.94 Y-32.94 Z1.7 F1920.0
+M101
+G1 X-1.88 Y-32.44 Z1.7 F1920.0
+G1 X-1.68 Y-31.97 Z1.7 F1920.0
+G1 X-1.37 Y-31.57 Z1.7 F1920.0
+G1 X-0.97 Y-31.26 Z1.7 F1920.0
+G1 X-0.5 Y-31.06 Z1.7 F1920.0
+G1 X0.0 Y-31.02 Z1.7 F1920.0
+G1 X0.5 Y-31.06 Z1.7 F1920.0
+G1 X0.97 Y-31.26 Z1.7 F1920.0
+G1 X1.37 Y-31.57 Z1.7 F1920.0
+G1 X1.68 Y-31.97 Z1.7 F1920.0
+G1 X1.88 Y-32.44 Z1.7 F1920.0
+G1 X1.94 Y-32.94 Z1.7 F1920.0
+G1 X1.88 Y-33.44 Z1.7 F1920.0
+G1 X1.68 Y-33.91 Z1.7 F1920.0
+G1 X1.37 Y-34.32 Z1.7 F1920.0
+G1 X0.97 Y-34.62 Z1.7 F1920.0
+G1 X0.5 Y-34.82 Z1.7 F1920.0
+G1 X0.0 Y-34.89 Z1.7 F1920.0
+G1 X-0.5 Y-34.82 Z1.7 F1920.0
+G1 X-0.97 Y-34.62 Z1.7 F1920.0
+G1 X-1.37 Y-34.32 Z1.7 F1920.0
+G1 X-1.68 Y-33.91 Z1.7 F1920.0
+G1 X-1.88 Y-33.44 Z1.7 F1920.0
+G1 X-1.94 Y-32.94 Z1.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-0.794 Y-18.44 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-18.188 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-17.859 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-17.477 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.587 Y-17.066 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-16.655 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-16.272 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-15.943 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-0.794 Y-15.691 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-15.532 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-15.478 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-15.532 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-15.691 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-15.943 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-16.272 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-16.655 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.588 Y-17.066 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-17.477 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-17.859 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-18.188 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-18.44 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-18.599 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-18.653 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-18.599 Z1.7 </boundaryPoint>)
+(<perimeter> inner )
+G1 X0.0 Y-18.95 Z1.7 F1920.0
+M101
+G1 X-0.49 Y-18.88 Z1.7 F1920.0
+G1 X-0.94 Y-18.69 Z1.7 F1920.0
+G1 X-1.33 Y-18.4 Z1.7 F1920.0
+G1 X-1.63 Y-18.01 Z1.7 F1920.0
+G1 X-1.82 Y-17.55 Z1.7 F1920.0
+G1 X-1.88 Y-17.07 Z1.7 F1920.0
+G1 X-1.82 Y-16.58 Z1.7 F1920.0
+G1 X-1.63 Y-16.13 Z1.7 F1920.0
+G1 X-1.33 Y-15.74 Z1.7 F1920.0
+G1 X-0.94 Y-15.44 Z1.7 F1920.0
+G1 X-0.49 Y-15.25 Z1.7 F1920.0
+G1 X0.0 Y-15.19 Z1.7 F1920.0
+G1 X0.49 Y-15.25 Z1.7 F1920.0
+G1 X0.94 Y-15.44 Z1.7 F1920.0
+G1 X1.33 Y-15.74 Z1.7 F1920.0
+G1 X1.63 Y-16.13 Z1.7 F1920.0
+G1 X1.82 Y-16.58 Z1.7 F1920.0
+G1 X1.88 Y-17.07 Z1.7 F1920.0
+G1 X1.82 Y-17.55 Z1.7 F1920.0
+G1 X1.63 Y-18.01 Z1.7 F1920.0
+G1 X1.33 Y-18.4 Z1.7 F1920.0
+G1 X0.94 Y-18.69 Z1.7 F1920.0
+G1 X0.49 Y-18.88 Z1.7 F1920.0
+G1 X0.0 Y-18.95 Z1.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y-18.44 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-18.188 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-17.859 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-17.477 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-17.066 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-16.655 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-16.272 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-15.943 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-15.691 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-15.532 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-15.478 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-15.532 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-15.691 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-15.943 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-16.272 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-16.655 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-17.066 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-17.477 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-17.859 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-18.188 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-18.44 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-18.599 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-18.653 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-18.599 Z1.7 </boundaryPoint>)
+(<perimeter> inner )
+G1 X18.76 Y-17.07 Z1.7 F1920.0
+M101
+G1 X18.82 Y-16.58 Z1.7 F1920.0
+G1 X19.01 Y-16.13 Z1.7 F1920.0
+G1 X19.31 Y-15.74 Z1.7 F1920.0
+G1 X19.7 Y-15.44 Z1.7 F1920.0
+G1 X20.15 Y-15.25 Z1.7 F1920.0
+G1 X20.64 Y-15.19 Z1.7 F1920.0
+G1 X21.12 Y-15.25 Z1.7 F1920.0
+G1 X21.58 Y-15.44 Z1.7 F1920.0
+G1 X21.97 Y-15.74 Z1.7 F1920.0
+G1 X22.27 Y-16.13 Z1.7 F1920.0
+G1 X22.45 Y-16.58 Z1.7 F1920.0
+G1 X22.52 Y-17.07 Z1.7 F1920.0
+G1 X22.45 Y-17.55 Z1.7 F1920.0
+G1 X22.27 Y-18.01 Z1.7 F1920.0
+G1 X21.97 Y-18.4 Z1.7 F1920.0
+G1 X21.58 Y-18.69 Z1.7 F1920.0
+G1 X21.12 Y-18.88 Z1.7 F1920.0
+G1 X20.64 Y-18.95 Z1.7 F1920.0
+G1 X20.15 Y-18.88 Z1.7 F1920.0
+G1 X19.7 Y-18.69 Z1.7 F1920.0
+G1 X19.31 Y-18.4 Z1.7 F1920.0
+G1 X19.01 Y-18.01 Z1.7 F1920.0
+G1 X18.82 Y-17.55 Z1.7 F1920.0
+G1 X18.76 Y-17.07 Z1.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X21.048 Y-31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-32.147 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-34.528 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-32.147 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-31.353 Z1.7 </boundaryPoint>)
+(<perimeter> inner )
+G1 X20.64 Y-31.06 Z1.7 F1920.0
+M101
+G1 X21.12 Y-31.12 Z1.7 F1920.0
+G1 X21.58 Y-31.31 Z1.7 F1920.0
+G1 X21.97 Y-31.61 Z1.7 F1920.0
+G1 X22.27 Y-32.0 Z1.7 F1920.0
+G1 X22.45 Y-32.45 Z1.7 F1920.0
+G1 X22.52 Y-32.94 Z1.7 F1920.0
+G1 X22.45 Y-33.43 Z1.7 F1920.0
+G1 X22.27 Y-33.88 Z1.7 F1920.0
+G1 X21.97 Y-34.27 Z1.7 F1920.0
+G1 X21.58 Y-34.57 Z1.7 F1920.0
+G1 X21.12 Y-34.76 Z1.7 F1920.0
+G1 X20.64 Y-34.82 Z1.7 F1920.0
+G1 X20.15 Y-34.76 Z1.7 F1920.0
+G1 X19.7 Y-34.57 Z1.7 F1920.0
+G1 X19.31 Y-34.27 Z1.7 F1920.0
+G1 X19.01 Y-33.88 Z1.7 F1920.0
+G1 X18.82 Y-33.43 Z1.7 F1920.0
+G1 X18.76 Y-32.94 Z1.7 F1920.0
+G1 X18.82 Y-32.45 Z1.7 F1920.0
+G1 X19.01 Y-32.0 Z1.7 F1920.0
+G1 X19.31 Y-31.61 Z1.7 F1920.0
+G1 X19.7 Y-31.31 Z1.7 F1920.0
+G1 X20.15 Y-31.12 Z1.7 F1920.0
+G1 X20.64 Y-31.06 Z1.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X29.04 Y-31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-31.353 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-32.147 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y-32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-34.528 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y-34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-32.147 Z1.7 </boundaryPoint>)
+(<perimeter> inner )
+G1 X28.35 Y-32.45 Z1.7 F1920.0
+M101
+G1 X28.54 Y-32.0 Z1.7 F1920.0
+G1 X28.83 Y-31.61 Z1.7 F1920.0
+G1 X29.22 Y-31.31 Z1.7 F1920.0
+G1 X29.68 Y-31.12 Z1.7 F1920.0
+G1 X30.16 Y-31.06 Z1.7 F1920.0
+G1 X30.65 Y-31.12 Z1.7 F1920.0
+G1 X31.1 Y-31.31 Z1.7 F1920.0
+G1 X31.49 Y-31.61 Z1.7 F1920.0
+G1 X31.79 Y-32.0 Z1.7 F1920.0
+G1 X31.98 Y-32.45 Z1.7 F1920.0
+G1 X32.04 Y-32.94 Z1.7 F1920.0
+G1 X31.98 Y-33.43 Z1.7 F1920.0
+G1 X31.79 Y-33.88 Z1.7 F1920.0
+G1 X31.49 Y-34.27 Z1.7 F1920.0
+G1 X31.1 Y-34.57 Z1.7 F1920.0
+G1 X30.65 Y-34.76 Z1.7 F1920.0
+G1 X30.16 Y-34.82 Z1.7 F1920.0
+G1 X29.68 Y-34.76 Z1.7 F1920.0
+G1 X29.22 Y-34.57 Z1.7 F1920.0
+G1 X28.83 Y-34.27 Z1.7 F1920.0
+G1 X28.54 Y-33.88 Z1.7 F1920.0
+G1 X28.35 Y-33.43 Z1.7 F1920.0
+G1 X28.28 Y-32.94 Z1.7 F1920.0
+G1 X28.35 Y-32.45 Z1.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X31.285 Y31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y31.353 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y32.147 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y34.528 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y32.147 Z1.7 </boundaryPoint>)
+(<perimeter> inner )
+G1 X30.16 Y31.06 Z1.7 F1920.0
+M101
+G1 X29.68 Y31.12 Z1.7 F1920.0
+G1 X29.22 Y31.31 Z1.7 F1920.0
+G1 X28.83 Y31.61 Z1.7 F1920.0
+G1 X28.54 Y32.0 Z1.7 F1920.0
+G1 X28.35 Y32.45 Z1.7 F1920.0
+G1 X28.28 Y32.94 Z1.7 F1920.0
+G1 X28.35 Y33.43 Z1.7 F1920.0
+G1 X28.54 Y33.88 Z1.7 F1920.0
+G1 X28.83 Y34.27 Z1.7 F1920.0
+G1 X29.22 Y34.57 Z1.7 F1920.0
+G1 X29.68 Y34.76 Z1.7 F1920.0
+G1 X30.16 Y34.82 Z1.7 F1920.0
+G1 X30.65 Y34.76 Z1.7 F1920.0
+G1 X31.1 Y34.57 Z1.7 F1920.0
+G1 X31.49 Y34.27 Z1.7 F1920.0
+G1 X31.79 Y33.88 Z1.7 F1920.0
+G1 X31.98 Y33.43 Z1.7 F1920.0
+G1 X32.04 Y32.94 Z1.7 F1920.0
+G1 X31.98 Y32.45 Z1.7 F1920.0
+G1 X31.79 Y32.0 Z1.7 F1920.0
+G1 X31.49 Y31.61 Z1.7 F1920.0
+G1 X31.1 Y31.31 Z1.7 F1920.0
+G1 X30.65 Y31.12 Z1.7 F1920.0
+G1 X30.16 Y31.06 Z1.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y34.528 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y32.147 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y31.353 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y32.147 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y34.063 Z1.7 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.45 Y32.45 Z1.7 F1920.0
+M101
+G1 X22.27 Y32.0 Z1.7 F1920.0
+G1 X21.97 Y31.61 Z1.7 F1920.0
+G1 X21.58 Y31.31 Z1.7 F1920.0
+G1 X21.12 Y31.12 Z1.7 F1920.0
+G1 X20.64 Y31.06 Z1.7 F1920.0
+G1 X20.15 Y31.12 Z1.7 F1920.0
+G1 X19.7 Y31.31 Z1.7 F1920.0
+G1 X19.31 Y31.61 Z1.7 F1920.0
+G1 X19.01 Y32.0 Z1.7 F1920.0
+G1 X18.82 Y32.45 Z1.7 F1920.0
+G1 X18.76 Y32.94 Z1.7 F1920.0
+G1 X18.82 Y33.43 Z1.7 F1920.0
+G1 X19.01 Y33.88 Z1.7 F1920.0
+G1 X19.31 Y34.27 Z1.7 F1920.0
+G1 X19.7 Y34.57 Z1.7 F1920.0
+G1 X20.15 Y34.76 Z1.7 F1920.0
+G1 X20.64 Y34.82 Z1.7 F1920.0
+G1 X21.12 Y34.76 Z1.7 F1920.0
+G1 X21.58 Y34.57 Z1.7 F1920.0
+G1 X21.97 Y34.27 Z1.7 F1920.0
+G1 X22.27 Y33.88 Z1.7 F1920.0
+G1 X22.45 Y33.43 Z1.7 F1920.0
+G1 X22.52 Y32.94 Z1.7 F1920.0
+G1 X22.45 Y32.45 Z1.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-22.171 Y32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y34.528 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.05 Y32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y32.147 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y31.353 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y32.147 Z1.7 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.05 Y31.53 Z1.7 F1920.0
+G1 X21.63 Y31.22 Z1.7 F1920.0
+G1 X21.15 Y31.02 Z1.7 F1920.0
+G1 X-18.76 Y32.94 Z1.7 F1920.0
+M101
+G1 X-18.82 Y32.45 Z1.7 F1920.0
+G1 X-19.01 Y32.0 Z1.7 F1920.0
+G1 X-19.31 Y31.61 Z1.7 F1920.0
+G1 X-19.7 Y31.31 Z1.7 F1920.0
+G1 X-20.15 Y31.12 Z1.7 F1920.0
+G1 X-20.64 Y31.06 Z1.7 F1920.0
+G1 X-21.12 Y31.12 Z1.7 F1920.0
+G1 X-21.58 Y31.31 Z1.7 F1920.0
+G1 X-21.97 Y31.61 Z1.7 F1920.0
+G1 X-22.27 Y32.0 Z1.7 F1920.0
+G1 X-22.45 Y32.45 Z1.7 F1920.0
+G1 X-22.52 Y32.94 Z1.7 F1920.0
+G1 X-22.45 Y33.43 Z1.7 F1920.0
+G1 X-22.27 Y33.88 Z1.7 F1920.0
+G1 X-21.97 Y34.27 Z1.7 F1920.0
+G1 X-21.58 Y34.57 Z1.7 F1920.0
+G1 X-21.12 Y34.76 Z1.7 F1920.0
+G1 X-20.64 Y34.82 Z1.7 F1920.0
+G1 X-20.15 Y34.76 Z1.7 F1920.0
+G1 X-19.7 Y34.57 Z1.7 F1920.0
+G1 X-19.31 Y34.27 Z1.7 F1920.0
+G1 X-19.01 Y33.88 Z1.7 F1920.0
+G1 X-18.82 Y33.43 Z1.7 F1920.0
+G1 X-18.76 Y32.94 Z1.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-28.788 Y32.147 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y31.353 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y31.407 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y31.566 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y31.818 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y32.147 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y32.53 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.75 Y32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y34.528 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y34.474 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y34.315 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y34.063 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-28.788 Y33.734 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y33.352 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y32.941 Z1.7 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y32.53 Z1.7 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-18.91 Y33.94 Z1.7 F1920.0
+G1 X-19.23 Y34.35 Z1.7 F1920.0
+G1 X-19.64 Y34.66 Z1.7 F1920.0
+G1 X-20.12 Y34.86 Z1.7 F1920.0
+G1 X-20.64 Y34.93 Z1.7 F1920.0
+G1 X-28.28 Y32.94 Z1.7 F1920.0
+M101
+G1 X-28.35 Y32.45 Z1.7 F1920.0
+G1 X-28.54 Y32.0 Z1.7 F1920.0
+G1 X-28.83 Y31.61 Z1.7 F1920.0
+G1 X-29.22 Y31.31 Z1.7 F1920.0
+G1 X-29.68 Y31.12 Z1.7 F1920.0
+G1 X-30.16 Y31.06 Z1.7 F1920.0
+G1 X-30.65 Y31.12 Z1.7 F1920.0
+G1 X-31.1 Y31.31 Z1.7 F1920.0
+G1 X-31.49 Y31.61 Z1.7 F1920.0
+G1 X-31.79 Y32.0 Z1.7 F1920.0
+G1 X-31.98 Y32.45 Z1.7 F1920.0
+G1 X-32.04 Y32.94 Z1.7 F1920.0
+G1 X-31.98 Y33.43 Z1.7 F1920.0
+G1 X-31.79 Y33.88 Z1.7 F1920.0
+G1 X-31.49 Y34.27 Z1.7 F1920.0
+G1 X-31.1 Y34.57 Z1.7 F1920.0
+G1 X-30.65 Y34.76 Z1.7 F1920.0
+G1 X-30.16 Y34.82 Z1.7 F1920.0
+G1 X-29.68 Y34.76 Z1.7 F1920.0
+G1 X-29.22 Y34.57 Z1.7 F1920.0
+G1 X-28.83 Y34.27 Z1.7 F1920.0
+G1 X-28.54 Y33.88 Z1.7 F1920.0
+G1 X-28.35 Y33.43 Z1.7 F1920.0
+G1 X-28.28 Y32.94 Z1.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+G1 X-27.57 Y30.67 Z1.7 F1920.0
+M101
+G1 X-27.1 Y31.33 Z1.7 F1920.0
+G1 X-26.82 Y32.0 Z1.7 F1920.0
+G1 X-26.07 Y32.57 Z1.7 F1920.0
+G1 X-26.09 Y33.46 Z1.7 F1920.0
+G1 X-26.87 Y34.0 Z1.7 F1920.0
+G1 X-27.15 Y34.67 Z1.7 F1920.0
+G1 X-27.66 Y35.33 Z1.7 F1920.0
+G1 X-24.58 Y34.13 Z1.7 F1920.0
+G1 X-24.06 Y33.33 Z1.7 F1920.0
+G1 X-24.08 Y32.67 Z1.7 F1920.0
+G1 X-23.98 Y32.0 Z1.7 F1920.0
+G1 X-23.7 Y31.33 Z1.7 F1920.0
+G1 X-23.23 Y30.67 Z1.7 F1920.0
+M103
+G1 X-22.25 Y36.0 Z1.7 F1920.0
+M101
+G1 X-23.14 Y35.33 Z1.7 F1920.0
+G1 X-23.65 Y34.67 Z1.7 F1920.0
+G1 X-28.55 Y36.0 Z1.7 F1920.0
+M103
+G1 X-31.77 Y36.0 Z1.7 F1920.0
+M101
+G1 X-33.06 Y36.0 Z1.7 F1920.0
+G1 X-32.67 Y35.33 Z1.7 F1920.0
+G1 X-33.06 Y35.33 Z1.7 F1920.0
+M103
+G1 X-33.06 Y30.67 Z1.7 F1920.0
+M101
+G1 X-32.76 Y30.67 Z1.7 F1920.0
+G1 X-33.06 Y30.0 Z1.7 F1920.0
+G1 X-31.99 Y30.0 Z1.7 F1920.0
+G1 X-33.06 Y29.33 Z1.7 F1920.0
+G1 X-32.39 Y28.67 Z1.7 F1920.0
+G1 X-33.06 Y28.0 Z1.7 F1920.0
+M103
+G1 X33.06 Y25.33 Z1.7 F1920.0
+M101
+G1 X32.39 Y26.0 Z1.7 F1920.0
+G1 X32.39 Y26.67 Z1.7 F1920.0
+G1 X33.06 Y27.33 Z1.7 F1920.0
+G1 X32.39 Y28.0 Z1.7 F1920.0
+G1 X33.06 Y28.67 Z1.7 F1920.0
+G1 X30.86 Y29.33 Z1.7 F1920.0
+G1 X30.47 Y29.33 Z1.7 F1920.0
+G1 X28.2 Y24.0 Z1.7 F1920.0
+G1 X27.81 Y24.0 Z1.7 F1920.0
+G1 X25.53 Y25.78 Z1.7 F1920.0
+G1 X25.14 Y25.78 Z1.7 F1920.0
+G1 X22.86 Y24.0 Z1.7 F1920.0
+G1 X22.47 Y24.0 Z1.7 F1920.0
+G1 X20.2 Y25.78 Z1.7 F1920.0
+G1 X19.81 Y25.78 Z1.7 F1920.0
+G1 X17.53 Y24.0 Z1.7 F1920.0
+G1 X17.14 Y24.0 Z1.7 F1920.0
+G1 X14.86 Y25.78 Z1.7 F1920.0
+G1 X14.47 Y25.78 Z1.7 F1920.0
+G1 X12.2 Y24.0 Z1.7 F1920.0
+G1 X11.81 Y24.0 Z1.7 F1920.0
+G1 X9.53 Y25.78 Z1.7 F1920.0
+G1 X9.14 Y25.78 Z1.7 F1920.0
+G1 X6.86 Y24.0 Z1.7 F1920.0
+G1 X6.47 Y24.0 Z1.7 F1920.0
+G1 X4.2 Y25.78 Z1.7 F1920.0
+G1 X3.81 Y25.78 Z1.7 F1920.0
+G1 X1.53 Y24.0 Z1.7 F1920.0
+G1 X1.14 Y24.0 Z1.7 F1920.0
+G1 X-1.14 Y25.78 Z1.7 F1920.0
+G1 X-1.53 Y25.78 Z1.7 F1920.0
+G1 X-3.81 Y24.0 Z1.7 F1920.0
+G1 X-4.2 Y24.0 Z1.7 F1920.0
+G1 X-6.47 Y25.78 Z1.7 F1920.0
+G1 X-6.86 Y25.78 Z1.7 F1920.0
+G1 X-9.14 Y24.0 Z1.7 F1920.0
+G1 X-9.53 Y24.0 Z1.7 F1920.0
+G1 X-11.81 Y25.78 Z1.7 F1920.0
+G1 X-12.2 Y25.78 Z1.7 F1920.0
+G1 X-14.47 Y24.0 Z1.7 F1920.0
+G1 X-14.86 Y24.0 Z1.7 F1920.0
+G1 X-17.14 Y25.78 Z1.7 F1920.0
+G1 X-17.53 Y25.78 Z1.7 F1920.0
+G1 X-19.81 Y24.0 Z1.7 F1920.0
+G1 X-20.2 Y24.0 Z1.7 F1920.0
+G1 X-22.47 Y25.78 Z1.7 F1920.0
+G1 X-22.86 Y25.78 Z1.7 F1920.0
+G1 X-25.14 Y24.0 Z1.7 F1920.0
+G1 X-25.53 Y24.0 Z1.7 F1920.0
+G1 X-27.81 Y29.33 Z1.7 F1920.0
+G1 X-28.34 Y30.0 Z1.7 F1920.0
+G1 X-28.2 Y29.33 Z1.7 F1920.0
+G1 X-30.47 Y24.0 Z1.7 F1920.0
+G1 X-30.86 Y24.0 Z1.7 F1920.0
+G1 X-32.39 Y23.33 Z1.7 F1920.0
+G1 X-33.06 Y24.0 Z1.7 F1920.0
+G1 X-32.58 Y24.47 Z1.7 F1920.0
+G1 X-32.8 Y25.28 Z1.7 F1920.0
+G1 X-33.06 Y25.33 Z1.7 F1920.0
+M103
+G1 X-33.06 Y20.0 Z1.7 F1920.0
+M101
+G1 X-32.39 Y20.67 Z1.7 F1920.0
+G1 X-30.47 Y20.44 Z1.7 F1920.0
+G1 X-28.2 Y18.67 Z1.7 F1920.0
+G1 X-27.81 Y18.67 Z1.7 F1920.0
+G1 X-25.53 Y20.44 Z1.7 F1920.0
+G1 X-25.14 Y20.44 Z1.7 F1920.0
+G1 X-22.86 Y18.67 Z1.7 F1920.0
+G1 X-22.47 Y18.67 Z1.7 F1920.0
+G1 X-20.2 Y20.44 Z1.7 F1920.0
+G1 X-19.81 Y20.44 Z1.7 F1920.0
+G1 X-17.53 Y18.67 Z1.7 F1920.0
+G1 X-17.14 Y18.67 Z1.7 F1920.0
+G1 X-14.86 Y20.44 Z1.7 F1920.0
+G1 X-14.47 Y20.44 Z1.7 F1920.0
+G1 X-12.2 Y18.67 Z1.7 F1920.0
+G1 X-11.81 Y18.67 Z1.7 F1920.0
+G1 X-9.53 Y20.44 Z1.7 F1920.0
+G1 X-9.14 Y20.44 Z1.7 F1920.0
+G1 X-6.86 Y18.67 Z1.7 F1920.0
+G1 X-6.47 Y18.67 Z1.7 F1920.0
+G1 X-4.2 Y20.44 Z1.7 F1920.0
+G1 X-3.81 Y20.44 Z1.7 F1920.0
+G1 X-1.53 Y18.67 Z1.7 F1920.0
+G1 X-1.14 Y18.67 Z1.7 F1920.0
+G1 X1.14 Y20.44 Z1.7 F1920.0
+G1 X1.53 Y20.44 Z1.7 F1920.0
+G1 X3.81 Y18.67 Z1.7 F1920.0
+G1 X4.2 Y18.67 Z1.7 F1920.0
+G1 X6.47 Y20.44 Z1.7 F1920.0
+G1 X6.86 Y20.44 Z1.7 F1920.0
+G1 X9.14 Y18.67 Z1.7 F1920.0
+G1 X9.53 Y18.67 Z1.7 F1920.0
+G1 X11.81 Y20.44 Z1.7 F1920.0
+G1 X12.2 Y20.44 Z1.7 F1920.0
+G1 X14.47 Y18.67 Z1.7 F1920.0
+G1 X14.86 Y18.67 Z1.7 F1920.0
+G1 X17.14 Y20.44 Z1.7 F1920.0
+G1 X17.53 Y20.44 Z1.7 F1920.0
+G1 X19.81 Y18.67 Z1.7 F1920.0
+G1 X20.2 Y18.67 Z1.7 F1920.0
+G1 X22.47 Y20.44 Z1.7 F1920.0
+G1 X22.86 Y20.44 Z1.7 F1920.0
+G1 X25.14 Y18.67 Z1.7 F1920.0
+G1 X25.53 Y18.67 Z1.7 F1920.0
+G1 X27.81 Y20.44 Z1.7 F1920.0
+G1 X28.2 Y20.44 Z1.7 F1920.0
+G1 X30.47 Y18.67 Z1.7 F1920.0
+G1 X30.86 Y18.67 Z1.7 F1920.0
+G1 X32.39 Y18.0 Z1.7 F1920.0
+G1 X33.06 Y18.67 Z1.7 F1920.0
+G1 X32.58 Y19.14 Z1.7 F1920.0
+G1 X33.06 Y19.33 Z1.7 F1920.0
+G1 X32.8 Y19.95 Z1.7 F1920.0
+G1 X33.06 Y20.0 Z1.7 F1920.0
+M103
+G1 X33.06 Y14.67 Z1.7 F1920.0
+M101
+G1 X32.39 Y15.33 Z1.7 F1920.0
+G1 X30.47 Y15.11 Z1.7 F1920.0
+G1 X28.2 Y13.33 Z1.7 F1920.0
+G1 X27.81 Y13.33 Z1.7 F1920.0
+G1 X25.53 Y15.11 Z1.7 F1920.0
+G1 X25.14 Y15.11 Z1.7 F1920.0
+G1 X22.86 Y13.33 Z1.7 F1920.0
+G1 X22.47 Y13.33 Z1.7 F1920.0
+G1 X20.2 Y15.11 Z1.7 F1920.0
+G1 X19.81 Y15.11 Z1.7 F1920.0
+G1 X17.53 Y13.33 Z1.7 F1920.0
+G1 X17.14 Y13.33 Z1.7 F1920.0
+G1 X14.86 Y15.11 Z1.7 F1920.0
+G1 X14.47 Y15.11 Z1.7 F1920.0
+G1 X12.2 Y13.33 Z1.7 F1920.0
+G1 X11.81 Y13.33 Z1.7 F1920.0
+G1 X9.53 Y15.11 Z1.7 F1920.0
+G1 X9.14 Y15.11 Z1.7 F1920.0
+G1 X6.86 Y13.33 Z1.7 F1920.0
+G1 X6.47 Y13.33 Z1.7 F1920.0
+G1 X4.2 Y15.11 Z1.7 F1920.0
+G1 X3.81 Y15.11 Z1.7 F1920.0
+G1 X1.53 Y13.33 Z1.7 F1920.0
+G1 X1.14 Y13.33 Z1.7 F1920.0
+G1 X-1.14 Y15.11 Z1.7 F1920.0
+G1 X-1.53 Y15.11 Z1.7 F1920.0
+G1 X-3.81 Y13.33 Z1.7 F1920.0
+G1 X-4.2 Y13.33 Z1.7 F1920.0
+G1 X-6.47 Y15.11 Z1.7 F1920.0
+G1 X-6.86 Y15.11 Z1.7 F1920.0
+G1 X-9.14 Y13.33 Z1.7 F1920.0
+G1 X-9.53 Y13.33 Z1.7 F1920.0
+G1 X-11.81 Y15.11 Z1.7 F1920.0
+G1 X-12.2 Y15.11 Z1.7 F1920.0
+G1 X-14.47 Y13.33 Z1.7 F1920.0
+G1 X-14.86 Y13.33 Z1.7 F1920.0
+G1 X-17.14 Y15.11 Z1.7 F1920.0
+G1 X-17.53 Y15.11 Z1.7 F1920.0
+G1 X-19.81 Y13.33 Z1.7 F1920.0
+G1 X-20.2 Y13.33 Z1.7 F1920.0
+G1 X-22.47 Y15.11 Z1.7 F1920.0
+G1 X-22.86 Y15.11 Z1.7 F1920.0
+G1 X-25.14 Y13.33 Z1.7 F1920.0
+G1 X-25.53 Y13.33 Z1.7 F1920.0
+G1 X-27.81 Y15.11 Z1.7 F1920.0
+G1 X-28.2 Y15.11 Z1.7 F1920.0
+G1 X-30.47 Y13.33 Z1.7 F1920.0
+G1 X-30.86 Y13.33 Z1.7 F1920.0
+G1 X-32.39 Y12.67 Z1.7 F1920.0
+G1 X-33.06 Y13.33 Z1.7 F1920.0
+G1 X-32.58 Y13.81 Z1.7 F1920.0
+G1 X-32.8 Y14.62 Z1.7 F1920.0
+G1 X-33.06 Y14.67 Z1.7 F1920.0
+M103
+G1 X-33.06 Y9.33 Z1.7 F1920.0
+M101
+G1 X-32.39 Y10.0 Z1.7 F1920.0
+G1 X-30.47 Y9.78 Z1.7 F1920.0
+G1 X-28.2 Y8.0 Z1.7 F1920.0
+G1 X-27.81 Y8.0 Z1.7 F1920.0
+G1 X-25.53 Y9.78 Z1.7 F1920.0
+G1 X-25.14 Y9.78 Z1.7 F1920.0
+G1 X-22.86 Y8.0 Z1.7 F1920.0
+G1 X-22.47 Y8.0 Z1.7 F1920.0
+G1 X-20.2 Y9.78 Z1.7 F1920.0
+G1 X-19.81 Y9.78 Z1.7 F1920.0
+G1 X-17.53 Y8.0 Z1.7 F1920.0
+G1 X-17.14 Y8.0 Z1.7 F1920.0
+G1 X-14.86 Y9.78 Z1.7 F1920.0
+G1 X-14.47 Y9.78 Z1.7 F1920.0
+G1 X-12.2 Y8.0 Z1.7 F1920.0
+G1 X-11.81 Y8.0 Z1.7 F1920.0
+G1 X-9.53 Y9.78 Z1.7 F1920.0
+G1 X-9.14 Y9.78 Z1.7 F1920.0
+G1 X-6.86 Y8.0 Z1.7 F1920.0
+G1 X-6.47 Y8.0 Z1.7 F1920.0
+G1 X-4.2 Y9.78 Z1.7 F1920.0
+G1 X-3.81 Y9.78 Z1.7 F1920.0
+G1 X-1.53 Y8.0 Z1.7 F1920.0
+G1 X-1.14 Y8.0 Z1.7 F1920.0
+G1 X1.14 Y9.78 Z1.7 F1920.0
+G1 X1.53 Y9.78 Z1.7 F1920.0
+G1 X3.81 Y8.0 Z1.7 F1920.0
+G1 X4.2 Y8.0 Z1.7 F1920.0
+G1 X6.47 Y9.78 Z1.7 F1920.0
+G1 X6.86 Y9.78 Z1.7 F1920.0
+G1 X9.14 Y8.0 Z1.7 F1920.0
+G1 X9.53 Y8.0 Z1.7 F1920.0
+G1 X11.81 Y9.78 Z1.7 F1920.0
+G1 X12.2 Y9.78 Z1.7 F1920.0
+G1 X14.47 Y8.0 Z1.7 F1920.0
+G1 X14.86 Y8.0 Z1.7 F1920.0
+G1 X17.14 Y9.78 Z1.7 F1920.0
+G1 X17.53 Y9.78 Z1.7 F1920.0
+G1 X19.81 Y8.0 Z1.7 F1920.0
+G1 X20.2 Y8.0 Z1.7 F1920.0
+G1 X22.47 Y9.78 Z1.7 F1920.0
+G1 X22.86 Y9.78 Z1.7 F1920.0
+G1 X25.14 Y8.0 Z1.7 F1920.0
+G1 X25.53 Y8.0 Z1.7 F1920.0
+G1 X27.81 Y9.78 Z1.7 F1920.0
+G1 X28.2 Y9.78 Z1.7 F1920.0
+G1 X30.47 Y8.0 Z1.7 F1920.0
+G1 X30.86 Y8.0 Z1.7 F1920.0
+G1 X32.39 Y7.33 Z1.7 F1920.0
+G1 X33.06 Y8.0 Z1.7 F1920.0
+G1 X32.58 Y8.47 Z1.7 F1920.0
+G1 X33.06 Y8.67 Z1.7 F1920.0
+G1 X32.8 Y9.28 Z1.7 F1920.0
+G1 X33.06 Y9.33 Z1.7 F1920.0
+M103
+G1 X33.06 Y4.0 Z1.7 F1920.0
+M101
+G1 X32.39 Y4.67 Z1.7 F1920.0
+G1 X30.47 Y4.44 Z1.7 F1920.0
+G1 X28.2 Y2.67 Z1.7 F1920.0
+G1 X27.81 Y2.67 Z1.7 F1920.0
+G1 X25.53 Y4.44 Z1.7 F1920.0
+G1 X25.14 Y4.44 Z1.7 F1920.0
+G1 X22.86 Y2.67 Z1.7 F1920.0
+G1 X22.47 Y2.67 Z1.7 F1920.0
+G1 X20.2 Y4.44 Z1.7 F1920.0
+G1 X19.81 Y4.44 Z1.7 F1920.0
+G1 X17.53 Y2.67 Z1.7 F1920.0
+G1 X17.14 Y2.67 Z1.7 F1920.0
+G1 X14.86 Y4.44 Z1.7 F1920.0
+G1 X14.47 Y4.44 Z1.7 F1920.0
+G1 X12.2 Y2.67 Z1.7 F1920.0
+G1 X11.81 Y2.67 Z1.7 F1920.0
+G1 X9.53 Y4.44 Z1.7 F1920.0
+G1 X9.14 Y4.44 Z1.7 F1920.0
+G1 X6.86 Y2.67 Z1.7 F1920.0
+G1 X6.47 Y2.67 Z1.7 F1920.0
+G1 X4.2 Y4.44 Z1.7 F1920.0
+G1 X3.81 Y4.44 Z1.7 F1920.0
+G1 X1.53 Y2.67 Z1.7 F1920.0
+G1 X1.14 Y2.67 Z1.7 F1920.0
+G1 X-1.14 Y4.44 Z1.7 F1920.0
+G1 X-1.53 Y4.44 Z1.7 F1920.0
+G1 X-3.81 Y2.67 Z1.7 F1920.0
+G1 X-4.2 Y2.67 Z1.7 F1920.0
+G1 X-6.47 Y4.44 Z1.7 F1920.0
+G1 X-6.86 Y4.44 Z1.7 F1920.0
+G1 X-9.14 Y2.67 Z1.7 F1920.0
+G1 X-9.53 Y2.67 Z1.7 F1920.0
+G1 X-11.81 Y4.44 Z1.7 F1920.0
+G1 X-12.2 Y4.44 Z1.7 F1920.0
+G1 X-14.47 Y2.67 Z1.7 F1920.0
+G1 X-14.86 Y2.67 Z1.7 F1920.0
+G1 X-17.14 Y4.44 Z1.7 F1920.0
+G1 X-17.53 Y4.44 Z1.7 F1920.0
+G1 X-19.81 Y2.67 Z1.7 F1920.0
+G1 X-20.2 Y2.67 Z1.7 F1920.0
+G1 X-22.47 Y4.44 Z1.7 F1920.0
+G1 X-22.86 Y4.44 Z1.7 F1920.0
+G1 X-25.14 Y2.67 Z1.7 F1920.0
+G1 X-25.53 Y2.67 Z1.7 F1920.0
+G1 X-27.81 Y4.44 Z1.7 F1920.0
+G1 X-28.2 Y4.44 Z1.7 F1920.0
+G1 X-30.47 Y2.67 Z1.7 F1920.0
+G1 X-30.86 Y2.67 Z1.7 F1920.0
+G1 X-32.39 Y2.0 Z1.7 F1920.0
+G1 X-33.06 Y2.67 Z1.7 F1920.0
+G1 X-32.58 Y3.14 Z1.7 F1920.0
+G1 X-32.8 Y3.95 Z1.7 F1920.0
+G1 X-33.06 Y4.0 Z1.7 F1920.0
+M103
+G1 X-33.06 Y-1.33 Z1.7 F1920.0
+M101
+G1 X-32.39 Y-0.67 Z1.7 F1920.0
+G1 X-30.47 Y-0.89 Z1.7 F1920.0
+G1 X-28.2 Y-2.67 Z1.7 F1920.0
+G1 X-27.81 Y-2.67 Z1.7 F1920.0
+G1 X-25.53 Y-0.89 Z1.7 F1920.0
+G1 X-25.14 Y-0.89 Z1.7 F1920.0
+G1 X-22.86 Y-2.67 Z1.7 F1920.0
+G1 X-22.47 Y-2.67 Z1.7 F1920.0
+G1 X-20.2 Y-0.89 Z1.7 F1920.0
+G1 X-19.81 Y-0.89 Z1.7 F1920.0
+G1 X-17.53 Y-2.67 Z1.7 F1920.0
+G1 X-17.14 Y-2.67 Z1.7 F1920.0
+G1 X-14.86 Y-0.89 Z1.7 F1920.0
+G1 X-14.47 Y-0.89 Z1.7 F1920.0
+G1 X-12.2 Y-2.67 Z1.7 F1920.0
+G1 X-11.81 Y-2.67 Z1.7 F1920.0
+G1 X-9.53 Y-0.89 Z1.7 F1920.0
+G1 X-9.14 Y-0.89 Z1.7 F1920.0
+G1 X-6.86 Y-2.67 Z1.7 F1920.0
+G1 X-6.47 Y-2.67 Z1.7 F1920.0
+G1 X-4.2 Y-0.89 Z1.7 F1920.0
+G1 X-3.81 Y-0.89 Z1.7 F1920.0
+G1 X-1.53 Y-2.67 Z1.7 F1920.0
+G1 X-1.14 Y-2.67 Z1.7 F1920.0
+G1 X1.14 Y-0.89 Z1.7 F1920.0
+G1 X1.53 Y-0.89 Z1.7 F1920.0
+G1 X3.81 Y-2.67 Z1.7 F1920.0
+G1 X4.2 Y-2.67 Z1.7 F1920.0
+G1 X6.47 Y-0.89 Z1.7 F1920.0
+G1 X6.86 Y-0.89 Z1.7 F1920.0
+G1 X9.14 Y-2.67 Z1.7 F1920.0
+G1 X9.53 Y-2.67 Z1.7 F1920.0
+G1 X11.81 Y-0.89 Z1.7 F1920.0
+G1 X12.2 Y-0.89 Z1.7 F1920.0
+G1 X14.47 Y-2.67 Z1.7 F1920.0
+G1 X14.86 Y-2.67 Z1.7 F1920.0
+G1 X17.14 Y-0.89 Z1.7 F1920.0
+G1 X17.53 Y-0.89 Z1.7 F1920.0
+G1 X19.81 Y-2.67 Z1.7 F1920.0
+G1 X20.2 Y-2.67 Z1.7 F1920.0
+G1 X22.47 Y-0.89 Z1.7 F1920.0
+G1 X22.86 Y-0.89 Z1.7 F1920.0
+G1 X25.14 Y-2.67 Z1.7 F1920.0
+G1 X25.53 Y-2.67 Z1.7 F1920.0
+G1 X27.81 Y-0.89 Z1.7 F1920.0
+G1 X28.2 Y-0.89 Z1.7 F1920.0
+G1 X30.47 Y-2.67 Z1.7 F1920.0
+G1 X30.86 Y-2.67 Z1.7 F1920.0
+G1 X32.39 Y-3.33 Z1.7 F1920.0
+G1 X33.06 Y-2.67 Z1.7 F1920.0
+G1 X32.58 Y-2.19 Z1.7 F1920.0
+G1 X33.06 Y-2.0 Z1.7 F1920.0
+G1 X32.8 Y-1.38 Z1.7 F1920.0
+G1 X33.06 Y-1.33 Z1.7 F1920.0
+M103
+G1 X33.06 Y-6.67 Z1.7 F1920.0
+M101
+G1 X32.39 Y-6.0 Z1.7 F1920.0
+G1 X30.47 Y-6.22 Z1.7 F1920.0
+G1 X28.2 Y-8.0 Z1.7 F1920.0
+G1 X27.81 Y-8.0 Z1.7 F1920.0
+G1 X25.53 Y-6.22 Z1.7 F1920.0
+G1 X25.14 Y-6.22 Z1.7 F1920.0
+G1 X22.86 Y-8.0 Z1.7 F1920.0
+G1 X22.47 Y-8.0 Z1.7 F1920.0
+G1 X20.2 Y-6.22 Z1.7 F1920.0
+G1 X19.81 Y-6.22 Z1.7 F1920.0
+G1 X17.53 Y-8.0 Z1.7 F1920.0
+G1 X17.14 Y-8.0 Z1.7 F1920.0
+G1 X14.86 Y-6.22 Z1.7 F1920.0
+G1 X14.47 Y-6.22 Z1.7 F1920.0
+G1 X12.2 Y-8.0 Z1.7 F1920.0
+G1 X11.81 Y-8.0 Z1.7 F1920.0
+G1 X9.53 Y-6.22 Z1.7 F1920.0
+G1 X9.14 Y-6.22 Z1.7 F1920.0
+G1 X6.86 Y-8.0 Z1.7 F1920.0
+G1 X6.47 Y-8.0 Z1.7 F1920.0
+G1 X4.2 Y-6.22 Z1.7 F1920.0
+G1 X3.81 Y-6.22 Z1.7 F1920.0
+G1 X1.53 Y-8.0 Z1.7 F1920.0
+G1 X1.14 Y-8.0 Z1.7 F1920.0
+G1 X-1.14 Y-6.22 Z1.7 F1920.0
+G1 X-1.53 Y-6.22 Z1.7 F1920.0
+G1 X-3.81 Y-8.0 Z1.7 F1920.0
+G1 X-4.2 Y-8.0 Z1.7 F1920.0
+G1 X-6.47 Y-6.22 Z1.7 F1920.0
+G1 X-6.86 Y-6.22 Z1.7 F1920.0
+G1 X-9.14 Y-8.0 Z1.7 F1920.0
+G1 X-9.53 Y-8.0 Z1.7 F1920.0
+G1 X-11.81 Y-6.22 Z1.7 F1920.0
+G1 X-12.2 Y-6.22 Z1.7 F1920.0
+G1 X-14.47 Y-8.0 Z1.7 F1920.0
+G1 X-14.86 Y-8.0 Z1.7 F1920.0
+G1 X-17.14 Y-6.22 Z1.7 F1920.0
+G1 X-17.53 Y-6.22 Z1.7 F1920.0
+G1 X-19.81 Y-8.0 Z1.7 F1920.0
+G1 X-20.2 Y-8.0 Z1.7 F1920.0
+G1 X-22.47 Y-6.22 Z1.7 F1920.0
+G1 X-22.86 Y-6.22 Z1.7 F1920.0
+G1 X-25.14 Y-8.0 Z1.7 F1920.0
+G1 X-25.53 Y-8.0 Z1.7 F1920.0
+G1 X-27.81 Y-6.22 Z1.7 F1920.0
+G1 X-28.2 Y-6.22 Z1.7 F1920.0
+G1 X-30.47 Y-8.0 Z1.7 F1920.0
+G1 X-30.86 Y-8.0 Z1.7 F1920.0
+G1 X-32.39 Y-8.67 Z1.7 F1920.0
+G1 X-33.06 Y-8.0 Z1.7 F1920.0
+G1 X-32.58 Y-7.53 Z1.7 F1920.0
+G1 X-33.06 Y-7.33 Z1.7 F1920.0
+G1 X-32.8 Y-6.72 Z1.7 F1920.0
+G1 X-33.06 Y-6.67 Z1.7 F1920.0
+M103
+G1 X-33.06 Y-12.0 Z1.7 F1920.0
+M101
+G1 X-32.39 Y-11.33 Z1.7 F1920.0
+G1 X-30.47 Y-11.56 Z1.7 F1920.0
+G1 X-28.2 Y-13.33 Z1.7 F1920.0
+G1 X-27.81 Y-13.33 Z1.7 F1920.0
+G1 X-25.53 Y-11.56 Z1.7 F1920.0
+G1 X-25.14 Y-11.56 Z1.7 F1920.0
+G1 X-22.86 Y-13.33 Z1.7 F1920.0
+G1 X-22.47 Y-13.33 Z1.7 F1920.0
+G1 X-20.2 Y-11.56 Z1.7 F1920.0
+G1 X-19.81 Y-11.56 Z1.7 F1920.0
+G1 X-17.53 Y-13.33 Z1.7 F1920.0
+G1 X-17.14 Y-13.33 Z1.7 F1920.0
+G1 X-14.86 Y-11.56 Z1.7 F1920.0
+G1 X-14.47 Y-11.56 Z1.7 F1920.0
+G1 X-12.2 Y-13.33 Z1.7 F1920.0
+G1 X-11.81 Y-13.33 Z1.7 F1920.0
+G1 X-9.53 Y-11.56 Z1.7 F1920.0
+G1 X-9.14 Y-11.56 Z1.7 F1920.0
+G1 X-6.86 Y-13.33 Z1.7 F1920.0
+G1 X-6.47 Y-13.33 Z1.7 F1920.0
+G1 X-4.2 Y-11.56 Z1.7 F1920.0
+G1 X-3.81 Y-11.56 Z1.7 F1920.0
+G1 X-1.6 Y-14.0 Z1.7 F1920.0
+G1 X1.14 Y-11.56 Z1.7 F1920.0
+G1 X1.53 Y-11.56 Z1.7 F1920.0
+G1 X1.99 Y-13.46 Z1.7 F1920.0
+G1 X2.5 Y-14.67 Z1.7 F1920.0
+G1 X3.01 Y-15.33 Z1.7 F1920.0
+G1 X3.29 Y-16.0 Z1.7 F1920.0
+G1 X3.81 Y-13.33 Z1.7 F1920.0
+G1 X4.2 Y-13.33 Z1.7 F1920.0
+G1 X6.47 Y-11.56 Z1.7 F1920.0
+G1 X6.86 Y-11.56 Z1.7 F1920.0
+G1 X9.14 Y-13.33 Z1.7 F1920.0
+G1 X9.53 Y-13.33 Z1.7 F1920.0
+G1 X11.81 Y-11.56 Z1.7 F1920.0
+G1 X12.2 Y-11.56 Z1.7 F1920.0
+G1 X14.47 Y-13.33 Z1.7 F1920.0
+G1 X14.86 Y-13.33 Z1.7 F1920.0
+G1 X17.14 Y-11.56 Z1.7 F1920.0
+G1 X22.86 Y-11.56 Z1.7 F1920.0
+G1 X22.63 Y-13.46 Z1.7 F1920.0
+G1 X23.14 Y-14.67 Z1.7 F1920.0
+G1 X23.65 Y-15.33 Z1.7 F1920.0
+G1 X24.54 Y-15.74 Z1.7 F1920.0
+G1 X25.14 Y-13.33 Z1.7 F1920.0
+G1 X25.53 Y-13.33 Z1.7 F1920.0
+G1 X27.81 Y-11.56 Z1.7 F1920.0
+G1 X28.2 Y-11.56 Z1.7 F1920.0
+G1 X30.47 Y-13.33 Z1.7 F1920.0
+G1 X30.86 Y-13.33 Z1.7 F1920.0
+G1 X32.39 Y-14.0 Z1.7 F1920.0
+G1 X33.06 Y-13.33 Z1.7 F1920.0
+G1 X32.58 Y-12.86 Z1.7 F1920.0
+G1 X33.06 Y-12.67 Z1.7 F1920.0
+G1 X32.8 Y-12.05 Z1.7 F1920.0
+G1 X33.06 Y-12.0 Z1.7 F1920.0
+M103
+G1 X33.06 Y-17.33 Z1.7 F1920.0
+M101
+G1 X32.39 Y-16.67 Z1.7 F1920.0
+G1 X30.47 Y-16.89 Z1.7 F1920.0
+G1 X28.2 Y-18.67 Z1.7 F1920.0
+G1 X27.81 Y-18.67 Z1.7 F1920.0
+G1 X25.53 Y-16.89 Z1.7 F1920.0
+G1 X25.14 Y-16.89 Z1.7 F1920.0
+G1 X24.73 Y-16.65 Z1.7 F1920.0
+G1 X24.08 Y-17.33 Z1.7 F1920.0
+G1 X23.98 Y-18.0 Z1.7 F1920.0
+G1 X33.06 Y-22.67 Z1.7 F1920.0
+G1 X32.8 Y-22.72 Z1.7 F1920.0
+G1 X32.58 Y-23.53 Z1.7 F1920.0
+G1 X33.06 Y-24.0 Z1.7 F1920.0
+G1 X32.39 Y-24.67 Z1.7 F1920.0
+G1 X30.86 Y-24.0 Z1.7 F1920.0
+G1 X30.47 Y-24.0 Z1.7 F1920.0
+G1 X28.2 Y-22.22 Z1.7 F1920.0
+G1 X27.81 Y-22.22 Z1.7 F1920.0
+G1 X25.53 Y-24.0 Z1.7 F1920.0
+G1 X25.14 Y-24.0 Z1.7 F1920.0
+G1 X22.86 Y-22.22 Z1.7 F1920.0
+G1 X22.47 Y-22.22 Z1.7 F1920.0
+G1 X24.25 Y-19.05 Z1.7 F1920.0
+G1 X23.24 Y-19.33 Z1.7 F1920.0
+G1 X22.47 Y-20.0 Z1.7 F1920.0
+G1 X20.2 Y-24.0 Z1.7 F1920.0
+G1 X19.81 Y-24.0 Z1.7 F1920.0
+G1 X18.81 Y-20.0 Z1.7 F1920.0
+G1 X18.04 Y-19.33 Z1.7 F1920.0
+G1 X17.57 Y-18.67 Z1.7 F1920.0
+G1 X17.53 Y-22.22 Z1.7 F1920.0
+G1 X17.14 Y-22.22 Z1.7 F1920.0
+G1 X14.86 Y-24.0 Z1.7 F1920.0
+G1 X14.47 Y-24.0 Z1.7 F1920.0
+G1 X12.2 Y-22.22 Z1.7 F1920.0
+G1 X11.81 Y-22.22 Z1.7 F1920.0
+G1 X9.53 Y-24.0 Z1.7 F1920.0
+G1 X9.14 Y-24.0 Z1.7 F1920.0
+G1 X6.86 Y-22.22 Z1.7 F1920.0
+G1 X6.47 Y-22.22 Z1.7 F1920.0
+G1 X4.2 Y-24.0 Z1.7 F1920.0
+G1 X3.81 Y-24.0 Z1.7 F1920.0
+G1 X3.07 Y-18.67 Z1.7 F1920.0
+G1 X2.6 Y-19.33 Z1.7 F1920.0
+G1 X1.83 Y-20.0 Z1.7 F1920.0
+G1 X1.53 Y-22.22 Z1.7 F1920.0
+G1 X1.14 Y-22.22 Z1.7 F1920.0
+G1 X-1.14 Y-24.0 Z1.7 F1920.0
+G1 X-1.53 Y-24.0 Z1.7 F1920.0
+G1 X-1.83 Y-20.0 Z1.7 F1920.0
+G1 X-2.6 Y-19.33 Z1.7 F1920.0
+G1 X-3.07 Y-18.67 Z1.7 F1920.0
+G1 X-3.81 Y-22.22 Z1.7 F1920.0
+G1 X-4.2 Y-22.22 Z1.7 F1920.0
+G1 X-6.47 Y-24.0 Z1.7 F1920.0
+G1 X-6.86 Y-24.0 Z1.7 F1920.0
+G1 X-9.14 Y-22.22 Z1.7 F1920.0
+G1 X-9.53 Y-22.22 Z1.7 F1920.0
+G1 X-11.81 Y-24.0 Z1.7 F1920.0
+G1 X-12.2 Y-24.0 Z1.7 F1920.0
+G1 X-14.47 Y-22.22 Z1.7 F1920.0
+G1 X-14.86 Y-22.22 Z1.7 F1920.0
+G1 X-17.14 Y-24.0 Z1.7 F1920.0
+G1 X-17.53 Y-24.0 Z1.7 F1920.0
+G1 X-19.81 Y-22.22 Z1.7 F1920.0
+G1 X-20.2 Y-22.22 Z1.7 F1920.0
+G1 X-22.47 Y-24.0 Z1.7 F1920.0
+G1 X-22.86 Y-24.0 Z1.7 F1920.0
+G1 X-25.14 Y-22.22 Z1.7 F1920.0
+G1 X-25.53 Y-22.22 Z1.7 F1920.0
+G1 X-27.81 Y-24.0 Z1.7 F1920.0
+G1 X-28.2 Y-24.0 Z1.7 F1920.0
+G1 X-30.47 Y-22.22 Z1.7 F1920.0
+G1 X-32.39 Y-22.0 Z1.7 F1920.0
+G1 X-33.06 Y-22.67 Z1.7 F1920.0
+M103
+G1 X-3.34 Y-18.0 Z1.7 F1920.0
+M101
+G1 X-3.44 Y-17.33 Z1.7 F1920.0
+G1 X-4.09 Y-16.65 Z1.7 F1920.0
+G1 X-6.86 Y-16.89 Z1.7 F1920.0
+G1 X-9.14 Y-18.67 Z1.7 F1920.0
+G1 X-9.53 Y-18.67 Z1.7 F1920.0
+G1 X-11.81 Y-16.89 Z1.7 F1920.0
+G1 X-12.2 Y-16.89 Z1.7 F1920.0
+G1 X-14.47 Y-18.67 Z1.7 F1920.0
+G1 X-14.86 Y-18.67 Z1.7 F1920.0
+G1 X-17.14 Y-16.89 Z1.7 F1920.0
+G1 X-17.53 Y-16.89 Z1.7 F1920.0
+G1 X-19.81 Y-18.67 Z1.7 F1920.0
+G1 X-20.2 Y-18.67 Z1.7 F1920.0
+G1 X-22.47 Y-16.89 Z1.7 F1920.0
+G1 X-22.86 Y-16.89 Z1.7 F1920.0
+G1 X-25.14 Y-18.67 Z1.7 F1920.0
+G1 X-25.53 Y-18.67 Z1.7 F1920.0
+G1 X-27.81 Y-16.89 Z1.7 F1920.0
+G1 X-28.2 Y-16.89 Z1.7 F1920.0
+G1 X-30.47 Y-18.67 Z1.7 F1920.0
+G1 X-30.86 Y-18.67 Z1.7 F1920.0
+G1 X-32.39 Y-19.33 Z1.7 F1920.0
+G1 X-33.06 Y-18.67 Z1.7 F1920.0
+G1 X-32.58 Y-18.2 Z1.7 F1920.0
+G1 X-33.06 Y-18.0 Z1.7 F1920.0
+G1 X-32.8 Y-17.38 Z1.7 F1920.0
+G1 X-33.06 Y-17.33 Z1.7 F1920.0
+M103
+G1 X33.06 Y-28.0 Z1.7 F1920.0
+M101
+G1 X32.39 Y-27.33 Z1.7 F1920.0
+G1 X30.47 Y-27.56 Z1.7 F1920.0
+G1 X28.34 Y-30.0 Z1.7 F1920.0
+G1 X27.57 Y-30.67 Z1.7 F1920.0
+G1 X26.61 Y-30.88 Z1.7 F1920.0
+G1 X25.53 Y-27.56 Z1.7 F1920.0
+G1 X25.14 Y-27.56 Z1.7 F1920.0
+G1 X23.98 Y-32.0 Z1.7 F1920.0
+G1 X23.7 Y-31.33 Z1.7 F1920.0
+G1 X23.03 Y-30.34 Z1.7 F1920.0
+G1 X22.86 Y-29.33 Z1.7 F1920.0
+G1 X22.47 Y-29.33 Z1.7 F1920.0
+G1 X20.2 Y-27.56 Z1.7 F1920.0
+G1 X19.81 Y-27.56 Z1.7 F1920.0
+G1 X17.58 Y-31.33 Z1.7 F1920.0
+G1 X17.53 Y-29.33 Z1.7 F1920.0
+G1 X17.14 Y-29.33 Z1.7 F1920.0
+G1 X14.86 Y-27.56 Z1.7 F1920.0
+G1 X14.47 Y-27.56 Z1.7 F1920.0
+G1 X12.2 Y-29.33 Z1.7 F1920.0
+G1 X11.81 Y-29.33 Z1.7 F1920.0
+G1 X9.53 Y-27.56 Z1.7 F1920.0
+G1 X9.14 Y-27.56 Z1.7 F1920.0
+G1 X6.86 Y-29.33 Z1.7 F1920.0
+G1 X6.47 Y-29.33 Z1.7 F1920.0
+G1 X4.2 Y-27.56 Z1.7 F1920.0
+G1 X3.81 Y-27.56 Z1.7 F1920.0
+G1 X3.13 Y-31.33 Z1.7 F1920.0
+G1 X2.68 Y-30.67 Z1.7 F1920.0
+G1 X2.5 Y-29.66 Z1.7 F1920.0
+G1 X1.53 Y-29.33 Z1.7 F1920.0
+G1 X1.14 Y-29.33 Z1.7 F1920.0
+G1 X-1.14 Y-27.56 Z1.7 F1920.0
+G1 X-1.53 Y-27.56 Z1.7 F1920.0
+G1 X-2.37 Y-29.5 Z1.7 F1920.0
+G1 X-2.68 Y-30.67 Z1.7 F1920.0
+G1 X-3.13 Y-31.33 Z1.7 F1920.0
+G1 X-3.81 Y-29.33 Z1.7 F1920.0
+G1 X-4.2 Y-29.33 Z1.7 F1920.0
+G1 X-6.47 Y-27.56 Z1.7 F1920.0
+G1 X-6.86 Y-27.56 Z1.7 F1920.0
+G1 X-9.14 Y-29.33 Z1.7 F1920.0
+G1 X-9.53 Y-29.33 Z1.7 F1920.0
+G1 X-11.81 Y-27.56 Z1.7 F1920.0
+G1 X-12.2 Y-27.56 Z1.7 F1920.0
+G1 X-14.47 Y-29.33 Z1.7 F1920.0
+G1 X-14.86 Y-29.33 Z1.7 F1920.0
+G1 X-17.14 Y-27.56 Z1.7 F1920.0
+G1 X-17.53 Y-27.56 Z1.7 F1920.0
+G1 X-17.61 Y-30.16 Z1.7 F1920.0
+G1 X-18.81 Y-30.0 Z1.7 F1920.0
+G1 X-19.81 Y-29.33 Z1.7 F1920.0
+G1 X-20.2 Y-29.33 Z1.7 F1920.0
+G1 X-22.47 Y-27.56 Z1.7 F1920.0
+G1 X-22.86 Y-27.56 Z1.7 F1920.0
+G1 X-22.9 Y-29.5 Z1.7 F1920.0
+G1 X-23.23 Y-30.67 Z1.7 F1920.0
+G1 X-23.7 Y-31.33 Z1.7 F1920.0
+G1 X-23.98 Y-32.0 Z1.7 F1920.0
+G1 X-25.14 Y-29.33 Z1.7 F1920.0
+G1 X-25.53 Y-29.33 Z1.7 F1920.0
+G1 X-26.56 Y-30.95 Z1.7 F1920.0
+G1 X-27.57 Y-30.67 Z1.7 F1920.0
+G1 X-28.34 Y-30.0 Z1.7 F1920.0
+G1 X-27.81 Y-27.56 Z1.7 F1920.0
+G1 X-28.2 Y-27.56 Z1.7 F1920.0
+G1 X-32.46 Y-25.7 Z1.7 F1920.0
+G1 X-32.39 Y-24.67 Z1.7 F1920.0
+G1 X-33.06 Y-25.33 Z1.7 F1920.0
+G1 X-32.58 Y-26.2 Z1.7 F1920.0
+G1 X-32.39 Y-27.33 Z1.7 F1920.0
+G1 X-33.06 Y-28.0 Z1.7 F1920.0
+G1 X-32.87 Y-28.03 Z1.7 F1920.0
+G1 X-32.7 Y-28.77 Z1.7 F1920.0
+G1 X-31.98 Y-30.0 Z1.7 F1920.0
+G1 X-33.06 Y-30.0 Z1.7 F1920.0
+G1 X-32.76 Y-30.67 Z1.7 F1920.0
+G1 X-33.06 Y-30.67 Z1.7 F1920.0
+M103
+G1 X-33.06 Y-35.33 Z1.7 F1920.0
+M101
+G1 X-32.66 Y-35.33 Z1.7 F1920.0
+G1 X-33.06 Y-36.0 Z1.7 F1920.0
+G1 X-31.77 Y-36.0 Z1.7 F1920.0
+M103
+G1 X-28.56 Y-36.0 Z1.7 F1920.0
+M101
+G1 X-22.25 Y-36.0 Z1.7 F1920.0
+G1 X-23.14 Y-35.33 Z1.7 F1920.0
+G1 X-23.65 Y-34.67 Z1.7 F1920.0
+G1 X-24.18 Y-35.07 Z1.7 F1920.0
+G1 X-26.22 Y-34.13 Z1.7 F1920.0
+G1 X-26.74 Y-33.33 Z1.7 F1920.0
+G1 X-26.06 Y-32.68 Z1.7 F1920.0
+G1 X-24.74 Y-32.68 Z1.7 F1920.0
+G1 X-24.06 Y-33.33 Z1.7 F1920.0
+M103
+G1 X-19.03 Y-36.0 Z1.7 F1920.0
+M101
+G1 X-17.73 Y-35.87 Z1.7 F1920.0
+G1 X-17.63 Y-34.67 Z1.7 F1920.0
+G1 X-3.08 Y-34.67 Z1.7 F1920.0
+G1 X-2.58 Y-35.33 Z1.7 F1920.0
+G1 X-1.77 Y-36.0 Z1.7 F1920.0
+M103
+G1 X-3.36 Y-34.0 Z1.7 F1920.0
+M101
+G1 X-3.49 Y-33.33 Z1.7 F1920.0
+G1 X-3.5 Y-32.67 Z1.7 F1920.0
+G1 X-4.07 Y-31.91 Z1.7 F1920.0
+G1 X-9.14 Y-32.89 Z1.7 F1920.0
+G1 X-14.86 Y-32.89 Z1.7 F1920.0
+G1 X-16.64 Y-31.9 Z1.7 F1920.0
+G1 X-17.2 Y-32.67 Z1.7 F1920.0
+G1 X-17.22 Y-33.33 Z1.7 F1920.0
+G1 X-17.35 Y-34.0 Z1.7 F1920.0
+M103
+G1 X1.77 Y-36.0 Z1.7 F1920.0
+M101
+G1 X2.58 Y-35.33 Z1.7 F1920.0
+G1 X3.08 Y-34.67 Z1.7 F1920.0
+G1 X17.63 Y-34.67 Z1.7 F1920.0
+G1 X17.73 Y-35.87 Z1.7 F1920.0
+G1 X19.03 Y-36.0 Z1.7 F1920.0
+M103
+G1 X17.35 Y-34.0 Z1.7 F1920.0
+M101
+G1 X17.22 Y-33.33 Z1.7 F1920.0
+G1 X17.2 Y-32.67 Z1.7 F1920.0
+G1 X16.64 Y-31.9 Z1.7 F1920.0
+G1 X12.2 Y-32.89 Z1.7 F1920.0
+G1 X6.47 Y-32.89 Z1.7 F1920.0
+G1 X4.07 Y-31.91 Z1.7 F1920.0
+G1 X3.5 Y-32.67 Z1.7 F1920.0
+G1 X3.49 Y-33.33 Z1.7 F1920.0
+G1 X3.36 Y-34.0 Z1.7 F1920.0
+M103
+G1 X17.3 Y-18.0 Z1.7 F1920.0
+M101
+G1 X17.2 Y-17.33 Z1.7 F1920.0
+G1 X17.22 Y-16.67 Z1.7 F1920.0
+G1 X17.35 Y-16.0 Z1.7 F1920.0
+G1 X17.63 Y-15.33 Z1.7 F1920.0
+G1 X18.14 Y-14.67 Z1.7 F1920.0
+G1 X18.64 Y-13.46 Z1.7 F1920.0
+G1 X17.61 Y-14.26 Z1.7 F1920.0
+G1 X14.86 Y-16.89 Z1.7 F1920.0
+G1 X14.47 Y-16.89 Z1.7 F1920.0
+G1 X12.2 Y-18.67 Z1.7 F1920.0
+G1 X11.81 Y-18.67 Z1.7 F1920.0
+G1 X9.53 Y-16.89 Z1.7 F1920.0
+G1 X9.14 Y-16.89 Z1.7 F1920.0
+G1 X6.86 Y-18.67 Z1.7 F1920.0
+G1 X6.47 Y-18.67 Z1.7 F1920.0
+G1 X4.2 Y-16.89 Z1.7 F1920.0
+G1 X3.81 Y-16.89 Z1.7 F1920.0
+G1 X3.44 Y-17.33 Z1.7 F1920.0
+G1 X3.34 Y-18.0 Z1.7 F1920.0
+M103
+G1 X26.74 Y-33.33 Z1.7 F1920.0
+M101
+G1 X24.06 Y-33.33 Z1.7 F1920.0
+M103
+G1 X22.25 Y-36.0 Z1.7 F1920.0
+M101
+G1 X23.14 Y-35.33 Z1.7 F1920.0
+G1 X23.65 Y-34.67 Z1.7 F1920.0
+G1 X27.15 Y-34.67 Z1.7 F1920.0
+G1 X27.66 Y-35.33 Z1.7 F1920.0
+G1 X28.55 Y-36.0 Z1.7 F1920.0
+M103
+G1 X31.77 Y-36.0 Z1.7 F1920.0
+M101
+G1 X33.06 Y-36.0 Z1.7 F1920.0
+G1 X32.67 Y-35.33 Z1.7 F1920.0
+G1 X33.06 Y-35.33 Z1.7 F1920.0
+M103
+G1 X33.06 Y-30.67 Z1.7 F1920.0
+M101
+G1 X32.76 Y-30.67 Z1.7 F1920.0
+G1 X33.06 Y-30.0 Z1.7 F1920.0
+G1 X32.39 Y-29.33 Z1.7 F1920.0
+G1 X31.99 Y-30.0 Z1.7 F1920.0
+M103
+G1 X31.99 Y30.0 Z1.7 F1920.0
+M101
+G1 X32.39 Y29.33 Z1.7 F1920.0
+G1 X33.06 Y30.0 Z1.7 F1920.0
+G1 X32.76 Y30.67 Z1.7 F1920.0
+G1 X33.06 Y30.67 Z1.7 F1920.0
+M103
+G1 X33.06 Y36.0 Z1.7 F1920.0
+M101
+G1 X31.77 Y36.0 Z1.7 F1920.0
+G1 X32.67 Y35.33 Z1.7 F1920.0
+G1 X33.06 Y35.33 Z1.7 F1920.0
+M103
+G1 X28.55 Y36.0 Z1.7 F1920.0
+M101
+G1 X27.66 Y35.33 Z1.7 F1920.0
+G1 X26.69 Y35.15 Z1.7 F1920.0
+G1 X26.87 Y34.0 Z1.7 F1920.0
+G1 X26.09 Y33.46 Z1.7 F1920.0
+G1 X23.65 Y34.67 Z1.7 F1920.0
+G1 X23.14 Y35.33 Z1.7 F1920.0
+G1 X22.25 Y36.0 Z1.7 F1920.0
+M103
+G1 X24.06 Y33.33 Z1.7 F1920.0
+M101
+G1 X24.08 Y32.67 Z1.7 F1920.0
+G1 X23.98 Y32.0 Z1.7 F1920.0
+G1 X23.7 Y31.33 Z1.7 F1920.0
+G1 X23.23 Y30.67 Z1.7 F1920.0
+G1 X22.9 Y29.5 Z1.7 F1920.0
+G1 X25.53 Y29.33 Z1.7 F1920.0
+G1 X26.07 Y32.57 Z1.7 F1920.0
+G1 X26.82 Y32.0 Z1.7 F1920.0
+G1 X27.1 Y31.33 Z1.7 F1920.0
+G1 X27.57 Y30.67 Z1.7 F1920.0
+G1 X28.34 Y30.0 Z1.7 F1920.0
+M103
+G1 X-18.13 Y35.33 Z1.7 F1920.0
+M101
+G1 X-17.63 Y34.67 Z1.7 F1920.0
+G1 X-17.35 Y34.0 Z1.7 F1920.0
+G1 X-17.22 Y33.33 Z1.7 F1920.0
+G1 X-17.2 Y32.67 Z1.7 F1920.0
+G1 X-17.3 Y32.0 Z1.7 F1920.0
+G1 X-17.58 Y31.33 Z1.7 F1920.0
+G1 X-18.04 Y30.67 Z1.7 F1920.0
+G1 X-18.38 Y29.5 Z1.7 F1920.0
+G1 X-17.53 Y29.33 Z1.7 F1920.0
+G1 X-17.14 Y29.33 Z1.7 F1920.0
+G1 X-14.86 Y31.11 Z1.7 F1920.0
+G1 X-14.47 Y31.11 Z1.7 F1920.0
+G1 X-12.2 Y29.33 Z1.7 F1920.0
+G1 X-11.81 Y29.33 Z1.7 F1920.0
+G1 X-9.53 Y31.11 Z1.7 F1920.0
+G1 X-9.14 Y31.11 Z1.7 F1920.0
+G1 X-6.86 Y29.33 Z1.7 F1920.0
+G1 X-6.47 Y29.33 Z1.7 F1920.0
+G1 X-4.2 Y31.11 Z1.7 F1920.0
+G1 X-3.81 Y31.11 Z1.7 F1920.0
+G1 X-1.53 Y29.33 Z1.7 F1920.0
+G1 X-1.14 Y29.33 Z1.7 F1920.0
+G1 X1.14 Y31.11 Z1.7 F1920.0
+G1 X1.53 Y31.11 Z1.7 F1920.0
+G1 X3.81 Y29.33 Z1.7 F1920.0
+G1 X4.2 Y29.33 Z1.7 F1920.0
+G1 X6.47 Y31.11 Z1.7 F1920.0
+G1 X6.86 Y31.11 Z1.7 F1920.0
+G1 X9.14 Y29.33 Z1.7 F1920.0
+G1 X9.53 Y29.33 Z1.7 F1920.0
+G1 X11.81 Y31.11 Z1.7 F1920.0
+G1 X12.2 Y31.11 Z1.7 F1920.0
+G1 X14.47 Y29.33 Z1.7 F1920.0
+G1 X14.86 Y29.33 Z1.7 F1920.0
+G1 X16.69 Y34.13 Z1.7 F1920.0
+G1 X17.22 Y33.33 Z1.7 F1920.0
+G1 X17.2 Y32.67 Z1.7 F1920.0
+G1 X17.3 Y32.0 Z1.7 F1920.0
+G1 X17.58 Y31.33 Z1.7 F1920.0
+G1 X18.04 Y30.67 Z1.7 F1920.0
+M103
+G1 X19.03 Y36.0 Z1.7 F1920.0
+M101
+G1 X17.73 Y35.87 Z1.7 F1920.0
+G1 X12.2 Y34.67 Z1.7 F1920.0
+G1 X-14.86 Y34.67 Z1.7 F1920.0
+G1 X-19.03 Y36.0 Z1.7 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 2.1 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-38.1 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y38.1 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y38.1 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y-38.1 Z2.1 </boundaryPoint>)
+(<loop> inner )
+G1 X-19.4 Y35.08 Z2.1 F1920.0
+M101
+G1 X-18.89 Y34.69 Z2.1 F1920.0
+G1 X-18.5 Y34.18 Z2.1 F1920.0
+G1 X-18.25 Y33.58 Z2.1 F1920.0
+G1 X-18.16 Y32.94 Z2.1 F1920.0
+G1 X-18.25 Y32.3 Z2.1 F1920.0
+G1 X-18.49 Y31.7 Z2.1 F1920.0
+G1 X-18.89 Y31.19 Z2.1 F1920.0
+G1 X-19.4 Y30.8 Z2.1 F1920.0
+G1 X-20.0 Y30.55 Z2.1 F1920.0
+G1 X-20.64 Y30.47 Z2.1 F1920.0
+G1 X-21.28 Y30.55 Z2.1 F1920.0
+G1 X-21.88 Y30.8 Z2.1 F1920.0
+G1 X-22.39 Y31.19 Z2.1 F1920.0
+G1 X-22.78 Y31.7 Z2.1 F1920.0
+G1 X-23.03 Y32.3 Z2.1 F1920.0
+G1 X-23.11 Y32.94 Z2.1 F1920.0
+G1 X-23.03 Y33.58 Z2.1 F1920.0
+G1 X-22.78 Y34.18 Z2.1 F1920.0
+G1 X-22.39 Y34.69 Z2.1 F1920.0
+G1 X-21.88 Y35.08 Z2.1 F1920.0
+G1 X-21.28 Y35.33 Z2.1 F1920.0
+G1 X-20.64 Y35.42 Z2.1 F1920.0
+G1 X-20.0 Y35.33 Z2.1 F1920.0
+G1 X-19.4 Y35.08 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-19.1 Y35.61 Z2.1 F1920.0
+M101
+G1 X-18.46 Y35.12 Z2.1 F1920.0
+G1 X-17.97 Y34.48 Z2.1 F1920.0
+G1 X-17.66 Y33.74 Z2.1 F1920.0
+G1 X-17.56 Y32.94 Z2.1 F1920.0
+G1 X-17.66 Y32.14 Z2.1 F1920.0
+G1 X-17.97 Y31.4 Z2.1 F1920.0
+G1 X-18.46 Y30.76 Z2.1 F1920.0
+G1 X-19.1 Y30.27 Z2.1 F1920.0
+G1 X-19.84 Y29.97 Z2.1 F1920.0
+G1 X-20.64 Y29.86 Z2.1 F1920.0
+G1 X-21.44 Y29.97 Z2.1 F1920.0
+G1 X-22.18 Y30.27 Z2.1 F1920.0
+G1 X-22.82 Y30.76 Z2.1 F1920.0
+G1 X-23.31 Y31.4 Z2.1 F1920.0
+G1 X-23.61 Y32.14 Z2.1 F1920.0
+G1 X-23.72 Y32.94 Z2.1 F1920.0
+G1 X-23.61 Y33.74 Z2.1 F1920.0
+G1 X-23.3 Y34.48 Z2.1 F1920.0
+G1 X-22.82 Y35.12 Z2.1 F1920.0
+G1 X-22.18 Y35.61 Z2.1 F1920.0
+G1 X-21.44 Y35.92 Z2.1 F1920.0
+G1 X-20.64 Y36.02 Z2.1 F1920.0
+G1 X-19.84 Y35.92 Z2.1 F1920.0
+G1 X-19.1 Y35.61 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-0.63 Y-30.48 Z2.1 F1920.0
+M101
+G1 X0.0 Y-30.43 Z2.1 F1920.0
+G1 X0.63 Y-30.48 Z2.1 F1920.0
+G1 X1.27 Y-30.74 Z2.1 F1920.0
+G1 X1.79 Y-31.15 Z2.1 F1920.0
+G1 X2.2 Y-31.67 Z2.1 F1920.0
+G1 X2.45 Y-32.28 Z2.1 F1920.0
+G1 X2.54 Y-32.94 Z2.1 F1920.0
+G1 X2.45 Y-33.6 Z2.1 F1920.0
+G1 X2.2 Y-34.21 Z2.1 F1920.0
+G1 X1.79 Y-34.74 Z2.1 F1920.0
+G1 X1.27 Y-35.14 Z2.1 F1920.0
+G1 X0.66 Y-35.39 Z2.1 F1920.0
+G1 X0.0 Y-35.48 Z2.1 F1920.0
+G1 X-0.66 Y-35.39 Z2.1 F1920.0
+G1 X-1.27 Y-35.14 Z2.1 F1920.0
+G1 X-1.79 Y-34.74 Z2.1 F1920.0
+G1 X-2.2 Y-34.21 Z2.1 F1920.0
+G1 X-2.45 Y-33.6 Z2.1 F1920.0
+G1 X-2.54 Y-32.94 Z2.1 F1920.0
+G1 X-2.45 Y-32.28 Z2.1 F1920.0
+G1 X-2.2 Y-31.67 Z2.1 F1920.0
+G1 X-1.79 Y-31.15 Z2.1 F1920.0
+G1 X-1.27 Y-30.74 Z2.1 F1920.0
+G1 X-0.63 Y-30.48 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-0.77 Y-29.89 Z2.1 F1920.0
+M101
+G1 X0.0 Y-29.83 Z2.1 F1920.0
+G1 X0.77 Y-29.89 Z2.1 F1920.0
+G1 X1.57 Y-30.22 Z2.1 F1920.0
+G1 X2.22 Y-30.72 Z2.1 F1920.0
+G1 X2.72 Y-31.37 Z2.1 F1920.0
+G1 X3.04 Y-32.13 Z2.1 F1920.0
+G1 X3.14 Y-32.94 Z2.1 F1920.0
+G1 X3.04 Y-33.75 Z2.1 F1920.0
+G1 X2.72 Y-34.51 Z2.1 F1920.0
+G1 X2.22 Y-35.16 Z2.1 F1920.0
+G1 X1.57 Y-35.66 Z2.1 F1920.0
+G1 X0.81 Y-35.98 Z2.1 F1920.0
+G1 X0.0 Y-36.09 Z2.1 F1920.0
+G1 X-0.82 Y-35.98 Z2.1 F1920.0
+G1 X-1.57 Y-35.66 Z2.1 F1920.0
+G1 X-2.22 Y-35.17 Z2.1 F1920.0
+G1 X-2.72 Y-34.51 Z2.1 F1920.0
+G1 X-3.04 Y-33.75 Z2.1 F1920.0
+G1 X-3.14 Y-32.94 Z2.1 F1920.0
+G1 X-3.04 Y-32.13 Z2.1 F1920.0
+G1 X-2.72 Y-31.37 Z2.1 F1920.0
+G1 X-2.22 Y-30.72 Z2.1 F1920.0
+G1 X-1.57 Y-30.22 Z2.1 F1920.0
+G1 X-0.77 Y-29.89 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.0 Y-19.54 Z2.1 F1920.0
+M101
+G1 X-0.64 Y-19.46 Z2.1 F1920.0
+G1 X-1.24 Y-19.21 Z2.1 F1920.0
+G1 X-1.75 Y-18.82 Z2.1 F1920.0
+G1 X-2.14 Y-18.3 Z2.1 F1920.0
+G1 X-2.39 Y-17.71 Z2.1 F1920.0
+G1 X-2.48 Y-17.07 Z2.1 F1920.0
+G1 X-2.39 Y-16.43 Z2.1 F1920.0
+G1 X-2.14 Y-15.83 Z2.1 F1920.0
+G1 X-1.75 Y-15.32 Z2.1 F1920.0
+G1 X-1.24 Y-14.92 Z2.1 F1920.0
+G1 X-0.64 Y-14.68 Z2.1 F1920.0
+G1 X0.0 Y-14.59 Z2.1 F1920.0
+G1 X0.64 Y-14.68 Z2.1 F1920.0
+G1 X1.24 Y-14.92 Z2.1 F1920.0
+G1 X1.75 Y-15.32 Z2.1 F1920.0
+G1 X2.14 Y-15.83 Z2.1 F1920.0
+G1 X2.39 Y-16.43 Z2.1 F1920.0
+G1 X2.48 Y-17.07 Z2.1 F1920.0
+G1 X2.39 Y-17.71 Z2.1 F1920.0
+G1 X2.14 Y-18.3 Z2.1 F1920.0
+G1 X1.75 Y-18.82 Z2.1 F1920.0
+G1 X1.24 Y-19.21 Z2.1 F1920.0
+G1 X0.64 Y-19.46 Z2.1 F1920.0
+G1 X0.0 Y-19.54 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.0 Y-20.15 Z2.1 F1920.0
+M101
+G1 X-0.8 Y-20.04 Z2.1 F1920.0
+G1 X-1.54 Y-19.73 Z2.1 F1920.0
+G1 X-2.18 Y-19.24 Z2.1 F1920.0
+G1 X-2.67 Y-18.6 Z2.1 F1920.0
+G1 X-2.98 Y-17.86 Z2.1 F1920.0
+G1 X-3.08 Y-17.07 Z2.1 F1920.0
+G1 X-2.98 Y-16.27 Z2.1 F1920.0
+G1 X-2.67 Y-15.53 Z2.1 F1920.0
+G1 X-2.18 Y-14.89 Z2.1 F1920.0
+G1 X-1.54 Y-14.4 Z2.1 F1920.0
+G1 X-0.8 Y-14.09 Z2.1 F1920.0
+G1 X0.0 Y-13.99 Z2.1 F1920.0
+G1 X0.8 Y-14.09 Z2.1 F1920.0
+G1 X1.54 Y-14.4 Z2.1 F1920.0
+G1 X2.18 Y-14.89 Z2.1 F1920.0
+G1 X2.67 Y-15.53 Z2.1 F1920.0
+G1 X2.97 Y-16.27 Z2.1 F1920.0
+G1 X3.08 Y-17.07 Z2.1 F1920.0
+G1 X2.97 Y-17.86 Z2.1 F1920.0
+G1 X2.67 Y-18.6 Z2.1 F1920.0
+G1 X2.18 Y-19.24 Z2.1 F1920.0
+G1 X1.54 Y-19.73 Z2.1 F1920.0
+G1 X0.8 Y-20.04 Z2.1 F1920.0
+G1 X0.0 Y-20.15 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-18.49 Y-31.7 Z2.1 F1920.0
+M101
+G1 X-18.25 Y-32.3 Z2.1 F1920.0
+G1 X-18.16 Y-32.94 Z2.1 F1920.0
+G1 X-18.25 Y-33.58 Z2.1 F1920.0
+G1 X-18.5 Y-34.18 Z2.1 F1920.0
+G1 X-18.89 Y-34.69 Z2.1 F1920.0
+G1 X-19.4 Y-35.08 Z2.1 F1920.0
+G1 X-20.0 Y-35.33 Z2.1 F1920.0
+G1 X-20.64 Y-35.42 Z2.1 F1920.0
+G1 X-21.28 Y-35.33 Z2.1 F1920.0
+G1 X-21.88 Y-35.08 Z2.1 F1920.0
+G1 X-22.39 Y-34.69 Z2.1 F1920.0
+G1 X-22.78 Y-34.18 Z2.1 F1920.0
+G1 X-23.03 Y-33.58 Z2.1 F1920.0
+G1 X-23.11 Y-32.94 Z2.1 F1920.0
+G1 X-23.03 Y-32.3 Z2.1 F1920.0
+G1 X-22.78 Y-31.7 Z2.1 F1920.0
+G1 X-22.39 Y-31.19 Z2.1 F1920.0
+G1 X-21.88 Y-30.8 Z2.1 F1920.0
+G1 X-21.28 Y-30.55 Z2.1 F1920.0
+G1 X-20.64 Y-30.47 Z2.1 F1920.0
+G1 X-20.0 Y-30.55 Z2.1 F1920.0
+G1 X-19.4 Y-30.8 Z2.1 F1920.0
+G1 X-18.89 Y-31.19 Z2.1 F1920.0
+G1 X-18.49 Y-31.7 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-17.97 Y-31.4 Z2.1 F1920.0
+M101
+G1 X-17.66 Y-32.14 Z2.1 F1920.0
+G1 X-17.56 Y-32.94 Z2.1 F1920.0
+G1 X-17.66 Y-33.74 Z2.1 F1920.0
+G1 X-17.97 Y-34.48 Z2.1 F1920.0
+G1 X-18.46 Y-35.12 Z2.1 F1920.0
+G1 X-19.1 Y-35.61 Z2.1 F1920.0
+G1 X-19.84 Y-35.92 Z2.1 F1920.0
+G1 X-20.64 Y-36.02 Z2.1 F1920.0
+G1 X-21.44 Y-35.92 Z2.1 F1920.0
+G1 X-22.18 Y-35.61 Z2.1 F1920.0
+G1 X-22.82 Y-35.12 Z2.1 F1920.0
+G1 X-23.3 Y-34.48 Z2.1 F1920.0
+G1 X-23.61 Y-33.74 Z2.1 F1920.0
+G1 X-23.72 Y-32.94 Z2.1 F1920.0
+G1 X-23.61 Y-32.14 Z2.1 F1920.0
+G1 X-23.31 Y-31.4 Z2.1 F1920.0
+G1 X-22.82 Y-30.76 Z2.1 F1920.0
+G1 X-22.18 Y-30.27 Z2.1 F1920.0
+G1 X-21.44 Y-29.97 Z2.1 F1920.0
+G1 X-20.64 Y-29.86 Z2.1 F1920.0
+G1 X-19.84 Y-29.97 Z2.1 F1920.0
+G1 X-19.1 Y-30.27 Z2.1 F1920.0
+G1 X-18.46 Y-30.76 Z2.1 F1920.0
+G1 X-17.97 Y-31.4 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.4 Y30.8 Z2.1 F1920.0
+M101
+G1 X18.89 Y31.19 Z2.1 F1920.0
+G1 X18.49 Y31.7 Z2.1 F1920.0
+G1 X18.25 Y32.3 Z2.1 F1920.0
+G1 X18.16 Y32.94 Z2.1 F1920.0
+G1 X18.25 Y33.58 Z2.1 F1920.0
+G1 X18.5 Y34.18 Z2.1 F1920.0
+G1 X18.89 Y34.69 Z2.1 F1920.0
+G1 X19.4 Y35.08 Z2.1 F1920.0
+G1 X20.0 Y35.33 Z2.1 F1920.0
+G1 X20.64 Y35.42 Z2.1 F1920.0
+G1 X21.28 Y35.33 Z2.1 F1920.0
+G1 X21.88 Y35.08 Z2.1 F1920.0
+G1 X22.39 Y34.69 Z2.1 F1920.0
+G1 X22.78 Y34.18 Z2.1 F1920.0
+G1 X23.03 Y33.58 Z2.1 F1920.0
+G1 X23.11 Y32.94 Z2.1 F1920.0
+G1 X23.03 Y32.3 Z2.1 F1920.0
+G1 X22.78 Y31.7 Z2.1 F1920.0
+G1 X22.39 Y31.19 Z2.1 F1920.0
+G1 X21.88 Y30.8 Z2.1 F1920.0
+G1 X21.28 Y30.55 Z2.1 F1920.0
+G1 X20.64 Y30.47 Z2.1 F1920.0
+G1 X20.0 Y30.55 Z2.1 F1920.0
+G1 X19.4 Y30.8 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.1 Y30.27 Z2.1 F1920.0
+M101
+G1 X18.46 Y30.76 Z2.1 F1920.0
+G1 X17.97 Y31.4 Z2.1 F1920.0
+G1 X17.66 Y32.14 Z2.1 F1920.0
+G1 X17.56 Y32.94 Z2.1 F1920.0
+G1 X17.66 Y33.74 Z2.1 F1920.0
+G1 X17.97 Y34.48 Z2.1 F1920.0
+G1 X18.46 Y35.12 Z2.1 F1920.0
+G1 X19.1 Y35.61 Z2.1 F1920.0
+G1 X19.84 Y35.92 Z2.1 F1920.0
+G1 X20.64 Y36.02 Z2.1 F1920.0
+G1 X21.44 Y35.92 Z2.1 F1920.0
+G1 X22.18 Y35.61 Z2.1 F1920.0
+G1 X22.82 Y35.12 Z2.1 F1920.0
+G1 X23.3 Y34.48 Z2.1 F1920.0
+G1 X23.61 Y33.74 Z2.1 F1920.0
+G1 X23.72 Y32.94 Z2.1 F1920.0
+G1 X23.61 Y32.14 Z2.1 F1920.0
+G1 X23.31 Y31.4 Z2.1 F1920.0
+G1 X22.82 Y30.76 Z2.1 F1920.0
+G1 X22.18 Y30.27 Z2.1 F1920.0
+G1 X21.44 Y29.97 Z2.1 F1920.0
+G1 X20.64 Y29.86 Z2.1 F1920.0
+G1 X19.84 Y29.97 Z2.1 F1920.0
+G1 X19.1 Y30.27 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X18.72 Y-17.58 Z2.1 F1920.0
+G1 X20.64 Y-30.47 Z2.1 F1920.0
+M101
+G1 X21.28 Y-30.55 Z2.1 F1920.0
+G1 X21.88 Y-30.8 Z2.1 F1920.0
+G1 X22.39 Y-31.19 Z2.1 F1920.0
+G1 X22.78 Y-31.7 Z2.1 F1920.0
+G1 X23.03 Y-32.3 Z2.1 F1920.0
+G1 X23.11 Y-32.94 Z2.1 F1920.0
+G1 X23.03 Y-33.58 Z2.1 F1920.0
+G1 X22.78 Y-34.18 Z2.1 F1920.0
+G1 X22.39 Y-34.69 Z2.1 F1920.0
+G1 X21.88 Y-35.08 Z2.1 F1920.0
+G1 X21.28 Y-35.33 Z2.1 F1920.0
+G1 X20.64 Y-35.42 Z2.1 F1920.0
+G1 X20.0 Y-35.33 Z2.1 F1920.0
+G1 X19.4 Y-35.08 Z2.1 F1920.0
+G1 X18.89 Y-34.69 Z2.1 F1920.0
+G1 X18.5 Y-34.18 Z2.1 F1920.0
+G1 X18.25 Y-33.58 Z2.1 F1920.0
+G1 X18.16 Y-32.94 Z2.1 F1920.0
+G1 X18.25 Y-32.3 Z2.1 F1920.0
+G1 X18.49 Y-31.7 Z2.1 F1920.0
+G1 X18.89 Y-31.19 Z2.1 F1920.0
+G1 X19.4 Y-30.8 Z2.1 F1920.0
+G1 X20.0 Y-30.55 Z2.1 F1920.0
+G1 X20.64 Y-30.47 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-29.86 Z2.1 F1920.0
+M101
+G1 X21.44 Y-29.97 Z2.1 F1920.0
+G1 X22.18 Y-30.27 Z2.1 F1920.0
+G1 X22.82 Y-30.76 Z2.1 F1920.0
+G1 X23.31 Y-31.4 Z2.1 F1920.0
+G1 X23.61 Y-32.14 Z2.1 F1920.0
+G1 X23.72 Y-32.94 Z2.1 F1920.0
+G1 X23.61 Y-33.74 Z2.1 F1920.0
+G1 X23.3 Y-34.48 Z2.1 F1920.0
+G1 X22.82 Y-35.12 Z2.1 F1920.0
+G1 X22.18 Y-35.61 Z2.1 F1920.0
+G1 X21.44 Y-35.92 Z2.1 F1920.0
+G1 X20.64 Y-36.02 Z2.1 F1920.0
+G1 X19.84 Y-35.92 Z2.1 F1920.0
+G1 X19.1 Y-35.61 Z2.1 F1920.0
+G1 X18.46 Y-35.12 Z2.1 F1920.0
+G1 X17.97 Y-34.48 Z2.1 F1920.0
+G1 X17.66 Y-33.74 Z2.1 F1920.0
+G1 X17.56 Y-32.94 Z2.1 F1920.0
+G1 X17.66 Y-32.14 Z2.1 F1920.0
+G1 X17.97 Y-31.4 Z2.1 F1920.0
+G1 X18.46 Y-30.76 Z2.1 F1920.0
+G1 X19.1 Y-30.27 Z2.1 F1920.0
+G1 X19.84 Y-29.97 Z2.1 F1920.0
+G1 X20.64 Y-29.86 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-19.54 Z2.1 F1920.0
+M101
+G1 X20.0 Y-19.46 Z2.1 F1920.0
+G1 X19.4 Y-19.21 Z2.1 F1920.0
+G1 X18.89 Y-18.82 Z2.1 F1920.0
+G1 X18.5 Y-18.3 Z2.1 F1920.0
+G1 X18.25 Y-17.71 Z2.1 F1920.0
+G1 X18.16 Y-17.07 Z2.1 F1920.0
+G1 X18.25 Y-16.43 Z2.1 F1920.0
+G1 X18.49 Y-15.83 Z2.1 F1920.0
+G1 X18.89 Y-15.32 Z2.1 F1920.0
+G1 X19.4 Y-14.92 Z2.1 F1920.0
+G1 X20.0 Y-14.68 Z2.1 F1920.0
+G1 X20.64 Y-14.59 Z2.1 F1920.0
+G1 X21.28 Y-14.68 Z2.1 F1920.0
+G1 X21.88 Y-14.92 Z2.1 F1920.0
+G1 X22.39 Y-15.32 Z2.1 F1920.0
+G1 X22.78 Y-15.83 Z2.1 F1920.0
+G1 X23.03 Y-16.43 Z2.1 F1920.0
+G1 X23.11 Y-17.07 Z2.1 F1920.0
+G1 X23.03 Y-17.71 Z2.1 F1920.0
+G1 X22.78 Y-18.3 Z2.1 F1920.0
+G1 X22.39 Y-18.82 Z2.1 F1920.0
+G1 X21.88 Y-19.21 Z2.1 F1920.0
+G1 X21.28 Y-19.46 Z2.1 F1920.0
+G1 X20.64 Y-19.54 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-20.15 Z2.1 F1920.0
+M101
+G1 X19.84 Y-20.04 Z2.1 F1920.0
+G1 X19.1 Y-19.73 Z2.1 F1920.0
+G1 X18.46 Y-19.24 Z2.1 F1920.0
+G1 X17.97 Y-18.61 Z2.1 F1920.0
+G1 X17.66 Y-17.86 Z2.1 F1920.0
+G1 X17.56 Y-17.07 Z2.1 F1920.0
+G1 X17.66 Y-16.27 Z2.1 F1920.0
+G1 X17.97 Y-15.53 Z2.1 F1920.0
+G1 X18.46 Y-14.89 Z2.1 F1920.0
+G1 X19.1 Y-14.4 Z2.1 F1920.0
+G1 X19.84 Y-14.09 Z2.1 F1920.0
+G1 X20.64 Y-13.99 Z2.1 F1920.0
+G1 X21.44 Y-14.09 Z2.1 F1920.0
+G1 X22.18 Y-14.4 Z2.1 F1920.0
+G1 X22.82 Y-14.89 Z2.1 F1920.0
+G1 X23.31 Y-15.53 Z2.1 F1920.0
+G1 X23.61 Y-16.27 Z2.1 F1920.0
+G1 X23.72 Y-17.07 Z2.1 F1920.0
+G1 X23.61 Y-17.86 Z2.1 F1920.0
+G1 X23.3 Y-18.61 Z2.1 F1920.0
+G1 X22.82 Y-19.24 Z2.1 F1920.0
+G1 X22.18 Y-19.73 Z2.1 F1920.0
+G1 X21.44 Y-20.04 Z2.1 F1920.0
+G1 X20.64 Y-20.15 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X33.45 Y-20.15 Z2.1 F1920.0
+M101
+G1 X33.45 Y31.25 Z2.1 F1920.0
+G1 X33.61 Y32.16 Z2.1 F1920.0
+G1 X33.0 Y31.8 Z2.1 F1920.0
+G1 X32.83 Y31.4 Z2.1 F1920.0
+G1 X32.34 Y30.76 Z2.1 F1920.0
+G1 X31.7 Y30.27 Z2.1 F1920.0
+G1 X30.96 Y29.97 Z2.1 F1920.0
+G1 X30.16 Y29.86 Z2.1 F1920.0
+G1 X29.37 Y29.97 Z2.1 F1920.0
+G1 X28.62 Y30.27 Z2.1 F1920.0
+G1 X27.98 Y30.76 Z2.1 F1920.0
+G1 X27.5 Y31.4 Z2.1 F1920.0
+G1 X27.19 Y32.14 Z2.1 F1920.0
+G1 X27.08 Y32.94 Z2.1 F1920.0
+G1 X27.19 Y33.74 Z2.1 F1920.0
+G1 X27.5 Y34.48 Z2.1 F1920.0
+G1 X27.98 Y35.12 Z2.1 F1920.0
+G1 X28.62 Y35.61 Z2.1 F1920.0
+G1 X29.37 Y35.92 Z2.1 F1920.0
+G1 X30.16 Y36.02 Z2.1 F1920.0
+G1 X30.96 Y35.92 Z2.1 F1920.0
+G1 X31.7 Y35.61 Z2.1 F1920.0
+G1 X32.34 Y35.12 Z2.1 F1920.0
+G1 X32.83 Y34.48 Z2.1 F1920.0
+G1 X32.87 Y34.37 Z2.1 F1920.0
+G1 X33.45 Y34.62 Z2.1 F1920.0
+G1 X33.45 Y36.62 Z2.1 F1920.0
+G1 X-33.45 Y36.62 Z2.1 F1920.0
+G1 X-33.45 Y34.62 Z2.1 F1920.0
+G1 X-32.87 Y34.37 Z2.1 F1920.0
+G1 X-32.83 Y34.48 Z2.1 F1920.0
+G1 X-32.34 Y35.12 Z2.1 F1920.0
+G1 X-31.7 Y35.61 Z2.1 F1920.0
+G1 X-30.96 Y35.92 Z2.1 F1920.0
+G1 X-30.16 Y36.02 Z2.1 F1920.0
+G1 X-29.37 Y35.92 Z2.1 F1920.0
+G1 X-28.62 Y35.61 Z2.1 F1920.0
+G1 X-27.98 Y35.12 Z2.1 F1920.0
+G1 X-27.5 Y34.48 Z2.1 F1920.0
+G1 X-27.19 Y33.74 Z2.1 F1920.0
+G1 X-27.08 Y32.94 Z2.1 F1920.0
+G1 X-27.19 Y32.14 Z2.1 F1920.0
+G1 X-27.5 Y31.4 Z2.1 F1920.0
+G1 X-27.98 Y30.76 Z2.1 F1920.0
+G1 X-28.62 Y30.27 Z2.1 F1920.0
+G1 X-29.37 Y29.97 Z2.1 F1920.0
+G1 X-30.16 Y29.86 Z2.1 F1920.0
+G1 X-30.96 Y29.97 Z2.1 F1920.0
+G1 X-31.7 Y30.27 Z2.1 F1920.0
+G1 X-32.34 Y30.76 Z2.1 F1920.0
+G1 X-32.83 Y31.4 Z2.1 F1920.0
+G1 X-33.0 Y31.8 Z2.1 F1920.0
+G1 X-33.61 Y32.16 Z2.1 F1920.0
+G1 X-33.45 Y31.25 Z2.1 F1920.0
+G1 X-33.45 Y-31.25 Z2.1 F1920.0
+G1 X-33.61 Y-32.16 Z2.1 F1920.0
+G1 X-32.99 Y-31.8 Z2.1 F1920.0
+G1 X-32.83 Y-31.4 Z2.1 F1920.0
+G1 X-32.34 Y-30.77 Z2.1 F1920.0
+G1 X-31.7 Y-30.28 Z2.1 F1920.0
+G1 X-30.96 Y-29.97 Z2.1 F1920.0
+G1 X-30.16 Y-29.86 Z2.1 F1920.0
+G1 X-29.37 Y-29.97 Z2.1 F1920.0
+G1 X-28.62 Y-30.28 Z2.1 F1920.0
+G1 X-27.99 Y-30.77 Z2.1 F1920.0
+G1 X-27.5 Y-31.4 Z2.1 F1920.0
+G1 X-27.19 Y-32.14 Z2.1 F1920.0
+G1 X-27.09 Y-32.94 Z2.1 F1920.0
+G1 X-27.19 Y-33.74 Z2.1 F1920.0
+G1 X-27.5 Y-34.48 Z2.1 F1920.0
+G1 X-27.99 Y-35.12 Z2.1 F1920.0
+G1 X-28.62 Y-35.6 Z2.1 F1920.0
+G1 X-29.37 Y-35.91 Z2.1 F1920.0
+G1 X-30.16 Y-36.02 Z2.1 F1920.0
+G1 X-30.96 Y-35.91 Z2.1 F1920.0
+G1 X-31.7 Y-35.6 Z2.1 F1920.0
+G1 X-32.34 Y-35.12 Z2.1 F1920.0
+G1 X-32.83 Y-34.48 Z2.1 F1920.0
+G1 X-32.87 Y-34.36 Z2.1 F1920.0
+G1 X-33.45 Y-34.62 Z2.1 F1920.0
+G1 X-33.45 Y-36.62 Z2.1 F1920.0
+G1 X33.45 Y-36.62 Z2.1 F1920.0
+G1 X33.45 Y-34.62 Z2.1 F1920.0
+G1 X32.87 Y-34.37 Z2.1 F1920.0
+G1 X32.83 Y-34.48 Z2.1 F1920.0
+G1 X32.34 Y-35.12 Z2.1 F1920.0
+G1 X31.7 Y-35.61 Z2.1 F1920.0
+G1 X30.96 Y-35.92 Z2.1 F1920.0
+G1 X30.16 Y-36.02 Z2.1 F1920.0
+G1 X29.37 Y-35.92 Z2.1 F1920.0
+G1 X28.62 Y-35.61 Z2.1 F1920.0
+G1 X27.98 Y-35.12 Z2.1 F1920.0
+G1 X27.5 Y-34.48 Z2.1 F1920.0
+G1 X27.19 Y-33.74 Z2.1 F1920.0
+G1 X27.08 Y-32.94 Z2.1 F1920.0
+G1 X27.19 Y-32.14 Z2.1 F1920.0
+G1 X27.5 Y-31.4 Z2.1 F1920.0
+G1 X27.98 Y-30.76 Z2.1 F1920.0
+G1 X28.62 Y-30.27 Z2.1 F1920.0
+G1 X29.37 Y-29.97 Z2.1 F1920.0
+G1 X30.16 Y-29.86 Z2.1 F1920.0
+G1 X30.96 Y-29.97 Z2.1 F1920.0
+G1 X31.7 Y-30.27 Z2.1 F1920.0
+G1 X32.34 Y-30.76 Z2.1 F1920.0
+G1 X32.83 Y-31.4 Z2.1 F1920.0
+G1 X33.0 Y-31.8 Z2.1 F1920.0
+G1 X33.61 Y-32.16 Z2.1 F1920.0
+G1 X33.45 Y-31.25 Z2.1 F1920.0
+G1 X33.45 Y-20.15 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-28.41 Y31.19 Z2.1 F1920.0
+M101
+G1 X-28.93 Y30.8 Z2.1 F1920.0
+G1 X-29.52 Y30.55 Z2.1 F1920.0
+G1 X-30.16 Y30.47 Z2.1 F1920.0
+G1 X-30.8 Y30.55 Z2.1 F1920.0
+G1 X-31.4 Y30.8 Z2.1 F1920.0
+G1 X-31.91 Y31.19 Z2.1 F1920.0
+G1 X-32.31 Y31.7 Z2.1 F1920.0
+G1 X-32.55 Y32.3 Z2.1 F1920.0
+G1 X-32.64 Y32.94 Z2.1 F1920.0
+G1 X-32.55 Y33.58 Z2.1 F1920.0
+G1 X-32.31 Y34.18 Z2.1 F1920.0
+G1 X-31.91 Y34.69 Z2.1 F1920.0
+G1 X-31.4 Y35.08 Z2.1 F1920.0
+G1 X-30.8 Y35.33 Z2.1 F1920.0
+G1 X-30.16 Y35.42 Z2.1 F1920.0
+G1 X-29.52 Y35.33 Z2.1 F1920.0
+G1 X-28.93 Y35.08 Z2.1 F1920.0
+G1 X-28.41 Y34.69 Z2.1 F1920.0
+G1 X-28.02 Y34.18 Z2.1 F1920.0
+G1 X-27.77 Y33.58 Z2.1 F1920.0
+G1 X-27.69 Y32.94 Z2.1 F1920.0
+G1 X-27.77 Y32.3 Z2.1 F1920.0
+G1 X-28.02 Y31.7 Z2.1 F1920.0
+G1 X-28.41 Y31.19 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-19.97 Y31.07 Z2.1 F1920.0
+G1 X18.68 Y32.62 Z2.1 F1920.0
+G1 X18.72 Y32.43 Z2.1 F1920.0
+G1 X18.91 Y31.95 Z2.1 F1920.0
+G1 X19.23 Y31.53 Z2.1 F1920.0
+G1 X19.64 Y31.22 Z2.1 F1920.0
+G1 X20.12 Y31.02 Z2.1 F1920.0
+G1 X20.64 Y30.95 Z2.1 F1920.0
+G1 X27.69 Y32.94 Z2.1 F1920.0
+M101
+G1 X27.77 Y33.58 Z2.1 F1920.0
+G1 X28.02 Y34.18 Z2.1 F1920.0
+G1 X28.41 Y34.69 Z2.1 F1920.0
+G1 X28.93 Y35.08 Z2.1 F1920.0
+G1 X29.52 Y35.33 Z2.1 F1920.0
+G1 X30.16 Y35.42 Z2.1 F1920.0
+G1 X30.8 Y35.33 Z2.1 F1920.0
+G1 X31.4 Y35.08 Z2.1 F1920.0
+G1 X31.91 Y34.69 Z2.1 F1920.0
+G1 X32.31 Y34.18 Z2.1 F1920.0
+G1 X32.55 Y33.58 Z2.1 F1920.0
+G1 X32.64 Y32.94 Z2.1 F1920.0
+G1 X32.55 Y32.3 Z2.1 F1920.0
+G1 X32.31 Y31.7 Z2.1 F1920.0
+G1 X31.91 Y31.19 Z2.1 F1920.0
+G1 X31.4 Y30.8 Z2.1 F1920.0
+G1 X30.8 Y30.55 Z2.1 F1920.0
+G1 X30.16 Y30.47 Z2.1 F1920.0
+G1 X29.52 Y30.55 Z2.1 F1920.0
+G1 X28.93 Y30.8 Z2.1 F1920.0
+G1 X28.41 Y31.19 Z2.1 F1920.0
+G1 X28.02 Y31.7 Z2.1 F1920.0
+G1 X27.77 Y32.3 Z2.1 F1920.0
+G1 X27.69 Y32.94 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X30.16 Y-30.47 Z2.1 F1920.0
+M101
+G1 X30.8 Y-30.55 Z2.1 F1920.0
+G1 X31.4 Y-30.8 Z2.1 F1920.0
+G1 X31.91 Y-31.19 Z2.1 F1920.0
+G1 X32.31 Y-31.7 Z2.1 F1920.0
+G1 X32.55 Y-32.3 Z2.1 F1920.0
+G1 X32.64 Y-32.94 Z2.1 F1920.0
+G1 X32.55 Y-33.58 Z2.1 F1920.0
+G1 X32.31 Y-34.18 Z2.1 F1920.0
+G1 X31.91 Y-34.69 Z2.1 F1920.0
+G1 X31.4 Y-35.08 Z2.1 F1920.0
+G1 X30.8 Y-35.33 Z2.1 F1920.0
+G1 X30.16 Y-35.42 Z2.1 F1920.0
+G1 X29.52 Y-35.33 Z2.1 F1920.0
+G1 X28.93 Y-35.08 Z2.1 F1920.0
+G1 X28.41 Y-34.69 Z2.1 F1920.0
+G1 X28.02 Y-34.18 Z2.1 F1920.0
+G1 X27.77 Y-33.58 Z2.1 F1920.0
+G1 X27.69 Y-32.94 Z2.1 F1920.0
+G1 X27.77 Y-32.3 Z2.1 F1920.0
+G1 X28.02 Y-31.7 Z2.1 F1920.0
+G1 X28.41 Y-31.19 Z2.1 F1920.0
+G1 X28.93 Y-30.8 Z2.1 F1920.0
+G1 X29.52 Y-30.55 Z2.1 F1920.0
+G1 X30.16 Y-30.47 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-0.52 Y-30.96 Z2.1 F1920.0
+G1 X-1.03 Y-31.16 Z2.1 F1920.0
+G1 X-1.45 Y-31.49 Z2.1 F1920.0
+G1 X-1.52 Y-31.56 Z2.1 F1920.0
+G1 X-18.7 Y-32.52 Z2.1 F1920.0
+G1 X-18.72 Y-32.43 Z2.1 F1920.0
+G1 X-18.91 Y-31.95 Z2.1 F1920.0
+G1 X-19.23 Y-31.53 Z2.1 F1920.0
+G1 X-19.64 Y-31.22 Z2.1 F1920.0
+G1 X-20.12 Y-31.02 Z2.1 F1920.0
+G1 X-20.64 Y-30.95 Z2.1 F1920.0
+G1 X-27.69 Y-32.94 Z2.1 F1920.0
+M101
+G1 X-27.78 Y-33.58 Z2.1 F1920.0
+G1 X-28.02 Y-34.18 Z2.1 F1920.0
+G1 X-28.41 Y-34.69 Z2.1 F1920.0
+G1 X-28.93 Y-35.08 Z2.1 F1920.0
+G1 X-29.52 Y-35.33 Z2.1 F1920.0
+G1 X-30.16 Y-35.41 Z2.1 F1920.0
+G1 X-30.8 Y-35.33 Z2.1 F1920.0
+G1 X-31.4 Y-35.08 Z2.1 F1920.0
+G1 X-31.91 Y-34.69 Z2.1 F1920.0
+G1 X-32.3 Y-34.18 Z2.1 F1920.0
+G1 X-32.55 Y-33.58 Z2.1 F1920.0
+G1 X-32.64 Y-32.94 Z2.1 F1920.0
+G1 X-32.55 Y-32.3 Z2.1 F1920.0
+G1 X-32.3 Y-31.7 Z2.1 F1920.0
+G1 X-31.91 Y-31.19 Z2.1 F1920.0
+G1 X-31.4 Y-30.8 Z2.1 F1920.0
+G1 X-30.8 Y-30.55 Z2.1 F1920.0
+G1 X-30.16 Y-30.47 Z2.1 F1920.0
+G1 X-29.52 Y-30.55 Z2.1 F1920.0
+G1 X-28.93 Y-30.8 Z2.1 F1920.0
+G1 X-28.41 Y-31.19 Z2.1 F1920.0
+G1 X-28.02 Y-31.7 Z2.1 F1920.0
+G1 X-27.78 Y-32.3 Z2.1 F1920.0
+G1 X-27.69 Y-32.94 Z2.1 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-27.69 Y-37.22 Z2.1 F1920.0
+M101
+G1 X34.05 Y-37.22 Z2.1 F1920.0
+G1 X34.05 Y37.22 Z2.1 F1920.0
+G1 X-34.05 Y37.22 Z2.1 F1920.0
+G1 X-34.05 Y-37.22 Z2.1 F1920.0
+G1 X-27.69 Y-37.22 Z2.1 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-27.69 Y-37.81 Z2.1 F1920.0
+M101
+G1 X34.64 Y-37.81 Z2.1 F1920.0
+G1 X34.64 Y37.81 Z2.1 F1920.0
+G1 X-34.64 Y37.81 Z2.1 F1920.0
+G1 X-34.64 Y-37.81 Z2.1 F1920.0
+G1 X-27.69 Y-37.81 Z2.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-29.042 Y-34.061 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-34.313 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-34.472 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-34.526 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-34.472 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-34.313 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-34.061 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-33.733 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-33.351 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.747 Y-32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-32.148 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-31.82 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-31.568 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-31.41 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-31.356 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-31.41 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-31.568 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-29.042 Y-31.82 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-32.148 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-28.578 Y-32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-33.351 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-33.733 Z2.1 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-29.22 Y-34.57 Z2.1 F1920.0
+M101
+G1 X-29.68 Y-34.76 Z2.1 F1920.0
+G1 X-30.16 Y-34.82 Z2.1 F1920.0
+G1 X-30.65 Y-34.75 Z2.1 F1920.0
+G1 X-31.1 Y-34.57 Z2.1 F1920.0
+G1 X-31.49 Y-34.27 Z2.1 F1920.0
+G1 X-31.79 Y-33.88 Z2.1 F1920.0
+G1 X-31.98 Y-33.43 Z2.1 F1920.0
+G1 X-32.04 Y-32.94 Z2.1 F1920.0
+G1 X-31.98 Y-32.45 Z2.1 F1920.0
+G1 X-31.79 Y-32.0 Z2.1 F1920.0
+G1 X-31.49 Y-31.61 Z2.1 F1920.0
+G1 X-31.1 Y-31.32 Z2.1 F1920.0
+G1 X-30.65 Y-31.13 Z2.1 F1920.0
+G1 X-30.16 Y-31.06 Z2.1 F1920.0
+G1 X-29.68 Y-31.13 Z2.1 F1920.0
+G1 X-29.22 Y-31.32 Z2.1 F1920.0
+G1 X-28.84 Y-31.61 Z2.1 F1920.0
+G1 X-28.54 Y-32.0 Z2.1 F1920.0
+G1 X-28.35 Y-32.45 Z2.1 F1920.0
+G1 X-28.29 Y-32.94 Z2.1 F1920.0
+G1 X-28.35 Y-33.43 Z2.1 F1920.0
+G1 X-28.54 Y-33.88 Z2.1 F1920.0
+G1 X-28.84 Y-34.27 Z2.1 F1920.0
+G1 X-29.22 Y-34.57 Z2.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-19.05 Y-32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-34.528 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y-32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-32.147 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-31.353 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-32.147 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-32.53 Z2.1 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.45 Y-33.43 Z2.1 F1920.0
+M101
+G1 X-22.52 Y-32.94 Z2.1 F1920.0
+G1 X-22.45 Y-32.45 Z2.1 F1920.0
+G1 X-22.27 Y-32.0 Z2.1 F1920.0
+G1 X-21.97 Y-31.61 Z2.1 F1920.0
+G1 X-21.58 Y-31.31 Z2.1 F1920.0
+G1 X-21.12 Y-31.12 Z2.1 F1920.0
+G1 X-20.64 Y-31.06 Z2.1 F1920.0
+G1 X-20.15 Y-31.12 Z2.1 F1920.0
+G1 X-19.7 Y-31.31 Z2.1 F1920.0
+G1 X-19.31 Y-31.61 Z2.1 F1920.0
+G1 X-19.01 Y-32.0 Z2.1 F1920.0
+G1 X-18.82 Y-32.45 Z2.1 F1920.0
+G1 X-18.76 Y-32.94 Z2.1 F1920.0
+G1 X-18.82 Y-33.43 Z2.1 F1920.0
+G1 X-19.01 Y-33.88 Z2.1 F1920.0
+G1 X-19.31 Y-34.27 Z2.1 F1920.0
+G1 X-19.7 Y-34.57 Z2.1 F1920.0
+G1 X-20.15 Y-34.76 Z2.1 F1920.0
+G1 X-20.64 Y-34.82 Z2.1 F1920.0
+G1 X-21.12 Y-34.76 Z2.1 F1920.0
+G1 X-21.58 Y-34.57 Z2.1 F1920.0
+G1 X-21.97 Y-34.27 Z2.1 F1920.0
+G1 X-22.27 Y-33.88 Z2.1 F1920.0
+G1 X-22.45 Y-33.43 Z2.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X1.167 Y-31.773 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-32.115 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-32.513 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.651 Y-32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-33.368 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-33.766 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.167 Y-34.108 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X0.826 Y-34.37 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-34.535 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-34.592 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-34.535 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-34.37 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-34.108 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-33.766 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-33.368 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.651 Y-32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-32.513 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-32.115 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-31.773 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-31.511 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-31.346 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-31.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-31.346 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X0.826 Y-31.511 Z2.1 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.05 Y-34.35 Z2.1 F1920.0
+G1 X-21.63 Y-34.66 Z2.1 F1920.0
+G1 X-21.15 Y-34.86 Z2.1 F1920.0
+G1 X-1.94 Y-32.94 Z2.1 F1920.0
+M101
+G1 X-1.88 Y-32.44 Z2.1 F1920.0
+G1 X-1.68 Y-31.97 Z2.1 F1920.0
+G1 X-1.37 Y-31.57 Z2.1 F1920.0
+G1 X-0.97 Y-31.26 Z2.1 F1920.0
+G1 X-0.5 Y-31.06 Z2.1 F1920.0
+G1 X0.0 Y-31.02 Z2.1 F1920.0
+G1 X0.5 Y-31.06 Z2.1 F1920.0
+G1 X0.97 Y-31.26 Z2.1 F1920.0
+G1 X1.37 Y-31.57 Z2.1 F1920.0
+G1 X1.68 Y-31.97 Z2.1 F1920.0
+G1 X1.88 Y-32.44 Z2.1 F1920.0
+G1 X1.94 Y-32.94 Z2.1 F1920.0
+G1 X1.88 Y-33.44 Z2.1 F1920.0
+G1 X1.68 Y-33.91 Z2.1 F1920.0
+G1 X1.37 Y-34.32 Z2.1 F1920.0
+G1 X0.97 Y-34.62 Z2.1 F1920.0
+G1 X0.5 Y-34.82 Z2.1 F1920.0
+G1 X0.0 Y-34.89 Z2.1 F1920.0
+G1 X-0.5 Y-34.82 Z2.1 F1920.0
+G1 X-0.97 Y-34.62 Z2.1 F1920.0
+G1 X-1.37 Y-34.32 Z2.1 F1920.0
+G1 X-1.68 Y-33.91 Z2.1 F1920.0
+G1 X-1.88 Y-33.44 Z2.1 F1920.0
+G1 X-1.94 Y-32.94 Z2.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-0.794 Y-18.44 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-18.188 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-17.859 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-17.477 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.587 Y-17.066 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-16.655 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-16.272 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-15.943 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-0.794 Y-15.691 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-15.532 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-15.478 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-15.532 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-15.691 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-15.943 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-16.272 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-16.655 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.588 Y-17.066 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-17.477 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-17.859 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-18.188 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-18.44 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-18.599 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-18.653 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-18.599 Z2.1 </boundaryPoint>)
+(<perimeter> inner )
+G1 X0.0 Y-18.95 Z2.1 F1920.0
+M101
+G1 X-0.49 Y-18.88 Z2.1 F1920.0
+G1 X-0.94 Y-18.69 Z2.1 F1920.0
+G1 X-1.33 Y-18.4 Z2.1 F1920.0
+G1 X-1.63 Y-18.01 Z2.1 F1920.0
+G1 X-1.82 Y-17.55 Z2.1 F1920.0
+G1 X-1.88 Y-17.07 Z2.1 F1920.0
+G1 X-1.82 Y-16.58 Z2.1 F1920.0
+G1 X-1.63 Y-16.13 Z2.1 F1920.0
+G1 X-1.33 Y-15.74 Z2.1 F1920.0
+G1 X-0.94 Y-15.44 Z2.1 F1920.0
+G1 X-0.49 Y-15.25 Z2.1 F1920.0
+G1 X0.0 Y-15.19 Z2.1 F1920.0
+G1 X0.49 Y-15.25 Z2.1 F1920.0
+G1 X0.94 Y-15.44 Z2.1 F1920.0
+G1 X1.33 Y-15.74 Z2.1 F1920.0
+G1 X1.63 Y-16.13 Z2.1 F1920.0
+G1 X1.82 Y-16.58 Z2.1 F1920.0
+G1 X1.88 Y-17.07 Z2.1 F1920.0
+G1 X1.82 Y-17.55 Z2.1 F1920.0
+G1 X1.63 Y-18.01 Z2.1 F1920.0
+G1 X1.33 Y-18.4 Z2.1 F1920.0
+G1 X0.94 Y-18.69 Z2.1 F1920.0
+G1 X0.49 Y-18.88 Z2.1 F1920.0
+G1 X0.0 Y-18.95 Z2.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y-18.44 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-18.188 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-17.859 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-17.477 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-17.066 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-16.655 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-16.272 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-15.943 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-15.691 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-15.532 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-15.478 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-15.532 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-15.691 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-15.943 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-16.272 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-16.655 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-17.066 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-17.477 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-17.859 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-18.188 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-18.44 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-18.599 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-18.653 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-18.599 Z2.1 </boundaryPoint>)
+(<perimeter> inner )
+G1 X18.76 Y-17.07 Z2.1 F1920.0
+M101
+G1 X18.82 Y-16.58 Z2.1 F1920.0
+G1 X19.01 Y-16.13 Z2.1 F1920.0
+G1 X19.31 Y-15.74 Z2.1 F1920.0
+G1 X19.7 Y-15.44 Z2.1 F1920.0
+G1 X20.15 Y-15.25 Z2.1 F1920.0
+G1 X20.64 Y-15.19 Z2.1 F1920.0
+G1 X21.12 Y-15.25 Z2.1 F1920.0
+G1 X21.58 Y-15.44 Z2.1 F1920.0
+G1 X21.97 Y-15.74 Z2.1 F1920.0
+G1 X22.27 Y-16.13 Z2.1 F1920.0
+G1 X22.45 Y-16.58 Z2.1 F1920.0
+G1 X22.52 Y-17.07 Z2.1 F1920.0
+G1 X22.45 Y-17.55 Z2.1 F1920.0
+G1 X22.27 Y-18.01 Z2.1 F1920.0
+G1 X21.97 Y-18.4 Z2.1 F1920.0
+G1 X21.58 Y-18.69 Z2.1 F1920.0
+G1 X21.12 Y-18.88 Z2.1 F1920.0
+G1 X20.64 Y-18.95 Z2.1 F1920.0
+G1 X20.15 Y-18.88 Z2.1 F1920.0
+G1 X19.7 Y-18.69 Z2.1 F1920.0
+G1 X19.31 Y-18.4 Z2.1 F1920.0
+G1 X19.01 Y-18.01 Z2.1 F1920.0
+G1 X18.82 Y-17.55 Z2.1 F1920.0
+G1 X18.76 Y-17.07 Z2.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X21.048 Y-31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-32.147 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-34.528 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-32.147 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-31.353 Z2.1 </boundaryPoint>)
+(<perimeter> inner )
+G1 X20.64 Y-31.06 Z2.1 F1920.0
+M101
+G1 X21.12 Y-31.12 Z2.1 F1920.0
+G1 X21.58 Y-31.31 Z2.1 F1920.0
+G1 X21.97 Y-31.61 Z2.1 F1920.0
+G1 X22.27 Y-32.0 Z2.1 F1920.0
+G1 X22.45 Y-32.45 Z2.1 F1920.0
+G1 X22.52 Y-32.94 Z2.1 F1920.0
+G1 X22.45 Y-33.43 Z2.1 F1920.0
+G1 X22.27 Y-33.88 Z2.1 F1920.0
+G1 X21.97 Y-34.27 Z2.1 F1920.0
+G1 X21.58 Y-34.57 Z2.1 F1920.0
+G1 X21.12 Y-34.76 Z2.1 F1920.0
+G1 X20.64 Y-34.82 Z2.1 F1920.0
+G1 X20.15 Y-34.76 Z2.1 F1920.0
+G1 X19.7 Y-34.57 Z2.1 F1920.0
+G1 X19.31 Y-34.27 Z2.1 F1920.0
+G1 X19.01 Y-33.88 Z2.1 F1920.0
+G1 X18.82 Y-33.43 Z2.1 F1920.0
+G1 X18.76 Y-32.94 Z2.1 F1920.0
+G1 X18.82 Y-32.45 Z2.1 F1920.0
+G1 X19.01 Y-32.0 Z2.1 F1920.0
+G1 X19.31 Y-31.61 Z2.1 F1920.0
+G1 X19.7 Y-31.31 Z2.1 F1920.0
+G1 X20.15 Y-31.12 Z2.1 F1920.0
+G1 X20.64 Y-31.06 Z2.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X29.04 Y-31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-31.353 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-32.147 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y-32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-34.528 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y-34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-32.147 Z2.1 </boundaryPoint>)
+(<perimeter> inner )
+G1 X28.35 Y-32.45 Z2.1 F1920.0
+M101
+G1 X28.54 Y-32.0 Z2.1 F1920.0
+G1 X28.83 Y-31.61 Z2.1 F1920.0
+G1 X29.22 Y-31.31 Z2.1 F1920.0
+G1 X29.68 Y-31.12 Z2.1 F1920.0
+G1 X30.16 Y-31.06 Z2.1 F1920.0
+G1 X30.65 Y-31.12 Z2.1 F1920.0
+G1 X31.1 Y-31.31 Z2.1 F1920.0
+G1 X31.49 Y-31.61 Z2.1 F1920.0
+G1 X31.79 Y-32.0 Z2.1 F1920.0
+G1 X31.98 Y-32.45 Z2.1 F1920.0
+G1 X32.04 Y-32.94 Z2.1 F1920.0
+G1 X31.98 Y-33.43 Z2.1 F1920.0
+G1 X31.79 Y-33.88 Z2.1 F1920.0
+G1 X31.49 Y-34.27 Z2.1 F1920.0
+G1 X31.1 Y-34.57 Z2.1 F1920.0
+G1 X30.65 Y-34.76 Z2.1 F1920.0
+G1 X30.16 Y-34.82 Z2.1 F1920.0
+G1 X29.68 Y-34.76 Z2.1 F1920.0
+G1 X29.22 Y-34.57 Z2.1 F1920.0
+G1 X28.83 Y-34.27 Z2.1 F1920.0
+G1 X28.54 Y-33.88 Z2.1 F1920.0
+G1 X28.35 Y-33.43 Z2.1 F1920.0
+G1 X28.28 Y-32.94 Z2.1 F1920.0
+G1 X28.35 Y-32.45 Z2.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X31.285 Y31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y31.353 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y32.147 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y34.528 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y32.147 Z2.1 </boundaryPoint>)
+(<perimeter> inner )
+G1 X30.16 Y31.06 Z2.1 F1920.0
+M101
+G1 X29.68 Y31.12 Z2.1 F1920.0
+G1 X29.22 Y31.31 Z2.1 F1920.0
+G1 X28.83 Y31.61 Z2.1 F1920.0
+G1 X28.54 Y32.0 Z2.1 F1920.0
+G1 X28.35 Y32.45 Z2.1 F1920.0
+G1 X28.28 Y32.94 Z2.1 F1920.0
+G1 X28.35 Y33.43 Z2.1 F1920.0
+G1 X28.54 Y33.88 Z2.1 F1920.0
+G1 X28.83 Y34.27 Z2.1 F1920.0
+G1 X29.22 Y34.57 Z2.1 F1920.0
+G1 X29.68 Y34.76 Z2.1 F1920.0
+G1 X30.16 Y34.82 Z2.1 F1920.0
+G1 X30.65 Y34.76 Z2.1 F1920.0
+G1 X31.1 Y34.57 Z2.1 F1920.0
+G1 X31.49 Y34.27 Z2.1 F1920.0
+G1 X31.79 Y33.88 Z2.1 F1920.0
+G1 X31.98 Y33.43 Z2.1 F1920.0
+G1 X32.04 Y32.94 Z2.1 F1920.0
+G1 X31.98 Y32.45 Z2.1 F1920.0
+G1 X31.79 Y32.0 Z2.1 F1920.0
+G1 X31.49 Y31.61 Z2.1 F1920.0
+G1 X31.1 Y31.31 Z2.1 F1920.0
+G1 X30.65 Y31.12 Z2.1 F1920.0
+G1 X30.16 Y31.06 Z2.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y34.528 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y32.147 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y31.353 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y32.147 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y34.063 Z2.1 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.45 Y32.45 Z2.1 F1920.0
+M101
+G1 X22.27 Y32.0 Z2.1 F1920.0
+G1 X21.97 Y31.61 Z2.1 F1920.0
+G1 X21.58 Y31.31 Z2.1 F1920.0
+G1 X21.12 Y31.12 Z2.1 F1920.0
+G1 X20.64 Y31.06 Z2.1 F1920.0
+G1 X20.15 Y31.12 Z2.1 F1920.0
+G1 X19.7 Y31.31 Z2.1 F1920.0
+G1 X19.31 Y31.61 Z2.1 F1920.0
+G1 X19.01 Y32.0 Z2.1 F1920.0
+G1 X18.82 Y32.45 Z2.1 F1920.0
+G1 X18.76 Y32.94 Z2.1 F1920.0
+G1 X18.82 Y33.43 Z2.1 F1920.0
+G1 X19.01 Y33.88 Z2.1 F1920.0
+G1 X19.31 Y34.27 Z2.1 F1920.0
+G1 X19.7 Y34.57 Z2.1 F1920.0
+G1 X20.15 Y34.76 Z2.1 F1920.0
+G1 X20.64 Y34.82 Z2.1 F1920.0
+G1 X21.12 Y34.76 Z2.1 F1920.0
+G1 X21.58 Y34.57 Z2.1 F1920.0
+G1 X21.97 Y34.27 Z2.1 F1920.0
+G1 X22.27 Y33.88 Z2.1 F1920.0
+G1 X22.45 Y33.43 Z2.1 F1920.0
+G1 X22.52 Y32.94 Z2.1 F1920.0
+G1 X22.45 Y32.45 Z2.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-22.171 Y32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y34.528 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.05 Y32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y32.147 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y31.353 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y32.147 Z2.1 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.05 Y31.53 Z2.1 F1920.0
+G1 X21.63 Y31.22 Z2.1 F1920.0
+G1 X21.15 Y31.02 Z2.1 F1920.0
+G1 X-18.76 Y32.94 Z2.1 F1920.0
+M101
+G1 X-18.82 Y32.45 Z2.1 F1920.0
+G1 X-19.01 Y32.0 Z2.1 F1920.0
+G1 X-19.31 Y31.61 Z2.1 F1920.0
+G1 X-19.7 Y31.31 Z2.1 F1920.0
+G1 X-20.15 Y31.12 Z2.1 F1920.0
+G1 X-20.64 Y31.06 Z2.1 F1920.0
+G1 X-21.12 Y31.12 Z2.1 F1920.0
+G1 X-21.58 Y31.31 Z2.1 F1920.0
+G1 X-21.97 Y31.61 Z2.1 F1920.0
+G1 X-22.27 Y32.0 Z2.1 F1920.0
+G1 X-22.45 Y32.45 Z2.1 F1920.0
+G1 X-22.52 Y32.94 Z2.1 F1920.0
+G1 X-22.45 Y33.43 Z2.1 F1920.0
+G1 X-22.27 Y33.88 Z2.1 F1920.0
+G1 X-21.97 Y34.27 Z2.1 F1920.0
+G1 X-21.58 Y34.57 Z2.1 F1920.0
+G1 X-21.12 Y34.76 Z2.1 F1920.0
+G1 X-20.64 Y34.82 Z2.1 F1920.0
+G1 X-20.15 Y34.76 Z2.1 F1920.0
+G1 X-19.7 Y34.57 Z2.1 F1920.0
+G1 X-19.31 Y34.27 Z2.1 F1920.0
+G1 X-19.01 Y33.88 Z2.1 F1920.0
+G1 X-18.82 Y33.43 Z2.1 F1920.0
+G1 X-18.76 Y32.94 Z2.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-28.788 Y32.147 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y31.353 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y31.407 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y31.566 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y31.818 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y32.147 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y32.53 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.75 Y32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y34.528 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y34.474 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y34.315 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y34.063 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-28.788 Y33.734 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y33.352 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y32.941 Z2.1 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y32.53 Z2.1 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-18.91 Y33.94 Z2.1 F1920.0
+G1 X-19.23 Y34.35 Z2.1 F1920.0
+G1 X-19.64 Y34.66 Z2.1 F1920.0
+G1 X-20.12 Y34.86 Z2.1 F1920.0
+G1 X-20.64 Y34.93 Z2.1 F1920.0
+G1 X-28.28 Y32.94 Z2.1 F1920.0
+M101
+G1 X-28.35 Y32.45 Z2.1 F1920.0
+G1 X-28.54 Y32.0 Z2.1 F1920.0
+G1 X-28.83 Y31.61 Z2.1 F1920.0
+G1 X-29.22 Y31.31 Z2.1 F1920.0
+G1 X-29.68 Y31.12 Z2.1 F1920.0
+G1 X-30.16 Y31.06 Z2.1 F1920.0
+G1 X-30.65 Y31.12 Z2.1 F1920.0
+G1 X-31.1 Y31.31 Z2.1 F1920.0
+G1 X-31.49 Y31.61 Z2.1 F1920.0
+G1 X-31.79 Y32.0 Z2.1 F1920.0
+G1 X-31.98 Y32.45 Z2.1 F1920.0
+G1 X-32.04 Y32.94 Z2.1 F1920.0
+G1 X-31.98 Y33.43 Z2.1 F1920.0
+G1 X-31.79 Y33.88 Z2.1 F1920.0
+G1 X-31.49 Y34.27 Z2.1 F1920.0
+G1 X-31.1 Y34.57 Z2.1 F1920.0
+G1 X-30.65 Y34.76 Z2.1 F1920.0
+G1 X-30.16 Y34.82 Z2.1 F1920.0
+G1 X-29.68 Y34.76 Z2.1 F1920.0
+G1 X-29.22 Y34.57 Z2.1 F1920.0
+G1 X-28.83 Y34.27 Z2.1 F1920.0
+G1 X-28.54 Y33.88 Z2.1 F1920.0
+G1 X-28.35 Y33.43 Z2.1 F1920.0
+G1 X-28.28 Y32.94 Z2.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+G1 X-27.33 Y34.91 Z2.1 F1920.0
+M101
+G1 X-26.67 Y36.23 Z2.1 F1920.0
+G1 X-27.33 Y36.23 Z2.1 F1920.0
+G1 X-28.0 Y35.62 Z2.1 F1920.0
+G1 X-28.0 Y36.23 Z2.1 F1920.0
+G1 X-28.67 Y36.23 Z2.1 F1920.0
+G1 X-28.67 Y36.05 Z2.1 F1920.0
+M103
+G1 X-31.33 Y36.18 Z2.1 F1920.0
+M101
+G1 X-31.33 Y36.23 Z2.1 F1920.0
+G1 X-32.0 Y36.23 Z2.1 F1920.0
+G1 X-32.0 Y35.87 Z2.1 F1920.0
+G1 X-32.67 Y36.23 Z2.1 F1920.0
+G1 X-32.67 Y35.33 Z2.1 F1920.0
+M103
+G1 X-27.33 Y-30.98 Z2.1 F1920.0
+M101
+G1 X-28.0 Y-30.26 Z2.1 F1920.0
+G1 X-28.67 Y-29.84 Z2.1 F1920.0
+G1 X-29.33 Y-29.58 Z2.1 F1920.0
+G1 X-30.0 Y-29.49 Z2.1 F1920.0
+G1 X-28.18 Y-27.56 Z2.1 F1920.0
+G1 X-28.18 Y-24.0 Z2.1 F1920.0
+G1 X-30.49 Y-22.22 Z2.1 F1920.0
+G1 X-30.49 Y-18.67 Z2.1 F1920.0
+G1 X-28.18 Y-16.89 Z2.1 F1920.0
+G1 X-28.18 Y-13.33 Z2.1 F1920.0
+G1 X-30.49 Y-11.56 Z2.1 F1920.0
+G1 X-30.49 Y-8.0 Z2.1 F1920.0
+G1 X-28.18 Y-6.22 Z2.1 F1920.0
+G1 X-28.18 Y-2.67 Z2.1 F1920.0
+G1 X-30.49 Y-0.89 Z2.1 F1920.0
+G1 X-30.49 Y2.67 Z2.1 F1920.0
+G1 X-28.18 Y4.44 Z2.1 F1920.0
+G1 X-28.18 Y8.0 Z2.1 F1920.0
+G1 X-30.49 Y9.78 Z2.1 F1920.0
+G1 X-30.49 Y13.33 Z2.1 F1920.0
+G1 X-28.18 Y15.11 Z2.1 F1920.0
+G1 X-28.18 Y18.67 Z2.1 F1920.0
+G1 X-30.49 Y20.44 Z2.1 F1920.0
+G1 X-30.49 Y24.0 Z2.1 F1920.0
+G1 X-28.18 Y25.78 Z2.1 F1920.0
+G1 X-28.0 Y29.33 Z2.1 F1920.0
+G1 X-26.85 Y30.52 Z2.1 F1920.0
+G1 X-28.0 Y30.26 Z2.1 F1920.0
+G1 X-28.67 Y29.83 Z2.1 F1920.0
+G1 X-29.33 Y29.58 Z2.1 F1920.0
+G1 X-30.0 Y29.49 Z2.1 F1920.0
+M103
+G1 X-23.33 Y30.8 Z2.1 F1920.0
+M101
+G1 X-22.67 Y30.16 Z2.1 F1920.0
+G1 X-22.0 Y29.78 Z2.1 F1920.0
+G1 X-22.84 Y25.78 Z2.1 F1920.0
+G1 X-25.16 Y24.0 Z2.1 F1920.0
+G1 X-25.16 Y20.44 Z2.1 F1920.0
+G1 X-22.84 Y18.67 Z2.1 F1920.0
+G1 X-22.84 Y15.11 Z2.1 F1920.0
+G1 X-25.16 Y13.33 Z2.1 F1920.0
+G1 X-25.16 Y9.78 Z2.1 F1920.0
+G1 X-22.84 Y8.0 Z2.1 F1920.0
+G1 X-22.84 Y4.44 Z2.1 F1920.0
+G1 X-25.16 Y2.67 Z2.1 F1920.0
+G1 X-25.16 Y-0.89 Z2.1 F1920.0
+G1 X-22.84 Y-2.67 Z2.1 F1920.0
+G1 X-22.84 Y-6.22 Z2.1 F1920.0
+G1 X-25.16 Y-8.0 Z2.1 F1920.0
+G1 X-25.16 Y-11.56 Z2.1 F1920.0
+G1 X-22.84 Y-13.33 Z2.1 F1920.0
+G1 X-22.84 Y-16.89 Z2.1 F1920.0
+G1 X-25.16 Y-18.67 Z2.1 F1920.0
+G1 X-25.16 Y-22.22 Z2.1 F1920.0
+G1 X-22.84 Y-24.0 Z2.1 F1920.0
+G1 X-22.84 Y-27.56 Z2.1 F1920.0
+G1 X-25.16 Y-29.33 Z2.1 F1920.0
+G1 X-24.59 Y-31.79 Z2.1 F1920.0
+G1 X-22.67 Y-30.16 Z2.1 F1920.0
+G1 X-22.0 Y-29.78 Z2.1 F1920.0
+M103
+G1 X-20.67 Y-29.47 Z2.1 F1920.0
+M101
+G1 X-20.0 Y-29.33 Z2.1 F1920.0
+G1 X-21.44 Y-28.9 Z2.1 F1920.0
+G1 X-22.49 Y-27.56 Z2.1 F1920.0
+G1 X-22.49 Y-24.0 Z2.1 F1920.0
+G1 X-20.18 Y-22.22 Z2.1 F1920.0
+G1 X-20.18 Y-18.67 Z2.1 F1920.0
+G1 X-22.49 Y-16.89 Z2.1 F1920.0
+G1 X-22.49 Y-13.33 Z2.1 F1920.0
+G1 X-20.18 Y-11.56 Z2.1 F1920.0
+G1 X-20.18 Y-8.0 Z2.1 F1920.0
+G1 X-22.49 Y-6.22 Z2.1 F1920.0
+G1 X-22.49 Y-2.67 Z2.1 F1920.0
+G1 X-20.18 Y-0.89 Z2.1 F1920.0
+G1 X-20.18 Y2.67 Z2.1 F1920.0
+G1 X-22.49 Y4.44 Z2.1 F1920.0
+G1 X-22.49 Y8.0 Z2.1 F1920.0
+G1 X-20.18 Y9.78 Z2.1 F1920.0
+G1 X-20.18 Y13.33 Z2.1 F1920.0
+G1 X-22.49 Y15.11 Z2.1 F1920.0
+G1 X-22.49 Y18.67 Z2.1 F1920.0
+G1 X-20.18 Y20.44 Z2.1 F1920.0
+G1 X-20.18 Y24.0 Z2.1 F1920.0
+G1 X-22.49 Y25.78 Z2.1 F1920.0
+G1 X-21.33 Y29.56 Z2.1 F1920.0
+G1 X-20.67 Y29.47 Z2.1 F1920.0
+G1 X-20.0 Y29.55 Z2.1 F1920.0
+M103
+G1 X-18.0 Y30.72 Z2.1 F1920.0
+M101
+G1 X-18.22 Y29.62 Z2.1 F1920.0
+G1 X-17.51 Y29.33 Z2.1 F1920.0
+G1 X-17.51 Y25.78 Z2.1 F1920.0
+G1 X-19.83 Y24.0 Z2.1 F1920.0
+G1 X-19.83 Y20.44 Z2.1 F1920.0
+G1 X-17.51 Y18.67 Z2.1 F1920.0
+G1 X-17.51 Y15.11 Z2.1 F1920.0
+G1 X-19.83 Y13.33 Z2.1 F1920.0
+G1 X-19.83 Y9.78 Z2.1 F1920.0
+G1 X-17.51 Y8.0 Z2.1 F1920.0
+G1 X-17.51 Y4.44 Z2.1 F1920.0
+G1 X-19.83 Y2.67 Z2.1 F1920.0
+G1 X-19.83 Y-0.89 Z2.1 F1920.0
+G1 X-17.51 Y-2.67 Z2.1 F1920.0
+G1 X-17.51 Y-6.22 Z2.1 F1920.0
+G1 X-19.83 Y-8.0 Z2.1 F1920.0
+G1 X-19.83 Y-11.56 Z2.1 F1920.0
+G1 X-17.51 Y-13.33 Z2.1 F1920.0
+G1 X-17.51 Y-16.89 Z2.1 F1920.0
+G1 X-19.83 Y-18.67 Z2.1 F1920.0
+G1 X-19.83 Y-22.22 Z2.1 F1920.0
+G1 X-17.51 Y-24.0 Z2.1 F1920.0
+G1 X-17.51 Y-27.56 Z2.1 F1920.0
+G1 X-18.22 Y-29.62 Z2.1 F1920.0
+G1 X-18.0 Y-30.72 Z2.1 F1920.0
+M103
+G1 X-18.0 Y-35.16 Z2.1 F1920.0
+M101
+G1 X-16.67 Y-36.23 Z2.1 F1920.0
+G1 X-18.67 Y-36.23 Z2.1 F1920.0
+G1 X-18.67 Y-35.77 Z2.1 F1920.0
+G1 X-19.33 Y-36.13 Z2.1 F1920.0
+G1 X-19.33 Y-36.23 Z2.1 F1920.0
+M103
+G1 X-22.0 Y-36.23 Z2.1 F1920.0
+M101
+G1 X-22.0 Y-36.1 Z2.1 F1920.0
+G1 X-22.67 Y-36.23 Z2.1 F1920.0
+G1 X-22.67 Y-35.72 Z2.1 F1920.0
+G1 X-23.33 Y-36.23 Z2.1 F1920.0
+G1 X-24.0 Y-36.23 Z2.1 F1920.0
+G1 X-23.33 Y-35.08 Z2.1 F1920.0
+M103
+G1 X-22.56 Y33.46 Z2.1 F1920.0
+G1 X-22.0 Y36.1 Z2.1 F1920.0
+M101
+G1 X-22.0 Y36.23 Z2.1 F1920.0
+G1 X-22.67 Y36.23 Z2.1 F1920.0
+G1 X-22.67 Y35.72 Z2.1 F1920.0
+G1 X-23.33 Y36.23 Z2.1 F1920.0
+G1 X-23.33 Y35.08 Z2.1 F1920.0
+G1 X-24.0 Y36.23 Z2.1 F1920.0
+G1 X-26.0 Y36.23 Z2.1 F1920.0
+G1 X-24.0 Y33.79 Z2.1 F1920.0
+G1 X-27.83 Y25.78 Z2.1 F1920.0
+G1 X-25.51 Y24.0 Z2.1 F1920.0
+G1 X-25.51 Y20.44 Z2.1 F1920.0
+G1 X-27.83 Y18.67 Z2.1 F1920.0
+G1 X-27.83 Y15.11 Z2.1 F1920.0
+G1 X-25.51 Y13.33 Z2.1 F1920.0
+G1 X-25.51 Y9.78 Z2.1 F1920.0
+G1 X-27.83 Y8.0 Z2.1 F1920.0
+G1 X-27.83 Y4.44 Z2.1 F1920.0
+G1 X-25.51 Y2.67 Z2.1 F1920.0
+G1 X-25.51 Y-0.89 Z2.1 F1920.0
+G1 X-27.83 Y-2.67 Z2.1 F1920.0
+G1 X-27.83 Y-6.22 Z2.1 F1920.0
+G1 X-25.51 Y-8.0 Z2.1 F1920.0
+G1 X-25.51 Y-11.56 Z2.1 F1920.0
+G1 X-27.83 Y-13.33 Z2.1 F1920.0
+G1 X-27.83 Y-16.89 Z2.1 F1920.0
+G1 X-25.51 Y-18.67 Z2.1 F1920.0
+G1 X-25.51 Y-22.22 Z2.1 F1920.0
+G1 X-27.83 Y-24.0 Z2.1 F1920.0
+G1 X-27.83 Y-27.56 Z2.1 F1920.0
+G1 X-25.51 Y-29.33 Z2.1 F1920.0
+G1 X-26.86 Y-34.43 Z2.1 F1920.0
+G1 X-24.67 Y-36.23 Z2.1 F1920.0
+G1 X-28.0 Y-36.23 Z2.1 F1920.0
+G1 X-28.0 Y-35.62 Z2.1 F1920.0
+G1 X-28.67 Y-36.23 Z2.1 F1920.0
+G1 X-28.67 Y-36.05 Z2.1 F1920.0
+M103
+G1 X-31.33 Y-36.18 Z2.1 F1920.0
+M101
+G1 X-31.33 Y-36.23 Z2.1 F1920.0
+G1 X-32.0 Y-36.23 Z2.1 F1920.0
+G1 X-32.0 Y-35.87 Z2.1 F1920.0
+G1 X-32.67 Y-36.23 Z2.1 F1920.0
+G1 X-32.67 Y-35.33 Z2.1 F1920.0
+M103
+G1 X-32.67 Y-30.55 Z2.1 F1920.0
+M101
+G1 X-32.67 Y30.55 Z2.1 F1920.0
+G1 X-32.0 Y30.01 Z2.1 F1920.0
+G1 X-31.33 Y29.7 Z2.1 F1920.0
+G1 X-30.83 Y28.89 Z2.1 F1920.0
+G1 X-30.83 Y-28.89 Z2.1 F1920.0
+G1 X-31.33 Y-29.7 Z2.1 F1920.0
+G1 X-32.0 Y-30.01 Z2.1 F1920.0
+M103
+G1 X-1.33 Y-29.7 Z2.1 F1920.0
+M101
+G1 X-2.0 Y-30.06 Z2.1 F1920.0
+G1 X-2.67 Y-30.66 Z2.1 F1920.0
+G1 X-3.91 Y-31.49 Z2.1 F1920.0
+G1 X-3.83 Y-29.33 Z2.1 F1920.0
+G1 X-1.51 Y-27.56 Z2.1 F1920.0
+G1 X-1.51 Y-24.0 Z2.1 F1920.0
+G1 X-3.83 Y-22.22 Z2.1 F1920.0
+G1 X-0.87 Y-21.09 Z2.1 F1920.0
+G1 X-1.33 Y-20.24 Z2.1 F1920.0
+G1 X-2.0 Y-19.87 Z2.1 F1920.0
+G1 X-2.67 Y-19.25 Z2.1 F1920.0
+M103
+G1 X-1.92 Y-33.64 Z2.1 F1920.0
+G1 X-1.33 Y-36.18 Z2.1 F1920.0
+M101
+G1 X-1.33 Y-36.23 Z2.1 F1920.0
+G1 X-2.0 Y-36.23 Z2.1 F1920.0
+G1 X-2.0 Y-35.83 Z2.1 F1920.0
+G1 X-2.67 Y-36.23 Z2.1 F1920.0
+G1 X-2.67 Y-35.23 Z2.1 F1920.0
+G1 X-3.91 Y-34.39 Z2.1 F1920.0
+G1 X-3.33 Y-36.23 Z2.1 F1920.0
+G1 X-4.67 Y-36.23 Z2.1 F1920.0
+G1 X-6.49 Y-34.67 Z2.1 F1920.0
+G1 X-4.18 Y-29.33 Z2.1 F1920.0
+G1 X-6.49 Y-27.56 Z2.1 F1920.0
+G1 X-6.49 Y-24.0 Z2.1 F1920.0
+G1 X-4.18 Y-22.22 Z2.1 F1920.0
+G1 X-6.49 Y-16.89 Z2.1 F1920.0
+G1 X-6.49 Y-13.33 Z2.1 F1920.0
+G1 X-4.18 Y-11.56 Z2.1 F1920.0
+G1 X-4.18 Y-8.0 Z2.1 F1920.0
+G1 X-6.49 Y-6.22 Z2.1 F1920.0
+G1 X-6.49 Y-2.67 Z2.1 F1920.0
+G1 X-4.18 Y-0.89 Z2.1 F1920.0
+G1 X-4.18 Y2.67 Z2.1 F1920.0
+G1 X-6.49 Y4.44 Z2.1 F1920.0
+G1 X-6.49 Y8.0 Z2.1 F1920.0
+G1 X-4.18 Y9.78 Z2.1 F1920.0
+G1 X-4.18 Y13.33 Z2.1 F1920.0
+G1 X-6.49 Y15.11 Z2.1 F1920.0
+G1 X-6.49 Y18.67 Z2.1 F1920.0
+G1 X-4.18 Y20.44 Z2.1 F1920.0
+G1 X-4.18 Y24.0 Z2.1 F1920.0
+G1 X-6.49 Y25.78 Z2.1 F1920.0
+G1 X-6.49 Y29.33 Z2.1 F1920.0
+G1 X-4.18 Y31.11 Z2.1 F1920.0
+G1 X-4.18 Y34.67 Z2.1 F1920.0
+G1 X-4.67 Y36.23 Z2.1 F1920.0
+G1 X0.0 Y36.23 Z2.1 F1920.0
+G1 X0.0 Y35.56 Z2.1 F1920.0
+G1 X-3.82 Y34.67 Z2.1 F1920.0
+G1 X-3.82 Y31.11 Z2.1 F1920.0
+G1 X-1.51 Y29.33 Z2.1 F1920.0
+G1 X-1.51 Y25.78 Z2.1 F1920.0
+G1 X-3.82 Y24.0 Z2.1 F1920.0
+G1 X-3.82 Y20.44 Z2.1 F1920.0
+G1 X-1.51 Y18.67 Z2.1 F1920.0
+G1 X-1.51 Y15.11 Z2.1 F1920.0
+G1 X-3.82 Y13.33 Z2.1 F1920.0
+G1 X-3.82 Y9.78 Z2.1 F1920.0
+G1 X-1.51 Y8.0 Z2.1 F1920.0
+G1 X-1.51 Y4.44 Z2.1 F1920.0
+G1 X-3.83 Y2.67 Z2.1 F1920.0
+G1 X-3.83 Y-0.89 Z2.1 F1920.0
+G1 X-1.51 Y-2.67 Z2.1 F1920.0
+G1 X-1.51 Y-6.22 Z2.1 F1920.0
+G1 X-3.83 Y-8.0 Z2.1 F1920.0
+G1 X-3.83 Y-11.56 Z2.1 F1920.0
+G1 X-1.66 Y-13.31 Z2.1 F1920.0
+G1 X-2.0 Y-14.26 Z2.1 F1920.0
+G1 X-2.67 Y-14.88 Z2.1 F1920.0
+M103
+G1 X0.0 Y-13.59 Z2.1 F1920.0
+M101
+G1 X0.67 Y-13.68 Z2.1 F1920.0
+G1 X1.53 Y-13.25 Z2.1 F1920.0
+G1 X1.16 Y-11.56 Z2.1 F1920.0
+G1 X1.16 Y-8.0 Z2.1 F1920.0
+G1 X-1.16 Y-6.22 Z2.1 F1920.0
+G1 X-1.16 Y-2.67 Z2.1 F1920.0
+G1 X1.16 Y-0.89 Z2.1 F1920.0
+G1 X1.16 Y2.67 Z2.1 F1920.0
+G1 X-1.16 Y4.44 Z2.1 F1920.0
+G1 X-1.16 Y8.0 Z2.1 F1920.0
+G1 X1.16 Y9.78 Z2.1 F1920.0
+G1 X1.16 Y13.33 Z2.1 F1920.0
+G1 X-1.16 Y15.11 Z2.1 F1920.0
+G1 X-1.16 Y18.67 Z2.1 F1920.0
+G1 X1.16 Y20.44 Z2.1 F1920.0
+G1 X1.16 Y24.0 Z2.1 F1920.0
+G1 X-1.16 Y25.78 Z2.1 F1920.0
+G1 X-1.16 Y29.33 Z2.1 F1920.0
+G1 X1.16 Y31.11 Z2.1 F1920.0
+G1 X1.16 Y34.67 Z2.1 F1920.0
+G1 X2.0 Y36.23 Z2.1 F1920.0
+G1 X0.67 Y36.23 Z2.1 F1920.0
+M103
+G1 X-5.33 Y36.23 Z2.1 F1920.0
+M101
+G1 X-8.67 Y36.23 Z2.1 F1920.0
+G1 X-9.16 Y34.67 Z2.1 F1920.0
+G1 X-9.16 Y31.11 Z2.1 F1920.0
+G1 X-6.84 Y29.33 Z2.1 F1920.0
+G1 X-6.84 Y25.78 Z2.1 F1920.0
+G1 X-9.16 Y24.0 Z2.1 F1920.0
+G1 X-9.16 Y20.44 Z2.1 F1920.0
+G1 X-6.84 Y18.67 Z2.1 F1920.0
+G1 X-6.84 Y15.11 Z2.1 F1920.0
+G1 X-9.16 Y13.33 Z2.1 F1920.0
+G1 X-9.16 Y9.78 Z2.1 F1920.0
+G1 X-6.84 Y8.0 Z2.1 F1920.0
+G1 X-6.84 Y4.44 Z2.1 F1920.0
+G1 X-9.16 Y2.67 Z2.1 F1920.0
+G1 X-9.16 Y-0.89 Z2.1 F1920.0
+G1 X-6.84 Y-2.67 Z2.1 F1920.0
+G1 X-6.84 Y-6.22 Z2.1 F1920.0
+G1 X-9.16 Y-8.0 Z2.1 F1920.0
+G1 X-9.16 Y-11.56 Z2.1 F1920.0
+G1 X-6.84 Y-13.33 Z2.1 F1920.0
+G1 X-6.84 Y-16.89 Z2.1 F1920.0
+G1 X-9.16 Y-18.67 Z2.1 F1920.0
+G1 X-9.16 Y-22.22 Z2.1 F1920.0
+G1 X-6.84 Y-24.0 Z2.1 F1920.0
+G1 X-6.84 Y-27.56 Z2.1 F1920.0
+G1 X-9.16 Y-29.33 Z2.1 F1920.0
+G1 X-9.16 Y-32.89 Z2.1 F1920.0
+G1 X-6.84 Y-34.67 Z2.1 F1920.0
+G1 X-5.33 Y-36.23 Z2.1 F1920.0
+G1 X-11.33 Y-36.23 Z2.1 F1920.0
+G1 X-11.83 Y-34.67 Z2.1 F1920.0
+G1 X-9.51 Y-32.89 Z2.1 F1920.0
+G1 X-9.51 Y-29.33 Z2.1 F1920.0
+G1 X-11.83 Y-27.56 Z2.1 F1920.0
+G1 X-11.83 Y-24.0 Z2.1 F1920.0
+G1 X-9.51 Y-22.22 Z2.1 F1920.0
+G1 X-9.51 Y-18.67 Z2.1 F1920.0
+G1 X-11.83 Y-16.89 Z2.1 F1920.0
+G1 X-11.83 Y-13.33 Z2.1 F1920.0
+G1 X-9.51 Y-11.56 Z2.1 F1920.0
+G1 X-9.51 Y-8.0 Z2.1 F1920.0
+G1 X-11.83 Y-6.22 Z2.1 F1920.0
+G1 X-11.83 Y-2.67 Z2.1 F1920.0
+G1 X-9.51 Y-0.89 Z2.1 F1920.0
+G1 X-9.51 Y2.67 Z2.1 F1920.0
+G1 X-11.83 Y4.44 Z2.1 F1920.0
+G1 X-11.83 Y8.0 Z2.1 F1920.0
+G1 X-9.51 Y9.78 Z2.1 F1920.0
+G1 X-9.51 Y13.33 Z2.1 F1920.0
+G1 X-11.83 Y15.11 Z2.1 F1920.0
+G1 X-11.83 Y18.67 Z2.1 F1920.0
+G1 X-9.51 Y20.44 Z2.1 F1920.0
+G1 X-9.51 Y24.0 Z2.1 F1920.0
+G1 X-11.83 Y25.78 Z2.1 F1920.0
+G1 X-11.83 Y29.33 Z2.1 F1920.0
+G1 X-9.51 Y31.11 Z2.1 F1920.0
+G1 X-9.51 Y34.67 Z2.1 F1920.0
+G1 X-9.33 Y36.23 Z2.1 F1920.0
+G1 X-14.0 Y36.23 Z2.1 F1920.0
+G1 X-14.49 Y34.67 Z2.1 F1920.0
+G1 X-14.49 Y31.11 Z2.1 F1920.0
+G1 X-12.18 Y29.33 Z2.1 F1920.0
+G1 X-12.18 Y25.78 Z2.1 F1920.0
+G1 X-14.49 Y24.0 Z2.1 F1920.0
+G1 X-14.49 Y20.44 Z2.1 F1920.0
+G1 X-12.18 Y18.67 Z2.1 F1920.0
+G1 X-12.18 Y15.11 Z2.1 F1920.0
+G1 X-14.49 Y13.33 Z2.1 F1920.0
+G1 X-14.49 Y9.78 Z2.1 F1920.0
+G1 X-12.18 Y8.0 Z2.1 F1920.0
+G1 X-12.18 Y4.44 Z2.1 F1920.0
+G1 X-14.49 Y2.67 Z2.1 F1920.0
+G1 X-14.49 Y-0.89 Z2.1 F1920.0
+G1 X-12.18 Y-2.67 Z2.1 F1920.0
+G1 X-12.18 Y-6.22 Z2.1 F1920.0
+G1 X-14.49 Y-8.0 Z2.1 F1920.0
+G1 X-14.49 Y-11.56 Z2.1 F1920.0
+G1 X-12.18 Y-13.33 Z2.1 F1920.0
+G1 X-12.18 Y-16.89 Z2.1 F1920.0
+G1 X-14.49 Y-18.67 Z2.1 F1920.0
+G1 X-14.49 Y-22.22 Z2.1 F1920.0
+G1 X-12.18 Y-24.0 Z2.1 F1920.0
+G1 X-12.18 Y-27.56 Z2.1 F1920.0
+G1 X-14.49 Y-29.33 Z2.1 F1920.0
+G1 X-14.49 Y-32.89 Z2.1 F1920.0
+G1 X-12.18 Y-34.67 Z2.1 F1920.0
+G1 X-12.0 Y-36.23 Z2.1 F1920.0
+G1 X-16.0 Y-36.23 Z2.1 F1920.0
+G1 X-17.33 Y-34.67 Z2.1 F1920.0
+G1 X-17.33 Y-33.96 Z2.1 F1920.0
+G1 X-14.84 Y-32.89 Z2.1 F1920.0
+G1 X-14.84 Y-29.33 Z2.1 F1920.0
+G1 X-17.16 Y-27.56 Z2.1 F1920.0
+G1 X-17.16 Y-24.0 Z2.1 F1920.0
+G1 X-14.84 Y-22.22 Z2.1 F1920.0
+G1 X-14.84 Y-18.67 Z2.1 F1920.0
+G1 X-17.16 Y-16.89 Z2.1 F1920.0
+G1 X-17.16 Y-13.33 Z2.1 F1920.0
+G1 X-14.84 Y-11.56 Z2.1 F1920.0
+G1 X-14.84 Y-8.0 Z2.1 F1920.0
+G1 X-17.16 Y-6.22 Z2.1 F1920.0
+G1 X-17.16 Y-2.67 Z2.1 F1920.0
+G1 X-14.84 Y-0.89 Z2.1 F1920.0
+G1 X-14.84 Y2.67 Z2.1 F1920.0
+G1 X-17.16 Y4.44 Z2.1 F1920.0
+G1 X-17.16 Y8.0 Z2.1 F1920.0
+G1 X-14.84 Y9.78 Z2.1 F1920.0
+G1 X-14.84 Y13.33 Z2.1 F1920.0
+G1 X-17.16 Y15.11 Z2.1 F1920.0
+G1 X-17.16 Y18.67 Z2.1 F1920.0
+G1 X-14.84 Y20.44 Z2.1 F1920.0
+G1 X-14.84 Y24.0 Z2.1 F1920.0
+G1 X-17.16 Y25.78 Z2.1 F1920.0
+G1 X-17.16 Y29.33 Z2.1 F1920.0
+G1 X-14.84 Y31.11 Z2.1 F1920.0
+G1 X-14.84 Y34.67 Z2.1 F1920.0
+G1 X-14.67 Y36.23 Z2.1 F1920.0
+G1 X-18.0 Y36.23 Z2.1 F1920.0
+G1 X-18.0 Y35.16 Z2.1 F1920.0
+G1 X-18.67 Y35.77 Z2.1 F1920.0
+G1 X-18.67 Y36.23 Z2.1 F1920.0
+G1 X-19.33 Y36.23 Z2.1 F1920.0
+G1 X-19.33 Y36.13 Z2.1 F1920.0
+M103
+G1 X15.33 Y36.23 Z2.1 F1920.0
+M101
+G1 X12.67 Y36.23 Z2.1 F1920.0
+G1 X12.18 Y34.67 Z2.1 F1920.0
+G1 X12.18 Y31.11 Z2.1 F1920.0
+G1 X14.49 Y29.33 Z2.1 F1920.0
+G1 X14.49 Y25.78 Z2.1 F1920.0
+G1 X12.18 Y24.0 Z2.1 F1920.0
+G1 X12.18 Y20.44 Z2.1 F1920.0
+G1 X14.49 Y18.67 Z2.1 F1920.0
+G1 X14.49 Y15.11 Z2.1 F1920.0
+G1 X12.18 Y13.33 Z2.1 F1920.0
+G1 X12.18 Y9.78 Z2.1 F1920.0
+G1 X14.49 Y8.0 Z2.1 F1920.0
+G1 X14.49 Y4.44 Z2.1 F1920.0
+G1 X12.18 Y2.67 Z2.1 F1920.0
+G1 X12.18 Y-0.89 Z2.1 F1920.0
+G1 X14.49 Y-2.67 Z2.1 F1920.0
+G1 X14.49 Y-6.22 Z2.1 F1920.0
+G1 X12.18 Y-8.0 Z2.1 F1920.0
+G1 X12.18 Y-11.56 Z2.1 F1920.0
+G1 X14.49 Y-13.33 Z2.1 F1920.0
+G1 X14.49 Y-16.89 Z2.1 F1920.0
+G1 X12.18 Y-18.67 Z2.1 F1920.0
+G1 X12.18 Y-22.22 Z2.1 F1920.0
+G1 X14.49 Y-24.0 Z2.1 F1920.0
+G1 X14.49 Y-27.56 Z2.1 F1920.0
+G1 X12.18 Y-29.33 Z2.1 F1920.0
+G1 X12.18 Y-32.89 Z2.1 F1920.0
+G1 X14.49 Y-34.67 Z2.1 F1920.0
+G1 X15.33 Y-36.23 Z2.1 F1920.0
+G1 X10.0 Y-36.23 Z2.1 F1920.0
+G1 X9.51 Y-34.67 Z2.1 F1920.0
+G1 X11.83 Y-32.89 Z2.1 F1920.0
+G1 X11.83 Y-29.33 Z2.1 F1920.0
+G1 X9.51 Y-27.56 Z2.1 F1920.0
+G1 X9.51 Y-24.0 Z2.1 F1920.0
+G1 X11.83 Y-22.22 Z2.1 F1920.0
+G1 X11.83 Y-18.67 Z2.1 F1920.0
+G1 X9.51 Y-16.89 Z2.1 F1920.0
+G1 X9.51 Y-13.33 Z2.1 F1920.0
+G1 X11.83 Y-11.56 Z2.1 F1920.0
+G1 X11.83 Y-8.0 Z2.1 F1920.0
+G1 X9.51 Y-6.22 Z2.1 F1920.0
+G1 X9.51 Y-2.67 Z2.1 F1920.0
+G1 X11.83 Y-0.89 Z2.1 F1920.0
+G1 X11.83 Y2.67 Z2.1 F1920.0
+G1 X9.51 Y4.44 Z2.1 F1920.0
+G1 X9.51 Y8.0 Z2.1 F1920.0
+G1 X11.83 Y9.78 Z2.1 F1920.0
+G1 X11.83 Y13.33 Z2.1 F1920.0
+G1 X9.51 Y15.11 Z2.1 F1920.0
+G1 X9.51 Y18.67 Z2.1 F1920.0
+G1 X11.83 Y20.44 Z2.1 F1920.0
+G1 X11.83 Y24.0 Z2.1 F1920.0
+G1 X9.51 Y25.78 Z2.1 F1920.0
+G1 X9.51 Y29.33 Z2.1 F1920.0
+G1 X11.83 Y31.11 Z2.1 F1920.0
+G1 X11.83 Y34.67 Z2.1 F1920.0
+G1 X12.0 Y36.23 Z2.1 F1920.0
+G1 X7.33 Y36.23 Z2.1 F1920.0
+G1 X6.84 Y34.67 Z2.1 F1920.0
+G1 X9.16 Y29.33 Z2.1 F1920.0
+G1 X9.16 Y-27.56 Z2.1 F1920.0
+G1 X6.84 Y-29.33 Z2.1 F1920.0
+G1 X6.84 Y-32.89 Z2.1 F1920.0
+G1 X9.16 Y-34.67 Z2.1 F1920.0
+G1 X9.33 Y-36.23 Z2.1 F1920.0
+G1 X5.33 Y-36.23 Z2.1 F1920.0
+G1 X4.18 Y-34.67 Z2.1 F1920.0
+G1 X6.49 Y-32.89 Z2.1 F1920.0
+G1 X6.49 Y-29.33 Z2.1 F1920.0
+G1 X4.18 Y-27.56 Z2.1 F1920.0
+G1 X4.18 Y-24.0 Z2.1 F1920.0
+G1 X6.67 Y-22.22 Z2.1 F1920.0
+G1 X6.67 Y-18.67 Z2.1 F1920.0
+G1 X4.0 Y-16.89 Z2.1 F1920.0
+G1 X4.18 Y-13.33 Z2.1 F1920.0
+G1 X6.67 Y-11.56 Z2.1 F1920.0
+G1 X6.67 Y-8.0 Z2.1 F1920.0
+G1 X4.18 Y-6.22 Z2.1 F1920.0
+G1 X4.18 Y-2.67 Z2.1 F1920.0
+G1 X6.67 Y-0.89 Z2.1 F1920.0
+G1 X6.67 Y2.67 Z2.1 F1920.0
+G1 X4.18 Y4.44 Z2.1 F1920.0
+G1 X4.18 Y8.0 Z2.1 F1920.0
+G1 X6.67 Y9.78 Z2.1 F1920.0
+G1 X6.67 Y13.33 Z2.1 F1920.0
+G1 X4.18 Y15.11 Z2.1 F1920.0
+G1 X4.18 Y18.67 Z2.1 F1920.0
+G1 X6.67 Y20.44 Z2.1 F1920.0
+G1 X6.67 Y24.0 Z2.1 F1920.0
+G1 X4.18 Y25.78 Z2.1 F1920.0
+G1 X4.18 Y29.33 Z2.1 F1920.0
+G1 X6.67 Y31.11 Z2.1 F1920.0
+G1 X6.49 Y34.67 Z2.1 F1920.0
+G1 X6.67 Y36.23 Z2.1 F1920.0
+G1 X2.67 Y36.23 Z2.1 F1920.0
+G1 X1.51 Y34.67 Z2.1 F1920.0
+G1 X1.51 Y31.11 Z2.1 F1920.0
+G1 X3.83 Y29.33 Z2.1 F1920.0
+G1 X3.83 Y25.78 Z2.1 F1920.0
+G1 X1.51 Y24.0 Z2.1 F1920.0
+G1 X1.51 Y20.44 Z2.1 F1920.0
+G1 X3.83 Y18.67 Z2.1 F1920.0
+G1 X3.83 Y15.11 Z2.1 F1920.0
+G1 X1.51 Y13.33 Z2.1 F1920.0
+G1 X1.51 Y9.78 Z2.1 F1920.0
+G1 X3.83 Y8.0 Z2.1 F1920.0
+G1 X3.83 Y4.44 Z2.1 F1920.0
+G1 X1.51 Y2.67 Z2.1 F1920.0
+G1 X1.51 Y-0.89 Z2.1 F1920.0
+G1 X3.83 Y-2.67 Z2.1 F1920.0
+G1 X3.82 Y-6.22 Z2.1 F1920.0
+G1 X1.51 Y-8.0 Z2.1 F1920.0
+G1 X1.51 Y-11.56 Z2.1 F1920.0
+G1 X3.82 Y-13.33 Z2.1 F1920.0
+G1 X3.25 Y-14.57 Z2.1 F1920.0
+G1 X3.33 Y-16.12 Z2.1 F1920.0
+M103
+G1 X3.33 Y-18.02 Z2.1 F1920.0
+M101
+G1 X3.82 Y-24.0 Z2.1 F1920.0
+G1 X3.82 Y-27.56 Z2.1 F1920.0
+G1 X3.25 Y-30.33 Z2.1 F1920.0
+G1 X3.33 Y-31.82 Z2.1 F1920.0
+M103
+G1 X3.33 Y-34.06 Z2.1 F1920.0
+M101
+G1 X3.82 Y-34.67 Z2.1 F1920.0
+G1 X4.67 Y-36.23 Z2.1 F1920.0
+G1 X2.67 Y-36.23 Z2.1 F1920.0
+G1 X2.67 Y-35.23 Z2.1 F1920.0
+G1 X2.0 Y-35.83 Z2.1 F1920.0
+G1 X2.0 Y-36.23 Z2.1 F1920.0
+G1 X1.33 Y-36.23 Z2.1 F1920.0
+G1 X1.33 Y-36.18 Z2.1 F1920.0
+M103
+G1 X2.02 Y-32.59 Z2.1 F1920.0
+G1 X2.67 Y-19.25 Z2.1 F1920.0
+M101
+G1 X2.0 Y-19.87 Z2.1 F1920.0
+G1 X1.33 Y-20.24 Z2.1 F1920.0
+G1 X0.67 Y-20.45 Z2.1 F1920.0
+G1 X1.33 Y-22.22 Z2.1 F1920.0
+G1 X-1.16 Y-24.0 Z2.1 F1920.0
+G1 X-1.16 Y-27.56 Z2.1 F1920.0
+G1 X-0.05 Y-28.78 Z2.1 F1920.0
+G1 X1.33 Y-29.33 Z2.1 F1920.0
+G1 X0.67 Y-29.49 Z2.1 F1920.0
+M103
+G1 X19.33 Y36.13 Z2.1 F1920.0
+M101
+G1 X19.33 Y36.23 Z2.1 F1920.0
+G1 X18.67 Y36.23 Z2.1 F1920.0
+G1 X18.67 Y35.77 Z2.1 F1920.0
+G1 X18.0 Y36.23 Z2.1 F1920.0
+G1 X18.0 Y35.16 Z2.1 F1920.0
+G1 X17.33 Y35.56 Z2.1 F1920.0
+G1 X16.67 Y36.23 Z2.1 F1920.0
+G1 X16.0 Y36.23 Z2.1 F1920.0
+G1 X17.33 Y33.96 Z2.1 F1920.0
+G1 X16.67 Y31.92 Z2.1 F1920.0
+G1 X14.84 Y29.33 Z2.1 F1920.0
+G1 X14.84 Y25.78 Z2.1 F1920.0
+G1 X17.16 Y24.0 Z2.1 F1920.0
+G1 X17.16 Y20.44 Z2.1 F1920.0
+G1 X14.84 Y18.67 Z2.1 F1920.0
+G1 X14.84 Y15.11 Z2.1 F1920.0
+G1 X17.16 Y13.33 Z2.1 F1920.0
+G1 X17.16 Y9.78 Z2.1 F1920.0
+G1 X14.84 Y8.0 Z2.1 F1920.0
+G1 X14.84 Y4.44 Z2.1 F1920.0
+G1 X17.16 Y2.67 Z2.1 F1920.0
+G1 X17.16 Y-0.89 Z2.1 F1920.0
+G1 X14.84 Y-2.67 Z2.1 F1920.0
+G1 X14.84 Y-6.22 Z2.1 F1920.0
+G1 X17.16 Y-8.0 Z2.1 F1920.0
+G1 X17.16 Y-11.56 Z2.1 F1920.0
+G1 X14.84 Y-13.33 Z2.1 F1920.0
+G1 X17.33 Y-16.04 Z2.1 F1920.0
+G1 X14.84 Y-16.89 Z2.1 F1920.0
+G1 X17.33 Y-18.09 Z2.1 F1920.0
+G1 X17.42 Y-19.61 Z2.1 F1920.0
+G1 X17.16 Y-22.22 Z2.1 F1920.0
+G1 X14.84 Y-24.0 Z2.1 F1920.0
+G1 X14.84 Y-27.56 Z2.1 F1920.0
+G1 X17.16 Y-29.33 Z2.1 F1920.0
+G1 X17.42 Y-30.4 Z2.1 F1920.0
+G1 X17.33 Y-31.92 Z2.1 F1920.0
+G1 X16.67 Y-33.96 Z2.1 F1920.0
+G1 X14.84 Y-34.67 Z2.1 F1920.0
+G1 X16.0 Y-36.23 Z2.1 F1920.0
+G1 X18.0 Y-36.23 Z2.1 F1920.0
+G1 X18.0 Y-35.16 Z2.1 F1920.0
+G1 X18.67 Y-35.77 Z2.1 F1920.0
+G1 X18.67 Y-36.23 Z2.1 F1920.0
+G1 X19.33 Y-36.23 Z2.1 F1920.0
+G1 X19.33 Y-36.13 Z2.1 F1920.0
+M103
+G1 X22.0 Y-36.1 Z2.1 F1920.0
+M101
+G1 X22.0 Y-36.23 Z2.1 F1920.0
+G1 X22.67 Y-36.23 Z2.1 F1920.0
+G1 X22.67 Y-35.72 Z2.1 F1920.0
+G1 X23.33 Y-36.23 Z2.1 F1920.0
+G1 X23.33 Y-35.08 Z2.1 F1920.0
+M103
+G1 X22.67 Y-30.16 Z2.1 F1920.0
+M101
+G1 X22.0 Y-29.78 Z2.1 F1920.0
+G1 X22.49 Y-29.33 Z2.1 F1920.0
+G1 X20.18 Y-27.56 Z2.1 F1920.0
+G1 X20.18 Y-24.0 Z2.1 F1920.0
+G1 X22.49 Y-22.22 Z2.1 F1920.0
+G1 X22.0 Y-20.23 Z2.1 F1920.0
+M103
+G1 X19.33 Y-20.25 Z2.1 F1920.0
+M101
+G1 X18.35 Y-20.48 Z2.1 F1920.0
+G1 X17.51 Y-22.22 Z2.1 F1920.0
+G1 X19.83 Y-24.0 Z2.1 F1920.0
+G1 X19.83 Y-27.56 Z2.1 F1920.0
+G1 X17.51 Y-29.33 Z2.1 F1920.0
+G1 X18.67 Y-30.11 Z2.1 F1920.0
+G1 X19.33 Y-29.75 Z2.1 F1920.0
+G1 X20.0 Y-29.55 Z2.1 F1920.0
+G1 X20.67 Y-29.47 Z2.1 F1920.0
+G1 X21.33 Y-29.56 Z2.1 F1920.0
+M103
+G1 X27.33 Y-30.97 Z2.1 F1920.0
+M101
+G1 X28.0 Y-30.26 Z2.1 F1920.0
+G1 X28.31 Y-29.27 Z2.1 F1920.0
+G1 X25.51 Y-27.56 Z2.1 F1920.0
+G1 X25.51 Y-24.0 Z2.1 F1920.0
+G1 X27.83 Y-22.22 Z2.1 F1920.0
+G1 X27.83 Y-18.67 Z2.1 F1920.0
+G1 X25.51 Y-16.89 Z2.1 F1920.0
+G1 X25.51 Y-13.33 Z2.1 F1920.0
+G1 X27.83 Y-11.56 Z2.1 F1920.0
+G1 X27.83 Y-8.0 Z2.1 F1920.0
+G1 X25.51 Y-6.22 Z2.1 F1920.0
+G1 X25.51 Y-2.67 Z2.1 F1920.0
+G1 X27.83 Y-0.89 Z2.1 F1920.0
+G1 X27.83 Y2.67 Z2.1 F1920.0
+G1 X25.51 Y4.44 Z2.1 F1920.0
+G1 X25.51 Y8.0 Z2.1 F1920.0
+G1 X27.83 Y9.78 Z2.1 F1920.0
+G1 X27.83 Y13.33 Z2.1 F1920.0
+G1 X25.51 Y15.11 Z2.1 F1920.0
+G1 X25.51 Y18.67 Z2.1 F1920.0
+G1 X27.83 Y20.44 Z2.1 F1920.0
+G1 X27.83 Y24.0 Z2.1 F1920.0
+G1 X25.51 Y25.78 Z2.1 F1920.0
+G1 X25.51 Y29.33 Z2.1 F1920.0
+G1 X27.33 Y30.97 Z2.1 F1920.0
+G1 X28.0 Y30.26 Z2.1 F1920.0
+M103
+G1 X29.33 Y29.58 Z2.1 F1920.0
+M101
+G1 X30.67 Y29.33 Z2.1 F1920.0
+G1 X32.0 Y30.01 Z2.1 F1920.0
+G1 X30.49 Y25.78 Z2.1 F1920.0
+G1 X28.18 Y24.0 Z2.1 F1920.0
+G1 X28.18 Y20.44 Z2.1 F1920.0
+G1 X30.49 Y18.67 Z2.1 F1920.0
+G1 X30.49 Y15.11 Z2.1 F1920.0
+G1 X28.18 Y13.33 Z2.1 F1920.0
+G1 X28.18 Y9.78 Z2.1 F1920.0
+G1 X30.49 Y8.0 Z2.1 F1920.0
+G1 X30.49 Y4.44 Z2.1 F1920.0
+G1 X28.18 Y2.67 Z2.1 F1920.0
+G1 X28.18 Y-0.89 Z2.1 F1920.0
+G1 X30.49 Y-2.67 Z2.1 F1920.0
+G1 X30.49 Y-6.22 Z2.1 F1920.0
+G1 X28.18 Y-8.0 Z2.1 F1920.0
+G1 X28.18 Y-11.56 Z2.1 F1920.0
+G1 X30.49 Y-13.33 Z2.1 F1920.0
+G1 X30.49 Y-16.89 Z2.1 F1920.0
+G1 X28.18 Y-18.67 Z2.1 F1920.0
+G1 X28.18 Y-22.22 Z2.1 F1920.0
+G1 X30.49 Y-24.0 Z2.1 F1920.0
+G1 X30.49 Y-27.56 Z2.1 F1920.0
+G1 X32.0 Y-30.01 Z2.1 F1920.0
+G1 X31.33 Y-29.7 Z2.1 F1920.0
+G1 X30.67 Y-29.53 Z2.1 F1920.0
+G1 X30.0 Y-29.49 Z2.1 F1920.0
+G1 X29.33 Y-29.58 Z2.1 F1920.0
+M103
+G1 X32.67 Y-30.55 Z2.1 F1920.0
+M101
+G1 X30.84 Y-27.56 Z2.1 F1920.0
+G1 X30.84 Y25.78 Z2.1 F1920.0
+G1 X32.67 Y30.55 Z2.1 F1920.0
+M103
+G1 X32.67 Y35.33 Z2.1 F1920.0
+M101
+G1 X32.67 Y36.23 Z2.1 F1920.0
+G1 X32.0 Y36.23 Z2.1 F1920.0
+G1 X32.0 Y35.87 Z2.1 F1920.0
+M103
+G1 X31.33 Y36.18 Z2.1 F1920.0
+M101
+G1 X31.33 Y36.23 Z2.1 F1920.0
+M103
+G1 X28.67 Y36.23 Z2.1 F1920.0
+M101
+G1 X28.67 Y36.05 Z2.1 F1920.0
+G1 X28.0 Y36.23 Z2.1 F1920.0
+G1 X28.0 Y35.62 Z2.1 F1920.0
+G1 X27.33 Y36.23 Z2.1 F1920.0
+G1 X26.67 Y36.23 Z2.1 F1920.0
+G1 X27.33 Y34.91 Z2.1 F1920.0
+M103
+G1 X28.21 Y-33.26 Z2.1 F1920.0
+G1 X28.67 Y-36.23 Z2.1 F1920.0
+M101
+G1 X28.67 Y-36.05 Z2.1 F1920.0
+G1 X28.0 Y-36.23 Z2.1 F1920.0
+G1 X28.0 Y-35.62 Z2.1 F1920.0
+G1 X27.33 Y-36.23 Z2.1 F1920.0
+G1 X27.33 Y-34.91 Z2.1 F1920.0
+G1 X26.67 Y-36.23 Z2.1 F1920.0
+G1 X24.0 Y-36.23 Z2.1 F1920.0
+G1 X25.33 Y-34.67 Z2.1 F1920.0
+G1 X22.84 Y-29.33 Z2.1 F1920.0
+G1 X25.16 Y-27.56 Z2.1 F1920.0
+G1 X25.16 Y-24.0 Z2.1 F1920.0
+G1 X22.84 Y-22.22 Z2.1 F1920.0
+G1 X23.33 Y-19.21 Z2.1 F1920.0
+G1 X24.44 Y-18.41 Z2.1 F1920.0
+G1 X25.16 Y-16.89 Z2.1 F1920.0
+G1 X24.0 Y-16.22 Z2.1 F1920.0
+G1 X23.93 Y-14.62 Z2.1 F1920.0
+G1 X25.16 Y-13.33 Z2.1 F1920.0
+G1 X22.84 Y-11.56 Z2.1 F1920.0
+G1 X22.84 Y-8.0 Z2.1 F1920.0
+G1 X25.16 Y-6.22 Z2.1 F1920.0
+G1 X25.16 Y-2.67 Z2.1 F1920.0
+G1 X22.84 Y-0.89 Z2.1 F1920.0
+G1 X22.84 Y2.67 Z2.1 F1920.0
+G1 X25.16 Y4.44 Z2.1 F1920.0
+G1 X25.16 Y8.0 Z2.1 F1920.0
+G1 X22.84 Y9.78 Z2.1 F1920.0
+G1 X22.84 Y13.33 Z2.1 F1920.0
+G1 X25.16 Y15.11 Z2.1 F1920.0
+G1 X25.16 Y18.67 Z2.1 F1920.0
+G1 X22.84 Y20.44 Z2.1 F1920.0
+G1 X22.84 Y24.0 Z2.1 F1920.0
+G1 X25.16 Y25.78 Z2.1 F1920.0
+G1 X25.16 Y29.33 Z2.1 F1920.0
+G1 X24.0 Y33.79 Z2.1 F1920.0
+G1 X26.0 Y36.23 Z2.1 F1920.0
+G1 X23.33 Y36.23 Z2.1 F1920.0
+G1 X23.33 Y35.08 Z2.1 F1920.0
+G1 X22.67 Y35.72 Z2.1 F1920.0
+G1 X22.67 Y36.23 Z2.1 F1920.0
+G1 X22.0 Y36.23 Z2.1 F1920.0
+G1 X22.0 Y36.1 Z2.1 F1920.0
+M103
+G1 X23.33 Y30.8 Z2.1 F1920.0
+M101
+G1 X22.67 Y30.16 Z2.1 F1920.0
+G1 X22.0 Y29.78 Z2.1 F1920.0
+G1 X20.18 Y25.78 Z2.1 F1920.0
+G1 X22.49 Y24.0 Z2.1 F1920.0
+G1 X22.49 Y20.44 Z2.1 F1920.0
+G1 X20.18 Y18.67 Z2.1 F1920.0
+G1 X20.18 Y15.11 Z2.1 F1920.0
+G1 X22.49 Y13.33 Z2.1 F1920.0
+G1 X22.49 Y9.78 Z2.1 F1920.0
+G1 X20.18 Y8.0 Z2.1 F1920.0
+G1 X20.18 Y4.44 Z2.1 F1920.0
+G1 X22.49 Y2.67 Z2.1 F1920.0
+G1 X22.49 Y-0.89 Z2.1 F1920.0
+G1 X20.18 Y-2.67 Z2.1 F1920.0
+G1 X20.18 Y-6.22 Z2.1 F1920.0
+G1 X22.49 Y-8.0 Z2.1 F1920.0
+G1 X22.49 Y-11.56 Z2.1 F1920.0
+G1 X22.0 Y-13.9 Z2.1 F1920.0
+M103
+G1 X20.67 Y-13.6 Z2.1 F1920.0
+M101
+G1 X20.0 Y-13.68 Z2.1 F1920.0
+G1 X19.33 Y-13.88 Z2.1 F1920.0
+G1 X18.35 Y-13.65 Z2.1 F1920.0
+G1 X17.51 Y-11.56 Z2.1 F1920.0
+G1 X17.51 Y-8.0 Z2.1 F1920.0
+G1 X19.83 Y-6.22 Z2.1 F1920.0
+G1 X19.83 Y-2.67 Z2.1 F1920.0
+G1 X17.51 Y-0.89 Z2.1 F1920.0
+G1 X17.51 Y2.67 Z2.1 F1920.0
+G1 X19.83 Y4.44 Z2.1 F1920.0
+G1 X19.83 Y8.0 Z2.1 F1920.0
+G1 X17.51 Y9.78 Z2.1 F1920.0
+G1 X17.51 Y13.33 Z2.1 F1920.0
+G1 X19.83 Y15.11 Z2.1 F1920.0
+G1 X19.83 Y18.67 Z2.1 F1920.0
+G1 X17.51 Y20.44 Z2.1 F1920.0
+G1 X17.51 Y24.0 Z2.1 F1920.0
+G1 X19.83 Y25.78 Z2.1 F1920.0
+G1 X21.33 Y29.56 Z2.1 F1920.0
+G1 X20.67 Y29.47 Z2.1 F1920.0
+G1 X20.0 Y29.55 Z2.1 F1920.0
+G1 X19.33 Y29.75 Z2.1 F1920.0
+G1 X18.67 Y30.11 Z2.1 F1920.0
+G1 X18.0 Y30.72 Z2.1 F1920.0
+M103
+G1 X32.67 Y-36.23 Z2.1 F1920.0
+M101
+G1 X32.67 Y-35.33 Z2.1 F1920.0
+G1 X32.0 Y-35.87 Z2.1 F1920.0
+G1 X32.0 Y-36.23 Z2.1 F1920.0
+G1 X31.33 Y-36.23 Z2.1 F1920.0
+G1 X31.33 Y-36.18 Z2.1 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 2.5 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-38.1 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y38.1 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y38.1 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y-38.1 Z2.5 </boundaryPoint>)
+(<loop> inner )
+G1 X2.54 Y-32.94 Z2.5 F1920.0
+M101
+G1 X2.45 Y-33.6 Z2.5 F1920.0
+G1 X2.2 Y-34.21 Z2.5 F1920.0
+G1 X1.79 Y-34.74 Z2.5 F1920.0
+G1 X1.27 Y-35.14 Z2.5 F1920.0
+G1 X0.66 Y-35.39 Z2.5 F1920.0
+G1 X0.0 Y-35.48 Z2.5 F1920.0
+G1 X-0.66 Y-35.39 Z2.5 F1920.0
+G1 X-1.27 Y-35.14 Z2.5 F1920.0
+G1 X-1.79 Y-34.74 Z2.5 F1920.0
+G1 X-2.2 Y-34.21 Z2.5 F1920.0
+G1 X-2.45 Y-33.6 Z2.5 F1920.0
+G1 X-2.54 Y-32.94 Z2.5 F1920.0
+G1 X-2.45 Y-32.28 Z2.5 F1920.0
+G1 X-2.2 Y-31.67 Z2.5 F1920.0
+G1 X-1.79 Y-31.15 Z2.5 F1920.0
+G1 X-1.27 Y-30.74 Z2.5 F1920.0
+G1 X-0.63 Y-30.48 Z2.5 F1920.0
+G1 X0.0 Y-30.43 Z2.5 F1920.0
+G1 X0.63 Y-30.48 Z2.5 F1920.0
+G1 X1.27 Y-30.74 Z2.5 F1920.0
+G1 X1.79 Y-31.15 Z2.5 F1920.0
+G1 X2.2 Y-31.67 Z2.5 F1920.0
+G1 X2.45 Y-32.28 Z2.5 F1920.0
+G1 X2.54 Y-32.94 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X3.14 Y-32.94 Z2.5 F1920.0
+M101
+G1 X3.04 Y-33.75 Z2.5 F1920.0
+G1 X2.72 Y-34.51 Z2.5 F1920.0
+G1 X2.22 Y-35.17 Z2.5 F1920.0
+G1 X1.57 Y-35.66 Z2.5 F1920.0
+G1 X0.82 Y-35.98 Z2.5 F1920.0
+G1 X0.0 Y-36.09 Z2.5 F1920.0
+G1 X-0.82 Y-35.98 Z2.5 F1920.0
+G1 X-1.57 Y-35.66 Z2.5 F1920.0
+G1 X-2.22 Y-35.17 Z2.5 F1920.0
+G1 X-2.72 Y-34.51 Z2.5 F1920.0
+G1 X-3.04 Y-33.75 Z2.5 F1920.0
+G1 X-3.14 Y-32.94 Z2.5 F1920.0
+G1 X-3.04 Y-32.13 Z2.5 F1920.0
+G1 X-2.72 Y-31.37 Z2.5 F1920.0
+G1 X-2.22 Y-30.72 Z2.5 F1920.0
+G1 X-1.57 Y-30.22 Z2.5 F1920.0
+G1 X-0.77 Y-29.89 Z2.5 F1920.0
+G1 X0.0 Y-29.83 Z2.5 F1920.0
+G1 X0.77 Y-29.89 Z2.5 F1920.0
+G1 X1.57 Y-30.22 Z2.5 F1920.0
+G1 X2.22 Y-30.72 Z2.5 F1920.0
+G1 X2.72 Y-31.37 Z2.5 F1920.0
+G1 X3.04 Y-32.13 Z2.5 F1920.0
+G1 X3.14 Y-32.94 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.64 Y-19.46 Z2.5 F1920.0
+M101
+G1 X0.0 Y-19.54 Z2.5 F1920.0
+G1 X-0.64 Y-19.46 Z2.5 F1920.0
+G1 X-1.24 Y-19.21 Z2.5 F1920.0
+G1 X-1.75 Y-18.82 Z2.5 F1920.0
+G1 X-2.14 Y-18.3 Z2.5 F1920.0
+G1 X-2.39 Y-17.71 Z2.5 F1920.0
+G1 X-2.48 Y-17.07 Z2.5 F1920.0
+G1 X-2.39 Y-16.43 Z2.5 F1920.0
+G1 X-2.14 Y-15.83 Z2.5 F1920.0
+G1 X-1.75 Y-15.32 Z2.5 F1920.0
+G1 X-1.24 Y-14.92 Z2.5 F1920.0
+G1 X-0.64 Y-14.68 Z2.5 F1920.0
+G1 X0.0 Y-14.59 Z2.5 F1920.0
+G1 X0.64 Y-14.68 Z2.5 F1920.0
+G1 X1.24 Y-14.92 Z2.5 F1920.0
+G1 X1.75 Y-15.32 Z2.5 F1920.0
+G1 X2.14 Y-15.83 Z2.5 F1920.0
+G1 X2.39 Y-16.43 Z2.5 F1920.0
+G1 X2.48 Y-17.07 Z2.5 F1920.0
+G1 X2.39 Y-17.71 Z2.5 F1920.0
+G1 X2.14 Y-18.3 Z2.5 F1920.0
+G1 X1.75 Y-18.82 Z2.5 F1920.0
+G1 X1.24 Y-19.21 Z2.5 F1920.0
+G1 X0.64 Y-19.46 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.8 Y-20.04 Z2.5 F1920.0
+M101
+G1 X0.0 Y-20.15 Z2.5 F1920.0
+G1 X-0.8 Y-20.04 Z2.5 F1920.0
+G1 X-1.54 Y-19.73 Z2.5 F1920.0
+G1 X-2.18 Y-19.24 Z2.5 F1920.0
+G1 X-2.67 Y-18.6 Z2.5 F1920.0
+G1 X-2.98 Y-17.86 Z2.5 F1920.0
+G1 X-3.08 Y-17.07 Z2.5 F1920.0
+G1 X-2.98 Y-16.27 Z2.5 F1920.0
+G1 X-2.67 Y-15.53 Z2.5 F1920.0
+G1 X-2.18 Y-14.89 Z2.5 F1920.0
+G1 X-1.54 Y-14.4 Z2.5 F1920.0
+G1 X-0.8 Y-14.09 Z2.5 F1920.0
+G1 X0.0 Y-13.99 Z2.5 F1920.0
+G1 X0.8 Y-14.09 Z2.5 F1920.0
+G1 X1.54 Y-14.4 Z2.5 F1920.0
+G1 X2.18 Y-14.89 Z2.5 F1920.0
+G1 X2.67 Y-15.53 Z2.5 F1920.0
+G1 X2.98 Y-16.27 Z2.5 F1920.0
+G1 X3.08 Y-17.07 Z2.5 F1920.0
+G1 X2.98 Y-17.86 Z2.5 F1920.0
+G1 X2.67 Y-18.6 Z2.5 F1920.0
+G1 X2.18 Y-19.24 Z2.5 F1920.0
+G1 X1.54 Y-19.73 Z2.5 F1920.0
+G1 X0.8 Y-20.04 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-1.72 Y-18.06 Z2.5 F1920.0
+G1 X-20.0 Y30.55 Z2.5 F1920.0
+M101
+G1 X-20.64 Y30.47 Z2.5 F1920.0
+G1 X-21.28 Y30.55 Z2.5 F1920.0
+G1 X-21.88 Y30.8 Z2.5 F1920.0
+G1 X-22.39 Y31.19 Z2.5 F1920.0
+G1 X-22.78 Y31.7 Z2.5 F1920.0
+G1 X-23.03 Y32.3 Z2.5 F1920.0
+G1 X-23.11 Y32.94 Z2.5 F1920.0
+G1 X-23.03 Y33.58 Z2.5 F1920.0
+G1 X-22.78 Y34.18 Z2.5 F1920.0
+G1 X-22.39 Y34.69 Z2.5 F1920.0
+G1 X-21.88 Y35.08 Z2.5 F1920.0
+G1 X-21.28 Y35.33 Z2.5 F1920.0
+G1 X-20.64 Y35.42 Z2.5 F1920.0
+G1 X-20.0 Y35.33 Z2.5 F1920.0
+G1 X-19.4 Y35.08 Z2.5 F1920.0
+G1 X-18.89 Y34.69 Z2.5 F1920.0
+G1 X-18.5 Y34.18 Z2.5 F1920.0
+G1 X-18.25 Y33.58 Z2.5 F1920.0
+G1 X-18.16 Y32.94 Z2.5 F1920.0
+G1 X-18.25 Y32.3 Z2.5 F1920.0
+G1 X-18.49 Y31.7 Z2.5 F1920.0
+G1 X-18.89 Y31.19 Z2.5 F1920.0
+G1 X-19.4 Y30.8 Z2.5 F1920.0
+G1 X-20.0 Y30.55 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-19.84 Y29.97 Z2.5 F1920.0
+M101
+G1 X-20.64 Y29.86 Z2.5 F1920.0
+G1 X-21.44 Y29.97 Z2.5 F1920.0
+G1 X-22.18 Y30.27 Z2.5 F1920.0
+G1 X-22.82 Y30.76 Z2.5 F1920.0
+G1 X-23.31 Y31.4 Z2.5 F1920.0
+G1 X-23.61 Y32.14 Z2.5 F1920.0
+G1 X-23.72 Y32.94 Z2.5 F1920.0
+G1 X-23.61 Y33.74 Z2.5 F1920.0
+G1 X-23.3 Y34.48 Z2.5 F1920.0
+G1 X-22.82 Y35.12 Z2.5 F1920.0
+G1 X-22.18 Y35.61 Z2.5 F1920.0
+G1 X-21.44 Y35.92 Z2.5 F1920.0
+G1 X-20.64 Y36.02 Z2.5 F1920.0
+G1 X-19.84 Y35.92 Z2.5 F1920.0
+G1 X-19.1 Y35.61 Z2.5 F1920.0
+G1 X-18.46 Y35.12 Z2.5 F1920.0
+G1 X-17.97 Y34.48 Z2.5 F1920.0
+G1 X-17.66 Y33.74 Z2.5 F1920.0
+G1 X-17.56 Y32.94 Z2.5 F1920.0
+G1 X-17.66 Y32.14 Z2.5 F1920.0
+G1 X-17.97 Y31.4 Z2.5 F1920.0
+G1 X-18.46 Y30.76 Z2.5 F1920.0
+G1 X-19.1 Y30.27 Z2.5 F1920.0
+G1 X-19.84 Y29.97 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.64 Y-30.47 Z2.5 F1920.0
+M101
+G1 X-20.0 Y-30.55 Z2.5 F1920.0
+G1 X-19.4 Y-30.8 Z2.5 F1920.0
+G1 X-18.89 Y-31.19 Z2.5 F1920.0
+G1 X-18.49 Y-31.7 Z2.5 F1920.0
+G1 X-18.25 Y-32.3 Z2.5 F1920.0
+G1 X-18.16 Y-32.94 Z2.5 F1920.0
+G1 X-18.25 Y-33.58 Z2.5 F1920.0
+G1 X-18.5 Y-34.18 Z2.5 F1920.0
+G1 X-18.89 Y-34.69 Z2.5 F1920.0
+G1 X-19.4 Y-35.08 Z2.5 F1920.0
+G1 X-20.0 Y-35.33 Z2.5 F1920.0
+G1 X-20.64 Y-35.42 Z2.5 F1920.0
+G1 X-21.28 Y-35.33 Z2.5 F1920.0
+G1 X-21.88 Y-35.08 Z2.5 F1920.0
+G1 X-22.39 Y-34.69 Z2.5 F1920.0
+G1 X-22.78 Y-34.18 Z2.5 F1920.0
+G1 X-23.03 Y-33.58 Z2.5 F1920.0
+G1 X-23.11 Y-32.94 Z2.5 F1920.0
+G1 X-23.03 Y-32.3 Z2.5 F1920.0
+G1 X-22.78 Y-31.7 Z2.5 F1920.0
+G1 X-22.39 Y-31.19 Z2.5 F1920.0
+G1 X-21.88 Y-30.8 Z2.5 F1920.0
+G1 X-21.28 Y-30.55 Z2.5 F1920.0
+G1 X-20.64 Y-30.47 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.64 Y-29.86 Z2.5 F1920.0
+M101
+G1 X-19.84 Y-29.97 Z2.5 F1920.0
+G1 X-19.1 Y-30.27 Z2.5 F1920.0
+G1 X-18.46 Y-30.76 Z2.5 F1920.0
+G1 X-17.97 Y-31.4 Z2.5 F1920.0
+G1 X-17.66 Y-32.14 Z2.5 F1920.0
+G1 X-17.56 Y-32.94 Z2.5 F1920.0
+G1 X-17.66 Y-33.74 Z2.5 F1920.0
+G1 X-17.97 Y-34.48 Z2.5 F1920.0
+G1 X-18.46 Y-35.12 Z2.5 F1920.0
+G1 X-19.1 Y-35.61 Z2.5 F1920.0
+G1 X-19.84 Y-35.92 Z2.5 F1920.0
+G1 X-20.64 Y-36.02 Z2.5 F1920.0
+G1 X-21.44 Y-35.92 Z2.5 F1920.0
+G1 X-22.18 Y-35.61 Z2.5 F1920.0
+G1 X-22.82 Y-35.12 Z2.5 F1920.0
+G1 X-23.3 Y-34.48 Z2.5 F1920.0
+G1 X-23.61 Y-33.74 Z2.5 F1920.0
+G1 X-23.72 Y-32.94 Z2.5 F1920.0
+G1 X-23.61 Y-32.14 Z2.5 F1920.0
+G1 X-23.31 Y-31.4 Z2.5 F1920.0
+G1 X-22.82 Y-30.76 Z2.5 F1920.0
+G1 X-22.18 Y-30.27 Z2.5 F1920.0
+G1 X-21.44 Y-29.97 Z2.5 F1920.0
+G1 X-20.64 Y-29.86 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.4 Y30.8 Z2.5 F1920.0
+M101
+G1 X18.89 Y31.19 Z2.5 F1920.0
+G1 X18.49 Y31.7 Z2.5 F1920.0
+G1 X18.25 Y32.3 Z2.5 F1920.0
+G1 X18.16 Y32.94 Z2.5 F1920.0
+G1 X18.25 Y33.58 Z2.5 F1920.0
+G1 X18.5 Y34.18 Z2.5 F1920.0
+G1 X18.89 Y34.69 Z2.5 F1920.0
+G1 X19.4 Y35.08 Z2.5 F1920.0
+G1 X20.0 Y35.33 Z2.5 F1920.0
+G1 X20.64 Y35.42 Z2.5 F1920.0
+G1 X21.28 Y35.33 Z2.5 F1920.0
+G1 X21.88 Y35.08 Z2.5 F1920.0
+G1 X22.39 Y34.69 Z2.5 F1920.0
+G1 X22.78 Y34.18 Z2.5 F1920.0
+G1 X23.03 Y33.58 Z2.5 F1920.0
+G1 X23.11 Y32.94 Z2.5 F1920.0
+G1 X23.03 Y32.3 Z2.5 F1920.0
+G1 X22.78 Y31.7 Z2.5 F1920.0
+G1 X22.39 Y31.19 Z2.5 F1920.0
+G1 X21.88 Y30.8 Z2.5 F1920.0
+G1 X21.28 Y30.55 Z2.5 F1920.0
+G1 X20.64 Y30.47 Z2.5 F1920.0
+G1 X20.0 Y30.55 Z2.5 F1920.0
+G1 X19.4 Y30.8 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.1 Y30.27 Z2.5 F1920.0
+M101
+G1 X18.46 Y30.76 Z2.5 F1920.0
+G1 X17.97 Y31.4 Z2.5 F1920.0
+G1 X17.66 Y32.14 Z2.5 F1920.0
+G1 X17.56 Y32.94 Z2.5 F1920.0
+G1 X17.66 Y33.74 Z2.5 F1920.0
+G1 X17.97 Y34.48 Z2.5 F1920.0
+G1 X18.46 Y35.12 Z2.5 F1920.0
+G1 X19.1 Y35.61 Z2.5 F1920.0
+G1 X19.84 Y35.92 Z2.5 F1920.0
+G1 X20.64 Y36.02 Z2.5 F1920.0
+G1 X21.44 Y35.92 Z2.5 F1920.0
+G1 X22.18 Y35.61 Z2.5 F1920.0
+G1 X22.82 Y35.12 Z2.5 F1920.0
+G1 X23.3 Y34.48 Z2.5 F1920.0
+G1 X23.61 Y33.74 Z2.5 F1920.0
+G1 X23.72 Y32.94 Z2.5 F1920.0
+G1 X23.61 Y32.14 Z2.5 F1920.0
+G1 X23.31 Y31.4 Z2.5 F1920.0
+G1 X22.82 Y30.76 Z2.5 F1920.0
+G1 X22.18 Y30.27 Z2.5 F1920.0
+G1 X21.44 Y29.97 Z2.5 F1920.0
+G1 X20.64 Y29.86 Z2.5 F1920.0
+G1 X19.84 Y29.97 Z2.5 F1920.0
+G1 X19.1 Y30.27 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X18.72 Y-17.58 Z2.5 F1920.0
+G1 X20.64 Y-30.47 Z2.5 F1920.0
+M101
+G1 X21.28 Y-30.55 Z2.5 F1920.0
+G1 X21.88 Y-30.8 Z2.5 F1920.0
+G1 X22.39 Y-31.19 Z2.5 F1920.0
+G1 X22.78 Y-31.7 Z2.5 F1920.0
+G1 X23.03 Y-32.3 Z2.5 F1920.0
+G1 X23.11 Y-32.94 Z2.5 F1920.0
+G1 X23.03 Y-33.58 Z2.5 F1920.0
+G1 X22.78 Y-34.18 Z2.5 F1920.0
+G1 X22.39 Y-34.69 Z2.5 F1920.0
+G1 X21.88 Y-35.08 Z2.5 F1920.0
+G1 X21.28 Y-35.33 Z2.5 F1920.0
+G1 X20.64 Y-35.42 Z2.5 F1920.0
+G1 X20.0 Y-35.33 Z2.5 F1920.0
+G1 X19.4 Y-35.08 Z2.5 F1920.0
+G1 X18.89 Y-34.69 Z2.5 F1920.0
+G1 X18.5 Y-34.18 Z2.5 F1920.0
+G1 X18.25 Y-33.58 Z2.5 F1920.0
+G1 X18.16 Y-32.94 Z2.5 F1920.0
+G1 X18.25 Y-32.3 Z2.5 F1920.0
+G1 X18.49 Y-31.7 Z2.5 F1920.0
+G1 X18.89 Y-31.19 Z2.5 F1920.0
+G1 X19.4 Y-30.8 Z2.5 F1920.0
+G1 X20.0 Y-30.55 Z2.5 F1920.0
+G1 X20.64 Y-30.47 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-29.86 Z2.5 F1920.0
+M101
+G1 X21.44 Y-29.97 Z2.5 F1920.0
+G1 X22.18 Y-30.27 Z2.5 F1920.0
+G1 X22.82 Y-30.76 Z2.5 F1920.0
+G1 X23.31 Y-31.4 Z2.5 F1920.0
+G1 X23.61 Y-32.14 Z2.5 F1920.0
+G1 X23.72 Y-32.94 Z2.5 F1920.0
+G1 X23.61 Y-33.74 Z2.5 F1920.0
+G1 X23.3 Y-34.48 Z2.5 F1920.0
+G1 X22.82 Y-35.12 Z2.5 F1920.0
+G1 X22.18 Y-35.61 Z2.5 F1920.0
+G1 X21.44 Y-35.92 Z2.5 F1920.0
+G1 X20.64 Y-36.02 Z2.5 F1920.0
+G1 X19.84 Y-35.92 Z2.5 F1920.0
+G1 X19.1 Y-35.61 Z2.5 F1920.0
+G1 X18.46 Y-35.12 Z2.5 F1920.0
+G1 X17.97 Y-34.48 Z2.5 F1920.0
+G1 X17.66 Y-33.74 Z2.5 F1920.0
+G1 X17.56 Y-32.94 Z2.5 F1920.0
+G1 X17.66 Y-32.14 Z2.5 F1920.0
+G1 X17.97 Y-31.4 Z2.5 F1920.0
+G1 X18.46 Y-30.76 Z2.5 F1920.0
+G1 X19.1 Y-30.27 Z2.5 F1920.0
+G1 X19.84 Y-29.97 Z2.5 F1920.0
+G1 X20.64 Y-29.86 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-19.54 Z2.5 F1920.0
+M101
+G1 X20.0 Y-19.46 Z2.5 F1920.0
+G1 X19.4 Y-19.21 Z2.5 F1920.0
+G1 X18.89 Y-18.82 Z2.5 F1920.0
+G1 X18.5 Y-18.3 Z2.5 F1920.0
+G1 X18.25 Y-17.71 Z2.5 F1920.0
+G1 X18.16 Y-17.07 Z2.5 F1920.0
+G1 X18.25 Y-16.43 Z2.5 F1920.0
+G1 X18.49 Y-15.83 Z2.5 F1920.0
+G1 X18.89 Y-15.32 Z2.5 F1920.0
+G1 X19.4 Y-14.92 Z2.5 F1920.0
+G1 X20.0 Y-14.68 Z2.5 F1920.0
+G1 X20.64 Y-14.59 Z2.5 F1920.0
+G1 X21.28 Y-14.68 Z2.5 F1920.0
+G1 X21.88 Y-14.92 Z2.5 F1920.0
+G1 X22.39 Y-15.32 Z2.5 F1920.0
+G1 X22.78 Y-15.83 Z2.5 F1920.0
+G1 X23.03 Y-16.43 Z2.5 F1920.0
+G1 X23.11 Y-17.07 Z2.5 F1920.0
+G1 X23.03 Y-17.71 Z2.5 F1920.0
+G1 X22.78 Y-18.3 Z2.5 F1920.0
+G1 X22.39 Y-18.82 Z2.5 F1920.0
+G1 X21.88 Y-19.21 Z2.5 F1920.0
+G1 X21.28 Y-19.46 Z2.5 F1920.0
+G1 X20.64 Y-19.54 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-20.15 Z2.5 F1920.0
+M101
+G1 X19.84 Y-20.04 Z2.5 F1920.0
+G1 X19.1 Y-19.73 Z2.5 F1920.0
+G1 X18.46 Y-19.24 Z2.5 F1920.0
+G1 X17.97 Y-18.61 Z2.5 F1920.0
+G1 X17.66 Y-17.86 Z2.5 F1920.0
+G1 X17.56 Y-17.07 Z2.5 F1920.0
+G1 X17.66 Y-16.27 Z2.5 F1920.0
+G1 X17.97 Y-15.53 Z2.5 F1920.0
+G1 X18.46 Y-14.89 Z2.5 F1920.0
+G1 X19.1 Y-14.4 Z2.5 F1920.0
+G1 X19.84 Y-14.09 Z2.5 F1920.0
+G1 X20.64 Y-13.99 Z2.5 F1920.0
+G1 X21.44 Y-14.09 Z2.5 F1920.0
+G1 X22.18 Y-14.4 Z2.5 F1920.0
+G1 X22.82 Y-14.89 Z2.5 F1920.0
+G1 X23.31 Y-15.53 Z2.5 F1920.0
+G1 X23.61 Y-16.27 Z2.5 F1920.0
+G1 X23.72 Y-17.07 Z2.5 F1920.0
+G1 X23.61 Y-17.86 Z2.5 F1920.0
+G1 X23.3 Y-18.61 Z2.5 F1920.0
+G1 X22.82 Y-19.24 Z2.5 F1920.0
+G1 X22.18 Y-19.73 Z2.5 F1920.0
+G1 X21.44 Y-20.04 Z2.5 F1920.0
+G1 X20.64 Y-20.15 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X33.45 Y-20.15 Z2.5 F1920.0
+M101
+G1 X33.45 Y31.25 Z2.5 F1920.0
+G1 X33.61 Y32.16 Z2.5 F1920.0
+G1 X33.0 Y31.8 Z2.5 F1920.0
+G1 X32.83 Y31.4 Z2.5 F1920.0
+G1 X32.34 Y30.76 Z2.5 F1920.0
+G1 X31.7 Y30.27 Z2.5 F1920.0
+G1 X30.96 Y29.97 Z2.5 F1920.0
+G1 X30.16 Y29.86 Z2.5 F1920.0
+G1 X29.37 Y29.97 Z2.5 F1920.0
+G1 X28.62 Y30.27 Z2.5 F1920.0
+G1 X27.98 Y30.76 Z2.5 F1920.0
+G1 X27.5 Y31.4 Z2.5 F1920.0
+G1 X27.19 Y32.14 Z2.5 F1920.0
+G1 X27.08 Y32.94 Z2.5 F1920.0
+G1 X27.19 Y33.74 Z2.5 F1920.0
+G1 X27.5 Y34.48 Z2.5 F1920.0
+G1 X27.98 Y35.12 Z2.5 F1920.0
+G1 X28.62 Y35.61 Z2.5 F1920.0
+G1 X29.37 Y35.92 Z2.5 F1920.0
+G1 X30.16 Y36.02 Z2.5 F1920.0
+G1 X30.96 Y35.92 Z2.5 F1920.0
+G1 X31.7 Y35.61 Z2.5 F1920.0
+G1 X32.34 Y35.12 Z2.5 F1920.0
+G1 X32.83 Y34.48 Z2.5 F1920.0
+G1 X32.87 Y34.37 Z2.5 F1920.0
+G1 X33.45 Y34.62 Z2.5 F1920.0
+G1 X33.45 Y36.62 Z2.5 F1920.0
+G1 X-33.45 Y36.62 Z2.5 F1920.0
+G1 X-33.45 Y34.62 Z2.5 F1920.0
+G1 X-32.87 Y34.37 Z2.5 F1920.0
+G1 X-32.83 Y34.48 Z2.5 F1920.0
+G1 X-32.34 Y35.12 Z2.5 F1920.0
+G1 X-31.7 Y35.61 Z2.5 F1920.0
+G1 X-30.96 Y35.92 Z2.5 F1920.0
+G1 X-30.16 Y36.02 Z2.5 F1920.0
+G1 X-29.37 Y35.92 Z2.5 F1920.0
+G1 X-28.62 Y35.61 Z2.5 F1920.0
+G1 X-27.98 Y35.12 Z2.5 F1920.0
+G1 X-27.5 Y34.48 Z2.5 F1920.0
+G1 X-27.19 Y33.74 Z2.5 F1920.0
+G1 X-27.08 Y32.94 Z2.5 F1920.0
+G1 X-27.19 Y32.14 Z2.5 F1920.0
+G1 X-27.5 Y31.4 Z2.5 F1920.0
+G1 X-27.98 Y30.76 Z2.5 F1920.0
+G1 X-28.62 Y30.27 Z2.5 F1920.0
+G1 X-29.37 Y29.97 Z2.5 F1920.0
+G1 X-30.16 Y29.86 Z2.5 F1920.0
+G1 X-30.96 Y29.97 Z2.5 F1920.0
+G1 X-31.7 Y30.27 Z2.5 F1920.0
+G1 X-32.34 Y30.76 Z2.5 F1920.0
+G1 X-32.83 Y31.4 Z2.5 F1920.0
+G1 X-33.0 Y31.8 Z2.5 F1920.0
+G1 X-33.61 Y32.16 Z2.5 F1920.0
+G1 X-33.45 Y31.25 Z2.5 F1920.0
+G1 X-33.45 Y-31.25 Z2.5 F1920.0
+G1 X-33.61 Y-32.16 Z2.5 F1920.0
+G1 X-32.99 Y-31.8 Z2.5 F1920.0
+G1 X-32.83 Y-31.4 Z2.5 F1920.0
+G1 X-32.34 Y-30.77 Z2.5 F1920.0
+G1 X-31.7 Y-30.28 Z2.5 F1920.0
+G1 X-30.96 Y-29.97 Z2.5 F1920.0
+G1 X-30.16 Y-29.86 Z2.5 F1920.0
+G1 X-29.37 Y-29.97 Z2.5 F1920.0
+G1 X-28.62 Y-30.28 Z2.5 F1920.0
+G1 X-27.99 Y-30.77 Z2.5 F1920.0
+G1 X-27.5 Y-31.4 Z2.5 F1920.0
+G1 X-27.19 Y-32.14 Z2.5 F1920.0
+G1 X-27.09 Y-32.94 Z2.5 F1920.0
+G1 X-27.19 Y-33.74 Z2.5 F1920.0
+G1 X-27.5 Y-34.48 Z2.5 F1920.0
+G1 X-27.99 Y-35.12 Z2.5 F1920.0
+G1 X-28.62 Y-35.6 Z2.5 F1920.0
+G1 X-29.37 Y-35.91 Z2.5 F1920.0
+G1 X-30.16 Y-36.02 Z2.5 F1920.0
+G1 X-30.96 Y-35.91 Z2.5 F1920.0
+G1 X-31.7 Y-35.6 Z2.5 F1920.0
+G1 X-32.34 Y-35.12 Z2.5 F1920.0
+G1 X-32.83 Y-34.48 Z2.5 F1920.0
+G1 X-32.87 Y-34.36 Z2.5 F1920.0
+G1 X-33.45 Y-34.62 Z2.5 F1920.0
+G1 X-33.45 Y-36.62 Z2.5 F1920.0
+G1 X33.45 Y-36.62 Z2.5 F1920.0
+G1 X33.45 Y-34.62 Z2.5 F1920.0
+G1 X32.87 Y-34.37 Z2.5 F1920.0
+G1 X32.83 Y-34.48 Z2.5 F1920.0
+G1 X32.34 Y-35.12 Z2.5 F1920.0
+G1 X31.7 Y-35.61 Z2.5 F1920.0
+G1 X30.96 Y-35.92 Z2.5 F1920.0
+G1 X30.16 Y-36.02 Z2.5 F1920.0
+G1 X29.37 Y-35.92 Z2.5 F1920.0
+G1 X28.62 Y-35.61 Z2.5 F1920.0
+G1 X27.98 Y-35.12 Z2.5 F1920.0
+G1 X27.5 Y-34.48 Z2.5 F1920.0
+G1 X27.19 Y-33.74 Z2.5 F1920.0
+G1 X27.08 Y-32.94 Z2.5 F1920.0
+G1 X27.19 Y-32.14 Z2.5 F1920.0
+G1 X27.5 Y-31.4 Z2.5 F1920.0
+G1 X27.98 Y-30.76 Z2.5 F1920.0
+G1 X28.62 Y-30.27 Z2.5 F1920.0
+G1 X29.37 Y-29.97 Z2.5 F1920.0
+G1 X30.16 Y-29.86 Z2.5 F1920.0
+G1 X30.96 Y-29.97 Z2.5 F1920.0
+G1 X31.7 Y-30.27 Z2.5 F1920.0
+G1 X32.34 Y-30.76 Z2.5 F1920.0
+G1 X32.83 Y-31.4 Z2.5 F1920.0
+G1 X33.0 Y-31.8 Z2.5 F1920.0
+G1 X33.61 Y-32.16 Z2.5 F1920.0
+G1 X33.45 Y-31.25 Z2.5 F1920.0
+G1 X33.45 Y-20.15 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X30.16 Y30.47 Z2.5 F1920.0
+M101
+G1 X29.52 Y30.55 Z2.5 F1920.0
+G1 X28.93 Y30.8 Z2.5 F1920.0
+G1 X28.41 Y31.19 Z2.5 F1920.0
+G1 X28.02 Y31.7 Z2.5 F1920.0
+G1 X27.77 Y32.3 Z2.5 F1920.0
+G1 X27.69 Y32.94 Z2.5 F1920.0
+G1 X27.77 Y33.58 Z2.5 F1920.0
+G1 X28.02 Y34.18 Z2.5 F1920.0
+G1 X28.41 Y34.69 Z2.5 F1920.0
+G1 X28.93 Y35.08 Z2.5 F1920.0
+G1 X29.52 Y35.33 Z2.5 F1920.0
+G1 X30.16 Y35.42 Z2.5 F1920.0
+G1 X30.8 Y35.33 Z2.5 F1920.0
+G1 X31.4 Y35.08 Z2.5 F1920.0
+G1 X31.91 Y34.69 Z2.5 F1920.0
+G1 X32.31 Y34.18 Z2.5 F1920.0
+G1 X32.55 Y33.58 Z2.5 F1920.0
+G1 X32.64 Y32.94 Z2.5 F1920.0
+G1 X32.55 Y32.3 Z2.5 F1920.0
+G1 X32.31 Y31.7 Z2.5 F1920.0
+G1 X31.91 Y31.19 Z2.5 F1920.0
+G1 X31.4 Y30.8 Z2.5 F1920.0
+G1 X30.8 Y30.55 Z2.5 F1920.0
+G1 X30.16 Y30.47 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X30.16 Y-30.47 Z2.5 F1920.0
+M101
+G1 X30.8 Y-30.55 Z2.5 F1920.0
+G1 X31.4 Y-30.8 Z2.5 F1920.0
+G1 X31.91 Y-31.19 Z2.5 F1920.0
+G1 X32.31 Y-31.7 Z2.5 F1920.0
+G1 X32.55 Y-32.3 Z2.5 F1920.0
+G1 X32.64 Y-32.94 Z2.5 F1920.0
+G1 X32.55 Y-33.58 Z2.5 F1920.0
+G1 X32.31 Y-34.18 Z2.5 F1920.0
+G1 X31.91 Y-34.69 Z2.5 F1920.0
+G1 X31.4 Y-35.08 Z2.5 F1920.0
+G1 X30.8 Y-35.33 Z2.5 F1920.0
+G1 X30.16 Y-35.42 Z2.5 F1920.0
+G1 X29.52 Y-35.33 Z2.5 F1920.0
+G1 X28.93 Y-35.08 Z2.5 F1920.0
+G1 X28.41 Y-34.69 Z2.5 F1920.0
+G1 X28.02 Y-34.18 Z2.5 F1920.0
+G1 X27.77 Y-33.58 Z2.5 F1920.0
+G1 X27.69 Y-32.94 Z2.5 F1920.0
+G1 X27.77 Y-32.3 Z2.5 F1920.0
+G1 X28.02 Y-31.7 Z2.5 F1920.0
+G1 X28.41 Y-31.19 Z2.5 F1920.0
+G1 X28.93 Y-30.8 Z2.5 F1920.0
+G1 X29.52 Y-30.55 Z2.5 F1920.0
+G1 X30.16 Y-30.47 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-28.41 Y31.19 Z2.5 F1920.0
+M101
+G1 X-28.93 Y30.8 Z2.5 F1920.0
+G1 X-29.52 Y30.55 Z2.5 F1920.0
+G1 X-30.16 Y30.47 Z2.5 F1920.0
+G1 X-30.8 Y30.55 Z2.5 F1920.0
+G1 X-31.4 Y30.8 Z2.5 F1920.0
+G1 X-31.91 Y31.19 Z2.5 F1920.0
+G1 X-32.31 Y31.7 Z2.5 F1920.0
+G1 X-32.55 Y32.3 Z2.5 F1920.0
+G1 X-32.64 Y32.94 Z2.5 F1920.0
+G1 X-32.55 Y33.58 Z2.5 F1920.0
+G1 X-32.31 Y34.18 Z2.5 F1920.0
+G1 X-31.91 Y34.69 Z2.5 F1920.0
+G1 X-31.4 Y35.08 Z2.5 F1920.0
+G1 X-30.8 Y35.33 Z2.5 F1920.0
+G1 X-30.16 Y35.42 Z2.5 F1920.0
+G1 X-29.52 Y35.33 Z2.5 F1920.0
+G1 X-28.93 Y35.08 Z2.5 F1920.0
+G1 X-28.41 Y34.69 Z2.5 F1920.0
+G1 X-28.02 Y34.18 Z2.5 F1920.0
+G1 X-27.77 Y33.58 Z2.5 F1920.0
+G1 X-27.69 Y32.94 Z2.5 F1920.0
+G1 X-27.77 Y32.3 Z2.5 F1920.0
+G1 X-28.02 Y31.7 Z2.5 F1920.0
+G1 X-28.41 Y31.19 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-30.16 Y-30.47 Z2.5 F1920.0
+M101
+G1 X-29.52 Y-30.55 Z2.5 F1920.0
+G1 X-28.93 Y-30.8 Z2.5 F1920.0
+G1 X-28.41 Y-31.19 Z2.5 F1920.0
+G1 X-28.02 Y-31.7 Z2.5 F1920.0
+G1 X-27.78 Y-32.3 Z2.5 F1920.0
+G1 X-27.69 Y-32.94 Z2.5 F1920.0
+G1 X-27.78 Y-33.58 Z2.5 F1920.0
+G1 X-28.02 Y-34.18 Z2.5 F1920.0
+G1 X-28.41 Y-34.69 Z2.5 F1920.0
+G1 X-28.93 Y-35.08 Z2.5 F1920.0
+G1 X-29.52 Y-35.33 Z2.5 F1920.0
+G1 X-30.16 Y-35.41 Z2.5 F1920.0
+G1 X-30.8 Y-35.33 Z2.5 F1920.0
+G1 X-31.4 Y-35.08 Z2.5 F1920.0
+G1 X-31.91 Y-34.69 Z2.5 F1920.0
+G1 X-32.3 Y-34.18 Z2.5 F1920.0
+G1 X-32.55 Y-33.58 Z2.5 F1920.0
+G1 X-32.64 Y-32.94 Z2.5 F1920.0
+G1 X-32.55 Y-32.3 Z2.5 F1920.0
+G1 X-32.3 Y-31.7 Z2.5 F1920.0
+G1 X-31.91 Y-31.19 Z2.5 F1920.0
+G1 X-31.4 Y-30.8 Z2.5 F1920.0
+G1 X-30.8 Y-30.55 Z2.5 F1920.0
+G1 X-30.16 Y-30.47 Z2.5 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-34.05 Y-30.47 Z2.5 F1920.0
+M101
+G1 X-34.05 Y-37.22 Z2.5 F1920.0
+G1 X34.05 Y-37.22 Z2.5 F1920.0
+G1 X34.05 Y37.22 Z2.5 F1920.0
+G1 X-34.05 Y37.22 Z2.5 F1920.0
+G1 X-34.05 Y-30.47 Z2.5 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-34.64 Y-30.47 Z2.5 F1920.0
+M101
+G1 X-34.64 Y-37.81 Z2.5 F1920.0
+G1 X34.64 Y-37.81 Z2.5 F1920.0
+G1 X34.64 Y37.81 Z2.5 F1920.0
+G1 X-34.64 Y37.81 Z2.5 F1920.0
+G1 X-34.64 Y-30.47 Z2.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-29.042 Y-34.061 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-34.313 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-34.472 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-34.526 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-34.472 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-34.313 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-34.061 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-33.733 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-33.351 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.747 Y-32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-32.148 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-31.82 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-31.568 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-31.41 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-31.356 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-31.41 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-31.568 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-29.042 Y-31.82 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-32.148 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-28.578 Y-32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-33.351 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-33.733 Z2.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-31.79 Y-32.0 Z2.5 F1920.0
+M101
+G1 X-31.49 Y-31.61 Z2.5 F1920.0
+G1 X-31.1 Y-31.32 Z2.5 F1920.0
+G1 X-30.65 Y-31.13 Z2.5 F1920.0
+G1 X-30.16 Y-31.06 Z2.5 F1920.0
+G1 X-29.68 Y-31.13 Z2.5 F1920.0
+G1 X-29.22 Y-31.32 Z2.5 F1920.0
+G1 X-28.84 Y-31.61 Z2.5 F1920.0
+G1 X-28.54 Y-32.0 Z2.5 F1920.0
+G1 X-28.35 Y-32.45 Z2.5 F1920.0
+G1 X-28.29 Y-32.94 Z2.5 F1920.0
+G1 X-28.35 Y-33.43 Z2.5 F1920.0
+G1 X-28.54 Y-33.88 Z2.5 F1920.0
+G1 X-28.84 Y-34.27 Z2.5 F1920.0
+G1 X-29.22 Y-34.57 Z2.5 F1920.0
+G1 X-29.68 Y-34.76 Z2.5 F1920.0
+G1 X-30.16 Y-34.82 Z2.5 F1920.0
+G1 X-30.65 Y-34.75 Z2.5 F1920.0
+G1 X-31.1 Y-34.57 Z2.5 F1920.0
+G1 X-31.49 Y-34.27 Z2.5 F1920.0
+G1 X-31.79 Y-33.88 Z2.5 F1920.0
+G1 X-31.98 Y-33.43 Z2.5 F1920.0
+G1 X-32.04 Y-32.94 Z2.5 F1920.0
+G1 X-31.98 Y-32.45 Z2.5 F1920.0
+G1 X-31.79 Y-32.0 Z2.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-19.05 Y-32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-34.528 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y-32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-32.147 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-31.353 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-32.147 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-32.53 Z2.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-31.16 Y-31.22 Z2.5 F1920.0
+G1 X-30.68 Y-31.02 Z2.5 F1920.0
+G1 X-30.16 Y-30.95 Z2.5 F1920.0
+G1 X-22.52 Y-32.94 Z2.5 F1920.0
+M101
+G1 X-22.45 Y-32.45 Z2.5 F1920.0
+G1 X-22.27 Y-32.0 Z2.5 F1920.0
+G1 X-21.97 Y-31.61 Z2.5 F1920.0
+G1 X-21.58 Y-31.31 Z2.5 F1920.0
+G1 X-21.12 Y-31.12 Z2.5 F1920.0
+G1 X-20.64 Y-31.06 Z2.5 F1920.0
+G1 X-20.15 Y-31.12 Z2.5 F1920.0
+G1 X-19.7 Y-31.31 Z2.5 F1920.0
+G1 X-19.31 Y-31.61 Z2.5 F1920.0
+G1 X-19.01 Y-32.0 Z2.5 F1920.0
+G1 X-18.82 Y-32.45 Z2.5 F1920.0
+G1 X-18.76 Y-32.94 Z2.5 F1920.0
+G1 X-18.82 Y-33.43 Z2.5 F1920.0
+G1 X-19.01 Y-33.88 Z2.5 F1920.0
+G1 X-19.31 Y-34.27 Z2.5 F1920.0
+G1 X-19.7 Y-34.57 Z2.5 F1920.0
+G1 X-20.15 Y-34.76 Z2.5 F1920.0
+G1 X-20.64 Y-34.82 Z2.5 F1920.0
+G1 X-21.12 Y-34.76 Z2.5 F1920.0
+G1 X-21.58 Y-34.57 Z2.5 F1920.0
+G1 X-21.97 Y-34.27 Z2.5 F1920.0
+G1 X-22.27 Y-33.88 Z2.5 F1920.0
+G1 X-22.45 Y-33.43 Z2.5 F1920.0
+G1 X-22.52 Y-32.94 Z2.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X1.167 Y-31.773 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-32.115 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-32.513 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.651 Y-32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-33.368 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-33.766 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.167 Y-34.108 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X0.825 Y-34.37 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-34.535 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-34.592 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-34.535 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-34.37 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-34.108 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-33.766 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-33.368 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.651 Y-32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-32.513 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-32.115 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-31.773 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-31.511 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-31.346 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-31.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-31.346 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X0.825 Y-31.511 Z2.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.36 Y-33.94 Z2.5 F1920.0
+G1 X-22.05 Y-34.35 Z2.5 F1920.0
+G1 X-21.63 Y-34.66 Z2.5 F1920.0
+G1 X-21.15 Y-34.86 Z2.5 F1920.0
+G1 X-1.94 Y-32.94 Z2.5 F1920.0
+M101
+G1 X-1.88 Y-32.44 Z2.5 F1920.0
+G1 X-1.68 Y-31.97 Z2.5 F1920.0
+G1 X-1.37 Y-31.57 Z2.5 F1920.0
+G1 X-0.97 Y-31.26 Z2.5 F1920.0
+G1 X-0.5 Y-31.06 Z2.5 F1920.0
+G1 X0.0 Y-31.02 Z2.5 F1920.0
+G1 X0.5 Y-31.06 Z2.5 F1920.0
+G1 X0.97 Y-31.26 Z2.5 F1920.0
+G1 X1.37 Y-31.57 Z2.5 F1920.0
+G1 X1.68 Y-31.97 Z2.5 F1920.0
+G1 X1.88 Y-32.44 Z2.5 F1920.0
+G1 X1.94 Y-32.94 Z2.5 F1920.0
+G1 X1.88 Y-33.44 Z2.5 F1920.0
+G1 X1.68 Y-33.91 Z2.5 F1920.0
+G1 X1.37 Y-34.32 Z2.5 F1920.0
+G1 X0.97 Y-34.62 Z2.5 F1920.0
+G1 X0.5 Y-34.82 Z2.5 F1920.0
+G1 X0.0 Y-34.89 Z2.5 F1920.0
+G1 X-0.5 Y-34.82 Z2.5 F1920.0
+G1 X-0.97 Y-34.62 Z2.5 F1920.0
+G1 X-1.37 Y-34.32 Z2.5 F1920.0
+G1 X-1.68 Y-33.91 Z2.5 F1920.0
+G1 X-1.88 Y-33.44 Z2.5 F1920.0
+G1 X-1.94 Y-32.94 Z2.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-0.794 Y-18.44 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-18.188 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-17.859 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-17.477 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.587 Y-17.066 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-16.655 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-16.272 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-15.943 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-0.794 Y-15.691 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-15.532 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-15.478 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-15.532 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-15.691 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-15.943 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-16.272 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-16.655 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.587 Y-17.066 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-17.477 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-17.859 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-18.188 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-18.44 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-18.599 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-18.653 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-18.599 Z2.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X0.0 Y-18.95 Z2.5 F1920.0
+M101
+G1 X-0.49 Y-18.88 Z2.5 F1920.0
+G1 X-0.94 Y-18.69 Z2.5 F1920.0
+G1 X-1.33 Y-18.4 Z2.5 F1920.0
+G1 X-1.63 Y-18.01 Z2.5 F1920.0
+G1 X-1.82 Y-17.55 Z2.5 F1920.0
+G1 X-1.88 Y-17.07 Z2.5 F1920.0
+G1 X-1.82 Y-16.58 Z2.5 F1920.0
+G1 X-1.63 Y-16.13 Z2.5 F1920.0
+G1 X-1.33 Y-15.74 Z2.5 F1920.0
+G1 X-0.94 Y-15.44 Z2.5 F1920.0
+G1 X-0.49 Y-15.25 Z2.5 F1920.0
+G1 X0.0 Y-15.19 Z2.5 F1920.0
+G1 X0.49 Y-15.25 Z2.5 F1920.0
+G1 X0.94 Y-15.44 Z2.5 F1920.0
+G1 X1.33 Y-15.74 Z2.5 F1920.0
+G1 X1.63 Y-16.13 Z2.5 F1920.0
+G1 X1.82 Y-16.58 Z2.5 F1920.0
+G1 X1.88 Y-17.07 Z2.5 F1920.0
+G1 X1.82 Y-17.55 Z2.5 F1920.0
+G1 X1.63 Y-18.01 Z2.5 F1920.0
+G1 X1.33 Y-18.4 Z2.5 F1920.0
+G1 X0.94 Y-18.69 Z2.5 F1920.0
+G1 X0.49 Y-18.88 Z2.5 F1920.0
+G1 X0.0 Y-18.95 Z2.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y-18.44 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-18.188 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-17.859 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-17.477 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-17.066 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-16.655 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-16.272 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-15.943 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-15.691 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-15.532 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-15.478 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-15.532 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-15.691 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-15.943 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-16.272 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-16.655 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-17.066 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-17.477 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-17.859 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-18.188 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-18.44 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-18.599 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-18.653 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-18.599 Z2.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X18.76 Y-17.07 Z2.5 F1920.0
+M101
+G1 X18.82 Y-16.58 Z2.5 F1920.0
+G1 X19.01 Y-16.13 Z2.5 F1920.0
+G1 X19.31 Y-15.74 Z2.5 F1920.0
+G1 X19.7 Y-15.44 Z2.5 F1920.0
+G1 X20.15 Y-15.25 Z2.5 F1920.0
+G1 X20.64 Y-15.19 Z2.5 F1920.0
+G1 X21.12 Y-15.25 Z2.5 F1920.0
+G1 X21.58 Y-15.44 Z2.5 F1920.0
+G1 X21.97 Y-15.74 Z2.5 F1920.0
+G1 X22.27 Y-16.13 Z2.5 F1920.0
+G1 X22.45 Y-16.58 Z2.5 F1920.0
+G1 X22.52 Y-17.07 Z2.5 F1920.0
+G1 X22.45 Y-17.55 Z2.5 F1920.0
+G1 X22.27 Y-18.01 Z2.5 F1920.0
+G1 X21.97 Y-18.4 Z2.5 F1920.0
+G1 X21.58 Y-18.69 Z2.5 F1920.0
+G1 X21.12 Y-18.88 Z2.5 F1920.0
+G1 X20.64 Y-18.95 Z2.5 F1920.0
+G1 X20.15 Y-18.88 Z2.5 F1920.0
+G1 X19.7 Y-18.69 Z2.5 F1920.0
+G1 X19.31 Y-18.4 Z2.5 F1920.0
+G1 X19.01 Y-18.01 Z2.5 F1920.0
+G1 X18.82 Y-17.55 Z2.5 F1920.0
+G1 X18.76 Y-17.07 Z2.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X21.048 Y-31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-32.147 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-34.528 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-32.147 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-31.353 Z2.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X20.64 Y-31.06 Z2.5 F1920.0
+M101
+G1 X21.12 Y-31.12 Z2.5 F1920.0
+G1 X21.58 Y-31.31 Z2.5 F1920.0
+G1 X21.97 Y-31.61 Z2.5 F1920.0
+G1 X22.27 Y-32.0 Z2.5 F1920.0
+G1 X22.45 Y-32.45 Z2.5 F1920.0
+G1 X22.52 Y-32.94 Z2.5 F1920.0
+G1 X22.45 Y-33.43 Z2.5 F1920.0
+G1 X22.27 Y-33.88 Z2.5 F1920.0
+G1 X21.97 Y-34.27 Z2.5 F1920.0
+G1 X21.58 Y-34.57 Z2.5 F1920.0
+G1 X21.12 Y-34.76 Z2.5 F1920.0
+G1 X20.64 Y-34.82 Z2.5 F1920.0
+G1 X20.15 Y-34.76 Z2.5 F1920.0
+G1 X19.7 Y-34.57 Z2.5 F1920.0
+G1 X19.31 Y-34.27 Z2.5 F1920.0
+G1 X19.01 Y-33.88 Z2.5 F1920.0
+G1 X18.82 Y-33.43 Z2.5 F1920.0
+G1 X18.76 Y-32.94 Z2.5 F1920.0
+G1 X18.82 Y-32.45 Z2.5 F1920.0
+G1 X19.01 Y-32.0 Z2.5 F1920.0
+G1 X19.31 Y-31.61 Z2.5 F1920.0
+G1 X19.7 Y-31.31 Z2.5 F1920.0
+G1 X20.15 Y-31.12 Z2.5 F1920.0
+G1 X20.64 Y-31.06 Z2.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X29.04 Y-31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-31.353 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-32.147 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y-32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-34.528 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y-34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-32.147 Z2.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X28.35 Y-32.45 Z2.5 F1920.0
+M101
+G1 X28.54 Y-32.0 Z2.5 F1920.0
+G1 X28.83 Y-31.61 Z2.5 F1920.0
+G1 X29.22 Y-31.31 Z2.5 F1920.0
+G1 X29.68 Y-31.12 Z2.5 F1920.0
+G1 X30.16 Y-31.06 Z2.5 F1920.0
+G1 X30.65 Y-31.12 Z2.5 F1920.0
+G1 X31.1 Y-31.31 Z2.5 F1920.0
+G1 X31.49 Y-31.61 Z2.5 F1920.0
+G1 X31.79 Y-32.0 Z2.5 F1920.0
+G1 X31.98 Y-32.45 Z2.5 F1920.0
+G1 X32.04 Y-32.94 Z2.5 F1920.0
+G1 X31.98 Y-33.43 Z2.5 F1920.0
+G1 X31.79 Y-33.88 Z2.5 F1920.0
+G1 X31.49 Y-34.27 Z2.5 F1920.0
+G1 X31.1 Y-34.57 Z2.5 F1920.0
+G1 X30.65 Y-34.76 Z2.5 F1920.0
+G1 X30.16 Y-34.82 Z2.5 F1920.0
+G1 X29.68 Y-34.76 Z2.5 F1920.0
+G1 X29.22 Y-34.57 Z2.5 F1920.0
+G1 X28.83 Y-34.27 Z2.5 F1920.0
+G1 X28.54 Y-33.88 Z2.5 F1920.0
+G1 X28.35 Y-33.43 Z2.5 F1920.0
+G1 X28.28 Y-32.94 Z2.5 F1920.0
+G1 X28.35 Y-32.45 Z2.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X31.285 Y31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y31.353 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y32.147 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y34.528 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y32.147 Z2.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X30.16 Y31.06 Z2.5 F1920.0
+M101
+G1 X29.68 Y31.12 Z2.5 F1920.0
+G1 X29.22 Y31.31 Z2.5 F1920.0
+G1 X28.83 Y31.61 Z2.5 F1920.0
+G1 X28.54 Y32.0 Z2.5 F1920.0
+G1 X28.35 Y32.45 Z2.5 F1920.0
+G1 X28.28 Y32.94 Z2.5 F1920.0
+G1 X28.35 Y33.43 Z2.5 F1920.0
+G1 X28.54 Y33.88 Z2.5 F1920.0
+G1 X28.83 Y34.27 Z2.5 F1920.0
+G1 X29.22 Y34.57 Z2.5 F1920.0
+G1 X29.68 Y34.76 Z2.5 F1920.0
+G1 X30.16 Y34.82 Z2.5 F1920.0
+G1 X30.65 Y34.76 Z2.5 F1920.0
+G1 X31.1 Y34.57 Z2.5 F1920.0
+G1 X31.49 Y34.27 Z2.5 F1920.0
+G1 X31.79 Y33.88 Z2.5 F1920.0
+G1 X31.98 Y33.43 Z2.5 F1920.0
+G1 X32.04 Y32.94 Z2.5 F1920.0
+G1 X31.98 Y32.45 Z2.5 F1920.0
+G1 X31.79 Y32.0 Z2.5 F1920.0
+G1 X31.49 Y31.61 Z2.5 F1920.0
+G1 X31.1 Y31.31 Z2.5 F1920.0
+G1 X30.65 Y31.12 Z2.5 F1920.0
+G1 X30.16 Y31.06 Z2.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y34.528 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y32.147 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y31.353 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y32.147 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y34.063 Z2.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.45 Y32.45 Z2.5 F1920.0
+M101
+G1 X22.27 Y32.0 Z2.5 F1920.0
+G1 X21.97 Y31.61 Z2.5 F1920.0
+G1 X21.58 Y31.31 Z2.5 F1920.0
+G1 X21.12 Y31.12 Z2.5 F1920.0
+G1 X20.64 Y31.06 Z2.5 F1920.0
+G1 X20.15 Y31.12 Z2.5 F1920.0
+G1 X19.7 Y31.31 Z2.5 F1920.0
+G1 X19.31 Y31.61 Z2.5 F1920.0
+G1 X19.01 Y32.0 Z2.5 F1920.0
+G1 X18.82 Y32.45 Z2.5 F1920.0
+G1 X18.76 Y32.94 Z2.5 F1920.0
+G1 X18.82 Y33.43 Z2.5 F1920.0
+G1 X19.01 Y33.88 Z2.5 F1920.0
+G1 X19.31 Y34.27 Z2.5 F1920.0
+G1 X19.7 Y34.57 Z2.5 F1920.0
+G1 X20.15 Y34.76 Z2.5 F1920.0
+G1 X20.64 Y34.82 Z2.5 F1920.0
+G1 X21.12 Y34.76 Z2.5 F1920.0
+G1 X21.58 Y34.57 Z2.5 F1920.0
+G1 X21.97 Y34.27 Z2.5 F1920.0
+G1 X22.27 Y33.88 Z2.5 F1920.0
+G1 X22.45 Y33.43 Z2.5 F1920.0
+G1 X22.52 Y32.94 Z2.5 F1920.0
+G1 X22.45 Y32.45 Z2.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-22.171 Y32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y34.528 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.05 Y32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y32.147 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y31.353 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y32.147 Z2.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.05 Y31.53 Z2.5 F1920.0
+G1 X21.63 Y31.22 Z2.5 F1920.0
+G1 X21.15 Y31.02 Z2.5 F1920.0
+G1 X-18.76 Y32.94 Z2.5 F1920.0
+M101
+G1 X-18.82 Y32.45 Z2.5 F1920.0
+G1 X-19.01 Y32.0 Z2.5 F1920.0
+G1 X-19.31 Y31.61 Z2.5 F1920.0
+G1 X-19.7 Y31.31 Z2.5 F1920.0
+G1 X-20.15 Y31.12 Z2.5 F1920.0
+G1 X-20.64 Y31.06 Z2.5 F1920.0
+G1 X-21.12 Y31.12 Z2.5 F1920.0
+G1 X-21.58 Y31.31 Z2.5 F1920.0
+G1 X-21.97 Y31.61 Z2.5 F1920.0
+G1 X-22.27 Y32.0 Z2.5 F1920.0
+G1 X-22.45 Y32.45 Z2.5 F1920.0
+G1 X-22.52 Y32.94 Z2.5 F1920.0
+G1 X-22.45 Y33.43 Z2.5 F1920.0
+G1 X-22.27 Y33.88 Z2.5 F1920.0
+G1 X-21.97 Y34.27 Z2.5 F1920.0
+G1 X-21.58 Y34.57 Z2.5 F1920.0
+G1 X-21.12 Y34.76 Z2.5 F1920.0
+G1 X-20.64 Y34.82 Z2.5 F1920.0
+G1 X-20.15 Y34.76 Z2.5 F1920.0
+G1 X-19.7 Y34.57 Z2.5 F1920.0
+G1 X-19.31 Y34.27 Z2.5 F1920.0
+G1 X-19.01 Y33.88 Z2.5 F1920.0
+G1 X-18.82 Y33.43 Z2.5 F1920.0
+G1 X-18.76 Y32.94 Z2.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-28.788 Y32.147 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y31.353 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y31.407 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y31.566 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y31.818 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y32.147 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y32.53 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.75 Y32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y34.528 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y34.474 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y34.315 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y34.063 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-28.788 Y33.734 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y33.352 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y32.941 Z2.5 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y32.53 Z2.5 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-18.91 Y33.94 Z2.5 F1920.0
+G1 X-19.23 Y34.35 Z2.5 F1920.0
+G1 X-19.64 Y34.66 Z2.5 F1920.0
+G1 X-20.12 Y34.86 Z2.5 F1920.0
+G1 X-20.64 Y34.93 Z2.5 F1920.0
+G1 X-28.28 Y32.94 Z2.5 F1920.0
+M101
+G1 X-28.35 Y32.45 Z2.5 F1920.0
+G1 X-28.54 Y32.0 Z2.5 F1920.0
+G1 X-28.83 Y31.61 Z2.5 F1920.0
+G1 X-29.22 Y31.31 Z2.5 F1920.0
+G1 X-29.68 Y31.12 Z2.5 F1920.0
+G1 X-30.16 Y31.06 Z2.5 F1920.0
+G1 X-30.65 Y31.12 Z2.5 F1920.0
+G1 X-31.1 Y31.31 Z2.5 F1920.0
+G1 X-31.49 Y31.61 Z2.5 F1920.0
+G1 X-31.79 Y32.0 Z2.5 F1920.0
+G1 X-31.98 Y32.45 Z2.5 F1920.0
+G1 X-32.04 Y32.94 Z2.5 F1920.0
+G1 X-31.98 Y33.43 Z2.5 F1920.0
+G1 X-31.79 Y33.88 Z2.5 F1920.0
+G1 X-31.49 Y34.27 Z2.5 F1920.0
+G1 X-31.1 Y34.57 Z2.5 F1920.0
+G1 X-30.65 Y34.76 Z2.5 F1920.0
+G1 X-30.16 Y34.82 Z2.5 F1920.0
+G1 X-29.68 Y34.76 Z2.5 F1920.0
+G1 X-29.22 Y34.57 Z2.5 F1920.0
+G1 X-28.83 Y34.27 Z2.5 F1920.0
+G1 X-28.54 Y33.88 Z2.5 F1920.0
+G1 X-28.35 Y33.43 Z2.5 F1920.0
+G1 X-28.28 Y32.94 Z2.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+G1 X-27.57 Y30.67 Z2.5 F1920.0
+M101
+G1 X-27.1 Y31.33 Z2.5 F1920.0
+G1 X-26.82 Y32.0 Z2.5 F1920.0
+G1 X-26.07 Y32.57 Z2.5 F1920.0
+G1 X-26.09 Y33.46 Z2.5 F1920.0
+G1 X-26.87 Y34.0 Z2.5 F1920.0
+G1 X-27.15 Y34.67 Z2.5 F1920.0
+G1 X-27.66 Y35.33 Z2.5 F1920.0
+G1 X-24.58 Y34.13 Z2.5 F1920.0
+G1 X-24.06 Y33.33 Z2.5 F1920.0
+G1 X-24.08 Y32.67 Z2.5 F1920.0
+G1 X-23.98 Y32.0 Z2.5 F1920.0
+G1 X-23.7 Y31.33 Z2.5 F1920.0
+G1 X-23.23 Y30.67 Z2.5 F1920.0
+M103
+G1 X-22.25 Y36.0 Z2.5 F1920.0
+M101
+G1 X-23.14 Y35.33 Z2.5 F1920.0
+G1 X-23.65 Y34.67 Z2.5 F1920.0
+G1 X-28.55 Y36.0 Z2.5 F1920.0
+M103
+G1 X-31.77 Y36.0 Z2.5 F1920.0
+M101
+G1 X-33.06 Y36.0 Z2.5 F1920.0
+G1 X-32.67 Y35.33 Z2.5 F1920.0
+G1 X-33.06 Y35.33 Z2.5 F1920.0
+M103
+G1 X-33.06 Y30.67 Z2.5 F1920.0
+M101
+G1 X-32.76 Y30.67 Z2.5 F1920.0
+G1 X-33.06 Y30.0 Z2.5 F1920.0
+G1 X-31.99 Y30.0 Z2.5 F1920.0
+G1 X-33.06 Y29.33 Z2.5 F1920.0
+G1 X-32.39 Y28.67 Z2.5 F1920.0
+G1 X-33.06 Y28.0 Z2.5 F1920.0
+M103
+G1 X33.06 Y25.33 Z2.5 F1920.0
+M101
+G1 X32.39 Y26.0 Z2.5 F1920.0
+G1 X32.39 Y26.67 Z2.5 F1920.0
+G1 X33.06 Y27.33 Z2.5 F1920.0
+G1 X32.39 Y28.0 Z2.5 F1920.0
+G1 X33.06 Y28.67 Z2.5 F1920.0
+G1 X30.86 Y29.33 Z2.5 F1920.0
+G1 X30.47 Y29.33 Z2.5 F1920.0
+G1 X28.2 Y24.0 Z2.5 F1920.0
+G1 X27.81 Y24.0 Z2.5 F1920.0
+G1 X25.53 Y25.78 Z2.5 F1920.0
+G1 X25.14 Y25.78 Z2.5 F1920.0
+G1 X22.86 Y24.0 Z2.5 F1920.0
+G1 X22.47 Y24.0 Z2.5 F1920.0
+G1 X20.2 Y25.78 Z2.5 F1920.0
+G1 X19.81 Y25.78 Z2.5 F1920.0
+G1 X17.53 Y24.0 Z2.5 F1920.0
+G1 X17.14 Y24.0 Z2.5 F1920.0
+G1 X14.86 Y25.78 Z2.5 F1920.0
+G1 X14.47 Y25.78 Z2.5 F1920.0
+G1 X12.2 Y24.0 Z2.5 F1920.0
+G1 X11.81 Y24.0 Z2.5 F1920.0
+G1 X9.53 Y25.78 Z2.5 F1920.0
+G1 X9.14 Y25.78 Z2.5 F1920.0
+G1 X6.86 Y24.0 Z2.5 F1920.0
+G1 X6.47 Y24.0 Z2.5 F1920.0
+G1 X4.2 Y25.78 Z2.5 F1920.0
+G1 X3.81 Y25.78 Z2.5 F1920.0
+G1 X1.53 Y24.0 Z2.5 F1920.0
+G1 X1.14 Y24.0 Z2.5 F1920.0
+G1 X-1.14 Y25.78 Z2.5 F1920.0
+G1 X-1.53 Y25.78 Z2.5 F1920.0
+G1 X-3.81 Y24.0 Z2.5 F1920.0
+G1 X-4.2 Y24.0 Z2.5 F1920.0
+G1 X-6.47 Y25.78 Z2.5 F1920.0
+G1 X-6.86 Y25.78 Z2.5 F1920.0
+G1 X-9.14 Y24.0 Z2.5 F1920.0
+G1 X-9.53 Y24.0 Z2.5 F1920.0
+G1 X-11.81 Y25.78 Z2.5 F1920.0
+G1 X-12.2 Y25.78 Z2.5 F1920.0
+G1 X-14.47 Y24.0 Z2.5 F1920.0
+G1 X-14.86 Y24.0 Z2.5 F1920.0
+G1 X-17.14 Y25.78 Z2.5 F1920.0
+G1 X-17.53 Y25.78 Z2.5 F1920.0
+G1 X-19.81 Y24.0 Z2.5 F1920.0
+G1 X-20.2 Y24.0 Z2.5 F1920.0
+G1 X-22.47 Y25.78 Z2.5 F1920.0
+G1 X-22.86 Y25.78 Z2.5 F1920.0
+G1 X-25.14 Y24.0 Z2.5 F1920.0
+G1 X-25.53 Y24.0 Z2.5 F1920.0
+G1 X-27.81 Y29.33 Z2.5 F1920.0
+G1 X-28.34 Y30.0 Z2.5 F1920.0
+G1 X-28.2 Y29.33 Z2.5 F1920.0
+G1 X-30.47 Y24.0 Z2.5 F1920.0
+G1 X-30.86 Y24.0 Z2.5 F1920.0
+G1 X-32.39 Y23.33 Z2.5 F1920.0
+G1 X-33.06 Y24.0 Z2.5 F1920.0
+G1 X-32.58 Y24.47 Z2.5 F1920.0
+G1 X-32.8 Y25.28 Z2.5 F1920.0
+G1 X-33.06 Y25.33 Z2.5 F1920.0
+M103
+G1 X-33.06 Y20.0 Z2.5 F1920.0
+M101
+G1 X-32.39 Y20.67 Z2.5 F1920.0
+G1 X-30.47 Y20.44 Z2.5 F1920.0
+G1 X-28.2 Y18.67 Z2.5 F1920.0
+G1 X-27.81 Y18.67 Z2.5 F1920.0
+G1 X-25.53 Y20.44 Z2.5 F1920.0
+G1 X-25.14 Y20.44 Z2.5 F1920.0
+G1 X-22.86 Y18.67 Z2.5 F1920.0
+G1 X-22.47 Y18.67 Z2.5 F1920.0
+G1 X-20.2 Y20.44 Z2.5 F1920.0
+G1 X-19.81 Y20.44 Z2.5 F1920.0
+G1 X-17.53 Y18.67 Z2.5 F1920.0
+G1 X-17.14 Y18.67 Z2.5 F1920.0
+G1 X-14.86 Y20.44 Z2.5 F1920.0
+G1 X-14.47 Y20.44 Z2.5 F1920.0
+G1 X-12.2 Y18.67 Z2.5 F1920.0
+G1 X-11.81 Y18.67 Z2.5 F1920.0
+G1 X-9.53 Y20.44 Z2.5 F1920.0
+G1 X-9.14 Y20.44 Z2.5 F1920.0
+G1 X-6.86 Y18.67 Z2.5 F1920.0
+G1 X-6.47 Y18.67 Z2.5 F1920.0
+G1 X-4.2 Y20.44 Z2.5 F1920.0
+G1 X-3.81 Y20.44 Z2.5 F1920.0
+G1 X-1.53 Y18.67 Z2.5 F1920.0
+G1 X-1.14 Y18.67 Z2.5 F1920.0
+G1 X1.14 Y20.44 Z2.5 F1920.0
+G1 X1.53 Y20.44 Z2.5 F1920.0
+G1 X3.81 Y18.67 Z2.5 F1920.0
+G1 X4.2 Y18.67 Z2.5 F1920.0
+G1 X6.47 Y20.44 Z2.5 F1920.0
+G1 X6.86 Y20.44 Z2.5 F1920.0
+G1 X9.14 Y18.67 Z2.5 F1920.0
+G1 X9.53 Y18.67 Z2.5 F1920.0
+G1 X11.81 Y20.44 Z2.5 F1920.0
+G1 X12.2 Y20.44 Z2.5 F1920.0
+G1 X14.47 Y18.67 Z2.5 F1920.0
+G1 X14.86 Y18.67 Z2.5 F1920.0
+G1 X17.14 Y20.44 Z2.5 F1920.0
+G1 X17.53 Y20.44 Z2.5 F1920.0
+G1 X19.81 Y18.67 Z2.5 F1920.0
+G1 X20.2 Y18.67 Z2.5 F1920.0
+G1 X22.47 Y20.44 Z2.5 F1920.0
+G1 X22.86 Y20.44 Z2.5 F1920.0
+G1 X25.14 Y18.67 Z2.5 F1920.0
+G1 X25.53 Y18.67 Z2.5 F1920.0
+G1 X27.81 Y20.44 Z2.5 F1920.0
+G1 X28.2 Y20.44 Z2.5 F1920.0
+G1 X30.47 Y18.67 Z2.5 F1920.0
+G1 X30.86 Y18.67 Z2.5 F1920.0
+G1 X32.39 Y18.0 Z2.5 F1920.0
+G1 X33.06 Y18.67 Z2.5 F1920.0
+G1 X32.58 Y19.14 Z2.5 F1920.0
+G1 X33.06 Y19.33 Z2.5 F1920.0
+G1 X32.8 Y19.95 Z2.5 F1920.0
+G1 X33.06 Y20.0 Z2.5 F1920.0
+M103
+G1 X33.06 Y14.67 Z2.5 F1920.0
+M101
+G1 X32.39 Y15.33 Z2.5 F1920.0
+G1 X30.47 Y15.11 Z2.5 F1920.0
+G1 X28.2 Y13.33 Z2.5 F1920.0
+G1 X27.81 Y13.33 Z2.5 F1920.0
+G1 X25.53 Y15.11 Z2.5 F1920.0
+G1 X25.14 Y15.11 Z2.5 F1920.0
+G1 X22.86 Y13.33 Z2.5 F1920.0
+G1 X22.47 Y13.33 Z2.5 F1920.0
+G1 X20.2 Y15.11 Z2.5 F1920.0
+G1 X19.81 Y15.11 Z2.5 F1920.0
+G1 X17.53 Y13.33 Z2.5 F1920.0
+G1 X17.14 Y13.33 Z2.5 F1920.0
+G1 X14.86 Y15.11 Z2.5 F1920.0
+G1 X14.47 Y15.11 Z2.5 F1920.0
+G1 X12.2 Y13.33 Z2.5 F1920.0
+G1 X11.81 Y13.33 Z2.5 F1920.0
+G1 X9.53 Y15.11 Z2.5 F1920.0
+G1 X9.14 Y15.11 Z2.5 F1920.0
+G1 X6.86 Y13.33 Z2.5 F1920.0
+G1 X6.47 Y13.33 Z2.5 F1920.0
+G1 X4.2 Y15.11 Z2.5 F1920.0
+G1 X3.81 Y15.11 Z2.5 F1920.0
+G1 X1.53 Y13.33 Z2.5 F1920.0
+G1 X1.14 Y13.33 Z2.5 F1920.0
+G1 X-1.14 Y15.11 Z2.5 F1920.0
+G1 X-1.53 Y15.11 Z2.5 F1920.0
+G1 X-3.81 Y13.33 Z2.5 F1920.0
+G1 X-4.2 Y13.33 Z2.5 F1920.0
+G1 X-6.47 Y15.11 Z2.5 F1920.0
+G1 X-6.86 Y15.11 Z2.5 F1920.0
+G1 X-9.14 Y13.33 Z2.5 F1920.0
+G1 X-9.53 Y13.33 Z2.5 F1920.0
+G1 X-11.81 Y15.11 Z2.5 F1920.0
+G1 X-12.2 Y15.11 Z2.5 F1920.0
+G1 X-14.47 Y13.33 Z2.5 F1920.0
+G1 X-14.86 Y13.33 Z2.5 F1920.0
+G1 X-17.14 Y15.11 Z2.5 F1920.0
+G1 X-17.53 Y15.11 Z2.5 F1920.0
+G1 X-19.81 Y13.33 Z2.5 F1920.0
+G1 X-20.2 Y13.33 Z2.5 F1920.0
+G1 X-22.47 Y15.11 Z2.5 F1920.0
+G1 X-22.86 Y15.11 Z2.5 F1920.0
+G1 X-25.14 Y13.33 Z2.5 F1920.0
+G1 X-25.53 Y13.33 Z2.5 F1920.0
+G1 X-27.81 Y15.11 Z2.5 F1920.0
+G1 X-28.2 Y15.11 Z2.5 F1920.0
+G1 X-30.47 Y13.33 Z2.5 F1920.0
+G1 X-30.86 Y13.33 Z2.5 F1920.0
+G1 X-32.39 Y12.67 Z2.5 F1920.0
+G1 X-33.06 Y13.33 Z2.5 F1920.0
+G1 X-32.58 Y13.81 Z2.5 F1920.0
+G1 X-32.8 Y14.62 Z2.5 F1920.0
+G1 X-33.06 Y14.67 Z2.5 F1920.0
+M103
+G1 X-33.06 Y9.33 Z2.5 F1920.0
+M101
+G1 X-32.39 Y10.0 Z2.5 F1920.0
+G1 X-30.47 Y9.78 Z2.5 F1920.0
+G1 X-28.2 Y8.0 Z2.5 F1920.0
+G1 X-27.81 Y8.0 Z2.5 F1920.0
+G1 X-25.53 Y9.78 Z2.5 F1920.0
+G1 X-25.14 Y9.78 Z2.5 F1920.0
+G1 X-22.86 Y8.0 Z2.5 F1920.0
+G1 X-22.47 Y8.0 Z2.5 F1920.0
+G1 X-20.2 Y9.78 Z2.5 F1920.0
+G1 X-19.81 Y9.78 Z2.5 F1920.0
+G1 X-17.53 Y8.0 Z2.5 F1920.0
+G1 X-17.14 Y8.0 Z2.5 F1920.0
+G1 X-14.86 Y9.78 Z2.5 F1920.0
+G1 X-14.47 Y9.78 Z2.5 F1920.0
+G1 X-12.2 Y8.0 Z2.5 F1920.0
+G1 X-11.81 Y8.0 Z2.5 F1920.0
+G1 X-9.53 Y9.78 Z2.5 F1920.0
+G1 X-9.14 Y9.78 Z2.5 F1920.0
+G1 X-6.86 Y8.0 Z2.5 F1920.0
+G1 X-6.47 Y8.0 Z2.5 F1920.0
+G1 X-4.2 Y9.78 Z2.5 F1920.0
+G1 X-3.81 Y9.78 Z2.5 F1920.0
+G1 X-1.53 Y8.0 Z2.5 F1920.0
+G1 X-1.14 Y8.0 Z2.5 F1920.0
+G1 X1.14 Y9.78 Z2.5 F1920.0
+G1 X1.53 Y9.78 Z2.5 F1920.0
+G1 X3.81 Y8.0 Z2.5 F1920.0
+G1 X4.2 Y8.0 Z2.5 F1920.0
+G1 X6.47 Y9.78 Z2.5 F1920.0
+G1 X6.86 Y9.78 Z2.5 F1920.0
+G1 X9.14 Y8.0 Z2.5 F1920.0
+G1 X9.53 Y8.0 Z2.5 F1920.0
+G1 X11.81 Y9.78 Z2.5 F1920.0
+G1 X12.2 Y9.78 Z2.5 F1920.0
+G1 X14.47 Y8.0 Z2.5 F1920.0
+G1 X14.86 Y8.0 Z2.5 F1920.0
+G1 X17.14 Y9.78 Z2.5 F1920.0
+G1 X17.53 Y9.78 Z2.5 F1920.0
+G1 X19.81 Y8.0 Z2.5 F1920.0
+G1 X20.2 Y8.0 Z2.5 F1920.0
+G1 X22.47 Y9.78 Z2.5 F1920.0
+G1 X22.86 Y9.78 Z2.5 F1920.0
+G1 X25.14 Y8.0 Z2.5 F1920.0
+G1 X25.53 Y8.0 Z2.5 F1920.0
+G1 X27.81 Y9.78 Z2.5 F1920.0
+G1 X28.2 Y9.78 Z2.5 F1920.0
+G1 X30.47 Y8.0 Z2.5 F1920.0
+G1 X30.86 Y8.0 Z2.5 F1920.0
+G1 X32.39 Y7.33 Z2.5 F1920.0
+G1 X33.06 Y8.0 Z2.5 F1920.0
+G1 X32.58 Y8.47 Z2.5 F1920.0
+G1 X33.06 Y8.67 Z2.5 F1920.0
+G1 X32.8 Y9.28 Z2.5 F1920.0
+G1 X33.06 Y9.33 Z2.5 F1920.0
+M103
+G1 X33.06 Y4.0 Z2.5 F1920.0
+M101
+G1 X32.39 Y4.67 Z2.5 F1920.0
+G1 X30.47 Y4.44 Z2.5 F1920.0
+G1 X28.2 Y2.67 Z2.5 F1920.0
+G1 X27.81 Y2.67 Z2.5 F1920.0
+G1 X25.53 Y4.44 Z2.5 F1920.0
+G1 X25.14 Y4.44 Z2.5 F1920.0
+G1 X22.86 Y2.67 Z2.5 F1920.0
+G1 X22.47 Y2.67 Z2.5 F1920.0
+G1 X20.2 Y4.44 Z2.5 F1920.0
+G1 X19.81 Y4.44 Z2.5 F1920.0
+G1 X17.53 Y2.67 Z2.5 F1920.0
+G1 X17.14 Y2.67 Z2.5 F1920.0
+G1 X14.86 Y4.44 Z2.5 F1920.0
+G1 X14.47 Y4.44 Z2.5 F1920.0
+G1 X12.2 Y2.67 Z2.5 F1920.0
+G1 X11.81 Y2.67 Z2.5 F1920.0
+G1 X9.53 Y4.44 Z2.5 F1920.0
+G1 X9.14 Y4.44 Z2.5 F1920.0
+G1 X6.86 Y2.67 Z2.5 F1920.0
+G1 X6.47 Y2.67 Z2.5 F1920.0
+G1 X4.2 Y4.44 Z2.5 F1920.0
+G1 X3.81 Y4.44 Z2.5 F1920.0
+G1 X1.53 Y2.67 Z2.5 F1920.0
+G1 X1.14 Y2.67 Z2.5 F1920.0
+G1 X-1.14 Y4.44 Z2.5 F1920.0
+G1 X-1.53 Y4.44 Z2.5 F1920.0
+G1 X-3.81 Y2.67 Z2.5 F1920.0
+G1 X-4.2 Y2.67 Z2.5 F1920.0
+G1 X-6.47 Y4.44 Z2.5 F1920.0
+G1 X-6.86 Y4.44 Z2.5 F1920.0
+G1 X-9.14 Y2.67 Z2.5 F1920.0
+G1 X-9.53 Y2.67 Z2.5 F1920.0
+G1 X-11.81 Y4.44 Z2.5 F1920.0
+G1 X-12.2 Y4.44 Z2.5 F1920.0
+G1 X-14.47 Y2.67 Z2.5 F1920.0
+G1 X-14.86 Y2.67 Z2.5 F1920.0
+G1 X-17.14 Y4.44 Z2.5 F1920.0
+G1 X-17.53 Y4.44 Z2.5 F1920.0
+G1 X-19.81 Y2.67 Z2.5 F1920.0
+G1 X-20.2 Y2.67 Z2.5 F1920.0
+G1 X-22.47 Y4.44 Z2.5 F1920.0
+G1 X-22.86 Y4.44 Z2.5 F1920.0
+G1 X-25.14 Y2.67 Z2.5 F1920.0
+G1 X-25.53 Y2.67 Z2.5 F1920.0
+G1 X-27.81 Y4.44 Z2.5 F1920.0
+G1 X-28.2 Y4.44 Z2.5 F1920.0
+G1 X-30.47 Y2.67 Z2.5 F1920.0
+G1 X-30.86 Y2.67 Z2.5 F1920.0
+G1 X-32.39 Y2.0 Z2.5 F1920.0
+G1 X-33.06 Y2.67 Z2.5 F1920.0
+G1 X-32.58 Y3.14 Z2.5 F1920.0
+G1 X-32.8 Y3.95 Z2.5 F1920.0
+G1 X-33.06 Y4.0 Z2.5 F1920.0
+M103
+G1 X-33.06 Y-1.33 Z2.5 F1920.0
+M101
+G1 X-32.39 Y-0.67 Z2.5 F1920.0
+G1 X-30.47 Y-0.89 Z2.5 F1920.0
+G1 X-28.2 Y-2.67 Z2.5 F1920.0
+G1 X-27.81 Y-2.67 Z2.5 F1920.0
+G1 X-25.53 Y-0.89 Z2.5 F1920.0
+G1 X-25.14 Y-0.89 Z2.5 F1920.0
+G1 X-22.86 Y-2.67 Z2.5 F1920.0
+G1 X-22.47 Y-2.67 Z2.5 F1920.0
+G1 X-20.2 Y-0.89 Z2.5 F1920.0
+G1 X-19.81 Y-0.89 Z2.5 F1920.0
+G1 X-17.53 Y-2.67 Z2.5 F1920.0
+G1 X-17.14 Y-2.67 Z2.5 F1920.0
+G1 X-14.86 Y-0.89 Z2.5 F1920.0
+G1 X-14.47 Y-0.89 Z2.5 F1920.0
+G1 X-12.2 Y-2.67 Z2.5 F1920.0
+G1 X-11.81 Y-2.67 Z2.5 F1920.0
+G1 X-9.53 Y-0.89 Z2.5 F1920.0
+G1 X-9.14 Y-0.89 Z2.5 F1920.0
+G1 X-6.86 Y-2.67 Z2.5 F1920.0
+G1 X-6.47 Y-2.67 Z2.5 F1920.0
+G1 X-4.2 Y-0.89 Z2.5 F1920.0
+G1 X-3.81 Y-0.89 Z2.5 F1920.0
+G1 X-1.53 Y-2.67 Z2.5 F1920.0
+G1 X-1.14 Y-2.67 Z2.5 F1920.0
+G1 X1.14 Y-0.89 Z2.5 F1920.0
+G1 X1.53 Y-0.89 Z2.5 F1920.0
+G1 X3.81 Y-2.67 Z2.5 F1920.0
+G1 X4.2 Y-2.67 Z2.5 F1920.0
+G1 X6.47 Y-0.89 Z2.5 F1920.0
+G1 X6.86 Y-0.89 Z2.5 F1920.0
+G1 X9.14 Y-2.67 Z2.5 F1920.0
+G1 X9.53 Y-2.67 Z2.5 F1920.0
+G1 X11.81 Y-0.89 Z2.5 F1920.0
+G1 X12.2 Y-0.89 Z2.5 F1920.0
+G1 X14.47 Y-2.67 Z2.5 F1920.0
+G1 X14.86 Y-2.67 Z2.5 F1920.0
+G1 X17.14 Y-0.89 Z2.5 F1920.0
+G1 X17.53 Y-0.89 Z2.5 F1920.0
+G1 X19.81 Y-2.67 Z2.5 F1920.0
+G1 X20.2 Y-2.67 Z2.5 F1920.0
+G1 X22.47 Y-0.89 Z2.5 F1920.0
+G1 X22.86 Y-0.89 Z2.5 F1920.0
+G1 X25.14 Y-2.67 Z2.5 F1920.0
+G1 X25.53 Y-2.67 Z2.5 F1920.0
+G1 X27.81 Y-0.89 Z2.5 F1920.0
+G1 X28.2 Y-0.89 Z2.5 F1920.0
+G1 X30.47 Y-2.67 Z2.5 F1920.0
+G1 X30.86 Y-2.67 Z2.5 F1920.0
+G1 X32.39 Y-3.33 Z2.5 F1920.0
+G1 X33.06 Y-2.67 Z2.5 F1920.0
+G1 X32.58 Y-2.19 Z2.5 F1920.0
+G1 X33.06 Y-2.0 Z2.5 F1920.0
+G1 X32.8 Y-1.38 Z2.5 F1920.0
+G1 X33.06 Y-1.33 Z2.5 F1920.0
+M103
+G1 X33.06 Y-6.67 Z2.5 F1920.0
+M101
+G1 X32.39 Y-6.0 Z2.5 F1920.0
+G1 X30.47 Y-6.22 Z2.5 F1920.0
+G1 X28.2 Y-8.0 Z2.5 F1920.0
+G1 X27.81 Y-8.0 Z2.5 F1920.0
+G1 X25.53 Y-6.22 Z2.5 F1920.0
+G1 X25.14 Y-6.22 Z2.5 F1920.0
+G1 X22.86 Y-8.0 Z2.5 F1920.0
+G1 X22.47 Y-8.0 Z2.5 F1920.0
+G1 X20.2 Y-6.22 Z2.5 F1920.0
+G1 X19.81 Y-6.22 Z2.5 F1920.0
+G1 X17.53 Y-8.0 Z2.5 F1920.0
+G1 X17.14 Y-8.0 Z2.5 F1920.0
+G1 X14.86 Y-6.22 Z2.5 F1920.0
+G1 X14.47 Y-6.22 Z2.5 F1920.0
+G1 X12.2 Y-8.0 Z2.5 F1920.0
+G1 X11.81 Y-8.0 Z2.5 F1920.0
+G1 X9.53 Y-6.22 Z2.5 F1920.0
+G1 X9.14 Y-6.22 Z2.5 F1920.0
+G1 X6.86 Y-8.0 Z2.5 F1920.0
+G1 X6.47 Y-8.0 Z2.5 F1920.0
+G1 X4.2 Y-6.22 Z2.5 F1920.0
+G1 X3.81 Y-6.22 Z2.5 F1920.0
+G1 X1.53 Y-8.0 Z2.5 F1920.0
+G1 X1.14 Y-8.0 Z2.5 F1920.0
+G1 X-1.14 Y-6.22 Z2.5 F1920.0
+G1 X-1.53 Y-6.22 Z2.5 F1920.0
+G1 X-3.81 Y-8.0 Z2.5 F1920.0
+G1 X-4.2 Y-8.0 Z2.5 F1920.0
+G1 X-6.47 Y-6.22 Z2.5 F1920.0
+G1 X-6.86 Y-6.22 Z2.5 F1920.0
+G1 X-9.14 Y-8.0 Z2.5 F1920.0
+G1 X-9.53 Y-8.0 Z2.5 F1920.0
+G1 X-11.81 Y-6.22 Z2.5 F1920.0
+G1 X-12.2 Y-6.22 Z2.5 F1920.0
+G1 X-14.47 Y-8.0 Z2.5 F1920.0
+G1 X-14.86 Y-8.0 Z2.5 F1920.0
+G1 X-17.14 Y-6.22 Z2.5 F1920.0
+G1 X-17.53 Y-6.22 Z2.5 F1920.0
+G1 X-19.81 Y-8.0 Z2.5 F1920.0
+G1 X-20.2 Y-8.0 Z2.5 F1920.0
+G1 X-22.47 Y-6.22 Z2.5 F1920.0
+G1 X-22.86 Y-6.22 Z2.5 F1920.0
+G1 X-25.14 Y-8.0 Z2.5 F1920.0
+G1 X-25.53 Y-8.0 Z2.5 F1920.0
+G1 X-27.81 Y-6.22 Z2.5 F1920.0
+G1 X-28.2 Y-6.22 Z2.5 F1920.0
+G1 X-30.47 Y-8.0 Z2.5 F1920.0
+G1 X-30.86 Y-8.0 Z2.5 F1920.0
+G1 X-32.39 Y-8.67 Z2.5 F1920.0
+G1 X-33.06 Y-8.0 Z2.5 F1920.0
+G1 X-32.58 Y-7.53 Z2.5 F1920.0
+G1 X-33.06 Y-7.33 Z2.5 F1920.0
+G1 X-32.8 Y-6.72 Z2.5 F1920.0
+G1 X-33.06 Y-6.67 Z2.5 F1920.0
+M103
+G1 X-33.06 Y-12.0 Z2.5 F1920.0
+M101
+G1 X-32.39 Y-11.33 Z2.5 F1920.0
+G1 X-30.47 Y-11.56 Z2.5 F1920.0
+G1 X-28.2 Y-13.33 Z2.5 F1920.0
+G1 X-27.81 Y-13.33 Z2.5 F1920.0
+G1 X-25.53 Y-11.56 Z2.5 F1920.0
+G1 X-25.14 Y-11.56 Z2.5 F1920.0
+G1 X-22.86 Y-13.33 Z2.5 F1920.0
+G1 X-22.47 Y-13.33 Z2.5 F1920.0
+G1 X-20.2 Y-11.56 Z2.5 F1920.0
+G1 X-19.81 Y-11.56 Z2.5 F1920.0
+G1 X-17.53 Y-13.33 Z2.5 F1920.0
+G1 X-17.14 Y-13.33 Z2.5 F1920.0
+G1 X-14.86 Y-11.56 Z2.5 F1920.0
+G1 X-14.47 Y-11.56 Z2.5 F1920.0
+G1 X-12.2 Y-13.33 Z2.5 F1920.0
+G1 X-11.81 Y-13.33 Z2.5 F1920.0
+G1 X-9.53 Y-11.56 Z2.5 F1920.0
+G1 X-9.14 Y-11.56 Z2.5 F1920.0
+G1 X-6.86 Y-13.33 Z2.5 F1920.0
+G1 X-6.47 Y-13.33 Z2.5 F1920.0
+G1 X-4.2 Y-11.56 Z2.5 F1920.0
+G1 X-3.81 Y-11.56 Z2.5 F1920.0
+G1 X-1.6 Y-14.0 Z2.5 F1920.0
+G1 X1.14 Y-11.56 Z2.5 F1920.0
+G1 X1.53 Y-11.56 Z2.5 F1920.0
+G1 X1.99 Y-13.46 Z2.5 F1920.0
+G1 X2.5 Y-14.67 Z2.5 F1920.0
+G1 X3.01 Y-15.33 Z2.5 F1920.0
+G1 X3.29 Y-16.0 Z2.5 F1920.0
+G1 X3.81 Y-13.33 Z2.5 F1920.0
+G1 X4.2 Y-13.33 Z2.5 F1920.0
+G1 X6.47 Y-11.56 Z2.5 F1920.0
+G1 X6.86 Y-11.56 Z2.5 F1920.0
+G1 X9.14 Y-13.33 Z2.5 F1920.0
+G1 X9.53 Y-13.33 Z2.5 F1920.0
+G1 X11.81 Y-11.56 Z2.5 F1920.0
+G1 X12.2 Y-11.56 Z2.5 F1920.0
+G1 X14.47 Y-13.33 Z2.5 F1920.0
+G1 X14.86 Y-13.33 Z2.5 F1920.0
+G1 X17.14 Y-11.56 Z2.5 F1920.0
+G1 X22.86 Y-11.56 Z2.5 F1920.0
+G1 X22.63 Y-13.46 Z2.5 F1920.0
+G1 X23.14 Y-14.67 Z2.5 F1920.0
+G1 X23.65 Y-15.33 Z2.5 F1920.0
+G1 X24.54 Y-15.74 Z2.5 F1920.0
+G1 X25.14 Y-13.33 Z2.5 F1920.0
+G1 X25.53 Y-13.33 Z2.5 F1920.0
+G1 X27.81 Y-11.56 Z2.5 F1920.0
+G1 X28.2 Y-11.56 Z2.5 F1920.0
+G1 X30.47 Y-13.33 Z2.5 F1920.0
+G1 X30.86 Y-13.33 Z2.5 F1920.0
+G1 X32.39 Y-14.0 Z2.5 F1920.0
+G1 X33.06 Y-13.33 Z2.5 F1920.0
+G1 X32.58 Y-12.86 Z2.5 F1920.0
+G1 X33.06 Y-12.67 Z2.5 F1920.0
+G1 X32.8 Y-12.05 Z2.5 F1920.0
+G1 X33.06 Y-12.0 Z2.5 F1920.0
+M103
+G1 X33.06 Y-17.33 Z2.5 F1920.0
+M101
+G1 X32.39 Y-16.67 Z2.5 F1920.0
+G1 X30.47 Y-16.89 Z2.5 F1920.0
+G1 X28.2 Y-18.67 Z2.5 F1920.0
+G1 X27.81 Y-18.67 Z2.5 F1920.0
+G1 X25.53 Y-16.89 Z2.5 F1920.0
+G1 X25.14 Y-16.89 Z2.5 F1920.0
+G1 X24.73 Y-16.65 Z2.5 F1920.0
+G1 X24.08 Y-17.33 Z2.5 F1920.0
+G1 X23.98 Y-18.0 Z2.5 F1920.0
+G1 X33.06 Y-22.67 Z2.5 F1920.0
+G1 X32.8 Y-22.72 Z2.5 F1920.0
+G1 X32.58 Y-23.53 Z2.5 F1920.0
+G1 X33.06 Y-24.0 Z2.5 F1920.0
+G1 X32.39 Y-24.67 Z2.5 F1920.0
+G1 X30.86 Y-24.0 Z2.5 F1920.0
+G1 X30.47 Y-24.0 Z2.5 F1920.0
+G1 X28.2 Y-22.22 Z2.5 F1920.0
+G1 X27.81 Y-22.22 Z2.5 F1920.0
+G1 X25.53 Y-24.0 Z2.5 F1920.0
+G1 X25.14 Y-24.0 Z2.5 F1920.0
+G1 X22.86 Y-22.22 Z2.5 F1920.0
+G1 X22.47 Y-22.22 Z2.5 F1920.0
+G1 X24.25 Y-19.05 Z2.5 F1920.0
+G1 X23.24 Y-19.33 Z2.5 F1920.0
+G1 X22.47 Y-20.0 Z2.5 F1920.0
+G1 X20.2 Y-24.0 Z2.5 F1920.0
+G1 X19.81 Y-24.0 Z2.5 F1920.0
+G1 X18.81 Y-20.0 Z2.5 F1920.0
+G1 X18.04 Y-19.33 Z2.5 F1920.0
+G1 X17.57 Y-18.67 Z2.5 F1920.0
+G1 X17.53 Y-22.22 Z2.5 F1920.0
+G1 X17.14 Y-22.22 Z2.5 F1920.0
+G1 X14.86 Y-24.0 Z2.5 F1920.0
+G1 X14.47 Y-24.0 Z2.5 F1920.0
+G1 X12.2 Y-22.22 Z2.5 F1920.0
+G1 X11.81 Y-22.22 Z2.5 F1920.0
+G1 X9.53 Y-24.0 Z2.5 F1920.0
+G1 X9.14 Y-24.0 Z2.5 F1920.0
+G1 X6.86 Y-22.22 Z2.5 F1920.0
+G1 X6.47 Y-22.22 Z2.5 F1920.0
+G1 X4.2 Y-24.0 Z2.5 F1920.0
+G1 X3.81 Y-24.0 Z2.5 F1920.0
+G1 X3.07 Y-18.67 Z2.5 F1920.0
+G1 X2.6 Y-19.33 Z2.5 F1920.0
+G1 X1.83 Y-20.0 Z2.5 F1920.0
+G1 X1.53 Y-22.22 Z2.5 F1920.0
+G1 X1.14 Y-22.22 Z2.5 F1920.0
+G1 X-1.14 Y-24.0 Z2.5 F1920.0
+G1 X-1.53 Y-24.0 Z2.5 F1920.0
+G1 X-1.83 Y-20.0 Z2.5 F1920.0
+G1 X-2.6 Y-19.33 Z2.5 F1920.0
+G1 X-3.07 Y-18.67 Z2.5 F1920.0
+G1 X-3.81 Y-22.22 Z2.5 F1920.0
+G1 X-4.2 Y-22.22 Z2.5 F1920.0
+G1 X-6.47 Y-24.0 Z2.5 F1920.0
+G1 X-6.86 Y-24.0 Z2.5 F1920.0
+G1 X-9.14 Y-22.22 Z2.5 F1920.0
+G1 X-9.53 Y-22.22 Z2.5 F1920.0
+G1 X-11.81 Y-24.0 Z2.5 F1920.0
+G1 X-12.2 Y-24.0 Z2.5 F1920.0
+G1 X-14.47 Y-22.22 Z2.5 F1920.0
+G1 X-14.86 Y-22.22 Z2.5 F1920.0
+G1 X-17.14 Y-24.0 Z2.5 F1920.0
+G1 X-17.53 Y-24.0 Z2.5 F1920.0
+G1 X-19.81 Y-22.22 Z2.5 F1920.0
+G1 X-20.2 Y-22.22 Z2.5 F1920.0
+G1 X-22.47 Y-24.0 Z2.5 F1920.0
+G1 X-22.86 Y-24.0 Z2.5 F1920.0
+G1 X-25.14 Y-22.22 Z2.5 F1920.0
+G1 X-25.53 Y-22.22 Z2.5 F1920.0
+G1 X-27.81 Y-24.0 Z2.5 F1920.0
+G1 X-28.2 Y-24.0 Z2.5 F1920.0
+G1 X-30.47 Y-22.22 Z2.5 F1920.0
+G1 X-32.39 Y-22.0 Z2.5 F1920.0
+G1 X-33.06 Y-22.67 Z2.5 F1920.0
+M103
+G1 X-3.34 Y-18.0 Z2.5 F1920.0
+M101
+G1 X-3.44 Y-17.33 Z2.5 F1920.0
+G1 X-4.09 Y-16.65 Z2.5 F1920.0
+G1 X-6.86 Y-16.89 Z2.5 F1920.0
+G1 X-9.14 Y-18.67 Z2.5 F1920.0
+G1 X-9.53 Y-18.67 Z2.5 F1920.0
+G1 X-11.81 Y-16.89 Z2.5 F1920.0
+G1 X-12.2 Y-16.89 Z2.5 F1920.0
+G1 X-14.47 Y-18.67 Z2.5 F1920.0
+G1 X-14.86 Y-18.67 Z2.5 F1920.0
+G1 X-17.14 Y-16.89 Z2.5 F1920.0
+G1 X-17.53 Y-16.89 Z2.5 F1920.0
+G1 X-19.81 Y-18.67 Z2.5 F1920.0
+G1 X-20.2 Y-18.67 Z2.5 F1920.0
+G1 X-22.47 Y-16.89 Z2.5 F1920.0
+G1 X-22.86 Y-16.89 Z2.5 F1920.0
+G1 X-25.14 Y-18.67 Z2.5 F1920.0
+G1 X-25.53 Y-18.67 Z2.5 F1920.0
+G1 X-27.81 Y-16.89 Z2.5 F1920.0
+G1 X-28.2 Y-16.89 Z2.5 F1920.0
+G1 X-30.47 Y-18.67 Z2.5 F1920.0
+G1 X-30.86 Y-18.67 Z2.5 F1920.0
+G1 X-32.39 Y-19.33 Z2.5 F1920.0
+G1 X-33.06 Y-18.67 Z2.5 F1920.0
+G1 X-32.58 Y-18.2 Z2.5 F1920.0
+G1 X-33.06 Y-18.0 Z2.5 F1920.0
+G1 X-32.8 Y-17.38 Z2.5 F1920.0
+G1 X-33.06 Y-17.33 Z2.5 F1920.0
+M103
+G1 X33.06 Y-28.0 Z2.5 F1920.0
+M101
+G1 X32.39 Y-27.33 Z2.5 F1920.0
+G1 X30.47 Y-27.56 Z2.5 F1920.0
+G1 X28.34 Y-30.0 Z2.5 F1920.0
+G1 X27.57 Y-30.67 Z2.5 F1920.0
+G1 X26.61 Y-30.88 Z2.5 F1920.0
+G1 X25.53 Y-27.56 Z2.5 F1920.0
+G1 X25.14 Y-27.56 Z2.5 F1920.0
+G1 X23.98 Y-32.0 Z2.5 F1920.0
+G1 X23.7 Y-31.33 Z2.5 F1920.0
+G1 X23.03 Y-30.34 Z2.5 F1920.0
+G1 X22.86 Y-29.33 Z2.5 F1920.0
+G1 X22.47 Y-29.33 Z2.5 F1920.0
+G1 X20.2 Y-27.56 Z2.5 F1920.0
+G1 X19.81 Y-27.56 Z2.5 F1920.0
+G1 X17.58 Y-31.33 Z2.5 F1920.0
+G1 X17.53 Y-29.33 Z2.5 F1920.0
+G1 X17.14 Y-29.33 Z2.5 F1920.0
+G1 X14.86 Y-27.56 Z2.5 F1920.0
+G1 X14.47 Y-27.56 Z2.5 F1920.0
+G1 X12.2 Y-29.33 Z2.5 F1920.0
+G1 X11.81 Y-29.33 Z2.5 F1920.0
+G1 X9.53 Y-27.56 Z2.5 F1920.0
+G1 X9.14 Y-27.56 Z2.5 F1920.0
+G1 X6.86 Y-29.33 Z2.5 F1920.0
+G1 X6.47 Y-29.33 Z2.5 F1920.0
+G1 X4.2 Y-27.56 Z2.5 F1920.0
+G1 X3.81 Y-27.56 Z2.5 F1920.0
+G1 X3.13 Y-31.33 Z2.5 F1920.0
+G1 X2.68 Y-30.67 Z2.5 F1920.0
+G1 X2.5 Y-29.66 Z2.5 F1920.0
+G1 X1.53 Y-29.33 Z2.5 F1920.0
+G1 X1.14 Y-29.33 Z2.5 F1920.0
+G1 X-1.14 Y-27.56 Z2.5 F1920.0
+G1 X-1.53 Y-27.56 Z2.5 F1920.0
+G1 X-2.37 Y-29.5 Z2.5 F1920.0
+G1 X-2.68 Y-30.67 Z2.5 F1920.0
+G1 X-3.13 Y-31.33 Z2.5 F1920.0
+G1 X-3.81 Y-29.33 Z2.5 F1920.0
+G1 X-4.2 Y-29.33 Z2.5 F1920.0
+G1 X-6.47 Y-27.56 Z2.5 F1920.0
+G1 X-6.86 Y-27.56 Z2.5 F1920.0
+G1 X-9.14 Y-29.33 Z2.5 F1920.0
+G1 X-9.53 Y-29.33 Z2.5 F1920.0
+G1 X-11.81 Y-27.56 Z2.5 F1920.0
+G1 X-12.2 Y-27.56 Z2.5 F1920.0
+G1 X-14.47 Y-29.33 Z2.5 F1920.0
+G1 X-14.86 Y-29.33 Z2.5 F1920.0
+G1 X-17.14 Y-27.56 Z2.5 F1920.0
+G1 X-17.53 Y-27.56 Z2.5 F1920.0
+G1 X-17.61 Y-30.16 Z2.5 F1920.0
+G1 X-18.81 Y-30.0 Z2.5 F1920.0
+G1 X-19.81 Y-29.33 Z2.5 F1920.0
+G1 X-20.2 Y-29.33 Z2.5 F1920.0
+G1 X-22.47 Y-27.56 Z2.5 F1920.0
+G1 X-22.86 Y-27.56 Z2.5 F1920.0
+G1 X-22.9 Y-29.5 Z2.5 F1920.0
+G1 X-23.23 Y-30.67 Z2.5 F1920.0
+G1 X-23.7 Y-31.33 Z2.5 F1920.0
+G1 X-23.98 Y-32.0 Z2.5 F1920.0
+G1 X-25.14 Y-29.33 Z2.5 F1920.0
+G1 X-25.53 Y-29.33 Z2.5 F1920.0
+G1 X-26.56 Y-30.95 Z2.5 F1920.0
+G1 X-27.57 Y-30.67 Z2.5 F1920.0
+G1 X-28.34 Y-30.0 Z2.5 F1920.0
+G1 X-27.81 Y-27.56 Z2.5 F1920.0
+G1 X-28.2 Y-27.56 Z2.5 F1920.0
+G1 X-32.46 Y-25.7 Z2.5 F1920.0
+G1 X-32.39 Y-24.67 Z2.5 F1920.0
+G1 X-33.06 Y-25.33 Z2.5 F1920.0
+G1 X-32.58 Y-26.2 Z2.5 F1920.0
+G1 X-32.39 Y-27.33 Z2.5 F1920.0
+G1 X-33.06 Y-28.0 Z2.5 F1920.0
+G1 X-32.87 Y-28.03 Z2.5 F1920.0
+G1 X-32.7 Y-28.77 Z2.5 F1920.0
+G1 X-31.98 Y-30.0 Z2.5 F1920.0
+G1 X-33.06 Y-30.0 Z2.5 F1920.0
+G1 X-32.76 Y-30.67 Z2.5 F1920.0
+G1 X-33.06 Y-30.67 Z2.5 F1920.0
+M103
+G1 X-33.06 Y-35.33 Z2.5 F1920.0
+M101
+G1 X-32.66 Y-35.33 Z2.5 F1920.0
+G1 X-33.06 Y-36.0 Z2.5 F1920.0
+G1 X-31.77 Y-36.0 Z2.5 F1920.0
+M103
+G1 X-28.56 Y-36.0 Z2.5 F1920.0
+M101
+G1 X-22.25 Y-36.0 Z2.5 F1920.0
+G1 X-23.14 Y-35.33 Z2.5 F1920.0
+G1 X-23.65 Y-34.67 Z2.5 F1920.0
+G1 X-24.18 Y-35.07 Z2.5 F1920.0
+G1 X-26.22 Y-34.13 Z2.5 F1920.0
+G1 X-26.74 Y-33.33 Z2.5 F1920.0
+G1 X-26.06 Y-32.68 Z2.5 F1920.0
+G1 X-24.74 Y-32.68 Z2.5 F1920.0
+G1 X-24.06 Y-33.33 Z2.5 F1920.0
+M103
+G1 X-19.03 Y-36.0 Z2.5 F1920.0
+M101
+G1 X-17.73 Y-35.87 Z2.5 F1920.0
+G1 X-17.63 Y-34.67 Z2.5 F1920.0
+G1 X-3.08 Y-34.67 Z2.5 F1920.0
+G1 X-2.58 Y-35.33 Z2.5 F1920.0
+G1 X-1.77 Y-36.0 Z2.5 F1920.0
+M103
+G1 X-3.36 Y-34.0 Z2.5 F1920.0
+M101
+G1 X-3.49 Y-33.33 Z2.5 F1920.0
+G1 X-3.5 Y-32.67 Z2.5 F1920.0
+G1 X-4.07 Y-31.91 Z2.5 F1920.0
+G1 X-9.14 Y-32.89 Z2.5 F1920.0
+G1 X-14.86 Y-32.89 Z2.5 F1920.0
+G1 X-16.64 Y-31.9 Z2.5 F1920.0
+G1 X-17.2 Y-32.67 Z2.5 F1920.0
+G1 X-17.22 Y-33.33 Z2.5 F1920.0
+G1 X-17.35 Y-34.0 Z2.5 F1920.0
+M103
+G1 X1.77 Y-36.0 Z2.5 F1920.0
+M101
+G1 X2.58 Y-35.33 Z2.5 F1920.0
+G1 X3.08 Y-34.67 Z2.5 F1920.0
+G1 X17.63 Y-34.67 Z2.5 F1920.0
+G1 X17.73 Y-35.87 Z2.5 F1920.0
+G1 X19.03 Y-36.0 Z2.5 F1920.0
+M103
+G1 X17.35 Y-34.0 Z2.5 F1920.0
+M101
+G1 X17.22 Y-33.33 Z2.5 F1920.0
+G1 X17.2 Y-32.67 Z2.5 F1920.0
+G1 X16.64 Y-31.9 Z2.5 F1920.0
+G1 X12.2 Y-32.89 Z2.5 F1920.0
+G1 X6.47 Y-32.89 Z2.5 F1920.0
+G1 X4.07 Y-31.91 Z2.5 F1920.0
+G1 X3.5 Y-32.67 Z2.5 F1920.0
+G1 X3.49 Y-33.33 Z2.5 F1920.0
+G1 X3.36 Y-34.0 Z2.5 F1920.0
+M103
+G1 X17.3 Y-18.0 Z2.5 F1920.0
+M101
+G1 X17.2 Y-17.33 Z2.5 F1920.0
+G1 X17.22 Y-16.67 Z2.5 F1920.0
+G1 X17.35 Y-16.0 Z2.5 F1920.0
+G1 X17.63 Y-15.33 Z2.5 F1920.0
+G1 X18.14 Y-14.67 Z2.5 F1920.0
+G1 X18.64 Y-13.46 Z2.5 F1920.0
+G1 X17.61 Y-14.26 Z2.5 F1920.0
+G1 X14.86 Y-16.89 Z2.5 F1920.0
+G1 X14.47 Y-16.89 Z2.5 F1920.0
+G1 X12.2 Y-18.67 Z2.5 F1920.0
+G1 X11.81 Y-18.67 Z2.5 F1920.0
+G1 X9.53 Y-16.89 Z2.5 F1920.0
+G1 X9.14 Y-16.89 Z2.5 F1920.0
+G1 X6.86 Y-18.67 Z2.5 F1920.0
+G1 X6.47 Y-18.67 Z2.5 F1920.0
+G1 X4.2 Y-16.89 Z2.5 F1920.0
+G1 X3.81 Y-16.89 Z2.5 F1920.0
+G1 X3.44 Y-17.33 Z2.5 F1920.0
+G1 X3.34 Y-18.0 Z2.5 F1920.0
+M103
+G1 X26.74 Y-33.33 Z2.5 F1920.0
+M101
+G1 X24.06 Y-33.33 Z2.5 F1920.0
+M103
+G1 X22.25 Y-36.0 Z2.5 F1920.0
+M101
+G1 X23.14 Y-35.33 Z2.5 F1920.0
+G1 X23.65 Y-34.67 Z2.5 F1920.0
+G1 X27.15 Y-34.67 Z2.5 F1920.0
+G1 X27.66 Y-35.33 Z2.5 F1920.0
+G1 X28.55 Y-36.0 Z2.5 F1920.0
+M103
+G1 X31.77 Y-36.0 Z2.5 F1920.0
+M101
+G1 X33.06 Y-36.0 Z2.5 F1920.0
+G1 X32.67 Y-35.33 Z2.5 F1920.0
+G1 X33.06 Y-35.33 Z2.5 F1920.0
+M103
+G1 X33.06 Y-30.67 Z2.5 F1920.0
+M101
+G1 X32.76 Y-30.67 Z2.5 F1920.0
+G1 X33.06 Y-30.0 Z2.5 F1920.0
+G1 X32.39 Y-29.33 Z2.5 F1920.0
+G1 X31.99 Y-30.0 Z2.5 F1920.0
+M103
+G1 X31.99 Y30.0 Z2.5 F1920.0
+M101
+G1 X32.39 Y29.33 Z2.5 F1920.0
+G1 X33.06 Y30.0 Z2.5 F1920.0
+G1 X32.76 Y30.67 Z2.5 F1920.0
+G1 X33.06 Y30.67 Z2.5 F1920.0
+M103
+G1 X33.06 Y36.0 Z2.5 F1920.0
+M101
+G1 X31.77 Y36.0 Z2.5 F1920.0
+G1 X32.67 Y35.33 Z2.5 F1920.0
+G1 X33.06 Y35.33 Z2.5 F1920.0
+M103
+G1 X28.55 Y36.0 Z2.5 F1920.0
+M101
+G1 X27.66 Y35.33 Z2.5 F1920.0
+G1 X26.69 Y35.15 Z2.5 F1920.0
+G1 X26.87 Y34.0 Z2.5 F1920.0
+G1 X26.09 Y33.46 Z2.5 F1920.0
+G1 X23.65 Y34.67 Z2.5 F1920.0
+G1 X23.14 Y35.33 Z2.5 F1920.0
+G1 X22.25 Y36.0 Z2.5 F1920.0
+M103
+G1 X24.06 Y33.33 Z2.5 F1920.0
+M101
+G1 X24.08 Y32.67 Z2.5 F1920.0
+G1 X23.98 Y32.0 Z2.5 F1920.0
+G1 X23.7 Y31.33 Z2.5 F1920.0
+G1 X23.23 Y30.67 Z2.5 F1920.0
+G1 X22.9 Y29.5 Z2.5 F1920.0
+G1 X25.53 Y29.33 Z2.5 F1920.0
+G1 X26.07 Y32.57 Z2.5 F1920.0
+G1 X26.82 Y32.0 Z2.5 F1920.0
+G1 X27.1 Y31.33 Z2.5 F1920.0
+G1 X27.57 Y30.67 Z2.5 F1920.0
+G1 X28.34 Y30.0 Z2.5 F1920.0
+M103
+G1 X-18.13 Y35.33 Z2.5 F1920.0
+M101
+G1 X-17.63 Y34.67 Z2.5 F1920.0
+G1 X-17.35 Y34.0 Z2.5 F1920.0
+G1 X-17.22 Y33.33 Z2.5 F1920.0
+G1 X-17.2 Y32.67 Z2.5 F1920.0
+G1 X-17.3 Y32.0 Z2.5 F1920.0
+G1 X-17.58 Y31.33 Z2.5 F1920.0
+G1 X-18.04 Y30.67 Z2.5 F1920.0
+G1 X-18.38 Y29.5 Z2.5 F1920.0
+G1 X-17.53 Y29.33 Z2.5 F1920.0
+G1 X-17.14 Y29.33 Z2.5 F1920.0
+G1 X-14.86 Y31.11 Z2.5 F1920.0
+G1 X-14.47 Y31.11 Z2.5 F1920.0
+G1 X-12.2 Y29.33 Z2.5 F1920.0
+G1 X-11.81 Y29.33 Z2.5 F1920.0
+G1 X-9.53 Y31.11 Z2.5 F1920.0
+G1 X-9.14 Y31.11 Z2.5 F1920.0
+G1 X-6.86 Y29.33 Z2.5 F1920.0
+G1 X-6.47 Y29.33 Z2.5 F1920.0
+G1 X-4.2 Y31.11 Z2.5 F1920.0
+G1 X-3.81 Y31.11 Z2.5 F1920.0
+G1 X-1.53 Y29.33 Z2.5 F1920.0
+G1 X-1.14 Y29.33 Z2.5 F1920.0
+G1 X1.14 Y31.11 Z2.5 F1920.0
+G1 X1.53 Y31.11 Z2.5 F1920.0
+G1 X3.81 Y29.33 Z2.5 F1920.0
+G1 X4.2 Y29.33 Z2.5 F1920.0
+G1 X6.47 Y31.11 Z2.5 F1920.0
+G1 X6.86 Y31.11 Z2.5 F1920.0
+G1 X9.14 Y29.33 Z2.5 F1920.0
+G1 X9.53 Y29.33 Z2.5 F1920.0
+G1 X11.81 Y31.11 Z2.5 F1920.0
+G1 X12.2 Y31.11 Z2.5 F1920.0
+G1 X14.47 Y29.33 Z2.5 F1920.0
+G1 X14.86 Y29.33 Z2.5 F1920.0
+G1 X16.69 Y34.13 Z2.5 F1920.0
+G1 X17.22 Y33.33 Z2.5 F1920.0
+G1 X17.2 Y32.67 Z2.5 F1920.0
+G1 X17.3 Y32.0 Z2.5 F1920.0
+G1 X17.58 Y31.33 Z2.5 F1920.0
+G1 X18.04 Y30.67 Z2.5 F1920.0
+M103
+G1 X19.03 Y36.0 Z2.5 F1920.0
+M101
+G1 X17.73 Y35.87 Z2.5 F1920.0
+G1 X12.2 Y34.67 Z2.5 F1920.0
+G1 X-14.86 Y34.67 Z2.5 F1920.0
+G1 X-19.03 Y36.0 Z2.5 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 2.9 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-38.1 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y38.1 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y38.1 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y-38.1 Z2.9 </boundaryPoint>)
+(<loop> inner )
+G1 X-19.4 Y35.08 Z2.9 F1920.0
+M101
+G1 X-18.89 Y34.69 Z2.9 F1920.0
+G1 X-18.5 Y34.18 Z2.9 F1920.0
+G1 X-18.25 Y33.58 Z2.9 F1920.0
+G1 X-18.16 Y32.94 Z2.9 F1920.0
+G1 X-18.25 Y32.3 Z2.9 F1920.0
+G1 X-18.49 Y31.7 Z2.9 F1920.0
+G1 X-18.89 Y31.19 Z2.9 F1920.0
+G1 X-19.4 Y30.8 Z2.9 F1920.0
+G1 X-20.0 Y30.55 Z2.9 F1920.0
+G1 X-20.64 Y30.47 Z2.9 F1920.0
+G1 X-21.28 Y30.55 Z2.9 F1920.0
+G1 X-21.88 Y30.8 Z2.9 F1920.0
+G1 X-22.39 Y31.19 Z2.9 F1920.0
+G1 X-22.78 Y31.7 Z2.9 F1920.0
+G1 X-23.03 Y32.3 Z2.9 F1920.0
+G1 X-23.11 Y32.94 Z2.9 F1920.0
+G1 X-23.03 Y33.58 Z2.9 F1920.0
+G1 X-22.78 Y34.18 Z2.9 F1920.0
+G1 X-22.39 Y34.69 Z2.9 F1920.0
+G1 X-21.88 Y35.08 Z2.9 F1920.0
+G1 X-21.28 Y35.33 Z2.9 F1920.0
+G1 X-20.64 Y35.42 Z2.9 F1920.0
+G1 X-20.0 Y35.33 Z2.9 F1920.0
+G1 X-19.4 Y35.08 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-19.1 Y35.61 Z2.9 F1920.0
+M101
+G1 X-18.46 Y35.12 Z2.9 F1920.0
+G1 X-17.97 Y34.48 Z2.9 F1920.0
+G1 X-17.66 Y33.74 Z2.9 F1920.0
+G1 X-17.56 Y32.94 Z2.9 F1920.0
+G1 X-17.66 Y32.14 Z2.9 F1920.0
+G1 X-17.97 Y31.4 Z2.9 F1920.0
+G1 X-18.46 Y30.76 Z2.9 F1920.0
+G1 X-19.1 Y30.27 Z2.9 F1920.0
+G1 X-19.84 Y29.97 Z2.9 F1920.0
+G1 X-20.64 Y29.86 Z2.9 F1920.0
+G1 X-21.44 Y29.97 Z2.9 F1920.0
+G1 X-22.18 Y30.27 Z2.9 F1920.0
+G1 X-22.82 Y30.76 Z2.9 F1920.0
+G1 X-23.31 Y31.4 Z2.9 F1920.0
+G1 X-23.61 Y32.14 Z2.9 F1920.0
+G1 X-23.72 Y32.94 Z2.9 F1920.0
+G1 X-23.61 Y33.74 Z2.9 F1920.0
+G1 X-23.3 Y34.48 Z2.9 F1920.0
+G1 X-22.82 Y35.12 Z2.9 F1920.0
+G1 X-22.18 Y35.61 Z2.9 F1920.0
+G1 X-21.44 Y35.92 Z2.9 F1920.0
+G1 X-20.64 Y36.02 Z2.9 F1920.0
+G1 X-19.84 Y35.92 Z2.9 F1920.0
+G1 X-19.1 Y35.61 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-0.63 Y-30.48 Z2.9 F1920.0
+M101
+G1 X0.0 Y-30.43 Z2.9 F1920.0
+G1 X0.63 Y-30.48 Z2.9 F1920.0
+G1 X1.27 Y-30.74 Z2.9 F1920.0
+G1 X1.79 Y-31.15 Z2.9 F1920.0
+G1 X2.2 Y-31.67 Z2.9 F1920.0
+G1 X2.45 Y-32.28 Z2.9 F1920.0
+G1 X2.54 Y-32.94 Z2.9 F1920.0
+G1 X2.45 Y-33.6 Z2.9 F1920.0
+G1 X2.2 Y-34.21 Z2.9 F1920.0
+G1 X1.79 Y-34.74 Z2.9 F1920.0
+G1 X1.27 Y-35.14 Z2.9 F1920.0
+G1 X0.66 Y-35.39 Z2.9 F1920.0
+G1 X0.0 Y-35.48 Z2.9 F1920.0
+G1 X-0.66 Y-35.39 Z2.9 F1920.0
+G1 X-1.27 Y-35.14 Z2.9 F1920.0
+G1 X-1.79 Y-34.74 Z2.9 F1920.0
+G1 X-2.2 Y-34.21 Z2.9 F1920.0
+G1 X-2.45 Y-33.6 Z2.9 F1920.0
+G1 X-2.54 Y-32.94 Z2.9 F1920.0
+G1 X-2.45 Y-32.28 Z2.9 F1920.0
+G1 X-2.2 Y-31.67 Z2.9 F1920.0
+G1 X-1.79 Y-31.15 Z2.9 F1920.0
+G1 X-1.27 Y-30.74 Z2.9 F1920.0
+G1 X-0.63 Y-30.48 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-0.77 Y-29.89 Z2.9 F1920.0
+M101
+G1 X0.0 Y-29.83 Z2.9 F1920.0
+G1 X0.77 Y-29.89 Z2.9 F1920.0
+G1 X1.57 Y-30.22 Z2.9 F1920.0
+G1 X2.22 Y-30.72 Z2.9 F1920.0
+G1 X2.72 Y-31.37 Z2.9 F1920.0
+G1 X3.04 Y-32.13 Z2.9 F1920.0
+G1 X3.14 Y-32.94 Z2.9 F1920.0
+G1 X3.04 Y-33.75 Z2.9 F1920.0
+G1 X2.72 Y-34.51 Z2.9 F1920.0
+G1 X2.22 Y-35.17 Z2.9 F1920.0
+G1 X1.57 Y-35.66 Z2.9 F1920.0
+G1 X0.82 Y-35.98 Z2.9 F1920.0
+G1 X0.0 Y-36.09 Z2.9 F1920.0
+G1 X-0.82 Y-35.98 Z2.9 F1920.0
+G1 X-1.57 Y-35.66 Z2.9 F1920.0
+G1 X-2.22 Y-35.17 Z2.9 F1920.0
+G1 X-2.72 Y-34.51 Z2.9 F1920.0
+G1 X-3.04 Y-33.75 Z2.9 F1920.0
+G1 X-3.14 Y-32.94 Z2.9 F1920.0
+G1 X-3.04 Y-32.13 Z2.9 F1920.0
+G1 X-2.72 Y-31.37 Z2.9 F1920.0
+G1 X-2.22 Y-30.72 Z2.9 F1920.0
+G1 X-1.57 Y-30.22 Z2.9 F1920.0
+G1 X-0.77 Y-29.89 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.0 Y-19.54 Z2.9 F1920.0
+M101
+G1 X-0.64 Y-19.46 Z2.9 F1920.0
+G1 X-1.24 Y-19.21 Z2.9 F1920.0
+G1 X-1.75 Y-18.82 Z2.9 F1920.0
+G1 X-2.14 Y-18.3 Z2.9 F1920.0
+G1 X-2.39 Y-17.71 Z2.9 F1920.0
+G1 X-2.48 Y-17.07 Z2.9 F1920.0
+G1 X-2.39 Y-16.43 Z2.9 F1920.0
+G1 X-2.14 Y-15.83 Z2.9 F1920.0
+G1 X-1.75 Y-15.32 Z2.9 F1920.0
+G1 X-1.24 Y-14.92 Z2.9 F1920.0
+G1 X-0.64 Y-14.68 Z2.9 F1920.0
+G1 X0.0 Y-14.59 Z2.9 F1920.0
+G1 X0.64 Y-14.68 Z2.9 F1920.0
+G1 X1.24 Y-14.92 Z2.9 F1920.0
+G1 X1.75 Y-15.32 Z2.9 F1920.0
+G1 X2.14 Y-15.83 Z2.9 F1920.0
+G1 X2.39 Y-16.43 Z2.9 F1920.0
+G1 X2.48 Y-17.07 Z2.9 F1920.0
+G1 X2.39 Y-17.71 Z2.9 F1920.0
+G1 X2.14 Y-18.3 Z2.9 F1920.0
+G1 X1.75 Y-18.82 Z2.9 F1920.0
+G1 X1.24 Y-19.21 Z2.9 F1920.0
+G1 X0.64 Y-19.46 Z2.9 F1920.0
+G1 X0.0 Y-19.54 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.0 Y-20.15 Z2.9 F1920.0
+M101
+G1 X-0.8 Y-20.04 Z2.9 F1920.0
+G1 X-1.54 Y-19.73 Z2.9 F1920.0
+G1 X-2.18 Y-19.24 Z2.9 F1920.0
+G1 X-2.67 Y-18.6 Z2.9 F1920.0
+G1 X-2.98 Y-17.86 Z2.9 F1920.0
+G1 X-3.08 Y-17.07 Z2.9 F1920.0
+G1 X-2.98 Y-16.27 Z2.9 F1920.0
+G1 X-2.67 Y-15.53 Z2.9 F1920.0
+G1 X-2.18 Y-14.89 Z2.9 F1920.0
+G1 X-1.54 Y-14.4 Z2.9 F1920.0
+G1 X-0.8 Y-14.09 Z2.9 F1920.0
+G1 X0.0 Y-13.99 Z2.9 F1920.0
+G1 X0.8 Y-14.09 Z2.9 F1920.0
+G1 X1.54 Y-14.4 Z2.9 F1920.0
+G1 X2.18 Y-14.89 Z2.9 F1920.0
+G1 X2.67 Y-15.53 Z2.9 F1920.0
+G1 X2.98 Y-16.27 Z2.9 F1920.0
+G1 X3.08 Y-17.07 Z2.9 F1920.0
+G1 X2.98 Y-17.86 Z2.9 F1920.0
+G1 X2.67 Y-18.6 Z2.9 F1920.0
+G1 X2.18 Y-19.24 Z2.9 F1920.0
+G1 X1.54 Y-19.73 Z2.9 F1920.0
+G1 X0.8 Y-20.04 Z2.9 F1920.0
+G1 X0.0 Y-20.15 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-18.49 Y-31.7 Z2.9 F1920.0
+M101
+G1 X-18.25 Y-32.3 Z2.9 F1920.0
+G1 X-18.16 Y-32.94 Z2.9 F1920.0
+G1 X-18.25 Y-33.58 Z2.9 F1920.0
+G1 X-18.5 Y-34.18 Z2.9 F1920.0
+G1 X-18.89 Y-34.69 Z2.9 F1920.0
+G1 X-19.4 Y-35.08 Z2.9 F1920.0
+G1 X-20.0 Y-35.33 Z2.9 F1920.0
+G1 X-20.64 Y-35.42 Z2.9 F1920.0
+G1 X-21.28 Y-35.33 Z2.9 F1920.0
+G1 X-21.88 Y-35.08 Z2.9 F1920.0
+G1 X-22.39 Y-34.69 Z2.9 F1920.0
+G1 X-22.78 Y-34.18 Z2.9 F1920.0
+G1 X-23.03 Y-33.58 Z2.9 F1920.0
+G1 X-23.11 Y-32.94 Z2.9 F1920.0
+G1 X-23.03 Y-32.3 Z2.9 F1920.0
+G1 X-22.78 Y-31.7 Z2.9 F1920.0
+G1 X-22.39 Y-31.19 Z2.9 F1920.0
+G1 X-21.88 Y-30.8 Z2.9 F1920.0
+G1 X-21.28 Y-30.55 Z2.9 F1920.0
+G1 X-20.64 Y-30.47 Z2.9 F1920.0
+G1 X-20.0 Y-30.55 Z2.9 F1920.0
+G1 X-19.4 Y-30.8 Z2.9 F1920.0
+G1 X-18.89 Y-31.19 Z2.9 F1920.0
+G1 X-18.49 Y-31.7 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-17.97 Y-31.4 Z2.9 F1920.0
+M101
+G1 X-17.66 Y-32.14 Z2.9 F1920.0
+G1 X-17.56 Y-32.94 Z2.9 F1920.0
+G1 X-17.66 Y-33.74 Z2.9 F1920.0
+G1 X-17.97 Y-34.48 Z2.9 F1920.0
+G1 X-18.46 Y-35.12 Z2.9 F1920.0
+G1 X-19.1 Y-35.61 Z2.9 F1920.0
+G1 X-19.84 Y-35.92 Z2.9 F1920.0
+G1 X-20.64 Y-36.02 Z2.9 F1920.0
+G1 X-21.44 Y-35.92 Z2.9 F1920.0
+G1 X-22.18 Y-35.61 Z2.9 F1920.0
+G1 X-22.82 Y-35.12 Z2.9 F1920.0
+G1 X-23.3 Y-34.48 Z2.9 F1920.0
+G1 X-23.61 Y-33.74 Z2.9 F1920.0
+G1 X-23.72 Y-32.94 Z2.9 F1920.0
+G1 X-23.61 Y-32.14 Z2.9 F1920.0
+G1 X-23.31 Y-31.4 Z2.9 F1920.0
+G1 X-22.82 Y-30.76 Z2.9 F1920.0
+G1 X-22.18 Y-30.27 Z2.9 F1920.0
+G1 X-21.44 Y-29.97 Z2.9 F1920.0
+G1 X-20.64 Y-29.86 Z2.9 F1920.0
+G1 X-19.84 Y-29.97 Z2.9 F1920.0
+G1 X-19.1 Y-30.27 Z2.9 F1920.0
+G1 X-18.46 Y-30.76 Z2.9 F1920.0
+G1 X-17.97 Y-31.4 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.4 Y30.8 Z2.9 F1920.0
+M101
+G1 X18.89 Y31.19 Z2.9 F1920.0
+G1 X18.49 Y31.7 Z2.9 F1920.0
+G1 X18.25 Y32.3 Z2.9 F1920.0
+G1 X18.16 Y32.94 Z2.9 F1920.0
+G1 X18.25 Y33.58 Z2.9 F1920.0
+G1 X18.5 Y34.18 Z2.9 F1920.0
+G1 X18.89 Y34.69 Z2.9 F1920.0
+G1 X19.4 Y35.08 Z2.9 F1920.0
+G1 X20.0 Y35.33 Z2.9 F1920.0
+G1 X20.64 Y35.42 Z2.9 F1920.0
+G1 X21.28 Y35.33 Z2.9 F1920.0
+G1 X21.88 Y35.08 Z2.9 F1920.0
+G1 X22.39 Y34.69 Z2.9 F1920.0
+G1 X22.78 Y34.18 Z2.9 F1920.0
+G1 X23.03 Y33.58 Z2.9 F1920.0
+G1 X23.11 Y32.94 Z2.9 F1920.0
+G1 X23.03 Y32.3 Z2.9 F1920.0
+G1 X22.78 Y31.7 Z2.9 F1920.0
+G1 X22.39 Y31.19 Z2.9 F1920.0
+G1 X21.88 Y30.8 Z2.9 F1920.0
+G1 X21.28 Y30.55 Z2.9 F1920.0
+G1 X20.64 Y30.47 Z2.9 F1920.0
+G1 X20.0 Y30.55 Z2.9 F1920.0
+G1 X19.4 Y30.8 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.1 Y30.27 Z2.9 F1920.0
+M101
+G1 X18.46 Y30.76 Z2.9 F1920.0
+G1 X17.97 Y31.4 Z2.9 F1920.0
+G1 X17.66 Y32.14 Z2.9 F1920.0
+G1 X17.56 Y32.94 Z2.9 F1920.0
+G1 X17.66 Y33.74 Z2.9 F1920.0
+G1 X17.97 Y34.48 Z2.9 F1920.0
+G1 X18.46 Y35.12 Z2.9 F1920.0
+G1 X19.1 Y35.61 Z2.9 F1920.0
+G1 X19.84 Y35.92 Z2.9 F1920.0
+G1 X20.64 Y36.02 Z2.9 F1920.0
+G1 X21.44 Y35.92 Z2.9 F1920.0
+G1 X22.18 Y35.61 Z2.9 F1920.0
+G1 X22.82 Y35.12 Z2.9 F1920.0
+G1 X23.3 Y34.48 Z2.9 F1920.0
+G1 X23.61 Y33.74 Z2.9 F1920.0
+G1 X23.72 Y32.94 Z2.9 F1920.0
+G1 X23.61 Y32.14 Z2.9 F1920.0
+G1 X23.31 Y31.4 Z2.9 F1920.0
+G1 X22.82 Y30.76 Z2.9 F1920.0
+G1 X22.18 Y30.27 Z2.9 F1920.0
+G1 X21.44 Y29.97 Z2.9 F1920.0
+G1 X20.64 Y29.86 Z2.9 F1920.0
+G1 X19.84 Y29.97 Z2.9 F1920.0
+G1 X19.1 Y30.27 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X18.72 Y-17.58 Z2.9 F1920.0
+G1 X20.64 Y-30.47 Z2.9 F1920.0
+M101
+G1 X21.28 Y-30.55 Z2.9 F1920.0
+G1 X21.88 Y-30.8 Z2.9 F1920.0
+G1 X22.39 Y-31.19 Z2.9 F1920.0
+G1 X22.78 Y-31.7 Z2.9 F1920.0
+G1 X23.03 Y-32.3 Z2.9 F1920.0
+G1 X23.11 Y-32.94 Z2.9 F1920.0
+G1 X23.03 Y-33.58 Z2.9 F1920.0
+G1 X22.78 Y-34.18 Z2.9 F1920.0
+G1 X22.39 Y-34.69 Z2.9 F1920.0
+G1 X21.88 Y-35.08 Z2.9 F1920.0
+G1 X21.28 Y-35.33 Z2.9 F1920.0
+G1 X20.64 Y-35.42 Z2.9 F1920.0
+G1 X20.0 Y-35.33 Z2.9 F1920.0
+G1 X19.4 Y-35.08 Z2.9 F1920.0
+G1 X18.89 Y-34.69 Z2.9 F1920.0
+G1 X18.5 Y-34.18 Z2.9 F1920.0
+G1 X18.25 Y-33.58 Z2.9 F1920.0
+G1 X18.16 Y-32.94 Z2.9 F1920.0
+G1 X18.25 Y-32.3 Z2.9 F1920.0
+G1 X18.49 Y-31.7 Z2.9 F1920.0
+G1 X18.89 Y-31.19 Z2.9 F1920.0
+G1 X19.4 Y-30.8 Z2.9 F1920.0
+G1 X20.0 Y-30.55 Z2.9 F1920.0
+G1 X20.64 Y-30.47 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-29.86 Z2.9 F1920.0
+M101
+G1 X21.44 Y-29.97 Z2.9 F1920.0
+G1 X22.18 Y-30.27 Z2.9 F1920.0
+G1 X22.82 Y-30.76 Z2.9 F1920.0
+G1 X23.31 Y-31.4 Z2.9 F1920.0
+G1 X23.61 Y-32.14 Z2.9 F1920.0
+G1 X23.72 Y-32.94 Z2.9 F1920.0
+G1 X23.61 Y-33.74 Z2.9 F1920.0
+G1 X23.3 Y-34.48 Z2.9 F1920.0
+G1 X22.82 Y-35.12 Z2.9 F1920.0
+G1 X22.18 Y-35.61 Z2.9 F1920.0
+G1 X21.44 Y-35.92 Z2.9 F1920.0
+G1 X20.64 Y-36.02 Z2.9 F1920.0
+G1 X19.84 Y-35.92 Z2.9 F1920.0
+G1 X19.1 Y-35.61 Z2.9 F1920.0
+G1 X18.46 Y-35.12 Z2.9 F1920.0
+G1 X17.97 Y-34.48 Z2.9 F1920.0
+G1 X17.66 Y-33.74 Z2.9 F1920.0
+G1 X17.56 Y-32.94 Z2.9 F1920.0
+G1 X17.66 Y-32.14 Z2.9 F1920.0
+G1 X17.97 Y-31.4 Z2.9 F1920.0
+G1 X18.46 Y-30.76 Z2.9 F1920.0
+G1 X19.1 Y-30.27 Z2.9 F1920.0
+G1 X19.84 Y-29.97 Z2.9 F1920.0
+G1 X20.64 Y-29.86 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-19.54 Z2.9 F1920.0
+M101
+G1 X20.0 Y-19.46 Z2.9 F1920.0
+G1 X19.4 Y-19.21 Z2.9 F1920.0
+G1 X18.89 Y-18.82 Z2.9 F1920.0
+G1 X18.5 Y-18.3 Z2.9 F1920.0
+G1 X18.25 Y-17.71 Z2.9 F1920.0
+G1 X18.16 Y-17.07 Z2.9 F1920.0
+G1 X18.25 Y-16.43 Z2.9 F1920.0
+G1 X18.49 Y-15.83 Z2.9 F1920.0
+G1 X18.89 Y-15.32 Z2.9 F1920.0
+G1 X19.4 Y-14.92 Z2.9 F1920.0
+G1 X20.0 Y-14.68 Z2.9 F1920.0
+G1 X20.64 Y-14.59 Z2.9 F1920.0
+G1 X21.28 Y-14.68 Z2.9 F1920.0
+G1 X21.88 Y-14.92 Z2.9 F1920.0
+G1 X22.39 Y-15.32 Z2.9 F1920.0
+G1 X22.78 Y-15.83 Z2.9 F1920.0
+G1 X23.03 Y-16.43 Z2.9 F1920.0
+G1 X23.11 Y-17.07 Z2.9 F1920.0
+G1 X23.03 Y-17.71 Z2.9 F1920.0
+G1 X22.78 Y-18.3 Z2.9 F1920.0
+G1 X22.39 Y-18.82 Z2.9 F1920.0
+G1 X21.88 Y-19.21 Z2.9 F1920.0
+G1 X21.28 Y-19.46 Z2.9 F1920.0
+G1 X20.64 Y-19.54 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-20.15 Z2.9 F1920.0
+M101
+G1 X19.84 Y-20.04 Z2.9 F1920.0
+G1 X19.1 Y-19.73 Z2.9 F1920.0
+G1 X18.46 Y-19.24 Z2.9 F1920.0
+G1 X17.97 Y-18.61 Z2.9 F1920.0
+G1 X17.66 Y-17.86 Z2.9 F1920.0
+G1 X17.56 Y-17.07 Z2.9 F1920.0
+G1 X17.66 Y-16.27 Z2.9 F1920.0
+G1 X17.97 Y-15.53 Z2.9 F1920.0
+G1 X18.46 Y-14.89 Z2.9 F1920.0
+G1 X19.1 Y-14.4 Z2.9 F1920.0
+G1 X19.84 Y-14.09 Z2.9 F1920.0
+G1 X20.64 Y-13.99 Z2.9 F1920.0
+G1 X21.44 Y-14.09 Z2.9 F1920.0
+G1 X22.18 Y-14.4 Z2.9 F1920.0
+G1 X22.82 Y-14.89 Z2.9 F1920.0
+G1 X23.31 Y-15.53 Z2.9 F1920.0
+G1 X23.61 Y-16.27 Z2.9 F1920.0
+G1 X23.72 Y-17.07 Z2.9 F1920.0
+G1 X23.61 Y-17.86 Z2.9 F1920.0
+G1 X23.3 Y-18.61 Z2.9 F1920.0
+G1 X22.82 Y-19.24 Z2.9 F1920.0
+G1 X22.18 Y-19.73 Z2.9 F1920.0
+G1 X21.44 Y-20.04 Z2.9 F1920.0
+G1 X20.64 Y-20.15 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X33.45 Y-20.15 Z2.9 F1920.0
+M101
+G1 X33.45 Y31.25 Z2.9 F1920.0
+G1 X33.61 Y32.16 Z2.9 F1920.0
+G1 X33.0 Y31.8 Z2.9 F1920.0
+G1 X32.83 Y31.4 Z2.9 F1920.0
+G1 X32.34 Y30.76 Z2.9 F1920.0
+G1 X31.7 Y30.27 Z2.9 F1920.0
+G1 X30.96 Y29.97 Z2.9 F1920.0
+G1 X30.16 Y29.86 Z2.9 F1920.0
+G1 X29.37 Y29.97 Z2.9 F1920.0
+G1 X28.62 Y30.27 Z2.9 F1920.0
+G1 X27.98 Y30.76 Z2.9 F1920.0
+G1 X27.5 Y31.4 Z2.9 F1920.0
+G1 X27.19 Y32.14 Z2.9 F1920.0
+G1 X27.08 Y32.94 Z2.9 F1920.0
+G1 X27.19 Y33.74 Z2.9 F1920.0
+G1 X27.5 Y34.48 Z2.9 F1920.0
+G1 X27.98 Y35.12 Z2.9 F1920.0
+G1 X28.62 Y35.61 Z2.9 F1920.0
+G1 X29.37 Y35.92 Z2.9 F1920.0
+G1 X30.16 Y36.02 Z2.9 F1920.0
+G1 X30.96 Y35.92 Z2.9 F1920.0
+G1 X31.7 Y35.61 Z2.9 F1920.0
+G1 X32.34 Y35.12 Z2.9 F1920.0
+G1 X32.83 Y34.48 Z2.9 F1920.0
+G1 X32.87 Y34.37 Z2.9 F1920.0
+G1 X33.45 Y34.62 Z2.9 F1920.0
+G1 X33.45 Y36.62 Z2.9 F1920.0
+G1 X-33.45 Y36.62 Z2.9 F1920.0
+G1 X-33.45 Y34.62 Z2.9 F1920.0
+G1 X-32.87 Y34.37 Z2.9 F1920.0
+G1 X-32.83 Y34.48 Z2.9 F1920.0
+G1 X-32.34 Y35.12 Z2.9 F1920.0
+G1 X-31.7 Y35.61 Z2.9 F1920.0
+G1 X-30.96 Y35.92 Z2.9 F1920.0
+G1 X-30.16 Y36.02 Z2.9 F1920.0
+G1 X-29.37 Y35.92 Z2.9 F1920.0
+G1 X-28.62 Y35.61 Z2.9 F1920.0
+G1 X-27.98 Y35.12 Z2.9 F1920.0
+G1 X-27.5 Y34.48 Z2.9 F1920.0
+G1 X-27.19 Y33.74 Z2.9 F1920.0
+G1 X-27.08 Y32.94 Z2.9 F1920.0
+G1 X-27.19 Y32.14 Z2.9 F1920.0
+G1 X-27.5 Y31.4 Z2.9 F1920.0
+G1 X-27.98 Y30.76 Z2.9 F1920.0
+G1 X-28.62 Y30.27 Z2.9 F1920.0
+G1 X-29.37 Y29.97 Z2.9 F1920.0
+G1 X-30.16 Y29.86 Z2.9 F1920.0
+G1 X-30.96 Y29.97 Z2.9 F1920.0
+G1 X-31.7 Y30.27 Z2.9 F1920.0
+G1 X-32.34 Y30.76 Z2.9 F1920.0
+G1 X-32.83 Y31.4 Z2.9 F1920.0
+G1 X-33.0 Y31.8 Z2.9 F1920.0
+G1 X-33.61 Y32.16 Z2.9 F1920.0
+G1 X-33.45 Y31.25 Z2.9 F1920.0
+G1 X-33.45 Y-31.25 Z2.9 F1920.0
+G1 X-33.61 Y-32.16 Z2.9 F1920.0
+G1 X-32.99 Y-31.8 Z2.9 F1920.0
+G1 X-32.83 Y-31.4 Z2.9 F1920.0
+G1 X-32.34 Y-30.77 Z2.9 F1920.0
+G1 X-31.7 Y-30.28 Z2.9 F1920.0
+G1 X-30.96 Y-29.97 Z2.9 F1920.0
+G1 X-30.16 Y-29.86 Z2.9 F1920.0
+G1 X-29.37 Y-29.97 Z2.9 F1920.0
+G1 X-28.62 Y-30.28 Z2.9 F1920.0
+G1 X-27.99 Y-30.77 Z2.9 F1920.0
+G1 X-27.5 Y-31.4 Z2.9 F1920.0
+G1 X-27.19 Y-32.14 Z2.9 F1920.0
+G1 X-27.09 Y-32.94 Z2.9 F1920.0
+G1 X-27.19 Y-33.74 Z2.9 F1920.0
+G1 X-27.5 Y-34.48 Z2.9 F1920.0
+G1 X-27.99 Y-35.12 Z2.9 F1920.0
+G1 X-28.62 Y-35.6 Z2.9 F1920.0
+G1 X-29.37 Y-35.91 Z2.9 F1920.0
+G1 X-30.16 Y-36.02 Z2.9 F1920.0
+G1 X-30.96 Y-35.91 Z2.9 F1920.0
+G1 X-31.7 Y-35.6 Z2.9 F1920.0
+G1 X-32.34 Y-35.12 Z2.9 F1920.0
+G1 X-32.83 Y-34.48 Z2.9 F1920.0
+G1 X-32.87 Y-34.36 Z2.9 F1920.0
+G1 X-33.45 Y-34.62 Z2.9 F1920.0
+G1 X-33.45 Y-36.62 Z2.9 F1920.0
+G1 X33.45 Y-36.62 Z2.9 F1920.0
+G1 X33.45 Y-34.62 Z2.9 F1920.0
+G1 X32.87 Y-34.37 Z2.9 F1920.0
+G1 X32.83 Y-34.48 Z2.9 F1920.0
+G1 X32.34 Y-35.12 Z2.9 F1920.0
+G1 X31.7 Y-35.61 Z2.9 F1920.0
+G1 X30.96 Y-35.92 Z2.9 F1920.0
+G1 X30.16 Y-36.02 Z2.9 F1920.0
+G1 X29.37 Y-35.92 Z2.9 F1920.0
+G1 X28.62 Y-35.61 Z2.9 F1920.0
+G1 X27.98 Y-35.12 Z2.9 F1920.0
+G1 X27.5 Y-34.48 Z2.9 F1920.0
+G1 X27.19 Y-33.74 Z2.9 F1920.0
+G1 X27.08 Y-32.94 Z2.9 F1920.0
+G1 X27.19 Y-32.14 Z2.9 F1920.0
+G1 X27.5 Y-31.4 Z2.9 F1920.0
+G1 X27.98 Y-30.76 Z2.9 F1920.0
+G1 X28.62 Y-30.27 Z2.9 F1920.0
+G1 X29.37 Y-29.97 Z2.9 F1920.0
+G1 X30.16 Y-29.86 Z2.9 F1920.0
+G1 X30.96 Y-29.97 Z2.9 F1920.0
+G1 X31.7 Y-30.27 Z2.9 F1920.0
+G1 X32.34 Y-30.76 Z2.9 F1920.0
+G1 X32.83 Y-31.4 Z2.9 F1920.0
+G1 X33.0 Y-31.8 Z2.9 F1920.0
+G1 X33.61 Y-32.16 Z2.9 F1920.0
+G1 X33.45 Y-31.25 Z2.9 F1920.0
+G1 X33.45 Y-20.15 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X30.16 Y30.47 Z2.9 F1920.0
+M101
+G1 X29.52 Y30.55 Z2.9 F1920.0
+G1 X28.93 Y30.8 Z2.9 F1920.0
+G1 X28.41 Y31.19 Z2.9 F1920.0
+G1 X28.02 Y31.7 Z2.9 F1920.0
+G1 X27.77 Y32.3 Z2.9 F1920.0
+G1 X27.69 Y32.94 Z2.9 F1920.0
+G1 X27.77 Y33.58 Z2.9 F1920.0
+G1 X28.02 Y34.18 Z2.9 F1920.0
+G1 X28.41 Y34.69 Z2.9 F1920.0
+G1 X28.93 Y35.08 Z2.9 F1920.0
+G1 X29.52 Y35.33 Z2.9 F1920.0
+G1 X30.16 Y35.42 Z2.9 F1920.0
+G1 X30.8 Y35.33 Z2.9 F1920.0
+G1 X31.4 Y35.08 Z2.9 F1920.0
+G1 X31.91 Y34.69 Z2.9 F1920.0
+G1 X32.31 Y34.18 Z2.9 F1920.0
+G1 X32.55 Y33.58 Z2.9 F1920.0
+G1 X32.64 Y32.94 Z2.9 F1920.0
+G1 X32.55 Y32.3 Z2.9 F1920.0
+G1 X32.31 Y31.7 Z2.9 F1920.0
+G1 X31.91 Y31.19 Z2.9 F1920.0
+G1 X31.4 Y30.8 Z2.9 F1920.0
+G1 X30.8 Y30.55 Z2.9 F1920.0
+G1 X30.16 Y30.47 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X30.16 Y-30.47 Z2.9 F1920.0
+M101
+G1 X30.8 Y-30.55 Z2.9 F1920.0
+G1 X31.4 Y-30.8 Z2.9 F1920.0
+G1 X31.91 Y-31.19 Z2.9 F1920.0
+G1 X32.31 Y-31.7 Z2.9 F1920.0
+G1 X32.55 Y-32.3 Z2.9 F1920.0
+G1 X32.64 Y-32.94 Z2.9 F1920.0
+G1 X32.55 Y-33.58 Z2.9 F1920.0
+G1 X32.31 Y-34.18 Z2.9 F1920.0
+G1 X31.91 Y-34.69 Z2.9 F1920.0
+G1 X31.4 Y-35.08 Z2.9 F1920.0
+G1 X30.8 Y-35.33 Z2.9 F1920.0
+G1 X30.16 Y-35.42 Z2.9 F1920.0
+G1 X29.52 Y-35.33 Z2.9 F1920.0
+G1 X28.93 Y-35.08 Z2.9 F1920.0
+G1 X28.41 Y-34.69 Z2.9 F1920.0
+G1 X28.02 Y-34.18 Z2.9 F1920.0
+G1 X27.77 Y-33.58 Z2.9 F1920.0
+G1 X27.69 Y-32.94 Z2.9 F1920.0
+G1 X27.77 Y-32.3 Z2.9 F1920.0
+G1 X28.02 Y-31.7 Z2.9 F1920.0
+G1 X28.41 Y-31.19 Z2.9 F1920.0
+G1 X28.93 Y-30.8 Z2.9 F1920.0
+G1 X29.52 Y-30.55 Z2.9 F1920.0
+G1 X30.16 Y-30.47 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-28.41 Y31.19 Z2.9 F1920.0
+M101
+G1 X-28.93 Y30.8 Z2.9 F1920.0
+G1 X-29.52 Y30.55 Z2.9 F1920.0
+G1 X-30.16 Y30.47 Z2.9 F1920.0
+G1 X-30.8 Y30.55 Z2.9 F1920.0
+G1 X-31.4 Y30.8 Z2.9 F1920.0
+G1 X-31.91 Y31.19 Z2.9 F1920.0
+G1 X-32.31 Y31.7 Z2.9 F1920.0
+G1 X-32.55 Y32.3 Z2.9 F1920.0
+G1 X-32.64 Y32.94 Z2.9 F1920.0
+G1 X-32.55 Y33.58 Z2.9 F1920.0
+G1 X-32.31 Y34.18 Z2.9 F1920.0
+G1 X-31.91 Y34.69 Z2.9 F1920.0
+G1 X-31.4 Y35.08 Z2.9 F1920.0
+G1 X-30.8 Y35.33 Z2.9 F1920.0
+G1 X-30.16 Y35.42 Z2.9 F1920.0
+G1 X-29.52 Y35.33 Z2.9 F1920.0
+G1 X-28.93 Y35.08 Z2.9 F1920.0
+G1 X-28.41 Y34.69 Z2.9 F1920.0
+G1 X-28.02 Y34.18 Z2.9 F1920.0
+G1 X-27.77 Y33.58 Z2.9 F1920.0
+G1 X-27.69 Y32.94 Z2.9 F1920.0
+G1 X-27.77 Y32.3 Z2.9 F1920.0
+G1 X-28.02 Y31.7 Z2.9 F1920.0
+G1 X-28.41 Y31.19 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-30.16 Y-30.47 Z2.9 F1920.0
+M101
+G1 X-29.52 Y-30.55 Z2.9 F1920.0
+G1 X-28.93 Y-30.8 Z2.9 F1920.0
+G1 X-28.41 Y-31.19 Z2.9 F1920.0
+G1 X-28.02 Y-31.7 Z2.9 F1920.0
+G1 X-27.78 Y-32.3 Z2.9 F1920.0
+G1 X-27.69 Y-32.94 Z2.9 F1920.0
+G1 X-27.78 Y-33.58 Z2.9 F1920.0
+G1 X-28.02 Y-34.18 Z2.9 F1920.0
+G1 X-28.41 Y-34.69 Z2.9 F1920.0
+G1 X-28.93 Y-35.08 Z2.9 F1920.0
+G1 X-29.52 Y-35.33 Z2.9 F1920.0
+G1 X-30.16 Y-35.41 Z2.9 F1920.0
+G1 X-30.8 Y-35.33 Z2.9 F1920.0
+G1 X-31.4 Y-35.08 Z2.9 F1920.0
+G1 X-31.91 Y-34.69 Z2.9 F1920.0
+G1 X-32.3 Y-34.18 Z2.9 F1920.0
+G1 X-32.55 Y-33.58 Z2.9 F1920.0
+G1 X-32.64 Y-32.94 Z2.9 F1920.0
+G1 X-32.55 Y-32.3 Z2.9 F1920.0
+G1 X-32.3 Y-31.7 Z2.9 F1920.0
+G1 X-31.91 Y-31.19 Z2.9 F1920.0
+G1 X-31.4 Y-30.8 Z2.9 F1920.0
+G1 X-30.8 Y-30.55 Z2.9 F1920.0
+G1 X-30.16 Y-30.47 Z2.9 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-34.05 Y-30.47 Z2.9 F1920.0
+M101
+G1 X-34.05 Y-37.22 Z2.9 F1920.0
+G1 X34.05 Y-37.22 Z2.9 F1920.0
+G1 X34.05 Y37.22 Z2.9 F1920.0
+G1 X-34.05 Y37.22 Z2.9 F1920.0
+G1 X-34.05 Y-30.47 Z2.9 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-34.64 Y-30.47 Z2.9 F1920.0
+M101
+G1 X-34.64 Y-37.81 Z2.9 F1920.0
+G1 X34.64 Y-37.81 Z2.9 F1920.0
+G1 X34.64 Y37.81 Z2.9 F1920.0
+G1 X-34.64 Y37.81 Z2.9 F1920.0
+G1 X-34.64 Y-30.47 Z2.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-29.042 Y-34.061 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-34.313 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-34.472 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-34.526 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-34.472 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-34.313 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-34.061 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-33.733 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-33.351 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.747 Y-32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-32.148 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-31.82 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-31.568 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-31.41 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-31.356 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-31.41 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-31.568 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-29.042 Y-31.82 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-32.148 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-28.578 Y-32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-33.351 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-33.733 Z2.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-31.79 Y-32.0 Z2.9 F1920.0
+M101
+G1 X-31.49 Y-31.61 Z2.9 F1920.0
+G1 X-31.1 Y-31.32 Z2.9 F1920.0
+G1 X-30.65 Y-31.13 Z2.9 F1920.0
+G1 X-30.16 Y-31.06 Z2.9 F1920.0
+G1 X-29.68 Y-31.13 Z2.9 F1920.0
+G1 X-29.22 Y-31.32 Z2.9 F1920.0
+G1 X-28.84 Y-31.61 Z2.9 F1920.0
+G1 X-28.54 Y-32.0 Z2.9 F1920.0
+G1 X-28.35 Y-32.45 Z2.9 F1920.0
+G1 X-28.29 Y-32.94 Z2.9 F1920.0
+G1 X-28.35 Y-33.43 Z2.9 F1920.0
+G1 X-28.54 Y-33.88 Z2.9 F1920.0
+G1 X-28.84 Y-34.27 Z2.9 F1920.0
+G1 X-29.22 Y-34.57 Z2.9 F1920.0
+G1 X-29.68 Y-34.76 Z2.9 F1920.0
+G1 X-30.16 Y-34.82 Z2.9 F1920.0
+G1 X-30.65 Y-34.75 Z2.9 F1920.0
+G1 X-31.1 Y-34.57 Z2.9 F1920.0
+G1 X-31.49 Y-34.27 Z2.9 F1920.0
+G1 X-31.79 Y-33.88 Z2.9 F1920.0
+G1 X-31.98 Y-33.43 Z2.9 F1920.0
+G1 X-32.04 Y-32.94 Z2.9 F1920.0
+G1 X-31.98 Y-32.45 Z2.9 F1920.0
+G1 X-31.79 Y-32.0 Z2.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-19.05 Y-32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-34.528 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y-32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-32.147 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-31.353 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-32.147 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-32.53 Z2.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-31.16 Y-31.22 Z2.9 F1920.0
+G1 X-30.68 Y-31.02 Z2.9 F1920.0
+G1 X-30.16 Y-30.95 Z2.9 F1920.0
+G1 X-22.52 Y-32.94 Z2.9 F1920.0
+M101
+G1 X-22.45 Y-32.45 Z2.9 F1920.0
+G1 X-22.27 Y-32.0 Z2.9 F1920.0
+G1 X-21.97 Y-31.61 Z2.9 F1920.0
+G1 X-21.58 Y-31.31 Z2.9 F1920.0
+G1 X-21.12 Y-31.12 Z2.9 F1920.0
+G1 X-20.64 Y-31.06 Z2.9 F1920.0
+G1 X-20.15 Y-31.12 Z2.9 F1920.0
+G1 X-19.7 Y-31.31 Z2.9 F1920.0
+G1 X-19.31 Y-31.61 Z2.9 F1920.0
+G1 X-19.01 Y-32.0 Z2.9 F1920.0
+G1 X-18.82 Y-32.45 Z2.9 F1920.0
+G1 X-18.76 Y-32.94 Z2.9 F1920.0
+G1 X-18.82 Y-33.43 Z2.9 F1920.0
+G1 X-19.01 Y-33.88 Z2.9 F1920.0
+G1 X-19.31 Y-34.27 Z2.9 F1920.0
+G1 X-19.7 Y-34.57 Z2.9 F1920.0
+G1 X-20.15 Y-34.76 Z2.9 F1920.0
+G1 X-20.64 Y-34.82 Z2.9 F1920.0
+G1 X-21.12 Y-34.76 Z2.9 F1920.0
+G1 X-21.58 Y-34.57 Z2.9 F1920.0
+G1 X-21.97 Y-34.27 Z2.9 F1920.0
+G1 X-22.27 Y-33.88 Z2.9 F1920.0
+G1 X-22.45 Y-33.43 Z2.9 F1920.0
+G1 X-22.52 Y-32.94 Z2.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X1.167 Y-31.773 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-32.115 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-32.513 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.651 Y-32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-33.368 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-33.766 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.167 Y-34.108 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X0.825 Y-34.37 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-34.535 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-34.592 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-34.535 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-34.37 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-34.108 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-33.766 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-33.368 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.651 Y-32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-32.513 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-32.115 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-31.773 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-31.511 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-31.346 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-31.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-31.346 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X0.825 Y-31.511 Z2.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.36 Y-33.94 Z2.9 F1920.0
+G1 X-22.05 Y-34.35 Z2.9 F1920.0
+G1 X-21.63 Y-34.66 Z2.9 F1920.0
+G1 X-21.15 Y-34.86 Z2.9 F1920.0
+G1 X-1.94 Y-32.94 Z2.9 F1920.0
+M101
+G1 X-1.88 Y-32.44 Z2.9 F1920.0
+G1 X-1.68 Y-31.97 Z2.9 F1920.0
+G1 X-1.37 Y-31.57 Z2.9 F1920.0
+G1 X-0.97 Y-31.26 Z2.9 F1920.0
+G1 X-0.5 Y-31.06 Z2.9 F1920.0
+G1 X0.0 Y-31.02 Z2.9 F1920.0
+G1 X0.5 Y-31.06 Z2.9 F1920.0
+G1 X0.97 Y-31.26 Z2.9 F1920.0
+G1 X1.37 Y-31.57 Z2.9 F1920.0
+G1 X1.68 Y-31.97 Z2.9 F1920.0
+G1 X1.88 Y-32.44 Z2.9 F1920.0
+G1 X1.94 Y-32.94 Z2.9 F1920.0
+G1 X1.88 Y-33.44 Z2.9 F1920.0
+G1 X1.68 Y-33.91 Z2.9 F1920.0
+G1 X1.37 Y-34.32 Z2.9 F1920.0
+G1 X0.97 Y-34.62 Z2.9 F1920.0
+G1 X0.5 Y-34.82 Z2.9 F1920.0
+G1 X0.0 Y-34.89 Z2.9 F1920.0
+G1 X-0.5 Y-34.82 Z2.9 F1920.0
+G1 X-0.97 Y-34.62 Z2.9 F1920.0
+G1 X-1.37 Y-34.32 Z2.9 F1920.0
+G1 X-1.68 Y-33.91 Z2.9 F1920.0
+G1 X-1.88 Y-33.44 Z2.9 F1920.0
+G1 X-1.94 Y-32.94 Z2.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-0.794 Y-18.44 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-18.188 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-17.859 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-17.477 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.587 Y-17.066 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-16.655 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-16.272 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-15.943 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-0.794 Y-15.691 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-15.532 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-15.478 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-15.532 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-15.691 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-15.943 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-16.272 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-16.655 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.587 Y-17.066 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-17.477 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-17.859 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-18.188 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-18.44 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-18.599 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-18.653 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-18.599 Z2.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X0.0 Y-18.95 Z2.9 F1920.0
+M101
+G1 X-0.49 Y-18.88 Z2.9 F1920.0
+G1 X-0.94 Y-18.69 Z2.9 F1920.0
+G1 X-1.33 Y-18.4 Z2.9 F1920.0
+G1 X-1.63 Y-18.01 Z2.9 F1920.0
+G1 X-1.82 Y-17.55 Z2.9 F1920.0
+G1 X-1.88 Y-17.07 Z2.9 F1920.0
+G1 X-1.82 Y-16.58 Z2.9 F1920.0
+G1 X-1.63 Y-16.13 Z2.9 F1920.0
+G1 X-1.33 Y-15.74 Z2.9 F1920.0
+G1 X-0.94 Y-15.44 Z2.9 F1920.0
+G1 X-0.49 Y-15.25 Z2.9 F1920.0
+G1 X0.0 Y-15.19 Z2.9 F1920.0
+G1 X0.49 Y-15.25 Z2.9 F1920.0
+G1 X0.94 Y-15.44 Z2.9 F1920.0
+G1 X1.33 Y-15.74 Z2.9 F1920.0
+G1 X1.63 Y-16.13 Z2.9 F1920.0
+G1 X1.82 Y-16.58 Z2.9 F1920.0
+G1 X1.88 Y-17.07 Z2.9 F1920.0
+G1 X1.82 Y-17.55 Z2.9 F1920.0
+G1 X1.63 Y-18.01 Z2.9 F1920.0
+G1 X1.33 Y-18.4 Z2.9 F1920.0
+G1 X0.94 Y-18.69 Z2.9 F1920.0
+G1 X0.49 Y-18.88 Z2.9 F1920.0
+G1 X0.0 Y-18.95 Z2.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y-18.44 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-18.188 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-17.859 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-17.477 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-17.066 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-16.655 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-16.272 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-15.943 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-15.691 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-15.532 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-15.478 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-15.532 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-15.691 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-15.943 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-16.272 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-16.655 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-17.066 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-17.477 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-17.859 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-18.188 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-18.44 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-18.599 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-18.653 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-18.599 Z2.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X18.76 Y-17.07 Z2.9 F1920.0
+M101
+G1 X18.82 Y-16.58 Z2.9 F1920.0
+G1 X19.01 Y-16.13 Z2.9 F1920.0
+G1 X19.31 Y-15.74 Z2.9 F1920.0
+G1 X19.7 Y-15.44 Z2.9 F1920.0
+G1 X20.15 Y-15.25 Z2.9 F1920.0
+G1 X20.64 Y-15.19 Z2.9 F1920.0
+G1 X21.12 Y-15.25 Z2.9 F1920.0
+G1 X21.58 Y-15.44 Z2.9 F1920.0
+G1 X21.97 Y-15.74 Z2.9 F1920.0
+G1 X22.27 Y-16.13 Z2.9 F1920.0
+G1 X22.45 Y-16.58 Z2.9 F1920.0
+G1 X22.52 Y-17.07 Z2.9 F1920.0
+G1 X22.45 Y-17.55 Z2.9 F1920.0
+G1 X22.27 Y-18.01 Z2.9 F1920.0
+G1 X21.97 Y-18.4 Z2.9 F1920.0
+G1 X21.58 Y-18.69 Z2.9 F1920.0
+G1 X21.12 Y-18.88 Z2.9 F1920.0
+G1 X20.64 Y-18.95 Z2.9 F1920.0
+G1 X20.15 Y-18.88 Z2.9 F1920.0
+G1 X19.7 Y-18.69 Z2.9 F1920.0
+G1 X19.31 Y-18.4 Z2.9 F1920.0
+G1 X19.01 Y-18.01 Z2.9 F1920.0
+G1 X18.82 Y-17.55 Z2.9 F1920.0
+G1 X18.76 Y-17.07 Z2.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X21.048 Y-31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-32.147 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-34.528 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-32.147 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-31.353 Z2.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X20.64 Y-31.06 Z2.9 F1920.0
+M101
+G1 X21.12 Y-31.12 Z2.9 F1920.0
+G1 X21.58 Y-31.31 Z2.9 F1920.0
+G1 X21.97 Y-31.61 Z2.9 F1920.0
+G1 X22.27 Y-32.0 Z2.9 F1920.0
+G1 X22.45 Y-32.45 Z2.9 F1920.0
+G1 X22.52 Y-32.94 Z2.9 F1920.0
+G1 X22.45 Y-33.43 Z2.9 F1920.0
+G1 X22.27 Y-33.88 Z2.9 F1920.0
+G1 X21.97 Y-34.27 Z2.9 F1920.0
+G1 X21.58 Y-34.57 Z2.9 F1920.0
+G1 X21.12 Y-34.76 Z2.9 F1920.0
+G1 X20.64 Y-34.82 Z2.9 F1920.0
+G1 X20.15 Y-34.76 Z2.9 F1920.0
+G1 X19.7 Y-34.57 Z2.9 F1920.0
+G1 X19.31 Y-34.27 Z2.9 F1920.0
+G1 X19.01 Y-33.88 Z2.9 F1920.0
+G1 X18.82 Y-33.43 Z2.9 F1920.0
+G1 X18.76 Y-32.94 Z2.9 F1920.0
+G1 X18.82 Y-32.45 Z2.9 F1920.0
+G1 X19.01 Y-32.0 Z2.9 F1920.0
+G1 X19.31 Y-31.61 Z2.9 F1920.0
+G1 X19.7 Y-31.31 Z2.9 F1920.0
+G1 X20.15 Y-31.12 Z2.9 F1920.0
+G1 X20.64 Y-31.06 Z2.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X29.04 Y-31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-31.353 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-32.147 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y-32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-34.528 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y-34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-32.147 Z2.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X28.35 Y-32.45 Z2.9 F1920.0
+M101
+G1 X28.54 Y-32.0 Z2.9 F1920.0
+G1 X28.83 Y-31.61 Z2.9 F1920.0
+G1 X29.22 Y-31.31 Z2.9 F1920.0
+G1 X29.68 Y-31.12 Z2.9 F1920.0
+G1 X30.16 Y-31.06 Z2.9 F1920.0
+G1 X30.65 Y-31.12 Z2.9 F1920.0
+G1 X31.1 Y-31.31 Z2.9 F1920.0
+G1 X31.49 Y-31.61 Z2.9 F1920.0
+G1 X31.79 Y-32.0 Z2.9 F1920.0
+G1 X31.98 Y-32.45 Z2.9 F1920.0
+G1 X32.04 Y-32.94 Z2.9 F1920.0
+G1 X31.98 Y-33.43 Z2.9 F1920.0
+G1 X31.79 Y-33.88 Z2.9 F1920.0
+G1 X31.49 Y-34.27 Z2.9 F1920.0
+G1 X31.1 Y-34.57 Z2.9 F1920.0
+G1 X30.65 Y-34.76 Z2.9 F1920.0
+G1 X30.16 Y-34.82 Z2.9 F1920.0
+G1 X29.68 Y-34.76 Z2.9 F1920.0
+G1 X29.22 Y-34.57 Z2.9 F1920.0
+G1 X28.83 Y-34.27 Z2.9 F1920.0
+G1 X28.54 Y-33.88 Z2.9 F1920.0
+G1 X28.35 Y-33.43 Z2.9 F1920.0
+G1 X28.28 Y-32.94 Z2.9 F1920.0
+G1 X28.35 Y-32.45 Z2.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X31.285 Y31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y31.353 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y32.147 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y34.528 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y32.147 Z2.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X30.16 Y31.06 Z2.9 F1920.0
+M101
+G1 X29.68 Y31.12 Z2.9 F1920.0
+G1 X29.22 Y31.31 Z2.9 F1920.0
+G1 X28.83 Y31.61 Z2.9 F1920.0
+G1 X28.54 Y32.0 Z2.9 F1920.0
+G1 X28.35 Y32.45 Z2.9 F1920.0
+G1 X28.28 Y32.94 Z2.9 F1920.0
+G1 X28.35 Y33.43 Z2.9 F1920.0
+G1 X28.54 Y33.88 Z2.9 F1920.0
+G1 X28.83 Y34.27 Z2.9 F1920.0
+G1 X29.22 Y34.57 Z2.9 F1920.0
+G1 X29.68 Y34.76 Z2.9 F1920.0
+G1 X30.16 Y34.82 Z2.9 F1920.0
+G1 X30.65 Y34.76 Z2.9 F1920.0
+G1 X31.1 Y34.57 Z2.9 F1920.0
+G1 X31.49 Y34.27 Z2.9 F1920.0
+G1 X31.79 Y33.88 Z2.9 F1920.0
+G1 X31.98 Y33.43 Z2.9 F1920.0
+G1 X32.04 Y32.94 Z2.9 F1920.0
+G1 X31.98 Y32.45 Z2.9 F1920.0
+G1 X31.79 Y32.0 Z2.9 F1920.0
+G1 X31.49 Y31.61 Z2.9 F1920.0
+G1 X31.1 Y31.31 Z2.9 F1920.0
+G1 X30.65 Y31.12 Z2.9 F1920.0
+G1 X30.16 Y31.06 Z2.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y34.528 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y32.147 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y31.353 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y32.147 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y34.063 Z2.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.45 Y32.45 Z2.9 F1920.0
+M101
+G1 X22.27 Y32.0 Z2.9 F1920.0
+G1 X21.97 Y31.61 Z2.9 F1920.0
+G1 X21.58 Y31.31 Z2.9 F1920.0
+G1 X21.12 Y31.12 Z2.9 F1920.0
+G1 X20.64 Y31.06 Z2.9 F1920.0
+G1 X20.15 Y31.12 Z2.9 F1920.0
+G1 X19.7 Y31.31 Z2.9 F1920.0
+G1 X19.31 Y31.61 Z2.9 F1920.0
+G1 X19.01 Y32.0 Z2.9 F1920.0
+G1 X18.82 Y32.45 Z2.9 F1920.0
+G1 X18.76 Y32.94 Z2.9 F1920.0
+G1 X18.82 Y33.43 Z2.9 F1920.0
+G1 X19.01 Y33.88 Z2.9 F1920.0
+G1 X19.31 Y34.27 Z2.9 F1920.0
+G1 X19.7 Y34.57 Z2.9 F1920.0
+G1 X20.15 Y34.76 Z2.9 F1920.0
+G1 X20.64 Y34.82 Z2.9 F1920.0
+G1 X21.12 Y34.76 Z2.9 F1920.0
+G1 X21.58 Y34.57 Z2.9 F1920.0
+G1 X21.97 Y34.27 Z2.9 F1920.0
+G1 X22.27 Y33.88 Z2.9 F1920.0
+G1 X22.45 Y33.43 Z2.9 F1920.0
+G1 X22.52 Y32.94 Z2.9 F1920.0
+G1 X22.45 Y32.45 Z2.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-22.171 Y32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y34.528 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.05 Y32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y32.147 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y31.353 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y32.147 Z2.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.05 Y31.53 Z2.9 F1920.0
+G1 X21.63 Y31.22 Z2.9 F1920.0
+G1 X21.15 Y31.02 Z2.9 F1920.0
+G1 X-18.76 Y32.94 Z2.9 F1920.0
+M101
+G1 X-18.82 Y32.45 Z2.9 F1920.0
+G1 X-19.01 Y32.0 Z2.9 F1920.0
+G1 X-19.31 Y31.61 Z2.9 F1920.0
+G1 X-19.7 Y31.31 Z2.9 F1920.0
+G1 X-20.15 Y31.12 Z2.9 F1920.0
+G1 X-20.64 Y31.06 Z2.9 F1920.0
+G1 X-21.12 Y31.12 Z2.9 F1920.0
+G1 X-21.58 Y31.31 Z2.9 F1920.0
+G1 X-21.97 Y31.61 Z2.9 F1920.0
+G1 X-22.27 Y32.0 Z2.9 F1920.0
+G1 X-22.45 Y32.45 Z2.9 F1920.0
+G1 X-22.52 Y32.94 Z2.9 F1920.0
+G1 X-22.45 Y33.43 Z2.9 F1920.0
+G1 X-22.27 Y33.88 Z2.9 F1920.0
+G1 X-21.97 Y34.27 Z2.9 F1920.0
+G1 X-21.58 Y34.57 Z2.9 F1920.0
+G1 X-21.12 Y34.76 Z2.9 F1920.0
+G1 X-20.64 Y34.82 Z2.9 F1920.0
+G1 X-20.15 Y34.76 Z2.9 F1920.0
+G1 X-19.7 Y34.57 Z2.9 F1920.0
+G1 X-19.31 Y34.27 Z2.9 F1920.0
+G1 X-19.01 Y33.88 Z2.9 F1920.0
+G1 X-18.82 Y33.43 Z2.9 F1920.0
+G1 X-18.76 Y32.94 Z2.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-28.788 Y32.147 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y31.353 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y31.407 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y31.566 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y31.818 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y32.147 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y32.53 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.75 Y32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y34.528 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y34.474 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y34.315 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y34.063 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-28.788 Y33.734 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y33.352 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y32.941 Z2.9 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y32.53 Z2.9 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-18.91 Y33.94 Z2.9 F1920.0
+G1 X-19.23 Y34.35 Z2.9 F1920.0
+G1 X-19.64 Y34.66 Z2.9 F1920.0
+G1 X-20.12 Y34.86 Z2.9 F1920.0
+G1 X-20.64 Y34.93 Z2.9 F1920.0
+G1 X-28.28 Y32.94 Z2.9 F1920.0
+M101
+G1 X-28.35 Y32.45 Z2.9 F1920.0
+G1 X-28.54 Y32.0 Z2.9 F1920.0
+G1 X-28.83 Y31.61 Z2.9 F1920.0
+G1 X-29.22 Y31.31 Z2.9 F1920.0
+G1 X-29.68 Y31.12 Z2.9 F1920.0
+G1 X-30.16 Y31.06 Z2.9 F1920.0
+G1 X-30.65 Y31.12 Z2.9 F1920.0
+G1 X-31.1 Y31.31 Z2.9 F1920.0
+G1 X-31.49 Y31.61 Z2.9 F1920.0
+G1 X-31.79 Y32.0 Z2.9 F1920.0
+G1 X-31.98 Y32.45 Z2.9 F1920.0
+G1 X-32.04 Y32.94 Z2.9 F1920.0
+G1 X-31.98 Y33.43 Z2.9 F1920.0
+G1 X-31.79 Y33.88 Z2.9 F1920.0
+G1 X-31.49 Y34.27 Z2.9 F1920.0
+G1 X-31.1 Y34.57 Z2.9 F1920.0
+G1 X-30.65 Y34.76 Z2.9 F1920.0
+G1 X-30.16 Y34.82 Z2.9 F1920.0
+G1 X-29.68 Y34.76 Z2.9 F1920.0
+G1 X-29.22 Y34.57 Z2.9 F1920.0
+G1 X-28.83 Y34.27 Z2.9 F1920.0
+G1 X-28.54 Y33.88 Z2.9 F1920.0
+G1 X-28.35 Y33.43 Z2.9 F1920.0
+G1 X-28.28 Y32.94 Z2.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+G1 X-25.2 Y-36.23 Z2.9 F1920.0
+M101
+G1 X-25.2 Y36.23 Z2.9 F1920.0
+G1 X-25.8 Y36.23 Z2.9 F1920.0
+G1 X-25.8 Y-36.23 Z2.9 F1920.0
+G1 X-26.4 Y-36.23 Z2.9 F1920.0
+G1 X-26.4 Y36.23 Z2.9 F1920.0
+G1 X-27.0 Y36.23 Z2.9 F1920.0
+G1 X-27.0 Y34.31 Z2.9 F1920.0
+M103
+G1 X-27.6 Y35.26 Z2.9 F1920.0
+M101
+G1 X-27.6 Y36.23 Z2.9 F1920.0
+G1 X-28.2 Y36.23 Z2.9 F1920.0
+G1 X-28.2 Y35.78 Z2.9 F1920.0
+G1 X-28.8 Y36.1 Z2.9 F1920.0
+G1 X-28.8 Y36.23 Z2.9 F1920.0
+M103
+G1 X-31.2 Y36.25 Z2.9 F1920.0
+M101
+G1 X-31.2 Y36.29 Z2.9 F1920.0
+G1 X-31.8 Y36.23 Z2.9 F1920.0
+G1 X-31.8 Y35.99 Z2.9 F1920.0
+G1 X-32.4 Y36.23 Z2.9 F1920.0
+G1 X-32.4 Y35.56 Z2.9 F1920.0
+G1 X-33.0 Y34.92 Z2.9 F1920.0
+G1 X-33.0 Y36.23 Z2.9 F1920.0
+M103
+G1 X-33.0 Y30.96 Z2.9 F1920.0
+M101
+G1 X-33.0 Y-30.96 Z2.9 F1920.0
+G1 X-32.4 Y-30.32 Z2.9 F1920.0
+G1 X-32.4 Y30.32 Z2.9 F1920.0
+G1 X-31.8 Y29.89 Z2.9 F1920.0
+G1 X-31.8 Y-29.89 Z2.9 F1920.0
+M103
+G1 X-31.2 Y-29.65 Z2.9 F1920.0
+M101
+G1 X-31.2 Y29.64 Z2.9 F1920.0
+M103
+G1 X-30.6 Y29.52 Z2.9 F1920.0
+M101
+G1 X-30.6 Y-29.53 Z2.9 F1920.0
+G1 X-30.0 Y-29.49 Z2.9 F1920.0
+G1 X-30.0 Y29.49 Z2.9 F1920.0
+G1 X-29.4 Y29.57 Z2.9 F1920.0
+G1 X-29.4 Y-29.57 Z2.9 F1920.0
+M103
+G1 X-28.8 Y-29.78 Z2.9 F1920.0
+M101
+G1 X-28.8 Y29.78 Z2.9 F1920.0
+M103
+G1 X-28.2 Y30.11 Z2.9 F1920.0
+M101
+G1 X-28.2 Y-30.11 Z2.9 F1920.0
+G1 X-27.6 Y-30.63 Z2.9 F1920.0
+G1 X-27.6 Y30.62 Z2.9 F1920.0
+M103
+G1 X-27.0 Y31.58 Z2.9 F1920.0
+M101
+G1 X-27.0 Y-31.58 Z2.9 F1920.0
+M103
+G1 X-27.0 Y-34.3 Z2.9 F1920.0
+M101
+G1 X-27.0 Y-36.23 Z2.9 F1920.0
+G1 X-27.6 Y-36.23 Z2.9 F1920.0
+G1 X-27.6 Y-35.25 Z2.9 F1920.0
+G1 X-28.2 Y-35.77 Z2.9 F1920.0
+G1 X-28.2 Y-36.23 Z2.9 F1920.0
+G1 X-28.8 Y-36.23 Z2.9 F1920.0
+G1 X-28.8 Y-36.1 Z2.9 F1920.0
+M103
+G1 X-31.2 Y-36.25 Z2.9 F1920.0
+M101
+G1 X-31.2 Y-36.29 Z2.9 F1920.0
+G1 X-31.8 Y-36.23 Z2.9 F1920.0
+G1 X-31.8 Y-35.99 Z2.9 F1920.0
+G1 X-32.4 Y-36.23 Z2.9 F1920.0
+G1 X-32.4 Y-35.56 Z2.9 F1920.0
+G1 X-33.0 Y-34.92 Z2.9 F1920.0
+G1 X-33.0 Y-36.23 Z2.9 F1920.0
+M103
+G1 X-24.6 Y36.23 Z2.9 F1920.0
+M101
+G1 X-24.6 Y-36.23 Z2.9 F1920.0
+G1 X-24.0 Y-36.23 Z2.9 F1920.0
+G1 X-24.0 Y-33.79 Z2.9 F1920.0
+M103
+G1 X-23.4 Y-35.0 Z2.9 F1920.0
+M101
+G1 X-23.4 Y-36.23 Z2.9 F1920.0
+G1 X-22.8 Y-36.23 Z2.9 F1920.0
+G1 X-22.8 Y-35.62 Z2.9 F1920.0
+G1 X-22.2 Y-36.02 Z2.9 F1920.0
+G1 X-22.2 Y-36.23 Z2.9 F1920.0
+M103
+G1 X-19.2 Y-36.23 Z2.9 F1920.0
+M101
+G1 X-19.2 Y-36.07 Z2.9 F1920.0
+G1 X-18.6 Y-36.23 Z2.9 F1920.0
+G1 X-18.6 Y-35.72 Z2.9 F1920.0
+G1 X-18.0 Y-36.23 Z2.9 F1920.0
+G1 X-18.0 Y-35.16 Z2.9 F1920.0
+G1 X-17.4 Y-36.23 Z2.9 F1920.0
+G1 X-17.4 Y-34.12 Z2.9 F1920.0
+M103
+G1 X-17.4 Y-31.76 Z2.9 F1920.0
+M101
+G1 X-17.4 Y31.76 Z2.9 F1920.0
+M103
+G1 X-18.0 Y30.72 Z2.9 F1920.0
+M101
+G1 X-18.0 Y-30.72 Z2.9 F1920.0
+M103
+G1 X-19.8 Y-29.58 Z2.9 F1920.0
+M101
+G1 X-19.8 Y29.58 Z2.9 F1920.0
+G1 X-19.2 Y29.81 Z2.9 F1920.0
+G1 X-19.2 Y-29.81 Z2.9 F1920.0
+G1 X-18.6 Y-30.16 Z2.9 F1920.0
+G1 X-18.6 Y30.16 Z2.9 F1920.0
+M103
+G1 X-21.6 Y29.61 Z2.9 F1920.0
+M101
+G1 X-21.6 Y-29.61 Z2.9 F1920.0
+M103
+G1 X-21.0 Y-29.52 Z2.9 F1920.0
+M101
+G1 X-21.0 Y29.52 Z2.9 F1920.0
+G1 X-20.4 Y29.5 Z2.9 F1920.0
+G1 X-20.4 Y-29.5 Z2.9 F1920.0
+M103
+G1 X-22.2 Y-29.86 Z2.9 F1920.0
+M101
+G1 X-22.2 Y29.86 Z2.9 F1920.0
+M103
+G1 X-24.0 Y32.1 Z2.9 F1920.0
+M101
+G1 X-24.0 Y-32.1 Z2.9 F1920.0
+M103
+G1 X-23.4 Y-30.88 Z2.9 F1920.0
+M101
+G1 X-23.4 Y30.88 Z2.9 F1920.0
+G1 X-22.8 Y30.26 Z2.9 F1920.0
+G1 X-22.8 Y-30.26 Z2.9 F1920.0
+M103
+G1 X-3.0 Y-18.81 Z2.9 F1920.0
+M101
+G1 X-3.0 Y-31.09 Z2.9 F1920.0
+M103
+G1 X-2.4 Y-30.36 Z2.9 F1920.0
+M101
+G1 X-2.4 Y-19.57 Z2.9 F1920.0
+G1 X-1.8 Y-20.02 Z2.9 F1920.0
+G1 X-1.8 Y-29.9 Z2.9 F1920.0
+M103
+G1 X-1.2 Y-29.64 Z2.9 F1920.0
+M101
+G1 X-1.2 Y-20.3 Z2.9 F1920.0
+M103
+G1 X-0.6 Y-20.46 Z2.9 F1920.0
+M101
+G1 X-0.6 Y-29.48 Z2.9 F1920.0
+M103
+G1 X0.0 Y-29.44 Z2.9 F1920.0
+M101
+G1 X0.0 Y-20.54 Z2.9 F1920.0
+M103
+G1 X0.6 Y-20.46 Z2.9 F1920.0
+M101
+G1 X0.6 Y-29.48 Z2.9 F1920.0
+M103
+G1 X1.2 Y-29.64 Z2.9 F1920.0
+M101
+G1 X1.2 Y-20.3 Z2.9 F1920.0
+M103
+G1 X1.8 Y-20.02 Z2.9 F1920.0
+M101
+G1 X1.8 Y-29.9 Z2.9 F1920.0
+G1 X2.4 Y-30.36 Z2.9 F1920.0
+G1 X2.4 Y-19.57 Z2.9 F1920.0
+M103
+G1 X3.0 Y-18.81 Z2.9 F1920.0
+M101
+G1 X3.0 Y-31.09 Z2.9 F1920.0
+M103
+G1 X3.0 Y-34.79 Z2.9 F1920.0
+M101
+G1 X3.0 Y-36.23 Z2.9 F1920.0
+G1 X2.4 Y-36.23 Z2.9 F1920.0
+G1 X2.4 Y-35.52 Z2.9 F1920.0
+G1 X1.8 Y-35.98 Z2.9 F1920.0
+G1 X1.8 Y-36.23 Z2.9 F1920.0
+M103
+G1 X-1.8 Y-36.23 Z2.9 F1920.0
+M101
+G1 X-1.8 Y-35.98 Z2.9 F1920.0
+G1 X-2.4 Y-36.23 Z2.9 F1920.0
+G1 X-2.4 Y-35.52 Z2.9 F1920.0
+G1 X-3.0 Y-36.23 Z2.9 F1920.0
+G1 X-3.0 Y-34.79 Z2.9 F1920.0
+M103
+G1 X-3.6 Y-36.23 Z2.9 F1920.0
+M101
+G1 X-3.6 Y36.23 Z2.9 F1920.0
+G1 X-4.2 Y36.23 Z2.9 F1920.0
+G1 X-4.2 Y-36.23 Z2.9 F1920.0
+G1 X-4.8 Y-36.23 Z2.9 F1920.0
+G1 X-4.8 Y36.23 Z2.9 F1920.0
+G1 X-5.4 Y36.23 Z2.9 F1920.0
+G1 X-5.4 Y-36.23 Z2.9 F1920.0
+G1 X-6.0 Y-36.23 Z2.9 F1920.0
+G1 X-6.0 Y36.23 Z2.9 F1920.0
+G1 X-6.6 Y36.23 Z2.9 F1920.0
+G1 X-6.6 Y-36.23 Z2.9 F1920.0
+G1 X-7.2 Y-36.23 Z2.9 F1920.0
+G1 X-7.2 Y36.23 Z2.9 F1920.0
+G1 X-7.8 Y36.23 Z2.9 F1920.0
+G1 X-7.8 Y-36.23 Z2.9 F1920.0
+G1 X-8.4 Y-36.23 Z2.9 F1920.0
+G1 X-8.4 Y36.23 Z2.9 F1920.0
+G1 X-9.0 Y36.23 Z2.9 F1920.0
+G1 X-9.0 Y-36.23 Z2.9 F1920.0
+G1 X-9.6 Y-36.23 Z2.9 F1920.0
+G1 X-9.6 Y36.23 Z2.9 F1920.0
+G1 X-10.2 Y36.23 Z2.9 F1920.0
+G1 X-10.2 Y-36.23 Z2.9 F1920.0
+G1 X-10.8 Y-36.23 Z2.9 F1920.0
+G1 X-10.8 Y36.23 Z2.9 F1920.0
+G1 X-11.4 Y36.23 Z2.9 F1920.0
+G1 X-11.4 Y-36.23 Z2.9 F1920.0
+G1 X-12.0 Y-36.23 Z2.9 F1920.0
+G1 X-12.0 Y36.23 Z2.9 F1920.0
+G1 X-12.6 Y36.23 Z2.9 F1920.0
+G1 X-12.6 Y-36.23 Z2.9 F1920.0
+G1 X-13.2 Y-36.23 Z2.9 F1920.0
+G1 X-13.2 Y36.23 Z2.9 F1920.0
+G1 X-13.8 Y36.23 Z2.9 F1920.0
+G1 X-13.8 Y-36.23 Z2.9 F1920.0
+G1 X-14.4 Y-36.23 Z2.9 F1920.0
+G1 X-14.4 Y36.23 Z2.9 F1920.0
+G1 X-15.0 Y36.23 Z2.9 F1920.0
+G1 X-15.0 Y-36.23 Z2.9 F1920.0
+G1 X-15.6 Y-36.23 Z2.9 F1920.0
+G1 X-15.6 Y36.23 Z2.9 F1920.0
+G1 X-16.2 Y36.23 Z2.9 F1920.0
+G1 X-16.2 Y-36.23 Z2.9 F1920.0
+G1 X-16.8 Y-36.23 Z2.9 F1920.0
+G1 X-16.8 Y36.23 Z2.9 F1920.0
+G1 X-17.4 Y36.23 Z2.9 F1920.0
+G1 X-17.4 Y34.12 Z2.9 F1920.0
+M103
+G1 X-18.0 Y35.16 Z2.9 F1920.0
+M101
+G1 X-18.0 Y36.23 Z2.9 F1920.0
+G1 X-18.6 Y36.23 Z2.9 F1920.0
+G1 X-18.6 Y35.72 Z2.9 F1920.0
+G1 X-19.2 Y36.07 Z2.9 F1920.0
+G1 X-19.2 Y36.23 Z2.9 F1920.0
+M103
+G1 X-22.2 Y36.23 Z2.9 F1920.0
+M101
+G1 X-22.2 Y36.02 Z2.9 F1920.0
+G1 X-22.8 Y36.23 Z2.9 F1920.0
+G1 X-22.8 Y35.62 Z2.9 F1920.0
+G1 X-23.4 Y36.23 Z2.9 F1920.0
+G1 X-23.4 Y35.0 Z2.9 F1920.0
+G1 X-24.0 Y36.23 Z2.9 F1920.0
+G1 X-24.0 Y33.79 Z2.9 F1920.0
+M103
+G1 X-20.64 Y34.93 Z2.9 F1920.0
+G1 X16.2 Y36.23 Z2.9 F1920.0
+M101
+G1 X16.2 Y-36.23 Z2.9 F1920.0
+G1 X15.6 Y-36.23 Z2.9 F1920.0
+G1 X15.6 Y36.23 Z2.9 F1920.0
+G1 X15.0 Y36.23 Z2.9 F1920.0
+G1 X15.0 Y-36.23 Z2.9 F1920.0
+G1 X14.4 Y-36.23 Z2.9 F1920.0
+G1 X14.4 Y36.23 Z2.9 F1920.0
+G1 X13.8 Y36.23 Z2.9 F1920.0
+G1 X13.8 Y-36.23 Z2.9 F1920.0
+G1 X13.2 Y-36.23 Z2.9 F1920.0
+G1 X13.2 Y36.23 Z2.9 F1920.0
+G1 X12.6 Y36.23 Z2.9 F1920.0
+G1 X12.6 Y-36.23 Z2.9 F1920.0
+G1 X12.0 Y-36.23 Z2.9 F1920.0
+G1 X12.0 Y36.23 Z2.9 F1920.0
+G1 X11.4 Y36.23 Z2.9 F1920.0
+G1 X11.4 Y-36.23 Z2.9 F1920.0
+G1 X10.8 Y-36.23 Z2.9 F1920.0
+G1 X10.8 Y36.23 Z2.9 F1920.0
+G1 X10.2 Y36.23 Z2.9 F1920.0
+G1 X10.2 Y-36.23 Z2.9 F1920.0
+G1 X9.6 Y-36.23 Z2.9 F1920.0
+G1 X9.6 Y36.23 Z2.9 F1920.0
+G1 X9.0 Y36.23 Z2.9 F1920.0
+G1 X9.0 Y-36.23 Z2.9 F1920.0
+G1 X8.4 Y-36.23 Z2.9 F1920.0
+G1 X8.4 Y36.23 Z2.9 F1920.0
+G1 X7.8 Y36.23 Z2.9 F1920.0
+G1 X7.8 Y-36.23 Z2.9 F1920.0
+G1 X7.2 Y-36.23 Z2.9 F1920.0
+G1 X7.2 Y36.23 Z2.9 F1920.0
+G1 X6.6 Y36.23 Z2.9 F1920.0
+G1 X6.6 Y-36.23 Z2.9 F1920.0
+G1 X6.0 Y-36.23 Z2.9 F1920.0
+G1 X6.0 Y36.23 Z2.9 F1920.0
+G1 X5.4 Y36.23 Z2.9 F1920.0
+G1 X5.4 Y-36.23 Z2.9 F1920.0
+G1 X4.8 Y-36.23 Z2.9 F1920.0
+G1 X4.8 Y36.23 Z2.9 F1920.0
+G1 X4.2 Y36.23 Z2.9 F1920.0
+G1 X4.2 Y-36.23 Z2.9 F1920.0
+G1 X3.6 Y-36.23 Z2.9 F1920.0
+G1 X3.6 Y36.23 Z2.9 F1920.0
+G1 X3.0 Y36.23 Z2.9 F1920.0
+G1 X3.0 Y-15.32 Z2.9 F1920.0
+G1 X2.4 Y-14.57 Z2.9 F1920.0
+G1 X2.4 Y36.23 Z2.9 F1920.0
+G1 X1.8 Y36.23 Z2.9 F1920.0
+G1 X1.8 Y-14.11 Z2.9 F1920.0
+M103
+G1 X1.2 Y-13.84 Z2.9 F1920.0
+M101
+G1 X1.2 Y36.23 Z2.9 F1920.0
+G1 X0.6 Y36.23 Z2.9 F1920.0
+G1 X0.6 Y-13.67 Z2.9 F1920.0
+M103
+G1 X0.0 Y-13.59 Z2.9 F1920.0
+M101
+G1 X0.0 Y36.23 Z2.9 F1920.0
+G1 X-0.6 Y36.23 Z2.9 F1920.0
+G1 X-0.6 Y-13.67 Z2.9 F1920.0
+M103
+G1 X-1.2 Y-13.84 Z2.9 F1920.0
+M101
+G1 X-1.2 Y36.23 Z2.9 F1920.0
+G1 X-1.8 Y36.23 Z2.9 F1920.0
+G1 X-1.8 Y-14.11 Z2.9 F1920.0
+G1 X-2.4 Y-14.57 Z2.9 F1920.0
+G1 X-2.4 Y36.23 Z2.9 F1920.0
+G1 X-3.0 Y36.23 Z2.9 F1920.0
+G1 X-3.0 Y-15.32 Z2.9 F1920.0
+M103
+G1 X17.4 Y-15.88 Z2.9 F1920.0
+M101
+G1 X17.4 Y31.76 Z2.9 F1920.0
+M103
+G1 X18.0 Y30.72 Z2.9 F1920.0
+M101
+G1 X18.0 Y-14.85 Z2.9 F1920.0
+G1 X18.6 Y-14.29 Z2.9 F1920.0
+G1 X18.6 Y30.16 Z2.9 F1920.0
+G1 X19.2 Y29.81 Z2.9 F1920.0
+G1 X19.2 Y-13.93 Z2.9 F1920.0
+M103
+G1 X19.8 Y-13.7 Z2.9 F1920.0
+M101
+G1 X19.8 Y29.58 Z2.9 F1920.0
+M103
+G1 X20.4 Y29.5 Z2.9 F1920.0
+M101
+G1 X20.4 Y-13.62 Z2.9 F1920.0
+G1 X21.0 Y-13.64 Z2.9 F1920.0
+G1 X21.0 Y29.52 Z2.9 F1920.0
+M103
+G1 X21.6 Y29.61 Z2.9 F1920.0
+M101
+G1 X21.6 Y-13.74 Z2.9 F1920.0
+G1 X22.2 Y-13.99 Z2.9 F1920.0
+G1 X22.2 Y29.86 Z2.9 F1920.0
+M103
+G1 X22.8 Y30.26 Z2.9 F1920.0
+M101
+G1 X22.8 Y-14.38 Z2.9 F1920.0
+G1 X23.4 Y-15.01 Z2.9 F1920.0
+G1 X23.4 Y30.88 Z2.9 F1920.0
+M103
+G1 X24.0 Y32.1 Z2.9 F1920.0
+M101
+G1 X24.0 Y-16.22 Z2.9 F1920.0
+M103
+G1 X24.0 Y-32.1 Z2.9 F1920.0
+M101
+G1 X24.0 Y-17.91 Z2.9 F1920.0
+M103
+G1 X23.4 Y-19.12 Z2.9 F1920.0
+M101
+G1 X23.4 Y-30.88 Z2.9 F1920.0
+G1 X22.8 Y-30.26 Z2.9 F1920.0
+G1 X22.8 Y-19.75 Z2.9 F1920.0
+M103
+G1 X22.2 Y-20.15 Z2.9 F1920.0
+M101
+G1 X22.2 Y-29.86 Z2.9 F1920.0
+M103
+G1 X21.6 Y-29.61 Z2.9 F1920.0
+M101
+G1 X21.6 Y-20.4 Z2.9 F1920.0
+G1 X21.0 Y-20.49 Z2.9 F1920.0
+G1 X21.0 Y-29.52 Z2.9 F1920.0
+G1 X20.4 Y-29.5 Z2.9 F1920.0
+G1 X20.4 Y-20.51 Z2.9 F1920.0
+G1 X19.8 Y-20.43 Z2.9 F1920.0
+G1 X19.8 Y-29.58 Z2.9 F1920.0
+G1 X19.2 Y-29.81 Z2.9 F1920.0
+G1 X19.2 Y-20.2 Z2.9 F1920.0
+M103
+G1 X17.4 Y-18.25 Z2.9 F1920.0
+M101
+G1 X17.4 Y-31.76 Z2.9 F1920.0
+M103
+G1 X18.6 Y-30.16 Z2.9 F1920.0
+M101
+G1 X18.6 Y-19.84 Z2.9 F1920.0
+G1 X18.0 Y-19.29 Z2.9 F1920.0
+G1 X18.0 Y-30.72 Z2.9 F1920.0
+M103
+G1 X17.4 Y-34.12 Z2.9 F1920.0
+M101
+G1 X17.4 Y-36.23 Z2.9 F1920.0
+G1 X18.0 Y-36.23 Z2.9 F1920.0
+G1 X18.0 Y-35.16 Z2.9 F1920.0
+G1 X18.6 Y-35.72 Z2.9 F1920.0
+G1 X18.6 Y-36.23 Z2.9 F1920.0
+G1 X19.2 Y-36.23 Z2.9 F1920.0
+G1 X19.2 Y-36.07 Z2.9 F1920.0
+M103
+G1 X16.8 Y-36.23 Z2.9 F1920.0
+M101
+G1 X16.8 Y36.23 Z2.9 F1920.0
+G1 X17.4 Y36.23 Z2.9 F1920.0
+G1 X17.4 Y34.12 Z2.9 F1920.0
+M103
+G1 X18.0 Y35.16 Z2.9 F1920.0
+M101
+G1 X18.0 Y36.23 Z2.9 F1920.0
+G1 X18.6 Y36.23 Z2.9 F1920.0
+G1 X18.6 Y35.72 Z2.9 F1920.0
+G1 X19.2 Y36.07 Z2.9 F1920.0
+G1 X19.2 Y36.23 Z2.9 F1920.0
+M103
+G1 X23.4 Y35.0 Z2.9 F1920.0
+M101
+G1 X23.4 Y36.23 Z2.9 F1920.0
+G1 X22.8 Y36.23 Z2.9 F1920.0
+G1 X22.8 Y35.62 Z2.9 F1920.0
+G1 X22.2 Y36.02 Z2.9 F1920.0
+G1 X22.2 Y36.23 Z2.9 F1920.0
+M103
+G1 X25.2 Y36.23 Z2.9 F1920.0
+M101
+G1 X25.2 Y-36.23 Z2.9 F1920.0
+G1 X25.8 Y-36.23 Z2.9 F1920.0
+G1 X25.8 Y36.23 Z2.9 F1920.0
+M103
+G1 X27.6 Y35.26 Z2.9 F1920.0
+M101
+G1 X27.6 Y36.23 Z2.9 F1920.0
+G1 X28.2 Y36.23 Z2.9 F1920.0
+G1 X28.2 Y35.78 Z2.9 F1920.0
+G1 X28.8 Y36.1 Z2.9 F1920.0
+G1 X28.8 Y36.23 Z2.9 F1920.0
+M103
+G1 X31.2 Y36.25 Z2.9 F1920.0
+M101
+G1 X31.2 Y36.29 Z2.9 F1920.0
+G1 X31.8 Y36.23 Z2.9 F1920.0
+G1 X31.8 Y35.99 Z2.9 F1920.0
+G1 X32.4 Y36.23 Z2.9 F1920.0
+G1 X32.4 Y35.56 Z2.9 F1920.0
+G1 X33.0 Y34.92 Z2.9 F1920.0
+G1 X33.0 Y36.23 Z2.9 F1920.0
+M103
+G1 X33.0 Y30.96 Z2.9 F1920.0
+M101
+G1 X33.0 Y-30.96 Z2.9 F1920.0
+G1 X32.4 Y-30.32 Z2.9 F1920.0
+G1 X32.4 Y30.32 Z2.9 F1920.0
+G1 X31.8 Y29.89 Z2.9 F1920.0
+G1 X31.8 Y-29.89 Z2.9 F1920.0
+M103
+G1 X31.2 Y-29.64 Z2.9 F1920.0
+M101
+G1 X31.2 Y29.64 Z2.9 F1920.0
+M103
+G1 X30.6 Y29.52 Z2.9 F1920.0
+M101
+G1 X30.6 Y-29.52 Z2.9 F1920.0
+G1 X30.0 Y-29.49 Z2.9 F1920.0
+G1 X30.0 Y29.49 Z2.9 F1920.0
+G1 X29.4 Y29.57 Z2.9 F1920.0
+G1 X29.4 Y-29.57 Z2.9 F1920.0
+M103
+G1 X28.8 Y-29.78 Z2.9 F1920.0
+M101
+G1 X28.8 Y29.78 Z2.9 F1920.0
+M103
+G1 X28.2 Y30.11 Z2.9 F1920.0
+M101
+G1 X28.2 Y-30.11 Z2.9 F1920.0
+G1 X27.6 Y-30.62 Z2.9 F1920.0
+G1 X27.6 Y30.62 Z2.9 F1920.0
+M103
+G1 X27.0 Y31.58 Z2.9 F1920.0
+M101
+G1 X27.0 Y-31.58 Z2.9 F1920.0
+M103
+G1 X28.8 Y-36.23 Z2.9 F1920.0
+M101
+G1 X28.8 Y-36.1 Z2.9 F1920.0
+G1 X28.2 Y-36.23 Z2.9 F1920.0
+G1 X28.2 Y-35.78 Z2.9 F1920.0
+G1 X27.6 Y-36.23 Z2.9 F1920.0
+G1 X27.6 Y-35.26 Z2.9 F1920.0
+G1 X27.0 Y-36.23 Z2.9 F1920.0
+G1 X27.0 Y-34.31 Z2.9 F1920.0
+M103
+G1 X26.4 Y-36.23 Z2.9 F1920.0
+M101
+G1 X26.4 Y36.23 Z2.9 F1920.0
+G1 X27.0 Y36.23 Z2.9 F1920.0
+G1 X27.0 Y34.31 Z2.9 F1920.0
+M103
+G1 X24.0 Y-33.79 Z2.9 F1920.0
+M101
+G1 X24.0 Y-36.23 Z2.9 F1920.0
+G1 X24.6 Y-36.23 Z2.9 F1920.0
+G1 X24.6 Y36.23 Z2.9 F1920.0
+G1 X24.0 Y36.23 Z2.9 F1920.0
+G1 X24.0 Y33.79 Z2.9 F1920.0
+M103
+G1 X23.4 Y-35.0 Z2.9 F1920.0
+M101
+G1 X23.4 Y-36.23 Z2.9 F1920.0
+G1 X22.8 Y-36.23 Z2.9 F1920.0
+G1 X22.8 Y-35.62 Z2.9 F1920.0
+G1 X22.2 Y-36.02 Z2.9 F1920.0
+G1 X22.2 Y-36.23 Z2.9 F1920.0
+M103
+G1 X31.2 Y-36.25 Z2.9 F1920.0
+M101
+G1 X31.2 Y-36.29 Z2.9 F1920.0
+M103
+G1 X33.0 Y-36.23 Z2.9 F1920.0
+M101
+G1 X33.0 Y-34.92 Z2.9 F1920.0
+G1 X32.4 Y-35.56 Z2.9 F1920.0
+G1 X32.4 Y-36.23 Z2.9 F1920.0
+G1 X31.8 Y-36.23 Z2.9 F1920.0
+G1 X31.8 Y-35.99 Z2.9 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 3.3 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-38.1 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y38.1 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y38.1 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y-38.1 Z3.3 </boundaryPoint>)
+(<loop> inner )
+G1 X2.54 Y-32.94 Z3.3 F1920.0
+M101
+G1 X2.45 Y-33.6 Z3.3 F1920.0
+G1 X2.2 Y-34.21 Z3.3 F1920.0
+G1 X1.79 Y-34.74 Z3.3 F1920.0
+G1 X1.27 Y-35.14 Z3.3 F1920.0
+G1 X0.66 Y-35.39 Z3.3 F1920.0
+G1 X0.0 Y-35.48 Z3.3 F1920.0
+G1 X-0.66 Y-35.39 Z3.3 F1920.0
+G1 X-1.27 Y-35.14 Z3.3 F1920.0
+G1 X-1.79 Y-34.74 Z3.3 F1920.0
+G1 X-2.2 Y-34.21 Z3.3 F1920.0
+G1 X-2.45 Y-33.6 Z3.3 F1920.0
+G1 X-2.54 Y-32.94 Z3.3 F1920.0
+G1 X-2.45 Y-32.28 Z3.3 F1920.0
+G1 X-2.2 Y-31.67 Z3.3 F1920.0
+G1 X-1.79 Y-31.15 Z3.3 F1920.0
+G1 X-1.27 Y-30.74 Z3.3 F1920.0
+G1 X-0.63 Y-30.48 Z3.3 F1920.0
+G1 X0.0 Y-30.43 Z3.3 F1920.0
+G1 X0.63 Y-30.48 Z3.3 F1920.0
+G1 X1.27 Y-30.74 Z3.3 F1920.0
+G1 X1.79 Y-31.15 Z3.3 F1920.0
+G1 X2.2 Y-31.67 Z3.3 F1920.0
+G1 X2.45 Y-32.28 Z3.3 F1920.0
+G1 X2.54 Y-32.94 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X3.14 Y-32.94 Z3.3 F1920.0
+M101
+G1 X3.04 Y-33.75 Z3.3 F1920.0
+G1 X2.72 Y-34.51 Z3.3 F1920.0
+G1 X2.22 Y-35.17 Z3.3 F1920.0
+G1 X1.57 Y-35.66 Z3.3 F1920.0
+G1 X0.82 Y-35.98 Z3.3 F1920.0
+G1 X0.0 Y-36.09 Z3.3 F1920.0
+G1 X-0.82 Y-35.98 Z3.3 F1920.0
+G1 X-1.57 Y-35.66 Z3.3 F1920.0
+G1 X-2.22 Y-35.17 Z3.3 F1920.0
+G1 X-2.72 Y-34.51 Z3.3 F1920.0
+G1 X-3.04 Y-33.75 Z3.3 F1920.0
+G1 X-3.14 Y-32.94 Z3.3 F1920.0
+G1 X-3.04 Y-32.13 Z3.3 F1920.0
+G1 X-2.72 Y-31.37 Z3.3 F1920.0
+G1 X-2.22 Y-30.72 Z3.3 F1920.0
+G1 X-1.57 Y-30.22 Z3.3 F1920.0
+G1 X-0.77 Y-29.89 Z3.3 F1920.0
+G1 X0.0 Y-29.83 Z3.3 F1920.0
+G1 X0.77 Y-29.89 Z3.3 F1920.0
+G1 X1.57 Y-30.22 Z3.3 F1920.0
+G1 X2.22 Y-30.72 Z3.3 F1920.0
+G1 X2.72 Y-31.37 Z3.3 F1920.0
+G1 X3.04 Y-32.13 Z3.3 F1920.0
+G1 X3.14 Y-32.94 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.64 Y-19.46 Z3.3 F1920.0
+M101
+G1 X0.0 Y-19.54 Z3.3 F1920.0
+G1 X-0.64 Y-19.46 Z3.3 F1920.0
+G1 X-1.24 Y-19.21 Z3.3 F1920.0
+G1 X-1.75 Y-18.82 Z3.3 F1920.0
+G1 X-2.14 Y-18.3 Z3.3 F1920.0
+G1 X-2.39 Y-17.71 Z3.3 F1920.0
+G1 X-2.48 Y-17.07 Z3.3 F1920.0
+G1 X-2.39 Y-16.43 Z3.3 F1920.0
+G1 X-2.14 Y-15.83 Z3.3 F1920.0
+G1 X-1.75 Y-15.32 Z3.3 F1920.0
+G1 X-1.24 Y-14.92 Z3.3 F1920.0
+G1 X-0.64 Y-14.68 Z3.3 F1920.0
+G1 X0.0 Y-14.59 Z3.3 F1920.0
+G1 X0.64 Y-14.68 Z3.3 F1920.0
+G1 X1.24 Y-14.92 Z3.3 F1920.0
+G1 X1.75 Y-15.32 Z3.3 F1920.0
+G1 X2.14 Y-15.83 Z3.3 F1920.0
+G1 X2.39 Y-16.43 Z3.3 F1920.0
+G1 X2.48 Y-17.07 Z3.3 F1920.0
+G1 X2.39 Y-17.71 Z3.3 F1920.0
+G1 X2.14 Y-18.3 Z3.3 F1920.0
+G1 X1.75 Y-18.82 Z3.3 F1920.0
+G1 X1.24 Y-19.21 Z3.3 F1920.0
+G1 X0.64 Y-19.46 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X0.8 Y-20.04 Z3.3 F1920.0
+M101
+G1 X0.0 Y-20.15 Z3.3 F1920.0
+G1 X-0.8 Y-20.04 Z3.3 F1920.0
+G1 X-1.54 Y-19.73 Z3.3 F1920.0
+G1 X-2.18 Y-19.24 Z3.3 F1920.0
+G1 X-2.67 Y-18.6 Z3.3 F1920.0
+G1 X-2.98 Y-17.86 Z3.3 F1920.0
+G1 X-3.08 Y-17.07 Z3.3 F1920.0
+G1 X-2.98 Y-16.27 Z3.3 F1920.0
+G1 X-2.67 Y-15.53 Z3.3 F1920.0
+G1 X-2.18 Y-14.89 Z3.3 F1920.0
+G1 X-1.54 Y-14.4 Z3.3 F1920.0
+G1 X-0.8 Y-14.09 Z3.3 F1920.0
+G1 X0.0 Y-13.99 Z3.3 F1920.0
+G1 X0.8 Y-14.09 Z3.3 F1920.0
+G1 X1.54 Y-14.4 Z3.3 F1920.0
+G1 X2.18 Y-14.89 Z3.3 F1920.0
+G1 X2.67 Y-15.53 Z3.3 F1920.0
+G1 X2.98 Y-16.27 Z3.3 F1920.0
+G1 X3.08 Y-17.07 Z3.3 F1920.0
+G1 X2.98 Y-17.86 Z3.3 F1920.0
+G1 X2.67 Y-18.6 Z3.3 F1920.0
+G1 X2.18 Y-19.24 Z3.3 F1920.0
+G1 X1.54 Y-19.73 Z3.3 F1920.0
+G1 X0.8 Y-20.04 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-1.72 Y-18.06 Z3.3 F1920.0
+G1 X-20.0 Y30.55 Z3.3 F1920.0
+M101
+G1 X-20.64 Y30.47 Z3.3 F1920.0
+G1 X-21.28 Y30.55 Z3.3 F1920.0
+G1 X-21.88 Y30.8 Z3.3 F1920.0
+G1 X-22.39 Y31.19 Z3.3 F1920.0
+G1 X-22.78 Y31.7 Z3.3 F1920.0
+G1 X-23.03 Y32.3 Z3.3 F1920.0
+G1 X-23.11 Y32.94 Z3.3 F1920.0
+G1 X-23.03 Y33.58 Z3.3 F1920.0
+G1 X-22.78 Y34.18 Z3.3 F1920.0
+G1 X-22.39 Y34.69 Z3.3 F1920.0
+G1 X-21.88 Y35.08 Z3.3 F1920.0
+G1 X-21.28 Y35.33 Z3.3 F1920.0
+G1 X-20.64 Y35.42 Z3.3 F1920.0
+G1 X-20.0 Y35.33 Z3.3 F1920.0
+G1 X-19.4 Y35.08 Z3.3 F1920.0
+G1 X-18.89 Y34.69 Z3.3 F1920.0
+G1 X-18.5 Y34.18 Z3.3 F1920.0
+G1 X-18.25 Y33.58 Z3.3 F1920.0
+G1 X-18.16 Y32.94 Z3.3 F1920.0
+G1 X-18.25 Y32.3 Z3.3 F1920.0
+G1 X-18.49 Y31.7 Z3.3 F1920.0
+G1 X-18.89 Y31.19 Z3.3 F1920.0
+G1 X-19.4 Y30.8 Z3.3 F1920.0
+G1 X-20.0 Y30.55 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-19.84 Y29.97 Z3.3 F1920.0
+M101
+G1 X-20.64 Y29.86 Z3.3 F1920.0
+G1 X-21.44 Y29.97 Z3.3 F1920.0
+G1 X-22.18 Y30.27 Z3.3 F1920.0
+G1 X-22.82 Y30.76 Z3.3 F1920.0
+G1 X-23.31 Y31.4 Z3.3 F1920.0
+G1 X-23.61 Y32.14 Z3.3 F1920.0
+G1 X-23.72 Y32.94 Z3.3 F1920.0
+G1 X-23.61 Y33.74 Z3.3 F1920.0
+G1 X-23.3 Y34.48 Z3.3 F1920.0
+G1 X-22.82 Y35.12 Z3.3 F1920.0
+G1 X-22.18 Y35.61 Z3.3 F1920.0
+G1 X-21.44 Y35.92 Z3.3 F1920.0
+G1 X-20.64 Y36.02 Z3.3 F1920.0
+G1 X-19.84 Y35.92 Z3.3 F1920.0
+G1 X-19.1 Y35.61 Z3.3 F1920.0
+G1 X-18.46 Y35.12 Z3.3 F1920.0
+G1 X-17.97 Y34.48 Z3.3 F1920.0
+G1 X-17.66 Y33.74 Z3.3 F1920.0
+G1 X-17.56 Y32.94 Z3.3 F1920.0
+G1 X-17.66 Y32.14 Z3.3 F1920.0
+G1 X-17.97 Y31.4 Z3.3 F1920.0
+G1 X-18.46 Y30.76 Z3.3 F1920.0
+G1 X-19.1 Y30.27 Z3.3 F1920.0
+G1 X-19.84 Y29.97 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.64 Y-30.47 Z3.3 F1920.0
+M101
+G1 X-20.0 Y-30.55 Z3.3 F1920.0
+G1 X-19.4 Y-30.8 Z3.3 F1920.0
+G1 X-18.89 Y-31.19 Z3.3 F1920.0
+G1 X-18.49 Y-31.7 Z3.3 F1920.0
+G1 X-18.25 Y-32.3 Z3.3 F1920.0
+G1 X-18.16 Y-32.94 Z3.3 F1920.0
+G1 X-18.25 Y-33.58 Z3.3 F1920.0
+G1 X-18.5 Y-34.18 Z3.3 F1920.0
+G1 X-18.89 Y-34.69 Z3.3 F1920.0
+G1 X-19.4 Y-35.08 Z3.3 F1920.0
+G1 X-20.0 Y-35.33 Z3.3 F1920.0
+G1 X-20.64 Y-35.42 Z3.3 F1920.0
+G1 X-21.28 Y-35.33 Z3.3 F1920.0
+G1 X-21.88 Y-35.08 Z3.3 F1920.0
+G1 X-22.39 Y-34.69 Z3.3 F1920.0
+G1 X-22.78 Y-34.18 Z3.3 F1920.0
+G1 X-23.03 Y-33.58 Z3.3 F1920.0
+G1 X-23.11 Y-32.94 Z3.3 F1920.0
+G1 X-23.03 Y-32.3 Z3.3 F1920.0
+G1 X-22.78 Y-31.7 Z3.3 F1920.0
+G1 X-22.39 Y-31.19 Z3.3 F1920.0
+G1 X-21.88 Y-30.8 Z3.3 F1920.0
+G1 X-21.28 Y-30.55 Z3.3 F1920.0
+G1 X-20.64 Y-30.47 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-20.64 Y-29.86 Z3.3 F1920.0
+M101
+G1 X-19.84 Y-29.97 Z3.3 F1920.0
+G1 X-19.1 Y-30.27 Z3.3 F1920.0
+G1 X-18.46 Y-30.76 Z3.3 F1920.0
+G1 X-17.97 Y-31.4 Z3.3 F1920.0
+G1 X-17.66 Y-32.14 Z3.3 F1920.0
+G1 X-17.56 Y-32.94 Z3.3 F1920.0
+G1 X-17.66 Y-33.74 Z3.3 F1920.0
+G1 X-17.97 Y-34.48 Z3.3 F1920.0
+G1 X-18.46 Y-35.12 Z3.3 F1920.0
+G1 X-19.1 Y-35.61 Z3.3 F1920.0
+G1 X-19.84 Y-35.92 Z3.3 F1920.0
+G1 X-20.64 Y-36.02 Z3.3 F1920.0
+G1 X-21.44 Y-35.92 Z3.3 F1920.0
+G1 X-22.18 Y-35.61 Z3.3 F1920.0
+G1 X-22.82 Y-35.12 Z3.3 F1920.0
+G1 X-23.3 Y-34.48 Z3.3 F1920.0
+G1 X-23.61 Y-33.74 Z3.3 F1920.0
+G1 X-23.72 Y-32.94 Z3.3 F1920.0
+G1 X-23.61 Y-32.14 Z3.3 F1920.0
+G1 X-23.31 Y-31.4 Z3.3 F1920.0
+G1 X-22.82 Y-30.76 Z3.3 F1920.0
+G1 X-22.18 Y-30.27 Z3.3 F1920.0
+G1 X-21.44 Y-29.97 Z3.3 F1920.0
+G1 X-20.64 Y-29.86 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.4 Y30.8 Z3.3 F1920.0
+M101
+G1 X18.89 Y31.19 Z3.3 F1920.0
+G1 X18.49 Y31.7 Z3.3 F1920.0
+G1 X18.25 Y32.3 Z3.3 F1920.0
+G1 X18.16 Y32.94 Z3.3 F1920.0
+G1 X18.25 Y33.58 Z3.3 F1920.0
+G1 X18.5 Y34.18 Z3.3 F1920.0
+G1 X18.89 Y34.69 Z3.3 F1920.0
+G1 X19.4 Y35.08 Z3.3 F1920.0
+G1 X20.0 Y35.33 Z3.3 F1920.0
+G1 X20.64 Y35.42 Z3.3 F1920.0
+G1 X21.28 Y35.33 Z3.3 F1920.0
+G1 X21.88 Y35.08 Z3.3 F1920.0
+G1 X22.39 Y34.69 Z3.3 F1920.0
+G1 X22.78 Y34.18 Z3.3 F1920.0
+G1 X23.03 Y33.58 Z3.3 F1920.0
+G1 X23.11 Y32.94 Z3.3 F1920.0
+G1 X23.03 Y32.3 Z3.3 F1920.0
+G1 X22.78 Y31.7 Z3.3 F1920.0
+G1 X22.39 Y31.19 Z3.3 F1920.0
+G1 X21.88 Y30.8 Z3.3 F1920.0
+G1 X21.28 Y30.55 Z3.3 F1920.0
+G1 X20.64 Y30.47 Z3.3 F1920.0
+G1 X20.0 Y30.55 Z3.3 F1920.0
+G1 X19.4 Y30.8 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.1 Y30.27 Z3.3 F1920.0
+M101
+G1 X18.46 Y30.76 Z3.3 F1920.0
+G1 X17.97 Y31.4 Z3.3 F1920.0
+G1 X17.66 Y32.14 Z3.3 F1920.0
+G1 X17.56 Y32.94 Z3.3 F1920.0
+G1 X17.66 Y33.74 Z3.3 F1920.0
+G1 X17.97 Y34.48 Z3.3 F1920.0
+G1 X18.46 Y35.12 Z3.3 F1920.0
+G1 X19.1 Y35.61 Z3.3 F1920.0
+G1 X19.84 Y35.92 Z3.3 F1920.0
+G1 X20.64 Y36.02 Z3.3 F1920.0
+G1 X21.44 Y35.92 Z3.3 F1920.0
+G1 X22.18 Y35.61 Z3.3 F1920.0
+G1 X22.82 Y35.12 Z3.3 F1920.0
+G1 X23.3 Y34.48 Z3.3 F1920.0
+G1 X23.61 Y33.74 Z3.3 F1920.0
+G1 X23.72 Y32.94 Z3.3 F1920.0
+G1 X23.61 Y32.14 Z3.3 F1920.0
+G1 X23.31 Y31.4 Z3.3 F1920.0
+G1 X22.82 Y30.76 Z3.3 F1920.0
+G1 X22.18 Y30.27 Z3.3 F1920.0
+G1 X21.44 Y29.97 Z3.3 F1920.0
+G1 X20.64 Y29.86 Z3.3 F1920.0
+G1 X19.84 Y29.97 Z3.3 F1920.0
+G1 X19.1 Y30.27 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X18.72 Y-17.58 Z3.3 F1920.0
+G1 X20.64 Y-30.47 Z3.3 F1920.0
+M101
+G1 X21.28 Y-30.55 Z3.3 F1920.0
+G1 X21.88 Y-30.8 Z3.3 F1920.0
+G1 X22.39 Y-31.19 Z3.3 F1920.0
+G1 X22.78 Y-31.7 Z3.3 F1920.0
+G1 X23.03 Y-32.3 Z3.3 F1920.0
+G1 X23.11 Y-32.94 Z3.3 F1920.0
+G1 X23.03 Y-33.58 Z3.3 F1920.0
+G1 X22.78 Y-34.18 Z3.3 F1920.0
+G1 X22.39 Y-34.69 Z3.3 F1920.0
+G1 X21.88 Y-35.08 Z3.3 F1920.0
+G1 X21.28 Y-35.33 Z3.3 F1920.0
+G1 X20.64 Y-35.42 Z3.3 F1920.0
+G1 X20.0 Y-35.33 Z3.3 F1920.0
+G1 X19.4 Y-35.08 Z3.3 F1920.0
+G1 X18.89 Y-34.69 Z3.3 F1920.0
+G1 X18.5 Y-34.18 Z3.3 F1920.0
+G1 X18.25 Y-33.58 Z3.3 F1920.0
+G1 X18.16 Y-32.94 Z3.3 F1920.0
+G1 X18.25 Y-32.3 Z3.3 F1920.0
+G1 X18.49 Y-31.7 Z3.3 F1920.0
+G1 X18.89 Y-31.19 Z3.3 F1920.0
+G1 X19.4 Y-30.8 Z3.3 F1920.0
+G1 X20.0 Y-30.55 Z3.3 F1920.0
+G1 X20.64 Y-30.47 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-29.86 Z3.3 F1920.0
+M101
+G1 X21.44 Y-29.97 Z3.3 F1920.0
+G1 X22.18 Y-30.27 Z3.3 F1920.0
+G1 X22.82 Y-30.76 Z3.3 F1920.0
+G1 X23.31 Y-31.4 Z3.3 F1920.0
+G1 X23.61 Y-32.14 Z3.3 F1920.0
+G1 X23.72 Y-32.94 Z3.3 F1920.0
+G1 X23.61 Y-33.74 Z3.3 F1920.0
+G1 X23.3 Y-34.48 Z3.3 F1920.0
+G1 X22.82 Y-35.12 Z3.3 F1920.0
+G1 X22.18 Y-35.61 Z3.3 F1920.0
+G1 X21.44 Y-35.92 Z3.3 F1920.0
+G1 X20.64 Y-36.02 Z3.3 F1920.0
+G1 X19.84 Y-35.92 Z3.3 F1920.0
+G1 X19.1 Y-35.61 Z3.3 F1920.0
+G1 X18.46 Y-35.12 Z3.3 F1920.0
+G1 X17.97 Y-34.48 Z3.3 F1920.0
+G1 X17.66 Y-33.74 Z3.3 F1920.0
+G1 X17.56 Y-32.94 Z3.3 F1920.0
+G1 X17.66 Y-32.14 Z3.3 F1920.0
+G1 X17.97 Y-31.4 Z3.3 F1920.0
+G1 X18.46 Y-30.76 Z3.3 F1920.0
+G1 X19.1 Y-30.27 Z3.3 F1920.0
+G1 X19.84 Y-29.97 Z3.3 F1920.0
+G1 X20.64 Y-29.86 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-19.54 Z3.3 F1920.0
+M101
+G1 X20.0 Y-19.46 Z3.3 F1920.0
+G1 X19.4 Y-19.21 Z3.3 F1920.0
+G1 X18.89 Y-18.82 Z3.3 F1920.0
+G1 X18.5 Y-18.3 Z3.3 F1920.0
+G1 X18.25 Y-17.71 Z3.3 F1920.0
+G1 X18.16 Y-17.07 Z3.3 F1920.0
+G1 X18.25 Y-16.43 Z3.3 F1920.0
+G1 X18.49 Y-15.83 Z3.3 F1920.0
+G1 X18.89 Y-15.32 Z3.3 F1920.0
+G1 X19.4 Y-14.92 Z3.3 F1920.0
+G1 X20.0 Y-14.68 Z3.3 F1920.0
+G1 X20.64 Y-14.59 Z3.3 F1920.0
+G1 X21.28 Y-14.68 Z3.3 F1920.0
+G1 X21.88 Y-14.92 Z3.3 F1920.0
+G1 X22.39 Y-15.32 Z3.3 F1920.0
+G1 X22.78 Y-15.83 Z3.3 F1920.0
+G1 X23.03 Y-16.43 Z3.3 F1920.0
+G1 X23.11 Y-17.07 Z3.3 F1920.0
+G1 X23.03 Y-17.71 Z3.3 F1920.0
+G1 X22.78 Y-18.3 Z3.3 F1920.0
+G1 X22.39 Y-18.82 Z3.3 F1920.0
+G1 X21.88 Y-19.21 Z3.3 F1920.0
+G1 X21.28 Y-19.46 Z3.3 F1920.0
+G1 X20.64 Y-19.54 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X20.64 Y-20.15 Z3.3 F1920.0
+M101
+G1 X19.84 Y-20.04 Z3.3 F1920.0
+G1 X19.1 Y-19.73 Z3.3 F1920.0
+G1 X18.46 Y-19.24 Z3.3 F1920.0
+G1 X17.97 Y-18.61 Z3.3 F1920.0
+G1 X17.66 Y-17.86 Z3.3 F1920.0
+G1 X17.56 Y-17.07 Z3.3 F1920.0
+G1 X17.66 Y-16.27 Z3.3 F1920.0
+G1 X17.97 Y-15.53 Z3.3 F1920.0
+G1 X18.46 Y-14.89 Z3.3 F1920.0
+G1 X19.1 Y-14.4 Z3.3 F1920.0
+G1 X19.84 Y-14.09 Z3.3 F1920.0
+G1 X20.64 Y-13.99 Z3.3 F1920.0
+G1 X21.44 Y-14.09 Z3.3 F1920.0
+G1 X22.18 Y-14.4 Z3.3 F1920.0
+G1 X22.82 Y-14.89 Z3.3 F1920.0
+G1 X23.31 Y-15.53 Z3.3 F1920.0
+G1 X23.61 Y-16.27 Z3.3 F1920.0
+G1 X23.72 Y-17.07 Z3.3 F1920.0
+G1 X23.61 Y-17.86 Z3.3 F1920.0
+G1 X23.3 Y-18.61 Z3.3 F1920.0
+G1 X22.82 Y-19.24 Z3.3 F1920.0
+G1 X22.18 Y-19.73 Z3.3 F1920.0
+G1 X21.44 Y-20.04 Z3.3 F1920.0
+G1 X20.64 Y-20.15 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X33.45 Y-20.15 Z3.3 F1920.0
+M101
+G1 X33.45 Y31.25 Z3.3 F1920.0
+G1 X33.61 Y32.16 Z3.3 F1920.0
+G1 X33.0 Y31.8 Z3.3 F1920.0
+G1 X32.83 Y31.4 Z3.3 F1920.0
+G1 X32.34 Y30.76 Z3.3 F1920.0
+G1 X31.7 Y30.27 Z3.3 F1920.0
+G1 X30.96 Y29.97 Z3.3 F1920.0
+G1 X30.16 Y29.86 Z3.3 F1920.0
+G1 X29.37 Y29.97 Z3.3 F1920.0
+G1 X28.62 Y30.27 Z3.3 F1920.0
+G1 X27.98 Y30.76 Z3.3 F1920.0
+G1 X27.5 Y31.4 Z3.3 F1920.0
+G1 X27.19 Y32.14 Z3.3 F1920.0
+G1 X27.08 Y32.94 Z3.3 F1920.0
+G1 X27.19 Y33.74 Z3.3 F1920.0
+G1 X27.5 Y34.48 Z3.3 F1920.0
+G1 X27.98 Y35.12 Z3.3 F1920.0
+G1 X28.62 Y35.61 Z3.3 F1920.0
+G1 X29.37 Y35.92 Z3.3 F1920.0
+G1 X30.16 Y36.02 Z3.3 F1920.0
+G1 X30.96 Y35.92 Z3.3 F1920.0
+G1 X31.7 Y35.61 Z3.3 F1920.0
+G1 X32.34 Y35.12 Z3.3 F1920.0
+G1 X32.83 Y34.48 Z3.3 F1920.0
+G1 X32.87 Y34.37 Z3.3 F1920.0
+G1 X33.45 Y34.62 Z3.3 F1920.0
+G1 X33.45 Y36.62 Z3.3 F1920.0
+G1 X-33.45 Y36.62 Z3.3 F1920.0
+G1 X-33.45 Y34.62 Z3.3 F1920.0
+G1 X-32.87 Y34.37 Z3.3 F1920.0
+G1 X-32.83 Y34.48 Z3.3 F1920.0
+G1 X-32.34 Y35.12 Z3.3 F1920.0
+G1 X-31.7 Y35.61 Z3.3 F1920.0
+G1 X-30.96 Y35.92 Z3.3 F1920.0
+G1 X-30.16 Y36.02 Z3.3 F1920.0
+G1 X-29.37 Y35.92 Z3.3 F1920.0
+G1 X-28.62 Y35.61 Z3.3 F1920.0
+G1 X-27.98 Y35.12 Z3.3 F1920.0
+G1 X-27.5 Y34.48 Z3.3 F1920.0
+G1 X-27.19 Y33.74 Z3.3 F1920.0
+G1 X-27.08 Y32.94 Z3.3 F1920.0
+G1 X-27.19 Y32.14 Z3.3 F1920.0
+G1 X-27.5 Y31.4 Z3.3 F1920.0
+G1 X-27.98 Y30.76 Z3.3 F1920.0
+G1 X-28.62 Y30.27 Z3.3 F1920.0
+G1 X-29.37 Y29.97 Z3.3 F1920.0
+G1 X-30.16 Y29.86 Z3.3 F1920.0
+G1 X-30.96 Y29.97 Z3.3 F1920.0
+G1 X-31.7 Y30.27 Z3.3 F1920.0
+G1 X-32.34 Y30.76 Z3.3 F1920.0
+G1 X-32.83 Y31.4 Z3.3 F1920.0
+G1 X-33.0 Y31.8 Z3.3 F1920.0
+G1 X-33.61 Y32.16 Z3.3 F1920.0
+G1 X-33.45 Y31.25 Z3.3 F1920.0
+G1 X-33.45 Y-31.25 Z3.3 F1920.0
+G1 X-33.61 Y-32.16 Z3.3 F1920.0
+G1 X-32.99 Y-31.8 Z3.3 F1920.0
+G1 X-32.83 Y-31.4 Z3.3 F1920.0
+G1 X-32.34 Y-30.77 Z3.3 F1920.0
+G1 X-31.7 Y-30.28 Z3.3 F1920.0
+G1 X-30.96 Y-29.97 Z3.3 F1920.0
+G1 X-30.16 Y-29.86 Z3.3 F1920.0
+G1 X-29.37 Y-29.97 Z3.3 F1920.0
+G1 X-28.62 Y-30.28 Z3.3 F1920.0
+G1 X-27.99 Y-30.77 Z3.3 F1920.0
+G1 X-27.5 Y-31.4 Z3.3 F1920.0
+G1 X-27.19 Y-32.14 Z3.3 F1920.0
+G1 X-27.09 Y-32.94 Z3.3 F1920.0
+G1 X-27.19 Y-33.74 Z3.3 F1920.0
+G1 X-27.5 Y-34.48 Z3.3 F1920.0
+G1 X-27.99 Y-35.12 Z3.3 F1920.0
+G1 X-28.62 Y-35.6 Z3.3 F1920.0
+G1 X-29.37 Y-35.91 Z3.3 F1920.0
+G1 X-30.16 Y-36.02 Z3.3 F1920.0
+G1 X-30.96 Y-35.91 Z3.3 F1920.0
+G1 X-31.7 Y-35.6 Z3.3 F1920.0
+G1 X-32.34 Y-35.12 Z3.3 F1920.0
+G1 X-32.83 Y-34.48 Z3.3 F1920.0
+G1 X-32.87 Y-34.36 Z3.3 F1920.0
+G1 X-33.45 Y-34.62 Z3.3 F1920.0
+G1 X-33.45 Y-36.62 Z3.3 F1920.0
+G1 X33.45 Y-36.62 Z3.3 F1920.0
+G1 X33.45 Y-34.62 Z3.3 F1920.0
+G1 X32.87 Y-34.37 Z3.3 F1920.0
+G1 X32.83 Y-34.48 Z3.3 F1920.0
+G1 X32.34 Y-35.12 Z3.3 F1920.0
+G1 X31.7 Y-35.61 Z3.3 F1920.0
+G1 X30.96 Y-35.92 Z3.3 F1920.0
+G1 X30.16 Y-36.02 Z3.3 F1920.0
+G1 X29.37 Y-35.92 Z3.3 F1920.0
+G1 X28.62 Y-35.61 Z3.3 F1920.0
+G1 X27.98 Y-35.12 Z3.3 F1920.0
+G1 X27.5 Y-34.48 Z3.3 F1920.0
+G1 X27.19 Y-33.74 Z3.3 F1920.0
+G1 X27.08 Y-32.94 Z3.3 F1920.0
+G1 X27.19 Y-32.14 Z3.3 F1920.0
+G1 X27.5 Y-31.4 Z3.3 F1920.0
+G1 X27.98 Y-30.76 Z3.3 F1920.0
+G1 X28.62 Y-30.27 Z3.3 F1920.0
+G1 X29.37 Y-29.97 Z3.3 F1920.0
+G1 X30.16 Y-29.86 Z3.3 F1920.0
+G1 X30.96 Y-29.97 Z3.3 F1920.0
+G1 X31.7 Y-30.27 Z3.3 F1920.0
+G1 X32.34 Y-30.76 Z3.3 F1920.0
+G1 X32.83 Y-31.4 Z3.3 F1920.0
+G1 X33.0 Y-31.8 Z3.3 F1920.0
+G1 X33.61 Y-32.16 Z3.3 F1920.0
+G1 X33.45 Y-31.25 Z3.3 F1920.0
+G1 X33.45 Y-20.15 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X30.16 Y30.47 Z3.3 F1920.0
+M101
+G1 X29.52 Y30.55 Z3.3 F1920.0
+G1 X28.93 Y30.8 Z3.3 F1920.0
+G1 X28.41 Y31.19 Z3.3 F1920.0
+G1 X28.02 Y31.7 Z3.3 F1920.0
+G1 X27.77 Y32.3 Z3.3 F1920.0
+G1 X27.69 Y32.94 Z3.3 F1920.0
+G1 X27.77 Y33.58 Z3.3 F1920.0
+G1 X28.02 Y34.18 Z3.3 F1920.0
+G1 X28.41 Y34.69 Z3.3 F1920.0
+G1 X28.93 Y35.08 Z3.3 F1920.0
+G1 X29.52 Y35.33 Z3.3 F1920.0
+G1 X30.16 Y35.42 Z3.3 F1920.0
+G1 X30.8 Y35.33 Z3.3 F1920.0
+G1 X31.4 Y35.08 Z3.3 F1920.0
+G1 X31.91 Y34.69 Z3.3 F1920.0
+G1 X32.31 Y34.18 Z3.3 F1920.0
+G1 X32.55 Y33.58 Z3.3 F1920.0
+G1 X32.64 Y32.94 Z3.3 F1920.0
+G1 X32.55 Y32.3 Z3.3 F1920.0
+G1 X32.31 Y31.7 Z3.3 F1920.0
+G1 X31.91 Y31.19 Z3.3 F1920.0
+G1 X31.4 Y30.8 Z3.3 F1920.0
+G1 X30.8 Y30.55 Z3.3 F1920.0
+G1 X30.16 Y30.47 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X-21.15 Y31.02 Z3.3 F1920.0
+G1 X-27.69 Y32.94 Z3.3 F1920.0
+M101
+G1 X-27.77 Y32.3 Z3.3 F1920.0
+G1 X-28.02 Y31.7 Z3.3 F1920.0
+G1 X-28.41 Y31.19 Z3.3 F1920.0
+G1 X-28.93 Y30.8 Z3.3 F1920.0
+G1 X-29.52 Y30.55 Z3.3 F1920.0
+G1 X-30.16 Y30.47 Z3.3 F1920.0
+G1 X-30.8 Y30.55 Z3.3 F1920.0
+G1 X-31.4 Y30.8 Z3.3 F1920.0
+G1 X-31.91 Y31.19 Z3.3 F1920.0
+G1 X-32.31 Y31.7 Z3.3 F1920.0
+G1 X-32.55 Y32.3 Z3.3 F1920.0
+G1 X-32.64 Y32.94 Z3.3 F1920.0
+G1 X-32.55 Y33.58 Z3.3 F1920.0
+G1 X-32.31 Y34.18 Z3.3 F1920.0
+G1 X-31.91 Y34.69 Z3.3 F1920.0
+G1 X-31.4 Y35.08 Z3.3 F1920.0
+G1 X-30.8 Y35.33 Z3.3 F1920.0
+G1 X-30.16 Y35.42 Z3.3 F1920.0
+G1 X-29.52 Y35.33 Z3.3 F1920.0
+G1 X-28.93 Y35.08 Z3.3 F1920.0
+G1 X-28.41 Y34.69 Z3.3 F1920.0
+G1 X-28.02 Y34.18 Z3.3 F1920.0
+G1 X-27.77 Y33.58 Z3.3 F1920.0
+G1 X-27.69 Y32.94 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X28.41 Y-31.19 Z3.3 F1920.0
+M101
+G1 X28.93 Y-30.8 Z3.3 F1920.0
+G1 X29.52 Y-30.55 Z3.3 F1920.0
+G1 X30.16 Y-30.47 Z3.3 F1920.0
+G1 X30.8 Y-30.55 Z3.3 F1920.0
+G1 X31.4 Y-30.8 Z3.3 F1920.0
+G1 X31.91 Y-31.19 Z3.3 F1920.0
+G1 X32.31 Y-31.7 Z3.3 F1920.0
+G1 X32.55 Y-32.3 Z3.3 F1920.0
+G1 X32.64 Y-32.94 Z3.3 F1920.0
+G1 X32.55 Y-33.58 Z3.3 F1920.0
+G1 X32.31 Y-34.18 Z3.3 F1920.0
+G1 X31.91 Y-34.69 Z3.3 F1920.0
+G1 X31.4 Y-35.08 Z3.3 F1920.0
+G1 X30.8 Y-35.33 Z3.3 F1920.0
+G1 X30.16 Y-35.42 Z3.3 F1920.0
+G1 X29.52 Y-35.33 Z3.3 F1920.0
+G1 X28.93 Y-35.08 Z3.3 F1920.0
+G1 X28.41 Y-34.69 Z3.3 F1920.0
+G1 X28.02 Y-34.18 Z3.3 F1920.0
+G1 X27.77 Y-33.58 Z3.3 F1920.0
+G1 X27.69 Y-32.94 Z3.3 F1920.0
+G1 X27.77 Y-32.3 Z3.3 F1920.0
+G1 X28.02 Y-31.7 Z3.3 F1920.0
+G1 X28.41 Y-31.19 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> inner )
+G1 X19.97 Y-31.07 Z3.3 F1920.0
+G1 X1.69 Y-31.79 Z3.3 F1920.0
+G1 X1.45 Y-31.49 Z3.3 F1920.0
+G1 X1.03 Y-31.16 Z3.3 F1920.0
+G1 X0.52 Y-30.96 Z3.3 F1920.0
+G1 X0.0 Y-30.91 Z3.3 F1920.0
+G1 X-0.52 Y-30.96 Z3.3 F1920.0
+G1 X-1.03 Y-31.16 Z3.3 F1920.0
+G1 X-1.45 Y-31.49 Z3.3 F1920.0
+G1 X-1.78 Y-31.91 Z3.3 F1920.0
+G1 X-1.81 Y-31.97 Z3.3 F1920.0
+G1 X-18.68 Y-32.62 Z3.3 F1920.0
+G1 X-18.72 Y-32.43 Z3.3 F1920.0
+G1 X-18.91 Y-31.95 Z3.3 F1920.0
+G1 X-19.23 Y-31.53 Z3.3 F1920.0
+G1 X-19.64 Y-31.22 Z3.3 F1920.0
+G1 X-20.12 Y-31.02 Z3.3 F1920.0
+G1 X-20.64 Y-30.95 Z3.3 F1920.0
+G1 X-27.69 Y-32.94 Z3.3 F1920.0
+M101
+G1 X-27.78 Y-33.58 Z3.3 F1920.0
+G1 X-28.02 Y-34.18 Z3.3 F1920.0
+G1 X-28.41 Y-34.69 Z3.3 F1920.0
+G1 X-28.93 Y-35.08 Z3.3 F1920.0
+G1 X-29.52 Y-35.33 Z3.3 F1920.0
+G1 X-30.16 Y-35.41 Z3.3 F1920.0
+G1 X-30.8 Y-35.33 Z3.3 F1920.0
+G1 X-31.4 Y-35.08 Z3.3 F1920.0
+G1 X-31.91 Y-34.69 Z3.3 F1920.0
+G1 X-32.3 Y-34.18 Z3.3 F1920.0
+G1 X-32.55 Y-33.58 Z3.3 F1920.0
+G1 X-32.64 Y-32.94 Z3.3 F1920.0
+G1 X-32.55 Y-32.3 Z3.3 F1920.0
+G1 X-32.3 Y-31.7 Z3.3 F1920.0
+G1 X-31.91 Y-31.19 Z3.3 F1920.0
+G1 X-31.4 Y-30.8 Z3.3 F1920.0
+G1 X-30.8 Y-30.55 Z3.3 F1920.0
+G1 X-30.16 Y-30.47 Z3.3 F1920.0
+G1 X-29.52 Y-30.55 Z3.3 F1920.0
+G1 X-28.93 Y-30.8 Z3.3 F1920.0
+G1 X-28.41 Y-31.19 Z3.3 F1920.0
+G1 X-28.02 Y-31.7 Z3.3 F1920.0
+G1 X-27.78 Y-32.3 Z3.3 F1920.0
+G1 X-27.69 Y-32.94 Z3.3 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-27.69 Y-37.22 Z3.3 F1920.0
+M101
+G1 X34.05 Y-37.22 Z3.3 F1920.0
+G1 X34.05 Y37.22 Z3.3 F1920.0
+G1 X-34.05 Y37.22 Z3.3 F1920.0
+G1 X-34.05 Y-37.22 Z3.3 F1920.0
+G1 X-27.69 Y-37.22 Z3.3 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-27.69 Y-37.81 Z3.3 F1920.0
+M101
+G1 X34.64 Y-37.81 Z3.3 F1920.0
+G1 X34.64 Y37.81 Z3.3 F1920.0
+G1 X-34.64 Y37.81 Z3.3 F1920.0
+G1 X-34.64 Y-37.81 Z3.3 F1920.0
+G1 X-27.69 Y-37.81 Z3.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-29.042 Y-34.061 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-34.313 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-34.472 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-34.526 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-34.472 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-34.313 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-34.061 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-33.733 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-33.351 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.747 Y-32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.693 Y-32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.535 Y-32.148 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.283 Y-31.82 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-30.955 Y-31.568 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y-31.41 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y-31.356 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y-31.41 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-29.37 Y-31.568 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-29.042 Y-31.82 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-32.148 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-28.578 Y-32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-28.632 Y-33.351 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-28.79 Y-33.733 Z3.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-29.22 Y-34.57 Z3.3 F1920.0
+M101
+G1 X-29.68 Y-34.76 Z3.3 F1920.0
+G1 X-30.16 Y-34.82 Z3.3 F1920.0
+G1 X-30.65 Y-34.75 Z3.3 F1920.0
+G1 X-31.1 Y-34.57 Z3.3 F1920.0
+G1 X-31.49 Y-34.27 Z3.3 F1920.0
+G1 X-31.79 Y-33.88 Z3.3 F1920.0
+G1 X-31.98 Y-33.43 Z3.3 F1920.0
+G1 X-32.04 Y-32.94 Z3.3 F1920.0
+G1 X-31.98 Y-32.45 Z3.3 F1920.0
+G1 X-31.79 Y-32.0 Z3.3 F1920.0
+G1 X-31.49 Y-31.61 Z3.3 F1920.0
+G1 X-31.1 Y-31.32 Z3.3 F1920.0
+G1 X-30.65 Y-31.13 Z3.3 F1920.0
+G1 X-30.16 Y-31.06 Z3.3 F1920.0
+G1 X-29.68 Y-31.13 Z3.3 F1920.0
+G1 X-29.22 Y-31.32 Z3.3 F1920.0
+G1 X-28.84 Y-31.61 Z3.3 F1920.0
+G1 X-28.54 Y-32.0 Z3.3 F1920.0
+G1 X-28.35 Y-32.45 Z3.3 F1920.0
+G1 X-28.29 Y-32.94 Z3.3 F1920.0
+G1 X-28.35 Y-33.43 Z3.3 F1920.0
+G1 X-28.54 Y-33.88 Z3.3 F1920.0
+G1 X-28.84 Y-34.27 Z3.3 F1920.0
+G1 X-29.22 Y-34.57 Z3.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-19.05 Y-32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-34.528 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y-32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y-32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y-32.147 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y-31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y-31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y-31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y-31.353 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y-31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y-31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y-31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y-32.147 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y-32.53 Z3.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.45 Y-33.43 Z3.3 F1920.0
+M101
+G1 X-22.52 Y-32.94 Z3.3 F1920.0
+G1 X-22.45 Y-32.45 Z3.3 F1920.0
+G1 X-22.27 Y-32.0 Z3.3 F1920.0
+G1 X-21.97 Y-31.61 Z3.3 F1920.0
+G1 X-21.58 Y-31.31 Z3.3 F1920.0
+G1 X-21.12 Y-31.12 Z3.3 F1920.0
+G1 X-20.64 Y-31.06 Z3.3 F1920.0
+G1 X-20.15 Y-31.12 Z3.3 F1920.0
+G1 X-19.7 Y-31.31 Z3.3 F1920.0
+G1 X-19.31 Y-31.61 Z3.3 F1920.0
+G1 X-19.01 Y-32.0 Z3.3 F1920.0
+G1 X-18.82 Y-32.45 Z3.3 F1920.0
+G1 X-18.76 Y-32.94 Z3.3 F1920.0
+G1 X-18.82 Y-33.43 Z3.3 F1920.0
+G1 X-19.01 Y-33.88 Z3.3 F1920.0
+G1 X-19.31 Y-34.27 Z3.3 F1920.0
+G1 X-19.7 Y-34.57 Z3.3 F1920.0
+G1 X-20.15 Y-34.76 Z3.3 F1920.0
+G1 X-20.64 Y-34.82 Z3.3 F1920.0
+G1 X-21.12 Y-34.76 Z3.3 F1920.0
+G1 X-21.58 Y-34.57 Z3.3 F1920.0
+G1 X-21.97 Y-34.27 Z3.3 F1920.0
+G1 X-22.27 Y-33.88 Z3.3 F1920.0
+G1 X-22.45 Y-33.43 Z3.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X1.167 Y-31.773 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-32.115 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-32.513 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.651 Y-32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.595 Y-33.368 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.43 Y-33.766 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.167 Y-34.108 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X0.825 Y-34.37 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-34.535 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-34.592 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-34.535 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-34.37 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-34.108 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-33.766 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-33.368 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.651 Y-32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.595 Y-32.513 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.43 Y-32.115 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.167 Y-31.773 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-0.825 Y-31.511 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-0.427 Y-31.346 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-31.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X0.427 Y-31.346 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X0.825 Y-31.511 Z3.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-22.05 Y-34.35 Z3.3 F1920.0
+G1 X-21.63 Y-34.66 Z3.3 F1920.0
+G1 X-21.15 Y-34.86 Z3.3 F1920.0
+G1 X-1.94 Y-32.94 Z3.3 F1920.0
+M101
+G1 X-1.88 Y-32.44 Z3.3 F1920.0
+G1 X-1.68 Y-31.97 Z3.3 F1920.0
+G1 X-1.37 Y-31.57 Z3.3 F1920.0
+G1 X-0.97 Y-31.26 Z3.3 F1920.0
+G1 X-0.5 Y-31.06 Z3.3 F1920.0
+G1 X0.0 Y-31.02 Z3.3 F1920.0
+G1 X0.5 Y-31.06 Z3.3 F1920.0
+G1 X0.97 Y-31.26 Z3.3 F1920.0
+G1 X1.37 Y-31.57 Z3.3 F1920.0
+G1 X1.68 Y-31.97 Z3.3 F1920.0
+G1 X1.88 Y-32.44 Z3.3 F1920.0
+G1 X1.94 Y-32.94 Z3.3 F1920.0
+G1 X1.88 Y-33.44 Z3.3 F1920.0
+G1 X1.68 Y-33.91 Z3.3 F1920.0
+G1 X1.37 Y-34.32 Z3.3 F1920.0
+G1 X0.97 Y-34.62 Z3.3 F1920.0
+G1 X0.5 Y-34.82 Z3.3 F1920.0
+G1 X0.0 Y-34.89 Z3.3 F1920.0
+G1 X-0.5 Y-34.82 Z3.3 F1920.0
+G1 X-0.97 Y-34.62 Z3.3 F1920.0
+G1 X-1.37 Y-34.32 Z3.3 F1920.0
+G1 X-1.68 Y-33.91 Z3.3 F1920.0
+G1 X-1.88 Y-33.44 Z3.3 F1920.0
+G1 X-1.94 Y-32.94 Z3.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-0.794 Y-18.44 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-18.188 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-17.859 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-17.477 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.587 Y-17.066 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.533 Y-16.655 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.375 Y-16.272 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-1.123 Y-15.943 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-0.794 Y-15.691 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-15.532 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-15.478 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-15.532 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-15.691 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-15.943 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-16.272 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-16.655 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.587 Y-17.066 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.533 Y-17.477 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.375 Y-17.859 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X1.123 Y-18.188 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X0.794 Y-18.44 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X0.411 Y-18.599 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X0.0 Y-18.653 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-0.411 Y-18.599 Z3.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X0.0 Y-18.95 Z3.3 F1920.0
+M101
+G1 X-0.49 Y-18.88 Z3.3 F1920.0
+G1 X-0.94 Y-18.69 Z3.3 F1920.0
+G1 X-1.33 Y-18.4 Z3.3 F1920.0
+G1 X-1.63 Y-18.01 Z3.3 F1920.0
+G1 X-1.82 Y-17.55 Z3.3 F1920.0
+G1 X-1.88 Y-17.07 Z3.3 F1920.0
+G1 X-1.82 Y-16.58 Z3.3 F1920.0
+G1 X-1.63 Y-16.13 Z3.3 F1920.0
+G1 X-1.33 Y-15.74 Z3.3 F1920.0
+G1 X-0.94 Y-15.44 Z3.3 F1920.0
+G1 X-0.49 Y-15.25 Z3.3 F1920.0
+G1 X0.0 Y-15.19 Z3.3 F1920.0
+G1 X0.49 Y-15.25 Z3.3 F1920.0
+G1 X0.94 Y-15.44 Z3.3 F1920.0
+G1 X1.33 Y-15.74 Z3.3 F1920.0
+G1 X1.63 Y-16.13 Z3.3 F1920.0
+G1 X1.82 Y-16.58 Z3.3 F1920.0
+G1 X1.88 Y-17.07 Z3.3 F1920.0
+G1 X1.82 Y-17.55 Z3.3 F1920.0
+G1 X1.63 Y-18.01 Z3.3 F1920.0
+G1 X1.33 Y-18.4 Z3.3 F1920.0
+G1 X0.94 Y-18.69 Z3.3 F1920.0
+G1 X0.49 Y-18.88 Z3.3 F1920.0
+G1 X0.0 Y-18.95 Z3.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y-18.44 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-18.188 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-17.859 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-17.477 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-17.066 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-16.655 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-16.272 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-15.943 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-15.691 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-15.532 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-15.478 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-15.532 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-15.691 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-15.943 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-16.272 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-16.655 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-17.066 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-17.477 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-17.859 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-18.188 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-18.44 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-18.599 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-18.653 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-18.599 Z3.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X18.76 Y-17.07 Z3.3 F1920.0
+M101
+G1 X18.82 Y-16.58 Z3.3 F1920.0
+G1 X19.01 Y-16.13 Z3.3 F1920.0
+G1 X19.31 Y-15.74 Z3.3 F1920.0
+G1 X19.7 Y-15.44 Z3.3 F1920.0
+G1 X20.15 Y-15.25 Z3.3 F1920.0
+G1 X20.64 Y-15.19 Z3.3 F1920.0
+G1 X21.12 Y-15.25 Z3.3 F1920.0
+G1 X21.58 Y-15.44 Z3.3 F1920.0
+G1 X21.97 Y-15.74 Z3.3 F1920.0
+G1 X22.27 Y-16.13 Z3.3 F1920.0
+G1 X22.45 Y-16.58 Z3.3 F1920.0
+G1 X22.52 Y-17.07 Z3.3 F1920.0
+G1 X22.45 Y-17.55 Z3.3 F1920.0
+G1 X22.27 Y-18.01 Z3.3 F1920.0
+G1 X21.97 Y-18.4 Z3.3 F1920.0
+G1 X21.58 Y-18.69 Z3.3 F1920.0
+G1 X21.12 Y-18.88 Z3.3 F1920.0
+G1 X20.64 Y-18.95 Z3.3 F1920.0
+G1 X20.15 Y-18.88 Z3.3 F1920.0
+G1 X19.7 Y-18.69 Z3.3 F1920.0
+G1 X19.31 Y-18.4 Z3.3 F1920.0
+G1 X19.01 Y-18.01 Z3.3 F1920.0
+G1 X18.82 Y-17.55 Z3.3 F1920.0
+G1 X18.76 Y-17.07 Z3.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X21.048 Y-31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-32.147 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y-32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y-33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y-33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y-34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y-34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y-34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-34.528 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y-32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y-32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y-32.147 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y-31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y-31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y-31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y-31.353 Z3.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X20.64 Y-31.06 Z3.3 F1920.0
+M101
+G1 X21.12 Y-31.12 Z3.3 F1920.0
+G1 X21.58 Y-31.31 Z3.3 F1920.0
+G1 X21.97 Y-31.61 Z3.3 F1920.0
+G1 X22.27 Y-32.0 Z3.3 F1920.0
+G1 X22.45 Y-32.45 Z3.3 F1920.0
+G1 X22.52 Y-32.94 Z3.3 F1920.0
+G1 X22.45 Y-33.43 Z3.3 F1920.0
+G1 X22.27 Y-33.88 Z3.3 F1920.0
+G1 X21.97 Y-34.27 Z3.3 F1920.0
+G1 X21.58 Y-34.57 Z3.3 F1920.0
+G1 X21.12 Y-34.76 Z3.3 F1920.0
+G1 X20.64 Y-34.82 Z3.3 F1920.0
+G1 X20.15 Y-34.76 Z3.3 F1920.0
+G1 X19.7 Y-34.57 Z3.3 F1920.0
+G1 X19.31 Y-34.27 Z3.3 F1920.0
+G1 X19.01 Y-33.88 Z3.3 F1920.0
+G1 X18.82 Y-33.43 Z3.3 F1920.0
+G1 X18.76 Y-32.94 Z3.3 F1920.0
+G1 X18.82 Y-32.45 Z3.3 F1920.0
+G1 X19.01 Y-32.0 Z3.3 F1920.0
+G1 X19.31 Y-31.61 Z3.3 F1920.0
+G1 X19.7 Y-31.31 Z3.3 F1920.0
+G1 X20.15 Y-31.12 Z3.3 F1920.0
+G1 X20.64 Y-31.06 Z3.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X29.04 Y-31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-31.353 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-32.147 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y-32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y-33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y-33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y-34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y-34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y-34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y-34.528 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y-34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y-34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y-34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y-32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y-32.147 Z3.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X28.35 Y-32.45 Z3.3 F1920.0
+M101
+G1 X28.54 Y-32.0 Z3.3 F1920.0
+G1 X28.83 Y-31.61 Z3.3 F1920.0
+G1 X29.22 Y-31.31 Z3.3 F1920.0
+G1 X29.68 Y-31.12 Z3.3 F1920.0
+G1 X30.16 Y-31.06 Z3.3 F1920.0
+G1 X30.65 Y-31.12 Z3.3 F1920.0
+G1 X31.1 Y-31.31 Z3.3 F1920.0
+G1 X31.49 Y-31.61 Z3.3 F1920.0
+G1 X31.79 Y-32.0 Z3.3 F1920.0
+G1 X31.98 Y-32.45 Z3.3 F1920.0
+G1 X32.04 Y-32.94 Z3.3 F1920.0
+G1 X31.98 Y-33.43 Z3.3 F1920.0
+G1 X31.79 Y-33.88 Z3.3 F1920.0
+G1 X31.49 Y-34.27 Z3.3 F1920.0
+G1 X31.1 Y-34.57 Z3.3 F1920.0
+G1 X30.65 Y-34.76 Z3.3 F1920.0
+G1 X30.16 Y-34.82 Z3.3 F1920.0
+G1 X29.68 Y-34.76 Z3.3 F1920.0
+G1 X29.22 Y-34.57 Z3.3 F1920.0
+G1 X28.83 Y-34.27 Z3.3 F1920.0
+G1 X28.54 Y-33.88 Z3.3 F1920.0
+G1 X28.35 Y-33.43 Z3.3 F1920.0
+G1 X28.28 Y-32.94 Z3.3 F1920.0
+G1 X28.35 Y-32.45 Z3.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X31.285 Y31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y31.353 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y32.147 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X28.629 Y33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X28.788 Y33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X29.04 Y34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X29.369 Y34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X29.752 Y34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X30.163 Y34.528 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X30.573 Y34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X30.956 Y34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.285 Y34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.75 Y32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.696 Y32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X31.537 Y32.147 Z3.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X30.16 Y31.06 Z3.3 F1920.0
+M101
+G1 X29.68 Y31.12 Z3.3 F1920.0
+G1 X29.22 Y31.31 Z3.3 F1920.0
+G1 X28.83 Y31.61 Z3.3 F1920.0
+G1 X28.54 Y32.0 Z3.3 F1920.0
+G1 X28.35 Y32.45 Z3.3 F1920.0
+G1 X28.28 Y32.94 Z3.3 F1920.0
+G1 X28.35 Y33.43 Z3.3 F1920.0
+G1 X28.54 Y33.88 Z3.3 F1920.0
+G1 X28.83 Y34.27 Z3.3 F1920.0
+G1 X29.22 Y34.57 Z3.3 F1920.0
+G1 X29.68 Y34.76 Z3.3 F1920.0
+G1 X30.16 Y34.82 Z3.3 F1920.0
+G1 X30.65 Y34.76 Z3.3 F1920.0
+G1 X31.1 Y34.57 Z3.3 F1920.0
+G1 X31.49 Y34.27 Z3.3 F1920.0
+G1 X31.79 Y33.88 Z3.3 F1920.0
+G1 X31.98 Y33.43 Z3.3 F1920.0
+G1 X32.04 Y32.94 Z3.3 F1920.0
+G1 X31.98 Y32.45 Z3.3 F1920.0
+G1 X31.79 Y32.0 Z3.3 F1920.0
+G1 X31.49 Y31.61 Z3.3 F1920.0
+G1 X31.1 Y31.31 Z3.3 F1920.0
+G1 X30.65 Y31.12 Z3.3 F1920.0
+G1 X30.16 Y31.06 Z3.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X19.844 Y34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y34.528 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.225 Y32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.171 Y32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X22.012 Y32.147 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.76 Y31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X21.048 Y31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X20.638 Y31.353 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X20.227 Y31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.844 Y31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y32.147 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.05 Y32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.104 Y33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.263 Y33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X19.515 Y34.063 Z3.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.45 Y32.45 Z3.3 F1920.0
+M101
+G1 X22.27 Y32.0 Z3.3 F1920.0
+G1 X21.97 Y31.61 Z3.3 F1920.0
+G1 X21.58 Y31.31 Z3.3 F1920.0
+G1 X21.12 Y31.12 Z3.3 F1920.0
+G1 X20.64 Y31.06 Z3.3 F1920.0
+G1 X20.15 Y31.12 Z3.3 F1920.0
+G1 X19.7 Y31.31 Z3.3 F1920.0
+G1 X19.31 Y31.61 Z3.3 F1920.0
+G1 X19.01 Y32.0 Z3.3 F1920.0
+G1 X18.82 Y32.45 Z3.3 F1920.0
+G1 X18.76 Y32.94 Z3.3 F1920.0
+G1 X18.82 Y33.43 Z3.3 F1920.0
+G1 X19.01 Y33.88 Z3.3 F1920.0
+G1 X19.31 Y34.27 Z3.3 F1920.0
+G1 X19.7 Y34.57 Z3.3 F1920.0
+G1 X20.15 Y34.76 Z3.3 F1920.0
+G1 X20.64 Y34.82 Z3.3 F1920.0
+G1 X21.12 Y34.76 Z3.3 F1920.0
+G1 X21.58 Y34.57 Z3.3 F1920.0
+G1 X21.97 Y34.27 Z3.3 F1920.0
+G1 X22.27 Y33.88 Z3.3 F1920.0
+G1 X22.45 Y33.43 Z3.3 F1920.0
+G1 X22.52 Y32.94 Z3.3 F1920.0
+G1 X22.45 Y32.45 Z3.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-22.171 Y32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-22.225 Y32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-22.171 Y33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y34.528 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.05 Y32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.104 Y32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.263 Y32.147 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.515 Y31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-19.844 Y31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-20.227 Y31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-20.638 Y31.353 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-21.048 Y31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-21.431 Y31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-21.76 Y31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-22.012 Y32.147 Z3.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X22.05 Y31.53 Z3.3 F1920.0
+G1 X21.63 Y31.22 Z3.3 F1920.0
+G1 X21.15 Y31.02 Z3.3 F1920.0
+G1 X-18.76 Y32.94 Z3.3 F1920.0
+M101
+G1 X-18.82 Y32.45 Z3.3 F1920.0
+G1 X-19.01 Y32.0 Z3.3 F1920.0
+G1 X-19.31 Y31.61 Z3.3 F1920.0
+G1 X-19.7 Y31.31 Z3.3 F1920.0
+G1 X-20.15 Y31.12 Z3.3 F1920.0
+G1 X-20.64 Y31.06 Z3.3 F1920.0
+G1 X-21.12 Y31.12 Z3.3 F1920.0
+G1 X-21.58 Y31.31 Z3.3 F1920.0
+G1 X-21.97 Y31.61 Z3.3 F1920.0
+G1 X-22.27 Y32.0 Z3.3 F1920.0
+G1 X-22.45 Y32.45 Z3.3 F1920.0
+G1 X-22.52 Y32.94 Z3.3 F1920.0
+G1 X-22.45 Y33.43 Z3.3 F1920.0
+G1 X-22.27 Y33.88 Z3.3 F1920.0
+G1 X-21.97 Y34.27 Z3.3 F1920.0
+G1 X-21.58 Y34.57 Z3.3 F1920.0
+G1 X-21.12 Y34.76 Z3.3 F1920.0
+G1 X-20.64 Y34.82 Z3.3 F1920.0
+G1 X-20.15 Y34.76 Z3.3 F1920.0
+G1 X-19.7 Y34.57 Z3.3 F1920.0
+G1 X-19.31 Y34.27 Z3.3 F1920.0
+G1 X-19.01 Y33.88 Z3.3 F1920.0
+G1 X-18.82 Y33.43 Z3.3 F1920.0
+G1 X-18.76 Y32.94 Z3.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-28.788 Y32.147 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y31.353 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y31.407 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y31.566 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y31.818 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y32.147 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y32.53 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.75 Y32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.696 Y33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.537 Y33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-31.285 Y34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-30.956 Y34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-30.573 Y34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-30.163 Y34.528 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-29.752 Y34.474 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-29.369 Y34.315 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-29.04 Y34.063 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-28.788 Y33.734 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y33.352 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y32.941 Z3.3 </boundaryPoint>)
+(<boundaryPoint> X-28.629 Y32.53 Z3.3 </boundaryPoint>)
+(<perimeter> inner )
+G1 X-18.91 Y33.94 Z3.3 F1920.0
+G1 X-19.23 Y34.35 Z3.3 F1920.0
+G1 X-19.64 Y34.66 Z3.3 F1920.0
+G1 X-20.12 Y34.86 Z3.3 F1920.0
+G1 X-20.64 Y34.93 Z3.3 F1920.0
+G1 X-28.28 Y32.94 Z3.3 F1920.0
+M101
+G1 X-28.35 Y32.45 Z3.3 F1920.0
+G1 X-28.54 Y32.0 Z3.3 F1920.0
+G1 X-28.83 Y31.61 Z3.3 F1920.0
+G1 X-29.22 Y31.31 Z3.3 F1920.0
+G1 X-29.68 Y31.12 Z3.3 F1920.0
+G1 X-30.16 Y31.06 Z3.3 F1920.0
+G1 X-30.65 Y31.12 Z3.3 F1920.0
+G1 X-31.1 Y31.31 Z3.3 F1920.0
+G1 X-31.49 Y31.61 Z3.3 F1920.0
+G1 X-31.79 Y32.0 Z3.3 F1920.0
+G1 X-31.98 Y32.45 Z3.3 F1920.0
+G1 X-32.04 Y32.94 Z3.3 F1920.0
+G1 X-31.98 Y33.43 Z3.3 F1920.0
+G1 X-31.79 Y33.88 Z3.3 F1920.0
+G1 X-31.49 Y34.27 Z3.3 F1920.0
+G1 X-31.1 Y34.57 Z3.3 F1920.0
+G1 X-30.65 Y34.76 Z3.3 F1920.0
+G1 X-30.16 Y34.82 Z3.3 F1920.0
+G1 X-29.68 Y34.76 Z3.3 F1920.0
+G1 X-29.22 Y34.57 Z3.3 F1920.0
+G1 X-28.83 Y34.27 Z3.3 F1920.0
+G1 X-28.54 Y33.88 Z3.3 F1920.0
+G1 X-28.35 Y33.43 Z3.3 F1920.0
+G1 X-28.28 Y32.94 Z3.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+(</surroundingLoop>)
+G1 X-26.78 Y33.6 Z3.3 F1920.0
+M101
+G1 X-24.02 Y33.6 Z3.3 F1920.0
+G1 X-24.1 Y33.0 Z3.3 F1920.0
+G1 X-26.7 Y33.0 Z3.3 F1920.0
+M103
+G1 X-26.76 Y32.4 Z3.3 F1920.0
+M101
+G1 X-24.04 Y32.4 Z3.3 F1920.0
+G1 X-23.89 Y31.8 Z3.3 F1920.0
+G1 X-26.91 Y31.8 Z3.3 F1920.0
+M103
+G1 X-22.46 Y30.0 Z3.3 F1920.0
+M101
+G1 X-28.34 Y30.0 Z3.3 F1920.0
+M103
+G1 X-26.96 Y34.2 Z3.3 F1920.0
+M101
+G1 X-23.84 Y34.2 Z3.3 F1920.0
+M103
+G1 X-22.25 Y36.0 Z3.3 F1920.0
+M101
+G1 X-28.55 Y36.0 Z3.3 F1920.0
+G1 X-27.71 Y35.4 Z3.3 F1920.0
+G1 X-23.09 Y35.4 Z3.3 F1920.0
+G1 X-23.55 Y34.8 Z3.3 F1920.0
+G1 X-27.25 Y34.8 Z3.3 F1920.0
+M103
+G1 X-31.77 Y36.0 Z3.3 F1920.0
+M101
+G1 X-33.06 Y36.0 Z3.3 F1920.0
+G1 X-32.62 Y35.4 Z3.3 F1920.0
+G1 X-33.06 Y35.4 Z3.3 F1920.0
+M103
+G1 X-33.06 Y30.6 Z3.3 F1920.0
+M101
+G1 X-32.71 Y30.6 Z3.3 F1920.0
+G1 X-33.06 Y30.0 Z3.3 F1920.0
+G1 X-31.99 Y30.0 Z3.3 F1920.0
+G1 X-33.06 Y29.4 Z3.3 F1920.0
+G1 X33.06 Y29.4 Z3.3 F1920.0
+G1 X31.99 Y30.0 Z3.3 F1920.0
+G1 X33.06 Y30.0 Z3.3 F1920.0
+G1 X32.71 Y30.6 Z3.3 F1920.0
+G1 X33.06 Y30.6 Z3.3 F1920.0
+M103
+G1 X33.06 Y28.8 Z3.3 F1920.0
+M101
+G1 X-33.06 Y28.8 Z3.3 F1920.0
+M103
+G1 X-33.06 Y28.2 Z3.3 F1920.0
+M101
+G1 X33.06 Y28.2 Z3.3 F1920.0
+M103
+G1 X33.06 Y27.6 Z3.3 F1920.0
+M101
+G1 X-33.06 Y27.6 Z3.3 F1920.0
+M103
+G1 X-33.06 Y27.0 Z3.3 F1920.0
+M101
+G1 X33.06 Y27.0 Z3.3 F1920.0
+M103
+G1 X33.06 Y26.4 Z3.3 F1920.0
+M101
+G1 X-33.06 Y26.4 Z3.3 F1920.0
+M103
+G1 X-33.06 Y25.8 Z3.3 F1920.0
+M101
+G1 X33.06 Y25.8 Z3.3 F1920.0
+M103
+G1 X33.06 Y25.2 Z3.3 F1920.0
+M101
+G1 X-33.06 Y25.2 Z3.3 F1920.0
+M103
+G1 X-33.06 Y24.6 Z3.3 F1920.0
+M101
+G1 X33.06 Y24.6 Z3.3 F1920.0
+M103
+G1 X33.06 Y24.0 Z3.3 F1920.0
+M101
+G1 X-33.06 Y24.0 Z3.3 F1920.0
+M103
+G1 X-33.06 Y23.4 Z3.3 F1920.0
+M101
+G1 X33.06 Y23.4 Z3.3 F1920.0
+M103
+G1 X33.06 Y22.8 Z3.3 F1920.0
+M101
+G1 X-33.06 Y22.8 Z3.3 F1920.0
+M103
+G1 X-33.06 Y22.2 Z3.3 F1920.0
+M101
+G1 X33.06 Y22.2 Z3.3 F1920.0
+M103
+G1 X33.06 Y21.6 Z3.3 F1920.0
+M101
+G1 X-33.06 Y21.6 Z3.3 F1920.0
+M103
+G1 X-33.06 Y21.0 Z3.3 F1920.0
+M101
+G1 X33.06 Y21.0 Z3.3 F1920.0
+M103
+G1 X33.06 Y20.4 Z3.3 F1920.0
+M101
+G1 X-33.06 Y20.4 Z3.3 F1920.0
+M103
+G1 X-33.06 Y19.8 Z3.3 F1920.0
+M101
+G1 X33.06 Y19.8 Z3.3 F1920.0
+M103
+G1 X33.06 Y19.2 Z3.3 F1920.0
+M101
+G1 X-33.06 Y19.2 Z3.3 F1920.0
+M103
+G1 X-33.06 Y18.6 Z3.3 F1920.0
+M101
+G1 X33.06 Y18.6 Z3.3 F1920.0
+M103
+G1 X33.06 Y18.0 Z3.3 F1920.0
+M101
+G1 X-33.06 Y18.0 Z3.3 F1920.0
+M103
+G1 X-33.06 Y17.4 Z3.3 F1920.0
+M101
+G1 X33.06 Y17.4 Z3.3 F1920.0
+M103
+G1 X33.06 Y16.8 Z3.3 F1920.0
+M101
+G1 X-33.06 Y16.8 Z3.3 F1920.0
+M103
+G1 X-33.06 Y16.2 Z3.3 F1920.0
+M101
+G1 X33.06 Y16.2 Z3.3 F1920.0
+M103
+G1 X33.06 Y15.6 Z3.3 F1920.0
+M101
+G1 X-33.06 Y15.6 Z3.3 F1920.0
+M103
+G1 X-33.06 Y15.0 Z3.3 F1920.0
+M101
+G1 X33.06 Y15.0 Z3.3 F1920.0
+M103
+G1 X33.06 Y14.4 Z3.3 F1920.0
+M101
+G1 X-33.06 Y14.4 Z3.3 F1920.0
+M103
+G1 X-33.06 Y13.8 Z3.3 F1920.0
+M101
+G1 X33.06 Y13.8 Z3.3 F1920.0
+M103
+G1 X33.06 Y13.2 Z3.3 F1920.0
+M101
+G1 X-33.06 Y13.2 Z3.3 F1920.0
+M103
+G1 X-33.06 Y12.6 Z3.3 F1920.0
+M101
+G1 X33.06 Y12.6 Z3.3 F1920.0
+M103
+G1 X33.06 Y12.0 Z3.3 F1920.0
+M101
+G1 X-33.06 Y12.0 Z3.3 F1920.0
+M103
+G1 X-33.06 Y11.4 Z3.3 F1920.0
+M101
+G1 X33.06 Y11.4 Z3.3 F1920.0
+M103
+G1 X33.06 Y10.8 Z3.3 F1920.0
+M101
+G1 X-33.06 Y10.8 Z3.3 F1920.0
+M103
+G1 X-33.06 Y10.2 Z3.3 F1920.0
+M101
+G1 X33.06 Y10.2 Z3.3 F1920.0
+M103
+G1 X33.06 Y9.6 Z3.3 F1920.0
+M101
+G1 X-33.06 Y9.6 Z3.3 F1920.0
+M103
+G1 X-33.06 Y9.0 Z3.3 F1920.0
+M101
+G1 X33.06 Y9.0 Z3.3 F1920.0
+M103
+G1 X33.06 Y8.4 Z3.3 F1920.0
+M101
+G1 X-33.06 Y8.4 Z3.3 F1920.0
+M103
+G1 X-33.06 Y7.8 Z3.3 F1920.0
+M101
+G1 X33.06 Y7.8 Z3.3 F1920.0
+M103
+G1 X33.06 Y7.2 Z3.3 F1920.0
+M101
+G1 X-33.06 Y7.2 Z3.3 F1920.0
+M103
+G1 X-33.06 Y6.6 Z3.3 F1920.0
+M101
+G1 X33.06 Y6.6 Z3.3 F1920.0
+M103
+G1 X33.06 Y6.0 Z3.3 F1920.0
+M101
+G1 X-33.06 Y6.0 Z3.3 F1920.0
+M103
+G1 X-33.06 Y5.4 Z3.3 F1920.0
+M101
+G1 X33.06 Y5.4 Z3.3 F1920.0
+M103
+G1 X33.06 Y4.8 Z3.3 F1920.0
+M101
+G1 X-33.06 Y4.8 Z3.3 F1920.0
+M103
+G1 X-33.06 Y4.2 Z3.3 F1920.0
+M101
+G1 X33.06 Y4.2 Z3.3 F1920.0
+M103
+G1 X33.06 Y3.6 Z3.3 F1920.0
+M101
+G1 X-33.06 Y3.6 Z3.3 F1920.0
+M103
+G1 X-33.06 Y3.0 Z3.3 F1920.0
+M101
+G1 X33.06 Y3.0 Z3.3 F1920.0
+M103
+G1 X33.06 Y2.4 Z3.3 F1920.0
+M101
+G1 X-33.06 Y2.4 Z3.3 F1920.0
+M103
+G1 X-33.06 Y1.8 Z3.3 F1920.0
+M101
+G1 X33.06 Y1.8 Z3.3 F1920.0
+M103
+G1 X33.06 Y1.2 Z3.3 F1920.0
+M101
+G1 X-33.06 Y1.2 Z3.3 F1920.0
+M103
+G1 X-33.06 Y0.6 Z3.3 F1920.0
+M101
+G1 X33.06 Y0.6 Z3.3 F1920.0
+M103
+G1 X33.06 Y0.0 Z3.3 F1920.0
+M101
+G1 X-33.06 Y0.0 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-0.6 Z3.3 F1920.0
+M101
+G1 X33.06 Y-0.6 Z3.3 F1920.0
+M103
+G1 X33.06 Y-1.2 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-1.2 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-1.8 Z3.3 F1920.0
+M101
+G1 X33.06 Y-1.8 Z3.3 F1920.0
+M103
+G1 X33.06 Y-2.4 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-2.4 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-3.0 Z3.3 F1920.0
+M101
+G1 X33.06 Y-3.0 Z3.3 F1920.0
+M103
+G1 X33.06 Y-3.6 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-3.6 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-4.2 Z3.3 F1920.0
+M101
+G1 X33.06 Y-4.2 Z3.3 F1920.0
+M103
+G1 X33.06 Y-4.8 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-4.8 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-5.4 Z3.3 F1920.0
+M101
+G1 X33.06 Y-5.4 Z3.3 F1920.0
+M103
+G1 X33.06 Y-6.0 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-6.0 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-6.6 Z3.3 F1920.0
+M101
+G1 X33.06 Y-6.6 Z3.3 F1920.0
+M103
+G1 X33.06 Y-7.2 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-7.2 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-7.8 Z3.3 F1920.0
+M101
+G1 X33.06 Y-7.8 Z3.3 F1920.0
+M103
+G1 X33.06 Y-8.4 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-8.4 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-9.0 Z3.3 F1920.0
+M101
+G1 X33.06 Y-9.0 Z3.3 F1920.0
+M103
+G1 X33.06 Y-9.6 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-9.6 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-10.2 Z3.3 F1920.0
+M101
+G1 X33.06 Y-10.2 Z3.3 F1920.0
+M103
+G1 X33.06 Y-10.8 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-10.8 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-11.4 Z3.3 F1920.0
+M101
+G1 X33.06 Y-11.4 Z3.3 F1920.0
+M103
+G1 X33.06 Y-12.0 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-12.0 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-12.6 Z3.3 F1920.0
+M101
+G1 X33.06 Y-12.6 Z3.3 F1920.0
+M103
+G1 X33.06 Y-13.2 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-13.2 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-13.8 Z3.3 F1920.0
+M101
+G1 X-1.12 Y-13.8 Z3.3 F1920.0
+M103
+G1 X19.52 Y-13.8 Z3.3 F1920.0
+M101
+G1 X1.12 Y-13.8 Z3.3 F1920.0
+M103
+G1 X3.12 Y-15.6 Z3.3 F1920.0
+M101
+G1 X17.52 Y-15.6 Z3.3 F1920.0
+G1 X17.88 Y-15.0 Z3.3 F1920.0
+G1 X2.76 Y-15.0 Z3.3 F1920.0
+G1 X2.18 Y-14.4 Z3.3 F1920.0
+G1 X18.45 Y-14.4 Z3.3 F1920.0
+M103
+G1 X17.28 Y-16.2 Z3.3 F1920.0
+M101
+G1 X3.36 Y-16.2 Z3.3 F1920.0
+M103
+G1 X3.43 Y-17.4 Z3.3 F1920.0
+M101
+G1 X17.21 Y-17.4 Z3.3 F1920.0
+G1 X17.2 Y-16.8 Z3.3 F1920.0
+G1 X3.44 Y-16.8 Z3.3 F1920.0
+M103
+G1 X3.34 Y-18.0 Z3.3 F1920.0
+M101
+G1 X17.3 Y-18.0 Z3.3 F1920.0
+M103
+G1 X18.54 Y-19.8 Z3.3 F1920.0
+M101
+G1 X2.09 Y-19.8 Z3.3 F1920.0
+G1 X2.7 Y-19.2 Z3.3 F1920.0
+G1 X17.93 Y-19.2 Z3.3 F1920.0
+G1 X17.55 Y-18.6 Z3.3 F1920.0
+G1 X3.09 Y-18.6 Z3.3 F1920.0
+M103
+G1 X0.95 Y-20.4 Z3.3 F1920.0
+M101
+G1 X19.69 Y-20.4 Z3.3 F1920.0
+M103
+G1 X33.06 Y-20.4 Z3.3 F1920.0
+M101
+G1 X21.59 Y-20.4 Z3.3 F1920.0
+M103
+G1 X23.73 Y-18.6 Z3.3 F1920.0
+M101
+G1 X33.06 Y-18.6 Z3.3 F1920.0
+M103
+G1 X33.06 Y-18.0 Z3.3 F1920.0
+M101
+G1 X23.98 Y-18.0 Z3.3 F1920.0
+G1 X24.07 Y-17.4 Z3.3 F1920.0
+G1 X33.06 Y-17.4 Z3.3 F1920.0
+M103
+G1 X33.06 Y-16.8 Z3.3 F1920.0
+M101
+G1 X24.08 Y-16.8 Z3.3 F1920.0
+G1 X24.0 Y-16.2 Z3.3 F1920.0
+G1 X33.06 Y-16.2 Z3.3 F1920.0
+M103
+G1 X33.06 Y-15.6 Z3.3 F1920.0
+M101
+G1 X23.76 Y-15.6 Z3.3 F1920.0
+G1 X23.39 Y-15.0 Z3.3 F1920.0
+G1 X33.06 Y-15.0 Z3.3 F1920.0
+M103
+G1 X33.06 Y-14.4 Z3.3 F1920.0
+M101
+G1 X22.82 Y-14.4 Z3.3 F1920.0
+M103
+G1 X21.75 Y-13.8 Z3.3 F1920.0
+M101
+G1 X33.06 Y-13.8 Z3.3 F1920.0
+M103
+G1 X33.06 Y-19.8 Z3.3 F1920.0
+M101
+G1 X22.73 Y-19.8 Z3.3 F1920.0
+G1 X23.34 Y-19.2 Z3.3 F1920.0
+G1 X33.06 Y-19.2 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-21.0 Z3.3 F1920.0
+M101
+G1 X33.06 Y-21.0 Z3.3 F1920.0
+M103
+G1 X33.06 Y-21.6 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-21.6 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-22.2 Z3.3 F1920.0
+M101
+G1 X33.06 Y-22.2 Z3.3 F1920.0
+M103
+G1 X33.06 Y-22.8 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-22.8 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-23.4 Z3.3 F1920.0
+M101
+G1 X33.06 Y-23.4 Z3.3 F1920.0
+M103
+G1 X33.06 Y-24.0 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-24.0 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-24.6 Z3.3 F1920.0
+M101
+G1 X33.06 Y-24.6 Z3.3 F1920.0
+M103
+G1 X33.06 Y-25.2 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-25.2 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-25.8 Z3.3 F1920.0
+M101
+G1 X33.06 Y-25.8 Z3.3 F1920.0
+M103
+G1 X33.06 Y-26.4 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-26.4 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-27.0 Z3.3 F1920.0
+M101
+G1 X33.06 Y-27.0 Z3.3 F1920.0
+M103
+G1 X33.06 Y-27.6 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-27.6 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-28.2 Z3.3 F1920.0
+M101
+G1 X33.06 Y-28.2 Z3.3 F1920.0
+M103
+G1 X33.06 Y-28.8 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-28.8 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-29.4 Z3.3 F1920.0
+M101
+G1 X33.06 Y-29.4 Z3.3 F1920.0
+G1 X31.99 Y-30.0 Z3.3 F1920.0
+G1 X33.06 Y-30.0 Z3.3 F1920.0
+G1 X32.71 Y-30.6 Z3.3 F1920.0
+G1 X33.06 Y-30.6 Z3.3 F1920.0
+M103
+G1 X28.34 Y-30.0 Z3.3 F1920.0
+M101
+G1 X22.46 Y-30.0 Z3.3 F1920.0
+M103
+G1 X23.18 Y-30.6 Z3.3 F1920.0
+M101
+G1 X27.62 Y-30.6 Z3.3 F1920.0
+G1 X27.16 Y-31.2 Z3.3 F1920.0
+G1 X23.64 Y-31.2 Z3.3 F1920.0
+M103
+G1 X23.84 Y-34.2 Z3.3 F1920.0
+M101
+G1 X26.96 Y-34.2 Z3.3 F1920.0
+M103
+G1 X26.7 Y-33.0 Z3.3 F1920.0
+M101
+G1 X24.1 Y-33.0 Z3.3 F1920.0
+G1 X24.02 Y-33.6 Z3.3 F1920.0
+G1 X26.78 Y-33.6 Z3.3 F1920.0
+M103
+G1 X26.91 Y-31.8 Z3.3 F1920.0
+M101
+G1 X23.89 Y-31.8 Z3.3 F1920.0
+G1 X24.04 Y-32.4 Z3.3 F1920.0
+G1 X26.76 Y-32.4 Z3.3 F1920.0
+M103
+G1 X27.25 Y-34.8 Z3.3 F1920.0
+M101
+G1 X23.55 Y-34.8 Z3.3 F1920.0
+G1 X23.09 Y-35.4 Z3.3 F1920.0
+G1 X27.71 Y-35.4 Z3.3 F1920.0
+G1 X28.55 Y-36.0 Z3.3 F1920.0
+G1 X22.25 Y-36.0 Z3.3 F1920.0
+M103
+G1 X19.03 Y-36.0 Z3.3 F1920.0
+M101
+G1 X1.77 Y-36.0 Z3.3 F1920.0
+G1 X2.53 Y-35.4 Z3.3 F1920.0
+G1 X18.18 Y-35.4 Z3.3 F1920.0
+G1 X17.72 Y-34.8 Z3.3 F1920.0
+G1 X2.99 Y-34.8 Z3.3 F1920.0
+M103
+G1 X3.27 Y-34.2 Z3.3 F1920.0
+M101
+G1 X17.43 Y-34.2 Z3.3 F1920.0
+G1 X17.25 Y-33.6 Z3.3 F1920.0
+G1 X3.45 Y-33.6 Z3.3 F1920.0
+G1 X3.53 Y-33.0 Z3.3 F1920.0
+G1 X17.17 Y-33.0 Z3.3 F1920.0
+G1 X17.24 Y-32.4 Z3.3 F1920.0
+G1 X3.47 Y-32.4 Z3.3 F1920.0
+M103
+G1 X3.32 Y-31.8 Z3.3 F1920.0
+M101
+G1 X17.38 Y-31.8 Z3.3 F1920.0
+G1 X17.63 Y-31.2 Z3.3 F1920.0
+G1 X3.08 Y-31.2 Z3.3 F1920.0
+M103
+G1 X-3.08 Y-31.2 Z3.3 F1920.0
+M101
+G1 X-17.63 Y-31.2 Z3.3 F1920.0
+G1 X-17.38 Y-31.8 Z3.3 F1920.0
+G1 X-3.32 Y-31.8 Z3.3 F1920.0
+M103
+G1 X-3.47 Y-32.4 Z3.3 F1920.0
+M101
+G1 X-17.24 Y-32.4 Z3.3 F1920.0
+G1 X-17.17 Y-33.0 Z3.3 F1920.0
+G1 X-3.53 Y-33.0 Z3.3 F1920.0
+G1 X-3.45 Y-33.6 Z3.3 F1920.0
+G1 X-17.25 Y-33.6 Z3.3 F1920.0
+G1 X-17.43 Y-34.2 Z3.3 F1920.0
+G1 X-3.27 Y-34.2 Z3.3 F1920.0
+M103
+G1 X-2.99 Y-34.8 Z3.3 F1920.0
+M101
+G1 X-17.72 Y-34.8 Z3.3 F1920.0
+G1 X-18.18 Y-35.4 Z3.3 F1920.0
+G1 X-2.53 Y-35.4 Z3.3 F1920.0
+G1 X-1.77 Y-36.0 Z3.3 F1920.0
+G1 X-19.03 Y-36.0 Z3.3 F1920.0
+M103
+G1 X-22.25 Y-36.0 Z3.3 F1920.0
+M101
+G1 X-28.56 Y-36.0 Z3.3 F1920.0
+G1 X-27.72 Y-35.4 Z3.3 F1920.0
+G1 X-23.09 Y-35.4 Z3.3 F1920.0
+G1 X-23.55 Y-34.8 Z3.3 F1920.0
+G1 X-27.25 Y-34.8 Z3.3 F1920.0
+M103
+G1 X-26.96 Y-34.2 Z3.3 F1920.0
+M101
+G1 X-23.84 Y-34.2 Z3.3 F1920.0
+M103
+G1 X-26.78 Y-33.6 Z3.3 F1920.0
+M101
+G1 X-24.02 Y-33.6 Z3.3 F1920.0
+G1 X-24.1 Y-33.0 Z3.3 F1920.0
+G1 X-26.7 Y-33.0 Z3.3 F1920.0
+M103
+G1 X-26.76 Y-32.4 Z3.3 F1920.0
+M101
+G1 X-24.04 Y-32.4 Z3.3 F1920.0
+G1 X-23.89 Y-31.8 Z3.3 F1920.0
+G1 X-26.91 Y-31.8 Z3.3 F1920.0
+M103
+G1 X-22.46 Y-30.0 Z3.3 F1920.0
+M101
+G1 X-28.34 Y-30.0 Z3.3 F1920.0
+M103
+G1 X-31.98 Y-30.0 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-30.0 Z3.3 F1920.0
+G1 X-32.7 Y-30.6 Z3.3 F1920.0
+G1 X-33.06 Y-30.6 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-35.4 Z3.3 F1920.0
+M101
+G1 X-32.61 Y-35.4 Z3.3 F1920.0
+G1 X-33.06 Y-36.0 Z3.3 F1920.0
+G1 X-31.77 Y-36.0 Z3.3 F1920.0
+M103
+G1 X-23.64 Y-31.2 Z3.3 F1920.0
+M101
+G1 X-27.16 Y-31.2 Z3.3 F1920.0
+G1 X-27.62 Y-30.6 Z3.3 F1920.0
+G1 X-23.18 Y-30.6 Z3.3 F1920.0
+M103
+G1 X-18.81 Y-30.0 Z3.3 F1920.0
+M101
+G1 X-1.93 Y-30.0 Z3.3 F1920.0
+G1 X-2.62 Y-30.6 Z3.3 F1920.0
+G1 X-18.09 Y-30.6 Z3.3 F1920.0
+M103
+G1 X-0.95 Y-20.4 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-20.4 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-19.2 Z3.3 F1920.0
+M101
+G1 X-2.7 Y-19.2 Z3.3 F1920.0
+G1 X-2.09 Y-19.8 Z3.3 F1920.0
+G1 X-33.06 Y-19.8 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-18.6 Z3.3 F1920.0
+M101
+G1 X-3.09 Y-18.6 Z3.3 F1920.0
+M103
+G1 X-3.34 Y-18.0 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-18.0 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-17.4 Z3.3 F1920.0
+M101
+G1 X-3.43 Y-17.4 Z3.3 F1920.0
+M103
+G1 X-3.44 Y-16.8 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-16.8 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-16.2 Z3.3 F1920.0
+M101
+G1 X-3.36 Y-16.2 Z3.3 F1920.0
+M103
+G1 X-3.12 Y-15.6 Z3.3 F1920.0
+M101
+G1 X-33.06 Y-15.6 Z3.3 F1920.0
+M103
+G1 X-33.06 Y-14.4 Z3.3 F1920.0
+M101
+G1 X-2.18 Y-14.4 Z3.3 F1920.0
+G1 X-2.76 Y-15.0 Z3.3 F1920.0
+G1 X-33.06 Y-15.0 Z3.3 F1920.0
+M103
+G1 X-23.64 Y31.2 Z3.3 F1920.0
+M101
+G1 X-27.16 Y31.2 Z3.3 F1920.0
+G1 X-27.62 Y30.6 Z3.3 F1920.0
+G1 X-23.18 Y30.6 Z3.3 F1920.0
+M103
+G1 X18.81 Y30.0 Z3.3 F1920.0
+M101
+G1 X-18.81 Y30.0 Z3.3 F1920.0
+M103
+G1 X-18.09 Y30.6 Z3.3 F1920.0
+M101
+G1 X18.09 Y30.6 Z3.3 F1920.0
+G1 X17.63 Y31.2 Z3.3 F1920.0
+G1 X-17.63 Y31.2 Z3.3 F1920.0
+G1 X-17.38 Y31.8 Z3.3 F1920.0
+G1 X17.38 Y31.8 Z3.3 F1920.0
+M103
+G1 X17.24 Y32.4 Z3.3 F1920.0
+M101
+G1 X-17.24 Y32.4 Z3.3 F1920.0
+G1 X-17.17 Y33.0 Z3.3 F1920.0
+G1 X17.17 Y33.0 Z3.3 F1920.0
+G1 X17.25 Y33.6 Z3.3 F1920.0
+G1 X-17.25 Y33.6 Z3.3 F1920.0
+G1 X-17.43 Y34.2 Z3.3 F1920.0
+G1 X17.43 Y34.2 Z3.3 F1920.0
+G1 X17.72 Y34.8 Z3.3 F1920.0
+G1 X-17.72 Y34.8 Z3.3 F1920.0
+G1 X-18.18 Y35.4 Z3.3 F1920.0
+G1 X18.18 Y35.4 Z3.3 F1920.0
+M103
+G1 X19.03 Y36.0 Z3.3 F1920.0
+M101
+G1 X-19.03 Y36.0 Z3.3 F1920.0
+M103
+G1 X21.15 Y31.02 Z3.3 F1920.0
+G1 X27.16 Y31.2 Z3.3 F1920.0
+M101
+G1 X23.64 Y31.2 Z3.3 F1920.0
+G1 X23.18 Y30.6 Z3.3 F1920.0
+G1 X27.62 Y30.6 Z3.3 F1920.0
+G1 X28.34 Y30.0 Z3.3 F1920.0
+G1 X22.46 Y30.0 Z3.3 F1920.0
+M103
+G1 X26.76 Y32.4 Z3.3 F1920.0
+M101
+G1 X24.04 Y32.4 Z3.3 F1920.0
+G1 X23.89 Y31.8 Z3.3 F1920.0
+G1 X26.91 Y31.8 Z3.3 F1920.0
+M103
+G1 X26.78 Y33.6 Z3.3 F1920.0
+M101
+G1 X24.02 Y33.6 Z3.3 F1920.0
+G1 X24.1 Y33.0 Z3.3 F1920.0
+G1 X26.7 Y33.0 Z3.3 F1920.0
+M103
+G1 X28.55 Y36.0 Z3.3 F1920.0
+M101
+G1 X22.25 Y36.0 Z3.3 F1920.0
+G1 X23.09 Y35.4 Z3.3 F1920.0
+G1 X27.71 Y35.4 Z3.3 F1920.0
+G1 X27.25 Y34.8 Z3.3 F1920.0
+G1 X23.55 Y34.8 Z3.3 F1920.0
+G1 X23.84 Y34.2 Z3.3 F1920.0
+G1 X26.96 Y34.2 Z3.3 F1920.0
+M103
+G1 X33.06 Y36.0 Z3.3 F1920.0
+M101
+G1 X31.77 Y36.0 Z3.3 F1920.0
+G1 X32.62 Y35.4 Z3.3 F1920.0
+G1 X33.06 Y35.4 Z3.3 F1920.0
+M103
+G1 X22.36 Y-18.06 Z3.3 F1920.0
+G1 X18.09 Y-30.6 Z3.3 F1920.0
+M101
+G1 X2.62 Y-30.6 Z3.3 F1920.0
+G1 X1.93 Y-30.0 Z3.3 F1920.0
+G1 X18.81 Y-30.0 Z3.3 F1920.0
+M103
+G1 X31.77 Y-36.0 Z3.3 F1920.0
+M101
+G1 X33.06 Y-36.0 Z3.3 F1920.0
+G1 X32.62 Y-35.4 Z3.3 F1920.0
+G1 X33.06 Y-35.4 Z3.3 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 3.7 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-19.05 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y19.05 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y19.05 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-19.05 Z3.7 </boundaryPoint>)
+(<loop> outer )
+G1 X33.06 Y-17.57 Z3.7 F1920.0
+M101
+G1 X33.45 Y-17.57 Z3.7 F1920.0
+G1 X33.45 Y17.57 Z3.7 F1920.0
+G1 X30.06 Y17.57 Z3.7 F1920.0
+G1 X30.06 Y-17.57 Z3.7 F1920.0
+G1 X33.06 Y-17.57 Z3.7 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X33.06 Y-18.17 Z3.7 F1920.0
+M101
+G1 X34.05 Y-18.17 Z3.7 F1920.0
+G1 X34.05 Y18.17 Z3.7 F1920.0
+G1 X29.46 Y18.17 Z3.7 F1920.0
+G1 X29.46 Y-18.17 Z3.7 F1920.0
+G1 X33.06 Y-18.17 Z3.7 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X33.06 Y-18.76 Z3.7 F1920.0
+M101
+G1 X34.64 Y-18.76 Z3.7 F1920.0
+G1 X34.64 Y18.76 Z3.7 F1920.0
+G1 X28.87 Y18.76 Z3.7 F1920.0
+G1 X28.87 Y-18.76 Z3.7 F1920.0
+G1 X33.06 Y-18.76 Z3.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X33.0 Y-17.18 Z3.7 F1920.0
+M101
+G1 X33.0 Y17.18 Z3.7 F1920.0
+G1 X30.6 Y17.18 Z3.7 F1920.0
+G1 X30.6 Y-17.18 Z3.7 F1920.0
+G1 X32.4 Y-17.18 Z3.7 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X9.525 Y-31.75 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y-38.1 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-38.1 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-31.75 Z3.7 </boundaryPoint>)
+(<loop> outer )
+G1 X14.4 Y-33.23 Z3.7 F1920.0
+M101
+G1 X11.01 Y-33.23 Z3.7 F1920.0
+G1 X11.01 Y-36.62 Z3.7 F1920.0
+G1 X14.4 Y-36.62 Z3.7 F1920.0
+G1 X14.4 Y-33.23 Z3.7 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X15.0 Y-33.23 Z3.7 F1920.0
+M101
+G1 X15.0 Y-32.63 Z3.7 F1920.0
+G1 X10.41 Y-32.63 Z3.7 F1920.0
+G1 X10.41 Y-37.22 Z3.7 F1920.0
+G1 X15.0 Y-37.22 Z3.7 F1920.0
+G1 X15.0 Y-33.23 Z3.7 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X15.59 Y-33.23 Z3.7 F1920.0
+M101
+G1 X15.59 Y-32.04 Z3.7 F1920.0
+G1 X9.82 Y-32.04 Z3.7 F1920.0
+G1 X9.82 Y-37.81 Z3.7 F1920.0
+G1 X15.59 Y-37.81 Z3.7 F1920.0
+G1 X15.59 Y-33.23 Z3.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X13.8 Y-33.62 Z3.7 F1920.0
+M101
+G1 X13.8 Y-36.23 Z3.7 F1920.0
+G1 X11.4 Y-36.23 Z3.7 F1920.0
+G1 X11.4 Y-33.62 Z3.7 F1920.0
+G1 X13.2 Y-33.62 Z3.7 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-15.875 Y-31.75 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X-15.875 Y-38.1 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-38.1 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-31.75 Z3.7 </boundaryPoint>)
+(<loop> outer )
+G1 X-11.01 Y-33.62 Z3.7 F1920.0
+M101
+G1 X-11.01 Y-33.23 Z3.7 F1920.0
+G1 X-14.4 Y-33.23 Z3.7 F1920.0
+G1 X-14.4 Y-36.62 Z3.7 F1920.0
+G1 X-11.01 Y-36.62 Z3.7 F1920.0
+G1 X-11.01 Y-33.62 Z3.7 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-10.41 Y-33.62 Z3.7 F1920.0
+M101
+G1 X-10.41 Y-32.63 Z3.7 F1920.0
+G1 X-15.0 Y-32.63 Z3.7 F1920.0
+G1 X-15.0 Y-37.22 Z3.7 F1920.0
+G1 X-10.41 Y-37.22 Z3.7 F1920.0
+G1 X-10.41 Y-33.62 Z3.7 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-9.82 Y-33.62 Z3.7 F1920.0
+M101
+G1 X-9.82 Y-32.04 Z3.7 F1920.0
+G1 X-15.59 Y-32.04 Z3.7 F1920.0
+G1 X-15.59 Y-37.81 Z3.7 F1920.0
+G1 X-9.82 Y-37.81 Z3.7 F1920.0
+G1 X-9.82 Y-33.62 Z3.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-12.0 Y-33.62 Z3.7 F1920.0
+M101
+G1 X-11.4 Y-33.62 Z3.7 F1920.0
+G1 X-11.4 Y-36.23 Z3.7 F1920.0
+G1 X-12.6 Y-36.23 Z3.7 F1920.0
+G1 X-12.6 Y-33.62 Z3.7 F1920.0
+G1 X-13.8 Y-33.62 Z3.7 F1920.0
+G1 X-13.8 Y-36.23 Z3.7 F1920.0
+G1 X-13.2 Y-36.23 Z3.7 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-34.925 Y-19.05 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y-19.05 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y19.05 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y19.05 Z3.7 </boundaryPoint>)
+(<loop> outer )
+G1 X-30.06 Y-17.57 Z3.7 F1920.0
+M101
+G1 X-30.06 Y17.57 Z3.7 F1920.0
+G1 X-33.45 Y17.57 Z3.7 F1920.0
+G1 X-33.45 Y-17.57 Z3.7 F1920.0
+G1 X-30.06 Y-17.57 Z3.7 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-30.06 Y-18.17 Z3.7 F1920.0
+M101
+G1 X-29.46 Y-18.17 Z3.7 F1920.0
+G1 X-29.46 Y18.17 Z3.7 F1920.0
+G1 X-34.05 Y18.17 Z3.7 F1920.0
+G1 X-34.05 Y-18.17 Z3.7 F1920.0
+G1 X-30.06 Y-18.17 Z3.7 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-30.06 Y-18.76 Z3.7 F1920.0
+M101
+G1 X-28.87 Y-18.76 Z3.7 F1920.0
+G1 X-28.87 Y18.76 Z3.7 F1920.0
+G1 X-34.64 Y18.76 Z3.7 F1920.0
+G1 X-34.64 Y-18.76 Z3.7 F1920.0
+G1 X-30.06 Y-18.76 Z3.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-31.2 Y-17.18 Z3.7 F1920.0
+M101
+G1 X-30.6 Y-17.18 Z3.7 F1920.0
+G1 X-30.6 Y17.18 Z3.7 F1920.0
+G1 X-31.8 Y17.18 Z3.7 F1920.0
+G1 X-31.8 Y-17.18 Z3.7 F1920.0
+G1 X-33.0 Y-17.18 Z3.7 F1920.0
+G1 X-33.0 Y17.18 Z3.7 F1920.0
+G1 X-32.4 Y17.18 Z3.7 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-9.525 Y31.75 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y31.75 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y38.1 Z3.7 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y38.1 Z3.7 </boundaryPoint>)
+(<loop> outer )
+G1 X-8.05 Y33.23 Z3.7 F1920.0
+M101
+G1 X8.05 Y33.23 Z3.7 F1920.0
+G1 X8.05 Y36.62 Z3.7 F1920.0
+G1 X-8.05 Y36.62 Z3.7 F1920.0
+G1 X-8.05 Y33.23 Z3.7 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-8.65 Y33.23 Z3.7 F1920.0
+M101
+G1 X-8.65 Y32.63 Z3.7 F1920.0
+G1 X8.65 Y32.63 Z3.7 F1920.0
+G1 X8.65 Y37.22 Z3.7 F1920.0
+G1 X-8.65 Y37.22 Z3.7 F1920.0
+G1 X-8.65 Y33.23 Z3.7 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-9.24 Y33.23 Z3.7 F1920.0
+M101
+G1 X-9.24 Y32.04 Z3.7 F1920.0
+G1 X9.24 Y32.04 Z3.7 F1920.0
+G1 X9.24 Y37.81 Z3.7 F1920.0
+G1 X-9.24 Y37.81 Z3.7 F1920.0
+G1 X-9.24 Y33.23 Z3.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-6.0 Y33.62 Z3.7 F1920.0
+M101
+G1 X-7.2 Y33.62 Z3.7 F1920.0
+G1 X-7.2 Y36.23 Z3.7 F1920.0
+G1 X-4.2 Y36.23 Z3.7 F1920.0
+G1 X-5.4 Y33.62 Z3.7 F1920.0
+G1 X-1.8 Y33.62 Z3.7 F1920.0
+G1 X-1.8 Y34.22 Z3.7 F1920.0
+G1 X-4.0 Y34.67 Z3.7 F1920.0
+G1 X-3.6 Y36.23 Z3.7 F1920.0
+G1 X0.6 Y36.23 Z3.7 F1920.0
+G1 X-1.2 Y33.62 Z3.7 F1920.0
+G1 X3.0 Y33.62 Z3.7 F1920.0
+G1 X1.33 Y34.67 Z3.7 F1920.0
+G1 X1.2 Y36.23 Z3.7 F1920.0
+G1 X5.4 Y36.23 Z3.7 F1920.0
+G1 X3.6 Y33.62 Z3.7 F1920.0
+G1 X6.6 Y33.62 Z3.7 F1920.0
+G1 X6.0 Y36.23 Z3.7 F1920.0
+G1 X7.2 Y36.23 Z3.7 F1920.0
+G1 X7.2 Y33.62 Z3.7 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 4.1 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-9.525 Y31.75 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y31.75 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y38.1 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y38.1 Z4.1 </boundaryPoint>)
+(<loop> outer )
+G1 X7.2 Y33.23 Z4.1 F1920.0
+M101
+G1 X8.05 Y33.23 Z4.1 F1920.0
+G1 X8.05 Y36.62 Z4.1 F1920.0
+G1 X-8.05 Y36.62 Z4.1 F1920.0
+G1 X-8.05 Y33.23 Z4.1 F1920.0
+G1 X7.2 Y33.23 Z4.1 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X7.2 Y32.63 Z4.1 F1920.0
+M101
+G1 X8.65 Y32.63 Z4.1 F1920.0
+G1 X8.65 Y37.22 Z4.1 F1920.0
+G1 X-8.65 Y37.22 Z4.1 F1920.0
+G1 X-8.65 Y32.63 Z4.1 F1920.0
+G1 X7.2 Y32.63 Z4.1 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X7.2 Y32.04 Z4.1 F1920.0
+M101
+G1 X9.24 Y32.04 Z4.1 F1920.0
+G1 X9.24 Y37.81 Z4.1 F1920.0
+G1 X-9.24 Y37.81 Z4.1 F1920.0
+G1 X-9.24 Y32.04 Z4.1 F1920.0
+G1 X7.2 Y32.04 Z4.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-7.66 Y34.2 Z4.1 F1920.0
+M101
+G1 X-7.06 Y34.8 Z4.1 F1920.0
+G1 X7.06 Y34.8 Z4.1 F1920.0
+G1 X7.66 Y34.2 Z4.1 F1920.0
+M103
+G1 X7.66 Y36.0 Z4.1 F1920.0
+M101
+G1 X-7.66 Y36.0 Z4.1 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-34.925 Y-19.05 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y-19.05 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y19.05 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y19.05 Z4.1 </boundaryPoint>)
+(<loop> outer )
+G1 X-30.06 Y17.57 Z4.1 F1920.0
+M101
+G1 X-33.45 Y17.57 Z4.1 F1920.0
+G1 X-33.45 Y-17.57 Z4.1 F1920.0
+G1 X-30.06 Y-17.57 Z4.1 F1920.0
+G1 X-30.06 Y17.57 Z4.1 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-30.06 Y18.17 Z4.1 F1920.0
+M101
+G1 X-34.05 Y18.17 Z4.1 F1920.0
+G1 X-34.05 Y-18.17 Z4.1 F1920.0
+G1 X-29.46 Y-18.17 Z4.1 F1920.0
+G1 X-29.46 Y18.17 Z4.1 F1920.0
+G1 X-30.06 Y18.17 Z4.1 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-30.06 Y18.76 Z4.1 F1920.0
+M101
+G1 X-34.64 Y18.76 Z4.1 F1920.0
+G1 X-34.64 Y-18.76 Z4.1 F1920.0
+G1 X-28.87 Y-18.76 Z4.1 F1920.0
+G1 X-28.87 Y18.76 Z4.1 F1920.0
+G1 X-30.06 Y18.76 Z4.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-30.45 Y12.0 Z4.1 F1920.0
+M101
+G1 X-33.06 Y12.0 Z4.1 F1920.0
+G1 X-30.45 Y16.8 Z4.1 F1920.0
+G1 X-33.06 Y16.8 Z4.1 F1920.0
+M103
+G1 X-33.06 Y2.4 Z4.1 F1920.0
+M101
+G1 X-32.46 Y1.8 Z4.1 F1920.0
+G1 X-31.05 Y1.2 Z4.1 F1920.0
+G1 X-31.05 Y1.8 Z4.1 F1920.0
+G1 X-30.45 Y2.4 Z4.1 F1920.0
+G1 X-31.05 Y3.0 Z4.1 F1920.0
+G1 X-30.45 Y3.6 Z4.1 F1920.0
+G1 X-31.05 Y4.2 Z4.1 F1920.0
+G1 X-30.45 Y4.8 Z4.1 F1920.0
+G1 X-31.05 Y5.4 Z4.1 F1920.0
+G1 X-32.46 Y5.4 Z4.1 F1920.0
+G1 X-33.06 Y6.0 Z4.1 F1920.0
+G1 X-32.63 Y6.42 Z4.1 F1920.0
+G1 X-33.06 Y6.6 Z4.1 F1920.0
+G1 X-32.83 Y7.15 Z4.1 F1920.0
+G1 X-33.06 Y7.2 Z4.1 F1920.0
+G1 X-32.46 Y7.8 Z4.1 F1920.0
+G1 X-32.46 Y8.4 Z4.1 F1920.0
+G1 X-33.06 Y9.0 Z4.1 F1920.0
+G1 X-32.46 Y9.6 Z4.1 F1920.0
+G1 X-31.05 Y9.6 Z4.1 F1920.0
+G1 X-30.45 Y9.0 Z4.1 F1920.0
+G1 X-31.05 Y8.4 Z4.1 F1920.0
+G1 X-31.05 Y7.8 Z4.1 F1920.0
+G1 X-30.45 Y7.2 Z4.1 F1920.0
+M103
+G1 X-30.45 Y-7.2 Z4.1 F1920.0
+M101
+G1 X-30.68 Y-7.25 Z4.1 F1920.0
+G1 X-31.05 Y-9.0 Z4.1 F1920.0
+G1 X-31.05 Y-9.6 Z4.1 F1920.0
+G1 X-30.45 Y-10.2 Z4.1 F1920.0
+G1 X-31.05 Y-10.8 Z4.1 F1920.0
+G1 X-32.46 Y-10.8 Z4.1 F1920.0
+G1 X-33.06 Y-10.2 Z4.1 F1920.0
+G1 X-32.46 Y-9.6 Z4.1 F1920.0
+G1 X-32.46 Y-9.0 Z4.1 F1920.0
+G1 X-33.06 Y-8.4 Z4.1 F1920.0
+G1 X-32.63 Y-7.98 Z4.1 F1920.0
+G1 X-33.06 Y-7.8 Z4.1 F1920.0
+G1 X-32.83 Y-7.25 Z4.1 F1920.0
+G1 X-33.06 Y-7.2 Z4.1 F1920.0
+G1 X-32.46 Y-6.6 Z4.1 F1920.0
+G1 X-33.06 Y-6.0 Z4.1 F1920.0
+G1 X-32.46 Y-5.4 Z4.1 F1920.0
+G1 X-33.06 Y-4.8 Z4.1 F1920.0
+G1 X-32.46 Y-4.2 Z4.1 F1920.0
+G1 X-31.05 Y-4.8 Z4.1 F1920.0
+G1 X-30.45 Y-4.2 Z4.1 F1920.0
+G1 X-30.87 Y-3.78 Z4.1 F1920.0
+G1 X-30.45 Y-3.6 Z4.1 F1920.0
+G1 X-30.68 Y-3.05 Z4.1 F1920.0
+G1 X-30.45 Y-2.4 Z4.1 F1920.0
+G1 X-31.05 Y-1.8 Z4.1 F1920.0
+G1 X-31.05 Y-1.2 Z4.1 F1920.0
+G1 X-30.45 Y-0.6 Z4.1 F1920.0
+G1 X-31.05 Y0.0 Z4.1 F1920.0
+G1 X-32.46 Y0.6 Z4.1 F1920.0
+G1 X-33.06 Y0.0 Z4.1 F1920.0
+G1 X-32.46 Y-0.6 Z4.1 F1920.0
+G1 X-32.46 Y-1.8 Z4.1 F1920.0
+G1 X-33.06 Y-2.4 Z4.1 F1920.0
+M103
+G1 X-30.45 Y-16.8 Z4.1 F1920.0
+M101
+G1 X-33.06 Y-16.8 Z4.1 F1920.0
+G1 X-30.45 Y-12.0 Z4.1 F1920.0
+G1 X-33.06 Y-12.0 Z4.1 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-15.875 Y-31.75 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X-15.875 Y-38.1 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-38.1 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-31.75 Z4.1 </boundaryPoint>)
+(<loop> outer )
+G1 X-14.4 Y-33.23 Z4.1 F1920.0
+M101
+G1 X-14.4 Y-36.62 Z4.1 F1920.0
+G1 X-11.01 Y-36.62 Z4.1 F1920.0
+G1 X-11.01 Y-33.23 Z4.1 F1920.0
+G1 X-14.4 Y-33.23 Z4.1 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-15.0 Y-33.23 Z4.1 F1920.0
+M101
+G1 X-15.0 Y-37.22 Z4.1 F1920.0
+G1 X-10.41 Y-37.22 Z4.1 F1920.0
+G1 X-10.41 Y-32.63 Z4.1 F1920.0
+G1 X-15.0 Y-32.63 Z4.1 F1920.0
+G1 X-15.0 Y-33.23 Z4.1 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-15.59 Y-33.23 Z4.1 F1920.0
+M101
+G1 X-15.59 Y-37.81 Z4.1 F1920.0
+G1 X-9.82 Y-37.81 Z4.1 F1920.0
+G1 X-9.82 Y-32.04 Z4.1 F1920.0
+G1 X-15.59 Y-32.04 Z4.1 F1920.0
+G1 X-15.59 Y-33.23 Z4.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-11.4 Y-36.0 Z4.1 F1920.0
+M101
+G1 X-14.01 Y-36.0 Z4.1 F1920.0
+G1 X-13.41 Y-35.4 Z4.1 F1920.0
+G1 X-12.0 Y-34.8 Z4.1 F1920.0
+G1 X-11.4 Y-34.2 Z4.1 F1920.0
+G1 X-14.01 Y-34.2 Z4.1 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X9.525 Y-31.75 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y-38.1 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-38.1 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-31.75 Z4.1 </boundaryPoint>)
+(<loop> outer )
+G1 X11.01 Y-34.2 Z4.1 F1920.0
+M101
+G1 X11.01 Y-36.62 Z4.1 F1920.0
+G1 X14.4 Y-36.62 Z4.1 F1920.0
+G1 X14.4 Y-33.23 Z4.1 F1920.0
+G1 X11.01 Y-33.23 Z4.1 F1920.0
+G1 X11.01 Y-34.2 Z4.1 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X10.41 Y-34.2 Z4.1 F1920.0
+M101
+G1 X10.41 Y-37.22 Z4.1 F1920.0
+G1 X15.0 Y-37.22 Z4.1 F1920.0
+G1 X15.0 Y-32.63 Z4.1 F1920.0
+G1 X10.41 Y-32.63 Z4.1 F1920.0
+G1 X10.41 Y-34.2 Z4.1 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X9.82 Y-34.2 Z4.1 F1920.0
+M101
+G1 X9.82 Y-37.81 Z4.1 F1920.0
+G1 X15.59 Y-37.81 Z4.1 F1920.0
+G1 X15.59 Y-32.04 Z4.1 F1920.0
+G1 X9.82 Y-32.04 Z4.1 F1920.0
+G1 X9.82 Y-34.2 Z4.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X14.01 Y-34.2 Z4.1 F1920.0
+M101
+G1 X11.4 Y-34.2 Z4.1 F1920.0
+G1 X12.0 Y-34.8 Z4.1 F1920.0
+G1 X13.41 Y-35.4 Z4.1 F1920.0
+G1 X14.01 Y-36.0 Z4.1 F1920.0
+G1 X11.4 Y-36.0 Z4.1 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-19.05 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y19.05 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y19.05 Z4.1 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-19.05 Z4.1 </boundaryPoint>)
+(<loop> outer )
+G1 X30.06 Y-17.57 Z4.1 F1920.0
+M101
+G1 X33.45 Y-17.57 Z4.1 F1920.0
+G1 X33.45 Y17.57 Z4.1 F1920.0
+G1 X30.06 Y17.57 Z4.1 F1920.0
+G1 X30.06 Y-17.57 Z4.1 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X30.06 Y-18.17 Z4.1 F1920.0
+M101
+G1 X34.05 Y-18.17 Z4.1 F1920.0
+G1 X34.05 Y18.17 Z4.1 F1920.0
+G1 X29.46 Y18.17 Z4.1 F1920.0
+G1 X29.46 Y-18.17 Z4.1 F1920.0
+G1 X30.06 Y-18.17 Z4.1 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X30.06 Y-18.76 Z4.1 F1920.0
+M101
+G1 X34.64 Y-18.76 Z4.1 F1920.0
+G1 X34.64 Y18.76 Z4.1 F1920.0
+G1 X28.87 Y18.76 Z4.1 F1920.0
+G1 X28.87 Y-18.76 Z4.1 F1920.0
+G1 X30.06 Y-18.76 Z4.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X33.06 Y-16.8 Z4.1 F1920.0
+M101
+G1 X30.45 Y-16.8 Z4.1 F1920.0
+M103
+G1 X30.45 Y-12.0 Z4.1 F1920.0
+M101
+G1 X31.05 Y-12.6 Z4.1 F1920.0
+G1 X30.47 Y-13.33 Z4.1 F1920.0
+G1 X30.45 Y-13.8 Z4.1 F1920.0
+G1 X30.86 Y-13.33 Z4.1 F1920.0
+G1 X32.46 Y-14.4 Z4.1 F1920.0
+G1 X33.06 Y-13.8 Z4.1 F1920.0
+G1 X32.63 Y-13.38 Z4.1 F1920.0
+G1 X33.06 Y-13.2 Z4.1 F1920.0
+G1 X32.83 Y-12.65 Z4.1 F1920.0
+G1 X33.06 Y-12.0 Z4.1 F1920.0
+M103
+G1 X33.06 Y-2.4 Z4.1 F1920.0
+M101
+G1 X32.46 Y-1.8 Z4.1 F1920.0
+G1 X32.46 Y-1.2 Z4.1 F1920.0
+G1 X33.06 Y-0.6 Z4.1 F1920.0
+G1 X32.46 Y0.0 Z4.1 F1920.0
+G1 X31.05 Y0.0 Z4.1 F1920.0
+G1 X30.45 Y-0.6 Z4.1 F1920.0
+G1 X31.05 Y-1.2 Z4.1 F1920.0
+G1 X31.05 Y-1.8 Z4.1 F1920.0
+G1 X30.45 Y-2.4 Z4.1 F1920.0
+G1 X30.47 Y-2.67 Z4.1 F1920.0
+G1 X30.86 Y-2.67 Z4.1 F1920.0
+G1 X30.45 Y-3.0 Z4.1 F1920.0
+G1 X30.82 Y-3.47 Z4.1 F1920.0
+G1 X30.45 Y-3.6 Z4.1 F1920.0
+G1 X31.05 Y-4.2 Z4.1 F1920.0
+G1 X30.45 Y-4.8 Z4.1 F1920.0
+G1 X32.46 Y-5.4 Z4.1 F1920.0
+G1 X33.06 Y-6.0 Z4.1 F1920.0
+G1 X32.46 Y-6.6 Z4.1 F1920.0
+G1 X33.06 Y-7.2 Z4.1 F1920.0
+G1 X32.83 Y-7.25 Z4.1 F1920.0
+G1 X32.46 Y-9.0 Z4.1 F1920.0
+G1 X33.06 Y-9.6 Z4.1 F1920.0
+G1 X32.46 Y-10.2 Z4.1 F1920.0
+G1 X32.46 Y-10.8 Z4.1 F1920.0
+G1 X31.05 Y-10.8 Z4.1 F1920.0
+G1 X31.05 Y-10.2 Z4.1 F1920.0
+G1 X30.45 Y-9.6 Z4.1 F1920.0
+G1 X31.05 Y-9.0 Z4.1 F1920.0
+G1 X30.45 Y-8.4 Z4.1 F1920.0
+G1 X30.87 Y-7.98 Z4.1 F1920.0
+G1 X30.86 Y-6.22 Z4.1 F1920.0
+G1 X30.47 Y-6.22 Z4.1 F1920.0
+G1 X30.45 Y-7.2 Z4.1 F1920.0
+M103
+G1 X30.45 Y7.2 Z4.1 F1920.0
+M101
+G1 X30.45 Y8.4 Z4.1 F1920.0
+G1 X31.05 Y9.0 Z4.1 F1920.0
+G1 X30.86 Y8.0 Z4.1 F1920.0
+G1 X33.06 Y9.0 Z4.1 F1920.0
+G1 X32.46 Y7.8 Z4.1 F1920.0
+G1 X33.06 Y7.2 Z4.1 F1920.0
+G1 X32.83 Y7.15 Z4.1 F1920.0
+G1 X32.46 Y5.4 Z4.1 F1920.0
+G1 X31.0 Y5.64 Z4.1 F1920.0
+G1 X30.45 Y6.0 Z4.1 F1920.0
+G1 X30.86 Y4.44 Z4.1 F1920.0
+G1 X30.45 Y4.8 Z4.1 F1920.0
+G1 X30.47 Y4.44 Z4.1 F1920.0
+G1 X31.05 Y3.58 Z4.1 F1920.0
+G1 X31.05 Y3.0 Z4.1 F1920.0
+G1 X30.45 Y2.4 Z4.1 F1920.0
+G1 X31.05 Y1.8 Z4.1 F1920.0
+G1 X31.05 Y1.2 Z4.1 F1920.0
+G1 X30.45 Y0.6 Z4.1 F1920.0
+G1 X33.06 Y0.6 Z4.1 F1920.0
+G1 X32.46 Y1.2 Z4.1 F1920.0
+G1 X32.46 Y1.8 Z4.1 F1920.0
+G1 X33.06 Y2.4 Z4.1 F1920.0
+M103
+G1 X33.06 Y12.0 Z4.1 F1920.0
+M101
+G1 X30.45 Y12.0 Z4.1 F1920.0
+M103
+G1 X30.45 Y16.8 Z4.1 F1920.0
+M101
+G1 X31.05 Y16.2 Z4.1 F1920.0
+G1 X31.04 Y15.63 Z4.1 F1920.0
+G1 X30.47 Y15.11 Z4.1 F1920.0
+G1 X30.45 Y14.4 Z4.1 F1920.0
+G1 X30.86 Y15.11 Z4.1 F1920.0
+G1 X32.46 Y15.0 Z4.1 F1920.0
+G1 X33.06 Y15.6 Z4.1 F1920.0
+G1 X32.63 Y16.02 Z4.1 F1920.0
+G1 X33.06 Y16.2 Z4.1 F1920.0
+G1 X32.83 Y16.75 Z4.1 F1920.0
+G1 X33.06 Y16.8 Z4.1 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 4.5 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-19.05 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y19.05 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y19.05 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-19.05 Z4.5 </boundaryPoint>)
+(<loop> outer )
+G1 X33.45 Y16.8 Z4.5 F1920.0
+M101
+G1 X33.45 Y17.57 Z4.5 F1920.0
+G1 X30.06 Y17.57 Z4.5 F1920.0
+G1 X30.06 Y-17.57 Z4.5 F1920.0
+G1 X33.45 Y-17.57 Z4.5 F1920.0
+G1 X33.45 Y16.8 Z4.5 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X34.05 Y16.8 Z4.5 F1920.0
+M101
+G1 X34.05 Y18.17 Z4.5 F1920.0
+G1 X29.46 Y18.17 Z4.5 F1920.0
+G1 X29.46 Y-18.17 Z4.5 F1920.0
+G1 X34.05 Y-18.17 Z4.5 F1920.0
+G1 X34.05 Y16.8 Z4.5 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X34.64 Y16.8 Z4.5 F1920.0
+M101
+G1 X34.64 Y18.76 Z4.5 F1920.0
+G1 X28.87 Y18.76 Z4.5 F1920.0
+G1 X28.87 Y-18.76 Z4.5 F1920.0
+G1 X34.64 Y-18.76 Z4.5 F1920.0
+G1 X34.64 Y16.8 Z4.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X32.0 Y-17.18 Z4.5 F1920.0
+M101
+G1 X32.67 Y-17.18 Z4.5 F1920.0
+G1 X32.67 Y17.18 Z4.5 F1920.0
+G1 X30.67 Y17.18 Z4.5 F1920.0
+G1 X30.67 Y-17.18 Z4.5 F1920.0
+G1 X31.33 Y-17.18 Z4.5 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X9.525 Y-31.75 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y-38.1 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-38.1 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-31.75 Z4.5 </boundaryPoint>)
+(<loop> outer )
+G1 X14.4 Y-33.23 Z4.5 F1920.0
+M101
+G1 X11.01 Y-33.23 Z4.5 F1920.0
+G1 X11.01 Y-36.62 Z4.5 F1920.0
+G1 X14.4 Y-36.62 Z4.5 F1920.0
+G1 X14.4 Y-33.23 Z4.5 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X15.0 Y-33.23 Z4.5 F1920.0
+M101
+G1 X15.0 Y-32.63 Z4.5 F1920.0
+G1 X10.41 Y-32.63 Z4.5 F1920.0
+G1 X10.41 Y-37.22 Z4.5 F1920.0
+G1 X15.0 Y-37.22 Z4.5 F1920.0
+G1 X15.0 Y-33.23 Z4.5 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X15.59 Y-33.23 Z4.5 F1920.0
+M101
+G1 X15.59 Y-32.04 Z4.5 F1920.0
+G1 X9.82 Y-32.04 Z4.5 F1920.0
+G1 X9.82 Y-37.81 Z4.5 F1920.0
+G1 X15.59 Y-37.81 Z4.5 F1920.0
+G1 X15.59 Y-33.23 Z4.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X13.33 Y-33.62 Z4.5 F1920.0
+M101
+G1 X14.0 Y-33.62 Z4.5 F1920.0
+G1 X14.0 Y-36.23 Z4.5 F1920.0
+G1 X12.0 Y-36.23 Z4.5 F1920.0
+G1 X12.0 Y-33.62 Z4.5 F1920.0
+G1 X12.67 Y-33.62 Z4.5 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-15.875 Y-31.75 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X-15.875 Y-38.1 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-38.1 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-31.75 Z4.5 </boundaryPoint>)
+(<loop> outer )
+G1 X-11.01 Y-33.62 Z4.5 F1920.0
+M101
+G1 X-11.01 Y-33.23 Z4.5 F1920.0
+G1 X-14.4 Y-33.23 Z4.5 F1920.0
+G1 X-14.4 Y-36.62 Z4.5 F1920.0
+G1 X-11.01 Y-36.62 Z4.5 F1920.0
+G1 X-11.01 Y-33.62 Z4.5 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-10.41 Y-33.62 Z4.5 F1920.0
+M101
+G1 X-10.41 Y-32.63 Z4.5 F1920.0
+G1 X-15.0 Y-32.63 Z4.5 F1920.0
+G1 X-15.0 Y-37.22 Z4.5 F1920.0
+G1 X-10.41 Y-37.22 Z4.5 F1920.0
+G1 X-10.41 Y-33.62 Z4.5 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-9.82 Y-33.62 Z4.5 F1920.0
+M101
+G1 X-9.82 Y-32.04 Z4.5 F1920.0
+G1 X-15.59 Y-32.04 Z4.5 F1920.0
+G1 X-15.59 Y-37.81 Z4.5 F1920.0
+G1 X-9.82 Y-37.81 Z4.5 F1920.0
+G1 X-9.82 Y-33.62 Z4.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-12.0 Y-33.62 Z4.5 F1920.0
+M101
+G1 X-12.0 Y-36.23 Z4.5 F1920.0
+G1 X-12.67 Y-36.23 Z4.5 F1920.0
+G1 X-12.67 Y-33.62 Z4.5 F1920.0
+G1 X-14.0 Y-33.62 Z4.5 F1920.0
+G1 X-14.0 Y-36.23 Z4.5 F1920.0
+G1 X-13.33 Y-36.23 Z4.5 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-34.925 Y-19.05 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y-19.05 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y19.05 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y19.05 Z4.5 </boundaryPoint>)
+(<loop> outer )
+G1 X-30.06 Y-17.57 Z4.5 F1920.0
+M101
+G1 X-30.06 Y17.57 Z4.5 F1920.0
+G1 X-33.45 Y17.57 Z4.5 F1920.0
+G1 X-33.45 Y-17.57 Z4.5 F1920.0
+G1 X-30.06 Y-17.57 Z4.5 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-30.06 Y-18.17 Z4.5 F1920.0
+M101
+G1 X-29.46 Y-18.17 Z4.5 F1920.0
+G1 X-29.46 Y18.17 Z4.5 F1920.0
+G1 X-34.05 Y18.17 Z4.5 F1920.0
+G1 X-34.05 Y-18.17 Z4.5 F1920.0
+G1 X-30.06 Y-18.17 Z4.5 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-30.06 Y-18.76 Z4.5 F1920.0
+M101
+G1 X-28.87 Y-18.76 Z4.5 F1920.0
+G1 X-28.87 Y18.76 Z4.5 F1920.0
+G1 X-34.64 Y18.76 Z4.5 F1920.0
+G1 X-34.64 Y-18.76 Z4.5 F1920.0
+G1 X-30.06 Y-18.76 Z4.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-30.67 Y-17.18 Z4.5 F1920.0
+M101
+G1 X-30.67 Y17.18 Z4.5 F1920.0
+G1 X-31.33 Y17.18 Z4.5 F1920.0
+G1 X-31.33 Y-17.18 Z4.5 F1920.0
+G1 X-32.67 Y-17.18 Z4.5 F1920.0
+G1 X-32.67 Y17.18 Z4.5 F1920.0
+G1 X-32.0 Y17.18 Z4.5 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-9.525 Y31.75 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y31.75 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y38.1 Z4.5 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y38.1 Z4.5 </boundaryPoint>)
+(<loop> outer )
+G1 X-8.05 Y33.23 Z4.5 F1920.0
+M101
+G1 X8.05 Y33.23 Z4.5 F1920.0
+G1 X8.05 Y36.62 Z4.5 F1920.0
+G1 X-8.05 Y36.62 Z4.5 F1920.0
+G1 X-8.05 Y33.23 Z4.5 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-8.65 Y33.23 Z4.5 F1920.0
+M101
+G1 X-8.65 Y32.63 Z4.5 F1920.0
+G1 X8.65 Y32.63 Z4.5 F1920.0
+G1 X8.65 Y37.22 Z4.5 F1920.0
+G1 X-8.65 Y37.22 Z4.5 F1920.0
+G1 X-8.65 Y33.23 Z4.5 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-9.24 Y33.23 Z4.5 F1920.0
+M101
+G1 X-9.24 Y32.04 Z4.5 F1920.0
+G1 X9.24 Y32.04 Z4.5 F1920.0
+G1 X9.24 Y37.81 Z4.5 F1920.0
+G1 X-9.24 Y37.81 Z4.5 F1920.0
+G1 X-9.24 Y33.23 Z4.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-5.33 Y33.62 Z4.5 F1920.0
+M101
+G1 X-7.33 Y33.62 Z4.5 F1920.0
+G1 X-7.33 Y36.23 Z4.5 F1920.0
+G1 X-3.33 Y36.23 Z4.5 F1920.0
+G1 X-4.0 Y34.67 Z4.5 F1920.0
+G1 X-4.67 Y33.62 Z4.5 F1920.0
+G1 X0.0 Y33.62 Z4.5 F1920.0
+G1 X-2.67 Y36.23 Z4.5 F1920.0
+G1 X2.0 Y36.23 Z4.5 F1920.0
+G1 X1.33 Y34.67 Z4.5 F1920.0
+G1 X0.67 Y33.62 Z4.5 F1920.0
+G1 X4.67 Y33.62 Z4.5 F1920.0
+G1 X2.67 Y36.23 Z4.5 F1920.0
+G1 X6.0 Y36.23 Z4.5 F1920.0
+G1 X5.33 Y33.62 Z4.5 F1920.0
+G1 X7.33 Y33.62 Z4.5 F1920.0
+G1 X7.33 Y36.23 Z4.5 F1920.0
+G1 X6.67 Y36.23 Z4.5 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 4.9 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-9.525 Y31.75 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y31.75 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y38.1 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y38.1 Z4.9 </boundaryPoint>)
+(<loop> outer )
+G1 X6.67 Y36.62 Z4.9 F1920.0
+M101
+G1 X-8.05 Y36.62 Z4.9 F1920.0
+G1 X-8.05 Y33.23 Z4.9 F1920.0
+G1 X8.05 Y33.23 Z4.9 F1920.0
+G1 X8.05 Y36.62 Z4.9 F1920.0
+G1 X6.67 Y36.62 Z4.9 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X6.67 Y37.22 Z4.9 F1920.0
+M101
+G1 X-8.65 Y37.22 Z4.9 F1920.0
+G1 X-8.65 Y32.63 Z4.9 F1920.0
+G1 X8.65 Y32.63 Z4.9 F1920.0
+G1 X8.65 Y37.22 Z4.9 F1920.0
+G1 X6.67 Y37.22 Z4.9 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X6.67 Y37.81 Z4.9 F1920.0
+M101
+G1 X-9.24 Y37.81 Z4.9 F1920.0
+G1 X-9.24 Y32.04 Z4.9 F1920.0
+G1 X9.24 Y32.04 Z4.9 F1920.0
+G1 X9.24 Y37.81 Z4.9 F1920.0
+G1 X6.67 Y37.81 Z4.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X7.66 Y36.0 Z4.9 F1920.0
+M101
+G1 X-7.66 Y36.0 Z4.9 F1920.0
+M103
+G1 X-7.66 Y34.0 Z4.9 F1920.0
+M101
+G1 X-6.99 Y34.67 Z4.9 F1920.0
+G1 X6.99 Y34.67 Z4.9 F1920.0
+G1 X7.66 Y34.0 Z4.9 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-19.05 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y19.05 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y19.05 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-19.05 Z4.9 </boundaryPoint>)
+(<loop> outer )
+G1 X30.06 Y17.57 Z4.9 F1920.0
+M101
+G1 X30.06 Y-17.57 Z4.9 F1920.0
+G1 X33.45 Y-17.57 Z4.9 F1920.0
+G1 X33.45 Y17.57 Z4.9 F1920.0
+G1 X30.06 Y17.57 Z4.9 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X30.06 Y18.17 Z4.9 F1920.0
+M101
+G1 X29.46 Y18.17 Z4.9 F1920.0
+G1 X29.46 Y-18.17 Z4.9 F1920.0
+G1 X34.05 Y-18.17 Z4.9 F1920.0
+G1 X34.05 Y18.17 Z4.9 F1920.0
+G1 X30.06 Y18.17 Z4.9 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X30.06 Y18.76 Z4.9 F1920.0
+M101
+G1 X28.87 Y18.76 Z4.9 F1920.0
+G1 X28.87 Y-18.76 Z4.9 F1920.0
+G1 X34.64 Y-18.76 Z4.9 F1920.0
+G1 X34.64 Y18.76 Z4.9 F1920.0
+G1 X30.06 Y18.76 Z4.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X30.45 Y16.67 Z4.9 F1920.0
+M101
+G1 X33.06 Y16.67 Z4.9 F1920.0
+G1 X32.39 Y16.0 Z4.9 F1920.0
+G1 X30.86 Y15.11 Z4.9 F1920.0
+G1 X30.47 Y15.11 Z4.9 F1920.0
+G1 X30.45 Y14.67 Z4.9 F1920.0
+G1 X33.06 Y14.67 Z4.9 F1920.0
+G1 X32.39 Y14.0 Z4.9 F1920.0
+G1 X33.06 Y13.33 Z4.9 F1920.0
+G1 X32.46 Y12.37 Z4.9 F1920.0
+G1 X31.11 Y13.33 Z4.9 F1920.0
+G1 X30.45 Y12.67 Z4.9 F1920.0
+G1 X31.11 Y12.0 Z4.9 F1920.0
+G1 X30.45 Y11.33 Z4.9 F1920.0
+G1 X31.11 Y10.67 Z4.9 F1920.0
+G1 X31.11 Y10.0 Z4.9 F1920.0
+G1 X30.45 Y9.33 Z4.9 F1920.0
+G1 X31.11 Y8.67 Z4.9 F1920.0
+G1 X30.47 Y8.0 Z4.9 F1920.0
+G1 X30.45 Y7.33 Z4.9 F1920.0
+G1 X30.86 Y8.0 Z4.9 F1920.0
+G1 X32.39 Y8.0 Z4.9 F1920.0
+G1 X33.06 Y9.33 Z4.9 F1920.0
+M103
+G1 X33.06 Y4.0 Z4.9 F1920.0
+M101
+G1 X32.39 Y4.67 Z4.9 F1920.0
+G1 X32.39 Y5.33 Z4.9 F1920.0
+G1 X33.06 Y6.0 Z4.9 F1920.0
+G1 X32.39 Y6.67 Z4.9 F1920.0
+G1 X31.11 Y6.67 Z4.9 F1920.0
+G1 X30.45 Y6.0 Z4.9 F1920.0
+G1 X30.86 Y4.44 Z4.9 F1920.0
+G1 X30.47 Y4.44 Z4.9 F1920.0
+G1 X30.45 Y4.0 Z4.9 F1920.0
+G1 X31.08 Y1.53 Z4.9 F1920.0
+G1 X30.66 Y0.63 Z4.9 F1920.0
+G1 X32.39 Y0.67 Z4.9 F1920.0
+G1 X33.06 Y0.0 Z4.9 F1920.0
+G1 X32.39 Y-0.67 Z4.9 F1920.0
+G1 X33.06 Y-1.33 Z4.9 F1920.0
+G1 X32.8 Y-1.38 Z4.9 F1920.0
+G1 X32.39 Y-3.33 Z4.9 F1920.0
+G1 X32.39 Y-4.0 Z4.9 F1920.0
+G1 X33.06 Y-4.67 Z4.9 F1920.0
+G1 X32.39 Y-5.33 Z4.9 F1920.0
+G1 X32.46 Y-4.97 Z4.9 F1920.0
+G1 X30.86 Y-2.67 Z4.9 F1920.0
+G1 X30.45 Y-3.33 Z4.9 F1920.0
+G1 X30.47 Y-2.67 Z4.9 F1920.0
+G1 X31.11 Y-2.0 Z4.9 F1920.0
+G1 X30.45 Y-1.33 Z4.9 F1920.0
+M103
+G1 X30.45 Y-6.67 Z4.9 F1920.0
+M101
+G1 X30.47 Y-6.22 Z4.9 F1920.0
+G1 X32.39 Y-6.0 Z4.9 F1920.0
+G1 X33.06 Y-6.67 Z4.9 F1920.0
+M103
+G1 X33.06 Y-12.0 Z4.9 F1920.0
+M101
+G1 X32.39 Y-11.33 Z4.9 F1920.0
+G1 X32.39 Y-10.74 Z4.9 F1920.0
+G1 X32.98 Y-10.0 Z4.9 F1920.0
+G1 X32.39 Y-8.63 Z4.9 F1920.0
+G1 X31.08 Y-9.12 Z4.9 F1920.0
+G1 X30.45 Y-8.67 Z4.9 F1920.0
+G1 X30.92 Y-10.2 Z4.9 F1920.0
+G1 X31.11 Y-11.33 Z4.9 F1920.0
+G1 X30.45 Y-12.0 Z4.9 F1920.0
+G1 X31.11 Y-12.67 Z4.9 F1920.0
+G1 X30.47 Y-13.33 Z4.9 F1920.0
+G1 X30.86 Y-13.33 Z4.9 F1920.0
+G1 X30.45 Y-14.0 Z4.9 F1920.0
+G1 X31.11 Y-14.67 Z4.9 F1920.0
+G1 X30.45 Y-15.33 Z4.9 F1920.0
+G1 X33.06 Y-14.67 Z4.9 F1920.0
+G1 X32.39 Y-15.33 Z4.9 F1920.0
+G1 X32.39 Y-16.0 Z4.9 F1920.0
+G1 X33.06 Y-16.67 Z4.9 F1920.0
+G1 X30.45 Y-16.67 Z4.9 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X9.525 Y-31.75 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y-38.1 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-38.1 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-31.75 Z4.9 </boundaryPoint>)
+(<loop> outer )
+G1 X14.4 Y-33.23 Z4.9 F1920.0
+M101
+G1 X11.01 Y-33.23 Z4.9 F1920.0
+G1 X11.01 Y-36.62 Z4.9 F1920.0
+G1 X14.4 Y-36.62 Z4.9 F1920.0
+G1 X14.4 Y-33.23 Z4.9 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X15.0 Y-33.23 Z4.9 F1920.0
+M101
+G1 X15.0 Y-32.63 Z4.9 F1920.0
+G1 X10.41 Y-32.63 Z4.9 F1920.0
+G1 X10.41 Y-37.22 Z4.9 F1920.0
+G1 X15.0 Y-37.22 Z4.9 F1920.0
+G1 X15.0 Y-33.23 Z4.9 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X15.59 Y-33.23 Z4.9 F1920.0
+M101
+G1 X15.59 Y-32.04 Z4.9 F1920.0
+G1 X9.82 Y-32.04 Z4.9 F1920.0
+G1 X9.82 Y-37.81 Z4.9 F1920.0
+G1 X15.59 Y-37.81 Z4.9 F1920.0
+G1 X15.59 Y-33.23 Z4.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X14.01 Y-34.0 Z4.9 F1920.0
+M101
+G1 X11.4 Y-34.0 Z4.9 F1920.0
+G1 X12.06 Y-34.67 Z4.9 F1920.0
+G1 X13.34 Y-35.33 Z4.9 F1920.0
+G1 X14.01 Y-36.0 Z4.9 F1920.0
+G1 X11.4 Y-36.0 Z4.9 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-15.875 Y-31.75 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X-15.875 Y-38.1 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-38.1 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-31.75 Z4.9 </boundaryPoint>)
+(<loop> outer )
+G1 X-11.01 Y-36.0 Z4.9 F1920.0
+M101
+G1 X-11.01 Y-33.23 Z4.9 F1920.0
+G1 X-14.4 Y-33.23 Z4.9 F1920.0
+G1 X-14.4 Y-36.62 Z4.9 F1920.0
+G1 X-11.01 Y-36.62 Z4.9 F1920.0
+G1 X-11.01 Y-36.0 Z4.9 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-10.41 Y-36.0 Z4.9 F1920.0
+M101
+G1 X-10.41 Y-32.63 Z4.9 F1920.0
+G1 X-15.0 Y-32.63 Z4.9 F1920.0
+G1 X-15.0 Y-37.22 Z4.9 F1920.0
+G1 X-10.41 Y-37.22 Z4.9 F1920.0
+G1 X-10.41 Y-36.0 Z4.9 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-9.82 Y-36.0 Z4.9 F1920.0
+M101
+G1 X-9.82 Y-32.04 Z4.9 F1920.0
+G1 X-15.59 Y-32.04 Z4.9 F1920.0
+G1 X-15.59 Y-37.81 Z4.9 F1920.0
+G1 X-9.82 Y-37.81 Z4.9 F1920.0
+G1 X-9.82 Y-36.0 Z4.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-11.4 Y-36.0 Z4.9 F1920.0
+M101
+G1 X-14.01 Y-36.0 Z4.9 F1920.0
+G1 X-13.34 Y-35.33 Z4.9 F1920.0
+G1 X-12.06 Y-34.67 Z4.9 F1920.0
+G1 X-11.4 Y-34.0 Z4.9 F1920.0
+G1 X-14.01 Y-34.0 Z4.9 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-34.925 Y-19.05 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y-19.05 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y19.05 Z4.9 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y19.05 Z4.9 </boundaryPoint>)
+(<loop> outer )
+G1 X-30.06 Y-17.57 Z4.9 F1920.0
+M101
+G1 X-30.06 Y17.57 Z4.9 F1920.0
+G1 X-33.45 Y17.57 Z4.9 F1920.0
+G1 X-33.45 Y-17.57 Z4.9 F1920.0
+G1 X-30.06 Y-17.57 Z4.9 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-30.06 Y-18.17 Z4.9 F1920.0
+M101
+G1 X-29.46 Y-18.17 Z4.9 F1920.0
+G1 X-29.46 Y18.17 Z4.9 F1920.0
+G1 X-34.05 Y18.17 Z4.9 F1920.0
+G1 X-34.05 Y-18.17 Z4.9 F1920.0
+G1 X-30.06 Y-18.17 Z4.9 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-30.06 Y-18.76 Z4.9 F1920.0
+M101
+G1 X-28.87 Y-18.76 Z4.9 F1920.0
+G1 X-28.87 Y18.76 Z4.9 F1920.0
+G1 X-34.64 Y18.76 Z4.9 F1920.0
+G1 X-34.64 Y-18.76 Z4.9 F1920.0
+G1 X-30.06 Y-18.76 Z4.9 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-30.45 Y-16.67 Z4.9 F1920.0
+M101
+G1 X-33.06 Y-16.67 Z4.9 F1920.0
+G1 X-32.39 Y-16.0 Z4.9 F1920.0
+G1 X-33.06 Y-15.33 Z4.9 F1920.0
+G1 X-32.39 Y-14.67 Z4.9 F1920.0
+G1 X-33.06 Y-14.0 Z4.9 F1920.0
+G1 X-32.39 Y-13.33 Z4.9 F1920.0
+G1 X-31.11 Y-13.33 Z4.9 F1920.0
+G1 X-30.45 Y-12.0 Z4.9 F1920.0
+G1 X-31.11 Y-11.33 Z4.9 F1920.0
+G1 X-31.11 Y-10.67 Z4.9 F1920.0
+G1 X-30.45 Y-10.0 Z4.9 F1920.0
+G1 X-31.11 Y-9.33 Z4.9 F1920.0
+G1 X-32.39 Y-8.67 Z4.9 F1920.0
+G1 X-33.06 Y-9.33 Z4.9 F1920.0
+G1 X-32.39 Y-10.0 Z4.9 F1920.0
+G1 X-32.39 Y-11.33 Z4.9 F1920.0
+G1 X-33.06 Y-12.0 Z4.9 F1920.0
+M103
+G1 X-33.06 Y-6.67 Z4.9 F1920.0
+M101
+G1 X-30.45 Y-6.67 Z4.9 F1920.0
+M103
+G1 X-30.45 Y-1.33 Z4.9 F1920.0
+M101
+G1 X-31.11 Y-2.0 Z4.9 F1920.0
+G1 X-31.11 Y-2.67 Z4.9 F1920.0
+G1 X-30.45 Y-4.0 Z4.9 F1920.0
+G1 X-31.11 Y-4.67 Z4.9 F1920.0
+G1 X-31.11 Y-5.33 Z4.9 F1920.0
+G1 X-32.39 Y-5.33 Z4.9 F1920.0
+G1 X-33.06 Y-4.67 Z4.9 F1920.0
+G1 X-32.39 Y-4.0 Z4.9 F1920.0
+G1 X-32.39 Y-3.33 Z4.9 F1920.0
+G1 X-33.06 Y-2.67 Z4.9 F1920.0
+G1 X-32.58 Y-2.19 Z4.9 F1920.0
+G1 X-33.06 Y-2.0 Z4.9 F1920.0
+G1 X-32.8 Y-1.38 Z4.9 F1920.0
+G1 X-33.06 Y-1.33 Z4.9 F1920.0
+G1 X-32.39 Y-0.67 Z4.9 F1920.0
+G1 X-33.06 Y0.0 Z4.9 F1920.0
+G1 X-32.39 Y0.67 Z4.9 F1920.0
+G1 X-33.06 Y1.33 Z4.9 F1920.0
+G1 X-32.39 Y2.0 Z4.9 F1920.0
+G1 X-31.11 Y0.67 Z4.9 F1920.0
+G1 X-30.45 Y1.33 Z4.9 F1920.0
+G1 X-31.11 Y2.67 Z4.9 F1920.0
+G1 X-31.11 Y3.33 Z4.9 F1920.0
+G1 X-30.45 Y4.0 Z4.9 F1920.0
+G1 X-31.11 Y4.67 Z4.9 F1920.0
+G1 X-31.11 Y5.33 Z4.9 F1920.0
+G1 X-30.45 Y6.0 Z4.9 F1920.0
+G1 X-31.11 Y6.67 Z4.9 F1920.0
+G1 X-32.39 Y7.33 Z4.9 F1920.0
+G1 X-33.06 Y6.67 Z4.9 F1920.0
+G1 X-32.39 Y6.0 Z4.9 F1920.0
+G1 X-32.39 Y4.67 Z4.9 F1920.0
+G1 X-33.06 Y4.0 Z4.9 F1920.0
+M103
+G1 X-33.06 Y9.33 Z4.9 F1920.0
+M101
+G1 X-32.39 Y8.67 Z4.9 F1920.0
+G1 X-31.11 Y8.0 Z4.9 F1920.0
+G1 X-31.11 Y8.67 Z4.9 F1920.0
+G1 X-30.45 Y9.33 Z4.9 F1920.0
+G1 X-31.11 Y10.0 Z4.9 F1920.0
+G1 X-31.11 Y10.67 Z4.9 F1920.0
+G1 X-30.45 Y11.33 Z4.9 F1920.0
+G1 X-31.11 Y12.0 Z4.9 F1920.0
+G1 X-32.39 Y12.67 Z4.9 F1920.0
+G1 X-33.06 Y13.33 Z4.9 F1920.0
+G1 X-32.58 Y13.81 Z4.9 F1920.0
+G1 X-33.06 Y14.67 Z4.9 F1920.0
+G1 X-31.11 Y14.0 Z4.9 F1920.0
+G1 X-30.45 Y14.67 Z4.9 F1920.0
+G1 X-31.11 Y15.33 Z4.9 F1920.0
+G1 X-32.39 Y15.33 Z4.9 F1920.0
+G1 X-33.06 Y16.67 Z4.9 F1920.0
+G1 X-30.45 Y16.67 Z4.9 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 5.3 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-34.925 Y-19.05 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y-19.05 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y19.05 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y19.05 Z5.3 </boundaryPoint>)
+(<loop> outer )
+G1 X-30.06 Y16.67 Z5.3 F1920.0
+M101
+G1 X-30.06 Y17.57 Z5.3 F1920.0
+G1 X-33.45 Y17.57 Z5.3 F1920.0
+G1 X-33.45 Y-17.57 Z5.3 F1920.0
+G1 X-30.06 Y-17.57 Z5.3 F1920.0
+G1 X-30.06 Y16.67 Z5.3 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-29.46 Y16.67 Z5.3 F1920.0
+M101
+G1 X-29.46 Y18.17 Z5.3 F1920.0
+G1 X-34.05 Y18.17 Z5.3 F1920.0
+G1 X-34.05 Y-18.17 Z5.3 F1920.0
+G1 X-29.46 Y-18.17 Z5.3 F1920.0
+G1 X-29.46 Y16.67 Z5.3 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-28.87 Y16.67 Z5.3 F1920.0
+M101
+G1 X-28.87 Y18.76 Z5.3 F1920.0
+G1 X-34.64 Y18.76 Z5.3 F1920.0
+G1 X-34.64 Y-18.76 Z5.3 F1920.0
+G1 X-28.87 Y-18.76 Z5.3 F1920.0
+G1 X-28.87 Y16.67 Z5.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-30.67 Y-17.18 Z5.3 F1920.0
+M101
+G1 X-30.67 Y17.18 Z5.3 F1920.0
+G1 X-31.33 Y17.18 Z5.3 F1920.0
+G1 X-31.33 Y-17.18 Z5.3 F1920.0
+G1 X-32.67 Y-17.18 Z5.3 F1920.0
+G1 X-32.67 Y17.18 Z5.3 F1920.0
+G1 X-32.0 Y17.18 Z5.3 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-9.525 Y31.75 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y31.75 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y38.1 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y38.1 Z5.3 </boundaryPoint>)
+(<loop> outer )
+G1 X-8.05 Y33.23 Z5.3 F1920.0
+M101
+G1 X8.05 Y33.23 Z5.3 F1920.0
+G1 X8.05 Y36.62 Z5.3 F1920.0
+G1 X-8.05 Y36.62 Z5.3 F1920.0
+G1 X-8.05 Y33.23 Z5.3 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-8.65 Y33.23 Z5.3 F1920.0
+M101
+G1 X-8.65 Y32.63 Z5.3 F1920.0
+G1 X8.65 Y32.63 Z5.3 F1920.0
+G1 X8.65 Y37.22 Z5.3 F1920.0
+G1 X-8.65 Y37.22 Z5.3 F1920.0
+G1 X-8.65 Y33.23 Z5.3 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-9.24 Y33.23 Z5.3 F1920.0
+M101
+G1 X-9.24 Y32.04 Z5.3 F1920.0
+G1 X9.24 Y32.04 Z5.3 F1920.0
+G1 X9.24 Y37.81 Z5.3 F1920.0
+G1 X-9.24 Y37.81 Z5.3 F1920.0
+G1 X-9.24 Y33.23 Z5.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-5.33 Y33.62 Z5.3 F1920.0
+M101
+G1 X-7.33 Y33.62 Z5.3 F1920.0
+G1 X-7.33 Y36.23 Z5.3 F1920.0
+G1 X-3.33 Y36.23 Z5.3 F1920.0
+G1 X-4.0 Y34.67 Z5.3 F1920.0
+G1 X-4.67 Y33.62 Z5.3 F1920.0
+G1 X0.0 Y33.62 Z5.3 F1920.0
+G1 X-2.67 Y36.23 Z5.3 F1920.0
+G1 X2.0 Y36.23 Z5.3 F1920.0
+G1 X1.33 Y34.67 Z5.3 F1920.0
+G1 X0.67 Y33.62 Z5.3 F1920.0
+G1 X4.67 Y33.62 Z5.3 F1920.0
+G1 X2.67 Y36.23 Z5.3 F1920.0
+G1 X6.0 Y36.23 Z5.3 F1920.0
+G1 X5.33 Y33.62 Z5.3 F1920.0
+G1 X7.33 Y33.62 Z5.3 F1920.0
+G1 X7.33 Y36.23 Z5.3 F1920.0
+G1 X6.67 Y36.23 Z5.3 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-19.05 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y19.05 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y19.05 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-19.05 Z5.3 </boundaryPoint>)
+(<loop> outer )
+G1 X30.06 Y17.57 Z5.3 F1920.0
+M101
+G1 X30.06 Y-17.57 Z5.3 F1920.0
+G1 X33.45 Y-17.57 Z5.3 F1920.0
+G1 X33.45 Y17.57 Z5.3 F1920.0
+G1 X30.06 Y17.57 Z5.3 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X30.06 Y18.17 Z5.3 F1920.0
+M101
+G1 X29.46 Y18.17 Z5.3 F1920.0
+G1 X29.46 Y-18.17 Z5.3 F1920.0
+G1 X34.05 Y-18.17 Z5.3 F1920.0
+G1 X34.05 Y18.17 Z5.3 F1920.0
+G1 X30.06 Y18.17 Z5.3 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X30.06 Y18.76 Z5.3 F1920.0
+M101
+G1 X28.87 Y18.76 Z5.3 F1920.0
+G1 X28.87 Y-18.76 Z5.3 F1920.0
+G1 X34.64 Y-18.76 Z5.3 F1920.0
+G1 X34.64 Y18.76 Z5.3 F1920.0
+G1 X30.06 Y18.76 Z5.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X32.0 Y-17.18 Z5.3 F1920.0
+M101
+G1 X32.67 Y-17.18 Z5.3 F1920.0
+G1 X32.67 Y17.18 Z5.3 F1920.0
+G1 X30.67 Y17.18 Z5.3 F1920.0
+G1 X30.67 Y-17.18 Z5.3 F1920.0
+G1 X31.33 Y-17.18 Z5.3 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X9.525 Y-31.75 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y-38.1 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-38.1 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-31.75 Z5.3 </boundaryPoint>)
+(<loop> outer )
+G1 X14.4 Y-33.23 Z5.3 F1920.0
+M101
+G1 X11.01 Y-33.23 Z5.3 F1920.0
+G1 X11.01 Y-36.62 Z5.3 F1920.0
+G1 X14.4 Y-36.62 Z5.3 F1920.0
+G1 X14.4 Y-33.23 Z5.3 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X15.0 Y-33.23 Z5.3 F1920.0
+M101
+G1 X15.0 Y-32.63 Z5.3 F1920.0
+G1 X10.41 Y-32.63 Z5.3 F1920.0
+G1 X10.41 Y-37.22 Z5.3 F1920.0
+G1 X15.0 Y-37.22 Z5.3 F1920.0
+G1 X15.0 Y-33.23 Z5.3 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X15.59 Y-33.23 Z5.3 F1920.0
+M101
+G1 X15.59 Y-32.04 Z5.3 F1920.0
+G1 X9.82 Y-32.04 Z5.3 F1920.0
+G1 X9.82 Y-37.81 Z5.3 F1920.0
+G1 X15.59 Y-37.81 Z5.3 F1920.0
+G1 X15.59 Y-33.23 Z5.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X13.33 Y-33.62 Z5.3 F1920.0
+M101
+G1 X14.0 Y-33.62 Z5.3 F1920.0
+G1 X14.0 Y-36.23 Z5.3 F1920.0
+G1 X12.0 Y-36.23 Z5.3 F1920.0
+G1 X12.0 Y-33.62 Z5.3 F1920.0
+G1 X12.67 Y-33.62 Z5.3 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-15.875 Y-31.75 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X-15.875 Y-38.1 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-38.1 Z5.3 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-31.75 Z5.3 </boundaryPoint>)
+(<loop> outer )
+G1 X-11.01 Y-33.62 Z5.3 F1920.0
+M101
+G1 X-11.01 Y-33.23 Z5.3 F1920.0
+G1 X-14.4 Y-33.23 Z5.3 F1920.0
+G1 X-14.4 Y-36.62 Z5.3 F1920.0
+G1 X-11.01 Y-36.62 Z5.3 F1920.0
+G1 X-11.01 Y-33.62 Z5.3 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-10.41 Y-33.62 Z5.3 F1920.0
+M101
+G1 X-10.41 Y-32.63 Z5.3 F1920.0
+G1 X-15.0 Y-32.63 Z5.3 F1920.0
+G1 X-15.0 Y-37.22 Z5.3 F1920.0
+G1 X-10.41 Y-37.22 Z5.3 F1920.0
+G1 X-10.41 Y-33.62 Z5.3 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-9.82 Y-33.62 Z5.3 F1920.0
+M101
+G1 X-9.82 Y-32.04 Z5.3 F1920.0
+G1 X-15.59 Y-32.04 Z5.3 F1920.0
+G1 X-15.59 Y-37.81 Z5.3 F1920.0
+G1 X-9.82 Y-37.81 Z5.3 F1920.0
+G1 X-9.82 Y-33.62 Z5.3 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-12.0 Y-33.62 Z5.3 F1920.0
+M101
+G1 X-12.0 Y-36.23 Z5.3 F1920.0
+G1 X-12.67 Y-36.23 Z5.3 F1920.0
+G1 X-12.67 Y-33.62 Z5.3 F1920.0
+G1 X-14.0 Y-33.62 Z5.3 F1920.0
+G1 X-14.0 Y-36.23 Z5.3 F1920.0
+G1 X-13.33 Y-36.23 Z5.3 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 5.7 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-15.875 Y-31.75 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X-15.875 Y-38.1 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-38.1 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-31.75 Z5.7 </boundaryPoint>)
+(<loop> outer )
+G1 X-13.33 Y-36.62 Z5.7 F1920.0
+M101
+G1 X-11.01 Y-36.62 Z5.7 F1920.0
+G1 X-11.01 Y-33.23 Z5.7 F1920.0
+G1 X-14.4 Y-33.23 Z5.7 F1920.0
+G1 X-14.4 Y-36.62 Z5.7 F1920.0
+G1 X-13.33 Y-36.62 Z5.7 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-13.33 Y-37.22 Z5.7 F1920.0
+M101
+G1 X-10.41 Y-37.22 Z5.7 F1920.0
+G1 X-10.41 Y-32.63 Z5.7 F1920.0
+G1 X-15.0 Y-32.63 Z5.7 F1920.0
+G1 X-15.0 Y-37.22 Z5.7 F1920.0
+G1 X-13.33 Y-37.22 Z5.7 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-13.33 Y-37.81 Z5.7 F1920.0
+M101
+G1 X-9.82 Y-37.81 Z5.7 F1920.0
+G1 X-9.82 Y-32.04 Z5.7 F1920.0
+G1 X-15.59 Y-32.04 Z5.7 F1920.0
+G1 X-15.59 Y-37.81 Z5.7 F1920.0
+G1 X-13.33 Y-37.81 Z5.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-11.4 Y-36.0 Z5.7 F1920.0
+M101
+G1 X-14.01 Y-36.0 Z5.7 F1920.0
+G1 X-13.34 Y-35.33 Z5.7 F1920.0
+G1 X-12.06 Y-34.67 Z5.7 F1920.0
+G1 X-11.4 Y-34.0 Z5.7 F1920.0
+G1 X-14.01 Y-34.0 Z5.7 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-34.925 Y-19.05 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y-19.05 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y19.05 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y19.05 Z5.7 </boundaryPoint>)
+(<loop> outer )
+G1 X-30.06 Y-17.57 Z5.7 F1920.0
+M101
+G1 X-30.06 Y17.57 Z5.7 F1920.0
+G1 X-33.45 Y17.57 Z5.7 F1920.0
+G1 X-33.45 Y-17.57 Z5.7 F1920.0
+G1 X-30.06 Y-17.57 Z5.7 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-30.06 Y-18.17 Z5.7 F1920.0
+M101
+G1 X-29.46 Y-18.17 Z5.7 F1920.0
+G1 X-29.46 Y18.17 Z5.7 F1920.0
+G1 X-34.05 Y18.17 Z5.7 F1920.0
+G1 X-34.05 Y-18.17 Z5.7 F1920.0
+G1 X-30.06 Y-18.17 Z5.7 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-30.06 Y-18.76 Z5.7 F1920.0
+M101
+G1 X-28.87 Y-18.76 Z5.7 F1920.0
+G1 X-28.87 Y18.76 Z5.7 F1920.0
+G1 X-34.64 Y18.76 Z5.7 F1920.0
+G1 X-34.64 Y-18.76 Z5.7 F1920.0
+G1 X-30.06 Y-18.76 Z5.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-30.45 Y-16.67 Z5.7 F1920.0
+M101
+G1 X-33.06 Y-16.67 Z5.7 F1920.0
+G1 X-32.39 Y-16.0 Z5.7 F1920.0
+G1 X-33.06 Y-15.33 Z5.7 F1920.0
+G1 X-32.39 Y-14.67 Z5.7 F1920.0
+G1 X-33.06 Y-14.0 Z5.7 F1920.0
+G1 X-32.39 Y-13.33 Z5.7 F1920.0
+G1 X-31.11 Y-13.33 Z5.7 F1920.0
+G1 X-30.45 Y-12.0 Z5.7 F1920.0
+G1 X-31.11 Y-11.33 Z5.7 F1920.0
+G1 X-31.11 Y-10.67 Z5.7 F1920.0
+G1 X-30.45 Y-10.0 Z5.7 F1920.0
+G1 X-31.11 Y-9.33 Z5.7 F1920.0
+G1 X-32.39 Y-8.67 Z5.7 F1920.0
+G1 X-33.06 Y-9.33 Z5.7 F1920.0
+G1 X-32.39 Y-10.0 Z5.7 F1920.0
+G1 X-32.39 Y-11.33 Z5.7 F1920.0
+G1 X-33.06 Y-12.0 Z5.7 F1920.0
+M103
+G1 X-33.06 Y-6.67 Z5.7 F1920.0
+M101
+G1 X-30.45 Y-6.67 Z5.7 F1920.0
+M103
+G1 X-30.45 Y-1.33 Z5.7 F1920.0
+M101
+G1 X-31.11 Y-2.0 Z5.7 F1920.0
+G1 X-31.11 Y-2.67 Z5.7 F1920.0
+G1 X-30.45 Y-4.0 Z5.7 F1920.0
+G1 X-31.11 Y-4.67 Z5.7 F1920.0
+G1 X-31.11 Y-5.33 Z5.7 F1920.0
+G1 X-32.39 Y-5.33 Z5.7 F1920.0
+G1 X-33.06 Y-4.67 Z5.7 F1920.0
+G1 X-32.39 Y-4.0 Z5.7 F1920.0
+G1 X-32.39 Y-3.33 Z5.7 F1920.0
+G1 X-33.06 Y-2.67 Z5.7 F1920.0
+G1 X-32.58 Y-2.19 Z5.7 F1920.0
+G1 X-33.06 Y-2.0 Z5.7 F1920.0
+G1 X-32.8 Y-1.38 Z5.7 F1920.0
+G1 X-33.06 Y-1.33 Z5.7 F1920.0
+G1 X-32.39 Y-0.67 Z5.7 F1920.0
+G1 X-33.06 Y0.0 Z5.7 F1920.0
+G1 X-32.39 Y0.67 Z5.7 F1920.0
+G1 X-33.06 Y1.33 Z5.7 F1920.0
+G1 X-32.39 Y2.0 Z5.7 F1920.0
+G1 X-31.11 Y0.67 Z5.7 F1920.0
+G1 X-30.45 Y1.33 Z5.7 F1920.0
+G1 X-31.11 Y2.67 Z5.7 F1920.0
+G1 X-31.11 Y3.33 Z5.7 F1920.0
+G1 X-30.45 Y4.0 Z5.7 F1920.0
+G1 X-31.11 Y4.67 Z5.7 F1920.0
+G1 X-31.11 Y5.33 Z5.7 F1920.0
+G1 X-30.45 Y6.0 Z5.7 F1920.0
+G1 X-31.11 Y6.67 Z5.7 F1920.0
+G1 X-32.39 Y7.33 Z5.7 F1920.0
+G1 X-33.06 Y6.67 Z5.7 F1920.0
+G1 X-32.39 Y6.0 Z5.7 F1920.0
+G1 X-32.39 Y4.67 Z5.7 F1920.0
+G1 X-33.06 Y4.0 Z5.7 F1920.0
+M103
+G1 X-33.06 Y9.33 Z5.7 F1920.0
+M101
+G1 X-32.39 Y8.67 Z5.7 F1920.0
+G1 X-31.11 Y8.0 Z5.7 F1920.0
+G1 X-31.11 Y8.67 Z5.7 F1920.0
+G1 X-30.45 Y9.33 Z5.7 F1920.0
+G1 X-31.11 Y10.0 Z5.7 F1920.0
+G1 X-31.11 Y10.67 Z5.7 F1920.0
+G1 X-30.45 Y11.33 Z5.7 F1920.0
+G1 X-31.11 Y12.0 Z5.7 F1920.0
+G1 X-32.39 Y12.67 Z5.7 F1920.0
+G1 X-33.06 Y13.33 Z5.7 F1920.0
+G1 X-32.58 Y13.81 Z5.7 F1920.0
+G1 X-33.06 Y14.67 Z5.7 F1920.0
+G1 X-31.11 Y14.0 Z5.7 F1920.0
+G1 X-30.45 Y14.67 Z5.7 F1920.0
+G1 X-31.11 Y15.33 Z5.7 F1920.0
+G1 X-32.39 Y15.33 Z5.7 F1920.0
+G1 X-33.06 Y16.67 Z5.7 F1920.0
+G1 X-30.45 Y16.67 Z5.7 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-9.525 Y31.75 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y31.75 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y38.1 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y38.1 Z5.7 </boundaryPoint>)
+(<loop> outer )
+G1 X-8.05 Y33.23 Z5.7 F1920.0
+M101
+G1 X8.05 Y33.23 Z5.7 F1920.0
+G1 X8.05 Y36.62 Z5.7 F1920.0
+G1 X-8.05 Y36.62 Z5.7 F1920.0
+G1 X-8.05 Y33.23 Z5.7 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-8.65 Y33.23 Z5.7 F1920.0
+M101
+G1 X-8.65 Y32.63 Z5.7 F1920.0
+G1 X8.65 Y32.63 Z5.7 F1920.0
+G1 X8.65 Y37.22 Z5.7 F1920.0
+G1 X-8.65 Y37.22 Z5.7 F1920.0
+G1 X-8.65 Y33.23 Z5.7 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-9.24 Y33.23 Z5.7 F1920.0
+M101
+G1 X-9.24 Y32.04 Z5.7 F1920.0
+G1 X9.24 Y32.04 Z5.7 F1920.0
+G1 X9.24 Y37.81 Z5.7 F1920.0
+G1 X-9.24 Y37.81 Z5.7 F1920.0
+G1 X-9.24 Y33.23 Z5.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-7.66 Y34.0 Z5.7 F1920.0
+M101
+G1 X-6.99 Y34.67 Z5.7 F1920.0
+G1 X6.99 Y34.67 Z5.7 F1920.0
+G1 X7.66 Y34.0 Z5.7 F1920.0
+M103
+G1 X7.66 Y36.0 Z5.7 F1920.0
+M101
+G1 X-7.66 Y36.0 Z5.7 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-19.05 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y19.05 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y19.05 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-19.05 Z5.7 </boundaryPoint>)
+(<loop> outer )
+G1 X30.06 Y17.57 Z5.7 F1920.0
+M101
+G1 X30.06 Y-17.57 Z5.7 F1920.0
+G1 X33.45 Y-17.57 Z5.7 F1920.0
+G1 X33.45 Y17.57 Z5.7 F1920.0
+G1 X30.06 Y17.57 Z5.7 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X30.06 Y18.17 Z5.7 F1920.0
+M101
+G1 X29.46 Y18.17 Z5.7 F1920.0
+G1 X29.46 Y-18.17 Z5.7 F1920.0
+G1 X34.05 Y-18.17 Z5.7 F1920.0
+G1 X34.05 Y18.17 Z5.7 F1920.0
+G1 X30.06 Y18.17 Z5.7 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X30.06 Y18.76 Z5.7 F1920.0
+M101
+G1 X28.87 Y18.76 Z5.7 F1920.0
+G1 X28.87 Y-18.76 Z5.7 F1920.0
+G1 X34.64 Y-18.76 Z5.7 F1920.0
+G1 X34.64 Y18.76 Z5.7 F1920.0
+G1 X30.06 Y18.76 Z5.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X30.45 Y16.67 Z5.7 F1920.0
+M101
+G1 X33.06 Y16.67 Z5.7 F1920.0
+G1 X32.39 Y16.0 Z5.7 F1920.0
+G1 X30.86 Y15.11 Z5.7 F1920.0
+G1 X30.47 Y15.11 Z5.7 F1920.0
+G1 X30.45 Y14.67 Z5.7 F1920.0
+G1 X33.06 Y14.67 Z5.7 F1920.0
+G1 X32.39 Y14.0 Z5.7 F1920.0
+G1 X33.06 Y13.33 Z5.7 F1920.0
+G1 X32.46 Y12.37 Z5.7 F1920.0
+G1 X31.11 Y13.33 Z5.7 F1920.0
+G1 X30.45 Y12.67 Z5.7 F1920.0
+G1 X31.11 Y12.0 Z5.7 F1920.0
+G1 X30.45 Y11.33 Z5.7 F1920.0
+G1 X31.11 Y10.67 Z5.7 F1920.0
+G1 X31.11 Y10.0 Z5.7 F1920.0
+G1 X30.45 Y9.33 Z5.7 F1920.0
+G1 X31.11 Y8.67 Z5.7 F1920.0
+G1 X30.47 Y8.0 Z5.7 F1920.0
+G1 X30.45 Y7.33 Z5.7 F1920.0
+G1 X30.86 Y8.0 Z5.7 F1920.0
+G1 X32.39 Y8.0 Z5.7 F1920.0
+G1 X33.06 Y9.33 Z5.7 F1920.0
+M103
+G1 X33.06 Y4.0 Z5.7 F1920.0
+M101
+G1 X32.39 Y4.67 Z5.7 F1920.0
+G1 X32.39 Y5.33 Z5.7 F1920.0
+G1 X33.06 Y6.0 Z5.7 F1920.0
+G1 X32.39 Y6.67 Z5.7 F1920.0
+G1 X31.11 Y6.67 Z5.7 F1920.0
+G1 X30.45 Y6.0 Z5.7 F1920.0
+G1 X30.86 Y4.44 Z5.7 F1920.0
+G1 X30.47 Y4.44 Z5.7 F1920.0
+G1 X30.45 Y4.0 Z5.7 F1920.0
+G1 X31.08 Y1.53 Z5.7 F1920.0
+G1 X30.66 Y0.63 Z5.7 F1920.0
+G1 X32.39 Y0.67 Z5.7 F1920.0
+G1 X33.06 Y0.0 Z5.7 F1920.0
+G1 X32.39 Y-0.67 Z5.7 F1920.0
+G1 X33.06 Y-1.33 Z5.7 F1920.0
+G1 X32.8 Y-1.38 Z5.7 F1920.0
+G1 X32.39 Y-3.33 Z5.7 F1920.0
+G1 X32.39 Y-4.0 Z5.7 F1920.0
+G1 X33.06 Y-4.67 Z5.7 F1920.0
+G1 X32.39 Y-5.33 Z5.7 F1920.0
+G1 X32.46 Y-4.97 Z5.7 F1920.0
+G1 X30.86 Y-2.67 Z5.7 F1920.0
+G1 X30.45 Y-3.33 Z5.7 F1920.0
+G1 X30.47 Y-2.67 Z5.7 F1920.0
+G1 X31.11 Y-2.0 Z5.7 F1920.0
+G1 X30.45 Y-1.33 Z5.7 F1920.0
+M103
+G1 X30.45 Y-6.67 Z5.7 F1920.0
+M101
+G1 X30.47 Y-6.22 Z5.7 F1920.0
+G1 X32.39 Y-6.0 Z5.7 F1920.0
+G1 X33.06 Y-6.67 Z5.7 F1920.0
+M103
+G1 X33.06 Y-12.0 Z5.7 F1920.0
+M101
+G1 X32.39 Y-11.33 Z5.7 F1920.0
+G1 X32.39 Y-10.74 Z5.7 F1920.0
+G1 X32.98 Y-10.0 Z5.7 F1920.0
+G1 X32.39 Y-8.63 Z5.7 F1920.0
+G1 X31.08 Y-9.12 Z5.7 F1920.0
+G1 X30.45 Y-8.67 Z5.7 F1920.0
+G1 X30.92 Y-10.2 Z5.7 F1920.0
+G1 X31.11 Y-11.33 Z5.7 F1920.0
+G1 X30.45 Y-12.0 Z5.7 F1920.0
+G1 X31.11 Y-12.67 Z5.7 F1920.0
+G1 X30.47 Y-13.33 Z5.7 F1920.0
+G1 X30.86 Y-13.33 Z5.7 F1920.0
+G1 X30.45 Y-14.0 Z5.7 F1920.0
+G1 X31.11 Y-14.67 Z5.7 F1920.0
+G1 X30.45 Y-15.33 Z5.7 F1920.0
+G1 X33.06 Y-14.67 Z5.7 F1920.0
+G1 X32.39 Y-15.33 Z5.7 F1920.0
+G1 X32.39 Y-16.0 Z5.7 F1920.0
+G1 X33.06 Y-16.67 Z5.7 F1920.0
+G1 X30.45 Y-16.67 Z5.7 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X9.525 Y-31.75 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y-38.1 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-38.1 Z5.7 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-31.75 Z5.7 </boundaryPoint>)
+(<loop> outer )
+G1 X14.4 Y-33.23 Z5.7 F1920.0
+M101
+G1 X11.01 Y-33.23 Z5.7 F1920.0
+G1 X11.01 Y-36.62 Z5.7 F1920.0
+G1 X14.4 Y-36.62 Z5.7 F1920.0
+G1 X14.4 Y-33.23 Z5.7 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X15.0 Y-33.23 Z5.7 F1920.0
+M101
+G1 X15.0 Y-32.63 Z5.7 F1920.0
+G1 X10.41 Y-32.63 Z5.7 F1920.0
+G1 X10.41 Y-37.22 Z5.7 F1920.0
+G1 X15.0 Y-37.22 Z5.7 F1920.0
+G1 X15.0 Y-33.23 Z5.7 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X15.59 Y-33.23 Z5.7 F1920.0
+M101
+G1 X15.59 Y-32.04 Z5.7 F1920.0
+G1 X9.82 Y-32.04 Z5.7 F1920.0
+G1 X9.82 Y-37.81 Z5.7 F1920.0
+G1 X15.59 Y-37.81 Z5.7 F1920.0
+G1 X15.59 Y-33.23 Z5.7 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X14.01 Y-34.0 Z5.7 F1920.0
+M101
+G1 X11.4 Y-34.0 Z5.7 F1920.0
+G1 X12.06 Y-34.67 Z5.7 F1920.0
+G1 X13.34 Y-35.33 Z5.7 F1920.0
+G1 X14.01 Y-36.0 Z5.7 F1920.0
+G1 X11.4 Y-36.0 Z5.7 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 6.1 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X9.525 Y-31.75 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y-38.1 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-38.1 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-31.75 Z6.1 </boundaryPoint>)
+(<loop> outer )
+G1 X11.01 Y-36.0 Z6.1 F1920.0
+M101
+G1 X11.01 Y-36.62 Z6.1 F1920.0
+G1 X14.4 Y-36.62 Z6.1 F1920.0
+G1 X14.4 Y-33.23 Z6.1 F1920.0
+G1 X11.01 Y-33.23 Z6.1 F1920.0
+G1 X11.01 Y-36.0 Z6.1 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X10.41 Y-36.0 Z6.1 F1920.0
+M101
+G1 X10.41 Y-37.22 Z6.1 F1920.0
+G1 X15.0 Y-37.22 Z6.1 F1920.0
+G1 X15.0 Y-32.63 Z6.1 F1920.0
+G1 X10.41 Y-32.63 Z6.1 F1920.0
+G1 X10.41 Y-36.0 Z6.1 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X9.82 Y-36.0 Z6.1 F1920.0
+M101
+G1 X9.82 Y-37.81 Z6.1 F1920.0
+G1 X15.59 Y-37.81 Z6.1 F1920.0
+G1 X15.59 Y-32.04 Z6.1 F1920.0
+G1 X9.82 Y-32.04 Z6.1 F1920.0
+G1 X9.82 Y-36.0 Z6.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X11.4 Y-36.23 Z6.1 F1920.0
+M101
+G1 X11.4 Y-33.62 Z6.1 F1920.0
+G1 X12.0 Y-33.62 Z6.1 F1920.0
+G1 X12.0 Y-36.23 Z6.1 F1920.0
+G1 X12.6 Y-36.23 Z6.1 F1920.0
+G1 X12.6 Y-33.62 Z6.1 F1920.0
+G1 X13.2 Y-33.62 Z6.1 F1920.0
+G1 X13.2 Y-36.23 Z6.1 F1920.0
+G1 X13.8 Y-36.23 Z6.1 F1920.0
+G1 X13.8 Y-33.62 Z6.1 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-19.05 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y19.05 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y19.05 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-19.05 Z6.1 </boundaryPoint>)
+(<loop> outer )
+G1 X30.06 Y-17.57 Z6.1 F1920.0
+M101
+G1 X33.45 Y-17.57 Z6.1 F1920.0
+G1 X33.45 Y17.57 Z6.1 F1920.0
+G1 X30.06 Y17.57 Z6.1 F1920.0
+G1 X30.06 Y-17.57 Z6.1 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X30.06 Y-18.17 Z6.1 F1920.0
+M101
+G1 X34.05 Y-18.17 Z6.1 F1920.0
+G1 X34.05 Y18.17 Z6.1 F1920.0
+G1 X29.46 Y18.17 Z6.1 F1920.0
+G1 X29.46 Y-18.17 Z6.1 F1920.0
+G1 X30.06 Y-18.17 Z6.1 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X30.06 Y-18.76 Z6.1 F1920.0
+M101
+G1 X34.64 Y-18.76 Z6.1 F1920.0
+G1 X34.64 Y18.76 Z6.1 F1920.0
+G1 X28.87 Y18.76 Z6.1 F1920.0
+G1 X28.87 Y-18.76 Z6.1 F1920.0
+G1 X30.06 Y-18.76 Z6.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X33.0 Y-17.18 Z6.1 F1920.0
+M101
+G1 X33.0 Y17.18 Z6.1 F1920.0
+G1 X32.4 Y17.18 Z6.1 F1920.0
+G1 X32.4 Y-17.18 Z6.1 F1920.0
+G1 X31.8 Y-17.18 Z6.1 F1920.0
+G1 X31.8 Y17.18 Z6.1 F1920.0
+G1 X31.2 Y17.18 Z6.1 F1920.0
+G1 X31.2 Y-17.18 Z6.1 F1920.0
+G1 X30.6 Y-17.18 Z6.1 F1920.0
+G1 X30.6 Y17.18 Z6.1 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-9.525 Y31.75 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y31.75 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y38.1 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y38.1 Z6.1 </boundaryPoint>)
+(<loop> outer )
+G1 X8.05 Y33.23 Z6.1 F1920.0
+M101
+G1 X8.05 Y36.62 Z6.1 F1920.0
+G1 X-8.05 Y36.62 Z6.1 F1920.0
+G1 X-8.05 Y33.23 Z6.1 F1920.0
+G1 X8.05 Y33.23 Z6.1 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X8.65 Y33.23 Z6.1 F1920.0
+M101
+G1 X8.65 Y37.22 Z6.1 F1920.0
+G1 X-8.65 Y37.22 Z6.1 F1920.0
+G1 X-8.65 Y32.63 Z6.1 F1920.0
+G1 X8.65 Y32.63 Z6.1 F1920.0
+G1 X8.65 Y33.23 Z6.1 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X9.24 Y33.23 Z6.1 F1920.0
+M101
+G1 X9.24 Y37.81 Z6.1 F1920.0
+G1 X-9.24 Y37.81 Z6.1 F1920.0
+G1 X-9.24 Y32.04 Z6.1 F1920.0
+G1 X9.24 Y32.04 Z6.1 F1920.0
+G1 X9.24 Y33.23 Z6.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X7.2 Y33.62 Z6.1 F1920.0
+M101
+G1 X7.2 Y36.23 Z6.1 F1920.0
+G1 X6.6 Y36.23 Z6.1 F1920.0
+G1 X6.6 Y33.62 Z6.1 F1920.0
+G1 X6.0 Y33.62 Z6.1 F1920.0
+G1 X6.0 Y36.23 Z6.1 F1920.0
+G1 X5.4 Y36.23 Z6.1 F1920.0
+G1 X5.4 Y33.62 Z6.1 F1920.0
+G1 X4.8 Y33.62 Z6.1 F1920.0
+G1 X4.8 Y36.23 Z6.1 F1920.0
+G1 X4.2 Y36.23 Z6.1 F1920.0
+G1 X4.2 Y33.62 Z6.1 F1920.0
+G1 X3.6 Y33.62 Z6.1 F1920.0
+G1 X3.6 Y36.23 Z6.1 F1920.0
+G1 X3.0 Y36.23 Z6.1 F1920.0
+G1 X3.0 Y33.62 Z6.1 F1920.0
+G1 X2.4 Y33.62 Z6.1 F1920.0
+G1 X2.4 Y36.23 Z6.1 F1920.0
+G1 X1.8 Y36.23 Z6.1 F1920.0
+G1 X1.8 Y33.62 Z6.1 F1920.0
+G1 X1.2 Y33.62 Z6.1 F1920.0
+G1 X1.2 Y36.23 Z6.1 F1920.0
+G1 X0.6 Y36.23 Z6.1 F1920.0
+G1 X0.6 Y33.62 Z6.1 F1920.0
+G1 X0.0 Y33.62 Z6.1 F1920.0
+G1 X0.0 Y36.23 Z6.1 F1920.0
+G1 X-0.6 Y36.23 Z6.1 F1920.0
+G1 X-0.6 Y33.62 Z6.1 F1920.0
+G1 X-1.2 Y33.62 Z6.1 F1920.0
+G1 X-1.2 Y36.23 Z6.1 F1920.0
+G1 X-1.8 Y36.23 Z6.1 F1920.0
+G1 X-1.8 Y33.62 Z6.1 F1920.0
+G1 X-2.4 Y33.62 Z6.1 F1920.0
+G1 X-2.4 Y36.23 Z6.1 F1920.0
+G1 X-3.0 Y36.23 Z6.1 F1920.0
+G1 X-3.0 Y33.62 Z6.1 F1920.0
+G1 X-3.6 Y33.62 Z6.1 F1920.0
+G1 X-3.6 Y36.23 Z6.1 F1920.0
+G1 X-4.2 Y36.23 Z6.1 F1920.0
+G1 X-4.2 Y33.62 Z6.1 F1920.0
+G1 X-4.8 Y33.62 Z6.1 F1920.0
+G1 X-4.8 Y36.23 Z6.1 F1920.0
+G1 X-5.4 Y36.23 Z6.1 F1920.0
+G1 X-5.4 Y33.62 Z6.1 F1920.0
+G1 X-6.0 Y33.62 Z6.1 F1920.0
+G1 X-6.0 Y36.23 Z6.1 F1920.0
+G1 X-6.6 Y36.23 Z6.1 F1920.0
+G1 X-6.6 Y33.62 Z6.1 F1920.0
+G1 X-7.2 Y33.62 Z6.1 F1920.0
+G1 X-7.2 Y36.23 Z6.1 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-34.925 Y-19.05 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y-19.05 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y19.05 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y19.05 Z6.1 </boundaryPoint>)
+(<loop> outer )
+G1 X-30.06 Y17.57 Z6.1 F1920.0
+M101
+G1 X-33.45 Y17.57 Z6.1 F1920.0
+G1 X-33.45 Y-17.57 Z6.1 F1920.0
+G1 X-30.06 Y-17.57 Z6.1 F1920.0
+G1 X-30.06 Y17.57 Z6.1 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-30.06 Y18.17 Z6.1 F1920.0
+M101
+G1 X-34.05 Y18.17 Z6.1 F1920.0
+G1 X-34.05 Y-18.17 Z6.1 F1920.0
+G1 X-29.46 Y-18.17 Z6.1 F1920.0
+G1 X-29.46 Y18.17 Z6.1 F1920.0
+G1 X-30.06 Y18.17 Z6.1 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-30.06 Y18.76 Z6.1 F1920.0
+M101
+G1 X-34.64 Y18.76 Z6.1 F1920.0
+G1 X-34.64 Y-18.76 Z6.1 F1920.0
+G1 X-28.87 Y-18.76 Z6.1 F1920.0
+G1 X-28.87 Y18.76 Z6.1 F1920.0
+G1 X-30.06 Y18.76 Z6.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-30.6 Y17.18 Z6.1 F1920.0
+M101
+G1 X-30.6 Y-17.18 Z6.1 F1920.0
+G1 X-31.2 Y-17.18 Z6.1 F1920.0
+G1 X-31.2 Y17.18 Z6.1 F1920.0
+G1 X-31.8 Y17.18 Z6.1 F1920.0
+G1 X-31.8 Y-17.18 Z6.1 F1920.0
+G1 X-32.4 Y-17.18 Z6.1 F1920.0
+G1 X-32.4 Y17.18 Z6.1 F1920.0
+G1 X-33.0 Y17.18 Z6.1 F1920.0
+G1 X-33.0 Y-17.18 Z6.1 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-15.875 Y-31.75 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X-15.875 Y-38.1 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-38.1 Z6.1 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-31.75 Z6.1 </boundaryPoint>)
+(<loop> outer )
+G1 X-14.4 Y-33.23 Z6.1 F1920.0
+M101
+G1 X-14.4 Y-36.62 Z6.1 F1920.0
+G1 X-11.01 Y-36.62 Z6.1 F1920.0
+G1 X-11.01 Y-33.23 Z6.1 F1920.0
+G1 X-14.4 Y-33.23 Z6.1 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-15.0 Y-33.23 Z6.1 F1920.0
+M101
+G1 X-15.0 Y-37.22 Z6.1 F1920.0
+G1 X-10.41 Y-37.22 Z6.1 F1920.0
+G1 X-10.41 Y-32.63 Z6.1 F1920.0
+G1 X-15.0 Y-32.63 Z6.1 F1920.0
+G1 X-15.0 Y-33.23 Z6.1 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-15.59 Y-33.23 Z6.1 F1920.0
+M101
+G1 X-15.59 Y-37.81 Z6.1 F1920.0
+G1 X-9.82 Y-37.81 Z6.1 F1920.0
+G1 X-9.82 Y-32.04 Z6.1 F1920.0
+G1 X-15.59 Y-32.04 Z6.1 F1920.0
+G1 X-15.59 Y-33.23 Z6.1 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-13.8 Y-33.62 Z6.1 F1920.0
+M101
+G1 X-13.8 Y-36.23 Z6.1 F1920.0
+G1 X-13.2 Y-36.23 Z6.1 F1920.0
+G1 X-13.2 Y-33.62 Z6.1 F1920.0
+G1 X-12.6 Y-33.62 Z6.1 F1920.0
+G1 X-12.6 Y-36.23 Z6.1 F1920.0
+G1 X-12.0 Y-36.23 Z6.1 F1920.0
+G1 X-12.0 Y-33.62 Z6.1 F1920.0
+G1 X-11.4 Y-33.62 Z6.1 F1920.0
+G1 X-11.4 Y-36.23 Z6.1 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(<layer> 6.5 )
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-15.875 Y-31.75 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X-15.875 Y-38.1 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-38.1 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y-31.75 Z6.5 </boundaryPoint>)
+(<loop> outer )
+G1 X-11.4 Y-36.62 Z6.5 F1920.0
+M101
+G1 X-11.01 Y-36.62 Z6.5 F1920.0
+G1 X-11.01 Y-33.23 Z6.5 F1920.0
+G1 X-14.4 Y-33.23 Z6.5 F1920.0
+G1 X-14.4 Y-36.62 Z6.5 F1920.0
+G1 X-11.4 Y-36.62 Z6.5 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-11.4 Y-37.22 Z6.5 F1920.0
+M101
+G1 X-10.41 Y-37.22 Z6.5 F1920.0
+G1 X-10.41 Y-32.63 Z6.5 F1920.0
+G1 X-15.0 Y-32.63 Z6.5 F1920.0
+G1 X-15.0 Y-37.22 Z6.5 F1920.0
+G1 X-11.4 Y-37.22 Z6.5 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-11.4 Y-37.81 Z6.5 F1920.0
+M101
+G1 X-9.82 Y-37.81 Z6.5 F1920.0
+G1 X-9.82 Y-32.04 Z6.5 F1920.0
+G1 X-15.59 Y-32.04 Z6.5 F1920.0
+G1 X-15.59 Y-37.81 Z6.5 F1920.0
+G1 X-11.4 Y-37.81 Z6.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-11.4 Y-36.0 Z6.5 F1920.0
+M101
+G1 X-14.01 Y-36.0 Z6.5 F1920.0
+M103
+G1 X-14.01 Y-35.4 Z6.5 F1920.0
+M101
+G1 X-11.4 Y-35.4 Z6.5 F1920.0
+M103
+G1 X-11.4 Y-34.8 Z6.5 F1920.0
+M101
+G1 X-14.01 Y-34.8 Z6.5 F1920.0
+M103
+G1 X-14.01 Y-34.2 Z6.5 F1920.0
+M101
+G1 X-11.4 Y-34.2 Z6.5 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X9.525 Y-31.75 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y-38.1 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-38.1 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X15.875 Y-31.75 Z6.5 </boundaryPoint>)
+(<loop> outer )
+G1 X11.01 Y-34.2 Z6.5 F1920.0
+M101
+G1 X11.01 Y-36.62 Z6.5 F1920.0
+G1 X14.4 Y-36.62 Z6.5 F1920.0
+G1 X14.4 Y-33.23 Z6.5 F1920.0
+G1 X11.01 Y-33.23 Z6.5 F1920.0
+G1 X11.01 Y-34.2 Z6.5 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X10.41 Y-34.2 Z6.5 F1920.0
+M101
+G1 X10.41 Y-37.22 Z6.5 F1920.0
+G1 X15.0 Y-37.22 Z6.5 F1920.0
+G1 X15.0 Y-32.63 Z6.5 F1920.0
+G1 X10.41 Y-32.63 Z6.5 F1920.0
+G1 X10.41 Y-34.2 Z6.5 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X9.82 Y-34.2 Z6.5 F1920.0
+M101
+G1 X9.82 Y-37.81 Z6.5 F1920.0
+G1 X15.59 Y-37.81 Z6.5 F1920.0
+G1 X15.59 Y-32.04 Z6.5 F1920.0
+G1 X9.82 Y-32.04 Z6.5 F1920.0
+G1 X9.82 Y-34.2 Z6.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X14.01 Y-34.2 Z6.5 F1920.0
+M101
+G1 X11.4 Y-34.2 Z6.5 F1920.0
+M103
+G1 X11.4 Y-34.8 Z6.5 F1920.0
+M101
+G1 X14.01 Y-34.8 Z6.5 F1920.0
+M103
+G1 X14.01 Y-35.4 Z6.5 F1920.0
+M101
+G1 X11.4 Y-35.4 Z6.5 F1920.0
+M103
+G1 X11.4 Y-36.0 Z6.5 F1920.0
+M101
+G1 X14.01 Y-36.0 Z6.5 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X34.925 Y-19.05 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X34.925 Y19.05 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y19.05 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X28.575 Y-19.05 Z6.5 </boundaryPoint>)
+(<loop> outer )
+G1 X30.06 Y-17.57 Z6.5 F1920.0
+M101
+G1 X33.45 Y-17.57 Z6.5 F1920.0
+G1 X33.45 Y17.57 Z6.5 F1920.0
+G1 X30.06 Y17.57 Z6.5 F1920.0
+G1 X30.06 Y-17.57 Z6.5 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X30.06 Y-18.17 Z6.5 F1920.0
+M101
+G1 X34.05 Y-18.17 Z6.5 F1920.0
+G1 X34.05 Y18.17 Z6.5 F1920.0
+G1 X29.46 Y18.17 Z6.5 F1920.0
+G1 X29.46 Y-18.17 Z6.5 F1920.0
+G1 X30.06 Y-18.17 Z6.5 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X30.06 Y-18.76 Z6.5 F1920.0
+M101
+G1 X34.64 Y-18.76 Z6.5 F1920.0
+G1 X34.64 Y18.76 Z6.5 F1920.0
+G1 X28.87 Y18.76 Z6.5 F1920.0
+G1 X28.87 Y-18.76 Z6.5 F1920.0
+G1 X30.06 Y-18.76 Z6.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X30.45 Y-16.8 Z6.5 F1920.0
+M101
+G1 X33.06 Y-16.8 Z6.5 F1920.0
+M103
+G1 X33.06 Y-16.2 Z6.5 F1920.0
+M101
+G1 X30.45 Y-16.2 Z6.5 F1920.0
+M103
+G1 X30.45 Y-15.6 Z6.5 F1920.0
+M101
+G1 X33.06 Y-15.6 Z6.5 F1920.0
+M103
+G1 X33.06 Y-15.0 Z6.5 F1920.0
+M101
+G1 X30.45 Y-15.0 Z6.5 F1920.0
+M103
+G1 X30.45 Y-14.4 Z6.5 F1920.0
+M101
+G1 X33.06 Y-14.4 Z6.5 F1920.0
+M103
+G1 X33.06 Y-13.8 Z6.5 F1920.0
+M101
+G1 X30.45 Y-13.8 Z6.5 F1920.0
+M103
+G1 X30.45 Y-13.2 Z6.5 F1920.0
+M101
+G1 X33.06 Y-13.2 Z6.5 F1920.0
+M103
+G1 X33.06 Y-12.6 Z6.5 F1920.0
+M101
+G1 X30.45 Y-12.6 Z6.5 F1920.0
+M103
+G1 X30.45 Y-12.0 Z6.5 F1920.0
+M101
+G1 X33.06 Y-12.0 Z6.5 F1920.0
+M103
+G1 X33.06 Y-11.4 Z6.5 F1920.0
+M101
+G1 X30.45 Y-11.4 Z6.5 F1920.0
+M103
+G1 X30.45 Y-10.8 Z6.5 F1920.0
+M101
+G1 X33.06 Y-10.8 Z6.5 F1920.0
+M103
+G1 X33.06 Y-10.2 Z6.5 F1920.0
+M101
+G1 X30.45 Y-10.2 Z6.5 F1920.0
+M103
+G1 X30.45 Y-9.6 Z6.5 F1920.0
+M101
+G1 X33.06 Y-9.6 Z6.5 F1920.0
+M103
+G1 X33.06 Y-9.0 Z6.5 F1920.0
+M101
+G1 X30.45 Y-9.0 Z6.5 F1920.0
+M103
+G1 X30.45 Y-8.4 Z6.5 F1920.0
+M101
+G1 X33.06 Y-8.4 Z6.5 F1920.0
+M103
+G1 X33.06 Y-7.8 Z6.5 F1920.0
+M101
+G1 X30.45 Y-7.8 Z6.5 F1920.0
+M103
+G1 X30.45 Y-7.2 Z6.5 F1920.0
+M101
+G1 X33.06 Y-7.2 Z6.5 F1920.0
+M103
+G1 X33.06 Y-6.6 Z6.5 F1920.0
+M101
+G1 X30.45 Y-6.6 Z6.5 F1920.0
+M103
+G1 X30.45 Y-6.0 Z6.5 F1920.0
+M101
+G1 X33.06 Y-6.0 Z6.5 F1920.0
+M103
+G1 X33.06 Y-5.4 Z6.5 F1920.0
+M101
+G1 X30.45 Y-5.4 Z6.5 F1920.0
+M103
+G1 X30.45 Y-4.8 Z6.5 F1920.0
+M101
+G1 X33.06 Y-4.8 Z6.5 F1920.0
+M103
+G1 X33.06 Y-4.2 Z6.5 F1920.0
+M101
+G1 X30.45 Y-4.2 Z6.5 F1920.0
+M103
+G1 X30.45 Y-3.6 Z6.5 F1920.0
+M101
+G1 X33.06 Y-3.6 Z6.5 F1920.0
+M103
+G1 X33.06 Y-3.0 Z6.5 F1920.0
+M101
+G1 X30.45 Y-3.0 Z6.5 F1920.0
+M103
+G1 X30.45 Y-2.4 Z6.5 F1920.0
+M101
+G1 X33.06 Y-2.4 Z6.5 F1920.0
+M103
+G1 X33.06 Y-1.8 Z6.5 F1920.0
+M101
+G1 X30.45 Y-1.8 Z6.5 F1920.0
+M103
+G1 X30.45 Y-1.2 Z6.5 F1920.0
+M101
+G1 X33.06 Y-1.2 Z6.5 F1920.0
+M103
+G1 X33.06 Y-0.6 Z6.5 F1920.0
+M101
+G1 X30.45 Y-0.6 Z6.5 F1920.0
+M103
+G1 X30.45 Y0.0 Z6.5 F1920.0
+M101
+G1 X33.06 Y0.0 Z6.5 F1920.0
+M103
+G1 X33.06 Y0.6 Z6.5 F1920.0
+M101
+G1 X30.45 Y0.6 Z6.5 F1920.0
+M103
+G1 X30.45 Y1.2 Z6.5 F1920.0
+M101
+G1 X33.06 Y1.2 Z6.5 F1920.0
+M103
+G1 X33.06 Y1.8 Z6.5 F1920.0
+M101
+G1 X30.45 Y1.8 Z6.5 F1920.0
+M103
+G1 X30.45 Y2.4 Z6.5 F1920.0
+M101
+G1 X33.06 Y2.4 Z6.5 F1920.0
+M103
+G1 X33.06 Y3.0 Z6.5 F1920.0
+M101
+G1 X30.45 Y3.0 Z6.5 F1920.0
+M103
+G1 X30.45 Y3.6 Z6.5 F1920.0
+M101
+G1 X33.06 Y3.6 Z6.5 F1920.0
+M103
+G1 X33.06 Y4.2 Z6.5 F1920.0
+M101
+G1 X30.45 Y4.2 Z6.5 F1920.0
+M103
+G1 X30.45 Y4.8 Z6.5 F1920.0
+M101
+G1 X33.06 Y4.8 Z6.5 F1920.0
+M103
+G1 X33.06 Y5.4 Z6.5 F1920.0
+M101
+G1 X30.45 Y5.4 Z6.5 F1920.0
+M103
+G1 X30.45 Y6.0 Z6.5 F1920.0
+M101
+G1 X33.06 Y6.0 Z6.5 F1920.0
+M103
+G1 X33.06 Y6.6 Z6.5 F1920.0
+M101
+G1 X30.45 Y6.6 Z6.5 F1920.0
+M103
+G1 X30.45 Y7.2 Z6.5 F1920.0
+M101
+G1 X33.06 Y7.2 Z6.5 F1920.0
+M103
+G1 X33.06 Y7.8 Z6.5 F1920.0
+M101
+G1 X30.45 Y7.8 Z6.5 F1920.0
+M103
+G1 X30.45 Y8.4 Z6.5 F1920.0
+M101
+G1 X33.06 Y8.4 Z6.5 F1920.0
+M103
+G1 X33.06 Y9.0 Z6.5 F1920.0
+M101
+G1 X30.45 Y9.0 Z6.5 F1920.0
+M103
+G1 X30.45 Y9.6 Z6.5 F1920.0
+M101
+G1 X33.06 Y9.6 Z6.5 F1920.0
+M103
+G1 X33.06 Y10.2 Z6.5 F1920.0
+M101
+G1 X30.45 Y10.2 Z6.5 F1920.0
+M103
+G1 X30.45 Y10.8 Z6.5 F1920.0
+M101
+G1 X33.06 Y10.8 Z6.5 F1920.0
+M103
+G1 X33.06 Y11.4 Z6.5 F1920.0
+M101
+G1 X30.45 Y11.4 Z6.5 F1920.0
+M103
+G1 X30.45 Y12.0 Z6.5 F1920.0
+M101
+G1 X33.06 Y12.0 Z6.5 F1920.0
+M103
+G1 X33.06 Y12.6 Z6.5 F1920.0
+M101
+G1 X30.45 Y12.6 Z6.5 F1920.0
+M103
+G1 X30.45 Y13.2 Z6.5 F1920.0
+M101
+G1 X33.06 Y13.2 Z6.5 F1920.0
+M103
+G1 X33.06 Y13.8 Z6.5 F1920.0
+M101
+G1 X30.45 Y13.8 Z6.5 F1920.0
+M103
+G1 X30.45 Y14.4 Z6.5 F1920.0
+M101
+G1 X33.06 Y14.4 Z6.5 F1920.0
+M103
+G1 X33.06 Y15.0 Z6.5 F1920.0
+M101
+G1 X30.45 Y15.0 Z6.5 F1920.0
+M103
+G1 X30.45 Y15.6 Z6.5 F1920.0
+M101
+G1 X33.06 Y15.6 Z6.5 F1920.0
+M103
+G1 X33.06 Y16.2 Z6.5 F1920.0
+M101
+G1 X30.45 Y16.2 Z6.5 F1920.0
+M103
+G1 X30.45 Y16.8 Z6.5 F1920.0
+M101
+G1 X33.06 Y16.8 Z6.5 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-9.525 Y31.75 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y31.75 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X9.525 Y38.1 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X-9.525 Y38.1 Z6.5 </boundaryPoint>)
+(<loop> outer )
+G1 X8.05 Y33.23 Z6.5 F1920.0
+M101
+G1 X8.05 Y36.62 Z6.5 F1920.0
+G1 X-8.05 Y36.62 Z6.5 F1920.0
+G1 X-8.05 Y33.23 Z6.5 F1920.0
+G1 X8.05 Y33.23 Z6.5 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X8.65 Y33.23 Z6.5 F1920.0
+M101
+G1 X8.65 Y37.22 Z6.5 F1920.0
+G1 X-8.65 Y37.22 Z6.5 F1920.0
+G1 X-8.65 Y32.63 Z6.5 F1920.0
+G1 X8.65 Y32.63 Z6.5 F1920.0
+G1 X8.65 Y33.23 Z6.5 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X9.24 Y33.23 Z6.5 F1920.0
+M101
+G1 X9.24 Y37.81 Z6.5 F1920.0
+G1 X-9.24 Y37.81 Z6.5 F1920.0
+G1 X-9.24 Y32.04 Z6.5 F1920.0
+G1 X9.24 Y32.04 Z6.5 F1920.0
+G1 X9.24 Y33.23 Z6.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-7.66 Y34.2 Z6.5 F1920.0
+M101
+G1 X7.66 Y34.2 Z6.5 F1920.0
+M103
+G1 X7.66 Y34.8 Z6.5 F1920.0
+M101
+G1 X-7.66 Y34.8 Z6.5 F1920.0
+M103
+G1 X-7.66 Y35.4 Z6.5 F1920.0
+M101
+G1 X7.66 Y35.4 Z6.5 F1920.0
+M103
+G1 X7.66 Y36.0 Z6.5 F1920.0
+M101
+G1 X-7.66 Y36.0 Z6.5 F1920.0
+M103
+(</surroundingLoop>)
+(<surroundingLoop>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X-34.925 Y-19.05 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y-19.05 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X-28.575 Y19.05 Z6.5 </boundaryPoint>)
+(<boundaryPoint> X-34.925 Y19.05 Z6.5 </boundaryPoint>)
+(<loop> outer )
+G1 X-30.06 Y17.57 Z6.5 F1920.0
+M101
+G1 X-33.45 Y17.57 Z6.5 F1920.0
+G1 X-33.45 Y-17.57 Z6.5 F1920.0
+G1 X-30.06 Y-17.57 Z6.5 F1920.0
+G1 X-30.06 Y17.57 Z6.5 F1920.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X-30.06 Y18.17 Z6.5 F1920.0
+M101
+G1 X-34.05 Y18.17 Z6.5 F1920.0
+G1 X-34.05 Y-18.17 Z6.5 F1920.0
+G1 X-29.46 Y-18.17 Z6.5 F1920.0
+G1 X-29.46 Y18.17 Z6.5 F1920.0
+G1 X-30.06 Y18.17 Z6.5 F1920.0
+M103
+(</loop>)
+(<perimeter> outer )
+G1 X-30.06 Y18.76 Z6.5 F1920.0
+M101
+G1 X-34.64 Y18.76 Z6.5 F1920.0
+G1 X-34.64 Y-18.76 Z6.5 F1920.0
+G1 X-28.87 Y-18.76 Z6.5 F1920.0
+G1 X-28.87 Y18.76 Z6.5 F1920.0
+G1 X-30.06 Y18.76 Z6.5 F1920.0
+M103
+(</perimeter>)
+(</boundaryPerimeter>)
+G1 X-30.45 Y16.8 Z6.5 F1920.0
+M101
+G1 X-33.06 Y16.8 Z6.5 F1920.0
+M103
+G1 X-33.06 Y16.2 Z6.5 F1920.0
+M101
+G1 X-30.45 Y16.2 Z6.5 F1920.0
+M103
+G1 X-30.45 Y15.6 Z6.5 F1920.0
+M101
+G1 X-33.06 Y15.6 Z6.5 F1920.0
+M103
+G1 X-33.06 Y15.0 Z6.5 F1920.0
+M101
+G1 X-30.45 Y15.0 Z6.5 F1920.0
+M103
+G1 X-30.45 Y14.4 Z6.5 F1920.0
+M101
+G1 X-33.06 Y14.4 Z6.5 F1920.0
+M103
+G1 X-33.06 Y13.8 Z6.5 F1920.0
+M101
+G1 X-30.45 Y13.8 Z6.5 F1920.0
+M103
+G1 X-30.45 Y13.2 Z6.5 F1920.0
+M101
+G1 X-33.06 Y13.2 Z6.5 F1920.0
+M103
+G1 X-33.06 Y12.6 Z6.5 F1920.0
+M101
+G1 X-30.45 Y12.6 Z6.5 F1920.0
+M103
+G1 X-30.45 Y12.0 Z6.5 F1920.0
+M101
+G1 X-33.06 Y12.0 Z6.5 F1920.0
+M103
+G1 X-33.06 Y11.4 Z6.5 F1920.0
+M101
+G1 X-30.45 Y11.4 Z6.5 F1920.0
+M103
+G1 X-30.45 Y10.8 Z6.5 F1920.0
+M101
+G1 X-33.06 Y10.8 Z6.5 F1920.0
+M103
+G1 X-33.06 Y10.2 Z6.5 F1920.0
+M101
+G1 X-30.45 Y10.2 Z6.5 F1920.0
+M103
+G1 X-30.45 Y9.6 Z6.5 F1920.0
+M101
+G1 X-33.06 Y9.6 Z6.5 F1920.0
+M103
+G1 X-33.06 Y9.0 Z6.5 F1920.0
+M101
+G1 X-30.45 Y9.0 Z6.5 F1920.0
+M103
+G1 X-30.45 Y8.4 Z6.5 F1920.0
+M101
+G1 X-33.06 Y8.4 Z6.5 F1920.0
+M103
+G1 X-33.06 Y7.8 Z6.5 F1920.0
+M101
+G1 X-30.45 Y7.8 Z6.5 F1920.0
+M103
+G1 X-30.45 Y7.2 Z6.5 F1920.0
+M101
+G1 X-33.06 Y7.2 Z6.5 F1920.0
+M103
+G1 X-33.06 Y6.6 Z6.5 F1920.0
+M101
+G1 X-30.45 Y6.6 Z6.5 F1920.0
+M103
+G1 X-30.45 Y6.0 Z6.5 F1920.0
+M101
+G1 X-33.06 Y6.0 Z6.5 F1920.0
+M103
+G1 X-33.06 Y5.4 Z6.5 F1920.0
+M101
+G1 X-30.45 Y5.4 Z6.5 F1920.0
+M103
+G1 X-30.45 Y4.8 Z6.5 F1920.0
+M101
+G1 X-33.06 Y4.8 Z6.5 F1920.0
+M103
+G1 X-33.06 Y4.2 Z6.5 F1920.0
+M101
+G1 X-30.45 Y4.2 Z6.5 F1920.0
+M103
+G1 X-30.45 Y3.6 Z6.5 F1920.0
+M101
+G1 X-33.06 Y3.6 Z6.5 F1920.0
+M103
+G1 X-33.06 Y3.0 Z6.5 F1920.0
+M101
+G1 X-30.45 Y3.0 Z6.5 F1920.0
+M103
+G1 X-30.45 Y2.4 Z6.5 F1920.0
+M101
+G1 X-33.06 Y2.4 Z6.5 F1920.0
+M103
+G1 X-33.06 Y1.8 Z6.5 F1920.0
+M101
+G1 X-30.45 Y1.8 Z6.5 F1920.0
+M103
+G1 X-30.45 Y1.2 Z6.5 F1920.0
+M101
+G1 X-33.06 Y1.2 Z6.5 F1920.0
+M103
+G1 X-33.06 Y0.6 Z6.5 F1920.0
+M101
+G1 X-30.45 Y0.6 Z6.5 F1920.0
+M103
+G1 X-30.45 Y0.0 Z6.5 F1920.0
+M101
+G1 X-33.06 Y0.0 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-0.6 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-0.6 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-1.2 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-1.2 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-1.8 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-1.8 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-2.4 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-2.4 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-3.0 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-3.0 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-3.6 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-3.6 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-4.2 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-4.2 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-4.8 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-4.8 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-5.4 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-5.4 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-6.0 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-6.0 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-6.6 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-6.6 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-7.2 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-7.2 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-7.8 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-7.8 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-8.4 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-8.4 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-9.0 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-9.0 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-9.6 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-9.6 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-10.2 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-10.2 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-10.8 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-10.8 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-11.4 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-11.4 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-12.0 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-12.0 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-12.6 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-12.6 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-13.2 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-13.2 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-13.8 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-13.8 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-14.4 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-14.4 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-15.0 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-15.0 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-15.6 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-15.6 Z6.5 F1920.0
+M103
+G1 X-33.06 Y-16.2 Z6.5 F1920.0
+M101
+G1 X-30.45 Y-16.2 Z6.5 F1920.0
+M103
+G1 X-30.45 Y-16.8 Z6.5 F1920.0
+M101
+G1 X-33.06 Y-16.8 Z6.5 F1920.0
+M103
+(</surroundingLoop>)
+(</layer>)
+(</extrusion>)
+M104 S0
+(<alteration>)
+(end of the file, cooldown routines)
+M104 S0
+G91
+G1 Z10.0 F1920.0
+G90
+(</alteration>)
+;M113 S0.0
