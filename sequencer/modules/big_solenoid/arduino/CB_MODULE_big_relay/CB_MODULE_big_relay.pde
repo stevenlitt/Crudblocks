@@ -32,6 +32,10 @@ byte noteOffByte = B10000000; //1 << 7;
 
 byte channelSetterByte = B11110001;
 
+byte setTempoByte = B11110110;
+byte tempo = 120;
+unsigned long lastStepOnTime = 0;
+
 int serialDelay = 1;
 
 int threeBytesArray[3] = {0, 0, 0};
@@ -39,7 +43,6 @@ int threeBytesArray[3] = {0, 0, 0};
 int timeOnPin = 0;
 boolean solenoidOn = false;
 unsigned long switchedOnAt = 0;
-unsigned long timeToSwitchOff = 0;
 
 byte pwmByte = B11110111;
 byte pwmVal = 1;
@@ -56,9 +59,6 @@ void setup()
 
 void loop()
 {
-//  if (solenoidOn == true && millis() > timeToSwitchOff) {
-//    setSolenoidOff();
-//  }
   checkButton();
   checkPwm();
   listenForSerial();
@@ -76,23 +76,44 @@ void checkButton()
 }
 
 void checkPwm() 
-{
-  if(pwmVal == 1) return;
+{  
   if(solenoidOn == false) return;
+
+  unsigned long endOfStep = switchedOnAt + (60000 / tempo) / 4;
+  unsigned long lengthOfStep = endOfStep - switchedOnAt;
+  unsigned long timeIntoStep = millis() - switchedOnAt;
   
-  if(pwmVal == 2) {
-    if((millis() - switchedOnAt) % 100 < 50) {
-      digitalWrite(solenoidPin, HIGH);
-    } else {
+  if(pwmVal == 1) 
+  {
+//    if(millis() > switchedOnAt + (60000 / tempo) / 8 / 10 * 9)  //if we're more than 9/10 of the way through the step... switch off
+//    if(millis() > switchedOnAt + (60000 / tempo) / 8)  //if we're more than 9/10 of the way through the step... switch off
+//    if(millis() > switchedOnAt + lengthOfStep * 9 / 10)
+    if(millis() > switchedOnAt + lengthOfStep * 5 / 10)
+    {
       digitalWrite(solenoidPin, LOW);
     }
+  }  
+  else if(pwmVal == 2) 
+  {
+    if(timeIntoStep % (lengthOfStep / 2) < (lengthOfStep / 2) * 4 / 5)
+    {
+      digitalWrite(solenoidPin, HIGH);      
+    }
+    else
+    {
+      digitalWrite(solenoidPin, LOW);      
+    }
   }
-  else if(pwmVal == 3) {
-    if((millis() - switchedOnAt) % 66 < 33) {
-      digitalWrite(solenoidPin, HIGH);
-    } else {
-      digitalWrite(solenoidPin, LOW);
-    }    
+  else if(pwmVal == 3) 
+  {
+    if(timeIntoStep % (lengthOfStep / 3) < (lengthOfStep / 3) * 2 / 3)
+    {
+      digitalWrite(solenoidPin, HIGH);      
+    }
+    else
+    {
+      digitalWrite(solenoidPin, LOW);      
+    }
   }
 }
 
@@ -185,7 +206,23 @@ void listenForSerial()
         delay(serialDelay);
         Serial.print(threeBytesArray[2], BYTE);      
       }
-  
+      else if(latestSerialInValue == setTempoByte)
+      {
+        threeBytesArray[0] = latestSerialInValue;
+        delay(serialDelay);
+        threeBytesArray[1] = Serial.read();
+        delay(serialDelay);
+        threeBytesArray[2] = Serial.read();           
+
+        tempo = threeBytesArray[1];
+        
+        delay(serialDelay);
+        Serial.print(threeBytesArray[0], BYTE);
+        delay(serialDelay);
+        Serial.print(threeBytesArray[1], BYTE);
+        delay(serialDelay);
+        Serial.print(threeBytesArray[2], BYTE);        
+      }
       else  //if its any other message for a different channel
       {
         threeBytesArray[0] = latestSerialInValue;
@@ -209,7 +246,6 @@ void listenForSerial()
 void setSolenoidOn() {
   solenoidOn = true;
   switchedOnAt = millis();
-  timeToSwitchOff = switchedOnAt + (analogRead(timeOnPin)*1000);
   
   digitalWrite(ledPin, HIGH);
   digitalWrite(solenoidPin, HIGH);  

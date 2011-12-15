@@ -35,6 +35,9 @@ byte noteOffByte = B10000000; //1 << 7;
 
 byte channelSetterByte = B11110001;
 
+byte setTempoByte = B11110110;
+byte tempo = 120;
+
 int serialDelay = 1;
 
 int threeBytesArray[3] = {0, 0, 0};
@@ -45,7 +48,7 @@ unsigned long switchedOnAt = 0;
 unsigned long timeToSwitchOff = 0;
 
 byte pwmByte = B11110111;
-byte pwmVal = 1;
+byte pwmVal = 3;
 
 void setup()
 {
@@ -82,22 +85,67 @@ void checkButton()
 
 void checkPwm() 
 {
-  if(pwmVal == 1) return;
   if(solenoidOn == false) return;
+
+  unsigned long endOfStep = switchedOnAt + (60000 / tempo) / 4;
+  unsigned long lengthOfStep = endOfStep - switchedOnAt;
+  unsigned long timeIntoStep = millis() - switchedOnAt;
   
-  if(pwmVal == 2) {
-    if((millis() - switchedOnAt) % 100 < 50) {
-      digitalWrite(solenoidPin, HIGH);
-    } else {
+  if(pwmVal == 1) 
+  {
+//    if(millis() > switchedOnAt + (60000 / tempo) / 8 / 10 * 9)  //if we're more than 9/10 of the way through the step... switch off
+//    if(millis() > switchedOnAt + (60000 / tempo) / 8)  //if we're more than 9/10 of the way through the step... switch off
+//    if(millis() > switchedOnAt + lengthOfStep * 9 / 10)
+    if(millis() > switchedOnAt + lengthOfStep * 5 / 10)
+    {
       digitalWrite(solenoidPin, LOW);
     }
+  }  
+  else if(pwmVal == 2) 
+  {
+    if(timeIntoStep < lengthOfStep / 2)
+    {
+      if(currentSolenoid == 1) {
+        digitalWrite(solenoidPin, HIGH);
+        digitalWrite(solenoid2Pin, LOW);
+      } else if(currentSolenoid == 2) {
+        digitalWrite(solenoidPin, LOW);
+        digitalWrite(solenoid2Pin, HIGH);        
+      }
+    }
+    else if (timeIntoStep >= lengthOfStep / 2)
+    {
+      if(currentSolenoid == 1) {
+        digitalWrite(solenoidPin, LOW);
+        digitalWrite(solenoid2Pin, HIGH);   
+      } else if(currentSolenoid == 2) {
+        digitalWrite(solenoidPin, HIGH);
+        digitalWrite(solenoid2Pin, LOW);   
+      }
+    }
   }
-  else if(pwmVal == 3) {
-    if((millis() - switchedOnAt) % 66 < 33) {
-      digitalWrite(solenoidPin, HIGH);
-    } else {
-      digitalWrite(solenoidPin, LOW);
-    }    
+  else if(pwmVal == 3) 
+  {
+    if(timeIntoStep < lengthOfStep / 3 || timeIntoStep >= lengthOfStep / 3 * 2)
+    {
+      if(currentSolenoid == 1) {
+        digitalWrite(solenoidPin, HIGH);
+        digitalWrite(solenoid2Pin, LOW);
+      } else if(currentSolenoid == 2) {
+        digitalWrite(solenoidPin, LOW);
+        digitalWrite(solenoid2Pin, HIGH);        
+      }
+    }
+    else //if (timeIntoStep >= lengthOfStep / 3)
+    {
+      if(currentSolenoid == 1) {
+        digitalWrite(solenoidPin, LOW);
+        digitalWrite(solenoid2Pin, HIGH);   
+      } else if(currentSolenoid == 2) {
+        digitalWrite(solenoidPin, HIGH);
+        digitalWrite(solenoid2Pin, LOW);   
+      }
+    }
   }
 }
 
@@ -190,7 +238,23 @@ void listenForSerial()
         delay(serialDelay);
         Serial.print(threeBytesArray[2], BYTE);      
       }
-  
+      else if(latestSerialInValue == setTempoByte)
+      {
+        threeBytesArray[0] = latestSerialInValue;
+        delay(serialDelay);
+        threeBytesArray[1] = Serial.read();
+        delay(serialDelay);
+        threeBytesArray[2] = Serial.read();           
+
+        tempo = threeBytesArray[1];
+        
+        delay(serialDelay);
+        Serial.print(threeBytesArray[0], BYTE);
+        delay(serialDelay);
+        Serial.print(threeBytesArray[1], BYTE);
+        delay(serialDelay);
+        Serial.print(threeBytesArray[2], BYTE);        
+      }  
       else  //if its any other message for a different channel
       {
         threeBytesArray[0] = latestSerialInValue;
@@ -221,11 +285,11 @@ void setSolenoidOn() {
   if(currentSolenoid == 1) {
     digitalWrite(solenoidPin, HIGH);
     digitalWrite(solenoid2Pin, LOW);    
-    currentSolenoid = 2;
+    if(pwmVal != 2) currentSolenoid = 2;    //don't switch if pwmVal is 2, or anything even, since we'll want each beat to start with the same solenoid
   } else if (currentSolenoid == 2) {
     digitalWrite(solenoidPin, LOW);        
     digitalWrite(solenoid2Pin, HIGH);   
-    currentSolenoid = 1;
+    if(pwmVal != 2) currentSolenoid = 1;    //ditto  
   }
 }
 

@@ -8,6 +8,13 @@ This code is available strictly for non-commercial use
 
 /*----------------------------------------------------------------------
 
+This module can set sequencer tempo, set the current channel displayed
+on the sequencers, and send out pwm vals to listening solenoids
+
+----------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------
+
    Sparkfun COM-09482 type 4 digit 7 segment display pinout diagram
 
                             16 15 14 13 12 11 10 9
