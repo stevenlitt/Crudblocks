@@ -16,25 +16,22 @@ This code is available strictly for non-commercial use
 ---------------------------------------------------------------------*/
 
 
-#include <NewSoftSerial.h>
-#include <EEPROM.h>
+#define channelSetterByte B11110001
+#define next8Byte B11110011
+#define switchChannelByte B11110010
+#define setNumChannelsByte B11110100
+#define setTempoByte B11110110
+
 
 int dpInEncoderA = A2;
 int dpInEncoderB = A3;
 
 int txPin = 2;
 int rxPin = 3;
-NewSoftSerial softSerial(rxPin, txPin);
 
 int setChannelsPin = 4;  //the button that launches config
 boolean setChannelsPinValue = LOW;
 boolean lastSetChannelsPinValue = LOW;
-byte channelSetterByte = B11110001;
-
-byte next8Byte = B11110011;
-byte switchChannelByte = B11110010;
-byte setNumChannelsByte = B11110100;
-byte setTempoByte = B11110110;
 
 int encoderButtonPin = 5;
 boolean encoderButtonValue = LOW;
@@ -176,83 +173,52 @@ void checkSetAddressPin()
 {
   lastSetChannelsPinValue = setChannelsPinValue;
   setChannelsPinValue = digitalRead(setChannelsPin);
-  if(lastSetChannelsPinValue == LOW && setChannelsPinValue == HIGH)
+  if(lastSetChannelsPinValue == LOW && setChannelsPinValue == HIGH)  //if it was just switched on...
   {
-    master = true;
+    master = true;                                                   //...set it as the master
     
     digitalWrite(ledPin, HIGH);
     delay(1000);
     digitalWrite(ledPin, LOW);    
     
+    //send out the channel setter byte
     byte firstChannel = 1;
-    delay(serialDelay);            
-    Serial.print(channelSetterByte);
-    delay(serialDelay);            
-    Serial.print(firstChannel);
-    delay(serialDelay);                
-    Serial.print(firstChannel);
+    writeThreeBytes(channelSetterByte, firstChannel, 0);
+    
     digitalWrite(ledPin, LOW);
     delay(1000);
-    digitalWrite(ledPin, LOW);  
+    digitalWrite(ledPin, LOW);
   }
 }
 
 
 void checkForSerialReceiveNumChannels()
 {
-  if(Serial.available() == 3)
+  if(Serial.available() >= 3)
   {
-    initialNumChannelsSerialReceived = true;
-        
-    if(master == true)
+    initialNumChannelsSerialReceived = true;                    //once this is set true, we stop calling this function and start calling whatever's next in the loop()       
+    getThreeBytes();
+    
+    if(master == true)                                          //if we're the master sequencer, this means we just heard back after configuring the channels...
     {
-      delay(serialDelay);        
-      byte lastSerialInValue = Serial.read();
+      byte lastSerialInValue = threeBytes[0];
       if(lastSerialInValue == channelSetterByte)
       {
-        delay(serialDelay);              
-        lastSerialInValue = Serial.read();
+        lastSerialInValue = threeBytes[1];
         numChannels = lastSerialInValue - 1;
         if(channel > numChannels) channel = 1;
-        delay(serialDelay);              
-        Serial.read(); //just to clear the empty 3rd byte
         
-        delay(serialDelay);
-        Serial.print(setNumChannelsByte, BYTE);
-        delay(serialDelay);
-        Serial.print(numChannels);
-        delay(serialDelay);
-        Serial.print(1);
-        
-        
-//        for(int i=0; i<=255; i++)
-//        {
-//          if (EEPROM.read(i) == 0) stepsOnArray[i] = 0;
-//          else stepsOnArray[i] = 1;
-//        }
-        
-        currentStep = 0;  //this makes it actually start
+        writeThreeBytes(setNumChannelsByte, numChannels, 0);    //...and so now we send out the bytes that tell the "controller" (knob + rotary encoder + display) how many channels we have
       }
     }
-    else if(master == false)
-    {
+    else if(master == false)                                    // if we're not the master, this means we just take in what the master sent us (the setNumChannelsByte + numChannels above)
+    {                                                           // and spit it back out on the way to the channels
       digitalWrite(ledPin, HIGH);
       delay(1000);
-      digitalWrite(ledPin, LOW);        
+      digitalWrite(ledPin, LOW);
 
-      delay(serialDelay);
-      threeBytes[0] = Serial.read();
-      delay(serialDelay);
-      threeBytes[1] = Serial.read();
-      delay(serialDelay);
-      threeBytes[2] = Serial.read();
-      
-        delay(serialDelay);
-        Serial.print(threeBytes[0]);
-        delay(serialDelay);
-        Serial.print(threeBytes[1]);
-        delay(serialDelay);
-        Serial.print(threeBytes[2]);
+//      getThreeBytes();
+      sendOutThreeBytes();
     }
   }
 }
@@ -260,22 +226,12 @@ void checkForSerialReceiveNumChannels()
 
 void checkForSerialReceiveChannelsSet()
 {
-  if(Serial.available() == 3) {
+  if(Serial.available() >= 3) 
+  {
     initialChannelsSetSerialReceived = true;
-    
-    delay(serialDelay);
-    threeBytes[0] = Serial.read();
-    delay(serialDelay);
-    threeBytes[1] = Serial.read();
-    delay(serialDelay);
-    threeBytes[2] = Serial.read();    
-    
-    delay(serialDelay);
-    Serial.print(threeBytes[0]);
-    delay(serialDelay);
-    Serial.print(threeBytes[1]);
-    delay(serialDelay);
-    Serial.print(threeBytes[2]);    
+    if(master == true) initSteppingMaster();
+    getThreeBytes();
+    if(master == false) sendOutThreeBytes();
   }
 }
 
@@ -290,13 +246,7 @@ void checkForSerialReceiveChannelsSet()
 void readInNextThreeBytes()
 {
    while(Serial.available() >= 3) {
-      delay(serialDelay);
-      threeBytes[0] = Serial.read();
-      delay(serialDelay);
-      threeBytes[1] = Serial.read();
-      delay(serialDelay);
-      threeBytes[2] = Serial.read();
-      delay(serialDelay);
+      getThreeBytes();
       
       if(threeBytes[0] == next8Byte) {
         currentStep = 0;
@@ -305,36 +255,66 @@ void readInNextThreeBytes()
       else if(threeBytes[0] == switchChannelByte) {
         if(threeBytes[1] != channel) {
           channel = threeBytes[1];
-          spitOutTheThreeBytes();
+          sendOutThreeBytes();
         }
       }
       else if(threeBytes[0] == setTempoByte) {
           tempo = threeBytes[1];
-          spitOutTheThreeBytes();      
+          sendOutThreeBytes();      
       } else {
         if(master == false) {
-          spitOutTheThreeBytes();
+          sendOutThreeBytes();
         }
       }
    }
 }
 
 
-void spitOutTheThreeBytes()
+void getThreeBytes()
 {
+//  delay(serialDelay);
+  threeBytes[0] = Serial.read();
+//  delay(serialDelay);
+  threeBytes[1] = Serial.read();
+//  delay(serialDelay);
+  threeBytes[2] = Serial.read();
+}
+
+
+void sendOutThreeBytes()
+{
+//  delay(serialDelay);
   Serial.write(threeBytes[0]);
-  delay(serialDelay);
+//  delay(serialDelay);
   Serial.write(threeBytes[1]);
-  delay(serialDelay);
+//  delay(serialDelay);
   Serial.write(threeBytes[2]);  
 }
 
+
+void writeThreeBytes(byte b1, byte b2, byte b3)
+{
+//  delay(serialDelay);
+  Serial.print(b1, BYTE);
+//  delay(serialDelay);
+  Serial.print(b2, BYTE);
+//  delay(serialDelay);
+  Serial.print(b3, BYTE);
+}
+
+
 // STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP
 // STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP
 // STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP
 // STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP
 // STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP STEP
 
+
+void initSteppingMaster()
+{
+lastStepTime = millis();
+currentStep = 0;      //this makes it actually start stepping  
+}
 
 void stepTempo() {
   if(currentStep == -1) return;
@@ -344,13 +324,8 @@ void stepTempo() {
     else currentStep++;
     if(currentStep >= 8) 
     {
-      currentStep = -1;
-      delay(serialDelay);
-      Serial.print(next8Byte, BYTE);
-      delay(serialDelay);
-      Serial.print(1, BYTE);
-      delay(serialDelay);
-      Serial.print(1, BYTE);      
+      currentStep = -1;      
+      writeThreeBytes(next8Byte, 0, 0);
       return;
     }
 
@@ -358,24 +333,13 @@ void stepTempo() {
     {
       if(stepsOnArray[i * 16 + currentStep] == HIGH)             //if the channel we just switched to is ON, send an ON byte
       { 
-        byte channelOnByte = channelOnNibble + i;
-        delay(serialDelay);        
-        Serial.print(channelOnByte);
-        delay(serialDelay);
-        Serial.print(1);        //just a generic channel value for now
-        delay(serialDelay);                
-        Serial.print(1);        //just a generic velocity value for now
-
+        byte channelOnByte = channelOnNibble + i;  
+        writeThreeBytes(channelOnByte, 0, 0);
       } 
       else if(stepsOnArray[i * 16 + currentStep] == LOW)         //if the channel we just switched to is ON, send an ON byte
       {
         byte channelOffByte = channelOffNibble + i;
-        delay(serialDelay);                
-        Serial.print(channelOffByte);
-        delay(serialDelay);                
-        Serial.print(1);                            //just a generic channel value for now
-        delay(serialDelay);                
-        Serial.print(1);                            //just a generic velocity value for now   
+        writeThreeBytes(channelOffByte, 0, 0);
       }
     }
     lastStepTime =  millis() + (60000 / tempo) / 8;   //bpm formula
@@ -424,6 +388,8 @@ void checkChannelSwitch() {
 
 void getLastPressedButton()
 {
+//forget this for now
+/*  
   for(byte i=0; i<8; i++)
   {
      if((shiftInByte1 >> (7-i)) % 2 == 1) 
@@ -441,6 +407,7 @@ void getLastPressedButton()
        }
      }
   }
+*/
 }
 
 // SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN
@@ -470,7 +437,6 @@ void convertShiftInBytesToArrays() {
     if(shiftInByte1Array[i] == 1 && lastShiftInByte1Array[i] == 0) 
     {
       stepsOnArray[channel * 16 + i] = !stepsOnArray[channel * 16 + i];      //if the value of the switch (either on or off) is different from last loop, change it from on to off or vice versa
-      EEPROM.write(channel * 16 + i, stepsOnArray[channel * 16 + i]);
     }
   }
 

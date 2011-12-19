@@ -7,20 +7,18 @@ This code is available strictly for non-commercial use
  ----------------------------------------------------------------------*/
 
 
-#include <NewSoftSerial.h>
+#define noteOnByte B10010000
+#define noteOffByte B10000000
+#define channelSetterByte B11110001
+#define setTempoByte B11110110
+#define pwmByte B11110111
+
 
 int ledPin = 13;
 int solenoidPin = 7;
-int solenoid2Pin = 8;
 int buttonPin = 12;
 
-int currentSolenoid = 1;
-
 boolean listeningForSpecialCommands = false;
-
-int txPin = 2;
-int rxPin = 3;
-NewSoftSerial softSerial(rxPin, txPin);
 
 byte channel = 7;
 byte channelSet = false;
@@ -30,25 +28,22 @@ int newEncoderPosition = 0;
 int oldEncoderPosition = 0;
 
 byte latestSerialInValue;
-byte noteOnByte = B10010000; //(1 << 7) + (1 << 4);
-byte noteOffByte = B10000000; //1 << 7;
 
-byte channelSetterByte = B11110001;
-
-byte setTempoByte = B11110110;
 byte tempo = 120;
 
 int serialDelay = 1;
 
-int threeBytesArray[3] = {0, 0, 0};
+int threeBytes[3] = {0, 0, 0};
 
 int timeOnPin = 0;
 boolean solenoidOn = false;
 unsigned long switchedOnAt = 0;
-unsigned long timeToSwitchOff = 0;
 
-byte pwmByte = B11110111;
 byte pwmVal = 3;
+
+//these vars are unique to the double module... all others (above) are exactly the same as the single solenoid module
+int solenoid2Pin = 8;
+int currentSolenoid = 1;
 
 void setup()
 {
@@ -64,24 +59,116 @@ void setup()
 
 void loop()
 {
-//  if (solenoidOn == true && millis() > timeToSwitchOff) {
-//    setSolenoidOff();
-//  }
   checkButton();
   checkPwm();
   listenForSerial();
 }
 
-void checkButton() 
+
+//BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM 
+//BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM 
+//BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM 
+//BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM 
+//BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM 
+
+
+void listenForSerial()
 {
-  if(digitalRead(buttonPin) == HIGH && listeningForSpecialCommands == false) {
-    listeningForSpecialCommands = true;
-    digitalWrite(ledPin, HIGH);
-  } else if(digitalRead(buttonPin) == LOW && listeningForSpecialCommands == true) {
-    listeningForSpecialCommands = false;
-    digitalWrite(ledPin, LOW);
+  if(Serial.available() < 3) return;  //if we have less than three bytes to be read in... skip this function
+  
+  getThreeBytes();
+  
+  if(channelSet == false)
+  {
+    //CONFIG
+    if(threeBytes[0] == channelSetterByte)
+    {
+      channelSet = true;
+      channel = threeBytes[1];
+
+      for(byte i=0; i<channel; i++)
+      {
+        digitalWrite(ledPin, HIGH);
+        delay(400);
+        digitalWrite(ledPin, LOW);
+        delay(400);
+      }
+      
+      byte nextChannel = channel + 1;
+      writeThreeBytes(threeBytes[0], nextChannel, 0);
+      return;
+    }
+  }
+  else if(channelSet == true)
+  {    
+    //AFTER CONFIG
+    if(isNoteOn(threeBytes[0]) == true && threeBytes[0] - noteOnByte == channel)
+    {
+        setSolenoidOn();
+    }
+    else if(isNoteOff(threeBytes[0]) == true && threeBytes[0] - noteOffByte == channel) 
+    {
+      setSolenoidOff();
+    }
+    else if(threeBytes[0] == pwmByte)
+    {    
+      if(listeningForSpecialCommands == true) {
+        pwmVal = threeBytes[1];
+      }
+      sendOutThreeBytes();      
+    }
+    else if(latestSerialInValue == setTempoByte)
+    {
+      tempo = threeBytes[1]; 
+      sendOutThreeBytes();       
+    }
+    else  //if its any other message we aren't accounting for, for a different channel or type of module
+    {        
+      sendOutThreeBytes();
+    }
   }
 }
+
+
+void getThreeBytes()
+{
+//  delay(serialDelay);
+  threeBytes[0] = Serial.read();
+//  delay(serialDelay);
+  threeBytes[1] = Serial.read();
+//  delay(serialDelay);
+  threeBytes[2] = Serial.read();
+}
+
+
+void sendOutThreeBytes()
+{
+//  delay(serialDelay);
+  Serial.write(threeBytes[0]);
+//  delay(serialDelay);
+  Serial.write(threeBytes[1]);
+//  delay(serialDelay);
+  Serial.write(threeBytes[2]);  
+}
+
+
+void writeThreeBytes(byte b1, byte b2, byte b3)
+{
+//  delay(serialDelay);
+  Serial.print(b1, BYTE);
+//  delay(serialDelay);
+  Serial.print(b2, BYTE);
+//  delay(serialDelay);
+  Serial.print(b3, BYTE);
+}
+
+
+//SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID 
+//SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID 
+//SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID 
+//SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID 
+//SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID SOLENOID 
+
 
 void checkPwm() 
 {
@@ -93,9 +180,6 @@ void checkPwm()
   
   if(pwmVal == 1) 
   {
-//    if(millis() > switchedOnAt + (60000 / tempo) / 8 / 10 * 9)  //if we're more than 9/10 of the way through the step... switch off
-//    if(millis() > switchedOnAt + (60000 / tempo) / 8)  //if we're more than 9/10 of the way through the step... switch off
-//    if(millis() > switchedOnAt + lengthOfStep * 9 / 10)
     if(millis() > switchedOnAt + lengthOfStep * 5 / 10)
     {
       digitalWrite(solenoidPin, LOW);
@@ -149,136 +233,10 @@ void checkPwm()
   }
 }
 
-void listenForSerial()
-{
-  if(channelSet == false)
-  {
-//  while(Serial.available() > 0 && Serial.available() % 3 == 0)
-    while(Serial.available())
-    {
-      delay(serialDelay);
-      latestSerialInValue = Serial.read();
-      
-      //CONFIG
-      if(latestSerialInValue == channelSetterByte)
-      {
-        channelSet = true;
-        
-        threeBytesArray[0] = latestSerialInValue;
-        delay(serialDelay);
-        threeBytesArray[1] = Serial.read();
-        channel = threeBytesArray[1];
-        delay(serialDelay);      
-        threeBytesArray[2] = Serial.read(); //just clear the last byte, which is meaningless
-        //no idea why i have to do it this way and cant just declare channel as the second read()
-  //      channel = latestSerialInValue;      
-  //      latestSerialInValue++;
-  //      delay(serialDelay);      
-  //      Serial.print(latestSerialInValue, BYTE);
-  //      Serial.print(1, BYTE);
-  
-        for(byte i=0; i<channel; i++)
-        {
-          digitalWrite(ledPin, HIGH);
-          delay(400);
-          digitalWrite(ledPin, LOW);
-          delay(400);
-        }
-        
-        byte nextChannel = channel + 1;
-        Serial.print(threeBytesArray[0], BYTE);
-        Serial.print(nextChannel, BYTE);      
-        Serial.print(0, BYTE);      
-        return;
-      }
-    }
-  }
-  else if(channelSet == true)
-  {
-    while(Serial.available() >= 3)
-    {
-      delay(serialDelay);
-      latestSerialInValue = Serial.read();
-      
-      //AFTER CONFIG
-      if(isNoteOn(latestSerialInValue) == true && latestSerialInValue - noteOnByte == channel)
-      {
-          setSolenoidOn();
-          
-          delay(serialDelay);        
-          Serial.read();
-          delay(serialDelay);
-          Serial.read();
-      }
-      //    else if(latestSerialInValue == noteOffByte) digitalWrite(ledPin, LOW);
-      else if(isNoteOff(latestSerialInValue) == true && latestSerialInValue - noteOffByte == channel) 
-      {
-        setSolenoidOff();
-        
-        delay(serialDelay);
-        Serial.read();
-        delay(serialDelay);       
-        Serial.read();
-      }
-      else if(latestSerialInValue == pwmByte)
-      {
-        threeBytesArray[0] = latestSerialInValue;
-        delay(serialDelay);
-        threeBytesArray[1] = Serial.read();
-        delay(serialDelay);
-        threeBytesArray[2] = Serial.read();      
-        if(listeningForSpecialCommands == true) {
-  //        digitalWrite(ledPin, HIGH);
-          pwmVal = threeBytesArray[1];
-        }
-        delay(serialDelay);
-        Serial.print(threeBytesArray[0], BYTE);
-        delay(serialDelay);
-        Serial.print(threeBytesArray[1], BYTE);
-        delay(serialDelay);
-        Serial.print(threeBytesArray[2], BYTE);      
-      }
-      else if(latestSerialInValue == setTempoByte)
-      {
-        threeBytesArray[0] = latestSerialInValue;
-        delay(serialDelay);
-        threeBytesArray[1] = Serial.read();
-        delay(serialDelay);
-        threeBytesArray[2] = Serial.read();           
-
-        tempo = threeBytesArray[1];
-        
-        delay(serialDelay);
-        Serial.print(threeBytesArray[0], BYTE);
-        delay(serialDelay);
-        Serial.print(threeBytesArray[1], BYTE);
-        delay(serialDelay);
-        Serial.print(threeBytesArray[2], BYTE);        
-      }  
-      else  //if its any other message for a different channel
-      {
-        threeBytesArray[0] = latestSerialInValue;
-        delay(serialDelay);
-        threeBytesArray[1] = Serial.read();
-        delay(serialDelay);
-        threeBytesArray[2] = Serial.read();
-        
-        delay(serialDelay);
-        Serial.print(threeBytesArray[0], BYTE);
-        delay(serialDelay);
-        Serial.print(threeBytesArray[1], BYTE);
-        delay(serialDelay);
-        Serial.print(threeBytesArray[2], BYTE);
-      }
-    }
-  }
-}
-
 
 void setSolenoidOn() {
   solenoidOn = true;
   switchedOnAt = millis();
-  timeToSwitchOff = switchedOnAt + (analogRead(timeOnPin)*1000);
 
   digitalWrite(ledPin, HIGH);  
   
@@ -322,3 +280,21 @@ boolean isNoteOff(byte inputByte)
 }
 
 
+//BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON 
+//BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON 
+//BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON 
+//BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON 
+//BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON 
+
+
+
+void checkButton() 
+{
+  if(digitalRead(buttonPin) == HIGH && listeningForSpecialCommands == false) {
+    listeningForSpecialCommands = true;
+    digitalWrite(ledPin, HIGH);
+  } else if(digitalRead(buttonPin) == LOW && listeningForSpecialCommands == true) {
+    listeningForSpecialCommands = false;
+    digitalWrite(ledPin, LOW);
+  }
+}

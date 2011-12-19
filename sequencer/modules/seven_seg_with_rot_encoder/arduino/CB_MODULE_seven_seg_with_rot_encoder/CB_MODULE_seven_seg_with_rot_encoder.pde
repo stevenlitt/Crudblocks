@@ -53,6 +53,16 @@ on the sequencers, and send out pwm vals to listening solenoids
   
 ----------------------------------------------------------------------*/
 
+#define setNumChannelsByte B11110100
+#define switchChannelByte B11110010
+#define setTempoByte B11110110
+#define pwmByte B11110111
+
+#define TEMPO_MODE 0
+#define CHANNEL_MODE 1
+#define PWM_MODE 2
+#define numModes 3
+
 int ledPin = 13;
 int specialPin = 2;
 
@@ -73,12 +83,7 @@ int dpInEncoderB = A3;
 int encoderButtonPin = 5;
 boolean encoderButtonValue = LOW;
 boolean lastEncoderButtonValue = LOW;
-int TEMPO_MODE = 0;
-int CHANNEL_MODE = 1;
-int PWM_MODE = 2;
-int numModes = 3;
 int sevenSegDisplayMode = TEMPO_MODE;
-
 boolean showingModeName = false;
 
 int tempo = 120;
@@ -93,13 +98,8 @@ int oldEncoderPosition = 0;
 int serialDelay = 0;
 int threeBytes[3] = {0, 0, 0};
 
-byte setNumChannelsByte = B11110100;
 boolean initialChannelsSetSerialReceived = false;
 
-byte switchChannelByte = B11110010;
-byte setTempoByte = B11110110;
-
-byte pwmByte = B11110111;
 byte pwmVal = 1;
 byte numPwmVals = 3;
 
@@ -119,29 +119,31 @@ void setup()
   digitalWrite(dpInEncoderB, HIGH);  
 }
 
+
 void loop() {
   if(initialChannelsSetSerialReceived == false) {
   spitOutThreeBytes();
   } else if(initialChannelsSetSerialReceived == true) {
-  spitOutThreeBytes();    
+  spitOutThreeBytes();
+  checkSpecialButton();  
   checkEncoderSwitch();
-  checkSpecialButton();
   readEncoder();
   draw7Seg();
   }
 }
 
 
+//BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM
+//BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM
+//BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM
+//BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM
+//BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM
+
+
 void spitOutThreeBytes() {
   while(Serial.available() >= 3)
   {      
-      delay(serialDelay);
-      threeBytes[0] = Serial.read();
-      delay(serialDelay);
-      threeBytes[1] = Serial.read();
-      delay(serialDelay);
-      threeBytes[2] = Serial.read();
-      delay(serialDelay);
+      getThreeBytes();
       
       if(threeBytes[0] == setNumChannelsByte) {
         initialChannelsSetSerialReceived = true;        
@@ -158,13 +160,61 @@ void spitOutThreeBytes() {
       }
       
       //if we haven't hit a return;... send out the bytes just received
-      Serial.write(threeBytes[0]);
-      delay(serialDelay);
-      Serial.write(threeBytes[1]);
-      delay(serialDelay);
-      Serial.write(threeBytes[2]);
+      sendOutThreeBytes();
   }
 }
+
+
+void sendOutChannelByte()
+{
+  writeThreeBytes(switchChannelByte, channel, 0);
+}
+
+
+void sendOutTempoByte()
+{
+  writeThreeBytes(setTempoByte, tempo, 0);
+}
+
+
+void getThreeBytes()
+{
+//  delay(serialDelay);
+  threeBytes[0] = Serial.read();
+//  delay(serialDelay);
+  threeBytes[1] = Serial.read();
+//  delay(serialDelay);
+  threeBytes[2] = Serial.read();
+}
+
+
+void sendOutThreeBytes()
+{
+//  delay(serialDelay);
+  Serial.write(threeBytes[0]);
+//  delay(serialDelay);
+  Serial.write(threeBytes[1]);
+//  delay(serialDelay);
+  Serial.write(threeBytes[2]);  
+}
+
+
+void writeThreeBytes(byte b1, byte b2, byte b3)
+{
+//  delay(serialDelay);
+  Serial.print(b1, BYTE);
+//  delay(serialDelay);
+  Serial.print(b2, BYTE);
+//  delay(serialDelay);
+  Serial.print(b3, BYTE);
+}
+
+
+//ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER 
+//ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER 
+//ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER 
+//ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER 
+//ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER ROTARY ENCODER 
 
 
 void checkEncoderSwitch()
@@ -174,40 +224,9 @@ void checkEncoderSwitch()
   {
     sevenSegDisplayMode++;
     if(sevenSegDisplayMode >= numModes) sevenSegDisplayMode = 0;
-//    if(sevenSegDisplayMode == TEMPO_MODE) sevenSegDisplayMode = CHANNEL_MODE;
-//    else if(sevenSegDisplayMode == CHANNEL_MODE) sevenSegDisplayMode = TEMPO_MODE;
     showModeName();
   }
   lastEncoderButtonValue = encoderButtonValue;
-}
-
-
-void showModeName() {
-  showingModeName = true;
-}
-
-void hideModeName() {
-  showingModeName = false;
-}
-
-
-void checkSpecialButton() 
-{
-  if(digitalRead(specialPin) == HIGH && specialPinDown == false) {
-    digitalWrite(ledPin, HIGH);
-    specialPinDown = true;
-    if(sevenSegDisplayMode == PWM_MODE) {
-      Serial.print(pwmByte, BYTE);
-      delay(serialDelay);
-      Serial.print(pwmVal, BYTE);
-      delay(serialDelay);
-      Serial.print(0, BYTE);
-    }
-    //send special bytes
-  } else if(digitalRead(specialPin) == LOW && specialPinDown == true) {
-    digitalWrite(ledPin, LOW);    
-    specialPinDown = false;
-  }
 }
 
 
@@ -277,26 +296,38 @@ void readEncoder()
 }
 
 
-void sendOutChannelByte()
+//BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON 
+//BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON 
+//BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON 
+//BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON 
+//BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON 
+
+
+void checkSpecialButton() 
 {
-  delay(serialDelay);
-  Serial.print(switchChannelByte, BYTE);
-  delay(serialDelay);
-  Serial.print(channel, BYTE);
-  delay(serialDelay);  
-  Serial.print(1, BYTE);
+  if(digitalRead(specialPin) == HIGH && specialPinDown == false) {
+    digitalWrite(ledPin, HIGH);
+    specialPinDown = true;
+    if(sevenSegDisplayMode == PWM_MODE) {
+      Serial.print(pwmByte, BYTE);
+      delay(serialDelay);
+      Serial.print(pwmVal, BYTE);
+      delay(serialDelay);
+      Serial.print(0, BYTE);
+    }
+    //send special bytes
+  } else if(digitalRead(specialPin) == LOW && specialPinDown == true) {
+    digitalWrite(ledPin, LOW);    
+    specialPinDown = false;
+  }
 }
 
 
-void sendOutTempoByte()
-{
-  delay(serialDelay);
-  Serial.print(setTempoByte, BYTE);
-  delay(serialDelay);
-  Serial.print(tempo, BYTE);
-  delay(serialDelay);  
-  Serial.print(1, BYTE);  
-}
+//7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG
+//7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG
+//7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG
+//7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG
+//7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG
 
 
 void draw7Seg() {
@@ -329,6 +360,7 @@ void draw7Seg() {
   }
 }
 
+
 void displayWord(String theWord)
 {
   if(theWord == "tempo") {
@@ -354,6 +386,7 @@ void displayWord(String theWord)
   }
 }
 
+
 void setLetterToDisplay(int ad, char letter) {
   
   byte letterAsByte = getLetterAsByte(letter);
@@ -369,6 +402,7 @@ void setLetterToDisplay(int ad, char letter) {
   shiftOut(shiftOutDataPin, shiftOutClockPin, MSBFIRST, address);
   digitalWrite(shiftOutLatchPin, HIGH);    
 }
+
 
 void setDigitToDisplay(int ad, byte digit) {
   
@@ -387,28 +421,13 @@ void setDigitToDisplay(int ad, byte digit) {
 }
 
 
-void shiftOut(int myDataPin, int myClockPin, byte myDataOut) {
-  int i=0;
-  int pinState;
-  pinMode(myClockPin, OUTPUT);
-  pinMode(myDataPin, OUTPUT);
+void showModeName() {
+  showingModeName = true;
+}
 
-  digitalWrite(myDataPin, 0);
-  digitalWrite(myClockPin, 0);
 
-  for (i=7; i>=0; i--)  {
-    digitalWrite(myClockPin, 0);
-    if ( myDataOut & (1<<i) ) {
-      pinState= 1;
-    }
-    else {	
-      pinState= 0;
-    }
-    digitalWrite(myDataPin, pinState);
-    digitalWrite(myClockPin, 1);
-    digitalWrite(myDataPin, 0);
-  }
-  digitalWrite(myClockPin, 0);
+void hideModeName() {
+  showingModeName = false;
 }
 
 
@@ -541,3 +560,26 @@ byte getDigitAsByte(int digit)
   return digitAsByte;
 }
 
+void shiftOut(int myDataPin, int myClockPin, byte myDataOut) {
+  int i=0;
+  int pinState;
+  pinMode(myClockPin, OUTPUT);
+  pinMode(myDataPin, OUTPUT);
+
+  digitalWrite(myDataPin, 0);
+  digitalWrite(myClockPin, 0);
+
+  for (i=7; i>=0; i--)  {
+    digitalWrite(myClockPin, 0);
+    if ( myDataOut & (1<<i) ) {
+      pinState= 1;
+    }
+    else {	
+      pinState= 0;
+    }
+    digitalWrite(myDataPin, pinState);
+    digitalWrite(myClockPin, 1);
+    digitalWrite(myDataPin, 0);
+  }
+  digitalWrite(myClockPin, 0);
+}
