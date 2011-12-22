@@ -45,6 +45,10 @@ byte pwmVal = 3;
 int solenoid2Pin = 8;
 int currentSolenoid = 1;
 
+unsigned long turnOnTime = 0;
+unsigned long preMainInterval = 10000;
+boolean doMain = false;
+
 void setup()
 {
   Serial.begin(115200);
@@ -54,10 +58,25 @@ void setup()
   pinMode(solenoid2Pin, OUTPUT);  
 
   digitalWrite(solenoidPin, LOW);
-  digitalWrite(solenoid2Pin, LOW);  
+  digitalWrite(solenoid2Pin, LOW); 
+
+  turnOnTime = millis(); 
 }
 
-void loop()
+void loop() 
+{
+  if(doMain == false) preMain();
+  else goMain();
+}
+
+void preMain() 
+{
+  while(Serial.available()) Serial.read();
+  if(millis() > turnOnTime + preMainInterval) doMain = true;
+
+}
+
+void goMain() 
 {
   checkButton();
   checkPwm();
@@ -104,7 +123,7 @@ void listenForSerial()
     //AFTER CONFIG
     if(isNoteOn(threeBytes[0]) == true && threeBytes[0] - noteOnByte == channel)
     {
-        setSolenoidOn();
+      setSolenoidOn();
     }
     else if(isNoteOff(threeBytes[0]) == true && threeBytes[0] - noteOffByte == channel) 
     {

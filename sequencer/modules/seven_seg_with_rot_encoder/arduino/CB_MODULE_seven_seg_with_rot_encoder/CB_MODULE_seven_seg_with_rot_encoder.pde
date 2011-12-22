@@ -103,6 +103,11 @@ boolean initialChannelsSetSerialReceived = false;
 byte pwmVal = 1;
 byte numPwmVals = 3;
 
+unsigned long turnOnTime = 0;
+unsigned long preMainInterval = 10000;
+boolean doMain = false;
+
+
 void setup()
 {
   Serial.begin(115200);
@@ -117,10 +122,25 @@ void setup()
 
   digitalWrite(dpInEncoderA, HIGH);
   digitalWrite(dpInEncoderB, HIGH);  
+  
+  turnOnTime = millis(); 
 }
 
 
-void loop() {
+void loop() 
+{
+  if(doMain == false) preMain();
+  else goMain();
+}
+
+void preMain() 
+{
+  while(Serial.available()) Serial.read();
+  if(millis() > turnOnTime + preMainInterval) doMain = true;
+}
+
+void goMain() 
+{
   if(initialChannelsSetSerialReceived == false) {
   spitOutThreeBytes();
   } else if(initialChannelsSetSerialReceived == true) {
