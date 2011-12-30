@@ -1,7 +1,11 @@
 Contains:
 
-Arduino code
-Parts lists
-3d printer files
+Arduino code (.pde)
+
+Parts lists (.xls Excel spreadsheets)
+
+3d printer files (.stl, .gcode, and .skp models designed in Google Sketchup)
+
+PCB files (.sch, .brd, and gerbers)
 
 where necessary for each sequencer module.
