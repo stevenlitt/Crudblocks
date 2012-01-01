@@ -156,7 +156,6 @@ void preMain()
 {
   while(Serial.available()) Serial.read();
   if(millis() > turnOnTime + preMainInterval) doMain = true;
-
 }
 
 void goMain() 
