@@ -45,7 +45,7 @@ byte tempo = 120;
 
 int serialDelay = 1;
 
-int threeBytes[3] = {0, 0, 0};
+byte threeBytes[3] = {0, 0, 0};
 
 int timeOnPin = 0;
 boolean solenoidOn = false;
@@ -75,7 +75,7 @@ void loop()
   else goMain();
 }
 
-void preMain() 
+void preMain()
 {
   while(Serial.available()) Serial.read();
   if(millis() > turnOnTime + preMainInterval) doMain = true;
@@ -98,9 +98,9 @@ void goMain()
 
 
 void listenForSerial()
-{
+{  
   if(Serial.available() < 3) return;  //if we have less than three bytes to be read in... skip this function
-  
+    
   getThreeBytes();
   
   if(channelSet == false)
@@ -111,7 +111,7 @@ void listenForSerial()
       channelSet = true;
       channel = threeBytes[1];
 
-      for(byte i=0; i<channel; i++)
+      for(byte i=0; i<channel%10; i++)
       {
         digitalWrite(ledPin, HIGH);
         delay(400);
@@ -180,11 +180,11 @@ void sendOutThreeBytes()
 void writeThreeBytes(byte b1, byte b2, byte b3)
 {
 //  delay(serialDelay);
-  Serial.print(b1, BYTE);
+  Serial.write(b1);
 //  delay(serialDelay);
-  Serial.print(b2, BYTE);
+  Serial.write(b2);
 //  delay(serialDelay);
-  Serial.print(b3, BYTE);
+  Serial.write(b3);
 }
 
 
