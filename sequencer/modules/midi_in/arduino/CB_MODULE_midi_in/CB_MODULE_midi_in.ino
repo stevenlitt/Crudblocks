@@ -16,7 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
  
 ---------------------------------------------------------------------*/
- 
+
 /*----------------------------------------------------------------------
  
  This code is for the MIDI in module. 
@@ -48,6 +48,7 @@ byte threeExternalBytes[3] = {0, 0, 0};
 int ledPin= 13;
 
 int numChannels = 0;
+byte firstChannelByte = 1;
 
 boolean initialNumChannelsSerialReceived = false;
 boolean initialChannelsSetSerialReceived = false;
@@ -90,6 +91,7 @@ void goMain()
 {
   if(initialNumChannelsSerialReceived == false)          //set output channels, etc
   {
+    checkForFirstChannelByte();
     checkSetAddressPin();
     checkForSerialReceiveNumChannels();    
   }
@@ -111,6 +113,32 @@ void goMain()
 //INIT CONFIG INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG 
 
 
+void checkForFirstChannelByte()
+{
+  while(softSerial.available() >= 3)
+  {
+    getNextThreeExternalMidiBytes();
+    if(isNoteOn(threeExternalBytes[0]) == true) {
+      firstChannelByte = threeExternalBytes[1];
+      for(byte i=0; i<firstChannelByte; i++) {
+        digitalWrite(ledPin, HIGH);
+        delay(200);
+        digitalWrite(ledPin, LOW);
+        delay(200);
+      }
+    } else if(isNoteOff(threeExternalBytes[0]) == true) {
+      firstChannelByte = threeExternalBytes[1];
+      for(byte i=0; i<firstChannelByte; i++) {
+        digitalWrite(ledPin, HIGH);
+        delay(200);
+        digitalWrite(ledPin, LOW);
+        delay(200);
+      }
+    }
+  }
+}
+
+
 void checkSetAddressPin()
 {
   lastSetChannelsPinValue = setChannelsPinValue;
@@ -125,8 +153,7 @@ void checkSetAddressPin()
     digitalWrite(ledPin, LOW);    
     
     //send out the channel setter byte
-    byte firstChannel = 1;
-    writeThreeBytes(channelSetterByte, firstChannel, 0);
+    writeThreeBytes(channelSetterByte, firstChannelByte, 0);
   }
 }
 
@@ -169,7 +196,7 @@ void checkForSerialReceiveChannelsSet()
   {
     initialChannelsSetSerialReceived = true;
     
-    for(int i=0; i<40; i++) {
+    for(int i=0; i<3; i++) {
       digitalWrite(13, HIGH);
       delay(100);
       digitalWrite(13, LOW);
@@ -195,25 +222,11 @@ void readInExternalMidi()
   {
     getNextThreeExternalMidiBytes();
     if(isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] != 0) {                                                       //if its a noteon and the velocity isn't zero (maxmsp uses noteon w velocity zero as noteoff for some reason
-      byte channelOnByte = noteOnByte + threeExternalBytes[1] + 1;
-      writeThreeBytes(channelOnByte, 0, 0);
-//      Serial.println("on");
-//      Serial.println(threeExternalBytes[0], DEC);
-//      Serial.println(threeExternalBytes[1], DEC);
-//      Serial.println(threeExternalBytes[2], DEC);
-      
-      
+      byte channelOnByte = noteOnByte + threeExternalBytes[1];
+      writeThreeBytes(channelOnByte, 0, 0);      
     } else if(isNoteOff(threeExternalBytes[0]) == true || (isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] == 0)) {  //if its a noteoff or a noteon w velocity zero (maxmsp uses noteon w velocity zero as noteoff for some reason
-      byte channelOffByte = noteOffByte + threeExternalBytes[1] + 1;
+      byte channelOffByte = noteOffByte + threeExternalBytes[1];
       writeThreeBytes(channelOffByte, 0, 0);
-      
-      digitalWrite(ledPin, HIGH);
-      delay(10);
-      digitalWrite(ledPin, LOW);
-//      Serial.println("off");
-//      Serial.println(threeExternalBytes[0], DEC);
-//      Serial.println(threeExternalBytes[1], DEC);
-//      Serial.println(threeExternalBytes[2], DEC);      
     }
   }
 }
