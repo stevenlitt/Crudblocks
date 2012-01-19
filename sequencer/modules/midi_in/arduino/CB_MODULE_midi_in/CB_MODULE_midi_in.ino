@@ -29,10 +29,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define noteOnByte B10010000
 #define noteOffByte B10000000
 #define channelSetterByte B11110001
+#define countSequencersByte B1111010
 #define next8Byte B11110011
 #define switchChannelByte B11110010
 #define setNumChannelsByte B11110100
 #define setTempoByte B11110110
+#define autosetPWMByte B11111000
+
+#define CLOCK_MODE 1
+define NODE_MODE 2
 
 int txPin = 2;
 int rxPin = 3;
@@ -52,6 +57,7 @@ byte firstChannelByte = 1;
 
 boolean initialNumChannelsSerialReceived = false;
 boolean initialChannelsSetSerialReceived = false;
+boolean pwmsSet = false;
 
 boolean master = false;
 
@@ -62,6 +68,16 @@ boolean channelSwitchOn = false;
 unsigned long turnOnTime = 0;
 unsigned long preMainInterval = 3000;
 boolean doMain = false;
+
+int ppqn = 24;         // 96 / 4;
+int clockPulses = 0;
+int quarterNotes = 0;
+
+boolean sequencersCounted = false;
+byte numSequencers = 0;
+
+byte midiMode;
+
 
 void setup() {
   Serial.begin(115200);
@@ -89,20 +105,39 @@ void preMain()
 
 void goMain()
 {
-  if(initialNumChannelsSerialReceived == false)          //set output channels, etc
+  
+  while(softSerial.available() > 0)
+  {
+    byte s = softSerial.read();
+//    Serial.println(s);
+    
+    if(s == 248) clockPulses++;                //clock tick
+    else if(s == 252) clockPulses = 0;         //clock stop
+    
+    Serial.println(clockPulses);   
+  }
+  return;
+
+  if(initialNumChannelsSerialReceived == false)                                //set output channels, etc
   {
     checkForFirstChannelByte();
     checkSetAddressPin();
     checkForSerialReceiveNumChannels();    
   }
-  else if(initialChannelsSetSerialReceived == false)
+  else if(sequencersCounted == false)
   {
-    checkForSerialReceiveChannelsSet();
+    checkForSequencers();
   }
-  else if(initialChannelsSetSerialReceived == true)      //...and start the sequencer once everything knows what and where it is
+  else if(initialNumChannelsSerialReceived == true && pwmsSet == false)        //make sure all modules' mechanisms switch on and off from to noteon, noteoffs... and aren't using their own built in pwm code
+  {
+    blinks(5);    
+    setAllPWMSToZero();
+    pwmsSet = true;
+  }
+  else                                                                         //...and start the sequencer once everything knows what and where it is
   {
     readInExternalMidi();
-//    readInNextThreeBytes();
+    readInNextThreeBytes();
   }  
 }
 
@@ -118,22 +153,17 @@ void checkForFirstChannelByte()
   while(softSerial.available() >= 3)
   {
     getNextThreeExternalMidiBytes();
-    if(isNoteOn(threeExternalBytes[0]) == true) {
+    if(isNoteOn(threeExternalBytes[0]) == true) 
+    {
       firstChannelByte = threeExternalBytes[1];
-      for(byte i=0; i<firstChannelByte; i++) {
-        digitalWrite(ledPin, HIGH);
-        delay(200);
-        digitalWrite(ledPin, LOW);
-        delay(200);
-      }
-    } else if(isNoteOff(threeExternalBytes[0]) == true) {
+      digitalWrite(ledPin, HIGH);
+      delay(5);
+      digitalWrite(ledPin, LOW);
+      delay(5);
+    } 
+    else if(isNoteOff(threeExternalBytes[0]) == true) 
+    {
       firstChannelByte = threeExternalBytes[1];
-      for(byte i=0; i<firstChannelByte; i++) {
-        digitalWrite(ledPin, HIGH);
-        delay(200);
-        digitalWrite(ledPin, LOW);
-        delay(200);
-      }
     }
   }
 }
@@ -144,16 +174,13 @@ void checkSetAddressPin()
   lastSetChannelsPinValue = setChannelsPinValue;
   setChannelsPinValue = digitalRead(setChannelsPin);
   
-  if(lastSetChannelsPinValue == LOW && setChannelsPinValue == HIGH)  //if it was just switched on...
+  if(lastSetChannelsPinValue == LOW && setChannelsPinValue == HIGH)  // if it was just switched on...
   {
-    master = true;                                                   //...set it as the master
-    
-    digitalWrite(ledPin, HIGH);
-    delay(1000);
+    digitalWrite(ledPin, HIGH);                                      // give blinky feedback
+    delay(500);
     digitalWrite(ledPin, LOW);    
     
-    //send out the channel setter byte
-    writeThreeBytes(channelSetterByte, firstChannelByte, 0);
+    writeThreeBytes(channelSetterByte, firstChannelByte, 0);         // ...send out the first config bytes
   }
 }
 
@@ -162,30 +189,26 @@ void checkForSerialReceiveNumChannels()
 {
   if(Serial.available() >= 3)
   {
-    initialNumChannelsSerialReceived = true;                    //once this is set true, we stop calling this function and start calling whatever's next in the loop()       
-    getThreeBytes();
-    
-    if(master == true)                                          //if we're the master sequencer, this means we just heard back after configuring the channels...
-    {
-      byte lastSerialInValue = threeBytes[0];
-      if(lastSerialInValue == channelSetterByte)
-      {
-        lastSerialInValue = threeBytes[1];
-        numChannels = lastSerialInValue - 1;
-//        if(channel > numChannels) channel = 1;
-        
-        writeThreeBytes(setNumChannelsByte, numChannels, 0);    //...and so now we send out the bytes that tell the "controller" (knob + rotary encoder + display) how many channels we have
-      }
-    }
-    else if(master == false)                                    // if we're not the master, this means we just take in what the master sent us (the setNumChannelsByte + numChannels above)
-    {                                                           // and spit it back out on the way to the channels
-      digitalWrite(ledPin, HIGH);
-      delay(1000);
-      digitalWrite(ledPin, LOW);
+    getThreeBytes();    
+    initialNumChannelsSerialReceived = true;                        // once this is set true, we stop calling this function and start calling whatever's next in the loop()
 
-//      getThreeBytes();
-      sendOutThreeBytes();
+    if(threeBytes[0] == channelSetterByte)
+    {
+      numChannels = threeBytes[1] - 1;
     }
+  }
+}
+
+void checkForSequencers()
+{
+  if(Serial.available() >= 3)
+  {
+    getThreeBytes();
+    sequencersCounted = true;
+    numSequencers = threeBytes[1];
+    if(numSequencers == 0) midiMode = NOTE_MODE;
+    else if(numSequencers > 0) midiMode = CLOCK_MODE;
+    
   }
 }
 
@@ -194,18 +217,9 @@ void checkForSerialReceiveChannelsSet()
 {
   if(Serial.available() >= 3) 
   {
-    initialChannelsSetSerialReceived = true;
-    
-    for(int i=0; i<3; i++) {
-      digitalWrite(13, HIGH);
-      delay(100);
-      digitalWrite(13, LOW);
-      delay(100);
-    }    
-    
-//    if(master == true) initSteppingMaster();
     getThreeBytes();
-//    if(master == false) sendOutThreeBytes();
+    
+    initialChannelsSetSerialReceived = true;
   }
 }
 
@@ -221,12 +235,28 @@ void readInExternalMidi()
   while(softSerial.available() >= 3)
   {
     getNextThreeExternalMidiBytes();
-    if(isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] != 0) {                                                       //if its a noteon and the velocity isn't zero (maxmsp uses noteon w velocity zero as noteoff for some reason
-      byte channelOnByte = noteOnByte + threeExternalBytes[1];
-      writeThreeBytes(channelOnByte, 0, 0);      
-    } else if(isNoteOff(threeExternalBytes[0]) == true || (isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] == 0)) {  //if its a noteoff or a noteon w velocity zero (maxmsp uses noteon w velocity zero as noteoff for some reason
-      byte channelOffByte = noteOffByte + threeExternalBytes[1];
-      writeThreeBytes(channelOffByte, 0, 0);
+    
+//    digitalWrite(ledPin, HIGH);
+//    delay(10);
+//    digitalWrite(ledPin, LOW);
+//    delay(10);       
+    
+    if(midiMode == NOTE_MODE)
+    {
+      if(isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] != 0) 
+      {                                                       //if its a noteon and the velocity isn't zero (maxmsp uses noteon w velocity zero as noteoff for some reason
+        byte channelOnByte = noteOnByte + threeExternalBytes[1];
+        writeThreeBytes(channelOnByte, 0, 0);
+      } 
+      else if(isNoteOff(threeExternalBytes[0]) == true || (isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] == 0)) //if its a noteoff, or a noteon w velocity zero (which is used by some things as a noteoff)
+      {
+        byte channelOffByte = noteOffByte + threeExternalBytes[1];
+        writeThreeBytes(channelOffByte, 0, 0);
+      }
+    }
+    else if(midiMode == CLOCK_MODE)
+    {
+      //do nothing for now
     }
   }
 }
@@ -264,6 +294,18 @@ boolean isNoteOff(byte inputByte)
     return true;
   }
   else return false;
+}
+
+
+void blinks(int numBlinks)
+{
+    for(int i=0; i<numBlinks; i++) 
+    {
+      digitalWrite(13, HIGH);
+      delay(100);
+      digitalWrite(13, LOW);
+      delay(100);
+    }    
 }
 
 
@@ -314,7 +356,12 @@ void writeThreeBytes(byte b1, byte b2, byte b3)
   Serial.write(b3);
 }
 
-void blinkForHigh() {
-  digitalWrite(ledPin, HIGH);
-  delay(1000);
+void setAllPWMSToZero()
+{
+  //set pwm to zero on all channels
+  for(int i=firstChannelByte; i<firstChannelByte+numChannels; i++)
+  {
+    byte pwmVal = 0;
+    writeThreeBytes(autosetPWMByte, i, pwmVal);
+  }
 }

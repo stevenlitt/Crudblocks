@@ -32,6 +32,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define switchChannelByte B11110010
 #define setNumChannelsByte B11110100
 #define setTempoByte B11110110
+#define nextStepByte B11111001
 
 
 int dpInEncoderA = A2;
@@ -174,7 +175,7 @@ void goMain()
   if(initialNumChannelsSerialReceived == false)          //set output channels, etc
   {
     checkSetAddressPin();
-    checkForSerialReceiveNumChannels();    
+    checkForSerialReceiveNumChannels();  
   }
   else if(initialChannelsSetSerialReceived == false)
   {
@@ -324,11 +325,11 @@ void sendOutThreeBytes()
 void writeThreeBytes(byte b1, byte b2, byte b3)
 {
 //  delay(serialDelay);
-  Serial.print(b1, BYTE);
+  Serial.write(b1);
 //  delay(serialDelay);
-  Serial.print(b2, BYTE);
+  Serial.write(b2);
 //  delay(serialDelay);
-  Serial.print(b3, BYTE);
+  Serial.write(b3);
 }
 
 

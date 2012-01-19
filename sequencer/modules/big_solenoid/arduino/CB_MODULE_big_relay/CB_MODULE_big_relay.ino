@@ -25,6 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define channelSetterByte B11110001
 #define setTempoByte B11110110
 #define pwmByte B11110111
+#define autosetPWMByte B11111000
 
 int ledPin = 13;
 int solenoidPin = 7;
@@ -147,6 +148,10 @@ void listenForSerial()
       tempo = threeBytes[1]; 
       sendOutThreeBytes();       
     }
+    else if(threeBytes[0] == autosetPWMByte && threeBytes[1] == channel)
+    {
+      pwmVal = threeBytes[2];
+    }
     else  //if its any other message we aren't accounting for, for a different channel or type of module
     {        
       sendOutThreeBytes();
@@ -203,7 +208,11 @@ void checkPwm()
   unsigned long lengthOfStep = endOfStep - switchedOnAt;
   unsigned long timeIntoStep = millis() - switchedOnAt;
   
-  if(pwmVal == 1) 
+  if(pwmVal == 0)
+  {
+    //do nothing!!! just rely on setSolenoidOn() and setSolenoidOff()s
+  }
+  else if(pwmVal == 1) 
   {
     if(millis() > switchedOnAt + lengthOfStep * 5 / 10)
     {

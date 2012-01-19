@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define channelSetterByte B11110001
 #define setTempoByte B11110110
 #define pwmByte B11110111
-
+#define autosetPWMByte B11111000
 
 int ledPin = 13;
 int solenoidPin = 7;
@@ -50,7 +50,7 @@ int timeOnPin = 0;
 boolean solenoidOn = false;
 unsigned long switchedOnAt = 0;
 
-byte pwmVal = 3;
+byte pwmVal = 1;
 
 //these vars are unique to the double module... all others (above) are exactly the same as the single solenoid module
 int solenoid2Pin = 8;
@@ -152,6 +152,10 @@ void listenForSerial()
       tempo = threeBytes[1]; 
       sendOutThreeBytes();       
     }
+    else if(threeBytes[0] == autosetPWMByte && threeBytes[1] == channel)
+    {
+      pwmVal = threeBytes[2];
+    }    
     else  //if its any other message we aren't accounting for, for a different channel or type of module
     {        
       sendOutThreeBytes();
@@ -185,11 +189,11 @@ void sendOutThreeBytes()
 void writeThreeBytes(byte b1, byte b2, byte b3)
 {
 //  delay(serialDelay);
-  Serial.print(b1, BYTE);
+  Serial.write(b1);
 //  delay(serialDelay);
-  Serial.print(b2, BYTE);
+  Serial.write(b2);
 //  delay(serialDelay);
-  Serial.print(b3, BYTE);
+  Serial.write(b3);
 }
 
 

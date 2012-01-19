@@ -171,8 +171,6 @@ void goMain()
 //BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM BYTESTREAM
 
 
-void 
-
 void spitOutThreeBytes() {
   while(Serial.available() >= 3)
   {      
@@ -235,11 +233,11 @@ void sendOutThreeBytes()
 void writeThreeBytes(byte b1, byte b2, byte b3)
 {
 //  delay(serialDelay);
-  Serial.print(b1, BYTE);
+  Serial.write(b1);
 //  delay(serialDelay);
-  Serial.print(b2, BYTE);
+  Serial.write(b2);
 //  delay(serialDelay);
-  Serial.print(b3, BYTE);
+  Serial.write(b3);
 }
 
 
@@ -342,11 +340,12 @@ void checkSpecialButton()
     digitalWrite(ledPin, HIGH);
     specialPinDown = true;
     if(sevenSegDisplayMode == PWM_MODE) {
-      Serial.print(pwmByte, BYTE);
+      Serial.write(pwmByte);
       delay(serialDelay);
-      Serial.print(pwmVal, BYTE);
+      Serial.write(pwmVal);
       delay(serialDelay);
-      Serial.print(0, BYTE);
+      byte zero = 0;
+      Serial.write(zero);
     }
     //send special bytes
   } else if(digitalRead(specialPin) == LOW && specialPinDown == true) {
@@ -474,46 +473,55 @@ byte getLetterAsByte(char letter)
     letterAsByte += 1;
     letterAsByte += 1 << 1;
     letterAsByte += 1 << 2;
+    letterAsByte += 1 << 7;    
     break;
     
     case 'e':
     letterAsByte += 1 << 1;
     letterAsByte += 1 << 2;
+    letterAsByte += 1 << 7;    
     break;
     
     case 'm':
     letterAsByte += 1 << 4;
     letterAsByte += 1 << 5;
+    letterAsByte += 1 << 7;    
     break;
     
     case 'w':
     letterAsByte += 1 << 4;
     letterAsByte += 1 << 5;
+    letterAsByte += 1 << 7;    
     break;    
     
     case 'p':
     letterAsByte += 1 << 2;
     letterAsByte += 1 << 3;
+    letterAsByte += 1 << 7;    
     break;
     
     case 'c':
     letterAsByte += 1 << 1;
     letterAsByte += 1 << 2;
     letterAsByte += 1 << 6;
+    letterAsByte += 1 << 7;    
     break;
 
     case 'h':
     letterAsByte += 1;
     letterAsByte += 1 << 3;
+    letterAsByte += 1 << 7;    
     break;
 
     case 'a':
     letterAsByte += 1 << 3;
+    letterAsByte += 1 << 7;    
     break;
     
     case 'n':
     letterAsByte += 1 << 3;
-    letterAsByte += 1 << 6;    
+    letterAsByte += 1 << 6;  
+    letterAsByte += 1 << 7;    
     break;
     
     case '_':
@@ -522,7 +530,8 @@ byte getLetterAsByte(char letter)
     letterAsByte += 1 << 2;  
     letterAsByte += 1 << 4;  
     letterAsByte += 1 << 5;
-    letterAsByte += 1 << 6;      
+    letterAsByte += 1 << 6; 
+    letterAsByte += 1 << 7;
     break;    
   }
   
@@ -538,6 +547,7 @@ byte getDigitAsByte(int digit)
 
   case 0:
     digitAsByte += 1 << 6;
+    digitAsByte += 1 << 7;    
     break;
 
   case 1:
@@ -550,28 +560,33 @@ byte getDigitAsByte(int digit)
     break;
 
   case 2:
-      digitAsByte += 1 << 2;
-      digitAsByte += 1 << 5;
-      break;
+    digitAsByte += 1 << 2;
+    digitAsByte += 1 << 5;
+    digitAsByte += 1 << 7;          
+    break;
 
   case 3:
     digitAsByte += 1 << 4;
     digitAsByte += 1 << 5;
+    digitAsByte += 1 << 7;              
     break;
 
   case 4:
     digitAsByte += 1;
     digitAsByte += 1 << 3;
     digitAsByte += 1 << 4;
+    digitAsByte += 1 << 7;              
     break;
 
   case 5:
     digitAsByte += 1 << 1;
     digitAsByte += 1 << 4;
+    digitAsByte += 1 << 7;              
     break;
 
   case 6:
     digitAsByte += 1 << 1;
+    digitAsByte += 1 << 7;              
     break;
 
   case 7:
@@ -579,14 +594,17 @@ byte getDigitAsByte(int digit)
     digitAsByte += 1 << 4;
     digitAsByte += 1 << 5;
     digitAsByte += 1 << 6;
+    digitAsByte += 1 << 7;              
     break;
 
   case 8:
-    digitAsByte = 0;
+//    digitAsByte = 0;
+    digitAsByte += 1 << 7;              
     break;
 
   case 9:
     digitAsByte += 1 << 4;
+    digitAsByte += 1 << 7;              
     break;
   }
   
