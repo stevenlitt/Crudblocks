@@ -115,7 +115,7 @@ int oldEncoderPosition = 0;
 byte channel = 1;
 byte channelOnNibble = (1 << 7) + (1 << 4);
 byte channelOffNibble = 1 << 7;
-byte numChannels = 5;
+byte numChannels = 16;
 
 boolean initialNumChannelsSerialReceived = false;
 boolean initialChannelsSetSerialReceived = false;
