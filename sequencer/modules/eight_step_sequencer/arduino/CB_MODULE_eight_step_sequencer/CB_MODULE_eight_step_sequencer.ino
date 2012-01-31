@@ -33,7 +33,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define setNumChannelsByte B11110100
 #define setTempoByte B11110110
 #define nextStepByte B11111001
-
+#define BEGINLOADBYTE B11000001
+#define LOADSTEPBYTE B11000010
+#define ENDCHANNELLOADBYTE B11000100
+#define ENDLOADBYTE B11000011
 
 int dpInEncoderA = A2;
 int dpInEncoderB = A3;
@@ -130,8 +133,17 @@ boolean justJumped = false;
 boolean channelSwitchOn = false;
 
 unsigned long turnOnTime = 0;
-unsigned long preMainInterval = 10000;
+unsigned long preMainInterval = 3000;
 boolean doMain = false;
+
+int numSteps = 8;
+
+boolean paused = false;
+
+//helpers for load from sd card
+int currentStepToWrite = 0;
+int currentChannelToWrite = 0;
+boolean memoryBytesLoaded = false;
 
 void setup() {
   Serial.begin(115200);
@@ -275,27 +287,74 @@ void checkForSerialReceiveChannelsSet()
 
 void readInNextThreeBytes()
 {
-   while(Serial.available() >= 3) {
+   while(Serial.available() >= 3) 
+   {
       getThreeBytes();
       
-      if(threeBytes[0] == next8Byte) {
+      if(threeBytes[0] == BEGINLOADBYTE)      //this should really clear the whole step array... if we get a sequence thats too short it may not overwrite all the steps from the previous pattern
+      {
+        currentStepToWrite = 0;
+        currentChannelToWrite = 1;
+        sendOutThreeBytes(); //new
+        paused = true;       //new
+//        digitalWrite(ledPin, HIGH);  //new
+//        delay(500);
+      }
+      
+      else if(threeBytes[0] == LOADSTEPBYTE)
+      {
+        if(currentStepToWrite < numSteps)
+        {
+          byte val = threeBytes[1];
+          
+          if(val == 0) stepsOnArray[currentStepToWrite + ( currentChannelToWrite * 16 )] = 0;
+          else if(val == 1) stepsOnArray[currentStepToWrite + ( currentChannelToWrite * 16 )] = 1;
+          
+          currentStepToWrite++;
+        }
+        else if (currentStepToWrite >= numSteps)
+        {
+          sendOutThreeBytes();
+        }
+      }
+      else if(threeBytes[0] == ENDCHANNELLOADBYTE)
+      {
+        currentStepToWrite = 0;
+        currentChannelToWrite++;
+        sendOutThreeBytes();   
+      }
+      else if(threeBytes[0] == ENDLOADBYTE)
+      {
+        paused = false;
+//        digitalWrite(ledPin, LOW); //new
+//        delay(100);
+        sendOutThreeBytes(); //new
+        memoryBytesLoaded = true;
+      }       
+      
+      else if(threeBytes[0] == next8Byte) 
+      {
         currentStep = 0;
         justJumped = true;
       }
-      else if(threeBytes[0] == switchChannelByte) {
+      else if(threeBytes[0] == switchChannelByte) 
+      {
         if(threeBytes[1] != channel) {
           channel = threeBytes[1];
           sendOutThreeBytes();
         }
       }
-      else if(threeBytes[0] == setTempoByte) {
+      else if(threeBytes[0] == setTempoByte) 
+      {
           tempo = threeBytes[1];
           sendOutThreeBytes();      
-      } else {
+      }
+      else
+      {
         if(master == false) {
           sendOutThreeBytes();
         }
-      }
+      }    
    }
 }
 
@@ -348,6 +407,7 @@ currentStep = 0;      //this makes it actually start stepping
 
 void stepTempo() {
   if(currentStep == -1) return;
+  if(paused == true) return;
   
   if(millis() > lastStepTime + (60000 / tempo) / 8) {
     if(justJumped == true) justJumped = false;

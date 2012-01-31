@@ -138,15 +138,16 @@ void listenForSerial()
     }
     else if(threeBytes[0] == pwmByte)
     {    
-      if(listeningForSpecialCommands == true) {
+      if(listeningForSpecialCommands == true) 
+      {
         pwmVal = threeBytes[1];
       }
-      sendOutThreeBytes();      
+      sendOutThreeBytes();
     }
     else if(latestSerialInValue == setTempoByte)
     {
-      tempo = threeBytes[1]; 
-      sendOutThreeBytes();       
+      tempo = threeBytes[1];
+      sendOutThreeBytes();
     }
     else if(threeBytes[0] == autosetPWMByte && threeBytes[1] == channel)
     {
