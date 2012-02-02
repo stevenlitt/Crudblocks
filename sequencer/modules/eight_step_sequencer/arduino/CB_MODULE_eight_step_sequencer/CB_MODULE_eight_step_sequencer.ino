@@ -33,10 +33,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define setNumChannelsByte B11110100
 #define setTempoByte B11110110
 #define nextStepByte B11111001
+
 #define BEGINLOADBYTE B11000001
 #define LOADSTEPBYTE B11000010
-#define ENDCHANNELLOADBYTE B11000100
 #define ENDLOADBYTE B11000011
+#define ENDCHANNELLOADBYTE B11000100
+
+#define STARTSAVEBYTE B11000101
+#define ENDSAVEBYTE B11000110
+#define SAVEBITBYTE B11000111
+#define SAVENEXTBYTE B11001000
 
 int dpInEncoderA = A2;
 int dpInEncoderB = A3;
@@ -68,7 +74,7 @@ int shiftInByte2Array[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 int lastShiftInByte1Array[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 int lastShiftInByte2Array[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 
-int stepsOnArray[256] = { 
+byte stepsOnArray[256] = { 
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -144,6 +150,9 @@ boolean paused = false;
 int currentStepToWrite = 0;
 int currentChannelToWrite = 0;
 boolean memoryBytesLoaded = false;
+
+//helpers for save to sd card
+int channelToSave = 1;
 
 void setup() {
   Serial.begin(115200);
@@ -243,11 +252,9 @@ void checkForSerialReceiveNumChannels()
     
     if(master == true)                                          //if we're the master sequencer, this means we just heard back after configuring the channels...
     {
-      byte lastSerialInValue = threeBytes[0];
-      if(lastSerialInValue == channelSetterByte)
+      if(threeBytes[0] == channelSetterByte)
       {
-        lastSerialInValue = threeBytes[1];
-        numChannels = lastSerialInValue - 1;
+        numChannels = threeBytes[1] - 1;
         if(channel > numChannels) channel = 1;
         
         writeThreeBytes(setNumChannelsByte, numChannels, 0);    //...and so now we send out the bytes that tell the "controller" (knob + rotary encoder + display) how many channels we have
@@ -259,7 +266,6 @@ void checkForSerialReceiveNumChannels()
       delay(1000);
       digitalWrite(ledPin, LOW);
 
-//      getThreeBytes();
       sendOutThreeBytes();
     }
   }
@@ -270,10 +276,23 @@ void checkForSerialReceiveChannelsSet()
 {
   if(Serial.available() >= 3) 
   {
+    getThreeBytes();    
     initialChannelsSetSerialReceived = true;
     if(master == true) initSteppingMaster();
-    getThreeBytes();
-    if(master == false) sendOutThreeBytes();
+
+    if(master == false) 
+    {
+      numChannels = threeBytes[1];
+      sendOutThreeBytes();
+    }
+    
+    for(int i=0; i<numChannels; i++)
+    {
+      digitalWrite(ledPin, HIGH);
+      delay(500);
+      digitalWrite(ledPin, LOW);
+      delay(500);
+    }
   }
 }
 
@@ -326,8 +345,6 @@ void readInNextThreeBytes()
       else if(threeBytes[0] == ENDLOADBYTE)
       {
         paused = false;
-//        digitalWrite(ledPin, LOW); //new
-//        delay(100);
         sendOutThreeBytes(); //new
         memoryBytesLoaded = true;
       }       
@@ -349,6 +366,21 @@ void readInNextThreeBytes()
           tempo = threeBytes[1];
           sendOutThreeBytes();      
       }
+      else if(threeBytes[0] == STARTSAVEBYTE)
+      {
+        channelToSave = 0;
+        sendOutThreeBytes();
+      }
+      else if(threeBytes[0] == SAVENEXTBYTE)
+      {
+        channelToSave++;
+        savePatternToSD();
+      }
+      else if(threeBytes[0] == ENDSAVEBYTE)
+      {
+        channelToSave++;
+        savePatternToSD();
+      }      
       else
       {
         if(master == false) {
@@ -476,29 +508,23 @@ void checkChannelSwitch() {
 }
 
 
-void getLastPressedButton()
+//SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD
+//SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD
+//SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD
+//SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD
+//SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD SD
+
+
+void savePatternToSD()
 {
-//forget this for now
-/*  
-  for(byte i=0; i<8; i++)
+  for(int i=0; i < totalSteps; i++)
   {
-     if((shiftInByte1 >> (7-i)) % 2 == 1) 
-     {
-       if(i+1 != channel)
-       {
-         channel = i+1;     
-         delay(serialDelay);
-         Serial.print(switchChannelByte, BYTE);
-         delay(serialDelay);
-         Serial.print(channel, BYTE);
-         delay(serialDelay);
-         Serial.print(2, BYTE);
-         return;
-       }
-     }
+    writeThreeBytes(SAVEBITBYTE, stepsOnArray[i + (channelToSave * 16)], 0);
   }
-*/
+  if(channelToSave < numChannels) writeThreeBytes(SAVENEXTBYTE, 0, 0);
+  else writeThreeBytes(ENDSAVEBYTE, 0, 0);
 }
+
 
 // SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN
 // SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN SHIFTIN
@@ -514,7 +540,7 @@ void shiftInAll() {
 
   shiftInByte1 = getOneShiftInByte(shiftInDataPin, shiftInClockPin);
   if(channelSwitchOn == false) convertShiftInBytesToArrays();  
-  else if (channelSwitchOn == true) getLastPressedButton();
+//  else if (channelSwitchOn == true) getLastPressedButton();
 }
 
 
