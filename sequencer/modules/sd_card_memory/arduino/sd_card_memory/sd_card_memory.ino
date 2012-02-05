@@ -84,7 +84,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define numModes 2
 
 int chipSelectPin = 2;
-int ledPin = 8;
+int ledLoadPin = 8;
+int ledSavePin = 9;
 int configPin = 7;
 
 //encoder
@@ -100,8 +101,9 @@ int shiftOutClockPin = 5;  //SH_CP of 74HC595
 int encoderButtonPin = 6;
 boolean encoderButtonValue = LOW;
 boolean lastEncoderButtonValue = LOW;
-int sevenSegDisplayMode = SAVE_MODE;
+int sevenSegDisplayMode = LOAD_MODE;
 boolean showingModeName = false;
+unsigned long showingModeNameStartTime;
 int encoderSubCount = 0;
 int newEncoderPosition = 0;
 int oldEncoderPosition = 0;
@@ -119,7 +121,7 @@ int digit2Address = 1 << 1;
 int digit3Address = 1 << 2;
 int digit4Address = 1 << 3;
 
-int currentPattern = 1;
+int currentPattern = 1;  //need to change this name... its the current pattern num displayed on the 7seg.... not the one playing on the sequencers
 
 boolean configPinOn = false;
 boolean configSent = false;
@@ -165,8 +167,9 @@ boolean sap1Loaded = false;
 void setup()
 {
   Serial.begin(115200);
+  pinMode(ledLoadPin, OUTPUT);  
+  pinMode(ledSavePin, OUTPUT);
   
-  pinMode(ledPin, OUTPUT);
   pinMode(configPin, INPUT);
   
   //apparently we need to do this for the sd reader  
@@ -189,10 +192,10 @@ void setup()
   initSD();
   getSaps();
 //  preset1 = sapArray[4];
+
+  initMode();
   
   turnOnTime = millis(); 
-  
-  digitalWrite(ledPin, HIGH);
 }
 
 void loop() 
@@ -223,7 +226,8 @@ void checkConfigPin()
   if(val == HIGH && lastConfigPinVal == LOW)
   {
 //    nextSap();
-    initSavePattern();
+    if(sevenSegDisplayMode == SAVE_MODE) initSavePattern();
+    if(sevenSegDisplayMode == LOAD_MODE) loadSap();    
   }
   
   lastConfigPinVal = val;
@@ -258,9 +262,7 @@ void checkEncoderSwitch()
   encoderButtonValue = digitalRead(encoderButtonPin);
   if(lastEncoderButtonValue == LOW && encoderButtonValue == HIGH)
   {
-    sevenSegDisplayMode++;
-    if(sevenSegDisplayMode >= numModes) sevenSegDisplayMode = 0;
-    showModeName();
+    changeMode();  
   }
   lastEncoderButtonValue = encoderButtonValue;
 }
@@ -306,11 +308,11 @@ void readEncoder()
       {
         if(sevenSegDisplayMode == SAVE_MODE) { 
           currentPattern--; 
-          if(currentPattern < 0) currentPattern = 99;
+          if(currentPattern < 1) currentPattern = 99;
         }
         else if(sevenSegDisplayMode == LOAD_MODE) { 
           currentPattern--; 
-          if(currentPattern < 0) currentPattern = 99;
+          if(currentPattern < 1) currentPattern = 99;
         }
         encoderSubCount = 0;
       }
@@ -389,34 +391,10 @@ void writeThreeBytes(byte b1, byte b2, byte b3)
 void initSD()
 {
   if (!SD.begin(4)) {
-//    Serial.println("initialization failed!");
     return;
   }
-//  Serial.println("initialization done.");  
 }
 
-//String getOneDotSap()
-//{
-//  if(SD.exists("1.sap"))
-//  {
-//    SD.remove("1.sap");
-//  }
-//  
-//  myFile = SD.open("1.sap", FILE_WRITE);
-//  myFile.println("1010101010101010 0101010101010101");
-//  myFile.close();
-//  
-//  myFile = SD.open("1.sap");
-//  String newString = "";
-//  while(myFile.available())
-//  {
-//    //this is what you have to do to go from a byte to the proper char to a string... otherwise you can get the 0-255 as a String
-//    char c = myFile.read();
-//    String st = String(c);
-//    newString += st;
-//  }
-//  return newString;
-//}
 
 void saveSap()
 {  
@@ -432,8 +410,6 @@ void saveSap()
   myFile = SD.open(fileName, FILE_WRITE);
   myFile.println(savedPattern);
   myFile.close();  
-  
-  digitalWrite(ledPin, LOW);  
 }
 
 void getSaps()
@@ -465,9 +441,9 @@ void getSaps()
   }
 }
 
-void loadSap1()
+void loadSap()
 {
-    String fileNameString = "1.SAP";
+    String fileNameString = String(currentPattern) + ".SAP";
     char fileName[fileNameString.length() + 1];
     fileNameString.toCharArray(fileName, fileNameString.length() + 1);
     File myFile = SD.open(fileName);
@@ -485,10 +461,10 @@ void loadSap1()
         String st = String(c);
         newString += st;
       }
-      sapArray[1] = newString;
+//      sapArray[1] = newString;
       myFile.close();   
       
-      sendOutPattern(sapArray[1]);
+      sendOutPattern(newString);
     }
 }
 
@@ -517,10 +493,15 @@ void initSavePattern()
 
 void draw7Seg() {
   
+  if(showingModeName == true && millis() > showingModeNameStartTime + 500)
+  {
+    showingModeName = false;
+  }
+  
   if(showingModeName == true) {
     
-    if(sevenSegDisplayMode == SAVE_MODE) displayWord("load");
-    else if(sevenSegDisplayMode == LOAD_MODE) displayWord("save");
+    if(sevenSegDisplayMode == SAVE_MODE) displayWord("save");
+    else if(sevenSegDisplayMode == LOAD_MODE) displayWord("load");
     
   } else if(showingModeName == false) {
   
@@ -618,8 +599,32 @@ void setDigitToDisplay(int ad, byte digit) {
 }
 
 
-void showModeName() {
-  showingModeName = true;
+void changeMode() {
+  
+    sevenSegDisplayMode++;
+    if(sevenSegDisplayMode >= numModes) sevenSegDisplayMode = 0;    
+    initMode();
+}
+
+void initMode()
+{
+    showingModeNameStartTime = millis();
+    showingModeName = true;
+    setModeLed();  
+}
+
+void setModeLed() {
+  if(sevenSegDisplayMode == SAVE_MODE)
+  {
+    digitalWrite(ledSavePin, HIGH);
+    digitalWrite(ledLoadPin, LOW);    
+  }
+  else if(sevenSegDisplayMode == LOAD_MODE)
+  {
+    digitalWrite(ledSavePin, LOW);
+    digitalWrite(ledLoadPin, HIGH);    
+    
+  }
 }
 
 
