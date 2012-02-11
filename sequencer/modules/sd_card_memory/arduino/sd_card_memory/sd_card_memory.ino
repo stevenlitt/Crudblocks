@@ -102,8 +102,9 @@ int encoderButtonPin = 6;
 boolean encoderButtonValue = LOW;
 boolean lastEncoderButtonValue = LOW;
 int sevenSegDisplayMode = LOAD_MODE;
-boolean showingModeName = false;
-unsigned long showingModeNameStartTime;
+boolean showingWord = false;
+unsigned long showingWordStartTime;
+String wordToShow = "";
 int encoderSubCount = 0;
 int newEncoderPosition = 0;
 int oldEncoderPosition = 0;
@@ -164,6 +165,8 @@ String savedPattern = "";
 
 boolean sap1Loaded = false;
 
+boolean sdInited = false;
+
 void setup()
 {
   Serial.begin(115200);
@@ -190,10 +193,8 @@ void setup()
   digitalWrite(dpInEncoderB, HIGH);
   
   initSD();
-  getSaps();
-//  preset1 = sapArray[4];
 
-  initMode();
+  if(sdInited == true) initMode();
   
   turnOnTime = millis(); 
 }
@@ -225,9 +226,14 @@ void checkConfigPin()
   
   if(val == HIGH && lastConfigPinVal == LOW)
   {
-//    nextSap();
-    if(sevenSegDisplayMode == SAVE_MODE) initSavePattern();
-    if(sevenSegDisplayMode == LOAD_MODE) loadSap();    
+    if(sevenSegDisplayMode == SAVE_MODE) 
+    {
+      initSavePattern();
+    }
+    if(sevenSegDisplayMode == LOAD_MODE) 
+    {
+      loadSap();      
+    }
   }
   
   lastConfigPinVal = val;
@@ -287,7 +293,7 @@ void readEncoder()
     else if (isFwd == false) encoderSubCount--;
     
     //if we're looking at the mode name and we registered a turn... just hide the mode name... don't actually change the tempo, channel, etc value...
-    if(showingModeName == true && (encoderSubCount == -4 || encoderSubCount == 4)) {
+    if(showingWord == true && (encoderSubCount == -4 || encoderSubCount == 4)) {
       hideModeName();
       encoderSubCount = 0;
     //...otherwise change the value
@@ -337,7 +343,7 @@ void listenForSerial()
   if(threeBytes[0] == BEGINLOADBYTE) return;
   if(threeBytes[0] == LOADSTEPBYTE) return;
   if(threeBytes[0] == ENDCHANNELLOADBYTE) return;
-  if(threeBytes[0] == ENDLOADBYTE) return;  
+  if(threeBytes[0] == ENDLOADBYTE) { showWord("load"); return;  }
   if(threeBytes[0] == STARTSAVEBYTE) return;
 
   if(threeBytes[0] == SAVEBITBYTE)
@@ -351,7 +357,8 @@ void listenForSerial()
   }
   else if(threeBytes[0] == ENDSAVEBYTE)
   {
-    saveSap();    
+    saveSap(); 
+    showWord("save");   
     return;
   }
   
@@ -390,8 +397,16 @@ void writeThreeBytes(byte b1, byte b2, byte b3)
 
 void initSD()
 {
-  if (!SD.begin(4)) {
+  if (!SD.begin(chipSelectPin)) 
+  {
+    sdInited = false;    
+    digitalWrite(ledLoadPin, HIGH);
+    digitalWrite(ledSavePin, HIGH);
     return;
+  } 
+  else 
+  {
+    sdInited = true;  
   }
 }
 
@@ -493,17 +508,18 @@ void initSavePattern()
 
 void draw7Seg() {
   
-  if(showingModeName == true && millis() > showingModeNameStartTime + 500)
+  if(showingWord == true && millis() > showingWordStartTime + 500)
   {
-    showingModeName = false;
+    showingWord = false;
   }
   
-  if(showingModeName == true) {
+  if(showingWord == true) {
     
-    if(sevenSegDisplayMode == SAVE_MODE) displayWord("save");
-    else if(sevenSegDisplayMode == LOAD_MODE) displayWord("load");
+    displayWord(wordToShow);
+//    if(sevenSegDisplayMode == SAVE_MODE) displayWord("save");
+//    else if(sevenSegDisplayMode == LOAD_MODE) displayWord("load");
     
-  } else if(showingModeName == false) {
+  } else if(showingWord == false) {
   
     int numToDisplay;
     if(sevenSegDisplayMode == SAVE_MODE) numToDisplay = currentPattern;
@@ -600,7 +616,6 @@ void setDigitToDisplay(int ad, byte digit) {
 
 
 void changeMode() {
-  
     sevenSegDisplayMode++;
     if(sevenSegDisplayMode >= numModes) sevenSegDisplayMode = 0;    
     initMode();
@@ -608,9 +623,16 @@ void changeMode() {
 
 void initMode()
 {
-    showingModeNameStartTime = millis();
-    showingModeName = true;
-    setModeLed();  
+  if(sevenSegDisplayMode == LOAD_MODE) showWord("load");
+  else if(sevenSegDisplayMode == SAVE_MODE) showWord("save");  
+  setModeLed();  
+}
+
+void showWord(String w)
+{
+  showingWordStartTime = millis();
+  showingWord = true; 
+  wordToShow = w;
 }
 
 void setModeLed() {
@@ -629,7 +651,7 @@ void setModeLed() {
 
 
 void hideModeName() {
-  showingModeName = false;
+  showingWord = false;
 }
 
 

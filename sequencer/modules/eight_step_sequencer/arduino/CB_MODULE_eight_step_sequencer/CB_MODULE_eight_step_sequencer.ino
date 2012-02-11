@@ -44,6 +44,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SAVEBITBYTE B11000111
 #define SAVENEXTBYTE B11001000
 
+#define stepsOnArrayLength 256
+
 int dpInEncoderA = A2;
 int dpInEncoderB = A3;
 
@@ -74,7 +76,8 @@ int shiftInByte2Array[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 int lastShiftInByte1Array[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 int lastShiftInByte2Array[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 
-byte stepsOnArray[256] = { 
+
+byte stepsOnArray[stepsOnArrayLength] = { 
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -114,8 +117,7 @@ int digit1Address = 1;
 int digit2Address = 1 << 1;
 int digit3Address = 1 << 2;
 int digit4Address = 1 << 3;
-byte digitAddressArray[4] = {
-  digit1Address, digit2Address, digit3Address, digit4Address};
+byte digitAddressArray[4] = { digit1Address, digit2Address, digit3Address, digit4Address };
 
 int encoderSubCount = 0;
 int newEncoderPosition = 0;
@@ -174,7 +176,7 @@ void setup() {
   digitalWrite(dpInEncoderA, HIGH);
   digitalWrite(dpInEncoderB, HIGH);
   digitalWrite(txPin, HIGH);
-  
+
   turnOnTime = millis();
 }
 
@@ -314,10 +316,9 @@ void readInNextThreeBytes()
       {
         currentStepToWrite = 0;
         currentChannelToWrite = 1;
-        sendOutThreeBytes(); //new
-        paused = true;       //new
-//        digitalWrite(ledPin, HIGH);  //new
-//        delay(500);
+        sendOutThreeBytes();
+        clearStepsOnArray();
+        paused = true;
       }
       
       else if(threeBytes[0] == LOADSTEPBYTE)
@@ -345,7 +346,7 @@ void readInNextThreeBytes()
       else if(threeBytes[0] == ENDLOADBYTE)
       {
         paused = false;
-        sendOutThreeBytes(); //new
+        sendOutThreeBytes();
         memoryBytesLoaded = true;
       }       
       
@@ -368,6 +369,7 @@ void readInNextThreeBytes()
       }
       else if(threeBytes[0] == STARTSAVEBYTE)
       {
+        paused = true;
         channelToSave = 0;
         sendOutThreeBytes();
       }
@@ -378,6 +380,7 @@ void readInNextThreeBytes()
       }
       else if(threeBytes[0] == ENDSAVEBYTE)
       {
+        paused = false;        
         channelToSave++;
         savePatternToSD();
       }      
@@ -437,6 +440,7 @@ lastStepTime = millis();
 currentStep = 0;      //this makes it actually start stepping  
 }
 
+
 void stepTempo() {
   if(currentStep == -1) return;
   if(paused == true) return;
@@ -493,6 +497,13 @@ void blinkForHigh() {
   delay(1000);
 }
 
+void clearStepsOnArray() {
+  for(int i=0; i < stepsOnArrayLength; i++)
+  {
+    stepsOnArray[i] = 0;
+  }
+}
+
 
 // SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL 
 // SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL SET CHANNEL 
@@ -522,7 +533,7 @@ void savePatternToSD()
     writeThreeBytes(SAVEBITBYTE, stepsOnArray[i + (channelToSave * 16)], 0);
   }
   if(channelToSave < numChannels) writeThreeBytes(SAVENEXTBYTE, 0, 0);
-  else writeThreeBytes(ENDSAVEBYTE, 0, 0);
+  else { paused = false; writeThreeBytes(ENDSAVEBYTE, 0, 0); };
 }
 
 
