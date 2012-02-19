@@ -167,6 +167,10 @@ boolean sap1Loaded = false;
 
 boolean sdInited = false;
 
+boolean saving = false;
+byte numChannelsSaved = 0;
+
+
 void setup()
 {
   Serial.begin(115200);
@@ -206,7 +210,6 @@ void loop()
 
 void goMain() 
 {
-//  if(sap1Loaded == false) loadSap1();
   checkConfigPin();  
   listenForSerial();
   readEncoder(); 
@@ -353,12 +356,14 @@ void listenForSerial()
   }
   else if(threeBytes[0] == SAVENEXTBYTE)
   {
-    savedPattern += " ";
+    savedPattern += ' ';
+    numChannelsSaved++;
   }
   else if(threeBytes[0] == ENDSAVEBYTE)
   {
     saveSap(); 
     showWord("save");   
+    saving = false;
     return;
   }
   
@@ -494,9 +499,13 @@ void nextSap()
 
 void initSavePattern()
 {
+//  if(saving == true) return;
+  
+  saving = true;
+  numChannelsSaved = 0;  
   savedPattern = "";
   writeThreeBytes(STARTSAVEBYTE, 0, 0);
-  writeThreeBytes(SAVENEXTBYTE, 0, 0);  
+  writeThreeBytes(SAVENEXTBYTE, 0, 0);
 }
 
 //7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG 7SEG
@@ -516,14 +525,23 @@ void draw7Seg() {
   if(showingWord == true) {
     
     displayWord(wordToShow);
-//    if(sevenSegDisplayMode == SAVE_MODE) displayWord("save");
-//    else if(sevenSegDisplayMode == LOAD_MODE) displayWord("load");
-    
+
   } else if(showingWord == false) {
   
+    if(saving == true) displayNumber(numChannelsSaved);//(savedPattern.length());
+    else displayNumber(currentPattern);
+/*
+    {
     int numToDisplay;
     if(sevenSegDisplayMode == SAVE_MODE) numToDisplay = currentPattern;
     else if(sevenSegDisplayMode == LOAD_MODE) numToDisplay = currentPattern;
+    }
+*/       
+  }
+}
+
+void displayNumber(int numToDisplay)
+{
     byte digitToDisplay;
   
     digitToDisplay = (numToDisplay / 1000) % 10;
@@ -536,8 +554,7 @@ void draw7Seg() {
     setDigitToDisplay(3, digitToDisplay);
     
     digitToDisplay = numToDisplay % 10;
-    setDigitToDisplay(4, digitToDisplay);
-  }
+    setDigitToDisplay(4, digitToDisplay);  
 }
 
 

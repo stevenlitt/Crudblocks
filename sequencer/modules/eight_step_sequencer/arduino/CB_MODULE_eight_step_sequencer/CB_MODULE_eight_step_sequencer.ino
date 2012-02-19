@@ -231,7 +231,7 @@ void checkSetAddressPin()
     master = true;                                                   //...set it as the master
     
     digitalWrite(ledPin, HIGH);
-    delay(1000);
+    delay(100);
     digitalWrite(ledPin, LOW);    
     
     //send out the channel setter byte
@@ -239,7 +239,7 @@ void checkSetAddressPin()
     writeThreeBytes(channelSetterByte, firstChannel, 0);
     
     digitalWrite(ledPin, LOW);
-    delay(1000);
+    delay(100);
     digitalWrite(ledPin, LOW);
   }
 }
@@ -265,7 +265,7 @@ void checkForSerialReceiveNumChannels()
     else if(master == false)                                    // if we're not the master, this means we just take in what the master sent us (the setNumChannelsByte + numChannels above)
     {                                                           // and spit it back out on the way to the channels
       digitalWrite(ledPin, HIGH);
-      delay(1000);
+      delay(100);
       digitalWrite(ledPin, LOW);
 
       sendOutThreeBytes();
@@ -287,14 +287,15 @@ void checkForSerialReceiveChannelsSet()
       numChannels = threeBytes[1];
       sendOutThreeBytes();
     }
-    
+/*
     for(int i=0; i<numChannels; i++)
     {
       digitalWrite(ledPin, HIGH);
-      delay(500);
+      delay(100);
       digitalWrite(ledPin, LOW);
-      delay(500);
+      delay(100);
     }
+*/
   }
 }
 
@@ -350,26 +351,26 @@ void readInNextThreeBytes()
         memoryBytesLoaded = true;
       }       
       
-      else if(threeBytes[0] == next8Byte) 
+      else if(threeBytes[0] == next8Byte)
       {
         currentStep = 0;
         justJumped = true;
       }
-      else if(threeBytes[0] == switchChannelByte) 
+      else if(threeBytes[0] == switchChannelByte)
       {
         if(threeBytes[1] != channel) {
           channel = threeBytes[1];
           sendOutThreeBytes();
         }
       }
-      else if(threeBytes[0] == setTempoByte) 
+      else if(threeBytes[0] == setTempoByte)
       {
           tempo = threeBytes[1];
           sendOutThreeBytes();      
       }
       else if(threeBytes[0] == STARTSAVEBYTE)
       {
-        paused = true;
+//        paused = true;
         channelToSave = 0;
         sendOutThreeBytes();
       }
@@ -533,7 +534,7 @@ void savePatternToSD()
     writeThreeBytes(SAVEBITBYTE, stepsOnArray[i + (channelToSave * 16)], 0);
   }
   if(channelToSave < numChannels) writeThreeBytes(SAVENEXTBYTE, 0, 0);
-  else { paused = false; writeThreeBytes(ENDSAVEBYTE, 0, 0); };
+  else { /* paused = false; */ writeThreeBytes(ENDSAVEBYTE, 0, 0); };
 }
 
 

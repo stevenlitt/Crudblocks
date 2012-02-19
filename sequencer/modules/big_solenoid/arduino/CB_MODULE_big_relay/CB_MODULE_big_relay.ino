@@ -115,9 +115,9 @@ void listenForSerial()
       for(byte i=0; i<channel%10; i++)
       {
         digitalWrite(ledPin, HIGH);
-        delay(400);
+        delay(100);
         digitalWrite(ledPin, LOW);
-        delay(400);
+        delay(100);
       }
       
       byte nextChannel = channel + 1;
