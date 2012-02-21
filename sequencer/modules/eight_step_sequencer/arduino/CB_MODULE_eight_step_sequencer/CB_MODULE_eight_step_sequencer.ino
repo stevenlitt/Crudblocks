@@ -156,6 +156,9 @@ boolean memoryBytesLoaded = false;
 //helpers for save to sd card
 int channelToSave = 1;
 
+unsigned long ledOnTime = 0;
+unsigned long ledOnInterval = 0;
+
 void setup() {
   Serial.begin(115200);
 
@@ -207,7 +210,7 @@ void goMain()
   else if(initialChannelsSetSerialReceived == true)      //...and start the sequencer once everything knows what and where it is
   {
     stepTempo();
-
+    setLed();
     readInNextThreeBytes();
     shiftInAll();
     shiftOutAll();
@@ -297,6 +300,19 @@ void checkForSerialReceiveChannelsSet()
     }
 */
   }
+}
+
+
+void ledOn(unsigned long ms)
+{
+  ledOnTime = millis();
+  ledOnInterval = ms;
+}
+
+void setLed()
+{
+  if(ledOnTime + ledOnInterval > millis()) digitalWrite(ledPin, HIGH);
+  else digitalWrite(ledPin, LOW);
 }
 
 
@@ -532,9 +548,11 @@ void savePatternToSD()
   for(int i=0; i < totalSteps; i++)
   {
     writeThreeBytes(SAVEBITBYTE, stepsOnArray[i + (channelToSave * 16)], 0);
+    delay(5);    
   }
+  
   if(channelToSave < numChannels) writeThreeBytes(SAVENEXTBYTE, 0, 0);
-  else { /* paused = false; */ writeThreeBytes(ENDSAVEBYTE, 0, 0); };
+  else { /* paused = false; */ writeThreeBytes(ENDSAVEBYTE, 0, 0); ledOn(500); };
 }
 
 

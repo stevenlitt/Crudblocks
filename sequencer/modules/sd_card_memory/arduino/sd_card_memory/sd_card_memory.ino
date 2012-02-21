@@ -353,6 +353,7 @@ void listenForSerial()
   {
     byte b = threeBytes[1];
     savedPattern += String(b);
+    return;
   }
   else if(threeBytes[0] == SAVENEXTBYTE)
   {
@@ -361,8 +362,8 @@ void listenForSerial()
   }
   else if(threeBytes[0] == ENDSAVEBYTE)
   {
-    saveSap(); 
-    showWord("save");   
+    showWord("save");     
+//    saveSap(); 
     saving = false;
     return;
   }
@@ -528,7 +529,7 @@ void draw7Seg() {
 
   } else if(showingWord == false) {
   
-    if(saving == true) displayNumber(numChannelsSaved);//(savedPattern.length());
+    if(saving == true) displayNumber(savedPattern.length());//numChannelsSaved);//(savedPattern.length());
     else displayNumber(currentPattern);
 /*
     {
