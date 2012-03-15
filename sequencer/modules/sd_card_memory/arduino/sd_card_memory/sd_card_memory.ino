@@ -109,61 +109,27 @@ int encoderSubCount = 0;
 int newEncoderPosition = 0;
 int oldEncoderPosition = 0;
 
-//encoder test stuff to delete
-byte tempo = 120;
-byte channel = 1;
-byte numChannels = 5;
-byte pwmVal = 1;
-byte numPwmVals = 3;
-
 //7 seg
 int digit1Address = 1;
 int digit2Address = 1 << 1;
 int digit3Address = 1 << 2;
 int digit4Address = 1 << 3;
 
-int currentPattern = 1;  //need to change this name... its the current pattern num displayed on the 7seg.... not the one playing on the sequencers
-
-boolean configPinOn = false;
-boolean configSent = false;
+int currentPattern = 1;  //maybe need to change this name... ?  its the current pattern num displayed on the 7seg.... not the one playing on the sequencers
 
 boolean lastConfigPinVal = LOW;
 
 byte threeBytes[3] = {0, 0, 0};
-
-//String sapArray[] = {};
-
-String sapArray[] = { "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" };
-
-//String sapArray[11] = { "0", 
-//                      "1000000000000000 1000000000000000", 
-//                      "1100000000000000 0000000000000000", 
-//                      "1010000000000000 0000000000000000", 
-//                      "1001000000000000 0000000000000000", 
-//                      "1000100000000000 0000000000000000",
-//                      "1000010000000000 0000000000000000",
-//                      "1000001000000000 0000000000000000",
-//                      "1000000100000000 0000000000000000",
-//                      "1000000010000000 0000000000000000",
-//                      "1000000001000000 0000000000000000"
-//                    };
-//                    
-int numSaps = 0;
-int currentSap = 1;
-
 
 boolean doMain = false;
 
 unsigned long turnOnTime;
 unsigned long preMainInterval = 3000;
 
-String preset1 = "";// = "1010110100101100 1100001001011010";
-
 File myFile;
 
 String savedPattern = "";
-
-boolean sap1Loaded = false;
+String loadedPattern = "";
 
 boolean sdInited = false;
 
@@ -253,8 +219,6 @@ void sendOutPattern(String sap)
     else if(sap.charAt(i) == '1') writeThreeBytes(LOADSTEPBYTE, 1, 0);
     else if(sap.charAt(i) == ' ') writeThreeBytes(ENDCHANNELLOADBYTE, 0, 0);
   }
-
-  configSent = true;
 
   writeThreeBytes(ENDLOADBYTE, 0, 0);
 }
@@ -363,7 +327,7 @@ void listenForSerial()
   else if(threeBytes[0] == ENDSAVEBYTE)
   {
     showWord("save");     
-//    saveSap(); 
+    saveSap(); 
     saving = false;
     return;
   }
@@ -433,75 +397,38 @@ void saveSap()
   myFile.close();  
 }
 
-void getSaps()
-{
-  for(int i=1; i<=10; i++)
-  {
-    //this is exactly how this has to be done to dynamically create the file name and covert it to the appropriate char array 
-    String fileNameString = String(i) + ".SAP";
-    char fileName[fileNameString.length() + 1];
-    fileNameString.toCharArray(fileName, fileNameString.length() + 1);
-    File myFile = SD.open(fileName);
-    
-    //if the file exists
-    if(myFile == true)
-    {
-      numSaps++;
-      String newString = "";
-      
-      while(myFile.available())
-      {
-        //this is what you have to do to go from a byte to the proper char to a string... otherwise you can get the 0-255 as a String
-        char c = myFile.read();
-        String st = String(c);
-        newString += st;
-      }
-      sapArray[i] = newString;
-      myFile.close();    
-    }
-  }
-}
 
 void loadSap()
 {
+    loadedPattern = "";  
+  
     String fileNameString = String(currentPattern) + ".SAP";
-    char fileName[fileNameString.length() + 1];
-    fileNameString.toCharArray(fileName, fileNameString.length() + 1);
+    char fileName[fileNameString.length() + 1];                              // why the + 1 ???
+    fileNameString.toCharArray(fileName, fileNameString.length() + 1);       // here too??
     File myFile = SD.open(fileName);
     
     //if the file exists
     if(myFile == true)
     {
-      numSaps++;
-      String newString = "";
+//      String newString = "";
       
       while(myFile.available())
       {
         //this is what you have to do to go from a byte to the proper char to a string... otherwise you can get the 0-255 as a String
         char c = myFile.read();
         String st = String(c);
-        newString += st;
+        loadedPattern += st;
       }
-//      sapArray[1] = newString;
-      myFile.close();   
+      myFile.close();
       
-      sendOutPattern(newString);
+      sendOutPattern(loadedPattern);
     }
 }
 
 
-void nextSap()
-{
-  currentSap++;
-  if(currentSap > numSaps) currentSap = 1;    
-  sendOutPattern(sapArray[currentSap]);  
-}
-
 
 void initSavePattern()
-{
-//  if(saving == true) return;
-  
+{  
   saving = true;
   numChannelsSaved = 0;  
   savedPattern = "";
@@ -529,7 +456,7 @@ void draw7Seg() {
 
   } else if(showingWord == false) {
   
-    if(saving == true) displayNumber(savedPattern.length());//numChannelsSaved);//(savedPattern.length());
+    if(saving == true) displayNumber(savedPattern.length());
     else displayNumber(currentPattern);
 /*
     {

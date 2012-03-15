@@ -335,7 +335,7 @@ void readInNextThreeBytes()
         currentChannelToWrite = 1;
         sendOutThreeBytes();
         clearStepsOnArray();
-        paused = true;
+//        paused = true;
       }
       
       else if(threeBytes[0] == LOADSTEPBYTE)
