@@ -35,9 +35,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define setNumChannelsByte B11110100
 #define setTempoByte B11110110
 #define autosetPWMByte B11111000
+#define channelByte B00001111
 
 #define CLOCK_MODE 1
-define NODE_MODE 2
+#define NOTE_MODE 2
 
 int txPin = 2;
 int rxPin = 3;
@@ -76,7 +77,7 @@ int quarterNotes = 0;
 boolean sequencersCounted = false;
 byte numSequencers = 0;
 
-byte midiMode;
+byte midiMode = NOTE_MODE;
 
 
 void setup() {
@@ -106,17 +107,17 @@ void preMain()
 void goMain()
 {
   
+/*
   while(softSerial.available() > 0)
   {
     byte s = softSerial.read();
-//    Serial.println(s);
     
     if(s == 248) clockPulses++;                //clock tick
     else if(s == 252) clockPulses = 0;         //clock stop
     
     Serial.println(clockPulses);   
   }
-  return;
+*/
 
   if(initialNumChannelsSerialReceived == false)                                //set output channels, etc
   {
@@ -124,10 +125,12 @@ void goMain()
     checkSetAddressPin();
     checkForSerialReceiveNumChannels();    
   }
+/*  
   else if(sequencersCounted == false)
   {
     checkForSequencers();
   }
+*/
   else if(initialNumChannelsSerialReceived == true && pwmsSet == false)        //make sure all modules' mechanisms switch on and off from to noteon, noteoffs... and aren't using their own built in pwm code
   {
     blinks(5);    
@@ -199,6 +202,7 @@ void checkForSerialReceiveNumChannels()
   }
 }
 
+/*
 void checkForSequencers()
 {
   if(Serial.available() >= 3)
@@ -211,7 +215,7 @@ void checkForSequencers()
     
   }
 }
-
+*/
 
 void checkForSerialReceiveChannelsSet()
 {
@@ -234,29 +238,32 @@ void readInExternalMidi()
 {
   while(softSerial.available() >= 3)
   {
-    getNextThreeExternalMidiBytes();
+    getNextThreeExternalMidiBytes();  
     
-//    digitalWrite(ledPin, HIGH);
-//    delay(10);
-//    digitalWrite(ledPin, LOW);
-//    delay(10);       
-    
-    if(midiMode == NOTE_MODE)
+    if(onThisChannel(threeExternalBytes[0]) == true)
     {
-      if(isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] != 0) 
-      {                                                       //if its a noteon and the velocity isn't zero (maxmsp uses noteon w velocity zero as noteoff for some reason
-        byte channelOnByte = noteOnByte + threeExternalBytes[1];
-        writeThreeBytes(channelOnByte, 0, 0);
-      } 
-      else if(isNoteOff(threeExternalBytes[0]) == true || (isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] == 0)) //if its a noteoff, or a noteon w velocity zero (which is used by some things as a noteoff)
+      if(midiMode == NOTE_MODE)
       {
-        byte channelOffByte = noteOffByte + threeExternalBytes[1];
-        writeThreeBytes(channelOffByte, 0, 0);
+        if(isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] != 0) 
+        {                                                       //if its a noteon and the velocity isn't zero (maxmsp uses noteon w velocity zero as noteoff for some reason
+          byte channelOnByte = noteOnByte + threeExternalBytes[1];
+          writeThreeBytes(channelOnByte, 0, 0);
+          
+          digitalWrite(ledPin, HIGH);
+          delay(5);
+          digitalWrite(ledPin, LOW);
+          delay(5);             
+        } 
+        else if(isNoteOff(threeExternalBytes[0]) == true || (isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] == 0)) //if its a noteoff, or a noteon w velocity zero (which is used by some things as a noteoff)
+        {
+          byte channelOffByte = noteOffByte + threeExternalBytes[1];
+          writeThreeBytes(channelOffByte, 0, 0);
+        }
       }
-    }
-    else if(midiMode == CLOCK_MODE)
-    {
-      //do nothing for now
+      else if(midiMode == CLOCK_MODE)
+      {
+        //do nothing for now
+      }
     }
   }
 }
@@ -276,6 +283,15 @@ void getNextThreeExternalMidiBytes()
 //HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS
 //HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS HELPERS
 
+
+boolean onThisChannel(byte inputByte)
+{
+  if((inputByte & channelByte) == channelByte)
+  {
+    return true;
+  }
+  else return false;
+}
 
 boolean isNoteOn(byte inputByte)
 {
