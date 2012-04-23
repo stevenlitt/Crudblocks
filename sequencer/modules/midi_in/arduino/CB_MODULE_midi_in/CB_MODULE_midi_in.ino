@@ -88,6 +88,14 @@ void setup() {
   pinMode(ledPin, OUTPUT);
   
   turnOnTime = millis();
+  
+      for(byte i = 0; i < 3; i++) 
+      {
+        digitalWrite(ledPin, HIGH);
+        delay(200);
+        digitalWrite(ledPin, LOW);
+        delay(200);      
+      }  
 }
 
 
@@ -150,7 +158,7 @@ void goMain()
 //INIT CONFIG INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG INIT CONFIG 
 //INIT CONFIG INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG  INIT CONFIG 
 
-
+/*
 void checkForFirstChannelByte()
 {
   while(softSerial.available() >= 3)
@@ -168,6 +176,21 @@ void checkForFirstChannelByte()
     {
       firstChannelByte = threeExternalBytes[1];
     }
+  }
+}
+*/
+
+void checkForFirstChannelByte()
+{  
+  while(softSerial.available() >= 3)
+  {
+    digitalWrite(ledPin, HIGH);
+    delay(5);
+    digitalWrite(ledPin, LOW);
+    delay(5);    
+        
+    byte b = softSerial.read();
+    if(isNoteOn(b) == true) firstChannelByte = softSerial.read();
   }
 }
 
@@ -233,7 +256,7 @@ void checkForSerialReceiveChannelsSet()
 //MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI
 //MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI 
 
-
+/*
 void readInExternalMidi()
 {
   while(softSerial.available() >= 3)
@@ -267,7 +290,41 @@ void readInExternalMidi()
     }
   }
 }
+*/
 
+void readInExternalMidi()
+{
+  while(softSerial.available() >= 3)
+  {
+    byte b = softSerial.read(); 
+    
+    if(onThisChannel(b) == true)
+    {
+      threeExternalBytes[0] = b;
+      threeExternalBytes[1] = softSerial.read();
+      threeExternalBytes[2] = softSerial.read();  
+  
+      if(midiMode == NOTE_MODE)
+      {
+        if(isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] != 0) 
+        {                                                       //if its a noteon and the velocity isn't zero (maxmsp uses noteon w velocity zero as noteoff for some reason
+          byte channelOnByte = noteOnByte + threeExternalBytes[1];
+          writeThreeBytes(channelOnByte, 0, 0);
+          
+          digitalWrite(ledPin, HIGH);
+          delay(5);
+          digitalWrite(ledPin, LOW);
+          delay(5);             
+        } 
+        else if(isNoteOff(threeExternalBytes[0]) == true || (isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] == 0)) //if its a noteoff, or a noteon w velocity zero (which is used by some things as a noteoff)
+        {
+          byte channelOffByte = noteOffByte + threeExternalBytes[1];
+          writeThreeBytes(channelOffByte, 0, 0);
+        }
+      }
+    }
+  }
+}
 
 void getNextThreeExternalMidiBytes()
 {
