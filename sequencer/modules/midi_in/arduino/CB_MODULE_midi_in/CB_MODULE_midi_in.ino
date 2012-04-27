@@ -225,21 +225,6 @@ void checkForSerialReceiveNumChannels()
   }
 }
 
-/*
-void checkForSequencers()
-{
-  if(Serial.available() >= 3)
-  {
-    getThreeBytes();
-    sequencersCounted = true;
-    numSequencers = threeBytes[1];
-    if(numSequencers == 0) midiMode = NOTE_MODE;
-    else if(numSequencers > 0) midiMode = CLOCK_MODE;
-    
-  }
-}
-*/
-
 void checkForSerialReceiveChannelsSet()
 {
   if(Serial.available() >= 3) 
@@ -256,42 +241,6 @@ void checkForSerialReceiveChannelsSet()
 //MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI
 //MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI MIDI 
 
-/*
-void readInExternalMidi()
-{
-  while(softSerial.available() >= 3)
-  {
-    getNextThreeExternalMidiBytes();  
-    
-    if(onThisChannel(threeExternalBytes[0]) == true)
-    {
-      if(midiMode == NOTE_MODE)
-      {
-        if(isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] != 0) 
-        {                                                       //if its a noteon and the velocity isn't zero (maxmsp uses noteon w velocity zero as noteoff for some reason
-          byte channelOnByte = noteOnByte + threeExternalBytes[1];
-          writeThreeBytes(channelOnByte, 0, 0);
-          
-          digitalWrite(ledPin, HIGH);
-          delay(5);
-          digitalWrite(ledPin, LOW);
-          delay(5);             
-        } 
-        else if(isNoteOff(threeExternalBytes[0]) == true || (isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] == 0)) //if its a noteoff, or a noteon w velocity zero (which is used by some things as a noteoff)
-        {
-          byte channelOffByte = noteOffByte + threeExternalBytes[1];
-          writeThreeBytes(channelOffByte, 0, 0);
-        }
-      }
-      else if(midiMode == CLOCK_MODE)
-      {
-        //do nothing for now
-      }
-    }
-  }
-}
-*/
-
 void readInExternalMidi()
 {
   while(softSerial.available() >= 3)
@@ -306,15 +255,16 @@ void readInExternalMidi()
   
       if(midiMode == NOTE_MODE)
       {
-        if(isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] != 0) 
-        {                                                       //if its a noteon and the velocity isn't zero (maxmsp uses noteon w velocity zero as noteoff for some reason
+        if(isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] != 0)   //if its a noteon and the velocity isn't zero (maxmsp uses noteon w velocity zero as noteoff for some reason
+        {                                                       
           byte channelOnByte = noteOnByte + threeExternalBytes[1];
           writeThreeBytes(channelOnByte, 0, 0);
-          
+/*          
           digitalWrite(ledPin, HIGH);
           delay(5);
           digitalWrite(ledPin, LOW);
-          delay(5);             
+          delay(5);
+*/
         } 
         else if(isNoteOff(threeExternalBytes[0]) == true || (isNoteOn(threeExternalBytes[0]) == true && threeExternalBytes[2] == 0)) //if its a noteoff, or a noteon w velocity zero (which is used by some things as a noteoff)
         {
