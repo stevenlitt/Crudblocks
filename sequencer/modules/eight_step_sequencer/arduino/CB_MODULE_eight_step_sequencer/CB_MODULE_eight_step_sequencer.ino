@@ -49,6 +49,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 int dpInEncoderA = A2;
 int dpInEncoderB = A3;
 
+int solenoidPin = A5;
+
 int txPin = 2;
 int rxPin = 3;
 
@@ -159,6 +161,8 @@ int channelToSave = 1;
 unsigned long ledOnTime = 0;
 unsigned long ledOnInterval = 0;
 
+int stepEightPin = A2;
+
 void setup() {
   Serial.begin(115200);
 
@@ -172,9 +176,11 @@ void setup() {
   pinMode(shiftOutClockPin, OUTPUT);
   pinMode(shiftOutDataPin, OUTPUT);
   pinMode(shiftInLatchPin, OUTPUT);
-  pinMode(shiftInClockPin, OUTPUT); 
+  pinMode(shiftInClockPin, OUTPUT);
+  pinMode(stepEightPin, OUTPUT);
   pinMode(shiftInDataPin, INPUT);
   pinMode(ledPin, OUTPUT);
+  pinMode(solenoidPin, OUTPUT);
 
   digitalWrite(dpInEncoderA, HIGH);
   digitalWrite(dpInEncoderB, HIGH);
@@ -213,8 +219,10 @@ void goMain()
     setLed();
     readInNextThreeBytes();
     shiftInAll();
+    stepEightHack();
     shiftOutAll();
     checkChannelSwitch();
+    checkSolenoid();
   }  
 }
 
@@ -487,6 +495,16 @@ void stepTempo() {
     }
     lastStepTime =  millis() + (60000 / tempo) / 8;   //bpm formula
   }
+}
+
+void checkSolenoid() {
+  if(stepsOnArray[16 + currentStep] == HIGH && millis() < lastStepTime + ((60000 / tempo) / 8) * 3 / 4) digitalWrite(solenoidPin, HIGH);
+  else digitalWrite(solenoidPin, LOW);
+}
+
+void stepEightHack() {
+  if(currentStep == 7) digitalWrite(stepEightPin, HIGH);
+  else digitalWrite(stepEightPin, LOW);
 }
 
 void blinkCurrentStep() {
